@@ -6,6 +6,7 @@ import '../features/nutrition/data/offline_nutrition_repository.dart';
 import '../features/nutrition/data/nutrition_local_store.dart';
 import '../features/privacy/data/privacy_repository.dart';
 import 'app_dependencies.dart';
+import '../features/legal/legal_controller.dart';
 import '../features/training_configuration/data/training_configuration_repository.dart';
 import '../features/activity/data/activity_repository.dart';
 
@@ -33,6 +34,7 @@ AppDependencies productionDependencies() {
         ({required accountId, required currentAccountId}) =>
             OfflineNutritionRepository(
               catalog: catalog,
+              syncAllowed: () => HealthConsentRegistry.granted(accountId),
               store: NutritionLocalStore(
                 accountId: accountId,
                 currentAccountId: currentAccountId,

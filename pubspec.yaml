@@ -1,7 +1,7 @@
 name: trainforge
 description: "A new Flutter project."
 publish_to: 'none'
-version: 0.5.0+30
+version: 0.5.1+31
 
 environment:
   sdk: ^3.11.1
@@ -43,6 +43,7 @@ flutter:
     - assets/figma/
     - assets/fonts/OFL.txt
     - assets/food_catalog/
+    - assets/legal/
   fonts:
     - family: Inter
       fonts:

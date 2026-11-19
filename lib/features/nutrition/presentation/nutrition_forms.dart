@@ -344,8 +344,7 @@ class _EntryFormPageState extends State<EntryFormPage> {
                           labelText: context.l10n.consumedQuantity,
                           hintText: context.l10n.enterQuantity,
                         ),
-                        validator: (v) =>
-                            validQuantity(decimal(v ?? ''))
+                        validator: (v) => validQuantity(decimal(v ?? ''))
                             ? null
                             : context.l10n.positiveQuantity,
                       ),

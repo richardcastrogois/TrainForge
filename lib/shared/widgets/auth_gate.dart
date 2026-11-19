@@ -7,17 +7,26 @@ import 'package:trainforge/composition/app_dependency_scope.dart';
 import 'package:trainforge/features/auth/presentation/auth_controller.dart';
 import 'package:trainforge/features/auth/presentation/pages/auth_page.dart';
 import 'product_shell.dart';
+import 'package:trainforge/features/legal/legal_controller.dart';
+import 'package:trainforge/features/legal/presentation/legal_pages.dart';
 
 class AuthGate extends StatefulWidget {
   final AuthController? controller;
   final NutritionRepository? nutritionRepository;
-  const AuthGate({super.key, this.controller, this.nutritionRepository});
+  final LegalController? legal;
+  const AuthGate({
+    super.key,
+    this.controller,
+    this.nutritionRepository,
+    this.legal,
+  });
   @override
   State<AuthGate> createState() => _AuthGateState();
 }
 
 class _AuthGateState extends State<AuthGate> {
   late final AuthController controller;
+  late final LegalController legal = widget.legal ?? LegalController();
   String? accountId;
   @override
   void initState() {
@@ -30,6 +39,7 @@ class _AuthGateState extends State<AuthGate> {
     accountId = controller.profile?.id;
     controller.addListener(accountChanged);
     controller.restore();
+    if (!legal.loaded) legal.load();
   }
 
   void accountChanged() {
@@ -48,31 +58,62 @@ class _AuthGateState extends State<AuthGate> {
   void dispose() {
     controller.removeListener(accountChanged);
     if (widget.controller == null) controller.dispose();
+    if (widget.legal == null) legal.dispose();
     super.dispose();
   }
 
   @override
   Widget build(BuildContext context) => ListenableBuilder(
-    listenable: controller,
+    listenable: Listenable.merge([controller, legal]),
     builder: (context, _) {
       final profile = controller.profile;
+      if (!legal.loaded) {
+        return StartupPage(label: context.l10n.preparing);
+      }
+      // Terms and Privacy come before any use, signed in or as a visitor.
+      if (legal.needsTerms) {
+        return LegalConsentPage(
+          key: const ValueKey('legal-consent'),
+          controller: legal,
+        );
+      }
       // Only session restoration covers the screen; sign-in keeps the entry visible.
       if (controller.restoring && profile == null) {
         return StartupPage(label: context.l10n.restoringSession);
       }
       if (profile == null) {
         // No fade: the entry continues the splash on the same green canvas.
-        return AuthPage(
-          key: const ValueKey('signed-out'),
-          controller: controller,
+        return LegalScope(
+          controller: legal,
+          child: AuthPage(
+            key: const ValueKey('signed-out'),
+            controller: controller,
+          ),
         );
       }
-      return AppAppear(
-        key: ValueKey(profile.id),
-        child: ProductShell(
+      if (!legal.healthLoaded(profile.id)) {
+        final id = profile.id;
+        WidgetsBinding.instance.addPostFrameCallback((_) {
+          if (mounted) legal.loadAccount(id);
+        });
+        return StartupPage(label: context.l10n.restoringSession);
+      }
+      if (legal.healthGranted(profile.id) == null) {
+        return HealthConsentPage(
+          key: ValueKey('health-${profile.id}'),
+          controller: legal,
+          accountId: profile.id,
+        );
+      }
+      return LegalScope(
+        controller: legal,
+        child: AppAppear(
           key: ValueKey(profile.id),
-          controller: controller,
-          nutritionRepository: widget.nutritionRepository,
+          child: ProductShell(
+            key: ValueKey(profile.id),
+            controller: controller,
+            nutritionRepository: widget.nutritionRepository,
+          ),
         ),
       );
     },

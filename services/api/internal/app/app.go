@@ -13,6 +13,7 @@ import (
 	"trainforge.local/api/internal/auth"
 	"trainforge.local/api/internal/catalog"
 	"trainforge.local/api/internal/catalogbridge"
+	"trainforge.local/api/internal/legal"
 	"trainforge.local/api/internal/nutrition"
 	"trainforge.local/api/internal/platform/config"
 	"trainforge.local/api/internal/platform/httpapi"
@@ -96,5 +97,10 @@ func New(ctx context.Context, c config.Config, logger *slog.Logger) (http.Handle
 	}
 	trainingHTTP := &trainingconfig.Handler{Service: trainingconfig.Service{Repository: trainingStore}, ResourceStore: trainingStore, Authorize: authentication.Service.Authorize}
 	activityHTTP := &activity.Handler{Store: activityStore, Authorize: authentication.Service.Authorize}
-	return httpapi.NewWithNetwork(db, logger, c.RequestTimeout, docs, network, authentication.Register, catalogRoutes, foodHTTP.Register, privacyHTTP.Register, nutritionHTTP.Register, nutritionSyncHTTP.Register, contributionsHTTP.Register, foodFiles.Register, trainingHTTP.Register, activityHTTP.Register), cleanup, nil
+	var legalRepository legal.Repository
+	if pool != nil {
+		legalRepository = legal.Postgres{Pool: pool}
+	}
+	legalHTTP := &legal.Handler{Repository: legalRepository, Authorize: authentication.Service.Authorize}
+	return httpapi.NewWithNetwork(db, logger, c.RequestTimeout, docs, network, authentication.Register, catalogRoutes, foodHTTP.Register, privacyHTTP.Register, nutritionHTTP.Register, nutritionSyncHTTP.Register, contributionsHTTP.Register, foodFiles.Register, trainingHTTP.Register, activityHTTP.Register, legalHTTP.Register), cleanup, nil
 }

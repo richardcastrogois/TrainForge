@@ -1,16 +1,16 @@
 {
   "schemaVersion": 2,
-  "inputRevision": "15e46fc3bf4f9f020e335e9cdc206e0485e6abd8a6d25dd71f06bc95fc982e13",
+  "inputRevision": "93f7842d26d6a7cb97e64e5dfebdf0070eba931a06b9bd258527b2ef2caf0cb3",
   "inputs": {
     "contracts/generated/catalog-m1.swagger.json": "7f59b699f1c4c032e0652c31f44fac9a8d3a77115639a24408725427e97b0339",
-    "contracts/generated/swagger-v1.json": "8c99bc5411793d8d23228a1f3b10d71c17bebd7248e3217322152d1e7b60e218",
+    "contracts/generated/swagger-v1.json": "4a87cb3da8b20510f236ef3f1aefb3eb2149a7faad47ba02d144f4d1ee67004d",
     "docs/arquitetura/achados.json": "df4d63722b7b6969773069d12d2118ca8ed3aab1b19dd7a6747ea49f1dd34984",
     "docs/arquitetura/plano.json": "b6be7e4a7c2704f72bcd2dd178672f7664a0e706ecbd59feb46703108460a3f9",
     "docs/execucao/v1/backlog.json": "076e0d6872cf6933462199a77509f1e5612138a520610fb5c77dcbc5b8dd0fef",
     "lib/app.dart": "1a426b32684acb785ac87724830add377dbf6ad5238225188511ea780741d58e",
     "lib/composition/app_dependencies.dart": "4e04859db8df492166d72c93d0955e98db857783655fa59a0c2e3ab9115101ac",
     "lib/composition/app_dependency_scope.dart": "c149782bd02002a8c3a9f8ec4a66fed667e46c7375c70c006163beb78f8bd0cb",
-    "lib/composition/production_dependencies.dart": "205a65db29ed9d2e48c908379c9b119a5703c0acc725aa9dc26bb00b9997a603",
+    "lib/composition/production_dependencies.dart": "34dd0e30478747c3c1e9970e617fbbf50ec92853c67fc9d2234338bd26851e6f",
     "lib/core/config/app_config.dart": "46c2a002b7d5021444a9e60ebb717203b43efb9f1ded38dca45f234563f4ce61",
     "lib/core/http/app_dio.dart": "d4b677d880c89f52ce17369a1e6cf485fe71f1a34c56533bf62abec0355d0e65",
     "lib/core/l10n/feedback_localization.dart": "1befe8f6c586cd98a4804a68874448953b05a83cf522ade9ba8ddfd80e063098",
@@ -62,11 +62,17 @@
     "lib/features/food_reference/presentation/food_labels.dart": "4c10a94596bf42f566fa51a8e94eaac3ca4831add72e3f0782e02fd84282d309",
     "lib/features/food_reference/presentation/food_page.dart": "5763653ce3c6ef373d82dd489711a8e8b0a69cfa428d2cafdf0b3b19b727c3dd",
     "lib/features/home/presentation/pages/today_page.dart": "93f240ab972b62adee5c1796d1dcea3a6abfd0c866bef37f075cd1c0c9b26a66",
+    "lib/features/legal/legal_consent_store.dart": "33ea7c1eca83e0994cb3536f1d863c26ef38445b38b74ee7c3e4ee25aebcf361",
+    "lib/features/legal/legal_controller.dart": "0456410a1bd099f2992e20017d04b152cfd63c6cf258ef22000fff5fe580400f",
+    "lib/features/legal/legal_documents.dart": "f27975d615ece13cee91f455dc3e6072a66f7b31b9dcaaaac5bfb6362ea84dc9",
+    "lib/features/legal/presentation/legal_labels.dart": "aaea34be9dc2eec0e15864f72dbc3116ec3fbecf1abf5cb4872ce41e00198fde",
+    "lib/features/legal/presentation/legal_pages.dart": "1b760d6411739ece5040571191c2cf391f0d0fdc212f64365031f6ab314bde30",
+    "lib/features/legal/presentation/staggered_entrance.dart": "4c25098b4e14302005f5b106bddc61689e692c7dc89d8faa1a08943c3a565020",
     "lib/features/nutrition/data/calculation_parity.dart": "4e09bf43be5beab92120f69d11adc18e93c48ba0bcdb60b0b315ec634a96b273",
     "lib/features/nutrition/data/nutrition_local_store.dart": "387e13b2c7de229a92e7d45ee916956c81a223a051faf81454547bce06fcca66",
     "lib/features/nutrition/data/nutrition_repository.dart": "4f6610b64dfbad5f84d0b51adadce495870b48da4a9b21204302666ec28dd343",
     "lib/features/nutrition/data/nutrition_sync.dart": "8efd622979ac47e66813235fcdbf51189ad503c35e57025c7419758cd0ed2cad",
-    "lib/features/nutrition/data/offline_nutrition_repository.dart": "35d042531f10f86777e00ebf913e963a62dcabf5c346c56af89a2a55dd7c1011",
+    "lib/features/nutrition/data/offline_nutrition_repository.dart": "12ea972007666cc925d90881459d04a9d7910ae3a31640eb71af6c5946bccfc2",
     "lib/features/nutrition/domain/exact_nutrition.dart": "c9770480dc1c4e2fa21dddd96b2535e4b23348e81130942b1a826ff940fb6cbf",
     "lib/features/nutrition/domain/meals.dart": "aab415a29574a4c84a3345aa754cd27aeb96c7dc43d47101b3e120397fc1725a",
     "lib/features/nutrition/domain/nutrition.dart": "48d8116cf17504d057b49ef7bb010f99ac434bfc4f8b0368ee38f2a7803ee3cf",
@@ -75,7 +81,7 @@
     "lib/features/nutrition/presentation/entry_detail_page.dart": "cf8a064952b4d2b940529b62569b999ede7c2d3c82ca1da15042eb198c0b33aa",
     "lib/features/nutrition/presentation/entry_read_controller.dart": "cf3a0d40c1eebf83826cb41da855fb6f085d6f5d7d78797f82cc2cef6fe63e7a",
     "lib/features/nutrition/presentation/food_contribution_page.dart": "0173381f2dc6e1112ee1d548e98b5c827b1446ac561057543132256eb0b27ba1",
-    "lib/features/nutrition/presentation/food_offline_labels.dart": "59e2055c66e464346d156f2ad18abe49cb28783106b20483557366b84b64f26f",
+    "lib/features/nutrition/presentation/food_offline_labels.dart": "38e03a48c54a82b7161796856526a845ffbe555d521f6b8a1a723a74ac487760",
     "lib/features/nutrition/presentation/meal_controllers.dart": "035f86c358066f935bb85f55ccfe74a3477ae3ca377c40858f266f040cc0d20a",
     "lib/features/nutrition/presentation/meal_detail_page.dart": "054c7343cf01be42a8abf4a6648f7f679389bbed8dcb533dd2d9b9e94d928cc4",
     "lib/features/nutrition/presentation/meal_diary_page.dart": "7781ec3a00443081736a99423924e5cf6520ed727dca87236f4060f8b80bf55d",
@@ -85,11 +91,11 @@
     "lib/features/nutrition/presentation/nutrition_controller.dart": "ff682bfad897364992f6a914df4afc3dcf4b8b3277357971c8f5841978988585",
     "lib/features/nutrition/presentation/nutrition_facts.dart": "8e4d252ca371a7b0cc31bef7acfe7d3183e35519225498003d30ba2804a99b91",
     "lib/features/nutrition/presentation/nutrition_feedback.dart": "b0dc077fb83fbbb7c0e0a403f076008307e96914f4f09c8124085b4bbdb1637d",
-    "lib/features/nutrition/presentation/nutrition_forms.dart": "ac46a5ff3f16acc77734e1a08dd1bf79694a2a676c9495adca6d4e1dd63d4706",
+    "lib/features/nutrition/presentation/nutrition_forms.dart": "bf81e606353d24bdf55cf9fc2bccbb61de5129bf39b184fac03c800e1f31f263",
     "lib/features/nutrition/presentation/nutrition_messages.dart": "f6a020b3e6a86e8e15110f41bd49ee38ae69ef1656f1a64ea279594dc35fff51",
     "lib/features/nutrition/presentation/nutrition_page.dart": "bd74f6c4d3862732a9f9669fba6918ee3c4de8d52b6af2f60492edde58c96e37",
     "lib/features/nutrition/presentation/nutrition_totals_card.dart": "638d047d7bdde846bac4ceb9591dabe9dcbc15b10b1d06aa15c25db08db83311",
-    "lib/features/nutrition/presentation/offline_sync_panel.dart": "61f13eb1bece3aaa412c5ecb3e53109aa6e88b5927ec06763b78aab27c10ed08",
+    "lib/features/nutrition/presentation/offline_sync_panel.dart": "93f5ddd2d2e16d03749b0f43411c716af09fbe6ac4531de194fb4436ad13a23e",
     "lib/features/nutrition/presentation/own_food_picker_page.dart": "b64414ac7814e754c4084175736832d21223e7c24262c50001d18fe167c75193",
     "lib/features/nutrition/presentation/own_food_portions_editor.dart": "3068e8780c84c165f68f623f6ee29726d4ece26c8d9cc3621d7dfe52c5976272",
     "lib/features/privacy/data/privacy_repository.dart": "d3d4f7225c68c39353f9700191942d4609d4486d96a2558cdb2c10d8493c6e23",
@@ -107,9 +113,9 @@
     "lib/l10n/generated/app_localizations_es.dart": "ee43ab2bc0567cb16606ed35ebc313bb699f23ba2ad14e55d63bafcaefac4c7d",
     "lib/l10n/generated/app_localizations_pt.dart": "43a80cff86c919491be77cc27654ff8d2df71b0015dd5beab3401e6730e4d032",
     "lib/main.dart": "52f6c5157237688537f3708474237531876f1340ada0a363c0ddda8bcf38ce7f",
-    "lib/shared/widgets/account_page.dart": "b03596fe0e4cced58e8dd31e65fd34905c4e9040476ee5b122510f3c959fa6fc",
+    "lib/shared/widgets/account_page.dart": "c7324fca0923ea4279a78061ff70a3ed67c2b163338ba83b659a49ed4f549a7c",
     "lib/shared/widgets/app_loading.dart": "b041a11b964f4943b9902ee7dd380171a2cdca8f9440fa06658b329ee8bb66e3",
-    "lib/shared/widgets/auth_gate.dart": "cd7d57ea0d6a8b7af58333f57eb80989a851c8ad9f81ee9077422c258825bb24",
+    "lib/shared/widgets/auth_gate.dart": "88bda1c499eed34a74ec6c01f3749f32724e223765e0edadeda154545a90fe02",
     "lib/shared/widgets/content_sources_page.dart": "a16105129b7752cc229a221c2b06dd4c8c66624505b59b2a4456aca0d22ca101",
     "lib/shared/widgets/draft_guard.dart": "e07551083f2f42de6b6787ab3c354a9f9d8c75b65f71e25a076f8bcbd596f28b",
     "lib/shared/widgets/evaluation_guide_page.dart": "302e04793b0e634b756d7a8785f9f64d74a03653a27f85f7ec7285249fd24900",
@@ -143,7 +149,7 @@
     "services/api/internal/activity/prescription.go": "d19c37f674dad0b9c3de4ee5e9cf73a9248a7de42c49926cc236ad61a452cba3",
     "services/api/internal/activity/service.go": "49d991de4addcfeef7df2f25915c12839ddea09f614718f01cb0771f10172bee",
     "services/api/internal/activity/session.go": "a78df275de1428b02785e6d1e2e39721a46bff0d620d2007d54f103a0e1cb791",
-    "services/api/internal/app/app.go": "a2625fdb787a7a89c9d87ae74cff82a4736d425b626dc7916c956224828eae86",
+    "services/api/internal/app/app.go": "0ea64d11f02576234332a22f210459a6263449d1bc7e0ab82c74d655111eab6d",
     "services/api/internal/auth/doc.go": "8139fc3bc1fb0a4ecf86bcc2a26dbbfea0a950536b72503d6af1b82f50674da9",
     "services/api/internal/auth/google.go": "c2f8052eaf2419412d421a13c311de99d6a26eeb467537bbb95217add8253be9",
     "services/api/internal/auth/handler.go": "5745d4396a4eb2e1b54651f016678017a3974542dcc7328b129e2648dd80135a",
@@ -166,6 +172,8 @@
     "services/api/internal/catalogtarget/target.go": "d64cd2268b10003a0fe1f05d536fe303f8b6fe862f642264d6990d414315ddf0",
     "services/api/internal/foodnamesops/package.go": "149f7c8416af93699aa1613186fef0e4f190df303a92cbd385e7c5c0eba6e3c4",
     "services/api/internal/foodnamesops/run.go": "89ed0d151d2aa70ea9aa91e2169d3810c4ea7975a9f0923cfa422ea562bae5b7",
+    "services/api/internal/legal/handler.go": "d16fd88f2f0787df1daa1c03daefe872f3a23744a4d3732a3854819e11f5b6bd",
+    "services/api/internal/legal/legal.go": "f69bf29c4a391edfce170cca536ade8924d5fae13d9bf5c7ee2ed87a2dc85a92",
     "services/api/internal/nutrition/canonical.go": "4f7a83752fbb0199a8f2c0091a6932419ecb729c9b004a23d489fce38723719b",
     "services/api/internal/nutrition/catalog_bundle.go": "48a68c40ea310ea87776df2065ca3a6b4b7ad4e8431435aac59ee39a2502f672",
     "services/api/internal/nutrition/catalog_import.go": "9604c7f6254a905b44769eca96d0f79e39b946ca9f4c72edcb6edc89b056f924",
@@ -214,7 +222,7 @@
     "services/api/internal/privacy/privacy.go": "477c5751c079c916c9ae2d694f5be25e95c7f4c03bf07ca480a62ad1f9bde69d",
     "services/api/internal/privacy/restore.go": "ebae788a93e7bff709eceff5af1c0d65d120fd033ef0a235c18114867afe4dfd",
     "services/api/internal/publiccatalog/files.go": "8fc3e879ee919d4f91ce5c3a5e88380f5b6f18b12a28d36f0d643c904ac3e7fd",
-    "services/api/internal/swaggerdocs/docs.go": "9fbf3376062bf40150356536b00f7b8664c8848fa90926bfcaa0789da62fdec3",
+    "services/api/internal/swaggerdocs/docs.go": "2ae3a232d54fd3dfd42ce2baebc318bd332fd24b6bb8edf4648ee52fb9d988c6",
     "services/api/internal/trainingconfig/handler.go": "91ae45e50be819c31ff131fad2fab6572a2e23805338cc6df3bdd01357471bf8",
     "services/api/internal/trainingconfig/model.go": "326fd6f118cef58cb34eeefc5deb254bb3130a708f2e2a9b9232084e193fcae2",
     "services/api/internal/trainingconfig/postgres.go": "64e903486724f7adc4f3190ab794a3dbf3d00efa12e0692c58b3f4043455bd44",
@@ -236,6 +244,7 @@
     "services/api/migrations/00014_nutrition_offline.sql": "e5f9e5090b9d901e4795bca134cf6ac0747061ec8618871291af50ec2fda4c6e",
     "services/api/migrations/00015_food_contributions.sql": "fcce1c22736f3b9826e3727ebb700666c500e7fa54c6d95a445cd7fc175599ce",
     "services/api/migrations/00016_food_catalog_releases.sql": "281cd398b1355f508660bfa105d2ee1caea315b846c15803dd0a00e9dbb1a98c",
+    "services/api/migrations/00017_legal_consents.sql": "9e3e029b47e9efbbffb4e2db19193000e4974548b85ddccd0d48e5e8c3009d21",
     "services/api/migrations/files.go": "93671bcc8533e02c98368384e6e0261f2f5a70407f64166aa557535d40dabbaa",
     "services/api/serverless/serverless.go": "96fbcc812b31950f1c4371d018d0eb08cb8bb28c0cc11cd5f0721ac593473391",
     "tools/alimentos_lote.py": "68e31390f1dd5cbee54c855901d87f9908f63a8bb972a68c02c95ca2f2bd6ddd",
@@ -243,7 +252,7 @@
     "tools/android_security_inventory.py": "fc265147ef83d0852abfb8966814d45bef05ecc883f381c1133bb683a52a81c4",
     "tools/android_signing.py": "8e8e4abd4b70b88b8c2eaa3c5917a347061c0747977bfc7c392b6b01380b0e34",
     "tools/aplicar_exclusoes_restore.py": "c5562fd3213c1824367110115382bdafb0395891204df316b39005d81d0ae93d",
-    "tools/ativar_alimentacao_offline_local.py": "bebeb07bfa23fd59a0a4a521755ca585b6d882596aca33bd794821ba4ea0ae14",
+    "tools/ativar_alimentacao_offline_local.py": "3386751ceabfb35ed6e51b94083d13f7da08ed5602a8ee2d3413b60d5eeaedaf",
     "tools/ativar_configuracao_local.py": "341e5463f75be49c174eb21d0bf20343ecb6574355735a3ed41ad78d9935f4c2",
     "tools/ativar_refeicoes_local.py": "a7ec395a586c97358ed7163d37619f5bac01a78560dab288092887b25085177e",
     "tools/atualizar_graphify.py": "9ee4eae18575ba63802da07c3f521ccbd30d8a1737b976875b53b137898abfe0",
@@ -254,7 +263,7 @@
     "tools/catalog_rollout_ci.py": "1d04e5ae729204ff0346f4abc286561c087148b0165c0910f5b3c6f3833d305e",
     "tools/conteudo_editorial.py": "2e6bc4dbd6b8b80c686018aa4083a7cde97fcef91844b584b4aa73596bbfd4ca",
     "tools/db_local.py": "72dbef85f5618c5f75c2dcc6af4547448f11a0a56a98f219dde3d66d4548add7",
-    "tools/db_permissions.py": "00c23ac3f0d4fa0535e83a4a386aa7717c0ceabdab6a5be6175cf49351efc9cf",
+    "tools/db_permissions.py": "0c7521969d3a9420a9c15bcf7afbdc0f4671c25fd3853e2691c45899a8d24419",
     "tools/dev_api.py": "40ce01e21da13f5e2425963dffa43c7b2e3d92ab52cc21e5e6a11f5d1051e28f",
     "tools/documentacao_backlog.py": "24139b729cb72175bbf8bae73dba635206a1dae94a12f3bede6a091fa263f3b1",
     "tools/documentacao_inventario.py": "8db5d7827125abda86264cc929f9564a22f8203cf31a082c0e7df8c2c8ddb8e8",
@@ -285,12 +294,12 @@
     "tools/preparar_conteudo_local.py": "e65f64541eccc390f8c52fb3aad7ecf8c97823c0941abb903df8bcc99be3a36a",
     "tools/preparar_release_android.py": "35d5f8a34f1388068675834067792d2a9b646a843ce61b508eb8fcc67c28a627",
     "tools/prepare_history_remediation.py": "4a84ca42de16cf52c4cdca55c69969d1c95495a08bcc12d71caad888b321f513",
-    "tools/restore_ci.py": "8bdf0b1e1a8683e53dee32eccd38b479027d41cf8ab069558dd15c8699e24c80",
+    "tools/restore_ci.py": "6b868bf119bdf80feb0827e0af5996afe27fab5a94374aa85042c9d1df0fe2b4",
     "tools/revisar_alimentos_v1.py": "3f1c34c48c94cd38ccd9bba7133fb7b4c67c0054040bcadc0356ae3839612f91",
     "tools/revisar_conteudo_local.py": "11b2ddb2bb43bbd07ade17ef630f37ed45d69500310672e17d80f1adfb622090",
     "tools/secret_ci.py": "a79a87e3597cdb58fc2edd8bb3413663ee78d8e9dfc9709b039044ba306d4270",
     "tools/secret_review.py": "22be62c2e1917e54414030c6fcde6e3cdba30864b318d158fe25d4ed02f8dd22",
-    "tools/sql_ci.py": "09cb23441f2196de35824ca2a86cf8bbb5a82486cf7e993fe68158402a0e2f9b",
+    "tools/sql_ci.py": "4240a15da481a01d350f13d92fefe6a7e478f91dbaf8dcb9fa51199a4d21dcab",
     "tools/test_alimentos_lote.py": "eaba7be2f68b933e1c3887f3dcd553791090ff1f04cbfc56cf8f0ebaf5a36640",
     "tools/test_ambiente.py": "46e0e2a86dee55d74cc7c7dacfe2d8225820ba1bf93e9793b1d1f40a43611313",
     "tools/test_android_security_inventory.py": "55841b6038e5d76220306ea490b54ffce292a44a7d0ca496ed842c9db2ece910",
@@ -344,10 +353,10 @@
     "tools/verificar_refeicoes_local.py": "3edaca4b221d8b2ed67a11813f719bbc4526bcd8a9e330c00600cbabfaab879c"
   },
   "coverage": {
-    "dartFiles": 114,
-    "httpCalls": 34,
-    "goFiles": 99,
-    "goRegistrations": 53
+    "dartFiles": 120,
+    "httpCalls": 35,
+    "goFiles": 101,
+    "goRegistrations": 55
   },
   "groups": [
     {
@@ -442,6 +451,21 @@
         {
           "repository": "trainforge",
           "path": "lib/features/home/presentation/pages/today_page.dart",
+          "line": 1
+        },
+        {
+          "repository": "trainforge",
+          "path": "lib/features/legal/presentation/legal_labels.dart",
+          "line": 1
+        },
+        {
+          "repository": "trainforge",
+          "path": "lib/features/legal/presentation/legal_pages.dart",
+          "line": 1
+        },
+        {
+          "repository": "trainforge",
+          "path": "lib/features/legal/presentation/staggered_entrance.dart",
           "line": 1
         },
         {
@@ -1385,6 +1409,38 @@
       }
     },
     {
+      "id": "LegalConsentPage",
+      "source": {
+        "repository": "trainforge",
+        "path": "lib/features/legal/presentation/legal_pages.dart",
+        "line": 10
+      }
+    },
+    {
+      "id": "HealthConsentPage",
+      "source": {
+        "repository": "trainforge",
+        "path": "lib/features/legal/presentation/legal_pages.dart",
+        "line": 107
+      }
+    },
+    {
+      "id": "LegalSettingsPage",
+      "source": {
+        "repository": "trainforge",
+        "path": "lib/features/legal/presentation/legal_pages.dart",
+        "line": 188
+      }
+    },
+    {
+      "id": "LegalDocumentPage",
+      "source": {
+        "repository": "trainforge",
+        "path": "lib/features/legal/presentation/legal_pages.dart",
+        "line": 294
+      }
+    },
+    {
       "id": "EntryDetailPage",
       "source": {
         "repository": "trainforge",
@@ -1453,7 +1509,7 @@
       "source": {
         "repository": "trainforge",
         "path": "lib/features/nutrition/presentation/nutrition_forms.dart",
-        "line": 550
+        "line": 549
       }
     },
     {
@@ -1493,7 +1549,7 @@
       "source": {
         "repository": "trainforge",
         "path": "lib/shared/widgets/account_page.dart",
-        "line": 15
+        "line": 18
       }
     },
     {
@@ -1501,7 +1557,7 @@
       "source": {
         "repository": "trainforge",
         "path": "lib/shared/widgets/auth_gate.dart",
-        "line": 11
+        "line": 13
       }
     },
     {
@@ -1637,6 +1693,114 @@
       }
     },
     {
+      "from": "LegalConsentPage",
+      "to": "HealthConsentPage",
+      "source": {
+        "repository": "trainforge",
+        "path": "lib/features/legal/presentation/legal_pages.dart",
+        "line": 110
+      }
+    },
+    {
+      "from": "LegalConsentPage",
+      "to": "LegalSettingsPage",
+      "source": {
+        "repository": "trainforge",
+        "path": "lib/features/legal/presentation/legal_pages.dart",
+        "line": 191
+      }
+    },
+    {
+      "from": "LegalConsentPage",
+      "to": "LegalDocumentPage",
+      "source": {
+        "repository": "trainforge",
+        "path": "lib/features/legal/presentation/legal_pages.dart",
+        "line": 297
+      }
+    },
+    {
+      "from": "HealthConsentPage",
+      "to": "LegalConsentPage",
+      "source": {
+        "repository": "trainforge",
+        "path": "lib/features/legal/presentation/legal_pages.dart",
+        "line": 13
+      }
+    },
+    {
+      "from": "HealthConsentPage",
+      "to": "LegalSettingsPage",
+      "source": {
+        "repository": "trainforge",
+        "path": "lib/features/legal/presentation/legal_pages.dart",
+        "line": 191
+      }
+    },
+    {
+      "from": "HealthConsentPage",
+      "to": "LegalDocumentPage",
+      "source": {
+        "repository": "trainforge",
+        "path": "lib/features/legal/presentation/legal_pages.dart",
+        "line": 297
+      }
+    },
+    {
+      "from": "LegalSettingsPage",
+      "to": "LegalConsentPage",
+      "source": {
+        "repository": "trainforge",
+        "path": "lib/features/legal/presentation/legal_pages.dart",
+        "line": 13
+      }
+    },
+    {
+      "from": "LegalSettingsPage",
+      "to": "HealthConsentPage",
+      "source": {
+        "repository": "trainforge",
+        "path": "lib/features/legal/presentation/legal_pages.dart",
+        "line": 110
+      }
+    },
+    {
+      "from": "LegalSettingsPage",
+      "to": "LegalDocumentPage",
+      "source": {
+        "repository": "trainforge",
+        "path": "lib/features/legal/presentation/legal_pages.dart",
+        "line": 297
+      }
+    },
+    {
+      "from": "LegalDocumentPage",
+      "to": "LegalConsentPage",
+      "source": {
+        "repository": "trainforge",
+        "path": "lib/features/legal/presentation/legal_pages.dart",
+        "line": 13
+      }
+    },
+    {
+      "from": "LegalDocumentPage",
+      "to": "HealthConsentPage",
+      "source": {
+        "repository": "trainforge",
+        "path": "lib/features/legal/presentation/legal_pages.dart",
+        "line": 110
+      }
+    },
+    {
+      "from": "LegalDocumentPage",
+      "to": "LegalSettingsPage",
+      "source": {
+        "repository": "trainforge",
+        "path": "lib/features/legal/presentation/legal_pages.dart",
+        "line": 191
+      }
+    },
+    {
       "from": "EntryDetailPage",
       "to": "EntryFormPage",
       "source": {
@@ -1741,7 +1905,7 @@
       "source": {
         "repository": "trainforge",
         "path": "lib/features/nutrition/presentation/nutrition_forms.dart",
-        "line": 553
+        "line": 552
       }
     },
     {
@@ -1840,7 +2004,7 @@
       "source": {
         "repository": "trainforge",
         "path": "lib/shared/widgets/account_page.dart",
-        "line": 168
+        "line": 171
       }
     },
     {
@@ -1849,7 +2013,16 @@
       "source": {
         "repository": "trainforge",
         "path": "lib/shared/widgets/account_page.dart",
-        "line": 156
+        "line": 159
+      }
+    },
+    {
+      "from": "AccountPage",
+      "to": "LegalSettingsPage",
+      "source": {
+        "repository": "trainforge",
+        "path": "lib/shared/widgets/account_page.dart",
+        "line": 203
       }
     },
     {
@@ -1858,7 +2031,7 @@
       "source": {
         "repository": "trainforge",
         "path": "lib/shared/widgets/account_page.dart",
-        "line": 22
+        "line": 25
       }
     },
     {
@@ -1867,7 +2040,7 @@
       "source": {
         "repository": "trainforge",
         "path": "lib/shared/widgets/account_page.dart",
-        "line": 200
+        "line": 220
       }
     },
     {
@@ -1876,7 +2049,25 @@
       "source": {
         "repository": "trainforge",
         "path": "lib/shared/widgets/auth_gate.dart",
-        "line": 65
+        "line": 88
+      }
+    },
+    {
+      "from": "AuthGate",
+      "to": "LegalConsentPage",
+      "source": {
+        "repository": "trainforge",
+        "path": "lib/shared/widgets/auth_gate.dart",
+        "line": 75
+      }
+    },
+    {
+      "from": "AuthGate",
+      "to": "HealthConsentPage",
+      "source": {
+        "repository": "trainforge",
+        "path": "lib/shared/widgets/auth_gate.dart",
+        "line": 102
       }
     },
     {
@@ -1885,7 +2076,7 @@
       "source": {
         "repository": "trainforge",
         "path": "lib/shared/widgets/auth_gate.dart",
-        "line": 72
+        "line": 112
       }
     },
     {
@@ -1894,7 +2085,7 @@
       "source": {
         "repository": "trainforge",
         "path": "lib/shared/widgets/auth_gate.dart",
-        "line": 61
+        "line": 71
       }
     },
     {
@@ -2306,6 +2497,29 @@
             "repository": "trainforge",
             "path": "services/api/internal/nutrition/handler.go",
             "line": 18
+          }
+        }
+      ]
+    },
+    {
+      "method": "POST",
+      "path": "/api/v1/me/legal-consents",
+      "keys": [
+        "items"
+      ],
+      "source": {
+        "repository": "trainforge",
+        "path": "lib/features/legal/legal_controller.dart",
+        "line": 194
+      },
+      "goMatches": [
+        {
+          "method": "POST",
+          "path": "/api/v1/me/legal-consents",
+          "source": {
+            "repository": "trainforge",
+            "path": "services/api/internal/legal/handler.go",
+            "line": 26
           }
         }
       ]
@@ -2762,6 +2976,8 @@
       "services/api/internal/catalogtarget/target.go",
       "services/api/internal/foodnamesops/package.go",
       "services/api/internal/foodnamesops/run.go",
+      "services/api/internal/legal/handler.go",
+      "services/api/internal/legal/legal.go",
       "services/api/internal/nutrition/canonical.go",
       "services/api/internal/nutrition/catalog_bundle.go",
       "services/api/internal/nutrition/catalog_import.go",
@@ -3157,6 +3373,50 @@
           "repository": "trainforge",
           "path": "services/api/internal/catalog/handler.go",
           "line": 164
+        },
+        "registrationDetected": true
+      },
+      {
+        "method": "GET",
+        "path": "/api/v1/me/legal-consents",
+        "params": [],
+        "responses": [
+          [
+            "Success",
+            "200 {object} Current"
+          ],
+          [
+            "Failure",
+            "401,426,429,503 {object} httpapi.Problem"
+          ]
+        ],
+        "source": {
+          "repository": "trainforge",
+          "path": "services/api/internal/legal/handler.go",
+          "line": 79
+        },
+        "registrationDetected": true
+      },
+      {
+        "method": "POST",
+        "path": "/api/v1/me/legal-consents",
+        "params": [
+          "body body RecordRequest true \"One to three decisions\""
+        ],
+        "responses": [
+          [
+            "Success",
+            "200 {object} Current"
+          ],
+          [
+            "Failure",
+            "400,401,413,415,426,429,503 {object} httpapi.Problem"
+          ]
+        ],
+        "source": {
+          "repository": "trainforge",
+          "path": "services/api/internal/legal/handler.go",
+          "line": 98
         },
         "registrationDetected": true
       },
@@ -4170,6 +4430,7 @@
       "internal/catalogschema",
       "internal/catalogtarget",
       "internal/foodnamesops",
+      "internal/legal",
       "internal/nutrition",
       "internal/platform/config",
       "internal/platform/httpapi",
@@ -4296,6 +4557,10 @@
       ],
       [
         "internal/app",
+        "internal/legal"
+      ],
+      [
+        "internal/app",
         "internal/nutrition"
       ],
       [
@@ -4371,6 +4636,14 @@
         "internal/platform/postgres"
       ],
       [
+        "internal/legal",
+        "internal/auth"
+      ],
+      [
+        "internal/legal",
+        "internal/platform/httpapi"
+      ],
+      [
         "internal/nutrition",
         "internal/auth"
       ],
@@ -4427,7 +4700,8 @@
       "services/api/migrations/00013_meal_groups.sql",
       "services/api/migrations/00014_nutrition_offline.sql",
       "services/api/migrations/00015_food_contributions.sql",
-      "services/api/migrations/00016_food_catalog_releases.sql"
+      "services/api/migrations/00016_food_catalog_releases.sql",
+      "services/api/migrations/00017_legal_consents.sql"
     ],
     "tables": [
       {
@@ -4733,6 +5007,14 @@
           "path": "services/api/migrations/00016_food_catalog_releases.sql",
           "line": 22
         }
+      },
+      {
+        "name": "legal_consents",
+        "source": {
+          "repository": "trainforge",
+          "path": "services/api/migrations/00017_legal_consents.sql",
+          "line": 5
+        }
       }
     ],
     "registrations": [
@@ -4860,6 +5142,24 @@
           "repository": "trainforge",
           "path": "services/api/internal/catalogruntime/runtime.go",
           "line": 88
+        }
+      },
+      {
+        "method": "GET",
+        "path": "/api/v1/me/legal-consents",
+        "source": {
+          "repository": "trainforge",
+          "path": "services/api/internal/legal/handler.go",
+          "line": 25
+        }
+      },
+      {
+        "method": "POST",
+        "path": "/api/v1/me/legal-consents",
+        "source": {
+          "repository": "trainforge",
+          "path": "services/api/internal/legal/handler.go",
+          "line": 26
         }
       },
       {
@@ -8089,6 +8389,120 @@
           },
           "415": {
             "description": "Unsupported Media Type",
+            "schema": {
+              "$ref": "#/definitions/httpapi.Problem"
+            }
+          },
+          "429": {
+            "description": "Too Many Requests",
+            "schema": {
+              "$ref": "#/definitions/httpapi.Problem"
+            }
+          },
+          "503": {
+            "description": "Service Unavailable",
+            "schema": {
+              "$ref": "#/definitions/httpapi.Problem"
+            }
+          }
+        },
+        "source": {
+          "repository": "trainforge",
+          "path": "contracts/generated/swagger-v1.json",
+          "line": 1
+        }
+      },
+      {
+        "method": "GET",
+        "path": "/api/v1/me/legal-consents",
+        "operationId": null,
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/legal.Current"
+            }
+          },
+          "401": {
+            "description": "Unauthorized",
+            "schema": {
+              "$ref": "#/definitions/httpapi.Problem"
+            }
+          },
+          "426": {
+            "description": "Upgrade Required",
+            "schema": {
+              "$ref": "#/definitions/httpapi.Problem"
+            }
+          },
+          "429": {
+            "description": "Too Many Requests",
+            "schema": {
+              "$ref": "#/definitions/httpapi.Problem"
+            }
+          },
+          "503": {
+            "description": "Service Unavailable",
+            "schema": {
+              "$ref": "#/definitions/httpapi.Problem"
+            }
+          }
+        },
+        "source": {
+          "repository": "trainforge",
+          "path": "contracts/generated/swagger-v1.json",
+          "line": 1
+        }
+      },
+      {
+        "method": "POST",
+        "path": "/api/v1/me/legal-consents",
+        "operationId": null,
+        "parameters": [
+          {
+            "description": "One to three decisions",
+            "name": "body",
+            "in": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/legal.RecordRequest"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/legal.Current"
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "schema": {
+              "$ref": "#/definitions/httpapi.Problem"
+            }
+          },
+          "401": {
+            "description": "Unauthorized",
+            "schema": {
+              "$ref": "#/definitions/httpapi.Problem"
+            }
+          },
+          "413": {
+            "description": "Request Entity Too Large",
+            "schema": {
+              "$ref": "#/definitions/httpapi.Problem"
+            }
+          },
+          "415": {
+            "description": "Unsupported Media Type",
+            "schema": {
+              "$ref": "#/definitions/httpapi.Problem"
+            }
+          },
+          "426": {
+            "description": "Upgrade Required",
             "schema": {
               "$ref": "#/definitions/httpapi.Problem"
             }

@@ -27,8 +27,8 @@ def disposable_name(name):
     return name
 
 
-# Owner data added by migrations 14-15; removed with the user through ON DELETE CASCADE.
-PRIVATE_OFFLINE=('nutrition_sync_state','nutrition_changes','nutrition_operation_receipts','food_contributions','food_contribution_media')
+# Owner data added by migrations 14-15 and 17; removed with the user through ON DELETE CASCADE.
+PRIVATE_OFFLINE=('nutrition_sync_state','nutrition_changes','nutrition_operation_receipts','food_contributions','food_contribution_media','legal_consents')
 
 
 def main():
@@ -70,8 +70,8 @@ def main():
         return hashlib.sha256(raw.encode('utf-8')).hexdigest()
     def full_snapshot(database):
         tables=sql("SELECT string_agg(tablename,',' ORDER BY tablename) FROM pg_tables WHERE schemaname='trainforge_v1';",database).split(',')
-        # Schema16: 30 core tables + offline sync (3), contributions (2) and catalog releases (3).
-        if len(tables)!=38 or any(not re.fullmatch('[a-z_]+',t) for t in tables):raise RuntimeError('Schema inventory changed; review restore coverage')
+        # Schema17: 30 core tables + offline sync (3), contributions (2), catalog releases (3) and legal consents (1).
+        if len(tables)!=39 or any(not re.fullmatch('[a-z_]+',t) for t in tables):raise RuntimeError('Schema inventory changed; review restore coverage')
         return {t:fingerprint('SELECT * FROM trainforge_v1.'+t,database) for t in tables}
     def preserved_snapshot(database):
         result={}
@@ -96,7 +96,7 @@ def main():
             if command([go,'run','./cmd/migrate']).returncode:raise RuntimeError('Restore source migration failed')
         latest=max(int(p.name.split('_',1)[0]) for p in (service/'migrations').glob('*.sql'))
         if sql('SELECT max(version_id) FROM public.trainforge_v1_schema_version WHERE is_applied;',source)!=str(latest):raise RuntimeError('Restore source schema version mismatch')
-        for statement in runtime_statements(training=True,meals=True,nutrition_offline=True,contributions=True,food_catalog=True):sql(statement,source)
+        for statement in runtime_statements(training=True,meals=True,nutrition_offline=True,contributions=True,food_catalog=True,legal=True):sql(statement,source)
         env['TF_PRIVACY_TEST_DATABASE_URL']=dsn('migrator',source);env['TF_PRIVACY_TEST_RUNTIME_URL']=dsn('runtime',source)
         env['TF_PRIVACY_RESTORE_PHASE']='prepare';report['prepareTests']=go_test('TestPrivacyRestorePrepareFixture')
         sql("INSERT INTO trainforge_v1.sources(id,name,urls) VALUES('restore-ci-source','Synthetic public restore fixture','[]'); INSERT INTO trainforge_v1.content_versions(asset_id,version_sha,kind,source_id,payload) VALUES('restore-ci-movement',repeat('a',64),'movement','restore-ci-source','{}'); INSERT INTO trainforge_v1.food_versions(food_id,version_sha,source_id,name_original,nutrients,provenance) VALUES('restore-ci-editorial',repeat('b',64),'restore-ci-source','Synthetic public restore fixture','[]','{}');",source)
@@ -112,7 +112,7 @@ def main():
         if r.returncode:raise RuntimeError('Matching-version service pg_restore failed')
         sql('REVOKE ALL ON DATABASE '+target+' FROM PUBLIC; REVOKE CONNECT ON DATABASE '+target+' FROM trainforge_runtime;')
         if full_snapshot(target)!=before:raise RuntimeError('Restored logical rows differ from pre-erasure backup')
-        report['allTablesLogicalSnapshotMatched']=38
+        report['allTablesLogicalSnapshotMatched']=39
         if sql("SELECT count(*) FROM trainforge_v1.users WHERE subject='privacy-restore-a';",target)!='1':raise RuntimeError('Historical account fixture not present before gate')
         report['historicalAccountPresentBeforeGate']=True
         keep=preserved_snapshot(target);current_source=full_snapshot(source)

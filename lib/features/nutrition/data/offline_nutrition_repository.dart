@@ -24,6 +24,9 @@ class OfflineNutritionRepository extends ChangeNotifier
   final NutritionLocalStore store;
   final LocalFoodRepository catalog;
   final bool autoSync;
+
+  /// Health-data consent (LGPD art. 11). Without it records stay on the device.
+  final bool Function()? syncAllowed;
   late final NutritionSync synchronizer;
   bool syncBusy = false;
   Future<void>? _syncTask;
@@ -35,6 +38,7 @@ class OfflineNutritionRepository extends ChangeNotifier
     required this.catalog,
     Dio? dio,
     this.autoSync = true,
+    this.syncAllowed,
   }) {
     synchronizer = NutritionSync(store: store, dio: dio ?? AppDio.instance);
   }
@@ -62,7 +66,11 @@ class OfflineNutritionRepository extends ChangeNotifier
     notifyListeners();
     try {
       store.check();
-      await synchronizer.run();
+      if (syncAllowed != null && !syncAllowed!()) {
+        syncFailure = 'consent';
+      } else {
+        await synchronizer.run();
+      }
     } on DioException catch (e) {
       syncFailure = e.response?.statusCode == 401
           ? 'authentication'

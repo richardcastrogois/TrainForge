@@ -1,7 +1,7 @@
 """Runtime grants shared by the owned local cluster and disposable CI fixtures."""
 
 
-def runtime_statements(*, training=False, meals=False, nutrition_offline=False, contributions=False, food_catalog=False):
+def runtime_statements(*, training=False, meals=False, nutrition_offline=False, contributions=False, food_catalog=False, legal=False):
     readonly = ['sources','content_versions','content_withdrawals','program_sessions',
                 'program_items','food_versions','food_import_batches','food_batch_versions',
                 'food_withdrawals','food_name_versions','food_name_withdrawals','food_name_catalogs']
@@ -20,6 +20,8 @@ def runtime_statements(*, training=False, meals=False, nutrition_offline=False, 
     if nutrition_offline:
         readonly += ['nutrition_sync_state','nutrition_changes','nutrition_operation_receipts']
         statements.append('GRANT EXECUTE ON FUNCTION trainforge_v1.nutrition_sync_seed(uuid,uuid,bytea),trainforge_v1.nutrition_sync_receipt(uuid,uuid,bytea,uuid,text,uuid,bytea,jsonb) TO trainforge_runtime;')
+    if legal:
+        statements.append('GRANT SELECT,INSERT ON trainforge_v1.legal_consents TO trainforge_runtime;')
     if contributions:
         readonly += ['food_contributions','food_contribution_media']
         statements.append('GRANT EXECUTE ON FUNCTION trainforge_v1.food_contribution_save(uuid,uuid,bytea,uuid,uuid,bytea,jsonb,jsonb),trainforge_v1.food_contribution_withdraw(uuid,uuid,bytea,uuid),trainforge_v1.food_contribution_attach(uuid,uuid,bytea,uuid,uuid,bytea,bytea,integer,integer) TO trainforge_runtime;')

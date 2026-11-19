@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import '../data/offline_nutrition_repository.dart';
 import '../domain/nutrition.dart';
 import 'food_offline_labels.dart';
+import '../../legal/presentation/legal_labels.dart';
 
 class OfflineSyncPanel extends StatelessWidget {
   final OfflineNutritionRepository repository;
@@ -124,12 +125,14 @@ class OfflineSyncPanel extends StatelessWidget {
             ),
             if (repository.syncFailure != null)
               Text(
-                foodOfflineLabel(
-                  context,
-                  repository.syncFailure == 'authentication'
-                      ? 'authFailure'
-                      : 'syncFailure',
-                ),
+                repository.syncFailure == 'consent'
+                    ? legalLabel(context, 'syncPausedHealth')
+                    : foodOfflineLabel(
+                        context,
+                        repository.syncFailure == 'authentication'
+                            ? 'authFailure'
+                            : 'syncFailure',
+                      ),
               ),
             Wrap(
               spacing: 8,

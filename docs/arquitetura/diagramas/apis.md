@@ -2,7 +2,7 @@
 
 > Gerado por `tools/gerar_diagramas.py` de `contracts/generated/swagger-v1.json`; não editar à mão.
 
-API **0.11.0**, **51 operações**. [Contrato completo](../../../contracts/generated/swagger-v1.json) · [Modelo e regras](../modelo-e-contratos.md) · [Arquitetura](../README.md).
+API **0.11.0**, **53 operações**. [Contrato completo](../../../contracts/generated/swagger-v1.json) · [Modelo e regras](../modelo-e-contratos.md) · [Arquitetura](../README.md).
 
 Com a API iniciada, Swagger local: `http://127.0.0.1:8082/docs/index.html`. Operação documentada não implica aceite funcional ou prática autorizada.
 
@@ -47,6 +47,8 @@ Com a API iniciada, Swagger local: `http://127.0.0.1:8082/docs/index.html`. Oper
 | GET | /api/v1/me/food-summary | nutrition | Bearer / titular |
 | GET | /api/v1/me/foods | nutrition | Bearer / titular |
 | POST | /api/v1/me/foods | nutrition | Bearer / titular |
+| GET | /api/v1/me/legal-consents | legal | Bearer / titular |
+| POST | /api/v1/me/legal-consents | legal | Bearer / titular |
 | GET | /api/v1/me/meal-diary | meals | Bearer / titular |
 | POST | /api/v1/me/meals | meals | Bearer / titular |
 | DELETE | /api/v1/me/meals/{id} | meals | Bearer / titular |

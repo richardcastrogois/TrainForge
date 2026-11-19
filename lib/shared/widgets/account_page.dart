@@ -1,3 +1,6 @@
+import 'package:trainforge/features/legal/legal_controller.dart';
+import 'package:trainforge/features/legal/presentation/legal_labels.dart';
+import 'package:trainforge/features/legal/presentation/legal_pages.dart';
 import 'package:trainforge/core/l10n/feedback_localization.dart';
 import 'package:trainforge/core/l10n/language_page.dart';
 import 'package:trainforge/core/l10n/localized_context.dart';
@@ -188,6 +191,23 @@ class AccountPage extends StatelessWidget {
                           color: context.tf.soft,
                           onTap: () => privacy(context),
                         ),
+                        if (LegalScope.maybeOf(context) != null) ...[
+                          const SizedBox(height: 12),
+                          FigmaActionCard(
+                            title: legalLabel(context, 'legalSettings'),
+                            subtitle: legalLabel(context, 'legalSettingsHint'),
+                            asset: 'plan',
+                            onTap: () => Navigator.push<void>(
+                              context,
+                              MaterialPageRoute(
+                                builder: (_) => LegalSettingsPage(
+                                  controller: LegalScope.maybeOf(context)!,
+                                  accountId: controller.profile?.id,
+                                ),
+                              ),
+                            ),
+                          ),
+                        ],
                         SizedBox(height: 12),
                         FigmaActionCard(
                           title: context.l10n.sourcesSettings,

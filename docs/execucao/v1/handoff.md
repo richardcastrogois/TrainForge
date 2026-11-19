@@ -12,8 +12,8 @@ Pendências tratadas **uma por vez**; ao fechar cada uma: commit/push quando hou
 | 2 | Importar pacote Brasil + Portugal no Neon | **Cancelada**: banco fica só com o Brasil ([melhoria](../../planejamento/melhoria-pacotes-regionais.md)) |
 | 3 | Publicar pacotes no GitHub Releases | Adiada para a melhoria dos pacotes regionais |
 | 4 | Commitar tela de pacotes + manifest do pacote Brasil | Pendente |
-| 5 | Google: `TF_GOOGLE_SERVER_CLIENT_ID` na Vercel e teste de login | Pendente |
-| 6 | Licença proprietária + Termos/Privacidade | Pendente; ressalvas: repositório público, dados de terceiros (ODbL/CC-BY-SA) e Termos/Privacidade |
+| 5 | Google: `TF_GOOGLE_SERVER_CLIENT_ID` na Vercel e teste de login | **Servidor configurado** (rota responde `invalid_credential` a token falso); login real a confirmar no celular |
+| 6 | Licença proprietária + Termos/Privacidade | **Implementada** (abaixo) |
 
 ## Arquitetura de distribuição (19/11)
 
@@ -29,6 +29,13 @@ Pendências tratadas **uma por vez**; ao fechar cada uma: commit/push quando hou
 | completo | 6.702.350 | 3,2 GB | 8,8 GB | Só local (`.local/food-catalog/full-assets`) |
 
 Hoje o app oferece só o pacote Brasil (aparece como **Instalado**, com aviso de tamanho e progresso no botão). O `br-pt` não é oferecido: substituiria o catálogo e alimentos portugueses não sincronizariam. Próxima melhoria, decidida pelo autor: [6 pacotes regionais que se somam](../../planejamento/melhoria-pacotes-regionais.md), publicados no GitHub Releases, com o banco só com o Brasil.
+
+## Licença, termos e aceite registrado (pendência 6)
+
+- [LICENSE](../../../LICENSE) proprietária com exceção de terceiros; [avisos de terceiros](../../../THIRD_PARTY_NOTICES.md); [Termos de Uso](../../../assets/legal/termos-de-uso.md) e [Política de Privacidade](../../../assets/legal/politica-de-privacidade.md) v1.0 (titular Richard Castro Gois, contato público aprovado pelo autor). Não houve revisão jurídica; recomendada antes de lançamento comercial.
+- App 0.5.1+31: `lib/features/legal/` — aceite obrigatório no primeiro uso (também visitante), consentimento separado de dados de saúde (LGPD art. 11) após login, nova versão pede novo aceite, tela Configurações → Termos e privacidade. Entrada em cascata/saída suave (`StaggeredEntrance`), respeitando reduzir movimento. Aceite guarda versão, SHA-256 do texto empacotado, data, app e idioma; fila por conta envia ao servidor e repete se falhar. Sem consentimento de saúde a sincronização alimentar fica pausada (`syncAllowed`).
+- API: migration 17 `legal_consents` (append-only, cascade com a conta), `GET/POST /api/v1/me/legal-consents` (`internal/legal`), grants em `db_permissions.py`, CI conta 39 tabelas. Aplicada no Neon.
+- Telas renderizadas em `docs/design/termos/`. **Figma não atualizado**: limite de chamadas MCP do plano Starter.
 
 ## APK release (pendência 1, concluída)
 

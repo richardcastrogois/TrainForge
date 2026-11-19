@@ -60,9 +60,9 @@
     "semantic_hash": "9bcbb0273bafbff336b23104d60c6a3b"
   },
   "shared/widgets/auth_gate.dart": {
-    "mtime": 1795044825.2828047,
-    "seen": 1795114136.3372178,
-    "ast_hash": "e75961bf012e6e880d57a38097c9a670",
+    "mtime": 1795118025.4407477,
+    "seen": 1795118462.0837097,
+    "ast_hash": "eef6be3457714beb8845694359ff1bf7",
     "semantic_hash": ""
   },
   "features/auth/data/session_refresh.dart": {
@@ -186,9 +186,9 @@
     "semantic_hash": ""
   },
   "features/nutrition/presentation/nutrition_forms.dart": {
-    "mtime": 1795046357.259544,
-    "seen": 1795114136.3372178,
-    "ast_hash": "183b86f396b352016e180918e9c23028",
+    "mtime": 1795118032.1426046,
+    "seen": 1795118462.0837097,
+    "ast_hash": "e56885d1110a2f2d84398e84d9a3bcca",
     "semantic_hash": ""
   },
   "features/nutrition/presentation/nutrition_page.dart": {
@@ -210,10 +210,10 @@
     "semantic_hash": "bfbbf42da82bca60812e95a0649ac071"
   },
   "shared/widgets/account_page.dart": {
-    "mtime": 1793315620.889516,
-    "seen": 1793316521.110751,
-    "ast_hash": "c1b2899b9e0ebb6a2deaf354f063ec99",
-    "semantic_hash": "c1b2899b9e0ebb6a2deaf354f063ec99"
+    "mtime": 1795118025.441819,
+    "seen": 1795118462.0837097,
+    "ast_hash": "97f7489e50783d203ff7c3a4958f22d3",
+    "semantic_hash": ""
   },
   "shared/widgets/figma_bottom_nav.dart": {
     "mtime": 1792971192.9474914,
@@ -324,9 +324,9 @@
     "semantic_hash": "cf2be33c240679e353daea42b0a7f790"
   },
   "composition/production_dependencies.dart": {
-    "mtime": 1794960083.8806088,
-    "seen": 1795025834.3103662,
-    "ast_hash": "7878e48ada7d0dba64bae3e63facd314",
+    "mtime": 1795118025.4401512,
+    "seen": 1795118462.0837097,
+    "ast_hash": "88603a7d9e5b45ab62f083f0f51f0f29",
     "semantic_hash": ""
   },
   "features/nutrition/presentation/nutrition_controller.dart": {
@@ -612,9 +612,9 @@
     "semantic_hash": ""
   },
   "features/nutrition/data/offline_nutrition_repository.dart": {
-    "mtime": 1795046218.8497095,
-    "seen": 1795114136.3372178,
-    "ast_hash": "8837d8642664afa9c471ef6c6916cb8c",
+    "mtime": 1795118025.4391353,
+    "seen": 1795118462.0837097,
+    "ast_hash": "98229a9b564767ce2c91e64ca96b549f",
     "semantic_hash": ""
   },
   "features/nutrition/domain/exact_nutrition.dart": {
@@ -630,15 +630,15 @@
     "semantic_hash": ""
   },
   "features/nutrition/presentation/food_offline_labels.dart": {
-    "mtime": 1795115959.1527932,
-    "seen": 1795116180.9961162,
-    "ast_hash": "2c8e711bf0fc03772852cd9bae395180",
+    "mtime": 1795118032.0732906,
+    "seen": 1795118462.0837097,
+    "ast_hash": "cb556ddb6e22c3a119dcb8e717a85277",
     "semantic_hash": ""
   },
   "features/nutrition/presentation/offline_sync_panel.dart": {
-    "mtime": 1794964682.875041,
-    "seen": 1795025834.3103662,
-    "ast_hash": "8b17665a435ede460da71ebb30772386",
+    "mtime": 1795118025.4407477,
+    "seen": 1795118462.0837097,
+    "ast_hash": "164b9dcc5aab41c46aa531c2cf1ad818",
     "semantic_hash": ""
   },
   "features/nutrition/presentation/own_food_portions_editor.dart": {
@@ -681,6 +681,42 @@
     "mtime": 1795046218.8477104,
     "seen": 1795114136.3372178,
     "ast_hash": "fa42f2ac96ace9aad2ed3da35512dff7",
+    "semantic_hash": ""
+  },
+  "features/legal/legal_consent_store.dart": {
+    "mtime": 1795117882.1133585,
+    "seen": 1795118462.0837097,
+    "ast_hash": "b9e3c0e97aacbd6dc5aec000e92cef1d",
+    "semantic_hash": ""
+  },
+  "features/legal/legal_controller.dart": {
+    "mtime": 1795118056.2568967,
+    "seen": 1795118462.0837097,
+    "ast_hash": "c2ffe641307b1a1c61d7333fbe9195e9",
+    "semantic_hash": ""
+  },
+  "features/legal/legal_documents.dart": {
+    "mtime": 1795117847.0688915,
+    "seen": 1795118462.0837097,
+    "ast_hash": "84e36b566da3a4ef22139f4a043c1b4c",
+    "semantic_hash": ""
+  },
+  "features/legal/presentation/legal_labels.dart": {
+    "mtime": 1795117923.8265917,
+    "seen": 1795118462.0837097,
+    "ast_hash": "bea041d97d49b30b727ef9a120d68fa7",
+    "semantic_hash": ""
+  },
+  "features/legal/presentation/legal_pages.dart": {
+    "mtime": 1795118031.9839904,
+    "seen": 1795118462.0837097,
+    "ast_hash": "13f60d1e3e6b171a113b98e589981732",
+    "semantic_hash": ""
+  },
+  "features/legal/presentation/staggered_entrance.dart": {
+    "mtime": 1795117923.8285897,
+    "seen": 1795118462.0837097,
+    "ast_hash": "6959c1e9d880a793cd50def0226341a9",
     "semantic_hash": ""
   }
 }

@@ -466,6 +466,50 @@ definitions:
       status:
         type: string
     type: object
+  legal.Consent:
+    properties:
+      appVersion:
+        example: 0.5.1+31
+        type: string
+      clientRecordedAt:
+        type: string
+      decision:
+        enum:
+        - accepted
+        - granted
+        - revoked
+        type: string
+      document:
+        enum:
+        - terms
+        - privacy
+        - health_data
+        type: string
+      documentSha:
+        type: string
+      locale:
+        example: pt-BR
+        type: string
+      recordedAt:
+        type: string
+      version:
+        example: "1.0"
+        type: string
+    type: object
+  legal.Current:
+    properties:
+      items:
+        items:
+          $ref: '#/definitions/legal.Consent'
+        type: array
+    type: object
+  legal.RecordRequest:
+    properties:
+      items:
+        items:
+          $ref: '#/definitions/legal.Consent'
+        type: array
+    type: object
   nutrition.Basis:
     properties:
       quantity:
@@ -3219,6 +3263,86 @@ paths:
       summary: Create own food declaration
       tags:
       - nutrition
+  /api/v1/me/legal-consents:
+    get:
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/legal.Current'
+        "401":
+          description: Unauthorized
+          schema:
+            $ref: '#/definitions/httpapi.Problem'
+        "426":
+          description: Upgrade Required
+          schema:
+            $ref: '#/definitions/httpapi.Problem'
+        "429":
+          description: Too Many Requests
+          schema:
+            $ref: '#/definitions/httpapi.Problem'
+        "503":
+          description: Service Unavailable
+          schema:
+            $ref: '#/definitions/httpapi.Problem'
+      security:
+      - BearerAuth: []
+      summary: Current legal consents of the account
+      tags:
+      - legal
+    post:
+      consumes:
+      - application/json
+      parameters:
+      - description: One to three decisions
+        in: body
+        name: body
+        required: true
+        schema:
+          $ref: '#/definitions/legal.RecordRequest'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/legal.Current'
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/httpapi.Problem'
+        "401":
+          description: Unauthorized
+          schema:
+            $ref: '#/definitions/httpapi.Problem'
+        "413":
+          description: Request Entity Too Large
+          schema:
+            $ref: '#/definitions/httpapi.Problem'
+        "415":
+          description: Unsupported Media Type
+          schema:
+            $ref: '#/definitions/httpapi.Problem'
+        "426":
+          description: Upgrade Required
+          schema:
+            $ref: '#/definitions/httpapi.Problem'
+        "429":
+          description: Too Many Requests
+          schema:
+            $ref: '#/definitions/httpapi.Problem'
+        "503":
+          description: Service Unavailable
+          schema:
+            $ref: '#/definitions/httpapi.Problem'
+      security:
+      - BearerAuth: []
+      summary: Record legal consent decisions
+      tags:
+      - legal
   /api/v1/me/meal-diary:
     get:
       parameters:

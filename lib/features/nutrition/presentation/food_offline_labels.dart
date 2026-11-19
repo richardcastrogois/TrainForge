@@ -254,7 +254,8 @@ const _labels = <String, Map<String, String>>{
     'installed': 'Instalado',
     'downloading': 'Descargando…',
     'verifying': 'Verificando firma e instalando…',
-    'downloadCanceled': 'Descarga cancelada. Se conservó el catálogo instalado.',
+    'downloadCanceled':
+        'Descarga cancelada. Se conservó el catálogo instalado.',
     'cancel': 'Cancelar',
     'downloadConfirmTitle': '¿Descargar paquete de alimentos?',
     'downloadConfirmBody':

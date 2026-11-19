@@ -155,7 +155,7 @@ def main():
                 if sql('SELECT max(version_id) FROM public.trainforge_v1_schema_version WHERE is_applied;',name) != str(latest):
                     raise RuntimeError('Migration version mismatch')
                 item['migrationRerunPassed'] = True
-                for statement in runtime_statements(training=True,meals=True,nutrition_offline=True,contributions=True,food_catalog=True): sql(statement,name)
+                for statement in runtime_statements(training=True,meals=True,nutrition_offline=True,contributions=True,food_catalog=True,legal=True): sql(statement,name)
                 for key,role in variables.items(): suite_env[key] = dsn(role)
                 if suite_id == 'nutrition': suite_env['TF_NUTRITION_CI_FIXTURE'] = '1'
                 for package, expected in commands:

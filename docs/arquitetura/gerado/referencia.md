@@ -1,6 +1,6 @@
 # Referência técnica extraída do código
 
-> Gerado de código e registros versionados por `tools/gerar_documentacao.py`. Não editar este arquivo à mão. Revisão das entradas: `15e46fc3bf4f9f02`.
+> Gerado de código e registros versionados por `tools/gerar_documentacao.py`. Não editar este arquivo à mão. Revisão das entradas: `93f7842d26d6a7cb`.
 
 [Arquitetura explicada](../README.md) · [APIs](../diagramas/apis.md) · [Banco e colunas](../diagramas/banco.md) · [Backlog](../../execucao/v1/backlog.md)
 
@@ -8,13 +8,13 @@ Este inventário lê padrões estáticos de Dart, Go, SQL e Swagger. Não execut
 
 | Entrada | Quantidade detectada |
 | --- | --- |
-| Arquivos Dart | 114 |
-| Telas/widgets | 32 |
-| Literais HTTP Flutter | 34 |
-| Arquivos Go de produção | 99 |
-| Registros HTTP Go | 53 |
-| Operações em especificações versionadas | 58 |
-| Tabelas do núcleo declaradas em migrations | 38 |
+| Arquivos Dart | 120 |
+| Telas/widgets | 36 |
+| Literais HTTP Flutter | 35 |
+| Arquivos Go de produção | 101 |
+| Registros HTTP Go | 55 |
+| Operações em especificações versionadas | 60 |
+| Tabelas do núcleo declaradas em migrations | 39 |
 
 ## Flutter: telas e referências
 
@@ -34,6 +34,10 @@ Uma referência de construtor não demonstra clique ou condição de navegação
 | FoodDetailPage | [lib/features/food_reference/presentation/food_detail_page.dart:10](../../../lib/features/food_reference/presentation/food_detail_page.dart) |
 | FoodPage | [lib/features/food_reference/presentation/food_page.dart:17](../../../lib/features/food_reference/presentation/food_page.dart) |
 | TodayPage | [lib/features/home/presentation/pages/today_page.dart:10](../../../lib/features/home/presentation/pages/today_page.dart) |
+| LegalConsentPage | [lib/features/legal/presentation/legal_pages.dart:10](../../../lib/features/legal/presentation/legal_pages.dart) |
+| HealthConsentPage | [lib/features/legal/presentation/legal_pages.dart:107](../../../lib/features/legal/presentation/legal_pages.dart) |
+| LegalSettingsPage | [lib/features/legal/presentation/legal_pages.dart:188](../../../lib/features/legal/presentation/legal_pages.dart) |
+| LegalDocumentPage | [lib/features/legal/presentation/legal_pages.dart:294](../../../lib/features/legal/presentation/legal_pages.dart) |
 | EntryDetailPage | [lib/features/nutrition/presentation/entry_detail_page.dart:15](../../../lib/features/nutrition/presentation/entry_detail_page.dart) |
 | FoodContributionPage | [lib/features/nutrition/presentation/food_contribution_page.dart:60](../../../lib/features/nutrition/presentation/food_contribution_page.dart) |
 | FoodContributionsPage | [lib/features/nutrition/presentation/food_contribution_page.dart:179](../../../lib/features/nutrition/presentation/food_contribution_page.dart) |
@@ -42,13 +46,13 @@ Uma referência de construtor não demonstra clique ou condição de navegação
 | MealDraftPage | [lib/features/nutrition/presentation/meal_draft_page.dart:15](../../../lib/features/nutrition/presentation/meal_draft_page.dart) |
 | MealMetadataPage | [lib/features/nutrition/presentation/meal_metadata_page.dart:10](../../../lib/features/nutrition/presentation/meal_metadata_page.dart) |
 | EntryFormPage | [lib/features/nutrition/presentation/nutrition_forms.dart:44](../../../lib/features/nutrition/presentation/nutrition_forms.dart) |
-| OwnFoodFormPage | [lib/features/nutrition/presentation/nutrition_forms.dart:550](../../../lib/features/nutrition/presentation/nutrition_forms.dart) |
+| OwnFoodFormPage | [lib/features/nutrition/presentation/nutrition_forms.dart:549](../../../lib/features/nutrition/presentation/nutrition_forms.dart) |
 | NutritionPage | [lib/features/nutrition/presentation/nutrition_page.dart:26](../../../lib/features/nutrition/presentation/nutrition_page.dart) |
 | OwnFoodPickerPage | [lib/features/nutrition/presentation/own_food_picker_page.dart:14](../../../lib/features/nutrition/presentation/own_food_picker_page.dart) |
 | PrivacyPage | [lib/features/privacy/presentation/privacy_page.dart:11](../../../lib/features/privacy/presentation/privacy_page.dart) |
 | TrainingConfigurationPage | [lib/features/training_configuration/presentation/training_configuration_page.dart:35](../../../lib/features/training_configuration/presentation/training_configuration_page.dart) |
-| AccountPage | [lib/shared/widgets/account_page.dart:15](../../../lib/shared/widgets/account_page.dart) |
-| AuthGate | [lib/shared/widgets/auth_gate.dart:11](../../../lib/shared/widgets/auth_gate.dart) |
+| AccountPage | [lib/shared/widgets/account_page.dart:18](../../../lib/shared/widgets/account_page.dart) |
+| AuthGate | [lib/shared/widgets/auth_gate.dart:13](../../../lib/shared/widgets/auth_gate.dart) |
 | ContentSourcesPage | [lib/shared/widgets/content_sources_page.dart:10](../../../lib/shared/widgets/content_sources_page.dart) |
 | EvaluationGuidePage | [lib/shared/widgets/evaluation_guide_page.dart:11](../../../lib/shared/widgets/evaluation_guide_page.dart) |
 | FoodCatalogCreditsPage | [lib/shared/widgets/food_catalog_credits_page.dart:10](../../../lib/shared/widgets/food_catalog_credits_page.dart) |
@@ -67,6 +71,18 @@ Uma referência de construtor não demonstra clique ou condição de navegação
 | CatalogPage | CatalogDetailPage | [lib/features/catalog/presentation/catalog_page.dart:353](../../../lib/features/catalog/presentation/catalog_page.dart) |
 | FoodPage | CatalogToolsPage | [lib/features/food_reference/presentation/food_page.dart:145](../../../lib/features/food_reference/presentation/food_page.dart) |
 | FoodPage | FoodDetailPage | [lib/features/food_reference/presentation/food_page.dart:79](../../../lib/features/food_reference/presentation/food_page.dart) |
+| LegalConsentPage | HealthConsentPage | [lib/features/legal/presentation/legal_pages.dart:110](../../../lib/features/legal/presentation/legal_pages.dart) |
+| LegalConsentPage | LegalSettingsPage | [lib/features/legal/presentation/legal_pages.dart:191](../../../lib/features/legal/presentation/legal_pages.dart) |
+| LegalConsentPage | LegalDocumentPage | [lib/features/legal/presentation/legal_pages.dart:297](../../../lib/features/legal/presentation/legal_pages.dart) |
+| HealthConsentPage | LegalConsentPage | [lib/features/legal/presentation/legal_pages.dart:13](../../../lib/features/legal/presentation/legal_pages.dart) |
+| HealthConsentPage | LegalSettingsPage | [lib/features/legal/presentation/legal_pages.dart:191](../../../lib/features/legal/presentation/legal_pages.dart) |
+| HealthConsentPage | LegalDocumentPage | [lib/features/legal/presentation/legal_pages.dart:297](../../../lib/features/legal/presentation/legal_pages.dart) |
+| LegalSettingsPage | LegalConsentPage | [lib/features/legal/presentation/legal_pages.dart:13](../../../lib/features/legal/presentation/legal_pages.dart) |
+| LegalSettingsPage | HealthConsentPage | [lib/features/legal/presentation/legal_pages.dart:110](../../../lib/features/legal/presentation/legal_pages.dart) |
+| LegalSettingsPage | LegalDocumentPage | [lib/features/legal/presentation/legal_pages.dart:297](../../../lib/features/legal/presentation/legal_pages.dart) |
+| LegalDocumentPage | LegalConsentPage | [lib/features/legal/presentation/legal_pages.dart:13](../../../lib/features/legal/presentation/legal_pages.dart) |
+| LegalDocumentPage | HealthConsentPage | [lib/features/legal/presentation/legal_pages.dart:110](../../../lib/features/legal/presentation/legal_pages.dart) |
+| LegalDocumentPage | LegalSettingsPage | [lib/features/legal/presentation/legal_pages.dart:191](../../../lib/features/legal/presentation/legal_pages.dart) |
 | EntryDetailPage | EntryFormPage | [lib/features/nutrition/presentation/entry_detail_page.dart:76](../../../lib/features/nutrition/presentation/entry_detail_page.dart) |
 | FoodContributionPage | FoodContributionsPage | [lib/features/nutrition/presentation/food_contribution_page.dart:181](../../../lib/features/nutrition/presentation/food_contribution_page.dart) |
 | FoodContributionsPage | FoodContributionPage | [lib/features/nutrition/presentation/food_contribution_page.dart:55](../../../lib/features/nutrition/presentation/food_contribution_page.dart) |
@@ -78,7 +94,7 @@ Uma referência de construtor não demonstra clique ou condição de navegação
 | MealDraftPage | FoodPage | [lib/features/nutrition/presentation/meal_draft_page.dart:122](../../../lib/features/nutrition/presentation/meal_draft_page.dart) |
 | MealDraftPage | EntryFormPage | [lib/features/nutrition/presentation/meal_draft_page.dart:132](../../../lib/features/nutrition/presentation/meal_draft_page.dart) |
 | MealDraftPage | OwnFoodPickerPage | [lib/features/nutrition/presentation/meal_draft_page.dart:116](../../../lib/features/nutrition/presentation/meal_draft_page.dart) |
-| EntryFormPage | OwnFoodFormPage | [lib/features/nutrition/presentation/nutrition_forms.dart:553](../../../lib/features/nutrition/presentation/nutrition_forms.dart) |
+| EntryFormPage | OwnFoodFormPage | [lib/features/nutrition/presentation/nutrition_forms.dart:552](../../../lib/features/nutrition/presentation/nutrition_forms.dart) |
 | OwnFoodFormPage | EntryFormPage | [lib/features/nutrition/presentation/nutrition_forms.dart:50](../../../lib/features/nutrition/presentation/nutrition_forms.dart) |
 | NutritionPage | BarcodeScannerPage | [lib/features/nutrition/presentation/nutrition_page.dart:187](../../../lib/features/nutrition/presentation/nutrition_page.dart) |
 | NutritionPage | FoodPage | [lib/features/nutrition/presentation/nutrition_page.dart:178](../../../lib/features/nutrition/presentation/nutrition_page.dart) |
@@ -89,13 +105,16 @@ Uma referência de construtor não demonstra clique ou condição de navegação
 | NutritionPage | OwnFoodFormPage | [lib/features/nutrition/presentation/nutrition_page.dart:226](../../../lib/features/nutrition/presentation/nutrition_page.dart) |
 | OwnFoodPickerPage | FoodPage | [lib/features/nutrition/presentation/own_food_picker_page.dart:79](../../../lib/features/nutrition/presentation/own_food_picker_page.dart) |
 | PrivacyPage | ContentSourcesPage | [lib/features/privacy/presentation/privacy_page.dart:75](../../../lib/features/privacy/presentation/privacy_page.dart) |
-| AccountPage | LanguagePage | [lib/shared/widgets/account_page.dart:168](../../../lib/shared/widgets/account_page.dart) |
-| AccountPage | AppearancePage | [lib/shared/widgets/account_page.dart:156](../../../lib/shared/widgets/account_page.dart) |
-| AccountPage | PrivacyPage | [lib/shared/widgets/account_page.dart:22](../../../lib/shared/widgets/account_page.dart) |
-| AccountPage | ContentSourcesPage | [lib/shared/widgets/account_page.dart:200](../../../lib/shared/widgets/account_page.dart) |
-| AuthGate | AuthPage | [lib/shared/widgets/auth_gate.dart:65](../../../lib/shared/widgets/auth_gate.dart) |
-| AuthGate | ProductShell | [lib/shared/widgets/auth_gate.dart:72](../../../lib/shared/widgets/auth_gate.dart) |
-| AuthGate | StartupPage | [lib/shared/widgets/auth_gate.dart:61](../../../lib/shared/widgets/auth_gate.dart) |
+| AccountPage | LanguagePage | [lib/shared/widgets/account_page.dart:171](../../../lib/shared/widgets/account_page.dart) |
+| AccountPage | AppearancePage | [lib/shared/widgets/account_page.dart:159](../../../lib/shared/widgets/account_page.dart) |
+| AccountPage | LegalSettingsPage | [lib/shared/widgets/account_page.dart:203](../../../lib/shared/widgets/account_page.dart) |
+| AccountPage | PrivacyPage | [lib/shared/widgets/account_page.dart:25](../../../lib/shared/widgets/account_page.dart) |
+| AccountPage | ContentSourcesPage | [lib/shared/widgets/account_page.dart:220](../../../lib/shared/widgets/account_page.dart) |
+| AuthGate | AuthPage | [lib/shared/widgets/auth_gate.dart:88](../../../lib/shared/widgets/auth_gate.dart) |
+| AuthGate | LegalConsentPage | [lib/shared/widgets/auth_gate.dart:75](../../../lib/shared/widgets/auth_gate.dart) |
+| AuthGate | HealthConsentPage | [lib/shared/widgets/auth_gate.dart:102](../../../lib/shared/widgets/auth_gate.dart) |
+| AuthGate | ProductShell | [lib/shared/widgets/auth_gate.dart:112](../../../lib/shared/widgets/auth_gate.dart) |
+| AuthGate | StartupPage | [lib/shared/widgets/auth_gate.dart:71](../../../lib/shared/widgets/auth_gate.dart) |
 | ContentSourcesPage | CatalogPage | [lib/shared/widgets/content_sources_page.dart:28](../../../lib/shared/widgets/content_sources_page.dart) |
 | ContentSourcesPage | FoodPage | [lib/shared/widgets/content_sources_page.dart:35](../../../lib/shared/widgets/content_sources_page.dart) |
 | ContentSourcesPage | NutritionPage | [lib/shared/widgets/content_sources_page.dart:52](../../../lib/shared/widgets/content_sources_page.dart) |
@@ -128,6 +147,7 @@ Método e caminho compatíveis não garantem DTO, resposta ou autenticação. Ex
 | `GET /api/v1/foods/${Uri.encodeComponent(food.id)}` | versionId | [services/api/internal/nutrition/handler.go:18](../../../services/api/internal/nutrition/handler.go) | [lib/features/food_reference/data/food_repository.dart:36](../../../lib/features/food_reference/data/food_repository.dart) |
 | `GET /api/v1/foods` | cursor, limit, locale, namesVersion, q, sourceId | [services/api/internal/nutrition/handler.go:19](../../../services/api/internal/nutrition/handler.go) | [lib/features/food_reference/data/food_repository.dart:56](../../../lib/features/food_reference/data/food_repository.dart) |
 | `GET /api/v1/foods/${Uri.encodeComponent(food.id)}` | locale, versionId | [services/api/internal/nutrition/handler.go:18](../../../services/api/internal/nutrition/handler.go) | [lib/features/food_reference/data/food_repository.dart:102](../../../lib/features/food_reference/data/food_repository.dart) |
+| `POST /api/v1/me/legal-consents` | items | [services/api/internal/legal/handler.go:26](../../../services/api/internal/legal/handler.go) | [lib/features/legal/legal_controller.dart:194](../../../lib/features/legal/legal_controller.dart) |
 | `GET /api/v1/me/foods` | não detectadas | [services/api/internal/nutrition/entries_handler.go:31](../../../services/api/internal/nutrition/entries_handler.go) | [lib/features/nutrition/data/nutrition_repository.dart:48](../../../lib/features/nutrition/data/nutrition_repository.dart) |
 | `POST /api/v1/me/foods` | não detectadas | [services/api/internal/nutrition/entries_handler.go:30](../../../services/api/internal/nutrition/entries_handler.go) | [lib/features/nutrition/data/nutrition_repository.dart:56](../../../lib/features/nutrition/data/nutrition_repository.dart) |
 | `GET /api/v1/me/food-entries` | não detectadas | [services/api/internal/nutrition/entries_handler.go:33](../../../services/api/internal/nutrition/entries_handler.go) | [lib/features/nutrition/data/nutrition_repository.dart:63](../../../lib/features/nutrition/data/nutrition_repository.dart) |
@@ -169,7 +189,7 @@ Imports indicam dependência de código; não são chamadas HTTP nem traces.
 | cmd/privacy-maintenance | internal/privacy |
 | cmd/privacy-restore | internal/privacy |
 | internal/activity | internal/auth, internal/catalogauthority, internal/platform/httpapi |
-| internal/app | internal/activity, internal/auth, internal/catalog, internal/catalogbridge, internal/nutrition, internal/platform/config, internal/platform/httpapi, internal/platform/postgres, internal/privacy, internal/publiccatalog, internal/swaggerdocs, internal/trainingconfig |
+| internal/app | internal/activity, internal/auth, internal/catalog, internal/catalogbridge, internal/legal, internal/nutrition, internal/platform/config, internal/platform/httpapi, internal/platform/postgres, internal/privacy, internal/publiccatalog, internal/swaggerdocs, internal/trainingconfig |
 | internal/auth | internal/platform/httpapi |
 | internal/catalog | internal/platform/httpapi |
 | internal/catalogauthority | nenhum import interno detectado |
@@ -178,6 +198,7 @@ Imports indicam dependência de código; não são chamadas HTTP nem traces.
 | internal/catalogschema | internal/catalogtarget |
 | internal/catalogtarget | nenhum import interno detectado |
 | internal/foodnamesops | internal/nutrition, internal/platform/postgres |
+| internal/legal | internal/auth, internal/platform/httpapi |
 | internal/nutrition | internal/auth, internal/platform/httpapi |
 | internal/platform/config | nenhum import interno detectado |
 | internal/platform/httpapi | nenhum import interno detectado |
@@ -208,6 +229,8 @@ Anotação, registro de rota e operação Swagger são evidências diferentes. T
 | `GET /api/v1/catalog/movements` | mode query string false "consultation or practice" Enums(consultation,practice); q query string false "Literal title substring"; environment query string false "Exact source environment"; population query string false "Exact source population"; modality query string false "Exact source modality"; equipment query string false "Exact source equipment name"; category query string false "Exact source category"; limit query int false "Page size" minimum(1) maximum(50) default(20); cursor query string false "Opaque cursor bound to filters" | Success 200 {object} CatalogPage; Success 304; Failure 400,503 {object} httpapi.Problem | sim | [services/api/internal/catalog/handler.go:137](../../../services/api/internal/catalog/handler.go) |
 | `GET /api/v1/catalog/movements/{id}` | id path string true "Editorial movement ID"; versionId query string false "Exact SHA-256 version"; mode query string false "consultation or practice" Enums(consultation,practice) | Success 200 {object} CatalogItem; Success 304; Failure 400,404,503 {object} httpapi.Problem | sim | [services/api/internal/catalog/handler.go:152](../../../services/api/internal/catalog/handler.go) |
 | `GET /api/v1/catalog/filters` |  | Success 200 {object} CatalogFacets; Success 304; Failure 400,503 {object} httpapi.Problem | sim | [services/api/internal/catalog/handler.go:164](../../../services/api/internal/catalog/handler.go) |
+| `GET /api/v1/me/legal-consents` |  | Success 200 {object} Current; Failure 401,426,429,503 {object} httpapi.Problem | sim | [services/api/internal/legal/handler.go:79](../../../services/api/internal/legal/handler.go) |
+| `POST /api/v1/me/legal-consents` | body body RecordRequest true "One to three decisions" | Success 200 {object} Current; Failure 400,401,413,415,426,429,503 {object} httpapi.Problem | sim | [services/api/internal/legal/handler.go:98](../../../services/api/internal/legal/handler.go) |
 | `POST /api/v1/me/food-contributions` | body body ContributionInput true "Explicit CC0 consent and food fields; no meal or account payload" | Success 201 {object} Contribution; Failure 400 {object} map[string]string; Failure 401 {object} map[string]string; Failure 409 {object} map[string]string | sim | [services/api/internal/nutrition/contributions_handler.go:45](../../../services/api/internal/nutrition/contributions_handler.go) |
 | `GET /api/v1/me/food-contributions` | cursor query string false "Account-bound cursor"; limit query int false "Page size 1-100" | Success 200 {object} ContributionPage | sim | [services/api/internal/nutrition/contributions_handler.go:66](../../../services/api/internal/nutrition/contributions_handler.go) |
 | `GET /api/v1/me/food-contributions/{id}` | id path string true "Contribution UUID" | Success 200 {object} Contribution | sim | [services/api/internal/nutrition/contributions_handler.go:97](../../../services/api/internal/nutrition/contributions_handler.go) |
@@ -263,6 +286,8 @@ Anotação, registro de rota e operação Swagger são evidências diferentes. T
 | `GET /api/v1/catalog/movements` | [services/api/internal/catalog/handler.go:19](../../../services/api/internal/catalog/handler.go) |
 | `GET /api/v1/catalog/movements/{id}` | [services/api/internal/catalog/handler.go:20](../../../services/api/internal/catalog/handler.go) |
 | `GET /internal/catalog/revision` | [services/api/internal/catalogruntime/runtime.go:88](../../../services/api/internal/catalogruntime/runtime.go) |
+| `GET /api/v1/me/legal-consents` | [services/api/internal/legal/handler.go:25](../../../services/api/internal/legal/handler.go) |
+| `POST /api/v1/me/legal-consents` | [services/api/internal/legal/handler.go:26](../../../services/api/internal/legal/handler.go) |
 | `POST /api/v1/me/food-contributions` | [services/api/internal/nutrition/contributions_handler.go:17](../../../services/api/internal/nutrition/contributions_handler.go) |
 | `GET /api/v1/me/food-contributions` | [services/api/internal/nutrition/contributions_handler.go:18](../../../services/api/internal/nutrition/contributions_handler.go) |
 | `GET /api/v1/me/food-contributions/{id}` | [services/api/internal/nutrition/contributions_handler.go:19](../../../services/api/internal/nutrition/contributions_handler.go) |
@@ -353,6 +378,8 @@ Anotação, registro de rota e operação Swagger são evidências diferentes. T
 | `GET /api/v1/me/food-summary` | não detectado | [{"type": "string", "description": "YYYY-MM-DD", "name": "date", "in": "query", "required": true}, {"type": "string", "description": "IANA name, UTC or fixed offset", "name": "timezone", "in": "query", "required": true}] | {"200": {"description": "OK", "schema": {"$ref": "#/definitions/nutrition.NutritionTotals"}}, "400": {"description": "Bad Request", "schema": {"$ref": "#/definitions/httpapi.Problem"}}, "401": {"description": "Unauthorized", "schema": {"$ref": "#/definitions/httpapi.Problem"}}, "429": {"description": "Too Many Requests", "schema": {"$ref": "#/definitions/httpapi.Problem"}}, "503": {"description": "Service Unavailable", "schema": {"$ref": "#/definitions/httpapi.Problem"}}} | [contracts/generated/swagger-v1.json:1](../../../contracts/generated/swagger-v1.json) |
 | `GET /api/v1/me/foods` | não detectado | [{"type": "string", "description": "Literal name, maximum 100 characters", "name": "q", "in": "query"}, {"type": "integer", "description": "1..20; default 10", "name": "limit", "in": "query"}, {"type": "string", "description": "Account and filter-bound cursor", "name": "cursor", "in": "query"}] | {"200": {"description": "OK", "schema": {"$ref": "#/definitions/nutrition.NutritionPage"}}, "400": {"description": "Bad Request", "schema": {"$ref": "#/definitions/httpapi.Problem"}}, "401": {"description": "Unauthorized", "schema": {"$ref": "#/definitions/httpapi.Problem"}}, "429": {"description": "Too Many Requests", "schema": {"$ref": "#/definitions/httpapi.Problem"}}, "503": {"description": "Service Unavailable", "schema": {"$ref": "#/definitions/httpapi.Problem"}}} | [contracts/generated/swagger-v1.json:1](../../../contracts/generated/swagger-v1.json) |
 | `POST /api/v1/me/foods` | não detectado | [{"type": "string", "description": "UUID, stable across retries; 24-hour retention", "name": "Idempotency-Key", "in": "header", "required": true}, {"description": "Private declaration, nullable basis and nutrient values", "name": "body", "in": "body", "required": true, "schema": {"$ref": "#/definitions/nutrition.OwnFoodInput"}}] | {"201": {"description": "Created", "schema": {"$ref": "#/definitions/nutrition.FoodDetail"}}, "400": {"description": "Bad Request", "schema": {"$ref": "#/definitions/httpapi.Problem"}}, "401": {"description": "Unauthorized", "schema": {"$ref": "#/definitions/httpapi.Problem"}}, "409": {"description": "Conflict", "schema": {"$ref": "#/definitions/httpapi.Problem"}}, "413": {"description": "Request Entity Too Large", "schema": {"$ref": "#/definitions/httpapi.Problem"}}, "415": {"description": "Unsupported Media Type", "schema": {"$ref": "#/definitions/httpapi.Problem"}}, "429": {"description": "Too Many Requests", "schema": {"$ref": "#/definitions/httpapi.Problem"}}, "503": {"description": "Service Unavailable", "schema": {"$ref": "#/definitions/httpapi.Problem"}}} | [contracts/generated/swagger-v1.json:1](../../../contracts/generated/swagger-v1.json) |
+| `GET /api/v1/me/legal-consents` | não detectado | [] | {"200": {"description": "OK", "schema": {"$ref": "#/definitions/legal.Current"}}, "401": {"description": "Unauthorized", "schema": {"$ref": "#/definitions/httpapi.Problem"}}, "426": {"description": "Upgrade Required", "schema": {"$ref": "#/definitions/httpapi.Problem"}}, "429": {"description": "Too Many Requests", "schema": {"$ref": "#/definitions/httpapi.Problem"}}, "503": {"description": "Service Unavailable", "schema": {"$ref": "#/definitions/httpapi.Problem"}}} | [contracts/generated/swagger-v1.json:1](../../../contracts/generated/swagger-v1.json) |
+| `POST /api/v1/me/legal-consents` | não detectado | [{"description": "One to three decisions", "name": "body", "in": "body", "required": true, "schema": {"$ref": "#/definitions/legal.RecordRequest"}}] | {"200": {"description": "OK", "schema": {"$ref": "#/definitions/legal.Current"}}, "400": {"description": "Bad Request", "schema": {"$ref": "#/definitions/httpapi.Problem"}}, "401": {"description": "Unauthorized", "schema": {"$ref": "#/definitions/httpapi.Problem"}}, "413": {"description": "Request Entity Too Large", "schema": {"$ref": "#/definitions/httpapi.Problem"}}, "415": {"description": "Unsupported Media Type", "schema": {"$ref": "#/definitions/httpapi.Problem"}}, "426": {"description": "Upgrade Required", "schema": {"$ref": "#/definitions/httpapi.Problem"}}, "429": {"description": "Too Many Requests", "schema": {"$ref": "#/definitions/httpapi.Problem"}}, "503": {"description": "Service Unavailable", "schema": {"$ref": "#/definitions/httpapi.Problem"}}} | [contracts/generated/swagger-v1.json:1](../../../contracts/generated/swagger-v1.json) |
 | `GET /api/v1/me/meal-diary` | não detectado | [{"type": "string", "description": "YYYY-MM-DD", "name": "date", "in": "query", "required": true}, {"type": "string", "description": "UTC, IANA or offset; no server timezone default", "name": "timezone", "in": "query", "required": true}, {"type": "string", "description": "pt-BR,pt-PT,en,es; optional reviewed display names", "name": "locale", "in": "query"}] | {"200": {"description": "OK", "schema": {"$ref": "#/definitions/nutrition.MealDayResponse"}}, "400": {"description": "Bad Request", "schema": {"$ref": "#/definitions/httpapi.Problem"}}, "401": {"description": "Unauthorized", "schema": {"$ref": "#/definitions/httpapi.Problem"}}, "409": {"description": "Conflict", "schema": {"$ref": "#/definitions/httpapi.Problem"}}, "429": {"description": "Too Many Requests", "schema": {"$ref": "#/definitions/httpapi.Problem"}}, "503": {"description": "Service Unavailable", "schema": {"$ref": "#/definitions/httpapi.Problem"}}} | [contracts/generated/swagger-v1.json:1](../../../contracts/generated/swagger-v1.json) |
 | `POST /api/v1/me/meals` | não detectado | [{"type": "string", "description": "UUID stable across retries; 24-hour retention", "name": "Idempotency-Key", "in": "header", "required": true}, {"description": "reviewed=true; quantities/versions/times per item; max64KiB; microsecond timestamp precision", "name": "body", "in": "body", "required": true, "schema": {"$ref": "#/definitions/nutrition.NewMealCommand"}}] | {"201": {"description": "Created", "schema": {"$ref": "#/definitions/nutrition.ConfirmedMeal"}}, "400": {"description": "Bad Request", "schema": {"$ref": "#/definitions/httpapi.Problem"}}, "401": {"description": "Unauthorized", "schema": {"$ref": "#/definitions/httpapi.Problem"}}, "404": {"description": "Not Found", "schema": {"$ref": "#/definitions/httpapi.Problem"}}, "409": {"description": "Conflict", "schema": {"$ref": "#/definitions/httpapi.Problem"}}, "413": {"description": "Request Entity Too Large", "schema": {"$ref": "#/definitions/httpapi.Problem"}}, "415": {"description": "Unsupported Media Type", "schema": {"$ref": "#/definitions/httpapi.Problem"}}, "429": {"description": "Too Many Requests", "schema": {"$ref": "#/definitions/httpapi.Problem"}}, "503": {"description": "Service Unavailable", "schema": {"$ref": "#/definitions/httpapi.Problem"}}} | [contracts/generated/swagger-v1.json:1](../../../contracts/generated/swagger-v1.json) |
 | `GET /api/v1/me/meals/{id}` | não detectado | [{"type": "string", "description": "Meal UUID; another owner returns404", "name": "id", "in": "path", "required": true}, {"type": "string", "description": "pt-BR,pt-PT,en,es; display only", "name": "locale", "in": "query"}] | {"200": {"description": "OK", "schema": {"$ref": "#/definitions/nutrition.ConfirmedMeal"}}, "400": {"description": "Bad Request", "schema": {"$ref": "#/definitions/httpapi.Problem"}}, "401": {"description": "Unauthorized", "schema": {"$ref": "#/definitions/httpapi.Problem"}}, "404": {"description": "Not Found", "schema": {"$ref": "#/definitions/httpapi.Problem"}}, "409": {"description": "Conflict", "schema": {"$ref": "#/definitions/httpapi.Problem"}}, "429": {"description": "Too Many Requests", "schema": {"$ref": "#/definitions/httpapi.Problem"}}, "503": {"description": "Service Unavailable", "schema": {"$ref": "#/definitions/httpapi.Problem"}}} | [contracts/generated/swagger-v1.json:1](../../../contracts/generated/swagger-v1.json) |
@@ -410,5 +437,6 @@ A declaração não comprova aplicação no banco. ALTERs, índices, funções e
 | food_catalog_releases | [services/api/migrations/00016_food_catalog_releases.sql:4](../../../services/api/migrations/00016_food_catalog_releases.sql) |
 | food_catalog_import_progress | [services/api/migrations/00016_food_catalog_releases.sql:14](../../../services/api/migrations/00016_food_catalog_releases.sql) |
 | food_catalog_annotations | [services/api/migrations/00016_food_catalog_releases.sql:22](../../../services/api/migrations/00016_food_catalog_releases.sql) |
+| legal_consents | [services/api/migrations/00017_legal_consents.sql:5](../../../services/api/migrations/00017_legal_consents.sql) |
 
 O estado das histórias permanece no backlog; o gerador não encerra achados ou libera conteúdo. [Como manter esta referência](../manutencao.md).
