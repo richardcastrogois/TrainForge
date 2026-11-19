@@ -33,6 +33,10 @@ migrate_working_dir/
 /build/
 /coverage/
 
+# Local presentation builds, dependency junctions and PowerPoint lock files
+/docs/apresentacao-senas/.build-*/
+/docs/apresentacao-senas/output/~$*.pptx
+
 # Symbolication related
 app.*.symbols
 
