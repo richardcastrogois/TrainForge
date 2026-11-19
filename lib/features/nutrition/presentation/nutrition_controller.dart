@@ -88,6 +88,11 @@ class NutritionController extends ChangeNotifier {
   /// Once the identity changes, this controller cannot be reused for another login.
   void accountChanged() {
     if (_disposed || _invalidated || currentAccountId() == accountId) return;
+    invalidateAccount();
+  }
+
+  void invalidateAccount() {
+    if (_disposed || _invalidated) return;
     _invalidated = true;
     _generation++;
     _ownGeneration++;

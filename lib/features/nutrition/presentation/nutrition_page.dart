@@ -15,6 +15,13 @@ import 'nutrition_feedback.dart';
 import '../domain/nutrition.dart';
 import 'nutrition_forms.dart';
 import 'entry_detail_page.dart';
+import 'dart:async';
+import '../data/offline_nutrition_repository.dart';
+import '../../food_reference/presentation/barcode_scanner_page.dart';
+import '../../food_reference/data/local_food_repository.dart';
+import 'food_offline_labels.dart';
+import 'food_contribution_page.dart';
+import 'offline_sync_panel.dart';
 
 class NutritionPage extends StatefulWidget {
   final bool evidenceMode;
@@ -61,6 +68,18 @@ class _NutritionPageState extends State<NutritionPage>
     widget.sessionChanges.addListener(accountChanged);
     WidgetsBinding.instance.addObserver(this);
     controller.searchOwn();
+    final offline = repository;
+    if (offline is OfflineNutritionRepository) {
+      offline.addListener(offlineChanged);
+      unawaited(
+        offline.synchronize().then((_) async {
+          if (active) {
+            await controller.load();
+            await controller.searchOwn();
+          }
+        }),
+      );
+    }
   }
 
   String? _contentLocale;
@@ -87,11 +106,25 @@ class _NutritionPageState extends State<NutritionPage>
     }
   }
 
+  void offlineChanged() {
+    final source = repository;
+    if (source is OfflineNutritionRepository && source.store.locked) {
+      controller.invalidateAccount();
+      WidgetsBinding.instance.addPostFrameCallback((_) {
+        if (mounted) Navigator.of(context).popUntil((route) => route.isFirst);
+      });
+    }
+  }
+
   @override
   void didChangeAppLifecycleState(AppLifecycleState state) {
     if (state == AppLifecycleState.resumed) {
       accountChanged();
       if (active) {
+        final offline = repository;
+        if (offline is OfflineNutritionRepository) {
+          unawaited(offline.synchronize());
+        }
         controller.load();
         controller.searchOwn();
       }
@@ -100,6 +133,10 @@ class _NutritionPageState extends State<NutritionPage>
 
   @override
   void dispose() {
+    final source = repository;
+    if (source is OfflineNutritionRepository) {
+      source.removeListener(offlineChanged);
+    }
     search.dispose();
     widget.sessionChanges.removeListener(accountChanged);
     WidgetsBinding.instance.removeObserver(this);
@@ -142,6 +179,83 @@ class _NutritionPageState extends State<NutritionPage>
       ),
     );
     if (active && food != null) await record(food);
+  }
+
+  Future<void> scan() async {
+    final code = await Navigator.push<String>(
+      context,
+      MaterialPageRoute(builder: (_) => const BarcodeScannerPage()),
+    );
+    if (code == null || !mounted || !controller.active) return;
+    final offline = repository;
+    if (offline is! OfflineNutritionRepository) return;
+    try {
+      final found = await offline.catalog.barcode(code);
+      final normalized = LocalFoodRepository.normalizedBarcode(code);
+      for (final food in await offline.store.resources('food')) {
+        if ((food['barcodes'] as List? ?? []).any(
+          (v) =>
+              LocalFoodRepository.normalizedBarcode(v as String) == normalized,
+        )) {
+          found.add(asFood(food));
+        }
+      }
+      if (!mounted || !controller.active) return;
+      if (found.isEmpty) {
+        final create = await showDialog<bool>(
+          context: context,
+          builder: (context) => AlertDialog(
+            content: Text(foodOfflineLabel(context, 'notFound')),
+            actions: [
+              TextButton(
+                onPressed: () => Navigator.pop(context, false),
+                child: Text(context.l10n.cancel),
+              ),
+              FilledButton(
+                onPressed: () => Navigator.pop(context, true),
+                child: Text(foodOfflineLabel(context, 'manual')),
+              ),
+            ],
+          ),
+        );
+        if (create == true && mounted && controller.active) {
+          await Navigator.push<Json>(
+            context,
+            MaterialPageRoute(
+              builder: (_) =>
+                  OwnFoodFormPage(repository: repository, initialBarcode: code),
+            ),
+          );
+          if (active) await controller.searchOwn();
+        }
+        return;
+      }
+      final selected = found.length == 1
+          ? found.single
+          : await showDialog<FoodReference>(
+              context: context,
+              builder: (context) => SimpleDialog(
+                title: Text(foodOfflineLabel(context, 'scan')),
+                children: found
+                    .map(
+                      (f) => SimpleDialogOption(
+                        onPressed: () => Navigator.pop(context, f),
+                        child: Text(
+                          '${f.localizedName(context)}${f.brand == null ? '' : ' · ${f.brand}'}',
+                        ),
+                      ),
+                    )
+                    .toList(),
+              ),
+            );
+      if (selected != null && active) await record(selected);
+    } catch (_) {
+      if (mounted && controller.active) {
+        ScaffoldMessenger.of(
+          context,
+        ).showSnackBar(SnackBar(content: Text(context.l10n.queryUnavailable)));
+      }
+    }
   }
 
   Future<void> meals() async {
@@ -225,7 +339,16 @@ class _NutritionPageState extends State<NutritionPage>
       physics: const AlwaysScrollableScrollPhysics(),
       padding: const EdgeInsets.fromLTRB(24, 0, 24, 24),
       children: [
-        heading(context.l10n.confirmedDiaryUpper),
+        heading(
+          repository is OfflineNutritionRepository
+              ? foodOfflineLabel(context, 'offlineDiary')
+              : context.l10n.confirmedDiaryUpper,
+        ),
+        if (repository is OfflineNutritionRepository)
+          OfflineSyncPanel(
+            repository: repository as OfflineNutritionRepository,
+            reload: controller.load,
+          ),
         if (repository is MealRepository)
           OutlinedButton.icon(
             onPressed: meals,
@@ -245,6 +368,12 @@ class _NutritionPageState extends State<NutritionPage>
           icon: const Icon(Icons.search),
           label: Text(context.l10n.searchRecordFood),
         ),
+        if (repository is OfflineNutritionRepository)
+          OutlinedButton.icon(
+            onPressed: scan,
+            icon: const Icon(Icons.barcode_reader),
+            label: Text(foodOfflineLabel(context, 'scan')),
+          ),
         const SizedBox(height: 12),
         Text(context.l10n.diaryNoPrescription),
         const SizedBox(height: 16),
@@ -263,7 +392,7 @@ class _NutritionPageState extends State<NutritionPage>
             title: entryDisplayName(entry, foodContentLocale(context)),
             subtitle:
                 '''${context.displayDecimal(entry['quantity'] as String)} ${entry['unit']} · ${object(entry['calculation'])['quantityEvidence'] == 'measured' ? context.l10n.measuredShort : context.l10n.estimatedShort}
-${context.displayTimestamp(entry['occurredAt'] as String)}''',
+${context.displayTimestamp(entry['occurredAt'] as String)}${entry['syncState'] == null ? '' : ' · ${foodOfflineLabel(context, entry['syncState'] == 'confirmed' ? 'confirmed' : 'pending')}'}''',
             onTap: () => detail(entry),
           ),
         if (controller.cursor != null)
@@ -291,6 +420,19 @@ ${context.displayTimestamp(entry['occurredAt'] as String)}''',
       padding: const EdgeInsets.fromLTRB(24, 0, 24, 24),
       children: [
         heading(context.l10n.privateFoodsUpper),
+        if (repository is OfflineNutritionRepository)
+          TextButton.icon(
+            onPressed: () => Navigator.push<void>(
+              context,
+              MaterialPageRoute(
+                builder: (_) => FoodContributionsPage(
+                  repository: repository as OfflineNutritionRepository,
+                ),
+              ),
+            ),
+            icon: const Icon(Icons.volunteer_activism),
+            label: Text(foodOfflineLabel(context, 'contributions')),
+          ),
         FilledButton.icon(
           onPressed: createFood,
           icon: const Icon(Icons.add),

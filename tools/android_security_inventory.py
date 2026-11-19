@@ -12,6 +12,8 @@ ROOT=Path(__file__).resolve().parents[1]
 PACKAGE="com.example.trainforge"
 REVIEWED_PERMISSIONS={
  "android.permission.INTERNET",
+ # Bundled ML Kit barcode scanning and user-initiated label photos.
+ "android.permission.CAMERA",
  "android.permission.USE_BIOMETRIC",
  "android.permission.USE_FINGERPRINT",
  PACKAGE+".DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION",
@@ -100,7 +102,8 @@ def inventory(root=ROOT):
  artifact=json.loads((root/".local/android-evaluation/artifact.json").read_text(encoding="utf-8"))
  apk=(root/artifact["relativePath"]).resolve()
  if not apk.is_relative_to(root.resolve()) or not apk.is_file():raise ValueError("Unsafe artifact path")
- if hashlib.sha256(apk.read_bytes()).hexdigest()!=artifact.get("sha256"):raise ValueError("Artifact hash mismatch")
+ with apk.open("rb") as stream:
+  if hashlib.file_digest(stream,"sha256").hexdigest()!=artifact.get("sha256"):raise ValueError("Artifact hash mismatch")
  config={}
  for line in (root/"android/local.properties").read_text(encoding="utf-8").splitlines():
   name,sep,value=line.partition("=")

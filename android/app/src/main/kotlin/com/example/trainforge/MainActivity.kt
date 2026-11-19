@@ -7,6 +7,8 @@ import io.flutter.plugin.common.MethodChannel
 class MainActivity : FlutterActivity() {
     override fun configureFlutterEngine(flutterEngine: FlutterEngine) {
         super.configureFlutterEngine(flutterEngine)
+        MethodChannel(flutterEngine.dartExecutor.binaryMessenger, "trainforge/catalog_assets")
+            .setMethodCallHandler(CatalogAssetInstaller(applicationContext))
         val preferences = getSharedPreferences("trainforge_appearance", MODE_PRIVATE)
         MethodChannel(flutterEngine.dartExecutor.binaryMessenger, "trainforge/appearance").setMethodCallHandler { call, result ->
             when (call.method) {

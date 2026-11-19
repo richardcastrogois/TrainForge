@@ -25,12 +25,17 @@ android {
         jvmTarget = JavaVersion.VERSION_17.toString()
     }
 
+    androidResources {
+        // The signed catalog is already gzip-compressed; stream its ZIP member.
+        noCompress += "gz"
+    }
+
     defaultConfig {
         // TODO: Specify your own unique Application ID (https://developer.android.com/studio/build/application-id.html).
         applicationId = "com.example.trainforge"
         // You can update the following values to match your application needs.
         // For more information, see: https://flutter.dev/to/review-gradle-config.
-        minSdk = flutter.minSdkVersion
+        minSdk = maxOf(flutter.minSdkVersion, 23)
         targetSdk = flutter.targetSdkVersion
         versionCode = flutter.versionCode
         versionName = flutter.versionName
@@ -50,6 +55,7 @@ android {
     buildTypes {
         release {
             if (tfSigningFile.exists()) { signingConfig = signingConfigs.getByName("evaluationRelease") }
+            proguardFiles(getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro")
         }
     }
 }

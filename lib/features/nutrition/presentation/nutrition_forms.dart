@@ -12,6 +12,12 @@ import '../domain/nutrition.dart';
 import '../domain/meals.dart';
 import 'nutrition_messages.dart';
 import 'nutrition_feedback.dart';
+import '../data/offline_nutrition_repository.dart';
+import 'food_contribution_page.dart';
+import 'food_offline_labels.dart';
+import '../domain/portion_quantity.dart';
+import '../../food_reference/data/local_food_repository.dart';
+import 'own_food_portions_editor.dart';
 
 bool _rejected(Object e) =>
     e is DioException &&
@@ -57,7 +63,32 @@ class _EntryFormPageState extends State<EntryFormPage> {
   final form = GlobalKey<FormState>();
   final guard = GlobalKey<DraftGuardState>();
   final quantity = TextEditingController(),
-      preparation = TextEditingController();
+      preparation = TextEditingController(),
+      portionCount = TextEditingController(text: '1');
+  FoodPortion? selectedPortion;
+  Json? get portionInput {
+    final portion = selectedPortion;
+    return portion == null
+        ? null
+        : {
+            'id': portion.id,
+            'label': portion.label,
+            'quantity': portion.quantity,
+            'unit': portion.unit,
+            'condition': portion.condition,
+            'sourceId': portion.sourceId,
+            'count': decimal(portionCount.text),
+          };
+  }
+
+  bool validQuantity(String value) => validFoodIntakeQuantity(widget.food, {
+    'foodId': widget.food.id,
+    'foodVersion': widget.food.versionId,
+    'quantity': value,
+    'unit': unit,
+    if (selectedPortion != null) 'portion': portionInput,
+  });
+
   late DateTime when;
   late String unit;
   late String initialDraft;
@@ -67,6 +98,8 @@ class _EntryFormPageState extends State<EntryFormPage> {
     unit,
     evidence,
     when.toIso8601String(),
+    selectedPortion?.id,
+    portionCount.text,
   ].join("\u0000");
   String? evidence, error;
   bool busy = false;
@@ -87,6 +120,14 @@ class _EntryFormPageState extends State<EntryFormPage> {
     evidence = e == null
         ? null
         : object(e['calculation'])['quantityEvidence'] as String;
+    if (e != null && object(e['calculation'])['portion'] is Map) {
+      final portion = object(object(e['calculation'])['portion']);
+      final matches = widget.food.portions.where((p) => p.id == portion['id']);
+      if (matches.length == 1) {
+        selectedPortion = matches.single;
+        portionCount.text = portion['count'] as String;
+      }
+    }
     initialDraft = draft;
   }
 
@@ -94,6 +135,7 @@ class _EntryFormPageState extends State<EntryFormPage> {
   void dispose() {
     quantity.dispose();
     preparation.dispose();
+    portionCount.dispose();
     super.dispose();
   }
 
@@ -118,7 +160,7 @@ class _EntryFormPageState extends State<EntryFormPage> {
     if (busy) return;
     if (pending == null) {
       if (!validateNutritionForm(form, context) ||
-          !validDecimal(decimal(quantity.text), positive: true) ||
+          !validQuantity(decimal(quantity.text)) ||
           evidence == null) {
         setState(
           () =>
@@ -135,6 +177,7 @@ class _EntryFormPageState extends State<EntryFormPage> {
         'occurredAt': when.toUtc().toIso8601String(),
         'timezone': offsetZone(when),
         'quantityEvidence': evidence,
+        if (selectedPortion != null) 'portion': portionInput,
         'revision': widget.entry == null
             ? 0
             : object(widget.entry!['calculation'])['revision'],
@@ -200,6 +243,84 @@ class _EntryFormPageState extends State<EntryFormPage> {
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.stretch,
                     children: [
+                      if (widget.food.portions.isNotEmpty) ...[
+                        DropdownButtonFormField<String>(
+                          key: const Key('entry-portion'),
+                          initialValue: selectedPortion?.id ?? '',
+                          isExpanded: true,
+                          decoration: InputDecoration(
+                            labelText: foodOfflineLabel(context, 'portion'),
+                          ),
+                          items: [
+                            DropdownMenuItem(
+                              value: '',
+                              child: Text(
+                                foodOfflineLabel(context, 'manualQuantity'),
+                              ),
+                            ),
+                            ...widget.food.portions.map(
+                              (p) => DropdownMenuItem(
+                                value: p.id,
+                                child: Text(
+                                  '${p.label} · ${p.quantity} ${p.unit}',
+                                  maxLines: 2,
+                                ),
+                              ),
+                            ),
+                          ],
+                          onChanged: locked
+                              ? null
+                              : (id) {
+                                  if (id == null || id.isEmpty) {
+                                    setState(() => selectedPortion = null);
+                                    return;
+                                  }
+                                  final p = widget.food.portions.firstWhere(
+                                    (p) => p.id == id,
+                                  );
+                                  setState(() {
+                                    selectedPortion = p;
+                                    portionCount.text = '1';
+                                    quantity.text = p.quantity;
+                                    unit = p.unit;
+                                  });
+                                },
+                        ),
+                        if (selectedPortion != null)
+                          TextFormField(
+                            key: const Key('entry-portion-count'),
+                            controller: portionCount,
+                            enabled: !locked,
+                            keyboardType: const TextInputType.numberWithOptions(
+                              decimal: true,
+                            ),
+                            decoration: InputDecoration(
+                              labelText: foodOfflineLabel(
+                                context,
+                                'portionCount',
+                              ),
+                            ),
+                            validator: (v) =>
+                                validDecimal(decimal(v ?? ''), positive: true)
+                                ? null
+                                : context.l10n.nutritionCheckFields,
+                            onChanged: (value) {
+                              final count = decimal(value);
+                              if (validDecimal(count, positive: true)) {
+                                setState(
+                                  () => quantity.text =
+                                      derivedPortionQuantity(
+                                        selectedPortion!,
+                                        count,
+                                      ) ??
+                                      '',
+                                );
+                              }
+                            },
+                          ),
+                        Text(foodOfflineLabel(context, 'portionNotice')),
+                        const SizedBox(height: 12),
+                      ],
                       Text(
                         context.l10n.quantity,
                         style: TextStyle(
@@ -212,7 +333,8 @@ class _EntryFormPageState extends State<EntryFormPage> {
                         key: Key('entry-quantity'),
                         controller: quantity,
                         enabled: !locked,
-                        maxLength: 14,
+                        readOnly: selectedPortion != null,
+                        maxLength: selectedPortion == null ? 14 : 80,
                         keyboardType: const TextInputType.numberWithOptions(
                           decimal: true,
                         ),
@@ -223,7 +345,7 @@ class _EntryFormPageState extends State<EntryFormPage> {
                           hintText: context.l10n.enterQuantity,
                         ),
                         validator: (v) =>
-                            validDecimal(decimal(v ?? ''), positive: true)
+                            validQuantity(decimal(v ?? ''))
                             ? null
                             : context.l10n.positiveQuantity,
                       ),
@@ -246,7 +368,7 @@ class _EntryFormPageState extends State<EntryFormPage> {
                             child: Text(context.l10n.milliliters),
                           ),
                         ],
-                        onChanged: locked
+                        onChanged: locked || selectedPortion != null
                             ? null
                             : (v) => setState(() => unit = v!),
                       ),
@@ -427,7 +549,12 @@ class _NutrientDraft {
 
 class OwnFoodFormPage extends StatefulWidget {
   final NutritionRepository repository;
-  const OwnFoodFormPage({super.key, required this.repository});
+  final String? initialBarcode;
+  const OwnFoodFormPage({
+    super.key,
+    required this.repository,
+    this.initialBarcode,
+  });
   @override
   State<OwnFoodFormPage> createState() => _OwnFoodFormPageState();
 }
@@ -437,8 +564,11 @@ class _OwnFoodFormPageState extends State<OwnFoodFormPage> {
   final guard = GlobalKey<DraftGuardState>();
   final name = TextEditingController(),
       preparation = TextEditingController(),
-      basis = TextEditingController();
+      basis = TextEditingController(),
+      brand = TextEditingController(),
+      barcode = TextEditingController();
   final nutrients = <_NutrientDraft>[];
+  final portions = <FoodPortionDraft>[];
   String unit = 'g', keyValue = mutationKey();
   String? error;
   Json? pending;
@@ -448,12 +578,26 @@ class _OwnFoodFormPageState extends State<OwnFoodFormPage> {
       preparation.text.isNotEmpty ||
       basis.text.isNotEmpty ||
       nutrients.isNotEmpty ||
+      portions.isNotEmpty ||
+      brand.text.isNotEmpty ||
+      barcode.text.isNotEmpty ||
       unit != "g";
+  @override
+  void initState() {
+    super.initState();
+    barcode.text = widget.initialBarcode ?? '';
+  }
+
   @override
   void dispose() {
     name.dispose();
     preparation.dispose();
     basis.dispose();
+    brand.dispose();
+    barcode.dispose();
+    for (final portion in portions) {
+      portion.dispose();
+    }
     for (final n in nutrients) {
       n.dispose();
     }
@@ -468,6 +612,10 @@ class _OwnFoodFormPageState extends State<OwnFoodFormPage> {
       pending = {
         'name': name.text.trim(),
         'preparation': preparation.text.trim(),
+        if (brand.text.trim().isNotEmpty) 'brand': brand.text.trim(),
+        if (barcode.text.trim().isNotEmpty) 'barcodes': [barcode.text.trim()],
+        if (portions.isNotEmpty)
+          'portions': portions.map((p) => p.toJson()).toList(),
         'basis': {
           'quantity': b.isEmpty ? null : b,
           'unit': b.isEmpty ? null : unit,
@@ -492,6 +640,10 @@ class _OwnFoodFormPageState extends State<OwnFoodFormPage> {
     });
     try {
       final result = await widget.repository.createFood(pending!, keyValue);
+      final offline = widget.repository;
+      if (mounted && offline is OfflineNutritionRepository) {
+        await inviteFoodContribution(context, offline, copyMealJson(pending!));
+      }
       if (mounted) guard.currentState!.complete(result);
     } catch (e) {
       if (mounted) {
@@ -532,6 +684,29 @@ class _OwnFoodFormPageState extends State<OwnFoodFormPage> {
                   ),
                   FlowSectionTitle(context.l10n.foodIdentity),
                   Text(context.l10n.ownFoodNotice),
+                  TextFormField(
+                    controller: brand,
+                    enabled: !locked,
+                    maxLength: 180,
+                    decoration: InputDecoration(
+                      labelText: foodOfflineLabel(context, 'brand'),
+                    ),
+                  ),
+                  TextFormField(
+                    controller: barcode,
+                    enabled: !locked,
+                    maxLength: 14,
+                    keyboardType: TextInputType.number,
+                    decoration: InputDecoration(
+                      labelText: foodOfflineLabel(context, 'barcode'),
+                    ),
+                    validator: (value) =>
+                        value == null ||
+                            value.trim().isEmpty ||
+                            LocalFoodRepository.validBarcode(value.trim())
+                        ? null
+                        : context.l10n.nutritionCheckFields,
+                  ),
                   TextFormField(
                     key: Key('own-food-name'),
                     controller: name,
@@ -666,6 +841,11 @@ class _OwnFoodFormPageState extends State<OwnFoodFormPage> {
                         ? null
                         : () => setState(() => nutrients.add(_NutrientDraft())),
                     child: Text(context.l10n.addNutrient),
+                  ),
+                  OwnFoodPortionsEditor(
+                    portions: portions,
+                    locked: locked,
+                    changed: () => setState(() {}),
                   ),
                   if (error != null)
                     Semantics(

@@ -10,6 +10,9 @@ import 'package:trainforge/composition/app_dependency_scope.dart';
 import 'food_controller.dart';
 import '../domain/food_reference.dart';
 import 'food_detail_page.dart';
+import '../data/local_food_repository.dart';
+import 'catalog_tools_page.dart';
+import '../../nutrition/presentation/food_offline_labels.dart';
 
 class FoodPage extends StatefulWidget {
   final FoodController? controller;
@@ -112,6 +115,45 @@ class _FoodPageState extends State<FoodPage> with WidgetsBindingObserver {
                             ? context.l10n.foodReferences
                             : context.l10n.searchFor(controller.q),
                       ),
+                      if (controller.repository is LocalFoodRepository &&
+                          controller.busy &&
+                          (controller.repository as LocalFoodRepository)
+                                  .installer !=
+                              null &&
+                          !(controller.repository as LocalFoodRepository)
+                              .installer!
+                              .ready)
+                        Padding(
+                          padding: const EdgeInsets.only(bottom: 12),
+                          child: Text(
+                            foodOfflineLabel(context, 'catalogPreparation'),
+                          ),
+                        ),
+                      if (controller.repository is LocalFoodRepository &&
+                          (controller.repository as LocalFoodRepository)
+                                  .installer !=
+                              null)
+                        Align(
+                          alignment: AlignmentDirectional.centerEnd,
+                          child: TextButton.icon(
+                            icon: const Icon(Icons.storage),
+                            label: Text(foodOfflineLabel(context, 'catalog')),
+                            onPressed: () async {
+                              await Navigator.push<void>(
+                                context,
+                                MaterialPageRoute(
+                                  builder: (_) => CatalogToolsPage(
+                                    installer:
+                                        (controller.repository
+                                                as LocalFoodRepository)
+                                            .installer!,
+                                  ),
+                                ),
+                              );
+                              if (mounted) controller.load();
+                            },
+                          ),
+                        ),
                       TextField(
                         controller: search,
                         textInputAction: TextInputAction.search,
@@ -172,10 +214,12 @@ class _FoodPageState extends State<FoodPage> with WidgetsBindingObserver {
                       if (widget.evidenceMode && facets != null) ...[
                         SizedBox(height: 12),
                         Text(
-                          context.l10n.foodCoverage(
-                            facets.total,
-                            facets.unknownBasis,
-                          ),
+                          facets.unknownBasisKnown
+                              ? context.l10n.foodCoverage(
+                                  facets.total,
+                                  facets.unknownBasis,
+                                )
+                              : '${facets.total} · ${context.l10n.foodReferences}',
                           style: TextStyle(
                             fontSize: 12,
                             height: 1.35,

@@ -3,6 +3,7 @@ import 'package:flutter/foundation.dart';
 import 'package:dio/dio.dart';
 import 'package:trainforge/core/http/app_dio.dart';
 import 'package:trainforge/features/auth/data/auth_storage.dart';
+import 'package:trainforge/features/nutrition/data/nutrition_local_store.dart';
 import '../domain/privacy.dart';
 
 Map<String, dynamic> _decodeExport(String raw) =>
@@ -11,10 +12,16 @@ Map<String, dynamic> _decodeExport(String raw) =>
 class GoPrivacyRepository implements PrivacyRepository {
   final Dio dio;
   final AuthStorage storage;
+  final Future<void> Function(String accountId) eraseLocalData;
   String? _cleanupAccess;
-  GoPrivacyRepository({Dio? dio, AuthStorage? storage})
-    : dio = dio ?? AppDio.instance,
-      storage = storage ?? AuthStorage();
+  String? _cleanupAccountId;
+  GoPrivacyRepository({
+    Dio? dio,
+    AuthStorage? storage,
+    Future<void> Function(String accountId)? eraseLocalData,
+  }) : dio = dio ?? AppDio.instance,
+       storage = storage ?? AuthStorage(),
+       eraseLocalData = eraseLocalData ?? NutritionLocalStore.eraseAccount;
   @override
   Future<PrivacyPolicy> policy() async {
     final r = await dio.get(
@@ -60,6 +67,7 @@ class GoPrivacyRepository implements PrivacyRepository {
     if (data['deleted'] != true) {
       throw const FormatException('Exclusão não confirmada');
     }
+    _cleanupAccountId = data['accountId'] as String;
     final authorization = r.requestOptions.headers['Authorization'];
     _cleanupAccess =
         authorization is String && authorization.startsWith('Bearer ')
@@ -80,6 +88,13 @@ class GoPrivacyRepository implements PrivacyRepository {
 
   @override
   Future<void> finishCleanup() async {
+    final accountId = _cleanupAccountId;
+    if (accountId != null) {
+      // eraseAccount persists an erasure tombstone before removing the DB/key.
+      // Failed file cleanup remains retryable and never restores account access.
+      await eraseLocalData(accountId);
+      _cleanupAccountId = null;
+    }
     final token = _cleanupAccess;
     if (token != null) {
       await storage.clearIfAccessToken(token);

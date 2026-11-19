@@ -1,5 +1,6 @@
 import 'dart:convert';
 import 'nutrition.dart';
+import 'portion_quantity.dart';
 import '../../food_reference/domain/food_reference.dart';
 
 bool mealUuid(Object? value) =>
@@ -7,7 +8,7 @@ bool mealUuid(Object? value) =>
     RegExp(r'^[a-f0-9]{8}(-[a-f0-9]{4}){3}-[a-f0-9]{12}$').hasMatch(value);
 Json copyMealJson(Json value) => object(jsonDecode(jsonEncode(value)));
 bool sameMealQuantity(String a, String b) {
-  if (!validDecimal(a, positive: true) || !validDecimal(b, positive: true)) {
+  if (!validSourceQuantity(a) || !validSourceQuantity(b)) {
     return false;
   }
   String normalized(String value) {

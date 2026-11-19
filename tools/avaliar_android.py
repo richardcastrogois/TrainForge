@@ -53,8 +53,19 @@ def source_fingerprint():
     digest=hashlib.sha256()
     for file in sorted(set(files)):
         digest.update(file.relative_to(ROOT).as_posix().encode())
-        digest.update(file.read_bytes().replace(b"\r\n",b"\n"))
+        if file.suffix in {".dart", ".arb", ".yaml", ".lock", ".kts", ".xml", ".kt", ".java"}:
+            digest.update(file.read_bytes().replace(b"\r\n",b"\n"))
+        else:
+            # Catalogs can be several gigabytes. Fingerprint binary assets in bounded memory.
+            with file.open("rb") as source:
+                for block in iter(lambda: source.read(1 << 20), b""):
+                    digest.update(block)
     return digest.hexdigest()
+
+
+def artifact_hash(path):
+    with path.open("rb") as stream:
+        return hashlib.file_digest(stream, "sha256").hexdigest()
 
 def public_config():
     # Read only the public client ID from the service's local config. Never print connection values.
@@ -85,10 +96,13 @@ def prepare(tooling):
     match=re.search(r"certificate SHA-1 digest:\s*([0-9a-fA-F]+)",report)
     if not match or match.group(1).lower()!=DEBUG_SHA1:
         raise RuntimeError("Certificado debug difere do OAuth conferido; não instalar automaticamente")
+    from verificar_catalogo_apk import verify as verify_catalog
+    catalog = verify_catalog(APK, ROOT/"assets/food_catalog")
     version=re.search(r"(?m)^version:\s*([^\s]+)",(ROOT/"pubspec.yaml").read_text(encoding="utf-8")).group(1)
     name,code=version.split("+")
     receipt={"versionName":name,"versionCode":int(code),"variant":"debug","package":"com.example.trainforge","relativePath":APK.relative_to(ROOT).as_posix(),
-             "sha256":hashlib.sha256(APK.read_bytes()).hexdigest(),"certificateSha1":DEBUG_SHA1,
+             "sha256":artifact_hash(APK),"certificateSha1":DEBUG_SHA1,
+             "catalog":catalog,"installed":False,"published":False,
              "sourceFingerprint":before_sources,"configurationFingerprint":before_config,"realGoogleLoginValidated":False}
     ARTIFACT.write_text(json.dumps(receipt,indent=2)+"\n",encoding="utf-8")
     print("APK debug preparado; certificado OAuth debug e SHA256 conferidos.",flush=True)
@@ -100,7 +114,7 @@ def configuration_fingerprint():
 def artifact_current():
     if not ARTIFACT.is_file() or not APK.is_file():return False
     receipt=json.loads(ARTIFACT.read_text(encoding="utf-8"))
-    return receipt.get("sourceFingerprint")==source_fingerprint() and receipt.get("configurationFingerprint")==configuration_fingerprint() and receipt.get("sha256")==hashlib.sha256(APK.read_bytes()).hexdigest()
+    return receipt.get("sourceFingerprint")==source_fingerprint() and receipt.get("configurationFingerprint")==configuration_fingerprint() and receipt.get("sha256")==artifact_hash(APK)
 
 def api_ready():
     try:
@@ -207,13 +221,13 @@ def start(tooling,serial=None):
     if not started_emulator and previous_boot and previous_boot!=boot_id:state["emulatorStartedHere"]=False
     state["emulatorBootId"]=boot_id
     output([tooling["adb"],"-s",serial,"reverse","tcp:8082","tcp:8082"])
-    expected=hashlib.sha256(APK.read_bytes()).hexdigest()
+    expected=artifact_hash(APK)
     if installed_sha256(tooling,serial)!=expected:
-        output([tooling["adb"],"-s",serial,"install","-r",APK],timeout=90)
+        output([tooling["adb"],"-s",serial,"install","-r",APK],timeout=900)
     else:
         print("O APK instalado já corresponde ao arquivo validado; instalação não repetida.")
     output([tooling["adb"],"-s",serial,"shell","am","start","-n","com.example.trainforge/.MainActivity"])
-    state["installedSha256"]=hashlib.sha256(APK.read_bytes()).hexdigest()
+    state["installedSha256"]=artifact_hash(APK)
     save_state(state)
     print("Pronto: app atualizado sem apagar dados, API/banco locais conectados.")
     print("Consulte biblioteca/alimentos sem login ou faça o login Google manual. Nenhum consentimento foi automatizado.")

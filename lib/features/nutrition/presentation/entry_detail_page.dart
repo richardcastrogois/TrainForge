@@ -10,6 +10,7 @@ import 'nutrition_feedback.dart';
 import 'nutrition_forms.dart';
 import 'entry_read_controller.dart';
 import '../../food_reference/presentation/food_labels.dart';
+import 'food_offline_labels.dart';
 
 class EntryDetailPage extends StatefulWidget {
   final Json entry;
@@ -136,7 +137,11 @@ class _EntryDetailPageState extends State<EntryDetailPage>
             children: [
               FigmaPageHeading(
                 title: reader.name(foodContentLocale(context)),
-                subtitle: context.l10n.intakeConfirmed,
+                subtitle:
+                    entry['syncState'] == null ||
+                        entry['syncState'] == 'confirmed'
+                    ? context.l10n.intakeConfirmed
+                    : foodOfflineLabel(context, 'pending'),
               ),
               FigmaSection(
                 child: Column(

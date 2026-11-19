@@ -2,6 +2,7 @@ import 'package:dio/dio.dart';
 import 'package:flutter/foundation.dart';
 import '../domain/meals.dart';
 import '../domain/nutrition.dart';
+import '../domain/portion_quantity.dart';
 import '../../food_reference/domain/food_reference.dart';
 import 'nutrition_messages.dart';
 
@@ -178,7 +179,7 @@ class MealDraftController extends ChangeNotifier {
         input['foodVersion'] != food.versionId ||
         input['revision'] != 0 ||
         input['quantity'] is! String ||
-        !validDecimal(input['quantity'] as String, positive: true) ||
+        !validFoodIntakeQuantity(food, input) ||
         !{'g', 'ml'}.contains(input['unit']) ||
         !{'measured', 'estimated'}.contains(input['quantityEvidence']) ||
         input['preparation'] is! String ||

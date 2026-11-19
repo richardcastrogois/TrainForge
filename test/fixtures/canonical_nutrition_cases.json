@@ -1,0 +1,34 @@
+{
+  "contract": "trainforge.canonical-nutrition-fixtures/1",
+  "cases": [
+    {
+      "name": "decimal quantity and an alternative energy method",
+      "quantity": "25.5", "unit": "g",
+      "basis": {"quantity": "100", "unit": "g"},
+      "cells": [
+        {"nutrientId":"energy_kcal","unit":"kcal","value":"100","state":"numeric","methodId":"fixture-primary","primaryForTotals":true,"basisQuantity":"100","basisUnit":"g","sourceColumnKey":"source-a:energy"},
+        {"nutrientId":"energy_kcal","unit":"kcal","value":"120","state":"numeric","methodId":"fixture-alternative","primaryForTotals":false,"basisQuantity":"100","basisUnit":"g","sourceColumnKey":"source-a:energy-other"},
+        {"nutrientId":"protein_g","unit":"g","value":"5","state":"numeric","methodId":"fixture-protein","primaryForTotals":true,"basisQuantity":"100","basisUnit":"g","sourceColumnKey":"source-a:protein"}
+      ],
+      "expected": [{"id":"energy_kcal","value":"25.5","fraction":"51/2"},{"id":"protein_g","value":"1.275","fraction":"51/40"}]
+    },
+    {
+      "name": "unknown is not zero and ml is not grams",
+      "quantity": "50", "unit": "ml",
+      "basis": {"quantity": "100", "unit": "ml"},
+      "cells": [
+        {"nutrientId":"energy_kcal","unit":"kcal","value":"40","state":"numeric","methodId":"fixture-energy","primaryForTotals":true,"basisQuantity":"100","basisUnit":"ml","sourceColumnKey":"source-b:energy"},
+        {"nutrientId":"protein_g","unit":"g","value":null,"state":"missing","methodId":"fixture-protein","primaryForTotals":true,"basisQuantity":"100","basisUnit":"ml","sourceColumnKey":"source-b:protein"},
+        {"nutrientId":"fat_g","unit":"g","value":"2","state":"numeric","methodId":"fixture-fat","primaryForTotals":true,"basisQuantity":"100","basisUnit":"g","sourceColumnKey":"source-b:fat"}
+      ],
+      "expected": [{"id":"energy_kcal","value":"20","fraction":"20/1"},{"id":"protein_g","value":null,"fraction":null},{"id":"fat_g","value":null,"fraction":null}]
+    },
+    {
+      "name": "round half up while retaining the exact fraction",
+      "quantity": "0.00005", "unit": "g",
+      "basis": {"quantity": "100", "unit": "g"},
+      "cells": [{"nutrientId":"protein_g","unit":"g","value":"1","state":"numeric","methodId":"fixture-protein","primaryForTotals":true,"basisQuantity":"100","basisUnit":"g","sourceColumnKey":"source-c:protein"}],
+      "expected": [{"id":"protein_g","value":"0.000001","fraction":"1/2000000"}]
+    }
+  ]
+}

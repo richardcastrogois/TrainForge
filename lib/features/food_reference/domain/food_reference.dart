@@ -107,6 +107,9 @@ class FoodReference {
   final String? basisQuantity, basisUnit;
   final FoodSource source;
   final ReviewedFoodName? reviewedName;
+  final String? brand;
+  final List<FoodPortion> portions;
+  final List<String> barcodes;
   FoodReference.fromJson(Map<String, dynamic> j)
     : id = j['id'] as String,
       versionId = j['versionId'] as String,
@@ -116,6 +119,11 @@ class FoodReference {
       name = j['nameOriginal'] as String,
       locale = j['nameLocale'] as String,
       reviewedName = _reviewedName(j),
+      brand = j['brand'] as String?,
+      portions = (j['portions'] as List? ?? const [])
+          .map((p) => FoodPortion.fromJson(Map<String, dynamic>.from(p as Map)))
+          .toList(growable: false),
+      barcodes = List<String>.from(j['barcodes'] as List? ?? const []),
       basisQuantity = (j['basis'] as Map)['quantity'] as String?,
       basisUnit = (j['basis'] as Map)['unit'] as String?,
       source = FoodSource.fromJson(
@@ -146,6 +154,30 @@ class FoodReference {
     'en' => 'Inglês',
     _ => locale,
   };
+}
+
+/// A documented amount of this exact food/preparation, never a universal spoon.
+class FoodPortion {
+  final String id, label, quantity, unit, condition, sourceId;
+  FoodPortion.fromJson(Map<String, dynamic> j)
+    : id = j['id'] as String,
+      label = j['label'] as String,
+      quantity = j['quantity'] as String,
+      unit = j['unit'] as String,
+      condition = j['condition'] as String? ?? '',
+      sourceId = j['sourceId'] as String? ?? '' {
+    if (id.isEmpty ||
+        label.isEmpty ||
+        !RegExp(r'^[0-9]+(?:\.[0-9]+)?$').hasMatch(quantity) ||
+        !RegExp('[1-9]').hasMatch(quantity) ||
+        !const {'g', 'ml'}.contains(unit)) {
+      throw const FormatException('Invalid documented food portion');
+    }
+  }
+}
+
+abstract interface class BarcodeFoodRepository {
+  Future<List<FoodReference>> barcode(String code);
 }
 
 class FoodNutrient {
@@ -243,6 +275,7 @@ class FoodSourceCount {
 class FoodFacets {
   final List<FoodSourceCount> sources;
   final int total, unknownBasis;
+  final bool unknownBasisKnown;
   FoodFacets.fromJson(Map<String, dynamic> j)
     : sources = (j['sources'] as List)
           .map(
@@ -251,7 +284,8 @@ class FoodFacets {
           )
           .toList(),
       total = j['total'] as int,
-      unknownBasis = j['unknownBasisCount'] as int;
+      unknownBasisKnown = j['unknownBasisCount'] is int,
+      unknownBasis = j['unknownBasisCount'] as int? ?? 0;
 }
 
 abstract interface class FoodRepository {

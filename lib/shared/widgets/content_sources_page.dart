@@ -5,6 +5,7 @@ import 'package:trainforge/features/catalog/presentation/catalog_page.dart';
 import 'package:trainforge/features/food_reference/presentation/food_page.dart';
 import 'package:trainforge/features/nutrition/presentation/nutrition_page.dart';
 import 'figma_components.dart';
+import 'food_catalog_credits_page.dart';
 
 class ContentSourcesPage extends StatelessWidget {
   final AuthController? controller;
@@ -32,6 +33,13 @@ class ContentSourcesPage extends StatelessWidget {
           subtitle: context.l10n.sourceLicense,
           asset: 'plan',
           onTap: () => open(context, const FoodPage(evidenceMode: true)),
+        ),
+        const SizedBox(height: 12),
+        FigmaActionCard(
+          title: context.l10n.sourceCredits,
+          subtitle: context.l10n.foodReferences,
+          asset: 'plan',
+          onTap: () => open(context, const FoodCatalogCreditsPage()),
         ),
         const SizedBox(height: 12),
         if (controller?.profile != null)

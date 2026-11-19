@@ -33,6 +33,10 @@
 	<string>$(FLUTTER_BUILD_NUMBER)</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>NSCameraUsageDescription</key>
+	<string>Leia códigos de barras e fotografe rótulos de alimentos que você escolher compartilhar.</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>Selecione fotos de rótulos para revisar uma contribuição alimentar.</string>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>

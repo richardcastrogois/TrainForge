@@ -215,6 +215,9 @@ void main() {
       expect(services.policies, 0);
       expect(services.nutrition, isEmpty);
 
+      await tester.ensureVisible(find.text('Conheça o app sem criar conta'));
+      await tester.tap(find.text('Conheça o app sem criar conta'));
+      await tester.pumpAndSettle();
       await tester.ensureVisible(find.text('Consultar biblioteca sem entrar'));
       await tester.tap(find.text('Consultar biblioteca sem entrar'));
       await tester.pumpAndSettle();
@@ -243,7 +246,12 @@ void main() {
       await tester.binding.handlePopRoute();
       await tester.pumpAndSettle();
 
-      await tester.ensureVisible(find.text('Privacidade e dados'));
+      await tester.binding.handlePopRoute();
+      await tester.pumpAndSettle();
+      await tester.ensureVisible(find.byTooltip('Mais opções'));
+      await tester.pumpAndSettle();
+      await tester.tap(find.byTooltip('Mais opções'));
+      await tester.pumpAndSettle();
       await tester.tap(find.text('Privacidade e dados'));
       await tester.pumpAndSettle();
       expect(find.byType(PrivacyPage), findsOneWidget);

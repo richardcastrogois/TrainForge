@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:trainforge/core/l10n/localized_context.dart';
 import 'package:trainforge/shared/widgets/figma_components.dart';
 import '../domain/nutrition.dart';
+import 'food_offline_labels.dart';
 
 /// Displays authoritative API totals; the client never scales or sums nutrients.
 class NutritionTotalsCard extends StatelessWidget {
@@ -17,6 +18,14 @@ class NutritionTotalsCard extends StatelessWidget {
             : context.l10n.subtotalLimit,
       ),
       children: [
+        if ((totals['pendingEntries'] as int? ?? 0) > 0)
+          Text(foodOfflineLabel(context, 'pendingTotals')),
+        if ((totals['pendingEntries'] as int? ?? 0) > 0 &&
+            totals['confirmedTotals'] is Map) ...[
+          Text(foodOfflineLabel(context, 'confirmed')),
+          NutritionTotalsCard(totals: object(totals['confirmedTotals'])),
+          Text(foodOfflineLabel(context, 'offlineDiary')),
+        ],
         Text(
           totals['complete'] == true
               ? context.l10n.subtotalNotice

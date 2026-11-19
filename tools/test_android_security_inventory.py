@@ -73,7 +73,7 @@ class AndroidInventoryTests(unittest.TestCase):
 
     def test_unreviewed_permission_or_unprotected_export_is_rejected(self):
         report = summarize_manifest(MANIFEST)
-        report["permissions"] = sorted(REVIEWED_PERMISSIONS | {"android.permission.CAMERA"})
+        report["permissions"] = sorted(REVIEWED_PERMISSIONS | {"android.permission.ACCESS_FINE_LOCATION"})
         with self.assertRaisesRegex(ValueError, "permission"):
             verify_debug_policy(report, ARTIFACT)
         report = summarize_manifest(MANIFEST)

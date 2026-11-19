@@ -264,7 +264,14 @@ void main() {
           },
         ),
       );
-      final repo = GoPrivacyRepository(dio: dio, storage: storage);
+      final erasedAccounts = <String>[];
+      final repo = GoPrivacyRepository(
+        dio: dio,
+        storage: storage,
+        eraseLocalData: (accountId) async {
+          erasedAccounts.add(accountId);
+        },
+      );
       final result = await repo.erase(
         DeletionIntent.fromJson({
           'challenge': 'fixture',
@@ -273,6 +280,7 @@ void main() {
         'EXCLUIR MINHA CONTA',
       );
       expect(result.accountId, 'fixture-a');
+      expect(erasedAccounts, ['fixture-a']);
       expect(storage.token, 'fixture-new-account');
       expect(result.cleanupPending, isFalse);
     },
@@ -300,7 +308,15 @@ void main() {
         ),
       ),
     );
-    final repo = GoPrivacyRepository(dio: dio, storage: storage);
+    var localCleanups = 0;
+    final repo = GoPrivacyRepository(
+      dio: dio,
+      storage: storage,
+      eraseLocalData: (accountId) async {
+        expect(accountId, 'fixture-a');
+        localCleanups++;
+      },
+    );
     final result = await repo.erase(
       DeletionIntent.fromJson({
         'challenge': 'fixture',
@@ -313,7 +329,56 @@ void main() {
     storage.fail = false;
     await repo.finishCleanup();
     expect(storage.token, isNull);
+    expect(localCleanups, 1);
   });
+  test(
+    'private file cleanup failure keeps tokens until the exact account cleanup succeeds',
+    () async {
+      final storage = MemoryPrivacyStorage();
+      final dio = Dio(
+        BaseOptions(
+          baseUrl: 'https://example.invalid',
+          headers: {'Authorization': 'Bearer fixture-old'},
+        ),
+      );
+      dio.interceptors.add(
+        InterceptorsWrapper(
+          onRequest: (o, h) => h.resolve(
+            Response(
+              requestOptions: o,
+              statusCode: 200,
+              data: {
+                'deleted': true,
+                'accountId': 'fixture-a',
+                'backupNotice': 'Fixture',
+              },
+            ),
+          ),
+        ),
+      );
+      var attempts = 0;
+      final repo = GoPrivacyRepository(
+        dio: dio,
+        storage: storage,
+        eraseLocalData: (accountId) async {
+          expect(accountId, 'fixture-a');
+          if (++attempts == 1) throw StateError('Fixture locked local file');
+        },
+      );
+      final result = await repo.erase(
+        DeletionIntent.fromJson({
+          'challenge': 'fixture',
+          'expiresAt': DateTime.now().toUtc().toIso8601String(),
+        }),
+        'EXCLUIR MINHA CONTA',
+      );
+      expect(result.cleanupPending, isTrue);
+      expect(storage.token, 'fixture-old');
+      await repo.finishCleanup();
+      expect(attempts, 2);
+      expect(storage.token, isNull);
+    },
+  );
   testWidgets('public privacy policy does not expose account actions', (
     tester,
   ) async {
