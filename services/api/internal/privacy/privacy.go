@@ -39,14 +39,14 @@ type Policy struct {
 func CurrentPolicy() Policy {
 	return Policy{
 		SessionRetention:   "Registros temporários expirados podem permanecer até a manutenção manual. A expiração e a revogação das sessões continuam valendo antes dessa limpeza.",
-		Version:            "trainforge.privacy/1",
+		Version:            "trainforge.privacy/2",
 		AccountDeletion:    "Após sua confirmação, os dados atuais da conta TrainForge são apagados e todas as suas sessões são encerradas.",
 		BackupRetention:    "Cópias de segurança antigas podem manter dados anteriores à exclusão. Nesta versão de avaliação, a remoção dessas cópias ainda depende de manutenção manual.",
 		RestoreRequirement: "Uma cópia antiga só pode voltar a ser usada depois de aplicar os pedidos de exclusão mais recentes. Sem esses registros atualizados, a recuperação não é liberada.",
 		ErasureLedger:      "Mantemos somente um identificador interno da conta e a data da exclusão para impedir que os dados retornem ao recuperar uma cópia de segurança. Esse registro não contém nome, e-mail ou credenciais.",
 		OtherServices:      "A conta Google e dados mantidos pelo Google não são apagados por esta ação.",
-		FutureStorage:      "Esta versão não envia suas fotos. As credenciais da sessão ficam no armazenamento protegido deste aparelho.",
-		ExportSections:     []string{"account", "sessions", "enrollments", "occurrences", "activitySessions", "activityEvents", "foods", "foodEntries", "trainingConfigurations", "meals", "mealItems", "mealVersions"},
+		FutureStorage:      "Fotos de rótulo só são enviadas quando você as seleciona para uma contribuição voluntária. Metadados da imagem são removidos; refeições, peso e histórico não são enviados como contribuição. A exclusão da conta apaga contribuições e fotos privadas; dados já publicados com sua autorização podem continuar nas cópias distribuídas do catálogo aberto. Recibos e alterações internos de sincronização são excluídos da exportação por serem cópias operacionais dos registros exportados, e são apagados com a conta. As credenciais da sessão ficam no armazenamento protegido deste aparelho.",
+		ExportSections:     []string{"account", "sessions", "enrollments", "occurrences", "activitySessions", "activityEvents", "foods", "foodEntries", "trainingConfigurations", "meals", "mealItems", "mealVersions", "foodContributions", "foodContributionMedia"},
 		FreshLoginMinutes:  15, IntentMinutes: 5,
 	}
 }

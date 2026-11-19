@@ -3,7 +3,6 @@ package nutrition
 import (
 	"context"
 	"errors"
-	"math/big"
 	"time"
 	"trainforge.local/api/internal/auth"
 )
@@ -70,7 +69,11 @@ func confirmedMealMatches(saved ConfirmedMeal, command NewMealCommand) bool {
 	for i, item := range command.Items {
 		entry := saved.Entries[i]
 		c := entry.Calculation
-		if !uuidPattern.MatchString(entry.ID) || seen[entry.ID] || entry.DeletedAt != nil || entry.FoodID != item.FoodID || entry.FoodVersion != item.FoodVersion || !sameMealQuantity(entry.Quantity, item.Quantity) || entry.Unit != item.Unit || entry.Timezone != item.Timezone || !sameMealTime(entry.OccurredAt, item.OccurredAt) || c.Algorithm != "source-rational-v1" || len(c.Changes) != 0 || c.Revision != 1 || c.Preparation != item.Preparation || c.QuantityEvidence != item.QuantityEvidence || c.Food.ID != item.FoodID || c.Food.VersionID != item.FoodVersion {
+		algorithm := item.CalculationAlgorithm
+		if algorithm == "" {
+			algorithm = "source-rational-v1"
+		}
+		if !uuidPattern.MatchString(entry.ID) || seen[entry.ID] || entry.DeletedAt != nil || entry.FoodID != item.FoodID || entry.FoodVersion != item.FoodVersion || !sameMealQuantity(entry.Quantity, item.Quantity) || entry.Unit != item.Unit || entry.Timezone != item.Timezone || !sameMealTime(entry.OccurredAt, item.OccurredAt) || c.Algorithm != algorithm || len(c.Changes) != 0 || c.Revision != 1 || c.Preparation != item.Preparation || c.QuantityEvidence != item.QuantityEvidence || c.Food.ID != item.FoodID || c.Food.VersionID != item.FoodVersion {
 			return false
 		}
 		seen[entry.ID] = true
@@ -78,12 +81,12 @@ func confirmedMealMatches(saved ConfirmedMeal, command NewMealCommand) bool {
 	return true
 }
 func sameMealQuantity(a, b string) bool {
-	if !quantity(a, true) || !quantity(b, true) {
+	left, e := number(a)
+	if e != nil || left.Sign() <= 0 {
 		return false
 	}
-	left, _ := new(big.Rat).SetString(a)
-	right, _ := new(big.Rat).SetString(b)
-	return left.Cmp(right) == 0
+	right, e := number(b)
+	return e == nil && right.Sign() > 0 && left.Cmp(right) == 0
 }
 func (s MealCreateService) Create(ctx context.Context, p auth.Principal, command NewMealCommand, key string) (ConfirmedMeal, error) {
 	if e := ctx.Err(); e != nil {

@@ -20,13 +20,14 @@ import (
 	"trainforge.local/api/internal/platform/httpapi"
 	"trainforge.local/api/internal/platform/postgres"
 	"trainforge.local/api/internal/privacy"
+	"trainforge.local/api/internal/publiccatalog"
 	_ "trainforge.local/api/internal/swaggerdocs"
 	"trainforge.local/api/internal/trainingconfig"
 )
 
 // @title TrainForge API
-// @version 0.10.0
-// @description Google sessions, privacy, reviewed movement and food references, private food declarations, explicitly recorded consumption and atomic meal grouping. Meal routes require schema13. No executable training content or prescribed diets.
+// @version 0.11.0
+// @description Google sessions, privacy, reviewed references, private food declarations, recorded consumption, atomic meals and durable offline nutrition synchronization. No executable training content or prescribed diets.
 // @BasePath /
 // @schemes http https
 // @securityDefinitions.apikey BearerAuth
@@ -86,6 +87,17 @@ func run(logger *slog.Logger) error {
 	}
 	privacyHTTP := &privacy.Handler{Service: privacy.Service{Repository: privacyRepository}, Authorize: authentication.Service.Authorize}
 	nutritionHTTP := &nutrition.EntryHandler{Store: nutrition.NutritionStore{Pool: pool}, Names: nutrition.FoodPostgres{Pool: pool}, Authorize: authentication.Service.Authorize}
+	nutritionSyncHTTP := &nutrition.SyncHandler{EntryHandler: nutritionHTTP}
+	contributionsHTTP := &nutrition.ContributionHandler{EntryHandler: nutritionHTTP}
+	foodFiles := &publiccatalog.Files{Directory: c.FoodCatalogDirectory, ExportsDirectory: c.FoodCatalogExportsDirectory, ArchivePath: c.FoodCatalogArchivePath,
+		Active: func(ctx context.Context, manifest nutrition.CatalogManifest) bool {
+			if pool == nil {
+				return false
+			}
+			var active bool
+			err := pool.QueryRow(ctx, "SELECT EXISTS(SELECT 1 FROM trainforge_v1.food_catalog_releases WHERE version=$1 AND artifact_sha=$2 AND manifest_sha=$3 AND status='active')", manifest.Version, manifest.SHA256, manifest.ManifestSHA).Scan(&active)
+			return err == nil && active
+		}}
 	trainingStore := trainingconfig.Postgres{Pool: pool}
 	activityStore := activity.ActivityStore{Pool: pool}
 	catalogRoutes := catalogHTTP.Register
@@ -104,7 +116,7 @@ func run(logger *slog.Logger) error {
 	}
 	trainingHTTP := &trainingconfig.Handler{Service: trainingconfig.Service{Repository: trainingStore}, ResourceStore: trainingStore, Authorize: authentication.Service.Authorize}
 	activityHTTP := &activity.Handler{Store: activityStore, Authorize: authentication.Service.Authorize}
-	server := &http.Server{Addr: c.ListenAddr, Handler: httpapi.NewWithNetwork(db, logger, c.RequestTimeout, docs, network, authentication.Register, catalogRoutes, foodHTTP.Register, privacyHTTP.Register, nutritionHTTP.Register, trainingHTTP.Register, activityHTTP.Register), ReadHeaderTimeout: 5 * time.Second, ReadTimeout: 15 * time.Second, WriteTimeout: 15 * time.Second, IdleTimeout: 60 * time.Second, MaxHeaderBytes: 16 << 10}
+	server := &http.Server{Addr: c.ListenAddr, Handler: httpapi.NewWithNetwork(db, logger, c.RequestTimeout, docs, network, authentication.Register, catalogRoutes, foodHTTP.Register, privacyHTTP.Register, nutritionHTTP.Register, nutritionSyncHTTP.Register, contributionsHTTP.Register, foodFiles.Register, trainingHTTP.Register, activityHTTP.Register), ReadHeaderTimeout: 5 * time.Second, ReadTimeout: 15 * time.Second, WriteTimeout: 15 * time.Second, IdleTimeout: 60 * time.Second, MaxHeaderBytes: 16 << 10}
 	go func() {
 		<-ctx.Done()
 		shutdown, cancel := context.WithTimeout(context.Background(), 5*time.Second)

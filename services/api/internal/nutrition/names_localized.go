@@ -136,7 +136,7 @@ func (p FoodPostgres) LocalizedDetail(ctx context.Context, id, version, locale s
 		return FoodDetail{}, err
 	}
 	defer tx.Rollback(ctx)
-	query := `WITH selected AS(SELECT * FROM trainforge_v1.food_versions WHERE food_id=$1 AND ($2='' OR version_sha=$2) ORDER BY created_at DESC,version_sha DESC LIMIT 1)
+	query := `WITH selected AS(SELECT v.* FROM trainforge_v1.food_versions v WHERE v.food_id=$1 AND ($2='' OR v.version_sha=$2) AND ` + foodPublished + ` ORDER BY v.created_at DESC,v.version_sha DESC LIMIT 1)
  SELECT ` + foodProjection + `,v.nutrients,` + activeNamePayload + `,` + activeNameVersion + ` FROM selected v ` + localizedNameJoin + ` WHERE ` + foodVisible
 	var raw, cells, names []byte
 	var nameVersion *string

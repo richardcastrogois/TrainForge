@@ -586,6 +586,336 @@ const docTemplate = `{
                 }
             }
         },
+        "/api/v1/food-catalog/archive": {
+            "get": {
+                "description": "ZIP containing exactly manifest.json and the signed catalog payload. Requires an active release and matching archive identity. Transfers use bounded memory, at most four concurrent download slots and a 30-minute request deadline; supports Range and HEAD. No account authentication is required.",
+                "produces": [
+                    "application/zip",
+                    "application/problem+json",
+                    "text/plain"
+                ],
+                "tags": [
+                    "food-catalog"
+                ],
+                "summary": "Download the signed public food catalog update",
+                "parameters": [
+                    {
+                        "type": "string",
+                        "description": "HTTP byte range, for example bytes=0-1048575",
+                        "name": "Range",
+                        "in": "header"
+                    },
+                    {
+                        "type": "string",
+                        "description": "ETag or last-modified date for resumable downloads",
+                        "name": "If-Range",
+                        "in": "header"
+                    },
+                    {
+                        "type": "string",
+                        "description": "Previously received ETag",
+                        "name": "If-None-Match",
+                        "in": "header"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Verified catalog update ZIP",
+                        "schema": {
+                            "type": "file"
+                        },
+                        "headers": {
+                            "ETag": {
+                                "type": "string",
+                                "description": "Quoted SHA-256 of the signed manifest payload"
+                            }
+                        }
+                    },
+                    "206": {
+                        "description": "Requested ZIP byte range",
+                        "schema": {
+                            "type": "file"
+                        },
+                        "headers": {
+                            "Content-Range": {
+                                "type": "string",
+                                "description": "Requested byte range and complete archive size"
+                            },
+                            "ETag": {
+                                "type": "string",
+                                "description": "Quoted SHA-256 of the signed manifest payload"
+                            }
+                        }
+                    },
+                    "304": {
+                        "description": "Not Modified"
+                    },
+                    "416": {
+                        "description": "HTTP range is not satisfiable",
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    "503": {
+                        "description": "Distribution unavailable, integrity check failed or all download slots busy",
+                        "schema": {
+                            "$ref": "#/definitions/httpapi.Problem"
+                        }
+                    }
+                }
+            }
+        },
+        "/api/v1/food-catalog/exports/{artifact}/{file}": {
+            "get": {
+                "description": "Artifact is the distributed catalog SHA-256 from the installed signed manifest, not the raw SQLite checksum. The archived manifest must match this artifact and an active release, verified using the server trust root. Only declared source files are served; query parameters are rejected. Supports Range and HEAD, four shared download slots and a 30-minute request deadline.",
+                "produces": [
+                    "application/gzip",
+                    "application/problem+json",
+                    "text/plain"
+                ],
+                "tags": [
+                    "food-catalog"
+                ],
+                "summary": "Download a source export for an exact food catalog artifact",
+                "parameters": [
+                    {
+                        "maxLength": 64,
+                        "minLength": 64,
+                        "type": "string",
+                        "description": "Lowercase 64-character SHA-256 of the signed distributed catalog artifact",
+                        "name": "artifact",
+                        "in": "path",
+                        "required": true
+                    },
+                    {
+                        "type": "string",
+                        "description": "Exact export filename declared by this artifact manifest, ending in .jsonl.gz",
+                        "name": "file",
+                        "in": "path",
+                        "required": true
+                    },
+                    {
+                        "type": "string",
+                        "description": "HTTP byte range",
+                        "name": "Range",
+                        "in": "header"
+                    },
+                    {
+                        "type": "string",
+                        "description": "ETag or last-modified date for resumable downloads",
+                        "name": "If-Range",
+                        "in": "header"
+                    },
+                    {
+                        "type": "string",
+                        "description": "Previously received export ETag",
+                        "name": "If-None-Match",
+                        "in": "header"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Verified gzip JSONL source export for the requested artifact",
+                        "schema": {
+                            "type": "file"
+                        },
+                        "headers": {
+                            "ETag": {
+                                "type": "string",
+                                "description": "Quoted SHA-256 of this source export"
+                            }
+                        }
+                    },
+                    "206": {
+                        "description": "Requested export byte range",
+                        "schema": {
+                            "type": "file"
+                        },
+                        "headers": {
+                            "Content-Range": {
+                                "type": "string",
+                                "description": "Requested byte range and complete export size"
+                            },
+                            "ETag": {
+                                "type": "string",
+                                "description": "Quoted SHA-256 of this source export"
+                            }
+                        }
+                    },
+                    "304": {
+                        "description": "Not Modified"
+                    },
+                    "404": {
+                        "description": "Artifact is unknown, untrusted, mismatched or inactive, or export request is invalid",
+                        "schema": {
+                            "$ref": "#/definitions/httpapi.Problem"
+                        }
+                    },
+                    "416": {
+                        "description": "HTTP range is not satisfiable",
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    "503": {
+                        "description": "Source file unavailable, integrity check failed or download slots busy",
+                        "schema": {
+                            "$ref": "#/definitions/httpapi.Problem"
+                        }
+                    }
+                }
+            }
+        },
+        "/api/v1/food-catalog/exports/{file}": {
+            "get": {
+                "description": "Serves only a declared gzip JSONL source after verifying signed size, SHA-256 and active release. Query parameters are rejected. Supports Range and HEAD, four shared download slots and a 30-minute request deadline. Use the artifact-specific route to retain an older catalog source offer.",
+                "produces": [
+                    "application/gzip",
+                    "application/problem+json",
+                    "text/plain"
+                ],
+                "tags": [
+                    "food-catalog"
+                ],
+                "summary": "Download a source export from the current food catalog",
+                "parameters": [
+                    {
+                        "type": "string",
+                        "description": "Exact export filename declared by the signed manifest, ending in .jsonl.gz",
+                        "name": "file",
+                        "in": "path",
+                        "required": true
+                    },
+                    {
+                        "type": "string",
+                        "description": "HTTP byte range",
+                        "name": "Range",
+                        "in": "header"
+                    },
+                    {
+                        "type": "string",
+                        "description": "ETag or last-modified date for resumable downloads",
+                        "name": "If-Range",
+                        "in": "header"
+                    },
+                    {
+                        "type": "string",
+                        "description": "Previously received export ETag",
+                        "name": "If-None-Match",
+                        "in": "header"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Verified gzip JSONL source export",
+                        "schema": {
+                            "type": "file"
+                        },
+                        "headers": {
+                            "ETag": {
+                                "type": "string",
+                                "description": "Quoted SHA-256 of this source export"
+                            }
+                        }
+                    },
+                    "206": {
+                        "description": "Requested export byte range",
+                        "schema": {
+                            "type": "file"
+                        },
+                        "headers": {
+                            "Content-Range": {
+                                "type": "string",
+                                "description": "Requested byte range and complete export size"
+                            },
+                            "ETag": {
+                                "type": "string",
+                                "description": "Quoted SHA-256 of this source export"
+                            }
+                        }
+                    },
+                    "304": {
+                        "description": "Not Modified"
+                    },
+                    "404": {
+                        "description": "Export is undeclared, malformed or has query parameters",
+                        "schema": {
+                            "$ref": "#/definitions/httpapi.Problem"
+                        }
+                    },
+                    "416": {
+                        "description": "HTTP range is not satisfiable",
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    "503": {
+                        "description": "Current release unavailable, file integrity failed or download slots busy",
+                        "schema": {
+                            "$ref": "#/definitions/httpapi.Problem"
+                        }
+                    }
+                }
+            }
+        },
+        "/api/v1/food-catalog/manifest": {
+            "get": {
+                "description": "Public metadata for the exact active distribution. Payload and Ed25519 signature are base64 encoded; clients verify against their installed trust root. Cached for 300 seconds. No account authentication is required.",
+                "produces": [
+                    "application/json",
+                    "application/problem+json"
+                ],
+                "tags": [
+                    "food-catalog"
+                ],
+                "summary": "Read the signed public food catalog manifest",
+                "parameters": [
+                    {
+                        "type": "string",
+                        "description": "Quoted SHA-256 ETag of the signed manifest payload",
+                        "name": "If-None-Match",
+                        "in": "header"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "$ref": "#/definitions/publiccatalog.SignedManifestEnvelope"
+                        },
+                        "headers": {
+                            "Cache-Control": {
+                                "type": "string",
+                                "description": "public, max-age=300"
+                            },
+                            "ETag": {
+                                "type": "string",
+                                "description": "Quoted SHA-256 of the signed manifest payload"
+                            }
+                        }
+                    },
+                    "304": {
+                        "description": "Not Modified",
+                        "headers": {
+                            "Cache-Control": {
+                                "type": "string",
+                                "description": "public, max-age=300"
+                            },
+                            "ETag": {
+                                "type": "string",
+                                "description": "Quoted SHA-256 of the signed manifest payload"
+                            }
+                        }
+                    },
+                    "503": {
+                        "description": "Distribution is unconfigured, untrusted or inactive",
+                        "schema": {
+                            "$ref": "#/definitions/httpapi.Problem"
+                        }
+                    }
+                }
+            }
+        },
         "/api/v1/foods": {
             "get": {
                 "description": "Locale-aware search also recognizes bounded everyday-food discovery terms. It preserves source identity, preparation, reviewed names and composition.",
@@ -1433,6 +1763,257 @@ const docTemplate = `{
                         "description": "Service Unavailable",
                         "schema": {
                             "$ref": "#/definitions/httpapi.Problem"
+                        }
+                    }
+                }
+            }
+        },
+        "/api/v1/me/food-contributions": {
+            "get": {
+                "security": [
+                    {
+                        "BearerAuth": []
+                    }
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "tags": [
+                    "nutrition"
+                ],
+                "summary": "List own food contributions",
+                "parameters": [
+                    {
+                        "type": "string",
+                        "description": "Account-bound cursor",
+                        "name": "cursor",
+                        "in": "query"
+                    },
+                    {
+                        "type": "integer",
+                        "description": "Page size 1-100",
+                        "name": "limit",
+                        "in": "query"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "$ref": "#/definitions/nutrition.ContributionPage"
+                        }
+                    }
+                }
+            },
+            "post": {
+                "security": [
+                    {
+                        "BearerAuth": []
+                    }
+                ],
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "tags": [
+                    "nutrition"
+                ],
+                "summary": "Submit a voluntary food contribution",
+                "parameters": [
+                    {
+                        "description": "Explicit CC0 consent and food fields; no meal or account payload",
+                        "name": "body",
+                        "in": "body",
+                        "required": true,
+                        "schema": {
+                            "$ref": "#/definitions/nutrition.ContributionInput"
+                        }
+                    }
+                ],
+                "responses": {
+                    "201": {
+                        "description": "Created",
+                        "schema": {
+                            "$ref": "#/definitions/nutrition.Contribution"
+                        }
+                    },
+                    "400": {
+                        "description": "Bad Request",
+                        "schema": {
+                            "type": "object",
+                            "additionalProperties": {
+                                "type": "string"
+                            }
+                        }
+                    },
+                    "401": {
+                        "description": "Unauthorized",
+                        "schema": {
+                            "type": "object",
+                            "additionalProperties": {
+                                "type": "string"
+                            }
+                        }
+                    },
+                    "409": {
+                        "description": "Conflict",
+                        "schema": {
+                            "type": "object",
+                            "additionalProperties": {
+                                "type": "string"
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/api/v1/me/food-contributions/{id}": {
+            "get": {
+                "security": [
+                    {
+                        "BearerAuth": []
+                    }
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "tags": [
+                    "nutrition"
+                ],
+                "summary": "Read own food contribution status",
+                "parameters": [
+                    {
+                        "type": "string",
+                        "description": "Contribution UUID",
+                        "name": "id",
+                        "in": "path",
+                        "required": true
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "$ref": "#/definitions/nutrition.Contribution"
+                        }
+                    }
+                }
+            },
+            "delete": {
+                "security": [
+                    {
+                        "BearerAuth": []
+                    }
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "tags": [
+                    "nutrition"
+                ],
+                "summary": "Withdraw a contribution before review",
+                "parameters": [
+                    {
+                        "type": "string",
+                        "description": "Contribution UUID",
+                        "name": "id",
+                        "in": "path",
+                        "required": true
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "$ref": "#/definitions/nutrition.Contribution"
+                        }
+                    },
+                    "409": {
+                        "description": "Conflict",
+                        "schema": {
+                            "type": "object",
+                            "additionalProperties": {
+                                "type": "string"
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/api/v1/me/food-contributions/{id}/media": {
+            "post": {
+                "security": [
+                    {
+                        "BearerAuth": []
+                    }
+                ],
+                "consumes": [
+                    "image/jpeg",
+                    "image/png"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "tags": [
+                    "nutrition"
+                ],
+                "summary": "Attach an optional label photo with metadata removed",
+                "parameters": [
+                    {
+                        "type": "string",
+                        "description": "Contribution UUID",
+                        "name": "id",
+                        "in": "path",
+                        "required": true
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "$ref": "#/definitions/nutrition.Contribution"
+                        }
+                    }
+                }
+            }
+        },
+        "/api/v1/me/food-contributions/{id}/media/{mediaId}": {
+            "get": {
+                "security": [
+                    {
+                        "BearerAuth": []
+                    }
+                ],
+                "produces": [
+                    "image/jpeg"
+                ],
+                "tags": [
+                    "nutrition"
+                ],
+                "summary": "Read an own contribution's private label photo",
+                "parameters": [
+                    {
+                        "type": "string",
+                        "description": "Contribution UUID",
+                        "name": "id",
+                        "in": "path",
+                        "required": true
+                    },
+                    {
+                        "type": "string",
+                        "description": "Media UUID",
+                        "name": "mediaId",
+                        "in": "path",
+                        "required": true
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "type": "file"
                         }
                     }
                 }
@@ -2551,6 +3132,199 @@ const docTemplate = `{
                 }
             }
         },
+        "/api/v1/me/nutrition/changes": {
+            "get": {
+                "security": [
+                    {
+                        "BearerAuth": []
+                    }
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "tags": [
+                    "nutrition"
+                ],
+                "summary": "Read account nutrition baseline and changes",
+                "parameters": [
+                    {
+                        "type": "string",
+                        "description": "Opaque account-bound checkpoint",
+                        "name": "cursor",
+                        "in": "query"
+                    },
+                    {
+                        "type": "integer",
+                        "description": "Page size 1-200, default 100",
+                        "name": "limit",
+                        "in": "query"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "$ref": "#/definitions/nutrition.SyncPage"
+                        }
+                    },
+                    "400": {
+                        "description": "Bad Request",
+                        "schema": {
+                            "type": "object",
+                            "additionalProperties": {
+                                "type": "string"
+                            }
+                        }
+                    },
+                    "401": {
+                        "description": "Unauthorized",
+                        "schema": {
+                            "type": "object",
+                            "additionalProperties": {
+                                "type": "string"
+                            }
+                        }
+                    },
+                    "503": {
+                        "description": "Service Unavailable",
+                        "schema": {
+                            "type": "object",
+                            "additionalProperties": {
+                                "type": "string"
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/api/v1/me/nutrition/sync": {
+            "get": {
+                "security": [
+                    {
+                        "BearerAuth": []
+                    }
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "tags": [
+                    "nutrition"
+                ],
+                "summary": "Read account nutrition baseline and changes",
+                "parameters": [
+                    {
+                        "type": "string",
+                        "description": "Opaque account-bound checkpoint",
+                        "name": "cursor",
+                        "in": "query"
+                    },
+                    {
+                        "type": "integer",
+                        "description": "Page size 1-200, default 100",
+                        "name": "limit",
+                        "in": "query"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "$ref": "#/definitions/nutrition.SyncPage"
+                        }
+                    },
+                    "400": {
+                        "description": "Bad Request",
+                        "schema": {
+                            "type": "object",
+                            "additionalProperties": {
+                                "type": "string"
+                            }
+                        }
+                    },
+                    "401": {
+                        "description": "Unauthorized",
+                        "schema": {
+                            "type": "object",
+                            "additionalProperties": {
+                                "type": "string"
+                            }
+                        }
+                    },
+                    "503": {
+                        "description": "Service Unavailable",
+                        "schema": {
+                            "type": "object",
+                            "additionalProperties": {
+                                "type": "string"
+                            }
+                        }
+                    }
+                }
+            },
+            "post": {
+                "security": [
+                    {
+                        "BearerAuth": []
+                    }
+                ],
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "tags": [
+                    "nutrition"
+                ],
+                "summary": "Synchronize durable offline nutrition operations",
+                "parameters": [
+                    {
+                        "description": "Stable operation IDs, dependencies and legacy domain bodies",
+                        "name": "body",
+                        "in": "body",
+                        "required": true,
+                        "schema": {
+                            "$ref": "#/definitions/nutrition.SyncPush"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "$ref": "#/definitions/nutrition.SyncPushResult"
+                        }
+                    },
+                    "400": {
+                        "description": "Bad Request",
+                        "schema": {
+                            "type": "object",
+                            "additionalProperties": {
+                                "type": "string"
+                            }
+                        }
+                    },
+                    "401": {
+                        "description": "Unauthorized",
+                        "schema": {
+                            "type": "object",
+                            "additionalProperties": {
+                                "type": "string"
+                            }
+                        }
+                    },
+                    "503": {
+                        "description": "Service Unavailable",
+                        "schema": {
+                            "type": "object",
+                            "additionalProperties": {
+                                "type": "string"
+                            }
+                        }
+                    }
+                }
+            }
+        },
         "/api/v1/me/training-configuration": {
             "get": {
                 "security": [
@@ -3528,6 +4302,9 @@ const docTemplate = `{
                 "origin": {
                     "type": "string"
                 },
+                "portion": {
+                    "$ref": "#/definitions/nutrition.PortionSelection"
+                },
                 "preparation": {
                     "type": "string"
                 },
@@ -3536,6 +4313,41 @@ const docTemplate = `{
                 },
                 "revision": {
                     "type": "integer"
+                }
+            }
+        },
+        "nutrition.CanonicalFoodCell": {
+            "type": "object",
+            "properties": {
+                "basisQuantity": {
+                    "type": "string"
+                },
+                "basisUnit": {
+                    "type": "string"
+                },
+                "methodId": {
+                    "type": "string"
+                },
+                "nutrientId": {
+                    "type": "string"
+                },
+                "primaryForTotals": {
+                    "type": "boolean"
+                },
+                "sourceColumnKey": {
+                    "type": "string"
+                },
+                "state": {
+                    "type": "string"
+                },
+                "unit": {
+                    "type": "string"
+                },
+                "upperBound": {
+                    "type": "string"
+                },
+                "value": {
+                    "type": "string"
                 }
             }
         },
@@ -3606,6 +4418,135 @@ const docTemplate = `{
                 },
                 "meal": {
                     "$ref": "#/definitions/nutrition.MealMetadata"
+                }
+            }
+        },
+        "nutrition.Contribution": {
+            "type": "object",
+            "properties": {
+                "consent": {
+                    "$ref": "#/definitions/nutrition.ContributionConsent"
+                },
+                "createdAt": {
+                    "type": "string"
+                },
+                "food": {
+                    "$ref": "#/definitions/nutrition.ContributionFood"
+                },
+                "id": {
+                    "type": "string"
+                },
+                "media": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/nutrition.ContributionMedia"
+                    }
+                },
+                "reviewNote": {
+                    "type": "string"
+                },
+                "status": {
+                    "type": "string"
+                },
+                "updatedAt": {
+                    "type": "string"
+                }
+            }
+        },
+        "nutrition.ContributionConsent": {
+            "type": "object",
+            "properties": {
+                "accepted": {
+                    "type": "boolean"
+                },
+                "license": {
+                    "type": "string"
+                },
+                "version": {
+                    "type": "string"
+                }
+            }
+        },
+        "nutrition.ContributionFood": {
+            "type": "object",
+            "properties": {
+                "barcodes": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    }
+                },
+                "basis": {
+                    "$ref": "#/definitions/nutrition.Basis"
+                },
+                "brand": {
+                    "type": "string"
+                },
+                "name": {
+                    "type": "string"
+                },
+                "nutrients": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/nutrition.OwnNutrient"
+                    }
+                },
+                "portions": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/nutrition.FoodPortion"
+                    }
+                },
+                "preparation": {
+                    "type": "string"
+                }
+            }
+        },
+        "nutrition.ContributionInput": {
+            "type": "object",
+            "properties": {
+                "consent": {
+                    "$ref": "#/definitions/nutrition.ContributionConsent"
+                },
+                "food": {
+                    "$ref": "#/definitions/nutrition.ContributionFood"
+                },
+                "operationId": {
+                    "type": "string"
+                }
+            }
+        },
+        "nutrition.ContributionMedia": {
+            "type": "object",
+            "properties": {
+                "height": {
+                    "type": "integer"
+                },
+                "id": {
+                    "type": "string"
+                },
+                "mediaType": {
+                    "type": "string"
+                },
+                "sha256": {
+                    "type": "string"
+                },
+                "width": {
+                    "type": "integer"
+                }
+            }
+        },
+        "nutrition.ContributionPage": {
+            "type": "object",
+            "properties": {
+                "items": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/nutrition.Contribution"
+                    }
+                },
+                "nextCursor": {
+                    "type": "string"
                 }
             }
         },
@@ -3725,6 +4666,9 @@ const docTemplate = `{
         "nutrition.EntryInput": {
             "type": "object",
             "properties": {
+                "calculationAlgorithm": {
+                    "type": "string"
+                },
                 "foodId": {
                     "type": "string"
                 },
@@ -3733,6 +4677,9 @@ const docTemplate = `{
                 },
                 "occurredAt": {
                     "type": "string"
+                },
+                "portion": {
+                    "$ref": "#/definitions/nutrition.PortionSelection"
                 },
                 "preparation": {
                     "type": "string"
@@ -3814,8 +4761,23 @@ const docTemplate = `{
         "nutrition.FoodDetail": {
             "type": "object",
             "properties": {
+                "barcodes": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    }
+                },
                 "basis": {
                     "$ref": "#/definitions/nutrition.Basis"
+                },
+                "brand": {
+                    "type": "string"
+                },
+                "canonicalNutrients": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/nutrition.CanonicalFoodCell"
+                    }
                 },
                 "id": {
                     "type": "string"
@@ -3836,6 +4798,12 @@ const docTemplate = `{
                     "type": "array",
                     "items": {
                         "$ref": "#/definitions/nutrition.FoodCell"
+                    }
+                },
+                "portions": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/nutrition.FoodPortion"
                     }
                 },
                 "reviewedName": {
@@ -3907,6 +4875,29 @@ const docTemplate = `{
                 }
             }
         },
+        "nutrition.FoodPortion": {
+            "type": "object",
+            "properties": {
+                "condition": {
+                    "type": "string"
+                },
+                "id": {
+                    "type": "string"
+                },
+                "label": {
+                    "type": "string"
+                },
+                "quantity": {
+                    "type": "string"
+                },
+                "sourceId": {
+                    "type": "string"
+                },
+                "unit": {
+                    "type": "string"
+                }
+            }
+        },
         "nutrition.FoodSourceCount": {
             "type": "object",
             "properties": {
@@ -3927,8 +4918,23 @@ const docTemplate = `{
         "nutrition.FoodSummary": {
             "type": "object",
             "properties": {
+                "barcodes": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    }
+                },
                 "basis": {
                     "$ref": "#/definitions/nutrition.Basis"
+                },
+                "brand": {
+                    "type": "string"
+                },
+                "canonicalNutrients": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/nutrition.CanonicalFoodCell"
+                    }
                 },
                 "id": {
                     "type": "string"
@@ -3938,6 +4944,12 @@ const docTemplate = `{
                 },
                 "nameOriginal": {
                     "type": "string"
+                },
+                "portions": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/nutrition.FoodPortion"
+                    }
                 },
                 "reviewedName": {
                     "$ref": "#/definitions/nutrition.ReviewedNameDisplay"
@@ -4084,6 +5096,9 @@ const docTemplate = `{
                 "nameOriginal": {
                     "type": "string"
                 },
+                "nutrientId": {
+                    "type": "string"
+                },
                 "sourceColumnKey": {
                     "type": "string"
                 },
@@ -4121,6 +5136,12 @@ const docTemplate = `{
         "nutrition.NutritionTotals": {
             "type": "object",
             "properties": {
+                "canonicalTotals": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/nutrition.NutrientTotal"
+                    }
+                },
                 "complete": {
                     "type": "boolean"
                 },
@@ -4147,8 +5168,17 @@ const docTemplate = `{
         "nutrition.OwnFoodInput": {
             "type": "object",
             "properties": {
+                "barcodes": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    }
+                },
                 "basis": {
                     "$ref": "#/definitions/nutrition.Basis"
+                },
+                "brand": {
+                    "type": "string"
                 },
                 "name": {
                     "type": "string"
@@ -4157,6 +5187,12 @@ const docTemplate = `{
                     "type": "array",
                     "items": {
                         "$ref": "#/definitions/nutrition.OwnNutrient"
+                    }
+                },
+                "portions": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/nutrition.FoodPortion"
                     }
                 },
                 "preparation": {
@@ -4176,6 +5212,32 @@ const docTemplate = `{
                 "value": {
                     "type": "string",
                     "x-nullable": true
+                }
+            }
+        },
+        "nutrition.PortionSelection": {
+            "type": "object",
+            "properties": {
+                "condition": {
+                    "type": "string"
+                },
+                "count": {
+                    "type": "string"
+                },
+                "id": {
+                    "type": "string"
+                },
+                "label": {
+                    "type": "string"
+                },
+                "quantity": {
+                    "type": "string"
+                },
+                "sourceId": {
+                    "type": "string"
+                },
+                "unit": {
+                    "type": "string"
                 }
             }
         },
@@ -4222,7 +5284,13 @@ const docTemplate = `{
                     "type": "string",
                     "x-nullable": true
                 },
+                "methodId": {
+                    "type": "string"
+                },
                 "nameOriginal": {
+                    "type": "string"
+                },
+                "nutrientId": {
                     "type": "string"
                 },
                 "rawText": {
@@ -4258,6 +5326,132 @@ const docTemplate = `{
                 "value": {
                     "type": "string",
                     "x-nullable": true
+                }
+            }
+        },
+        "nutrition.SyncChange": {
+            "type": "object",
+            "properties": {
+                "deleted": {
+                    "type": "boolean"
+                },
+                "entity": {
+                    "type": "string"
+                },
+                "id": {
+                    "type": "string"
+                },
+                "sequence": {
+                    "type": "string"
+                },
+                "value": {
+                    "type": "object"
+                }
+            }
+        },
+        "nutrition.SyncOperation": {
+            "type": "object",
+            "properties": {
+                "body": {
+                    "type": "object"
+                },
+                "dependsOn": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    }
+                },
+                "expectedRevision": {
+                    "type": "integer"
+                },
+                "kind": {
+                    "type": "string"
+                },
+                "localId": {
+                    "type": "string"
+                },
+                "operationId": {
+                    "type": "string"
+                },
+                "remoteId": {
+                    "type": "string"
+                }
+            }
+        },
+        "nutrition.SyncPage": {
+            "type": "object",
+            "properties": {
+                "contract": {
+                    "type": "string"
+                },
+                "cursor": {
+                    "type": "string"
+                },
+                "hasMore": {
+                    "type": "boolean"
+                },
+                "items": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/nutrition.SyncChange"
+                    }
+                },
+                "nextCursor": {
+                    "type": "string"
+                }
+            }
+        },
+        "nutrition.SyncPush": {
+            "type": "object",
+            "properties": {
+                "contract": {
+                    "type": "string"
+                },
+                "operations": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/nutrition.SyncOperation"
+                    }
+                }
+            }
+        },
+        "nutrition.SyncPushResult": {
+            "type": "object",
+            "properties": {
+                "contract": {
+                    "type": "string"
+                },
+                "results": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/nutrition.SyncResult"
+                    }
+                }
+            }
+        },
+        "nutrition.SyncResult": {
+            "type": "object",
+            "properties": {
+                "code": {
+                    "type": "string"
+                },
+                "localId": {
+                    "type": "string"
+                },
+                "operationId": {
+                    "type": "string"
+                },
+                "remoteId": {
+                    "type": "string"
+                },
+                "revision": {
+                    "type": "integer"
+                },
+                "status": {
+                    "type": "string"
+                },
+                "value": {
+                    "type": "object"
                 }
             }
         },
@@ -4373,6 +5567,22 @@ const docTemplate = `{
                 },
                 "version": {
                     "type": "string"
+                }
+            }
+        },
+        "publiccatalog.SignedManifestEnvelope": {
+            "type": "object",
+            "properties": {
+                "keyId": {
+                    "type": "string"
+                },
+                "payload": {
+                    "type": "string",
+                    "format": "byte"
+                },
+                "signature": {
+                    "type": "string",
+                    "format": "byte"
                 }
             }
         },
@@ -4542,12 +5752,12 @@ const docTemplate = `{
 
 // SwaggerInfo holds exported Swagger Info so clients can modify it
 var SwaggerInfo = &swag.Spec{
-	Version:          "0.10.0",
+	Version:          "0.11.0",
 	Host:             "",
 	BasePath:         "/",
 	Schemes:          []string{"http", "https"},
 	Title:            "TrainForge API",
-	Description:      "Google sessions, privacy, reviewed movement and food references, private food declarations, explicitly recorded consumption and atomic meal grouping. Meal routes require schema13. No executable training content or prescribed diets.",
+	Description:      "Google sessions, privacy, reviewed references, private food declarations, recorded consumption, atomic meals and durable offline nutrition synchronization. No executable training content or prescribed diets.",
 	InfoInstanceName: "swagger",
 	SwaggerTemplate:  docTemplate,
 	LeftDelim:        "{{",

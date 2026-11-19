@@ -63,12 +63,14 @@ func ownFood(id string, in OwnFoodInput) FoodDetail {
 		scaling := n.Value != nil && in.Basis.Unit != nil
 		food.Nutrients = append(food.Nutrients, FoodCell{Column: col, Name: n.Name, Unit: &n.Unit, State: state, Value: n.Value, Raw: raw, BasisQuantity: in.Basis.Quantity, BasisUnit: in.Basis.Unit, Scaling: scaling, Reasons: []string{}})
 	}
+	food.Brand, food.Barcodes, food.Portions = in.Brand, in.Barcodes, in.Portions
+	food.CanonicalNutrients = personalCanonical(food)
 	raw, _ := json.Marshal(in)
 	food.VersionID = hex.EncodeToString(digest(raw))
 	return food
 }
 
-const ownProjection = `jsonb_build_object('id',v.food_id,'versionId',v.version_sha,'sourceId','personal','sourceFoodId','','sourcePublishedVersion','user-declaration-v1','nameOriginal',v.name_original,'nameLocale','und','basis',jsonb_build_object('quantity',v.basis_quantity::text,'unit',v.basis_unit),'source',v.provenance->'source','nutrients',v.nutrients,'notice','Alimento particular; declaração do titular, sem revisão editorial ou clínica.')`
+const ownProjection = `jsonb_build_object('id',v.food_id,'versionId',v.version_sha,'sourceId','personal','sourceFoodId','','sourcePublishedVersion','user-declaration-v1','nameOriginal',v.name_original,'nameLocale','und','basis',jsonb_build_object('quantity',v.basis_quantity::text,'unit',v.basis_unit),'source',v.provenance->'source','nutrients',v.nutrients,'brand',v.provenance->'brand','barcodes',v.provenance->'barcodes','portions',v.provenance->'portions','canonicalNutrients',v.provenance->'canonicalNutrients','notice','Alimento particular; declaração do titular, sem revisão editorial ou clínica.')`
 
 func selectedFood(ctx context.Context, tx pgx.Tx, p auth.Principal, id, version string) (FoodDetail, string, error) {
 	var raw []byte
@@ -132,17 +134,27 @@ func (s NutritionStore) Mutate(ctx context.Context, p auth.Principal, op, id, ke
 		return nil, 0, e
 	}
 	defer tx.Rollback(ctx)
+	raw, status, e := s.mutateTx(ctx, tx, p, op, id, key, body)
+	if e != nil {
+		return nil, 0, e
+	}
+	if tx.Commit(ctx) != nil {
+		return nil, 0, ErrFoodUnavailable
+	}
+	return raw, status, nil
+}
+
+// mutateTx is shared by the legacy endpoint and the durable offline protocol.
+// The caller owns commit, including its receipt and the automatic change log.
+func (s NutritionStore) mutateTx(ctx context.Context, tx pgx.Tx, p auth.Principal, op, id, key string, body []byte) (json.RawMessage, int, error) {
 	requestHash, keyHash := digest(body), digest([]byte(key))
 	var priorHash, priorBody []byte
 	var status int
-	e = tx.QueryRow(ctx, `SELECT request_hash,response_body,response_status FROM trainforge_v1.idempotency_records
+	e := tx.QueryRow(ctx, `SELECT request_hash,response_body,response_status FROM trainforge_v1.idempotency_records
  WHERE user_id=$1 AND operation=$2 AND key_hash=$3 AND expires_at>clock_timestamp()`, p.User.ID, op, keyHash).Scan(&priorHash, &priorBody, &status)
 	if e == nil {
 		if !equal(priorHash, requestHash) {
 			return nil, 0, ErrEntryConflict
-		}
-		if e = tx.Commit(ctx); e != nil {
-			return nil, 0, ErrFoodUnavailable
 		}
 		return priorBody, status, nil
 	}
@@ -158,7 +170,7 @@ func (s NutritionStore) Mutate(ctx context.Context, p auth.Principal, op, id, ke
 		}
 		f := ownFood("own:"+newID(), in)
 		cells, _ := json.Marshal(f.Nutrients)
-		source, _ := json.Marshal(map[string]any{"source": f.Source, "origin": "personal", "clinicalApproval": false, "preparation": in.Preparation})
+		source, _ := json.Marshal(map[string]any{"source": f.Source, "origin": "personal", "clinicalApproval": false, "preparation": in.Preparation, "brand": in.Brand, "barcodes": in.Barcodes, "portions": in.Portions, "canonicalNutrients": f.CanonicalNutrients})
 		_, e = tx.Exec(ctx, `SELECT trainforge_v1.create_private_food($1,$2,$3,$4,$5,$6,$7,$8,$9,$10,$11)`, p.User.ID, p.FamilyID, p.AccessHash, f.ID, f.VersionID, in.Name, in.Preparation, in.Basis.Quantity, in.Basis.Unit, cells, source)
 		result = f
 		status = 201
@@ -232,7 +244,7 @@ func (s NutritionStore) Mutate(ctx context.Context, p auth.Principal, op, id, ke
 	_, e = tx.Exec(ctx, `INSERT INTO trainforge_v1.idempotency_records(user_id,operation,key_hash,request_hash,response_status,response_body,expires_at)
  VALUES($1,$2,$3,$4,$5,$6,clock_timestamp()+interval '24 hours')
  ON CONFLICT(user_id,operation,key_hash) DO UPDATE SET request_hash=EXCLUDED.request_hash,response_status=EXCLUDED.response_status,response_body=EXCLUDED.response_body,expires_at=EXCLUDED.expires_at`, p.User.ID, op, keyHash, requestHash, status, raw)
-	if e != nil || tx.Commit(ctx) != nil {
+	if e != nil {
 		return nil, 0, ErrFoodUnavailable
 	}
 	return raw, status, nil

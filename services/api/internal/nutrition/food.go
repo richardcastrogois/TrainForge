@@ -87,19 +87,20 @@ type ColumnBasis struct {
 	Kind     string `json:"kind"`
 }
 type Nutrient struct {
-	Column        string          `json:"sourceColumnKey"`
-	Row           string          `json:"sourceRowKey"`
-	Name          string          `json:"nameOriginal"`
-	Unit          *string         `json:"unit"`
-	State         string          `json:"state"`
-	Value         *string         `json:"value"`
-	UpperBound    *string         `json:"upperBound"`
-	Raw           json.RawMessage `json:"raw"`
-	BasisQuantity *string         `json:"basisQuantity"`
-	BasisUnit     *string         `json:"basisUnit"`
-	Declared      *ColumnBasis    `json:"declaredColumnBasis"`
-	Scaling       bool            `json:"scalingAllowed"`
-	Reasons       []string        `json:"reasons"`
+	SourceContract string          `json:"sourceContract,omitempty"`
+	Column         string          `json:"sourceColumnKey"`
+	Row            string          `json:"sourceRowKey"`
+	Name           string          `json:"nameOriginal"`
+	Unit           *string         `json:"unit"`
+	State          string          `json:"state"`
+	Value          *string         `json:"value"`
+	UpperBound     *string         `json:"upperBound"`
+	Raw            json.RawMessage `json:"raw"`
+	BasisQuantity  *string         `json:"basisQuantity"`
+	BasisUnit      *string         `json:"basisUnit"`
+	Declared       *ColumnBasis    `json:"declaredColumnBasis"`
+	Scaling        bool            `json:"scalingAllowed"`
+	Reasons        []string        `json:"reasons"`
 }
 type FoodProvenance struct {
 	ReviewSHA       string         `json:"reviewSha256"`
@@ -193,6 +194,13 @@ func rawValue(n Nutrient) (state, token string, err error) {
 	return "numeric", token, nil
 }
 func validateState(n Nutrient) error {
+	if n.SourceContract == CatalogContract {
+		var raw string
+		if json.Unmarshal(n.Raw, &raw) != nil {
+			return errors.New("invalid original source token")
+		}
+		return validateCatalogCell(CatalogOriginalCell{Column: n.Column, Name: n.Name, Unit: n.Unit, State: n.State, Value: n.Value, UpperBound: n.UpperBound, Raw: raw})
+	}
 	state, token, err := rawValue(n)
 	if err != nil || state != n.State {
 		return errors.New("source state mismatch")

@@ -7,6 +7,8 @@ import (
 	"github.com/felixge/httpsnoop"
 	"log/slog"
 	"net/http"
+	"regexp"
+	"strings"
 	"time"
 )
 
@@ -86,13 +88,13 @@ func NewWithNetwork(db Readiness, logger *slog.Logger, timeout time.Duration, do
 	mux.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) { Failure(w, r, http.StatusNotFound, "route_not_found") })
 	return http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
 		id := rand.Text()
-		ctx, cancel := context.WithTimeout(context.WithValue(r.Context(), requestKey{}, id), timeout)
+		ctx, cancel := context.WithTimeout(context.WithValue(r.Context(), requestKey{}, id), requestTimeout(r, timeout))
 		defer cancel()
 		r = r.WithContext(ctx)
 		w.Header().Set("X-Request-Id", id)
 		w.Header().Set("X-Content-Type-Options", "nosniff")
 		w.Header().Set("Cache-Control", "no-store")
-		r.Body = http.MaxBytesReader(w, r.Body, 64<<10)
+		r.Body = http.MaxBytesReader(w, r.Body, requestBodyLimit(r))
 		metrics := httpsnoop.CaptureMetricsFn(w, func(w http.ResponseWriter) {
 			defer func() {
 				if recover() != nil {
@@ -127,4 +129,29 @@ func NewWithNetwork(db Readiness, logger *slog.Logger, timeout time.Duration, do
 			"route", routeLabel(r.Pattern), "status", metrics.Code,
 			"durationMs", float64(metrics.Duration)/float64(time.Millisecond), "responseBytes", metrics.Written)
 	})
+}
+
+// Domain handlers keep their own strict schema/size checks. Only these explicit
+// upload/batch routes need a larger outer ceiling than the legacy 64 KiB.
+func requestBodyLimit(r *http.Request) int64 {
+	if r.Method == http.MethodPost && r.URL.Path == "/api/v1/me/nutrition/sync" {
+		return 2 << 20
+	}
+	if r.Method == http.MethodPost {
+		parts := strings.Split(strings.Trim(r.URL.Path, "/"), "/")
+		if len(parts) == 6 && parts[0] == "api" && parts[1] == "v1" && parts[2] == "me" && parts[3] == "food-contributions" && len(parts[4]) == 36 && parts[5] == "media" {
+			return 4 << 20
+		}
+	}
+	return 64 << 10
+}
+
+var catalogExportPath = regexp.MustCompile(`^/api/v1/food-catalog/exports/([a-f0-9]{64}/)?[A-Za-z0-9_.-]+[.]jsonl[.]gz$`)
+
+func requestTimeout(r *http.Request, normal time.Duration) time.Duration {
+	if (r.Method == http.MethodGet || r.Method == http.MethodHead) && r.URL.RawQuery == "" &&
+		(r.URL.Path == "/api/v1/food-catalog/archive" || catalogExportPath.MatchString(r.URL.Path)) {
+		return 30 * time.Minute
+	}
+	return normal
 }

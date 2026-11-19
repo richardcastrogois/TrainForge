@@ -32,6 +32,11 @@ var columns = map[string]string{
 	"meal_items":                      "entry_id user_id meal_id position",
 	"meal_versions":                   "meal_id user_id revision title occurred_at timezone entry_ids deleted confirmed_at",
 	"account_erasures":                "user_id erased_at",
+	"nutrition_sync_state":            "user_id sequence seeded",
+	"nutrition_changes":               "user_id sequence entity resource_id value deleted changed_at",
+	"nutrition_operation_receipts":    "user_id operation_id kind local_id request_hash result created_at",
+	"food_contributions":              "id user_id operation_id request_hash food consent status review_note created_at updated_at reviewed_at",
+	"food_contribution_media":         "id contribution_id user_id sha256 media_type content width height created_at",
 }
 
 // Inventory is deliberately explicit: a new private table/column must not silently
@@ -77,7 +82,31 @@ func coverage(ctx context.Context, tx pgx.Tx) error {
 	if mealTables != 0 && mealTables != 3 {
 		return ErrUnavailable
 	}
+	optionalGroups := [][]string{
+		{"nutrition_sync_state", "nutrition_changes", "nutrition_operation_receipts"},
+		{"food_contributions", "food_contribution_media"},
+	}
+	absent := map[string]bool{}
+	for _, group := range optionalGroups {
+		present := 0
+		for _, table := range group {
+			if len(found[table]) > 0 {
+				present++
+			}
+		}
+		if present != 0 && present != len(group) {
+			return ErrUnavailable
+		}
+		if present == 0 {
+			for _, table := range group {
+				absent[table] = true
+			}
+		}
+	}
 	for table, expected := range columns {
+		if absent[table] {
+			continue
+		}
 		if mealTables == 0 && (table == "meals" || table == "meal_items" || table == "meal_versions") {
 			continue
 		}
@@ -130,6 +159,8 @@ func (p Postgres) begin(ctx context.Context, subject auth.Principal, exclusive b
 type section struct{ table, key, owner, projection string }
 
 var sections = map[string]section{
+	"foodContributions":      {"food_contributions", "v.id::text", "v.user_id", `jsonb_build_object('id',v.id,'food',v.food,'consent',v.consent,'status',v.status,'reviewNote',v.review_note,'createdAt',v.created_at,'updatedAt',v.updated_at,'reviewedAt',v.reviewed_at)`},
+	"foodContributionMedia":  {"food_contribution_media", "v.id::text", "v.user_id", `jsonb_build_object('id',v.id,'contributionId',v.contribution_id,'sha256',encode(v.sha256,'hex'),'mediaType',v.media_type,'width',v.width,'height',v.height,'createdAt',v.created_at,'downloadPath','/api/v1/me/food-contributions/'||v.contribution_id::text||'/media/'||v.id::text)`},
 	"meals":                  {"meals", "v.id::text", "v.user_id", `jsonb_build_object('id',v.id,'title',v.title,'occurredAt',v.occurred_at,'timezone',v.timezone,'revision',v.revision,'deletedAt',v.deleted_at,'createdAt',v.created_at)`},
 	"mealItems":              {"meal_items", "v.entry_id::text", "v.user_id", `jsonb_build_object('mealId',v.meal_id,'entryId',v.entry_id,'position',v.position)`},
 	"mealVersions":           {"meal_versions", "v.meal_id::text||':'||lpad(v.revision::text,10,'0')", "v.user_id", `jsonb_build_object('mealId',v.meal_id,'revision',v.revision,'title',v.title,'occurredAt',v.occurred_at,'timezone',v.timezone,'entryIds',v.entry_ids,'deleted',v.deleted,'confirmedAt',v.confirmed_at)`},
@@ -155,6 +186,18 @@ func (p Postgres) Export(ctx context.Context, subject auth.Principal, f ExportFi
 		return result, err
 	}
 	defer tx.Rollback(ctx)
+	if f.Section == "foodContributions" || f.Section == "foodContributionMedia" {
+		var present bool
+		if tx.QueryRow(ctx, "SELECT to_regclass('trainforge_v1.food_contributions') IS NOT NULL").Scan(&present) != nil {
+			return result, ErrUnavailable
+		}
+		if !present {
+			if tx.Commit(ctx) != nil {
+				return result, ErrUnavailable
+			}
+			return result, nil
+		}
+	}
 	if f.Section == "meals" || f.Section == "mealItems" || f.Section == "mealVersions" {
 		present, e := hasMeals(ctx, tx)
 		if e != nil {

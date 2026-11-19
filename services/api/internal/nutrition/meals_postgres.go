@@ -224,6 +224,17 @@ func (s MealStore) CreateMeal(ctx context.Context, p auth.Principal, c NewMealCo
 		return ConfirmedMeal{}, e
 	}
 	defer tx.Rollback(ctx)
+	result, e := s.createMealTx(ctx, tx, p, c, key)
+	if e != nil {
+		return ConfirmedMeal{}, e
+	}
+	if tx.Commit(ctx) != nil {
+		return ConfirmedMeal{}, ErrFoodUnavailable
+	}
+	return result, nil
+}
+
+func (s MealStore) createMealTx(ctx context.Context, tx pgx.Tx, p auth.Principal, c NewMealCommand, key string) (ConfirmedMeal, error) {
 	body, _ := json.Marshal(c)
 	keyHash, requestHash := digest([]byte(key)), digest(body)
 	prior, found, e := replayMeal(ctx, tx, p.User.ID, "create-meal", keyHash, requestHash)
@@ -231,9 +242,6 @@ func (s MealStore) CreateMeal(ctx context.Context, p auth.Principal, c NewMealCo
 		return ConfirmedMeal{}, e
 	}
 	if found {
-		if tx.Commit(ctx) != nil {
-			return ConfirmedMeal{}, ErrFoodUnavailable
-		}
 		return prior, nil
 	}
 	ids := []string{}
@@ -257,7 +265,7 @@ func (s MealStore) CreateMeal(ctx context.Context, p auth.Principal, c NewMealCo
 	if !confirmedMealMatches(saved, c) {
 		return ConfirmedMeal{}, ErrFoodUnavailable
 	}
-	if saveMealReplay(ctx, tx, p.User.ID, "create-meal", keyHash, requestHash, saved, 201) != nil || tx.Commit(ctx) != nil {
+	if saveMealReplay(ctx, tx, p.User.ID, "create-meal", keyHash, requestHash, saved, 201) != nil {
 		return ConfirmedMeal{}, ErrFoodUnavailable
 	}
 	return saved, nil
@@ -269,8 +277,6 @@ func (s MealStore) ChangeMeal(ctx context.Context, p auth.Principal, id, key str
 	if !uuidPattern.MatchString(id) || !uuidPattern.MatchString(key) || (edit == nil) == (remove == nil) {
 		return ConfirmedMeal{}, ErrFoodQuery
 	}
-	op := "edit-meal:" + id
-	var command any = edit
 	if edit != nil {
 		if edit.Validate() != nil {
 			return ConfirmedMeal{}, ErrFoodQuery
@@ -279,14 +285,29 @@ func (s MealStore) ChangeMeal(ctx context.Context, p auth.Principal, id, key str
 		if !remove.Reviewed || remove.Revision < 1 || remove.Revision >= 2147483647 {
 			return ConfirmedMeal{}, ErrFoodQuery
 		}
-		op = "delete-meal:" + id
-		command = remove
 	}
 	tx, e := s.Nutrition.begin(ctx, p, true)
 	if e != nil {
 		return ConfirmedMeal{}, e
 	}
 	defer tx.Rollback(ctx)
+	result, e := s.changeMealTx(ctx, tx, p, id, key, edit, remove)
+	if e != nil {
+		return ConfirmedMeal{}, e
+	}
+	if tx.Commit(ctx) != nil {
+		return ConfirmedMeal{}, ErrFoodUnavailable
+	}
+	return result, nil
+}
+
+func (s MealStore) changeMealTx(ctx context.Context, tx pgx.Tx, p auth.Principal, id, key string, edit *EditMealCommand, remove *DeleteMealCommand) (ConfirmedMeal, error) {
+	op := "edit-meal:" + id
+	var command any = edit
+	if remove != nil {
+		op = "delete-meal:" + id
+		command = remove
+	}
 	body, _ := json.Marshal(command)
 	keyHash, requestHash := digest([]byte(key)), digest(body)
 	prior, found, e := replayMeal(ctx, tx, p.User.ID, op, keyHash, requestHash)
@@ -294,9 +315,6 @@ func (s MealStore) ChangeMeal(ctx context.Context, p auth.Principal, id, key str
 		return ConfirmedMeal{}, e
 	}
 	if found {
-		if tx.Commit(ctx) != nil {
-			return ConfirmedMeal{}, ErrFoodUnavailable
-		}
 		return prior, nil
 	}
 	if edit != nil {
@@ -312,7 +330,7 @@ func (s MealStore) ChangeMeal(ctx context.Context, p auth.Principal, id, key str
 	if e != nil {
 		return ConfirmedMeal{}, e
 	}
-	if saveMealReplay(ctx, tx, p.User.ID, op, keyHash, requestHash, saved, 200) != nil || tx.Commit(ctx) != nil {
+	if saveMealReplay(ctx, tx, p.User.ID, op, keyHash, requestHash, saved, 200) != nil {
 		return ConfirmedMeal{}, ErrFoodUnavailable
 	}
 	return saved, nil

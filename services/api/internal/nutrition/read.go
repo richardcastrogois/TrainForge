@@ -21,16 +21,20 @@ var ErrFoodMissing = errors.New("food unavailable")
 var ErrFoodUnavailable = errors.New("food references unavailable")
 
 type FoodSummary struct {
-	ID            string               `json:"id"`
-	VersionID     string               `json:"versionId"`
-	SourceID      string               `json:"sourceId"`
-	SourceFoodID  string               `json:"sourceFoodId"`
-	SourceVersion string               `json:"sourcePublishedVersion"`
-	Name          string               `json:"nameOriginal"`
-	Locale        string               `json:"nameLocale"`
-	Basis         Basis                `json:"basis"`
-	Source        Citation             `json:"source"`
-	ReviewedName  *ReviewedNameDisplay `json:"reviewedName,omitempty"`
+	ID                 string               `json:"id"`
+	VersionID          string               `json:"versionId"`
+	SourceID           string               `json:"sourceId"`
+	SourceFoodID       string               `json:"sourceFoodId"`
+	SourceVersion      string               `json:"sourcePublishedVersion"`
+	Name               string               `json:"nameOriginal"`
+	Locale             string               `json:"nameLocale"`
+	Basis              Basis                `json:"basis"`
+	Source             Citation             `json:"source"`
+	ReviewedName       *ReviewedNameDisplay `json:"reviewedName,omitempty"`
+	Brand              string               `json:"brand,omitempty"`
+	Barcodes           []string             `json:"barcodes,omitempty"`
+	Portions           []FoodPortion        `json:"portions,omitempty"`
+	CanonicalNutrients []CanonicalFoodCell  `json:"canonicalNutrients,omitempty"`
 }
 type FoodCell struct {
 	Column        string       `json:"sourceColumnKey"`

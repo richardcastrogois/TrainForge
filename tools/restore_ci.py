@@ -91,7 +91,7 @@ def main():
             if command([go,'run','./cmd/migrate']).returncode:raise RuntimeError('Restore source migration failed')
         latest=max(int(p.name.split('_',1)[0]) for p in (service/'migrations').glob('*.sql'))
         if sql('SELECT max(version_id) FROM public.trainforge_v1_schema_version WHERE is_applied;',source)!=str(latest):raise RuntimeError('Restore source schema version mismatch')
-        for statement in runtime_statements(training=True,meals=True):sql(statement,source)
+        for statement in runtime_statements(training=True,meals=True,nutrition_offline=True,contributions=True,food_catalog=True):sql(statement,source)
         env['TF_PRIVACY_TEST_DATABASE_URL']=dsn('migrator',source);env['TF_PRIVACY_TEST_RUNTIME_URL']=dsn('runtime',source)
         env['TF_PRIVACY_RESTORE_PHASE']='prepare';report['prepareTests']=go_test('TestPrivacyRestorePrepareFixture')
         sql("INSERT INTO trainforge_v1.sources(id,name,urls) VALUES('restore-ci-source','Synthetic public restore fixture','[]'); INSERT INTO trainforge_v1.content_versions(asset_id,version_sha,kind,source_id,payload) VALUES('restore-ci-movement',repeat('a',64),'movement','restore-ci-source','{}'); INSERT INTO trainforge_v1.food_versions(food_id,version_sha,source_id,name_original,nutrients,provenance) VALUES('restore-ci-editorial',repeat('b',64),'restore-ci-source','Synthetic public restore fixture','[]','{}');",source)

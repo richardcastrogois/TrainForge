@@ -79,6 +79,26 @@ func TestMealCreationRequiresReviewedExplicitIntakesBeforeRepository(t *testing.
 		})
 	}
 }
+
+func TestCanonicalMealConfirmationPreservesExactDerivedPortionQuantity(t *testing.T) {
+	command := newMealFixture()
+	command.Items[0].CalculationAlgorithm = CanonicalAlgorithm
+	command.Items[0].Quantity = "14.000000000000002"
+	command.Items[0].Portion = &PortionSelection{FoodPortion: FoodPortion{ID: "source-serving", Label: "Documented source", Quantity: command.Items[0].Quantity, Unit: "g"}, Count: "1"}
+	if command.Validate() != nil {
+		t.Fatal("exact derived meal command rejected")
+	}
+	saved := mealConfirmationFixture(command)
+	saved.Entries[0].Calculation.Algorithm = CanonicalAlgorithm
+	saved.Entries[0].Quantity = "14.0000000000000020"
+	if !confirmedMealMatches(saved, command) {
+		t.Fatal("equivalent exact persisted decimal did not confirm")
+	}
+	saved.Entries[0].Quantity = "14"
+	if confirmedMealMatches(saved, command) {
+		t.Fatal("rounded persisted quantity was accepted")
+	}
+}
 func TestMealCreationPreservesActorIntentAndDoesNotMergeEqualFoods(t *testing.T) {
 	c := newMealFixture()
 	c.Items = append(c.Items, c.Items[0])

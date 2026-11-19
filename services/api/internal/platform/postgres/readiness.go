@@ -29,6 +29,9 @@ var readTables = []string{
 	"food_versions", "food_import_batches", "food_batch_versions", "food_withdrawals",
 	"food_name_versions", "food_name_withdrawals", "food_name_catalogs",
 	"training_configuration_versions", "training_configuration_resources", "meals", "meal_items", "meal_versions",
+	"nutrition_sync_state", "nutrition_changes", "nutrition_operation_receipts",
+	"food_contributions", "food_contribution_media",
+	"food_catalog_releases", "food_catalog_import_progress", "food_catalog_annotations",
 }
 var writeTables = []string{
 	"users", "auth_families", "refresh_tokens", "access_tokens", "enrollments",
@@ -42,6 +45,11 @@ var functions = []string{
 	"delete_meal_group(uuid,uuid,bytea,uuid,integer)", "erase_meals(uuid,uuid,bytea,bytea)",
 	"erase_private_foods(uuid,uuid,bytea,bytea)",
 	"create_private_food(uuid,uuid,bytea,text,text,text,text,text,text,jsonb,jsonb)",
+	"nutrition_sync_seed(uuid,uuid,bytea)",
+	"nutrition_sync_receipt(uuid,uuid,bytea,uuid,text,uuid,bytea,jsonb)",
+	"food_contribution_save(uuid,uuid,bytea,uuid,uuid,bytea,jsonb,jsonb)",
+	"food_contribution_withdraw(uuid,uuid,bytea,uuid)",
+	"food_contribution_attach(uuid,uuid,bytea,uuid,uuid,bytea,bytea,integer,integer)",
 }
 
 const readinessSQL = `WITH

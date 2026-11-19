@@ -491,12 +491,37 @@ definitions:
         type: array
       origin:
         type: string
+      portion:
+        $ref: '#/definitions/nutrition.PortionSelection'
       preparation:
         type: string
       quantityEvidence:
         type: string
       revision:
         type: integer
+    type: object
+  nutrition.CanonicalFoodCell:
+    properties:
+      basisQuantity:
+        type: string
+      basisUnit:
+        type: string
+      methodId:
+        type: string
+      nutrientId:
+        type: string
+      primaryForTotals:
+        type: boolean
+      sourceColumnKey:
+        type: string
+      state:
+        type: string
+      unit:
+        type: string
+      upperBound:
+        type: string
+      value:
+        type: string
     type: object
   nutrition.Citation:
     properties:
@@ -543,6 +568,90 @@ definitions:
         type: array
       meal:
         $ref: '#/definitions/nutrition.MealMetadata'
+    type: object
+  nutrition.Contribution:
+    properties:
+      consent:
+        $ref: '#/definitions/nutrition.ContributionConsent'
+      createdAt:
+        type: string
+      food:
+        $ref: '#/definitions/nutrition.ContributionFood'
+      id:
+        type: string
+      media:
+        items:
+          $ref: '#/definitions/nutrition.ContributionMedia'
+        type: array
+      reviewNote:
+        type: string
+      status:
+        type: string
+      updatedAt:
+        type: string
+    type: object
+  nutrition.ContributionConsent:
+    properties:
+      accepted:
+        type: boolean
+      license:
+        type: string
+      version:
+        type: string
+    type: object
+  nutrition.ContributionFood:
+    properties:
+      barcodes:
+        items:
+          type: string
+        type: array
+      basis:
+        $ref: '#/definitions/nutrition.Basis'
+      brand:
+        type: string
+      name:
+        type: string
+      nutrients:
+        items:
+          $ref: '#/definitions/nutrition.OwnNutrient'
+        type: array
+      portions:
+        items:
+          $ref: '#/definitions/nutrition.FoodPortion'
+        type: array
+      preparation:
+        type: string
+    type: object
+  nutrition.ContributionInput:
+    properties:
+      consent:
+        $ref: '#/definitions/nutrition.ContributionConsent'
+      food:
+        $ref: '#/definitions/nutrition.ContributionFood'
+      operationId:
+        type: string
+    type: object
+  nutrition.ContributionMedia:
+    properties:
+      height:
+        type: integer
+      id:
+        type: string
+      mediaType:
+        type: string
+      sha256:
+        type: string
+      width:
+        type: integer
+    type: object
+  nutrition.ContributionPage:
+    properties:
+      items:
+        items:
+          $ref: '#/definitions/nutrition.Contribution'
+        type: array
+      nextCursor:
+        type: string
     type: object
   nutrition.DeleteMealCommand:
     properties:
@@ -620,12 +729,16 @@ definitions:
     type: object
   nutrition.EntryInput:
     properties:
+      calculationAlgorithm:
+        type: string
       foodId:
         type: string
       foodVersion:
         type: string
       occurredAt:
         type: string
+      portion:
+        $ref: '#/definitions/nutrition.PortionSelection'
       preparation:
         type: string
       quantity:
@@ -679,8 +792,18 @@ definitions:
     type: object
   nutrition.FoodDetail:
     properties:
+      barcodes:
+        items:
+          type: string
+        type: array
       basis:
         $ref: '#/definitions/nutrition.Basis'
+      brand:
+        type: string
+      canonicalNutrients:
+        items:
+          $ref: '#/definitions/nutrition.CanonicalFoodCell'
+        type: array
       id:
         type: string
       nameCatalog:
@@ -694,6 +817,10 @@ definitions:
       nutrients:
         items:
           $ref: '#/definitions/nutrition.FoodCell'
+        type: array
+      portions:
+        items:
+          $ref: '#/definitions/nutrition.FoodPortion'
         type: array
       reviewedName:
         $ref: '#/definitions/nutrition.ReviewedNameDisplay'
@@ -740,6 +867,21 @@ definitions:
       notice:
         type: string
     type: object
+  nutrition.FoodPortion:
+    properties:
+      condition:
+        type: string
+      id:
+        type: string
+      label:
+        type: string
+      quantity:
+        type: string
+      sourceId:
+        type: string
+      unit:
+        type: string
+    type: object
   nutrition.FoodSourceCount:
     properties:
       count:
@@ -753,14 +895,28 @@ definitions:
     type: object
   nutrition.FoodSummary:
     properties:
+      barcodes:
+        items:
+          type: string
+        type: array
       basis:
         $ref: '#/definitions/nutrition.Basis'
+      brand:
+        type: string
+      canonicalNutrients:
+        items:
+          $ref: '#/definitions/nutrition.CanonicalFoodCell'
+        type: array
       id:
         type: string
       nameLocale:
         type: string
       nameOriginal:
         type: string
+      portions:
+        items:
+          $ref: '#/definitions/nutrition.FoodPortion'
+        type: array
       reviewedName:
         $ref: '#/definitions/nutrition.ReviewedNameDisplay'
       source:
@@ -856,6 +1012,8 @@ definitions:
         type: integer
       nameOriginal:
         type: string
+      nutrientId:
+        type: string
       sourceColumnKey:
         type: string
       unit:
@@ -881,6 +1039,10 @@ definitions:
     type: object
   nutrition.NutritionTotals:
     properties:
+      canonicalTotals:
+        items:
+          $ref: '#/definitions/nutrition.NutrientTotal'
+        type: array
       complete:
         type: boolean
       entries:
@@ -898,13 +1060,23 @@ definitions:
     type: object
   nutrition.OwnFoodInput:
     properties:
+      barcodes:
+        items:
+          type: string
+        type: array
       basis:
         $ref: '#/definitions/nutrition.Basis'
+      brand:
+        type: string
       name:
         type: string
       nutrients:
         items:
           $ref: '#/definitions/nutrition.OwnNutrient'
+        type: array
+      portions:
+        items:
+          $ref: '#/definitions/nutrition.FoodPortion'
         type: array
       preparation:
         type: string
@@ -918,6 +1090,23 @@ definitions:
       value:
         type: string
         x-nullable: true
+    type: object
+  nutrition.PortionSelection:
+    properties:
+      condition:
+        type: string
+      count:
+        type: string
+      id:
+        type: string
+      label:
+        type: string
+      quantity:
+        type: string
+      sourceId:
+        type: string
+      unit:
+        type: string
     type: object
   nutrition.ReviewedNameDisplay:
     properties:
@@ -948,7 +1137,11 @@ definitions:
       factor:
         type: string
         x-nullable: true
+      methodId:
+        type: string
       nameOriginal:
+        type: string
+      nutrientId:
         type: string
       rawText:
         type: string
@@ -974,6 +1167,88 @@ definitions:
       value:
         type: string
         x-nullable: true
+    type: object
+  nutrition.SyncChange:
+    properties:
+      deleted:
+        type: boolean
+      entity:
+        type: string
+      id:
+        type: string
+      sequence:
+        type: string
+      value:
+        type: object
+    type: object
+  nutrition.SyncOperation:
+    properties:
+      body:
+        type: object
+      dependsOn:
+        items:
+          type: string
+        type: array
+      expectedRevision:
+        type: integer
+      kind:
+        type: string
+      localId:
+        type: string
+      operationId:
+        type: string
+      remoteId:
+        type: string
+    type: object
+  nutrition.SyncPage:
+    properties:
+      contract:
+        type: string
+      cursor:
+        type: string
+      hasMore:
+        type: boolean
+      items:
+        items:
+          $ref: '#/definitions/nutrition.SyncChange'
+        type: array
+      nextCursor:
+        type: string
+    type: object
+  nutrition.SyncPush:
+    properties:
+      contract:
+        type: string
+      operations:
+        items:
+          $ref: '#/definitions/nutrition.SyncOperation'
+        type: array
+    type: object
+  nutrition.SyncPushResult:
+    properties:
+      contract:
+        type: string
+      results:
+        items:
+          $ref: '#/definitions/nutrition.SyncResult'
+        type: array
+    type: object
+  nutrition.SyncResult:
+    properties:
+      code:
+        type: string
+      localId:
+        type: string
+      operationId:
+        type: string
+      remoteId:
+        type: string
+      revision:
+        type: integer
+      status:
+        type: string
+      value:
+        type: object
     type: object
   privacy.DeleteRequest:
     properties:
@@ -1048,6 +1323,17 @@ definitions:
       sessionRetention:
         type: string
       version:
+        type: string
+    type: object
+  publiccatalog.SignedManifestEnvelope:
+    properties:
+      keyId:
+        type: string
+      payload:
+        format: byte
+        type: string
+      signature:
+        format: byte
         type: string
     type: object
   trainingconfig.Availability:
@@ -1151,11 +1437,11 @@ definitions:
     type: object
 info:
   contact: {}
-  description: Google sessions, privacy, reviewed movement and food references, private
-    food declarations, explicitly recorded consumption and atomic meal grouping. Meal
-    routes require schema13. No executable training content or prescribed diets.
+  description: Google sessions, privacy, reviewed references, private food declarations,
+    recorded consumption, atomic meals and durable offline nutrition synchronization.
+    No executable training content or prescribed diets.
   title: TrainForge API
-  version: 0.10.0
+  version: 0.11.0
 paths:
   /api/v1/auth/google:
     post:
@@ -1535,6 +1821,248 @@ paths:
       summary: Reviewed program or collection metadata
       tags:
       - catalog
+  /api/v1/food-catalog/archive:
+    get:
+      description: ZIP containing exactly manifest.json and the signed catalog payload.
+        Requires an active release and matching archive identity. Transfers use bounded
+        memory, at most four concurrent download slots and a 30-minute request deadline;
+        supports Range and HEAD. No account authentication is required.
+      parameters:
+      - description: HTTP byte range, for example bytes=0-1048575
+        in: header
+        name: Range
+        type: string
+      - description: ETag or last-modified date for resumable downloads
+        in: header
+        name: If-Range
+        type: string
+      - description: Previously received ETag
+        in: header
+        name: If-None-Match
+        type: string
+      produces:
+      - application/zip
+      - application/problem+json
+      - text/plain
+      responses:
+        "200":
+          description: Verified catalog update ZIP
+          headers:
+            ETag:
+              description: Quoted SHA-256 of the signed manifest payload
+              type: string
+          schema:
+            type: file
+        "206":
+          description: Requested ZIP byte range
+          headers:
+            Content-Range:
+              description: Requested byte range and complete archive size
+              type: string
+            ETag:
+              description: Quoted SHA-256 of the signed manifest payload
+              type: string
+          schema:
+            type: file
+        "304":
+          description: Not Modified
+        "416":
+          description: HTTP range is not satisfiable
+          schema:
+            type: string
+        "503":
+          description: Distribution unavailable, integrity check failed or all download
+            slots busy
+          schema:
+            $ref: '#/definitions/httpapi.Problem'
+      summary: Download the signed public food catalog update
+      tags:
+      - food-catalog
+  /api/v1/food-catalog/exports/{artifact}/{file}:
+    get:
+      description: Artifact is the distributed catalog SHA-256 from the installed
+        signed manifest, not the raw SQLite checksum. The archived manifest must match
+        this artifact and an active release, verified using the server trust root.
+        Only declared source files are served; query parameters are rejected. Supports
+        Range and HEAD, four shared download slots and a 30-minute request deadline.
+      parameters:
+      - description: Lowercase 64-character SHA-256 of the signed distributed catalog
+          artifact
+        in: path
+        maxLength: 64
+        minLength: 64
+        name: artifact
+        required: true
+        type: string
+      - description: Exact export filename declared by this artifact manifest, ending
+          in .jsonl.gz
+        in: path
+        name: file
+        required: true
+        type: string
+      - description: HTTP byte range
+        in: header
+        name: Range
+        type: string
+      - description: ETag or last-modified date for resumable downloads
+        in: header
+        name: If-Range
+        type: string
+      - description: Previously received export ETag
+        in: header
+        name: If-None-Match
+        type: string
+      produces:
+      - application/gzip
+      - application/problem+json
+      - text/plain
+      responses:
+        "200":
+          description: Verified gzip JSONL source export for the requested artifact
+          headers:
+            ETag:
+              description: Quoted SHA-256 of this source export
+              type: string
+          schema:
+            type: file
+        "206":
+          description: Requested export byte range
+          headers:
+            Content-Range:
+              description: Requested byte range and complete export size
+              type: string
+            ETag:
+              description: Quoted SHA-256 of this source export
+              type: string
+          schema:
+            type: file
+        "304":
+          description: Not Modified
+        "404":
+          description: Artifact is unknown, untrusted, mismatched or inactive, or
+            export request is invalid
+          schema:
+            $ref: '#/definitions/httpapi.Problem'
+        "416":
+          description: HTTP range is not satisfiable
+          schema:
+            type: string
+        "503":
+          description: Source file unavailable, integrity check failed or download
+            slots busy
+          schema:
+            $ref: '#/definitions/httpapi.Problem'
+      summary: Download a source export for an exact food catalog artifact
+      tags:
+      - food-catalog
+  /api/v1/food-catalog/exports/{file}:
+    get:
+      description: Serves only a declared gzip JSONL source after verifying signed
+        size, SHA-256 and active release. Query parameters are rejected. Supports
+        Range and HEAD, four shared download slots and a 30-minute request deadline.
+        Use the artifact-specific route to retain an older catalog source offer.
+      parameters:
+      - description: Exact export filename declared by the signed manifest, ending
+          in .jsonl.gz
+        in: path
+        name: file
+        required: true
+        type: string
+      - description: HTTP byte range
+        in: header
+        name: Range
+        type: string
+      - description: ETag or last-modified date for resumable downloads
+        in: header
+        name: If-Range
+        type: string
+      - description: Previously received export ETag
+        in: header
+        name: If-None-Match
+        type: string
+      produces:
+      - application/gzip
+      - application/problem+json
+      - text/plain
+      responses:
+        "200":
+          description: Verified gzip JSONL source export
+          headers:
+            ETag:
+              description: Quoted SHA-256 of this source export
+              type: string
+          schema:
+            type: file
+        "206":
+          description: Requested export byte range
+          headers:
+            Content-Range:
+              description: Requested byte range and complete export size
+              type: string
+            ETag:
+              description: Quoted SHA-256 of this source export
+              type: string
+          schema:
+            type: file
+        "304":
+          description: Not Modified
+        "404":
+          description: Export is undeclared, malformed or has query parameters
+          schema:
+            $ref: '#/definitions/httpapi.Problem'
+        "416":
+          description: HTTP range is not satisfiable
+          schema:
+            type: string
+        "503":
+          description: Current release unavailable, file integrity failed or download
+            slots busy
+          schema:
+            $ref: '#/definitions/httpapi.Problem'
+      summary: Download a source export from the current food catalog
+      tags:
+      - food-catalog
+  /api/v1/food-catalog/manifest:
+    get:
+      description: Public metadata for the exact active distribution. Payload and
+        Ed25519 signature are base64 encoded; clients verify against their installed
+        trust root. Cached for 300 seconds. No account authentication is required.
+      parameters:
+      - description: Quoted SHA-256 ETag of the signed manifest payload
+        in: header
+        name: If-None-Match
+        type: string
+      produces:
+      - application/json
+      - application/problem+json
+      responses:
+        "200":
+          description: OK
+          headers:
+            Cache-Control:
+              description: public, max-age=300
+              type: string
+            ETag:
+              description: Quoted SHA-256 of the signed manifest payload
+              type: string
+          schema:
+            $ref: '#/definitions/publiccatalog.SignedManifestEnvelope'
+        "304":
+          description: Not Modified
+          headers:
+            Cache-Control:
+              description: public, max-age=300
+              type: string
+            ETag:
+              description: Quoted SHA-256 of the signed manifest payload
+              type: string
+        "503":
+          description: Distribution is unconfigured, untrusted or inactive
+          schema:
+            $ref: '#/definitions/httpapi.Problem'
+      summary: Read the signed public food catalog manifest
+      tags:
+      - food-catalog
   /api/v1/foods:
     get:
       description: Locale-aware search also recognizes bounded everyday-food discovery
@@ -2098,6 +2626,162 @@ paths:
       summary: Export a page of the current account's data
       tags:
       - privacy
+  /api/v1/me/food-contributions:
+    get:
+      parameters:
+      - description: Account-bound cursor
+        in: query
+        name: cursor
+        type: string
+      - description: Page size 1-100
+        in: query
+        name: limit
+        type: integer
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/nutrition.ContributionPage'
+      security:
+      - BearerAuth: []
+      summary: List own food contributions
+      tags:
+      - nutrition
+    post:
+      consumes:
+      - application/json
+      parameters:
+      - description: Explicit CC0 consent and food fields; no meal or account payload
+        in: body
+        name: body
+        required: true
+        schema:
+          $ref: '#/definitions/nutrition.ContributionInput'
+      produces:
+      - application/json
+      responses:
+        "201":
+          description: Created
+          schema:
+            $ref: '#/definitions/nutrition.Contribution'
+        "400":
+          description: Bad Request
+          schema:
+            additionalProperties:
+              type: string
+            type: object
+        "401":
+          description: Unauthorized
+          schema:
+            additionalProperties:
+              type: string
+            type: object
+        "409":
+          description: Conflict
+          schema:
+            additionalProperties:
+              type: string
+            type: object
+      security:
+      - BearerAuth: []
+      summary: Submit a voluntary food contribution
+      tags:
+      - nutrition
+  /api/v1/me/food-contributions/{id}:
+    delete:
+      parameters:
+      - description: Contribution UUID
+        in: path
+        name: id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/nutrition.Contribution'
+        "409":
+          description: Conflict
+          schema:
+            additionalProperties:
+              type: string
+            type: object
+      security:
+      - BearerAuth: []
+      summary: Withdraw a contribution before review
+      tags:
+      - nutrition
+    get:
+      parameters:
+      - description: Contribution UUID
+        in: path
+        name: id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/nutrition.Contribution'
+      security:
+      - BearerAuth: []
+      summary: Read own food contribution status
+      tags:
+      - nutrition
+  /api/v1/me/food-contributions/{id}/media:
+    post:
+      consumes:
+      - image/jpeg
+      - image/png
+      parameters:
+      - description: Contribution UUID
+        in: path
+        name: id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/nutrition.Contribution'
+      security:
+      - BearerAuth: []
+      summary: Attach an optional label photo with metadata removed
+      tags:
+      - nutrition
+  /api/v1/me/food-contributions/{id}/media/{mediaId}:
+    get:
+      parameters:
+      - description: Contribution UUID
+        in: path
+        name: id
+        required: true
+        type: string
+      - description: Media UUID
+        in: path
+        name: mediaId
+        required: true
+        type: string
+      produces:
+      - image/jpeg
+      responses:
+        "200":
+          description: OK
+          schema:
+            type: file
+      security:
+      - BearerAuth: []
+      summary: Read an own contribution's private label photo
+      tags:
+      - nutrition
   /api/v1/me/food-entries:
     get:
       parameters:
@@ -2821,6 +3505,128 @@ paths:
       summary: Correct own meal title/time without rewriting the intakes
       tags:
       - meals
+  /api/v1/me/nutrition/changes:
+    get:
+      parameters:
+      - description: Opaque account-bound checkpoint
+        in: query
+        name: cursor
+        type: string
+      - description: Page size 1-200, default 100
+        in: query
+        name: limit
+        type: integer
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/nutrition.SyncPage'
+        "400":
+          description: Bad Request
+          schema:
+            additionalProperties:
+              type: string
+            type: object
+        "401":
+          description: Unauthorized
+          schema:
+            additionalProperties:
+              type: string
+            type: object
+        "503":
+          description: Service Unavailable
+          schema:
+            additionalProperties:
+              type: string
+            type: object
+      security:
+      - BearerAuth: []
+      summary: Read account nutrition baseline and changes
+      tags:
+      - nutrition
+  /api/v1/me/nutrition/sync:
+    get:
+      parameters:
+      - description: Opaque account-bound checkpoint
+        in: query
+        name: cursor
+        type: string
+      - description: Page size 1-200, default 100
+        in: query
+        name: limit
+        type: integer
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/nutrition.SyncPage'
+        "400":
+          description: Bad Request
+          schema:
+            additionalProperties:
+              type: string
+            type: object
+        "401":
+          description: Unauthorized
+          schema:
+            additionalProperties:
+              type: string
+            type: object
+        "503":
+          description: Service Unavailable
+          schema:
+            additionalProperties:
+              type: string
+            type: object
+      security:
+      - BearerAuth: []
+      summary: Read account nutrition baseline and changes
+      tags:
+      - nutrition
+    post:
+      consumes:
+      - application/json
+      parameters:
+      - description: Stable operation IDs, dependencies and legacy domain bodies
+        in: body
+        name: body
+        required: true
+        schema:
+          $ref: '#/definitions/nutrition.SyncPush'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/nutrition.SyncPushResult'
+        "400":
+          description: Bad Request
+          schema:
+            additionalProperties:
+              type: string
+            type: object
+        "401":
+          description: Unauthorized
+          schema:
+            additionalProperties:
+              type: string
+            type: object
+        "503":
+          description: Service Unavailable
+          schema:
+            additionalProperties:
+              type: string
+            type: object
+      security:
+      - BearerAuth: []
+      summary: Synchronize durable offline nutrition operations
+      tags:
+      - nutrition
   /api/v1/me/training-configuration:
     get:
       produces:

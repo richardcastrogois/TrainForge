@@ -27,19 +27,26 @@ type OwnFoodInput struct {
 	Preparation string        `json:"preparation"`
 	Basis       Basis         `json:"basis"`
 	Nutrients   []OwnNutrient `json:"nutrients"`
+	Brand       string        `json:"brand,omitempty"`
+	Barcodes    []string      `json:"barcodes,omitempty"`
+	Portions    []FoodPortion `json:"portions,omitempty"`
 }
 type EntryInput struct {
-	FoodID           string `json:"foodId"`
-	FoodVersion      string `json:"foodVersion"`
-	Quantity         string `json:"quantity"`
-	Unit             string `json:"unit"`
-	Preparation      string `json:"preparation"`
-	OccurredAt       string `json:"occurredAt"`
-	Timezone         string `json:"timezone"`
-	QuantityEvidence string `json:"quantityEvidence"`
-	Revision         int    `json:"revision"`
+	FoodID               string            `json:"foodId"`
+	FoodVersion          string            `json:"foodVersion"`
+	Quantity             string            `json:"quantity"`
+	Unit                 string            `json:"unit"`
+	Preparation          string            `json:"preparation"`
+	OccurredAt           string            `json:"occurredAt"`
+	Timezone             string            `json:"timezone"`
+	QuantityEvidence     string            `json:"quantityEvidence"`
+	Revision             int               `json:"revision"`
+	CalculationAlgorithm string            `json:"calculationAlgorithm,omitempty"`
+	Portion              *PortionSelection `json:"portion,omitempty"`
 }
 type ScaledCell struct {
+	NutrientID       string   `json:"nutrientId,omitempty"`
+	MethodID         string   `json:"methodId,omitempty"`
 	SourceUpperBound *string  `json:"sourceUpperBound" extensions:"x-nullable"`
 	RawText          string   `json:"rawText"`
 	SourceReasons    []string `json:"sourceReasons"`
@@ -65,14 +72,15 @@ type EntryChange struct {
 	ReplacedAt       string `json:"replacedAt"`
 }
 type Calculation struct {
-	Algorithm        string        `json:"algorithm"`
-	Food             FoodSummary   `json:"food"`
-	Origin           string        `json:"origin"`
-	Preparation      string        `json:"preparation"`
-	QuantityEvidence string        `json:"quantityEvidence"`
-	Revision         int           `json:"revision"`
-	Nutrients        []ScaledCell  `json:"nutrients"`
-	Changes          []EntryChange `json:"changes"`
+	Algorithm        string            `json:"algorithm"`
+	Food             FoodSummary       `json:"food"`
+	Origin           string            `json:"origin"`
+	Preparation      string            `json:"preparation"`
+	QuantityEvidence string            `json:"quantityEvidence"`
+	Revision         int               `json:"revision"`
+	Nutrients        []ScaledCell      `json:"nutrients"`
+	Changes          []EntryChange     `json:"changes"`
+	Portion          *PortionSelection `json:"portion,omitempty"`
 }
 type Entry struct {
 	ID          string            `json:"id"`
@@ -92,13 +100,14 @@ type NutritionPage struct {
 	NameCatalog *FoodNameCatalog `json:"nameCatalog,omitempty"`
 }
 type NutrientTotal struct {
-	Column   string  `json:"sourceColumnKey"`
-	Name     string  `json:"nameOriginal"`
-	Unit     *string `json:"unit" extensions:"x-nullable"`
-	Value    *string `json:"value" extensions:"x-nullable"`
-	Exact    *string `json:"exactFraction" extensions:"x-nullable"`
-	Included int     `json:"includedEntries"`
-	Unknown  int     `json:"unknownEntries"`
+	NutrientID string  `json:"nutrientId,omitempty"`
+	Column     string  `json:"sourceColumnKey"`
+	Name       string  `json:"nameOriginal"`
+	Unit       *string `json:"unit" extensions:"x-nullable"`
+	Value      *string `json:"value" extensions:"x-nullable"`
+	Exact      *string `json:"exactFraction" extensions:"x-nullable"`
+	Included   int     `json:"includedEntries"`
+	Unknown    int     `json:"unknownEntries"`
 }
 type NutritionTotals struct {
 	MeasuredEntries  int             `json:"measuredEntries"`
@@ -107,6 +116,7 @@ type NutritionTotals struct {
 	Complete         bool            `json:"complete"`
 	Nutrients        []NutrientTotal `json:"nutrients"`
 	Notice           string          `json:"notice"`
+	CanonicalTotals  []NutrientTotal `json:"canonicalTotals,omitempty"`
 }
 
 func textValid(s string, min, max int) bool {
@@ -120,6 +130,19 @@ func quantity(s string, positive bool) bool {
 	return n != nil && (!positive || n.Sign() > 0)
 }
 func validateOwn(in OwnFoodInput) error {
+	if !textValid(in.Brand, 0, 360) || len(in.Barcodes) > 16 || len(in.Portions) > 64 {
+		return ErrFoodQuery
+	}
+	for _, code := range in.Barcodes {
+		if !validGTIN(code) {
+			return ErrFoodQuery
+		}
+	}
+	for _, portion := range in.Portions {
+		if !validFoodPortion(portion) {
+			return ErrFoodQuery
+		}
+	}
 	if !textValid(in.Name, 1, 180) || !textValid(in.Preparation, 0, 180) || in.Nutrients == nil || len(in.Nutrients) > 32 {
 		return ErrFoodQuery
 	}
@@ -131,12 +154,20 @@ func validateOwn(in OwnFoodInput) error {
 		return ErrFoodQuery
 	}
 	seen := map[string]bool{}
+	canonicalSeen := map[string]bool{}
 	for _, n := range in.Nutrients {
 		key := strings.ToLower(n.Name)
 		if !textValid(n.Name, 1, 100) || seen[key] || (n.Unit != "g" && n.Unit != "mg" && n.Unit != "µg" && n.Unit != "kcal" && n.Unit != "kJ") || (n.Value != nil && !quantity(*n.Value, false)) {
 			return ErrFoodQuery
 		}
 		seen[key] = true
+		canonicalID := declarationNutrientID(n.Name, n.Unit)
+		if !strings.HasPrefix(canonicalID, "declared:") {
+			if canonicalSeen[canonicalID] {
+				return ErrFoodQuery
+			}
+			canonicalSeen[canonicalID] = true
+		}
 	}
 	return nil
 }
@@ -165,7 +196,17 @@ func zone(raw string) (*time.Location, error) {
 	return l, nil
 }
 func validateEntry(in EntryInput) error {
-	if (!foodPattern.MatchString(in.FoodID) && !privateFoodPattern.MatchString(in.FoodID)) || !shaPattern.MatchString(in.FoodVersion) || !quantity(in.Quantity, true) || (in.Unit != "g" && in.Unit != "ml") || !textValid(in.Preparation, 0, 180) || in.Revision < 0 || in.Revision > 100 {
+	if in.CalculationAlgorithm != "" && in.CalculationAlgorithm != CanonicalAlgorithm {
+		return ErrFoodQuery
+	}
+	if in.Portion != nil && (in.CalculationAlgorithm != CanonicalAlgorithm || !validSourceFoodPortion(in.Portion.FoodPortion) || !quantity(in.Portion.Count, true)) {
+		return ErrFoodQuery
+	}
+	validQuantity := quantity(in.Quantity, true)
+	if in.CalculationAlgorithm == CanonicalAlgorithm && in.Portion != nil {
+		validQuantity = validPortionDerivedQuantity(in.Quantity)
+	}
+	if (!foodPattern.MatchString(in.FoodID) && !privateFoodPattern.MatchString(in.FoodID)) || !shaPattern.MatchString(in.FoodVersion) || !validQuantity || (in.Unit != "g" && in.Unit != "ml") || !textValid(in.Preparation, 0, 180) || in.Revision < 0 || in.Revision > 100 {
 		return ErrFoodQuery
 	}
 	if in.QuantityEvidence != "measured" && in.QuantityEvidence != "estimated" {
@@ -192,6 +233,9 @@ func dayBounds(day, tz string) (time.Time, time.Time, error) {
 func scaled(food FoodDetail, in EntryInput, origin string) (Calculation, error) {
 	if err := validateEntry(in); err != nil {
 		return Calculation{}, err
+	}
+	if in.CalculationAlgorithm == CanonicalAlgorithm {
+		return scaleCanonicalFood(food, in, origin)
 	}
 	c := Calculation{Algorithm: "source-rational-v1", Food: food.FoodSummary, Origin: origin, Preparation: in.Preparation, QuantityEvidence: in.QuantityEvidence, Revision: 1, Nutrients: []ScaledCell{}, Changes: []EntryChange{}}
 	q, _ := new(big.Rat).SetString(in.Quantity)
@@ -271,5 +315,6 @@ func totals(entries []Entry, complete bool) NutritionTotals {
 		}
 		result.Nutrients = append(result.Nutrients, item)
 	}
+	result.CanonicalTotals = canonicalTotals(entries)
 	return result
 }

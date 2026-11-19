@@ -1,5 +1,15 @@
 # API Go do TrainForge
 
+## Estado em18/11/2026: alimentação offline
+
+Código **0.11.0 /51 operações Swagger**; núcleo local **schema16/38tabelas** após ativação com backup, grants e readiness. As30tabelas anteriores foram preservadas. [Recibo da ativação](../../docs/execucao/v1/food-offline-local-activation.json) e [handoff com o próximo comando](../../docs/execucao/v1/handoff.md). A geração global já ingeriu6.702.350 alimentos; pacote assinado, ativação dessa release e validação Android ainda precisam concluir. Não repetir downloads/migrations para iniciar o serviço.
+
+A busca do cliente usa SQLite local. Sync privada (`me/nutrition/sync`, `changes`) usa ledger durável, revisão e paridade; contribuições dependem de consentimento e revisão por `cmd/food-maintenance`. `cmd/import-food-catalog` verifica exports completos antes de stage/activate com SHA explícito. Tudo em `/api/v1`; Go test/vet/Swagger e SQL16 descartável aprovados, com limites nos recibos.
+
+Para servir downloads opcionais, configurar os caminhos públicos locais `TF_FOOD_CATALOG_DIRECTORY` (manifesto/trust do mantenedor), `TF_FOOD_CATALOG_EXPORTS_DIRECTORY` (exports e subpastas imutáveis por SHA) e `TF_FOOD_CATALOG_ARCHIVE_PATH` (ZIP somente manifesto+gzip). A disponibilidade exige a mesma identidade ativa no banco. Não colocar credenciais/arquivos particulares nessas pastas. Exportações antigas permanecem pela rota `/api/v1/food-catalog/exports/{artifactSHA256}/{file}`. [Formato/preparação](../../content/food_catalog/README.md). Esses caminhos não hospedam os arquivos na internet por si só.
+
+Os parágrafos abaixo são checkpoints históricos; o handoff governa o estado atual.
+
 Monólito modular em construção. Consulte [o fechamento da fundação](../../docs/execucao/v1/implementacao.md), [camadas](../../docs/arquitetura/camadas-e-fluxos.md) e [contrato gerado](../../contracts/generated/swagger-v1.json).
 
 ## Estado vigente — 29/10/2026

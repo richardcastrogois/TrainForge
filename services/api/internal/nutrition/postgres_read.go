@@ -10,24 +10,40 @@ import (
 
 type FoodPostgres struct{ Pool *pgxpool.Pool }
 
-// Latest is chosen before checking grants, owner and withdrawal: never revive an
-// older public version when the latest version is unavailable.
-const foodLatest = `WITH latest AS (SELECT DISTINCT ON(food_id) *
- FROM trainforge_v1.food_versions ORDER BY food_id,created_at DESC,version_sha DESC) `
+// Staging is not a published source version. Choose the latest published version
+// before checking withdrawal/grants, so imports neither hide active data nor
+// revive an older version after an editorial withdrawal.
+const foodPublished = `(NOT EXISTS(SELECT 1 FROM trainforge_v1.food_batch_versions sb
+ JOIN trainforge_v1.food_catalog_releases sr ON sr.artifact_sha=sb.artifact_sha
+ WHERE sb.food_id=v.food_id AND sb.version_sha=v.version_sha AND sr.status='staging') OR EXISTS(SELECT 1 FROM trainforge_v1.food_batch_versions pb
+ LEFT JOIN trainforge_v1.food_catalog_releases pr ON pr.artifact_sha=pb.artifact_sha
+ WHERE pb.food_id=v.food_id AND pb.version_sha=v.version_sha AND (pr.artifact_sha IS NULL OR pr.status='active')))`
+const foodLatest = `WITH latest AS (SELECT DISTINCT ON(v.food_id) v.*
+ FROM trainforge_v1.food_versions v WHERE v.owner_id IS NOT NULL OR ` + foodPublished + `
+ ORDER BY v.food_id,v.created_at DESC,v.version_sha DESC) `
 const foodVisible = `v.owner_id IS NULL AND v.source_id IS NOT NULL
  AND 'food_catalog'=ANY(v.allowed_operations) AND 'food_composition'=ANY(v.allowed_operations)
  AND v.provenance->>'clinicalApproval'='false'
  AND EXISTS(SELECT 1 FROM trainforge_v1.food_batch_versions bv
  JOIN trainforge_v1.food_import_batches b ON b.artifact_sha=bv.artifact_sha
+ LEFT JOIN trainforge_v1.food_catalog_releases cr ON cr.artifact_sha=b.artifact_sha
  WHERE bv.food_id=v.food_id AND bv.version_sha=v.version_sha
- AND b.review_sha=v.provenance->>'reviewSha256')
+ AND b.review_sha=v.provenance->>'reviewSha256' AND (cr.artifact_sha IS NULL OR cr.status='active'))
  AND NOT EXISTS(SELECT 1 FROM trainforge_v1.food_withdrawals w WHERE w.food_id=v.food_id AND w.version_sha=v.version_sha)`
+const foodAnnotation = `(SELECT ca.metadata FROM trainforge_v1.food_catalog_annotations ca
+ JOIN trainforge_v1.food_catalog_releases ar ON ar.artifact_sha=ca.artifact_sha
+ WHERE ca.food_id=v.food_id AND ca.version_sha=v.version_sha AND ar.status='active'
+ ORDER BY ar.activated_at DESC,ar.artifact_sha DESC LIMIT 1)`
 const foodProjection = `jsonb_build_object(
  'id',v.food_id,'versionId',v.version_sha,'sourceId',v.source_id,
  'sourceFoodId',v.source_food_id,'sourcePublishedVersion',v.source_published_version,
  'nameOriginal',v.name_original,'nameLocale',v.name_locale,
  'basis',jsonb_build_object('quantity',v.basis_quantity::text,'unit',v.basis_unit),
- 'source',v.provenance->'rights')`
+ 'source',v.provenance->'rights',
+ 'brand',coalesce((` + foodAnnotation + `)->'brand',v.provenance->'brand'),
+ 'barcodes',coalesce((` + foodAnnotation + `)->'barcodes',v.provenance->'barcodes','[]'::jsonb),
+ 'portions',coalesce((` + foodAnnotation + `)->'portions',v.provenance->'portions','[]'::jsonb),
+ 'canonicalNutrients',coalesce((` + foodAnnotation + `)->'canonicalNutrients',v.provenance->'canonicalNutrients','[]'::jsonb))`
 
 func decodeFoodSummary(raw []byte) (FoodSummary, error) {
 	var f FoodSummary
@@ -63,8 +79,8 @@ func (p FoodPostgres) List(ctx context.Context, f FoodFilters) ([]FoodSummary, e
 	return result, nil
 }
 func (p FoodPostgres) Detail(ctx context.Context, id, version string) (FoodDetail, error) {
-	query := `WITH selected AS(SELECT * FROM trainforge_v1.food_versions
- WHERE food_id=$1 AND ($2='' OR version_sha=$2) ORDER BY created_at DESC,version_sha DESC LIMIT 1)
+	query := `WITH selected AS(SELECT v.* FROM trainforge_v1.food_versions v
+ WHERE v.food_id=$1 AND ($2='' OR v.version_sha=$2) AND ` + foodPublished + ` ORDER BY v.created_at DESC,v.version_sha DESC LIMIT 1)
  SELECT ` + foodProjection + `,v.nutrients FROM selected v WHERE ` + foodVisible
 	var raw, cells []byte
 	err := p.Pool.QueryRow(ctx, query, id, version).Scan(&raw, &cells)

@@ -26,7 +26,8 @@ def run(name,args=(),input_text=None,env=None,timeout=35):
     LOCAL.mkdir(exist_ok=True)
     fd,path=tempfile.mkstemp(prefix="pg-command-",suffix=".log",dir=LOCAL);os.close(fd)
     try:
-        with open(path,"w+",encoding="utf-8") as output:
+        # Localized pg_ctl/psql messages may use the console code page (e.g. "não" in cp1252).
+        with open(path,"w+",encoding="utf-8",errors="replace") as output:
             result=subprocess.run([str(binary),*map(str,args)],input=input_text,text=True,encoding="utf-8",errors="replace",stdout=output,stderr=subprocess.STDOUT,env=env,timeout=timeout,creationflags=subprocess.CREATE_NO_WINDOW if os.name=="nt" else 0)
             output.seek(0);text=output.read()
         if result.returncode:raise RuntimeError(name+" failed (details intentionally not echoed with credentials)")
@@ -107,7 +108,10 @@ def grant_runtime(db=NAME):
     from db_permissions import runtime_statements
     training=sql("SELECT to_regclass('trainforge_v1.training_configuration_versions') IS NOT NULL;",db)=="t"
     meals=sql("SELECT to_regclass('trainforge_v1.meals') IS NOT NULL;",db)=="t"
-    for statement in runtime_statements(training=training,meals=meals):
+    offline=sql("SELECT to_regclass('trainforge_v1.nutrition_sync_state') IS NOT NULL;",db)=="t"
+    contributions=sql("SELECT to_regclass('trainforge_v1.food_contributions') IS NOT NULL;",db)=="t"
+    food_catalog=sql("SELECT to_regclass('trainforge_v1.food_catalog_releases') IS NOT NULL;",db)=="t"
+    for statement in runtime_statements(training=training,meals=meals,nutrition_offline=offline,contributions=contributions,food_catalog=food_catalog):
         sql(statement,db)
 
 

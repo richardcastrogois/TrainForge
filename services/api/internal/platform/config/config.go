@@ -10,21 +10,27 @@ import (
 )
 
 type Config struct {
-	CatalogURL      string
-	CatalogReadMode string
-	ListenAddr      string
-	DatabaseURL     string
-	Environment     string
-	MaxConns        int32
-	RequestTimeout  time.Duration
-	GoogleAudience  string
-	TrustedProxies  []netip.Prefix
-	Swagger         bool
+	FoodCatalogDirectory        string
+	FoodCatalogExportsDirectory string
+	FoodCatalogArchivePath      string
+	CatalogURL                  string
+	CatalogReadMode             string
+	ListenAddr                  string
+	DatabaseURL                 string
+	Environment                 string
+	MaxConns                    int32
+	RequestTimeout              time.Duration
+	GoogleAudience              string
+	TrustedProxies              []netip.Prefix
+	Swagger                     bool
 }
 
 // Load only consumes this service's names; legacy DATABASE_URL is never inherited.
 func Load(get func(string) string) (Config, error) {
 	c := Config{ListenAddr: "127.0.0.1:8082", Environment: "development", MaxConns: 10, RequestTimeout: 10 * time.Second}
+	c.FoodCatalogDirectory = get("TF_FOOD_CATALOG_DIRECTORY")
+	c.FoodCatalogExportsDirectory = get("TF_FOOD_CATALOG_EXPORTS_DIRECTORY")
+	c.FoodCatalogArchivePath = get("TF_FOOD_CATALOG_ARCHIVE_PATH")
 	if v := get("TF_LISTEN_ADDR"); v != "" {
 		c.ListenAddr = v
 	}
