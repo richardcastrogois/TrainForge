@@ -11,7 +11,7 @@ const _labels = <String, Map<String, String>>{
   'pt': {
     'beforeStart': 'Antes de começar',
     'beforeStartBody':
-        'Para usar o TrainForge, leia e aceite os documentos abaixo.',
+        'Para usar sua conta no TrainForge, leia e aceite os documentos abaixo.',
     'terms': 'Termos de Uso',
     'privacy': 'Política de Privacidade',
     'acceptDocs': 'Li e aceito os Termos de Uso e a Política de Privacidade.',
@@ -49,6 +49,8 @@ const _labels = <String, Map<String, String>>{
         'Sincronização pausada: autorize os dados de saúde em Configurações → Termos e privacidade.',
     'open': 'Abrir',
     'readError': 'Não foi possível abrir o documento.',
+    'saveError': 'Não foi possível salvar o aceite. Tente de novo.',
+    'decline': 'Não aceito, sair da conta',
   },
   'en': {
     'beforeStart': 'Before you start',
@@ -89,6 +91,8 @@ const _labels = <String, Map<String, String>>{
         'Sync paused: allow health data in Settings → Terms and privacy.',
     'open': 'Open',
     'readError': "Couldn't open the document.",
+    'saveError': "Couldn't save your acceptance. Try again.",
+    'decline': "I don't accept, sign out",
   },
   'es': {
     'beforeStart': 'Antes de empezar',
@@ -132,5 +136,7 @@ const _labels = <String, Map<String, String>>{
         'Sincronización en pausa: autoriza los datos de salud en Ajustes → Términos y privacidad.',
     'open': 'Abrir',
     'readError': 'No se pudo abrir el documento.',
+    'saveError': 'No se pudo guardar la aceptación. Inténtalo de nuevo.',
+    'decline': 'No acepto, cerrar sesión',
   },
 };

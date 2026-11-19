@@ -9,10 +9,12 @@ import 'staggered_entrance.dart';
 /// Screen 1 (first use) and 3 (new version): Terms and Privacy acceptance.
 class LegalConsentPage extends StatefulWidget {
   final LegalController controller;
+  final String accountId;
   final VoidCallback? onDeleteAccount;
   const LegalConsentPage({
     super.key,
     required this.controller,
+    required this.accountId,
     this.onDeleteAccount,
   });
   @override
@@ -21,9 +23,23 @@ class LegalConsentPage extends StatefulWidget {
 
 class _LegalConsentPageState extends State<LegalConsentPage> {
   bool documents = false, adult = false, leaving = false;
-  late final bool update = widget.controller.isUpdate;
+  late final bool update = widget.controller.isUpdate(widget.accountId);
 
   void accept() => setState(() => leaving = true);
+
+  /// Runs after the exit animation. On failure the content comes back with a
+  /// message instead of leaving an empty screen.
+  Future<void> finish() async {
+    try {
+      await widget.controller.acceptTerms(widget.accountId);
+    } catch (_) {
+      if (!mounted) return;
+      setState(() => leaving = false);
+      ScaffoldMessenger.maybeOf(context)?.showSnackBar(
+        SnackBar(content: Text(legalLabel(context, 'saveError'))),
+      );
+    }
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -71,10 +87,11 @@ class _LegalConsentPageState extends State<LegalConsentPage> {
           legalLabel(context, update ? 'acceptContinue' : 'continue'),
         ),
       ),
-      if (update && widget.onDeleteAccount != null)
+      if (widget.onDeleteAccount != null)
         TextButton(
-          onPressed: widget.onDeleteAccount,
-          child: Text(legalLabel(context, 'deleteAccount')),
+          key: const ValueKey('legal-decline'),
+          onPressed: leaving ? null : widget.onDeleteAccount,
+          child: Text(legalLabel(context, 'decline')),
         ),
       const SizedBox(height: 12),
       Text(
@@ -92,7 +109,7 @@ class _LegalConsentPageState extends State<LegalConsentPage> {
               constraints: const BoxConstraints(maxWidth: 520),
               child: StaggeredEntrance(
                 leaving: leaving,
-                onLeft: widget.controller.acceptTerms,
+                onLeft: finish,
                 children: children,
               ),
             ),
@@ -135,10 +152,16 @@ class _HealthConsentPageState extends State<HealthConsentPage> {
             constraints: const BoxConstraints(maxWidth: 520),
             child: StaggeredEntrance(
               leaving: leaving,
-              onLeft: () => widget.controller.decideHealth(
-                widget.accountId,
-                granted: decision == true,
-              ),
+              onLeft: () async {
+                try {
+                  await widget.controller.decideHealth(
+                    widget.accountId,
+                    granted: decision == true,
+                  );
+                } catch (_) {
+                  if (mounted) setState(() => leaving = false);
+                }
+              },
               children: [
                 Icon(
                   Icons.health_and_safety_outlined,
@@ -219,14 +242,24 @@ class LegalSettingsPage extends StatelessWidget {
                   _DocumentLink(
                     document: document,
                     controller: controller,
-                    badge: controller.acceptedVersion(document.id) == null
+                    badge:
+                        accountId == null ||
+                            controller.acceptedVersion(
+                                  accountId!,
+                                  document.id,
+                                ) ==
+                                null
                         ? null
                         : legalLabel(context, 'acceptedVersion').replaceAll(
                             '{v}',
-                            controller.acceptedVersion(document.id)!,
+                            controller.acceptedVersion(
+                              accountId!,
+                              document.id,
+                            )!,
                           ),
                   ),
-                  if (controller.acceptedAt(document.id) != null)
+                  if (accountId != null &&
+                      controller.acceptedAt(accountId!, document.id) != null)
                     Padding(
                       padding: const EdgeInsetsDirectional.fromSTEB(
                         4,
@@ -237,7 +270,10 @@ class LegalSettingsPage extends StatelessWidget {
                       child: Text(
                         legalLabel(context, 'acceptedOn').replaceAll(
                           '{date}',
-                          _date(context, controller.acceptedAt(document.id)),
+                          _date(
+                            context,
+                            controller.acceptedAt(accountId!, document.id),
+                          ),
                         ),
                         style: Theme.of(context).textTheme.bodySmall,
                       ),

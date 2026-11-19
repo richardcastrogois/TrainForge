@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "inputRevision": "71922bbc4b72588ce119772b2cb3c474b8d34209c210d90189de8978cc6f941f",
+  "inputRevision": "48cd8698574749871215cea24886a0df6e9fcd6fb8082b186c84e46de9da48bc",
   "inputs": {
     "contracts/generated/catalog-m1.swagger.json": "7f59b699f1c4c032e0652c31f44fac9a8d3a77115639a24408725427e97b0339",
     "contracts/generated/swagger-v1.json": "4a87cb3da8b20510f236ef3f1aefb3eb2149a7faad47ba02d144f4d1ee67004d",
@@ -63,11 +63,11 @@
     "lib/features/food_reference/presentation/food_page.dart": "5763653ce3c6ef373d82dd489711a8e8b0a69cfa428d2cafdf0b3b19b727c3dd",
     "lib/features/home/presentation/pages/today_page.dart": "93f240ab972b62adee5c1796d1dcea3a6abfd0c866bef37f075cd1c0c9b26a66",
     "lib/features/legal/legal_consent_store.dart": "33ea7c1eca83e0994cb3536f1d863c26ef38445b38b74ee7c3e4ee25aebcf361",
-    "lib/features/legal/legal_controller.dart": "0456410a1bd099f2992e20017d04b152cfd63c6cf258ef22000fff5fe580400f",
-    "lib/features/legal/legal_documents.dart": "f27975d615ece13cee91f455dc3e6072a66f7b31b9dcaaaac5bfb6362ea84dc9",
-    "lib/features/legal/presentation/legal_labels.dart": "aaea34be9dc2eec0e15864f72dbc3116ec3fbecf1abf5cb4872ce41e00198fde",
-    "lib/features/legal/presentation/legal_pages.dart": "1b760d6411739ece5040571191c2cf391f0d0fdc212f64365031f6ab314bde30",
-    "lib/features/legal/presentation/staggered_entrance.dart": "4c25098b4e14302005f5b106bddc61689e692c7dc89d8faa1a08943c3a565020",
+    "lib/features/legal/legal_controller.dart": "0103cbd52a19b51b803baee13cfb6648811c3df6e7ddcc0c2da919b3d60dde73",
+    "lib/features/legal/legal_documents.dart": "f9ed1cdf6da07fb8bf08332b3c26f4071362b06c5fef7b82290a3175dda12b75",
+    "lib/features/legal/presentation/legal_labels.dart": "f7651123b89623d4da47b895b0d07e7e0d970583f32316233de784544fb03d52",
+    "lib/features/legal/presentation/legal_pages.dart": "231cd9263852687c820524e5f7202ef42571793a86a083f80fba5067c8bd19db",
+    "lib/features/legal/presentation/staggered_entrance.dart": "a2877f7614af7d3613c6e75d6508f0f97604ca4973ddf1b7ceb8f2a142ead1e7",
     "lib/features/nutrition/data/calculation_parity.dart": "4e09bf43be5beab92120f69d11adc18e93c48ba0bcdb60b0b315ec634a96b273",
     "lib/features/nutrition/data/nutrition_local_store.dart": "387e13b2c7de229a92e7d45ee916956c81a223a051faf81454547bce06fcca66",
     "lib/features/nutrition/data/nutrition_repository.dart": "4f6610b64dfbad5f84d0b51adadce495870b48da4a9b21204302666ec28dd343",
@@ -115,7 +115,7 @@
     "lib/main.dart": "52f6c5157237688537f3708474237531876f1340ada0a363c0ddda8bcf38ce7f",
     "lib/shared/widgets/account_page.dart": "c7324fca0923ea4279a78061ff70a3ed67c2b163338ba83b659a49ed4f549a7c",
     "lib/shared/widgets/app_loading.dart": "b041a11b964f4943b9902ee7dd380171a2cdca8f9440fa06658b329ee8bb66e3",
-    "lib/shared/widgets/auth_gate.dart": "88bda1c499eed34a74ec6c01f3749f32724e223765e0edadeda154545a90fe02",
+    "lib/shared/widgets/auth_gate.dart": "40a8b0e2ebc55b1dca9600e001c2845bd7fa4ef0cf4cac10f442edf8220eeb5e",
     "lib/shared/widgets/content_sources_page.dart": "a16105129b7752cc229a221c2b06dd4c8c66624505b59b2a4456aca0d22ca101",
     "lib/shared/widgets/draft_guard.dart": "e07551083f2f42de6b6787ab3c354a9f9d8c75b65f71e25a076f8bcbd596f28b",
     "lib/shared/widgets/evaluation_guide_page.dart": "302e04793b0e634b756d7a8785f9f64d74a03653a27f85f7ec7285249fd24900",
@@ -1422,7 +1422,7 @@
       "source": {
         "repository": "trainforge",
         "path": "lib/features/legal/presentation/legal_pages.dart",
-        "line": 107
+        "line": 124
       }
     },
     {
@@ -1430,7 +1430,7 @@
       "source": {
         "repository": "trainforge",
         "path": "lib/features/legal/presentation/legal_pages.dart",
-        "line": 188
+        "line": 211
       }
     },
     {
@@ -1438,7 +1438,7 @@
       "source": {
         "repository": "trainforge",
         "path": "lib/features/legal/presentation/legal_pages.dart",
-        "line": 294
+        "line": 330
       }
     },
     {
@@ -1699,7 +1699,7 @@
       "source": {
         "repository": "trainforge",
         "path": "lib/features/legal/presentation/legal_pages.dart",
-        "line": 110
+        "line": 127
       }
     },
     {
@@ -1708,7 +1708,7 @@
       "source": {
         "repository": "trainforge",
         "path": "lib/features/legal/presentation/legal_pages.dart",
-        "line": 191
+        "line": 214
       }
     },
     {
@@ -1717,7 +1717,7 @@
       "source": {
         "repository": "trainforge",
         "path": "lib/features/legal/presentation/legal_pages.dart",
-        "line": 297
+        "line": 333
       }
     },
     {
@@ -1726,7 +1726,7 @@
       "source": {
         "repository": "trainforge",
         "path": "lib/features/legal/presentation/legal_pages.dart",
-        "line": 13
+        "line": 14
       }
     },
     {
@@ -1735,7 +1735,7 @@
       "source": {
         "repository": "trainforge",
         "path": "lib/features/legal/presentation/legal_pages.dart",
-        "line": 191
+        "line": 214
       }
     },
     {
@@ -1744,7 +1744,7 @@
       "source": {
         "repository": "trainforge",
         "path": "lib/features/legal/presentation/legal_pages.dart",
-        "line": 297
+        "line": 333
       }
     },
     {
@@ -1753,7 +1753,7 @@
       "source": {
         "repository": "trainforge",
         "path": "lib/features/legal/presentation/legal_pages.dart",
-        "line": 13
+        "line": 14
       }
     },
     {
@@ -1762,7 +1762,7 @@
       "source": {
         "repository": "trainforge",
         "path": "lib/features/legal/presentation/legal_pages.dart",
-        "line": 110
+        "line": 127
       }
     },
     {
@@ -1771,7 +1771,7 @@
       "source": {
         "repository": "trainforge",
         "path": "lib/features/legal/presentation/legal_pages.dart",
-        "line": 297
+        "line": 333
       }
     },
     {
@@ -1780,7 +1780,7 @@
       "source": {
         "repository": "trainforge",
         "path": "lib/features/legal/presentation/legal_pages.dart",
-        "line": 13
+        "line": 14
       }
     },
     {
@@ -1789,7 +1789,7 @@
       "source": {
         "repository": "trainforge",
         "path": "lib/features/legal/presentation/legal_pages.dart",
-        "line": 110
+        "line": 127
       }
     },
     {
@@ -1798,7 +1798,7 @@
       "source": {
         "repository": "trainforge",
         "path": "lib/features/legal/presentation/legal_pages.dart",
-        "line": 191
+        "line": 214
       }
     },
     {
@@ -2050,7 +2050,7 @@
       "source": {
         "repository": "trainforge",
         "path": "lib/shared/widgets/auth_gate.dart",
-        "line": 88
+        "line": 77
       }
     },
     {
@@ -2059,7 +2059,7 @@
       "source": {
         "repository": "trainforge",
         "path": "lib/shared/widgets/auth_gate.dart",
-        "line": 75
+        "line": 93
       }
     },
     {
@@ -2068,7 +2068,7 @@
       "source": {
         "repository": "trainforge",
         "path": "lib/shared/widgets/auth_gate.dart",
-        "line": 102
+        "line": 101
       }
     },
     {
@@ -2077,7 +2077,7 @@
       "source": {
         "repository": "trainforge",
         "path": "lib/shared/widgets/auth_gate.dart",
-        "line": 112
+        "line": 111
       }
     },
     {
@@ -2511,7 +2511,7 @@
       "source": {
         "repository": "trainforge",
         "path": "lib/features/legal/legal_controller.dart",
-        "line": 194
+        "line": 268
       },
       "goMatches": [
         {

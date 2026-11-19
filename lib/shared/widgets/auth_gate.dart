@@ -39,7 +39,6 @@ class _AuthGateState extends State<AuthGate> {
     accountId = controller.profile?.id;
     controller.addListener(accountChanged);
     controller.restore();
-    if (!legal.loaded) legal.load();
   }
 
   void accountChanged() {
@@ -67,16 +66,6 @@ class _AuthGateState extends State<AuthGate> {
     listenable: Listenable.merge([controller, legal]),
     builder: (context, _) {
       final profile = controller.profile;
-      if (!legal.loaded) {
-        return StartupPage(label: context.l10n.preparing);
-      }
-      // Terms and Privacy come before any use, signed in or as a visitor.
-      if (legal.needsTerms) {
-        return LegalConsentPage(
-          key: const ValueKey('legal-consent'),
-          controller: legal,
-        );
-      }
       // Only session restoration covers the screen; sign-in keeps the entry visible.
       if (controller.restoring && profile == null) {
         return StartupPage(label: context.l10n.restoringSession);
@@ -91,12 +80,22 @@ class _AuthGateState extends State<AuthGate> {
           ),
         );
       }
-      if (!legal.healthLoaded(profile.id)) {
+      // Terms, Privacy and health consent belong to the account: visitors keep
+      // everything on the device and never reach this gate.
+      if (!legal.accountLoaded(profile.id)) {
         final id = profile.id;
         WidgetsBinding.instance.addPostFrameCallback((_) {
           if (mounted) legal.loadAccount(id);
         });
         return StartupPage(label: context.l10n.restoringSession);
+      }
+      if (legal.needsTerms(profile.id)) {
+        return LegalConsentPage(
+          key: ValueKey('legal-${profile.id}'),
+          controller: legal,
+          accountId: profile.id,
+          onDeleteAccount: controller.logout,
+        );
       }
       if (legal.healthGranted(profile.id) == null) {
         return HealthConsentPage(

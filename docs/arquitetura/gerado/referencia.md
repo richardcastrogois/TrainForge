@@ -1,6 +1,6 @@
 # Referência técnica extraída do código
 
-> Gerado de código e registros versionados por `tools/gerar_documentacao.py`. Não editar este arquivo à mão. Revisão das entradas: `71922bbc4b72588c`.
+> Gerado de código e registros versionados por `tools/gerar_documentacao.py`. Não editar este arquivo à mão. Revisão das entradas: `48cd869857474987`.
 
 [Arquitetura explicada](../README.md) · [APIs](../diagramas/apis.md) · [Banco e colunas](../diagramas/banco.md) · [Backlog](../../execucao/v1/backlog.md)
 
@@ -35,9 +35,9 @@ Uma referência de construtor não demonstra clique ou condição de navegação
 | FoodPage | [lib/features/food_reference/presentation/food_page.dart:17](../../../lib/features/food_reference/presentation/food_page.dart) |
 | TodayPage | [lib/features/home/presentation/pages/today_page.dart:10](../../../lib/features/home/presentation/pages/today_page.dart) |
 | LegalConsentPage | [lib/features/legal/presentation/legal_pages.dart:10](../../../lib/features/legal/presentation/legal_pages.dart) |
-| HealthConsentPage | [lib/features/legal/presentation/legal_pages.dart:107](../../../lib/features/legal/presentation/legal_pages.dart) |
-| LegalSettingsPage | [lib/features/legal/presentation/legal_pages.dart:188](../../../lib/features/legal/presentation/legal_pages.dart) |
-| LegalDocumentPage | [lib/features/legal/presentation/legal_pages.dart:294](../../../lib/features/legal/presentation/legal_pages.dart) |
+| HealthConsentPage | [lib/features/legal/presentation/legal_pages.dart:124](../../../lib/features/legal/presentation/legal_pages.dart) |
+| LegalSettingsPage | [lib/features/legal/presentation/legal_pages.dart:211](../../../lib/features/legal/presentation/legal_pages.dart) |
+| LegalDocumentPage | [lib/features/legal/presentation/legal_pages.dart:330](../../../lib/features/legal/presentation/legal_pages.dart) |
 | EntryDetailPage | [lib/features/nutrition/presentation/entry_detail_page.dart:15](../../../lib/features/nutrition/presentation/entry_detail_page.dart) |
 | FoodContributionPage | [lib/features/nutrition/presentation/food_contribution_page.dart:60](../../../lib/features/nutrition/presentation/food_contribution_page.dart) |
 | FoodContributionsPage | [lib/features/nutrition/presentation/food_contribution_page.dart:179](../../../lib/features/nutrition/presentation/food_contribution_page.dart) |
@@ -71,18 +71,18 @@ Uma referência de construtor não demonstra clique ou condição de navegação
 | CatalogPage | CatalogDetailPage | [lib/features/catalog/presentation/catalog_page.dart:353](../../../lib/features/catalog/presentation/catalog_page.dart) |
 | FoodPage | CatalogToolsPage | [lib/features/food_reference/presentation/food_page.dart:145](../../../lib/features/food_reference/presentation/food_page.dart) |
 | FoodPage | FoodDetailPage | [lib/features/food_reference/presentation/food_page.dart:79](../../../lib/features/food_reference/presentation/food_page.dart) |
-| LegalConsentPage | HealthConsentPage | [lib/features/legal/presentation/legal_pages.dart:110](../../../lib/features/legal/presentation/legal_pages.dart) |
-| LegalConsentPage | LegalSettingsPage | [lib/features/legal/presentation/legal_pages.dart:191](../../../lib/features/legal/presentation/legal_pages.dart) |
-| LegalConsentPage | LegalDocumentPage | [lib/features/legal/presentation/legal_pages.dart:297](../../../lib/features/legal/presentation/legal_pages.dart) |
-| HealthConsentPage | LegalConsentPage | [lib/features/legal/presentation/legal_pages.dart:13](../../../lib/features/legal/presentation/legal_pages.dart) |
-| HealthConsentPage | LegalSettingsPage | [lib/features/legal/presentation/legal_pages.dart:191](../../../lib/features/legal/presentation/legal_pages.dart) |
-| HealthConsentPage | LegalDocumentPage | [lib/features/legal/presentation/legal_pages.dart:297](../../../lib/features/legal/presentation/legal_pages.dart) |
-| LegalSettingsPage | LegalConsentPage | [lib/features/legal/presentation/legal_pages.dart:13](../../../lib/features/legal/presentation/legal_pages.dart) |
-| LegalSettingsPage | HealthConsentPage | [lib/features/legal/presentation/legal_pages.dart:110](../../../lib/features/legal/presentation/legal_pages.dart) |
-| LegalSettingsPage | LegalDocumentPage | [lib/features/legal/presentation/legal_pages.dart:297](../../../lib/features/legal/presentation/legal_pages.dart) |
-| LegalDocumentPage | LegalConsentPage | [lib/features/legal/presentation/legal_pages.dart:13](../../../lib/features/legal/presentation/legal_pages.dart) |
-| LegalDocumentPage | HealthConsentPage | [lib/features/legal/presentation/legal_pages.dart:110](../../../lib/features/legal/presentation/legal_pages.dart) |
-| LegalDocumentPage | LegalSettingsPage | [lib/features/legal/presentation/legal_pages.dart:191](../../../lib/features/legal/presentation/legal_pages.dart) |
+| LegalConsentPage | HealthConsentPage | [lib/features/legal/presentation/legal_pages.dart:127](../../../lib/features/legal/presentation/legal_pages.dart) |
+| LegalConsentPage | LegalSettingsPage | [lib/features/legal/presentation/legal_pages.dart:214](../../../lib/features/legal/presentation/legal_pages.dart) |
+| LegalConsentPage | LegalDocumentPage | [lib/features/legal/presentation/legal_pages.dart:333](../../../lib/features/legal/presentation/legal_pages.dart) |
+| HealthConsentPage | LegalConsentPage | [lib/features/legal/presentation/legal_pages.dart:14](../../../lib/features/legal/presentation/legal_pages.dart) |
+| HealthConsentPage | LegalSettingsPage | [lib/features/legal/presentation/legal_pages.dart:214](../../../lib/features/legal/presentation/legal_pages.dart) |
+| HealthConsentPage | LegalDocumentPage | [lib/features/legal/presentation/legal_pages.dart:333](../../../lib/features/legal/presentation/legal_pages.dart) |
+| LegalSettingsPage | LegalConsentPage | [lib/features/legal/presentation/legal_pages.dart:14](../../../lib/features/legal/presentation/legal_pages.dart) |
+| LegalSettingsPage | HealthConsentPage | [lib/features/legal/presentation/legal_pages.dart:127](../../../lib/features/legal/presentation/legal_pages.dart) |
+| LegalSettingsPage | LegalDocumentPage | [lib/features/legal/presentation/legal_pages.dart:333](../../../lib/features/legal/presentation/legal_pages.dart) |
+| LegalDocumentPage | LegalConsentPage | [lib/features/legal/presentation/legal_pages.dart:14](../../../lib/features/legal/presentation/legal_pages.dart) |
+| LegalDocumentPage | HealthConsentPage | [lib/features/legal/presentation/legal_pages.dart:127](../../../lib/features/legal/presentation/legal_pages.dart) |
+| LegalDocumentPage | LegalSettingsPage | [lib/features/legal/presentation/legal_pages.dart:214](../../../lib/features/legal/presentation/legal_pages.dart) |
 | EntryDetailPage | EntryFormPage | [lib/features/nutrition/presentation/entry_detail_page.dart:76](../../../lib/features/nutrition/presentation/entry_detail_page.dart) |
 | FoodContributionPage | FoodContributionsPage | [lib/features/nutrition/presentation/food_contribution_page.dart:181](../../../lib/features/nutrition/presentation/food_contribution_page.dart) |
 | FoodContributionsPage | FoodContributionPage | [lib/features/nutrition/presentation/food_contribution_page.dart:55](../../../lib/features/nutrition/presentation/food_contribution_page.dart) |
@@ -110,10 +110,10 @@ Uma referência de construtor não demonstra clique ou condição de navegação
 | AccountPage | LegalSettingsPage | [lib/shared/widgets/account_page.dart:203](../../../lib/shared/widgets/account_page.dart) |
 | AccountPage | PrivacyPage | [lib/shared/widgets/account_page.dart:25](../../../lib/shared/widgets/account_page.dart) |
 | AccountPage | ContentSourcesPage | [lib/shared/widgets/account_page.dart:220](../../../lib/shared/widgets/account_page.dart) |
-| AuthGate | AuthPage | [lib/shared/widgets/auth_gate.dart:88](../../../lib/shared/widgets/auth_gate.dart) |
-| AuthGate | LegalConsentPage | [lib/shared/widgets/auth_gate.dart:75](../../../lib/shared/widgets/auth_gate.dart) |
-| AuthGate | HealthConsentPage | [lib/shared/widgets/auth_gate.dart:102](../../../lib/shared/widgets/auth_gate.dart) |
-| AuthGate | ProductShell | [lib/shared/widgets/auth_gate.dart:112](../../../lib/shared/widgets/auth_gate.dart) |
+| AuthGate | AuthPage | [lib/shared/widgets/auth_gate.dart:77](../../../lib/shared/widgets/auth_gate.dart) |
+| AuthGate | LegalConsentPage | [lib/shared/widgets/auth_gate.dart:93](../../../lib/shared/widgets/auth_gate.dart) |
+| AuthGate | HealthConsentPage | [lib/shared/widgets/auth_gate.dart:101](../../../lib/shared/widgets/auth_gate.dart) |
+| AuthGate | ProductShell | [lib/shared/widgets/auth_gate.dart:111](../../../lib/shared/widgets/auth_gate.dart) |
 | AuthGate | StartupPage | [lib/shared/widgets/auth_gate.dart:71](../../../lib/shared/widgets/auth_gate.dart) |
 | ContentSourcesPage | CatalogPage | [lib/shared/widgets/content_sources_page.dart:28](../../../lib/shared/widgets/content_sources_page.dart) |
 | ContentSourcesPage | FoodPage | [lib/shared/widgets/content_sources_page.dart:35](../../../lib/shared/widgets/content_sources_page.dart) |
@@ -147,7 +147,7 @@ Método e caminho compatíveis não garantem DTO, resposta ou autenticação. Ex
 | `GET /api/v1/foods/${Uri.encodeComponent(food.id)}` | versionId | [services/api/internal/nutrition/handler.go:18](../../../services/api/internal/nutrition/handler.go) | [lib/features/food_reference/data/food_repository.dart:36](../../../lib/features/food_reference/data/food_repository.dart) |
 | `GET /api/v1/foods` | cursor, limit, locale, namesVersion, q, sourceId | [services/api/internal/nutrition/handler.go:19](../../../services/api/internal/nutrition/handler.go) | [lib/features/food_reference/data/food_repository.dart:56](../../../lib/features/food_reference/data/food_repository.dart) |
 | `GET /api/v1/foods/${Uri.encodeComponent(food.id)}` | locale, versionId | [services/api/internal/nutrition/handler.go:18](../../../services/api/internal/nutrition/handler.go) | [lib/features/food_reference/data/food_repository.dart:102](../../../lib/features/food_reference/data/food_repository.dart) |
-| `POST /api/v1/me/legal-consents` | items | [services/api/internal/legal/handler.go:26](../../../services/api/internal/legal/handler.go) | [lib/features/legal/legal_controller.dart:194](../../../lib/features/legal/legal_controller.dart) |
+| `POST /api/v1/me/legal-consents` | items | [services/api/internal/legal/handler.go:26](../../../services/api/internal/legal/handler.go) | [lib/features/legal/legal_controller.dart:268](../../../lib/features/legal/legal_controller.dart) |
 | `GET /api/v1/me/foods` | não detectadas | [services/api/internal/nutrition/entries_handler.go:31](../../../services/api/internal/nutrition/entries_handler.go) | [lib/features/nutrition/data/nutrition_repository.dart:48](../../../lib/features/nutrition/data/nutrition_repository.dart) |
 | `POST /api/v1/me/foods` | não detectadas | [services/api/internal/nutrition/entries_handler.go:30](../../../services/api/internal/nutrition/entries_handler.go) | [lib/features/nutrition/data/nutrition_repository.dart:56](../../../lib/features/nutrition/data/nutrition_repository.dart) |
 | `GET /api/v1/me/food-entries` | não detectadas | [services/api/internal/nutrition/entries_handler.go:33](../../../services/api/internal/nutrition/entries_handler.go) | [lib/features/nutrition/data/nutrition_repository.dart:63](../../../lib/features/nutrition/data/nutrition_repository.dart) |

@@ -48,12 +48,26 @@ class _StaggeredEntranceState extends State<StaggeredEntrance>
   @override
   void didUpdateWidget(StaggeredEntrance old) {
     super.didUpdateWidget(old);
-    if (widget.leaving && !old.leaving) {
+    if (!widget.leaving && old.leaving) {
+      exit.value = 0;
+    } else if (widget.leaving && !old.leaving) {
+      var called = false;
+      void left() {
+        if (called || !mounted) return;
+        called = true;
+        widget.onLeft?.call();
+      }
+
       if (AppMotion.reduced(context)) {
         exit.value = 1;
-        widget.onLeft?.call();
+        left();
       } else {
-        exit.forward().whenComplete(() => widget.onLeft?.call());
+        exit.forward().whenCompleteOrCancel(left);
+        // A muted ticker must never leave an empty screen behind.
+        Future<void>.delayed(
+          exit.duration! + const Duration(milliseconds: 120),
+          left,
+        );
       }
     }
   }

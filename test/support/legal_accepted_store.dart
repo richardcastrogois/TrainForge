@@ -8,7 +8,7 @@ class AcceptedLegalConsentStore extends MemoryLegalConsentStore {
   @override
   Future<Map<String, dynamic>?> read(String key) async {
     if (values.containsKey(key)) return values[key];
-    if (key == 'accepted') {
+    if (key.startsWith('accepted.')) {
       return {
         for (final d in legalDocuments)
           d.id: {
