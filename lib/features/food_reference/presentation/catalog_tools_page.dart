@@ -6,10 +6,25 @@ import 'package:flutter/material.dart';
 import 'package:path/path.dart' as paths;
 import 'package:path_provider/path_provider.dart';
 
-import '../../../core/http/app_dio.dart';
+import '../../../core/config/app_config.dart';
 import '../../../core/l10n/localized_context.dart';
 import '../../nutrition/presentation/food_offline_labels.dart';
 import '../data/catalog_installer.dart';
+
+/// Signed regional packs published as GitHub Release assets. Each pack is a
+/// complete catalog that replaces the active one; the trust key stays in the APK.
+class CatalogPack {
+  final String id;
+  final String titleKey;
+  final int megabytes;
+  const CatalogPack(this.id, this.titleKey, this.megabytes);
+  String get file => 'trainforge-catalog-$id.zip';
+}
+
+const catalogPacks = [
+  CatalogPack('br', 'packBrazil', 41),
+  CatalogPack('br-pt', 'packBrazilPortugal', 52),
+];
 
 class CatalogToolsPage extends StatefulWidget {
   final CatalogInstaller installer;
@@ -21,7 +36,7 @@ class CatalogToolsPage extends StatefulWidget {
 class _CatalogToolsPageState extends State<CatalogToolsPage> {
   bool busy = false;
   String? message;
-  Future<void> install({required bool download}) async {
+  Future<void> install({CatalogPack? pack}) async {
     if (busy) return;
     setState(() {
       busy = true;
@@ -30,18 +45,14 @@ class _CatalogToolsPageState extends State<CatalogToolsPage> {
     File? temporary;
     try {
       String? path;
-      if (download) {
+      if (pack != null) {
         final directory = await getTemporaryDirectory();
-        temporary = File(
-          paths.join(directory.path, 'trainforge-catalog-update.zip'),
-        );
-        await AppDio.instance.download(
-          '/api/v1/food-catalog/archive',
+        temporary = File(paths.join(directory.path, pack.file));
+        // Public static file; the signed manifest inside is verified on import.
+        await Dio().download(
+          Uri.parse(AppConfig.catalogPacksUrl).resolve(pack.file).toString(),
           temporary.path,
-          options: Options(
-            extra: {'publicAuth': true},
-            receiveTimeout: const Duration(minutes: 20),
-          ),
+          options: Options(receiveTimeout: const Duration(minutes: 20)),
         );
         path = temporary.path;
       } else {
@@ -78,13 +89,26 @@ class _CatalogToolsPageState extends State<CatalogToolsPage> {
         const SizedBox(height: 12),
         Text(foodOfflineLabel(context, 'catalogSpace')),
         const SizedBox(height: 16),
-        FilledButton.icon(
-          onPressed: busy ? null : () => install(download: true),
-          icon: const Icon(Icons.download),
-          label: Text(foodOfflineLabel(context, 'update')),
+        Text(
+          foodOfflineLabel(context, 'packs'),
+          style: Theme.of(context).textTheme.titleMedium,
         ),
+        for (final pack in catalogPacks)
+          ListTile(
+            contentPadding: EdgeInsets.zero,
+            title: Text(foodOfflineLabel(context, pack.titleKey)),
+            subtitle: pack.megabytes > 0
+                ? Text('${pack.megabytes} MB')
+                : null,
+            trailing: IconButton(
+              tooltip: foodOfflineLabel(context, 'download'),
+              onPressed: busy ? null : () => install(pack: pack),
+              icon: const Icon(Icons.download),
+            ),
+          ),
+        const SizedBox(height: 8),
         OutlinedButton.icon(
-          onPressed: busy ? null : () => install(download: false),
+          onPressed: busy ? null : () => install(),
           icon: const Icon(Icons.folder_open),
           label: Text(foodOfflineLabel(context, 'import')),
         ),

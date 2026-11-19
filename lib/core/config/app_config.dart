@@ -9,6 +9,12 @@ class AppConfig {
     'API_BASE_URL',
     defaultValue: 'http://127.0.0.1:8082',
   );
+  /// Public folder with signed regional catalog packs (GitHub Releases).
+  static const String catalogPacksUrl = String.fromEnvironment(
+    'CATALOG_PACKS_URL',
+    defaultValue:
+        'https://github.com/richardcastrogois/TrainForge/releases/download/catalog-packs-v1/',
+  );
   static const String googleServerClientId = String.fromEnvironment(
     'GOOGLE_SERVER_CLIENT_ID',
   );

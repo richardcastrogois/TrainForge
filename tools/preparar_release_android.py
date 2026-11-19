@@ -75,7 +75,17 @@ def inspect_apk(apk: Path, tooling: dict, expected_certificate: str | None = Non
     if expected_certificate is not None and certificate != expected_certificate:
         raise ValueError("APK signer differs from the expected release certificate")
     aapt = tooling["signer"].with_name("aapt2.exe" if os.name == "nt" else "aapt2")
+    # Release builds shorten resource paths (res/xml/backup_rules.xml -> res/Qq.xml);
+    # resolve the packaged file through the resource table instead of guessing.
+    table = None
     def tree(name):
+        nonlocal table
+        if name.startswith("res/xml/"):
+            table = table if table is not None else command_output([aapt, "dump", "resources", apk], timeout=120)
+            entry = "xml/" + name.removeprefix("res/xml/").removesuffix(".xml")
+            found = re.search(r"resource 0x[0-9a-f]+ " + re.escape(entry) + r"\s*\n\s*\(\) \(file\) (\S+)", table)
+            if found:
+                name = found.group(1)
         return command_output([aapt, "dump", "xmltree", apk, "--file", name])
     manifest = summarize_manifest(tree("AndroidManifest.xml"))
     return {"sha256": file_hash(apk), "bytes": apk.stat().st_size,

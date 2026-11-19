@@ -27,7 +27,7 @@ from food_catalog import ROOT, canonical, create_compact_schema, sha_file, sign_
 
 LOCAL = ROOT / '.local/food-catalog'
 FULL_DB = LOCAL / 'distribution/catalog.sqlite'
-FULL_ASSETS = ROOT / 'assets/food_catalog'
+FULL_ASSETS = LOCAL / 'full-assets'  # complete signed catalog kept outside the APK
 RAW_OFF = LOCAL / 'raw/off-products.csv.gz'
 COUNTRY_CODES = LOCAL / 'off-country-codes.json'
 # Reference tables with prepared/generic foods. Branded USDA and lab sample

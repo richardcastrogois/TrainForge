@@ -72,9 +72,13 @@ const _labels = <String, Map<String, String>>{
     'catalogPreparation':
         'Preparing the complete food catalog. The first opening may take several minutes and needs storage space. After preparation, searches work offline.',
     'catalogSpace':
-        'The complete catalog can occupy several gigabytes. An update also needs space for the new copy while the previous one is preserved. Insufficient space will keep the installed version.',
+        'The app ships with the Brazil pack. Other packs are optional downloads and replace the installed catalog; the previous one is kept until the new copy is verified.',
     'import': 'Import signed catalog',
     'update': 'Update catalog',
+    'packs': 'Food packs',
+    'packBrazil': 'Brazil (installed with the app)',
+    'packBrazilPortugal': 'Brazil + Portugal',
+    'download': 'Download pack',
     'catalogNotice':
         'The installed catalog works without a connection. Updating is optional and uses only TrainForge infrastructure. Your meals and personal foods are preserved.',
     'imported': 'Catalog installed. Reopen the food search to use it.',
@@ -147,9 +151,13 @@ const _labels = <String, Map<String, String>>{
     'catalogPreparation':
         'Preparando o catálogo completo de alimentos. A primeira abertura pode levar vários minutos e precisa de espaço no aparelho. Depois, as buscas funcionam offline.',
     'catalogSpace':
-        'O catálogo completo pode ocupar vários gigabytes. A atualização também precisa de espaço para a nova cópia enquanto preserva a anterior. Se faltar espaço, a versão instalada será mantida.',
+        'O app já vem com o pacote do Brasil. Outros pacotes são downloads opcionais e substituem o catálogo instalado; o anterior é mantido até a nova cópia ser verificada.',
     'import': 'Importar catálogo assinado',
     'update': 'Atualizar catálogo',
+    'packs': 'Pacotes de alimentos',
+    'packBrazil': 'Brasil (já vem no app)',
+    'packBrazilPortugal': 'Brasil + Portugal',
+    'download': 'Baixar pacote',
     'catalogNotice':
         'O catálogo instalado funciona sem conexão. A atualização é opcional e usa somente a infraestrutura do TrainForge. Refeições e alimentos pessoais são preservados.',
     'imported': 'Catálogo instalado. Reabra a busca de alimentos para usá-lo.',
@@ -223,9 +231,13 @@ const _labels = <String, Map<String, String>>{
     'catalogPreparation':
         'Preparando el catálogo completo de alimentos. La primera apertura puede tardar varios minutos y necesita espacio. Después, las búsquedas funcionan sin conexión.',
     'catalogSpace':
-        'El catálogo completo puede ocupar varios gigabytes. Una actualización necesita espacio adicional mientras conserva la versión anterior. Si falta espacio, se mantiene la versión instalada.',
+        'La app incluye el paquete de Brasil. Otros paquetes son descargas opcionales y reemplazan el catálogo instalado; el anterior se conserva hasta verificar la nueva copia.',
     'import': 'Importar catálogo firmado',
     'update': 'Actualizar catálogo',
+    'packs': 'Paquetes de alimentos',
+    'packBrazil': 'Brasil (incluido en la app)',
+    'packBrazilPortugal': 'Brasil + Portugal',
+    'download': 'Descargar paquete',
     'catalogNotice':
         'El catálogo instalado funciona sin conexión. Actualizar es opcional y utiliza solo la infraestructura de TrainForge. Se conservan tus comidas y alimentos personales.',
     'imported': 'Catálogo instalado. Vuelve a abrir la búsqueda para usarlo.',
