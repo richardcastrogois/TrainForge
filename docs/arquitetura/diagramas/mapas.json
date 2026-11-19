@@ -69,18 +69,20 @@
     {
       "id": "02-arquitetura",
       "title": "Quem conversa com quem",
-      "note": "As duas bases usam o mesmo cluster PostgreSQL isolado15432 neste notebook. Isso não constitui isolamento de infraestrutura em produção.",
+      "note": "Código em integração: alimentação consulta SQLite e salva SQLCipher no aparelho; sync usa API própria. As bases PostgreSQL usam o mesmo cluster local15432. Ativação/global e Android têm gates no handoff.",
       "columns": 3,
       "sources": [
         "services/api/cmd/api/main.go",
         "services/api/cmd/catalog/main.go",
-        "lib/composition/production_dependencies.dart"
+        "lib/composition/production_dependencies.dart",
+        "lib/features/food_reference/data/catalog_installer.dart",
+        "lib/features/nutrition/data/nutrition_local_store.dart"
       ],
       "nodes": [
         {
           "id": "celular",
           "title": "Flutter / Android",
-          "text": "Interface no emulador. Porta8082 por adb reverse.",
+          "text": "Interface móvel; busca alimentar offline; demais jornadas usam a API.",
           "state": "atual"
         },
         {
@@ -104,7 +106,7 @@
         {
           "id": "core",
           "title": "Banco do núcleo",
-          "text": "trainforge_v1_dev; schema13;30tabelas.",
+          "text": "trainforge_v1_dev; schema16/38tabelas. Ativação preservou as30tabelas anteriores.",
           "state": "atual"
         },
         {
@@ -112,6 +114,18 @@
           "title": "Banco do catálogo",
           "text": "trainforge_catalog_dev; schema2;4tabelas.",
           "state": "atual"
+        },
+        {
+          "id": "foodsql",
+          "title": "SQLite público no aparelho",
+          "text": "Catálogo gzip/Ed25519, TACO+USDA+OFF+legados; GTIN e porções. Pacote final em preparação.",
+          "state": "parcial"
+        },
+        {
+          "id": "privatefood",
+          "title": "SQLCipher por conta",
+          "text": "Consumos, alimentos particulares, fila, conflitos e fotos de rótulo; chave no armazenamento seguro.",
+          "state": "parcial"
         }
       ],
       "edges": [
@@ -139,6 +153,21 @@
           "from": "celular",
           "to": "google",
           "label": "login consentido"
+        },
+        {
+          "from": "celular",
+          "to": "foodsql",
+          "label": "consulta local/FTS4"
+        },
+        {
+          "from": "celular",
+          "to": "privatefood",
+          "label": "snapshot + operação durável"
+        },
+        {
+          "from": "privatefood",
+          "to": "api",
+          "label": "sync autenticada + revisão"
         }
       ]
     },
@@ -332,18 +361,20 @@
     {
       "id": "05-consumo",
       "title": "Da quantidade ao registro alimentar",
-      "note": "Foto ainda não integra este fluxo. Uma busca ou rascunho não prova que a pessoa consumiu algo.",
+      "note": "Fluxo alimentar offline em integração; snapshots preservam fonte/versão e o servidor confere paridade antes de confirmar. Aceite nativo e pacote completo pendentes.",
       "columns": 3,
       "sources": [
         "lib/features/nutrition/presentation/nutrition_forms.dart",
         "services/api/internal/nutrition/postgres_entries.go",
-        "services/api/internal/nutrition/meals_postgres.go"
+        "services/api/internal/nutrition/meals_postgres.go",
+        "lib/features/nutrition/data/offline_nutrition_repository.dart",
+        "lib/features/nutrition/data/nutrition_sync.dart"
       ],
       "nodes": [
         {
           "id": "busca",
-          "title": "Pesquisar",
-          "text": "Nome/atalho → alimento e versão exatos.",
+          "title": "Pesquisar offline",
+          "text": "SQLite/FTS4 e GTIN; alimento e versão exatos.",
           "state": "atual"
         },
         {
@@ -354,14 +385,14 @@
         },
         {
           "id": "confirmar",
-          "title": "Confirmar",
-          "text": "POST privado; titular e chave idempotente.",
-          "state": "atual"
+          "title": "Salvar localmente",
+          "text": "Transação SQLCipher: snapshot, cálculo e operação estável na fila.",
+          "state": "parcial"
         },
         {
           "id": "api",
-          "title": "Validar e calcular",
-          "text": "API preserva unidade, versão e desconhecidos.",
+          "title": "Sincronizar e conferir",
+          "text": "Go revalida sessão/revisão e confere paridade antes de confirmar.",
           "state": "atual"
         },
         {
@@ -372,9 +403,9 @@
         },
         {
           "id": "diario",
-          "title": "Mostrar diário",
-          "text": "Mesmos registros nas visões por refeição e por alimento.",
-          "state": "atual"
+          "title": "Mostrar diário local",
+          "text": "Mesmos registros nas duas visões; pendente ou confirmado explícitos.",
+          "state": "parcial"
         }
       ],
       "edges": [
@@ -391,7 +422,7 @@
         {
           "from": "confirmar",
           "to": "api",
-          "label": "JSON"
+          "label": "sync autenticada quando conectado"
         },
         {
           "from": "api",
@@ -401,7 +432,12 @@
         {
           "from": "banco",
           "to": "diario",
-          "label": "resposta confirmada"
+          "label": "paridade + confirmação"
+        },
+        {
+          "from": "confirmar",
+          "to": "diario",
+          "label": "salvo neste aparelho"
         }
       ]
     },

@@ -726,7 +726,7 @@ Handoff: Registrar arquivos/contratos alterados, comandos e resultados reais, pe
 
 ### V1-019 — Validar e importar o lote alimentar
 
-**done · V1 · L**
+**doing · V1 · L**
 
 Como usuário, quero procurar alimentos pesquisados com preparo e unidades corretos.
 
@@ -739,6 +739,7 @@ Critérios de aceite:
 - Inventariar as fontes alimentares pesquisadas e importar todo o conteúdo utilizável/permitido em lotes técnicos versionados; reportar cobertura, duplicados, rejeições e pendências, sem limitar a base a uma amostra arbitrária
 - Alimento/preparo, base 100g/100ml, porção e nutrientes ausentes mantidos distintos
 - Não gerar receita, alergênico seguro, dieta ou medida caseira sem origem
+- Rodada18/11:catálogo completo aproveitável das fontes autorizadas embarcado e verificável em checkout limpo; assinatura, hashes, tamanho real, exportação ODbL e ativação servidor antes do APK; contribuições autorizadas só publicadas após revisão
 
 Tarefas e subtarefas:
 
@@ -754,7 +755,7 @@ Validação: Comparar amostra importada à fonte autorizada; Rejeitar mistura en
 
 Entregas: Manifesto alimentar aprovado; Lote alimentar versionado no DB
 
-Handoff: 22/10: lote autorizado deCiqual2025/CoFID2021 importado integralmente:6369registros(3484+2885),2identidadesconflitantes excluídas e3basesdesconhecidas preservadas. Revisão porfonte/operação e importadorGo idempotente, migration00005aditiva, runtimeeditorialsomenteleitura; reimport0/6369, restore de backup novo conferiu todas as tabelas. Ver docs/execucao/v1/implementacao.md, food-import-verification.json e manifestofood-approved.json. Outras20famílias mantêm gates próprios; APIbusca/consumo/Flutter não entregues.
+Handoff: 18/11:ingestão/conferência integral concluída,6702350alimentos. PID53824 em finish/índices/FTS/integridade, depois gzip/assinatura/ZIP; logs build-finalize.log/build-finalize-errors.log.9nomesUSDA vazios rejeitados explicitamente. Não recomeçar nem baixar fontes. Aguardar catalog_packaged e verify; comandos/arquivos no handoff. Global ainda não ativo na base pessoal.
 
 ### V1-020 — Pesquisar e cadastrar alimento próprio e registrar consumo
 
@@ -1079,7 +1080,7 @@ Handoff: 24/10:consumo humano real preservado e fluxos alimentares refinados noA
 
 ### V1-026 — Tratar offline e sincronização sem fingir sucesso
 
-**todo · V1 · L**
+**doing · V1 · L**
 
 Como usuário, quero ler material já autorizado e saber quando um registro ainda não foi enviado.
 
@@ -1120,7 +1121,7 @@ Validação: Testes de persistência/retentativa/idempotência, conflito, titula
 
 Entregas: Fila durável privada e cache permitido; Estados e sincronização integrados a alimentação/andamento; Recibo de durabilidade, reconciliação, isolamento e limites
 
-Handoff: 25/10:Q4 aprovou registrar offline e sincronizar depois. Pendência atual do formulário é em memória, sem fila durável; esta história continua todo. Não criar outra história para a mesma capacidade.042/045 integram exclusão de foto com refeição e upload sem recriação. Sem promessa de reconhecimento local, execução contínua em segundo plano ou sincronização já entregue; proteção, limites e aceites precisam ser implementados.
+Handoff: 18/11:alimento offline SQLCipher/outbox e ledger/feed com migrations14–16 implementados; Flutter357 completos antes dos ajustes e42 dirigidos finais passaram, análise0 e SQL descartável schema16 aprovado. Recibos no handoff. Catálogo final e validação nativa pendentes; atividade offline e critérios restantes continuam abertos.
 
 ### V1-048 — Localizar interface e nomes alimentares com revisão
 

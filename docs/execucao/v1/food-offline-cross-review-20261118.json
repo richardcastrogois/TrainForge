@@ -1,0 +1,481 @@
+{
+  "contract": "trainforge.food-offline-cross-review/1",
+  "date": "2026-11-18",
+  "createdAtUtc": "2026-11-19T00:02:03.247588+00:00",
+  "stage": "sql-compatible-precision-correction-implemented-validation-pending",
+  "clientBaseline": {
+    "path": "docs/execucao/v1/food-offline-client-verification-20261118.json",
+    "sha256": "c6c869e6e639d7866cbed34df5365b05fe860d7733b5ac0296f7ef27c88e182d",
+    "sourceHashKey": "sourceHashesAfterFacetCountCorrection",
+    "recordedFiles": 58,
+    "verifiedAtUtc": "2026-11-18T18:27:24.079706+00:00"
+  },
+  "comparisonBeforePrecisionCorrection": {
+    "comparedFiles": 58,
+    "unchangedFiles": 56,
+    "changedFiles": [
+      {
+        "path": "lib/features/auth/presentation/auth_controller.dart",
+        "baselineSha256": "50d4d6970bf9bcb272a2098842ec27d8fa7df3febf5739964f9374b582363219",
+        "observedSha256BeforePrecisionCorrection": "834d54a102056917762e95ca28d522b2e34e569dead66c5745b28b41c06223fb",
+        "observedBytes": 5401,
+        "modifiedAtUtcAtComparison": "2026-11-18T21:27:51.535594+00:00"
+      },
+      {
+        "path": "lib/features/auth/presentation/pages/auth_page.dart",
+        "baselineSha256": "ee0d3fc5d643d04d9fa23d2852df7cac266f32167c1f7d12f37622d1022e3dbc",
+        "observedSha256BeforePrecisionCorrection": "f157fa8c2965c03dc7c0c0f489ceb1ad8efd5812dd3390a40f6c5961dc022a1e",
+        "observedBytes": 27633,
+        "modifiedAtUtcAtComparison": "2026-11-18T23:37:16.408635+00:00"
+      }
+    ],
+    "missingFiles": [],
+    "unstableFilesWhileReading": [],
+    "headAtComparison": "aa0142d85dff405db73d02d7d0c293b28da89cca",
+    "headContentMatchedBaselineForBothAuthFiles": true,
+    "attribution": "User reports concurrent Claude edits. Changes are in the working tree; hashes and Git do not independently attribute authorship.",
+    "currentScope": "No auth, intro, logo, splash, theme or localization file was edited by this reviewer."
+  },
+  "currentSourceMetadataAtReceipt": {
+    "integration_test/food_offline_native_test.dart": {
+      "sha256": "49c0676429521aa8be33b2310018f542c2bc56a296469a6990058c969abc82e8",
+      "bytes": 9560,
+      "modifiedAtUtc": "2026-11-18T14:02:37.164367+00:00"
+    },
+    "lib/composition/production_dependencies.dart": {
+      "sha256": "45462e4a9d9d489e2a45c51581de1490b1014121bf262064462b82c5d0ec6adb",
+      "bytes": 1874,
+      "modifiedAtUtc": "2026-11-18T00:01:23.880609+00:00"
+    },
+    "lib/features/auth/data/auth_api.dart": {
+      "sha256": "4e3775e3adfa57804907e943cceb0b4992df04fdaaf65465cdcf66824e40fad0",
+      "bytes": 875,
+      "modifiedAtUtc": "2026-10-22T10:11:43.822524+00:00"
+    },
+    "lib/features/auth/data/auth_repository.dart": {
+      "sha256": "30f9e39c6d23083cd0e65b43a6caeccb8f96064a8a1c90440d8acc067e96c826",
+      "bytes": 4894,
+      "modifiedAtUtc": "2026-11-18T13:47:52.520813+00:00"
+    },
+    "lib/features/auth/data/auth_storage.dart": {
+      "sha256": "e7ad445f68fd2cf55c947cf9929ca9319b6aa132c946ababb4857d6fc98b62a8",
+      "bytes": 3462,
+      "modifiedAtUtc": "2026-11-18T01:15:10.967960+00:00"
+    },
+    "lib/features/auth/data/session_refresh.dart": {
+      "sha256": "3253f0e08bf455206f88a70488be00796811eff0832a82d92b1e35693bb3a1cc",
+      "bytes": 1523,
+      "modifiedAtUtc": "2026-10-22T10:22:22.754996+00:00"
+    },
+    "lib/features/auth/domain/auth_profile.dart": {
+      "sha256": "38cad0c132036198101a13cdae4b1246fed525c618452eacc0c06bee3ce6e66a",
+      "bytes": 889,
+      "modifiedAtUtc": "2026-10-22T10:40:26.922206+00:00"
+    },
+    "lib/features/auth/domain/auth_user.dart": {
+      "sha256": "23fc72f3d3053841f054f8c8c2147301c81204d4131e30185827906301e88c76",
+      "bytes": 1043,
+      "modifiedAtUtc": "2026-10-22T10:11:43.832613+00:00"
+    },
+    "lib/features/auth/presentation/auth_controller.dart": {
+      "sha256": "834d54a102056917762e95ca28d522b2e34e569dead66c5745b28b41c06223fb",
+      "bytes": 5401,
+      "modifiedAtUtc": "2026-11-18T21:27:51.535594+00:00"
+    },
+    "lib/features/auth/presentation/pages/auth_page.dart": {
+      "sha256": "38d982393eceda2689c79c6aa0d5c98f7d082a4ab15d908f5912ea61e4b07fcf",
+      "bytes": 30929,
+      "modifiedAtUtc": "2026-11-19T00:01:54.183708+00:00"
+    },
+    "lib/features/food_reference/data/catalog_installer.dart": {
+      "sha256": "31d12bfdff6f5c070ae7c52c77482c5b177d6a8acec4558420bebfadde2c94d7",
+      "bytes": 11669,
+      "modifiedAtUtc": "2026-11-18T14:03:56.494669+00:00"
+    },
+    "lib/features/food_reference/data/food_repository.dart": {
+      "sha256": "dcaec1701228f80257f4c669bdb7b6c99382d28fa08130a29c33cd564120c3fd",
+      "bytes": 3727,
+      "modifiedAtUtc": "2026-10-26T12:17:27.112742+00:00"
+    },
+    "lib/features/food_reference/data/local_food_repository.dart": {
+      "sha256": "ff695128544bfcdd45ea6bc288ae69a1c32474ef840d25d0d28340984ae9653c",
+      "bytes": 10371,
+      "modifiedAtUtc": "2026-11-18T18:25:27.166409+00:00"
+    },
+    "lib/features/food_reference/domain/food_display_names.dart": {
+      "sha256": "f4e5c7fa5dcd4e8d080f55b2f4782f4e7b7ef1c73ed255c3eecd1781af2bc849",
+      "bytes": 14747,
+      "modifiedAtUtc": "2026-10-29T23:25:01.034379+00:00"
+    },
+    "lib/features/food_reference/domain/food_reference.dart": {
+      "sha256": "6d7428d3af37d9a89a9a705559af686f8c5cbebc6e9fb0a2616c05ae77515289",
+      "bytes": 10829,
+      "modifiedAtUtc": "2026-11-18T14:02:31.909250+00:00"
+    },
+    "lib/features/food_reference/presentation/barcode_scanner_page.dart": {
+      "sha256": "28183d5aadbdc670376a6abddfd8f2f43376054652b359a959e163f7415d8184",
+      "bytes": 2503,
+      "modifiedAtUtc": "2026-11-18T00:06:43.361444+00:00"
+    },
+    "lib/features/food_reference/presentation/catalog_tools_page.dart": {
+      "sha256": "63e610dd33f06877ea4b93495af9905253d024d6ec28106dd58417648c678f31",
+      "bytes": 3355,
+      "modifiedAtUtc": "2026-11-18T14:02:31.918112+00:00"
+    },
+    "lib/features/food_reference/presentation/food_controller.dart": {
+      "sha256": "17efff2f4627044c273357d7f75f3352608ea0431e30279c992291ad4ee33254",
+      "bytes": 3885,
+      "modifiedAtUtc": "2026-10-26T12:19:39.965618+00:00"
+    },
+    "lib/features/food_reference/presentation/food_detail_page.dart": {
+      "sha256": "f4c0c87a36a9a4e585ca420faf437a977367033b9e002dd3b3918efa215814a2",
+      "bytes": 10345,
+      "modifiedAtUtc": "2026-10-29T23:20:51.328899+00:00"
+    },
+    "lib/features/food_reference/presentation/food_labels.dart": {
+      "sha256": "6987f5d4f2ff1924d9a1423b8988d1dc4773eb3b77d67e814fd2c867e790089f",
+      "bytes": 2511,
+      "modifiedAtUtc": "2026-10-29T23:22:18.183881+00:00"
+    },
+    "lib/features/food_reference/presentation/food_page.dart": {
+      "sha256": "1e2446af8703591dd203b815c361f6daacfeaabbf7a93802eba19ffb6855fd29",
+      "bytes": 16842,
+      "modifiedAtUtc": "2026-11-18T14:02:31.941708+00:00"
+    },
+    "lib/features/nutrition/data/calculation_parity.dart": {
+      "sha256": "4e09bf43be5beab92120f69d11adc18e93c48ba0bcdb60b0b315ec634a96b273",
+      "bytes": 4316,
+      "modifiedAtUtc": "2026-11-18T14:03:33.165525+00:00"
+    },
+    "lib/features/nutrition/data/nutrition_local_store.dart": {
+      "sha256": "387e13b2c7de229a92e7d45ee916956c81a223a051faf81454547bce06fcca66",
+      "bytes": 10265,
+      "modifiedAtUtc": "2026-11-18T13:50:02.211025+00:00"
+    },
+    "lib/features/nutrition/data/nutrition_repository.dart": {
+      "sha256": "4f6610b64dfbad5f84d0b51adadce495870b48da4a9b21204302666ec28dd343",
+      "bytes": 9022,
+      "modifiedAtUtc": "2026-10-28T03:37:04.919387+00:00"
+    },
+    "lib/features/nutrition/data/nutrition_sync.dart": {
+      "sha256": "99aa2071f860edc3b1a5a377c4c7963a5a13fa8633acdc06f451e67dc507531c",
+      "bytes": 22950,
+      "modifiedAtUtc": "2026-11-18T14:03:33.166518+00:00"
+    },
+    "lib/features/nutrition/data/offline_nutrition_repository.dart": {
+      "sha256": "069d3767ffd545476fdbdaa5fb3a11904da673c9ccbf64c9db1b3008f82c52b3",
+      "bytes": 28822,
+      "modifiedAtUtc": "2026-11-18T23:56:58.849710+00:00"
+    },
+    "lib/features/nutrition/domain/exact_nutrition.dart": {
+      "sha256": "c9770480dc1c4e2fa21dddd96b2535e4b23348e81130942b1a826ff940fb6cbf",
+      "bytes": 6920,
+      "modifiedAtUtc": "2026-11-18T23:56:58.846702+00:00"
+    },
+    "lib/features/nutrition/domain/meals.dart": {
+      "sha256": "aab415a29574a4c84a3345aa754cd27aeb96c7dc43d47101b3e120397fc1725a",
+      "bytes": 6098,
+      "modifiedAtUtc": "2026-11-18T23:56:58.848710+00:00"
+    },
+    "lib/features/nutrition/domain/nutrition.dart": {
+      "sha256": "94496f12f9972455448e161c42d0a52027085928b2842f35c2097c8563155be1",
+      "bytes": 5368,
+      "modifiedAtUtc": "2026-10-29T23:16:12.017534+00:00"
+    },
+    "lib/features/nutrition/presentation/daily_summary_controller.dart": {
+      "sha256": "eb523d37e822f49d19d07ba2fdcf97f482ed7bb3c1356f8a5a163cc01dc2a2fd",
+      "bytes": 2663,
+      "modifiedAtUtc": "2026-10-23T19:14:37.008018+00:00"
+    },
+    "lib/features/nutrition/presentation/entry_detail_page.dart": {
+      "sha256": "09101b9cb8ea1a40e4238dffafc66e414e72715e23cc76c271a7df9e2fc08ff8",
+      "bytes": 16719,
+      "modifiedAtUtc": "2026-11-18T01:15:10.877295+00:00"
+    },
+    "lib/features/nutrition/presentation/entry_read_controller.dart": {
+      "sha256": "cf3a0d40c1eebf83826cb41da855fb6f085d6f5d7d78797f82cc2cef6fe63e7a",
+      "bytes": 2277,
+      "modifiedAtUtc": "2026-10-27T09:52:19.377842+00:00"
+    },
+    "lib/features/nutrition/presentation/food_contribution_page.dart": {
+      "sha256": "0173381f2dc6e1112ee1d548e98b5c827b1446ac561057543132256eb0b27ba1",
+      "bytes": 8433,
+      "modifiedAtUtc": "2026-11-18T13:52:57.834832+00:00"
+    },
+    "lib/features/nutrition/presentation/food_offline_labels.dart": {
+      "sha256": "b247eb8a8072a98f5ab88578321f741c63fa8d6fcd17f7ca6816fd49742975b7",
+      "bytes": 12997,
+      "modifiedAtUtc": "2026-11-18T14:02:31.989874+00:00"
+    },
+    "lib/features/nutrition/presentation/meal_controllers.dart": {
+      "sha256": "035f86c358066f935bb85f55ccfe74a3477ae3ca377c40858f266f040cc0d20a",
+      "bytes": 7856,
+      "modifiedAtUtc": "2026-11-18T23:56:58.850710+00:00"
+    },
+    "lib/features/nutrition/presentation/meal_detail_page.dart": {
+      "sha256": "c52b4b82394bd3a6c93438b6078fb15aa1a9b41322893073f959e1a4b2433717",
+      "bytes": 8971,
+      "modifiedAtUtc": "2026-10-29T23:13:40.808772+00:00"
+    },
+    "lib/features/nutrition/presentation/meal_diary_page.dart": {
+      "sha256": "ef3594041fd62ce0b9778720ee96154e64a2c04959164c95e1946bea63a79758",
+      "bytes": 8809,
+      "modifiedAtUtc": "2026-10-29T23:13:40.813287+00:00"
+    },
+    "lib/features/nutrition/presentation/meal_draft_page.dart": {
+      "sha256": "12923d8ee17ac760a727c7f3671b728261cde3a96454791d4e048fdcc36d0255",
+      "bytes": 10633,
+      "modifiedAtUtc": "2026-10-28T12:25:59.908737+00:00"
+    },
+    "lib/features/nutrition/presentation/meal_metadata_controller.dart": {
+      "sha256": "1b729b184f106629904467a3206ba0a03a74c84e7b89b9ab8782c69c4c3d4242",
+      "bytes": 4585,
+      "modifiedAtUtc": "2026-10-28T12:13:37.068917+00:00"
+    },
+    "lib/features/nutrition/presentation/meal_metadata_page.dart": {
+      "sha256": "0c3f1791450c1a5f70725b258b350b3b5c04517628cd0330344a4a03bfd5c0c6",
+      "bytes": 6249,
+      "modifiedAtUtc": "2026-10-28T12:13:37.073971+00:00"
+    },
+    "lib/features/nutrition/presentation/nutrition_controller.dart": {
+      "sha256": "ff682bfad897364992f6a914df4afc3dcf4b8b3277357971c8f5841978988585",
+      "bytes": 7381,
+      "modifiedAtUtc": "2026-11-18T13:47:52.459019+00:00"
+    },
+    "lib/features/nutrition/presentation/nutrition_facts.dart": {
+      "sha256": "4fc50533ee0f015b3dae84a434a746b92e5f8f9b99b4c28b74f17f146e9b52ea",
+      "bytes": 3158,
+      "modifiedAtUtc": "2026-10-29T23:50:52.797512+00:00"
+    },
+    "lib/features/nutrition/presentation/nutrition_feedback.dart": {
+      "sha256": "b0dc077fb83fbbb7c0e0a403f076008307e96914f4f09c8124085b4bbdb1637d",
+      "bytes": 1325,
+      "modifiedAtUtc": "2026-10-26T11:21:14.234955+00:00"
+    },
+    "lib/features/nutrition/presentation/nutrition_forms.dart": {
+      "sha256": "fddb5ff8a15191e8a6bb3958249d69c4de70b5d6df5b3f0fe335324f696d4338",
+      "bytes": 33595,
+      "modifiedAtUtc": "2026-11-18T23:59:17.259544+00:00"
+    },
+    "lib/features/nutrition/presentation/nutrition_messages.dart": {
+      "sha256": "f6a020b3e6a86e8e15110f41bd49ee38ae69ef1656f1a64ea279594dc35fff51",
+      "bytes": 869,
+      "modifiedAtUtc": "2026-10-25T23:14:50.868956+00:00"
+    },
+    "lib/features/nutrition/presentation/nutrition_page.dart": {
+      "sha256": "552bd954aa9f6c44f6c56cae5a44dbeb93e3d99dd099574b12fd8bef71581e32",
+      "bytes": 17083,
+      "modifiedAtUtc": "2026-11-18T13:50:00.397192+00:00"
+    },
+    "lib/features/nutrition/presentation/nutrition_totals_card.dart": {
+      "sha256": "765b456fa32b217885b7a42f4bdf3ebeee2548792f1920ad3ddb49e1d027b38b",
+      "bytes": 2722,
+      "modifiedAtUtc": "2026-11-18T01:15:10.956676+00:00"
+    },
+    "lib/features/nutrition/presentation/offline_sync_panel.dart": {
+      "sha256": "61f13eb1bece3aaa412c5ecb3e53109aa6e88b5927ec06763b78aab27c10ed08",
+      "bytes": 6091,
+      "modifiedAtUtc": "2026-11-18T01:18:02.875041+00:00"
+    },
+    "lib/features/nutrition/presentation/own_food_picker_page.dart": {
+      "sha256": "b64414ac7814e754c4084175736832d21223e7c24262c50001d18fe167c75193",
+      "bytes": 5284,
+      "modifiedAtUtc": "2026-10-28T12:27:35.769464+00:00"
+    },
+    "lib/features/nutrition/presentation/own_food_portions_editor.dart": {
+      "sha256": "3068e8780c84c165f68f623f6ee29726d4ece26c8d9cc3621d7dfe52c5976272",
+      "bytes": 4245,
+      "modifiedAtUtc": "2026-11-18T13:50:02.361826+00:00"
+    },
+    "lib/shared/widgets/food_catalog_credits_page.dart": {
+      "sha256": "3e2b980601c7f976fa7e897eca951602f8de08bbe9d135ee5bccd5d92123a4b6",
+      "bytes": 5789,
+      "modifiedAtUtc": "2026-11-18T14:01:27.770612+00:00"
+    },
+    "pubspec.lock": {
+      "sha256": "ea5abdc07b71448c48775f26e8ae725f2ab0637a80100da6e763412f9652eaf3",
+      "bytes": 29696,
+      "modifiedAtUtc": "2026-11-18T14:02:29.775012+00:00"
+    },
+    "pubspec.yaml": {
+      "sha256": "e118172daa8f758d07754a4c1aad8bd96f6361ab95062b1ef4d429753a550baa",
+      "bytes": 1056,
+      "modifiedAtUtc": "2026-11-18T13:55:41.760532+00:00"
+    },
+    "test/auth_security_test.dart": {
+      "sha256": "a5efade74e8abf433b216b36c2082cc59226d974bb07496e3a1115b7b3fcf8d5",
+      "bytes": 7639,
+      "modifiedAtUtc": "2026-11-18T13:52:03.030103+00:00"
+    },
+    "test/fixtures/canonical_nutrition_cases.json": {
+      "sha256": "6f4e216677df971cc1a6def2824e524bd5d0a7cb6ef0e50dfcbfe6b4b21a07aa",
+      "bytes": 2460,
+      "modifiedAtUtc": "2026-11-18T00:04:30.534815+00:00"
+    },
+    "test/food_catalog_credits_test.dart": {
+      "sha256": "d64987491caf24a43e382f2a1495c52c77003f4c3e591f186ce68a124343e5d2",
+      "bytes": 2067,
+      "modifiedAtUtc": "2026-11-18T14:03:56.510856+00:00"
+    },
+    "test/offline_nutrition_test.dart": {
+      "sha256": "097b4540e0ef8d1f6ab3deff42d7433192d46e77a3121f375dcc5c564b86dc62",
+      "bytes": 18570,
+      "modifiedAtUtc": "2026-11-18T18:25:35.257575+00:00"
+    },
+    "test/privacy_test.dart": {
+      "sha256": "f6c58ba525656ed771f15b102e884f6edd19ad0ed59936c7cfa00e66cb8650c8",
+      "bytes": 15304,
+      "modifiedAtUtc": "2026-11-18T01:21:35.370224+00:00"
+    }
+  },
+  "sqlCompatibility": {
+    "fixturePath": ".local/food-catalog/compact-fixture/catalog.sqlite",
+    "sha256": "96dc09e9681ab5a47a44e8fdbe1b187ae58f3ba5550680da53ceeb0c268d2ae7",
+    "bytes": 73728,
+    "modifiedAtUtc": "2026-11-18T23:35:32.316082+00:00",
+    "fixtureSynthetic": true,
+    "sqliteRuntime": "Python sqlite3 3.45.1",
+    "connection": "mode=ro&immutable=1",
+    "schemaVersion": 1,
+    "foodCount": 3,
+    "namedRowKeys": [
+      7,
+      14,
+      21
+    ],
+    "ftsExternalContent": "foods",
+    "ftsColumns": [
+      "food_id",
+      "version_id",
+      "search_name"
+    ],
+    "barcodeViewColumns": [
+      "code",
+      "normalized_code",
+      "format",
+      "food_id",
+      "version_id"
+    ],
+    "queries": {
+      "existingFtsListRows": 1,
+      "foodDetailsRowKey": 7,
+      "codesByFood": 2,
+      "normalizedBarcodeRows": 1,
+      "normalizedBarcodeCollisionRows": 2,
+      "nativeHarnessThirteenDigitQueryRows": 2,
+      "foreignKeyCheck": "no violations"
+    },
+    "queryPlans": {
+      "ftsList": [
+        "SEARCH s USING INDEX sqlite_autoindex_sources_1 (source_id=?)",
+        "SCAN foods_fts VIRTUAL TABLE INDEX 5:",
+        "SEARCH f USING INDEX foods_identity (food_id=? AND version_id=?)",
+        "USE TEMP B-TREE FOR ORDER BY"
+      ],
+      "foodDetails": [
+        "SEARCH f USING INDEX foods_identity (food_id=? AND version_id=?)",
+        "SEARCH s USING INDEX sqlite_autoindex_sources_1 (source_id=?)"
+      ],
+      "codesByFood": [
+        "SEARCH f USING COVERING INDEX foods_identity (food_id=? AND version_id=?)",
+        "SEARCH b USING PRIMARY KEY (food_row_key=?)"
+      ],
+      "foodsByBarcode": [
+        "SEARCH b USING COVERING INDEX barcodes_normalized (normalized_code=?)",
+        "SEARCH f USING INTEGER PRIMARY KEY (rowid=?)"
+      ]
+    },
+    "implementationPaths": [
+      "tools/food_catalog.py",
+      "tools/food_catalog_compact.py",
+      "lib/features/food_reference/data/local_food_repository.dart"
+    ],
+    "verdict": "Existing v1 SELECTs and hydration by column name are compatible with the compact fixture; no Dart layout change required.",
+    "limits": [
+      "Synthetic fixture only; no full-catalog performance measurement",
+      "Python SQLite query execution is not Android SQLite or SQLCipher native verification"
+    ]
+  },
+  "integrationFollowUp": {
+    "status": "deferred-with-concurrent-ui-owner-does-not-block-dataset",
+    "files": [
+      "lib/features/auth/presentation/auth_controller.dart:49",
+      "lib/core/http/app_dio.dart:21",
+      "lib/features/auth/data/auth_repository.dart:109"
+    ],
+    "observation": "Controller restoration deadline changed from 30 to 10 seconds while HTTP connect/receive deadlines are each 10 seconds; the outer deadline can fire before the repository reaches cached-profile fallback on a blackhole network.",
+    "nativeOrRuntimeReproductionPerformed": false,
+    "authorizationBoundary": "Do not modify concurrent UI files or build an APK for this follow-up."
+  },
+  "portionPrecisionCorrection": {
+    "status": "implemented-tests-and-format-pending-resource-window",
+    "sourceExampleQuantity": "14.000000000000002",
+    "sourceExampleCount": "1.5",
+    "expectedExactConsumedQuantity": "21.000000000000003",
+    "wire": "Existing canonical calculationAlgorithm and portion snapshot fields; positive plain derived decimal up to 80 characters",
+    "manualAndOwnDeclarationLimit": "Existing six-decimal validation retained; portion count also six decimals",
+    "verificationRule": "All six documented portion fields must match the exact food version, intake unit must match the portion, and quantity must equal portion quantity multiplied by count as a rational number.",
+    "incompatibleCompositionBasis": "Preserve unknown nutrients without inventing g/ml density or rejecting an otherwise documented consumed quantity",
+    "implementationSnapshotBeforeFormatting": {
+      "lib/features/nutrition/domain/exact_nutrition.dart": {
+        "sha256": "c9770480dc1c4e2fa21dddd96b2535e4b23348e81130942b1a826ff940fb6cbf",
+        "bytes": 6920,
+        "modifiedAtUtc": "2026-11-18T23:56:58.846702+00:00"
+      },
+      "lib/features/nutrition/domain/portion_quantity.dart": {
+        "sha256": "a1d5912fea81d57925e49d0cd3f7b3e84a8418a0326d6caa7b7e65e0879d5352",
+        "bytes": 2182,
+        "modifiedAtUtc": "2026-11-18T23:56:58.847710+00:00"
+      },
+      "lib/features/nutrition/domain/meals.dart": {
+        "sha256": "aab415a29574a4c84a3345aa754cd27aeb96c7dc43d47101b3e120397fc1725a",
+        "bytes": 6098,
+        "modifiedAtUtc": "2026-11-18T23:56:58.848710+00:00"
+      },
+      "lib/features/nutrition/data/offline_nutrition_repository.dart": {
+        "sha256": "069d3767ffd545476fdbdaa5fb3a11904da673c9ccbf64c9db1b3008f82c52b3",
+        "bytes": 28822,
+        "modifiedAtUtc": "2026-11-18T23:56:58.849710+00:00"
+      },
+      "lib/features/nutrition/presentation/nutrition_forms.dart": {
+        "sha256": "fddb5ff8a15191e8a6bb3958249d69c4de70b5d6df5b3f0fe335324f696d4338",
+        "bytes": 33595,
+        "modifiedAtUtc": "2026-11-18T23:59:17.259544+00:00"
+      },
+      "lib/features/nutrition/presentation/meal_controllers.dart": {
+        "sha256": "035f86c358066f935bb85f55ccfe74a3477ae3ca377c40858f266f040cc0d20a",
+        "bytes": 7856,
+        "modifiedAtUtc": "2026-11-18T23:56:58.850710+00:00"
+      },
+      "test/source_portion_quantity_test.dart": {
+        "sha256": "7623d62a7f96a57f65f530d6032cef092e45063098823c46942b1625955e3455",
+        "bytes": 9709,
+        "modifiedAtUtc": "2026-11-18T23:59:56.227555+00:00"
+      }
+    },
+    "testsPrepared": [
+      "finite exact serializer and 80-character bound",
+      "original 15-decimal source quantity and own 6-by-6 product",
+      "forged documented portion, rounded consumption and manual bypass",
+      "unit mismatch and incompatible composition basis remains unknown",
+      "offline outbox and editing preserved food snapshot",
+      "meal draft guard and form count wiring"
+    ],
+    "testsExecuted": false,
+    "plannedCommands": [
+      "flutter test --no-pub --no-test-assets --concurrency=1 --machine test/source_portion_quantity_test.dart test/offline_nutrition_test.dart test/meals_client_test.dart test/nutrition_test.dart",
+      "flutter analyze --no-pub"
+    ],
+    "executionGate": "Wait for root to release the low-memory worker window before Dart/Flutter checks."
+  },
+  "priorValidationScope": {
+    "fullSuiteFinalPassed": 358,
+    "fullSuiteFinalSource": "clientBaseline receipt checks.fullSuiteFinal",
+    "coverageLimit": "358-test full suite predates concurrent auth/UI edits, the facet-total correction and this source-portion precision correction; do not present it as validation of the current UI or this new correction."
+  },
+  "newFlutterExecutionDuringCrossReview": false,
+  "apkBuilt": false,
+  "androidNativeExecuted": false,
+  "iosNativeExecuted": false,
+  "commitOrPushPerformed": false
+}

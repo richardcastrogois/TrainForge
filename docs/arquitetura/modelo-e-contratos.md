@@ -46,7 +46,19 @@ Configuração é declaração de rotina, sem diagnóstico, prescrição ou auto
 
 `food_versions` distingue fonte editorial e titular particular por CHECK exclusivo. Base por 100g/100ml, unidades, preparação e ausência de nutrientes são explícitas. Decimais/limites usam strings exatas e estados tipados; fatores/denominadores FA não somam métodos alternativos. Dados desconhecidos não viram zero.
 
-O lote importado contém 6.369 referências (3.484 Ciqual e 2.885 CoFID); duas identidades conflitantes ficaram fora e três bases desconhecidas foram preservadas. Runtime só lê conteúdo editorial; o importador autorizado é escritor próprio. Cadastro particular não vira catálogo público nem revisão profissional. Busca da conta não expõe cadastros alheios. [Importação](../execucao/v1/implementacao.md) · [Registro/cálculo](../execucao/v1/implementacao.md).
+O lote histórico importado contém 6.369 referências (3.484 Ciqual e 2.885 CoFID); duas identidades conflitantes ficaram fora e três bases desconhecidas foram preservadas. Runtime só lê conteúdo editorial; o importador autorizado é escritor próprio. Cadastro particular não vira catálogo público nem revisão profissional. Busca da conta não expõe cadastros alheios. [Importação](../execucao/v1/implementacao.md) · [Registro/cálculo](../execucao/v1/implementacao.md).
+
+## Catálogo local, sincronização e contribuições
+
+`trainforge.food-catalog/1` identifica SQLite, fontes, versão de conteúdo e hashes do gzip e banco expandido. Ed25519 usa raiz pública instalada no APK; arquivos de atualização não fornecem a própria confiança. Original/canônico podem usar dicionários e zlib sem alterar o significado. O [contrato do preparador](../../content/food_catalog/README.md) descreve formatos e exportações por fonte. O pacote completo global ainda precisa passar pela verificação final descrita no handoff.
+
+O algoritmo explícito `trainforge.canonical-nutrition/1` calcula decimais por razão exata e elege um valor primário por nutriente. Métodos alternativos e lacunas permanecem no snapshot; lançamentos legados preservam `source-rational-v1`. Porções congelam id, fonte, quantidade, unidade, condição e count; a quantidade do registro precisa corresponder a count vezes a medida. Sem densidade não há conversão g/ml.
+
+Migrations 14–16 adicionam ledger/feed alimentar, contribuições/mídia e releases/progresso/anotações de catálogo. O Go só ativa após verificar manifestos, hashes/linhas de todos os exports e staging completo; runtime é leitor das releases. O pacote no cliente deve corresponder a uma release já ativa para confirmar lançamentos na nuvem. Falta de catálogo mantém pendência explícita.
+
+O cliente guarda recursos, fila, mapeamentos, conflitos e fotos de rótulo no SQLCipher por conta. Chave aleatória fica no armazenamento seguro, fora da fila. Logout não apaga dados; 401 conhecido bloqueia acesso até autenticação válida, inclusive após reiniciar. Exclusão marca tombstone local e remove dados/chave da conta; uma falha local preserva estado para retentativa.
+
+Contribuição é uma cópia voluntária dos campos revisados, com consentimento CC0 versionado. Mídia é reencodificada no servidor, com limite e sem EXIF. Aprovação/rejeição usa `cmd/food-maintenance`; export aprovado exclui autor, operação e mídia. Nenhuma contribuição é publicada automaticamente. A publicação exata do catálogo e a oferta ODbL têm artefatos próprios, com exportações antigas acessíveis pelo SHA da release.
 
 ## Refeições V1-045
 
@@ -63,7 +75,7 @@ O lote importado contém 6.369 referências (3.484 Ciqual e 2.885 CoFID); duas i
 | Replay posterior | Confere resultado atual; correção/exclusão gera conflito quando necessário, sem recriar consumos nem reapresentar uma refeição antiga |
 | Privacidade | Exportação inclui grupos/itens/versões; exclusão de conta e ledger/restore removem os três conjuntos |
 
-Correção/exclusão individual continua no consumo. Metadados da refeição têm revisão independente. Remover um item preserva os demais e o grupo; grupo sem itens ativos permanece no detalhe e não cria consumo fictício. Runtime tem SELECT/EXECUTE nas novas tabelas. Foto e fila durável mantêm critérios próprios. O lançamento de 20g foi declarado teste de navegação pelo autor; não reclassificar nem apagar por inferência. [Detalhes e aceite ainda aberto](../execucao/v1/implementacao.md).
+Correção/exclusão individual continua no consumo. Metadados da refeição têm revisão independente. Remover um item preserva os demais e o grupo; grupo sem itens ativos permanece no detalhe e não cria consumo fictício. Runtime tem SELECT/EXECUTE nas novas tabelas. Foto de refeição e o aceite integral mantêm critérios próprios; a fila alimentar nova está em integração. O lançamento de 20g foi declarado teste de navegação pelo autor; não reclassificar nem apagar por inferência. [Detalhes e aceite ainda aberto](../execucao/v1/implementacao.md).
 
 ## Nomes, idiomas e projeções de leitura
 
@@ -81,4 +93,4 @@ Leitura privada de consumo exige titular/sessão viva; ativo alheio/excluído é
 
 Migrations pequenas forward e papéis migrator/runtime separados mantêm um escritor por domínio. Backups exigem restauração conferida em alvo separado. Ativações 9–11, 12 e 13 tiveram autorização/checkpoints e comparação de dados nos [recibos de nomes](../execucao/v1/food-names-local-activation.json), [configuração](../execucao/v1/training-configuration-local-activation.json) e [refeições](../execucao/v1/meal-grouping-local-activation.json); isso não manda reaplicar migrations ao iniciar o ambiente. Eventual migração do legado exige inventário, mapeamento (`completeAt` → `completedAt`) e ensaio próprio.
 
-Continuam planejados: fila privada durável com idempotência/conflitos e recuperação após matar processo; exclusão coordenada de foto/miniatura/fila sem recriação; master autenticado com permissão explícita, revogável e auditável. Não inferir poder por e-mail/GitHub. [Decisões do produto](../execucao/v1/escopo.md) · [Critérios de segurança](seguranca-operacao.md).
+A fila alimentar durável está implementada com testes de unidade/SQL e validação nativa pendente. Continuam pendentes: offline de atividade, teste real após matar processo; exclusão coordenada de foto/miniatura/fila sem recriação; master autenticado com permissão explícita, revogável e auditável. Não inferir poder por e-mail/GitHub. [Decisões do produto](../execucao/v1/escopo.md) · [Critérios de segurança](seguranca-operacao.md).

@@ -22,6 +22,10 @@ O caminho explícito evita depender de outro Python no `PATH`. A variável vale 
 
 `false` informa uma parte parada ou desatualizada; não apaga dados. Um APK atual no disco não comprova que essa versão está instalada. O estado de uma execução antiga não substitui o `status` de agora.
 
+## Integração alimentar em 18/11
+
+Antes de usar `start` nesta rodada, conferir o [handoff](../execucao/v1/handoff.md): migrations14–16 já foram aplicadas com backup e dados preservados; falta ativar o catálogo global. O catálogo amplo exige mais armazenamento que os6GiB do AVD Benchmark. Não usar o início cotidiano para fazer a ativação ou apagar/redimensionar o emulador existente. A validação nativa nova usa AVD descartável com espaço medido. `prepare` gera o APK, sem instalar.
+
 ## Iniciar e voltar ao app
 
 ```powershell
@@ -102,7 +106,8 @@ Para voltar, execute `start`. Parar não apaga bancos, conta, arquivos nem assin
 |---|---|---|
 | PostgreSQL local | Registros confirmados, conta, revisões, sessões e eventos persistidos | Parar o serviço não exclui a base; confirmação depende do servidor |
 | Armazenamento do app/AVD | Preferências e dados locais conforme sua implementação | Não confundir fechar janela com apagar dados do AVD |
-| Memória Flutter | Rascunhos e intenções incertas que o cliente conserva em memória | Matar o processo pode perdê-los; não há fila offline durável geral |
+| SQLCipher por conta | Registros e fila alimentar privados, fotos de rótulo e conflitos | Chave no armazenamento seguro; sync exige autenticação válida; aceite nativo pendente |
+| Memória Flutter | Rascunhos e intenções incertas de atividade | Matar o processo pode perdê-los; offline de atividade permanece aberto |
 | `.local/` | Configuração privada, bancos, assinatura, logs e backups | Ignorado no Git; não é material público de apresentação |
 | `build/` | APKs e artefatos de compilação | Recriação não recupera automaticamente um checkpoint antigo com seu hash |
 

@@ -2,7 +2,7 @@
 
 > Gerado por `tools/gerar_diagramas.py` de `contracts/generated/swagger-v1.json`; não editar à mão.
 
-API **0.10.0**, **38 operações**. [Contrato completo](../../../contracts/generated/swagger-v1.json) · [Modelo e regras](../modelo-e-contratos.md) · [Arquitetura](../README.md).
+API **0.11.0**, **51 operações**. [Contrato completo](../../../contracts/generated/swagger-v1.json) · [Modelo e regras](../modelo-e-contratos.md) · [Arquitetura](../README.md).
 
 Com a API iniciada, Swagger local: `http://127.0.0.1:8082/docs/index.html`. Operação documentada não implica aceite funcional ou prática autorizada.
 
@@ -16,6 +16,10 @@ Com a API iniciada, Swagger local: `http://127.0.0.1:8082/docs/index.html`. Oper
 | GET | /api/v1/catalog/movements/{id} | catalog | Pública |
 | GET | /api/v1/catalog/programs | catalog | Pública |
 | GET | /api/v1/catalog/programs/{id} | catalog | Pública |
+| GET | /api/v1/food-catalog/archive | food-catalog | Pública |
+| GET | /api/v1/food-catalog/exports/{artifact}/{file} | food-catalog | Pública |
+| GET | /api/v1/food-catalog/exports/{file} | food-catalog | Pública |
+| GET | /api/v1/food-catalog/manifest | food-catalog | Pública |
 | GET | /api/v1/foods | nutrition | Pública |
 | GET | /api/v1/foods/filters | nutrition | Pública |
 | GET | /api/v1/foods/{id} | nutrition | Pública |
@@ -29,6 +33,12 @@ Com a API iniciada, Swagger local: `http://127.0.0.1:8082/docs/index.html`. Oper
 | POST | /api/v1/me/activity-sessions/{id}/commands | activity | Bearer / titular |
 | POST | /api/v1/me/deletion-intent | privacy | Bearer / titular |
 | GET | /api/v1/me/export | privacy | Bearer / titular |
+| GET | /api/v1/me/food-contributions | nutrition | Bearer / titular |
+| POST | /api/v1/me/food-contributions | nutrition | Bearer / titular |
+| DELETE | /api/v1/me/food-contributions/{id} | nutrition | Bearer / titular |
+| GET | /api/v1/me/food-contributions/{id} | nutrition | Bearer / titular |
+| POST | /api/v1/me/food-contributions/{id}/media | nutrition | Bearer / titular |
+| GET | /api/v1/me/food-contributions/{id}/media/{mediaId} | nutrition | Bearer / titular |
 | GET | /api/v1/me/food-entries | nutrition | Bearer / titular |
 | POST | /api/v1/me/food-entries | nutrition | Bearer / titular |
 | DELETE | /api/v1/me/food-entries/{id} | nutrition | Bearer / titular |
@@ -42,6 +52,9 @@ Com a API iniciada, Swagger local: `http://127.0.0.1:8082/docs/index.html`. Oper
 | DELETE | /api/v1/me/meals/{id} | meals | Bearer / titular |
 | GET | /api/v1/me/meals/{id} | meals | Bearer / titular |
 | PATCH | /api/v1/me/meals/{id} | meals | Bearer / titular |
+| GET | /api/v1/me/nutrition/changes | nutrition | Bearer / titular |
+| GET | /api/v1/me/nutrition/sync | nutrition | Bearer / titular |
+| POST | /api/v1/me/nutrition/sync | nutrition | Bearer / titular |
 | GET | /api/v1/me/training-configuration | training-configuration | Bearer / titular |
 | PUT | /api/v1/me/training-configuration | training-configuration | Bearer / titular |
 | GET | /api/v1/me/training-configuration/resources | training-configuration | Bearer / titular |

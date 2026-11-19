@@ -1,45 +1,49 @@
 {
   "schemaVersion": 2,
-  "inputRevision": "eb3451c8a5e4251dcfce670429b9d0972c5d63e33e1aca9cad7be54b83ae96c5",
+  "inputRevision": "19fc07ec0dd281bd171b9083a9b7831d02b39f28305b4d4a318d2e1f216c954d",
   "inputs": {
     "contracts/generated/catalog-m1.swagger.json": "7f59b699f1c4c032e0652c31f44fac9a8d3a77115639a24408725427e97b0339",
-    "contracts/generated/swagger-v1.json": "151788f9148d4f216ec856900f99606d79976562268696b06384bdf556e81c62",
+    "contracts/generated/swagger-v1.json": "8c99bc5411793d8d23228a1f3b10d71c17bebd7248e3217322152d1e7b60e218",
     "docs/arquitetura/achados.json": "45ea74956e160aec6fcb36664981b701cd43147006f03ab74c0a53f95635954d",
     "docs/arquitetura/plano.json": "b6be7e4a7c2704f72bcd2dd178672f7664a0e706ecbd59feb46703108460a3f9",
     "docs/arquitetura/referencias/backend-fastify.json": "54f85b4ce9bcd093d3af9da49aa91132b683b0bd289cd6ff5710a1ae00e2d3b4",
-    "docs/execucao/v1/backlog.json": "483e1227bfdea0d70609adc6a123ae5881a404382ec0f70652b4d813c3183c46",
+    "docs/execucao/v1/backlog.json": "785b7759f576b7890e1e9d1b4333226be5befd788e6590b769d18c2f4068527a",
     "lib/app.dart": "1a426b32684acb785ac87724830add377dbf6ad5238225188511ea780741d58e",
     "lib/composition/app_dependencies.dart": "4e04859db8df492166d72c93d0955e98db857783655fa59a0c2e3ab9115101ac",
     "lib/composition/app_dependency_scope.dart": "c149782bd02002a8c3a9f8ec4a66fed667e46c7375c70c006163beb78f8bd0cb",
-    "lib/composition/production_dependencies.dart": "7de9374f9fade7829e161c0633ac3e4dcb91d44344acb45c89761e4db8667b53",
+    "lib/composition/production_dependencies.dart": "205a65db29ed9d2e48c908379c9b119a5703c0acc725aa9dc26bb00b9997a603",
     "lib/core/config/app_config.dart": "c0b07f2c9b0790ffbcfcda80d48945d1f4daadc3c61838f30aba3d823502638c",
     "lib/core/http/app_dio.dart": "d4b677d880c89f52ce17369a1e6cf485fe71f1a34c56533bf62abec0355d0e65",
-    "lib/core/l10n/feedback_localization.dart": "2feac32ad62a7b436bf9afed74c71d3fd2bee6e901f3cd65be9bb47f2b279f85",
+    "lib/core/l10n/feedback_localization.dart": "1befe8f6c586cd98a4804a68874448953b05a83cf522ade9ba8ddfd80e063098",
     "lib/core/l10n/language_page.dart": "31119c0cd5934d4530f3adef03dccdb18d82c8e9555f6402ddf4bfa2f3c7ed5e",
     "lib/core/l10n/locale_controller.dart": "d3d5151748a6e60e870c55471c795f3cb037b75b510508085ec6715c75e2c97c",
     "lib/core/l10n/localized_context.dart": "73142e775cf0e5ebb4b9998a4e809b91e4a6b011c300a5dd5b91009883a04b4a",
     "lib/core/l10n/read_feedback.dart": "426ad10e0997fd3bacc763f158a286fabe70ff37461f43f9ef571dcdfefb70e0",
     "lib/core/log/app_logger.dart": "79238955449af9df29f0b0013d1f57db3a773e3e1d9bd168b16426fa8fe82646",
-    "lib/core/motion/app_motion.dart": "925e67cc9cec4cabd756f361b29fb85a47c3ad21085976b51e3dc16ffb9715f3",
+    "lib/core/motion/app_motion.dart": "64334c33c53e70e731682b62af1065d57628695b964e37a9066b0269ddb43670",
     "lib/core/preferences/read_diagnostics.dart": "5a418fe03bd2f7411af117916b0a8dd952fa9e4835d8bbdc1f784291b39e0cbf",
     "lib/core/scroll/trainforge_scroll_behavior.dart": "5161f121bdd1a0b467c4df0bc550731e98843945acc8bd65b32d676d79d431de",
     "lib/core/theme/appearance_controller.dart": "57afd6db739b972a1938076c5153da00ca3eb1581de6f53aa500c2cbdde83bcf",
     "lib/core/theme/appearance_page.dart": "87933e1347e88edbfec65d0d3603f1b629c1492bc92d4cb4710b1f991122bb5f",
+    "lib/core/theme/brand_mark.dart": "92d4b8bde205ebc8a1bc75cd3604106d36908e80f0134d58765fc67f66cdfe04",
     "lib/core/theme/trainforge_colors.dart": "4244b42ff45116d85f37c3c2547082878926ff7c6506d59924f023db04f91219",
-    "lib/core/theme/trainforge_theme.dart": "d606dffc059040c6e2d89663fa137b3f7dc2aba24fe23af7222898f415a82afb",
+    "lib/core/theme/trainforge_theme.dart": "efbbd51fb7307e0921d50bdda7124560700846e9da28c03a5b6dd70f2a14dce5",
     "lib/features/activity/data/activity_repository.dart": "213f5f3c85ebd9d49a4b7aab56f25849ecbaafb7dda0c185810248509b114728",
     "lib/features/activity/domain/activity_repository.dart": "d252cb46251d4aec1686e611c160e7b02cf03d5ec8712f7692ab4d4060973d3a",
     "lib/features/activity/domain/activity_session.dart": "4f0bc2aaa7d0dce6b58e55ce8a517ed3d8dbbf53f8eb7efb8c1e0961051f7472",
     "lib/features/activity/presentation/activity_controller.dart": "1aa5ad6d649acef1886d7054e4a9b36d2f24bb2d104e719d112b3cfdb4e88a62",
     "lib/features/activity/presentation/activity_page.dart": "1393a75c1f10d6af53ca56c4eaee22b10b591f3a62d3efbbd9cf8c5a859bbb5e",
     "lib/features/auth/data/auth_api.dart": "4e3775e3adfa57804907e943cceb0b4992df04fdaaf65465cdcf66824e40fad0",
-    "lib/features/auth/data/auth_repository.dart": "0050dbfe16c326fe2c75b276c99fee1e886a2a36589b6540bbd02a7db700251c",
-    "lib/features/auth/data/auth_storage.dart": "e303f769b3d769ed616424cf2946dc7a32282aeddf14ee5eb541952171ac260d",
+    "lib/features/auth/data/auth_repository.dart": "30f9e39c6d23083cd0e65b43a6caeccb8f96064a8a1c90440d8acc067e96c826",
+    "lib/features/auth/data/auth_storage.dart": "e7ad445f68fd2cf55c947cf9929ca9319b6aa132c946ababb4857d6fc98b62a8",
     "lib/features/auth/data/session_refresh.dart": "3253f0e08bf455206f88a70488be00796811eff0832a82d92b1e35693bb3a1cc",
     "lib/features/auth/domain/auth_profile.dart": "38cad0c132036198101a13cdae4b1246fed525c618452eacc0c06bee3ce6e66a",
     "lib/features/auth/domain/auth_user.dart": "23fc72f3d3053841f054f8c8c2147301c81204d4131e30185827906301e88c76",
-    "lib/features/auth/presentation/auth_controller.dart": "50d4d6970bf9bcb272a2098842ec27d8fa7df3febf5739964f9374b582363219",
-    "lib/features/auth/presentation/pages/auth_page.dart": "ee0d3fc5d643d04d9fa23d2852df7cac266f32167c1f7d12f37622d1022e3dbc",
+    "lib/features/auth/presentation/auth_controller.dart": "834d54a102056917762e95ca28d522b2e34e569dead66c5745b28b41c06223fb",
+    "lib/features/auth/presentation/pages/auth_page.dart": "77c1ee5ed9e8d77fe1db1b26c07de4aecdd588ef867b5b1b7ed74ed5de0b31da",
+    "lib/features/auth/presentation/pages/guest_page.dart": "782efcacc60cd15350b4882c38646683f40f9fbf70e070e9ae7d39534eb8a9f9",
+    "lib/features/auth/presentation/widgets/entry_scene.dart": "5c37acfc3b28028c9eb5a0cb1a61158cabf393330734ae1bdc7e5db492085404",
+    "lib/features/auth/presentation/widgets/google_sign_in_button.dart": "401f8adbaad1621ebe32409286f301f364577ad4085e4e630cf108bb22eaf268",
     "lib/features/catalog/data/catalog_repository.dart": "9ca2802cb1f86c2bd24c158b5bbad3f1ac8bdf6ed9a47c1948ab52a25f10ee65",
     "lib/features/catalog/domain/catalog_entry.dart": "723a01b5b8717722fec7e53d01d246d576ee2038ff3b0156e3923604e876956f",
     "lib/features/catalog/domain/catalog_names.dart": "40203f3e7ae256fcd69e919678abb53b00c7ac55a343b4b0448b3219a29b67de",
@@ -47,35 +51,49 @@
     "lib/features/catalog/presentation/catalog_detail_page.dart": "f5e30908d4c8bd5d73d13cad652af0ab1f7e3f2e01b83174dd1f5f1ac5c6ebe3",
     "lib/features/catalog/presentation/catalog_labels.dart": "a4961596fbc4a20e27c05bda93ecc50297a089bfb2e49d8fdbedd13b2a3e9435",
     "lib/features/catalog/presentation/catalog_page.dart": "aea9a8f350834b9aca34dc87d33e607cdef4baab692e513669a9a126bd1e82d6",
+    "lib/features/food_reference/data/catalog_installer.dart": "31d12bfdff6f5c070ae7c52c77482c5b177d6a8acec4558420bebfadde2c94d7",
     "lib/features/food_reference/data/food_repository.dart": "dcaec1701228f80257f4c669bdb7b6c99382d28fa08130a29c33cd564120c3fd",
+    "lib/features/food_reference/data/local_food_repository.dart": "ff695128544bfcdd45ea6bc288ae69a1c32474ef840d25d0d28340984ae9653c",
     "lib/features/food_reference/domain/food_display_names.dart": "7726898f0346a8e3c9d8487bba2406d34660b16b0ac9337da436e7470d5a688f",
-    "lib/features/food_reference/domain/food_reference.dart": "3692ffbe13df28c7cc34708493272d53de535b1e30d8a19b4810c629e87d6dd9",
+    "lib/features/food_reference/domain/food_reference.dart": "9eff2ba051f6a341696861e2d5fe50c3850ed61dbe30d6e0ae319849cb948ba3",
+    "lib/features/food_reference/presentation/barcode_scanner_page.dart": "28183d5aadbdc670376a6abddfd8f2f43376054652b359a959e163f7415d8184",
+    "lib/features/food_reference/presentation/catalog_tools_page.dart": "63e610dd33f06877ea4b93495af9905253d024d6ec28106dd58417648c678f31",
     "lib/features/food_reference/presentation/food_controller.dart": "17efff2f4627044c273357d7f75f3352608ea0431e30279c992291ad4ee33254",
     "lib/features/food_reference/presentation/food_detail_page.dart": "48ad87a959dd4963c2c6d9b8f89a900b8ec633e955cf2492cb14c692e64d63a1",
     "lib/features/food_reference/presentation/food_labels.dart": "4c10a94596bf42f566fa51a8e94eaac3ca4831add72e3f0782e02fd84282d309",
-    "lib/features/food_reference/presentation/food_page.dart": "3c0072eef8dc7b949e3a5793cb4479bd4e0f40ebd974072ea3fe267c3a5ece4f",
+    "lib/features/food_reference/presentation/food_page.dart": "5763653ce3c6ef373d82dd489711a8e8b0a69cfa428d2cafdf0b3b19b727c3dd",
     "lib/features/home/presentation/pages/today_page.dart": "93f240ab972b62adee5c1796d1dcea3a6abfd0c866bef37f075cd1c0c9b26a66",
+    "lib/features/nutrition/data/calculation_parity.dart": "4e09bf43be5beab92120f69d11adc18e93c48ba0bcdb60b0b315ec634a96b273",
+    "lib/features/nutrition/data/nutrition_local_store.dart": "387e13b2c7de229a92e7d45ee916956c81a223a051faf81454547bce06fcca66",
     "lib/features/nutrition/data/nutrition_repository.dart": "4f6610b64dfbad5f84d0b51adadce495870b48da4a9b21204302666ec28dd343",
-    "lib/features/nutrition/domain/meals.dart": "d0ee1496c5f571555d63b9aaae61a474ebf34a07bd9e506e6c09deadc9193048",
+    "lib/features/nutrition/data/nutrition_sync.dart": "8efd622979ac47e66813235fcdbf51189ad503c35e57025c7419758cd0ed2cad",
+    "lib/features/nutrition/data/offline_nutrition_repository.dart": "35d042531f10f86777e00ebf913e963a62dcabf5c346c56af89a2a55dd7c1011",
+    "lib/features/nutrition/domain/exact_nutrition.dart": "c9770480dc1c4e2fa21dddd96b2535e4b23348e81130942b1a826ff940fb6cbf",
+    "lib/features/nutrition/domain/meals.dart": "aab415a29574a4c84a3345aa754cd27aeb96c7dc43d47101b3e120397fc1725a",
     "lib/features/nutrition/domain/nutrition.dart": "48d8116cf17504d057b49ef7bb010f99ac434bfc4f8b0368ee38f2a7803ee3cf",
+    "lib/features/nutrition/domain/portion_quantity.dart": "a1d5912fea81d57925e49d0cd3f7b3e84a8418a0326d6caa7b7e65e0879d5352",
     "lib/features/nutrition/presentation/daily_summary_controller.dart": "eb523d37e822f49d19d07ba2fdcf97f482ed7bb3c1356f8a5a163cc01dc2a2fd",
-    "lib/features/nutrition/presentation/entry_detail_page.dart": "5141f1903bb7f703c5e602ad49b4a56dfbe37fed6607aac7ece7b9b487a3944b",
+    "lib/features/nutrition/presentation/entry_detail_page.dart": "cf8a064952b4d2b940529b62569b999ede7c2d3c82ca1da15042eb198c0b33aa",
     "lib/features/nutrition/presentation/entry_read_controller.dart": "cf3a0d40c1eebf83826cb41da855fb6f085d6f5d7d78797f82cc2cef6fe63e7a",
-    "lib/features/nutrition/presentation/meal_controllers.dart": "ad8b39d3a8ffc1ec6ffa1d22811348ab44459bc13ac8fde1eaca63503ba5bee3",
+    "lib/features/nutrition/presentation/food_contribution_page.dart": "0173381f2dc6e1112ee1d548e98b5c827b1446ac561057543132256eb0b27ba1",
+    "lib/features/nutrition/presentation/food_offline_labels.dart": "b247eb8a8072a98f5ab88578321f741c63fa8d6fcd17f7ca6816fd49742975b7",
+    "lib/features/nutrition/presentation/meal_controllers.dart": "035f86c358066f935bb85f55ccfe74a3477ae3ca377c40858f266f040cc0d20a",
     "lib/features/nutrition/presentation/meal_detail_page.dart": "054c7343cf01be42a8abf4a6648f7f679389bbed8dcb533dd2d9b9e94d928cc4",
     "lib/features/nutrition/presentation/meal_diary_page.dart": "7781ec3a00443081736a99423924e5cf6520ed727dca87236f4060f8b80bf55d",
     "lib/features/nutrition/presentation/meal_draft_page.dart": "12923d8ee17ac760a727c7f3671b728261cde3a96454791d4e048fdcc36d0255",
     "lib/features/nutrition/presentation/meal_metadata_controller.dart": "1b729b184f106629904467a3206ba0a03a74c84e7b89b9ab8782c69c4c3d4242",
     "lib/features/nutrition/presentation/meal_metadata_page.dart": "0c3f1791450c1a5f70725b258b350b3b5c04517628cd0330344a4a03bfd5c0c6",
-    "lib/features/nutrition/presentation/nutrition_controller.dart": "15274fcdcbaac8b104d84ee298e5d409998a28bd269d4ba97a42e0e0abe10689",
+    "lib/features/nutrition/presentation/nutrition_controller.dart": "ff682bfad897364992f6a914df4afc3dcf4b8b3277357971c8f5841978988585",
     "lib/features/nutrition/presentation/nutrition_facts.dart": "8e4d252ca371a7b0cc31bef7acfe7d3183e35519225498003d30ba2804a99b91",
     "lib/features/nutrition/presentation/nutrition_feedback.dart": "b0dc077fb83fbbb7c0e0a403f076008307e96914f4f09c8124085b4bbdb1637d",
-    "lib/features/nutrition/presentation/nutrition_forms.dart": "f5c5a00663e737f91c2527689299272680f683e8fe51a13d7cd573a335413bf8",
+    "lib/features/nutrition/presentation/nutrition_forms.dart": "ac46a5ff3f16acc77734e1a08dd1bf79694a2a676c9495adca6d4e1dd63d4706",
     "lib/features/nutrition/presentation/nutrition_messages.dart": "f6a020b3e6a86e8e15110f41bd49ee38ae69ef1656f1a64ea279594dc35fff51",
-    "lib/features/nutrition/presentation/nutrition_page.dart": "55b0d2ca8abef0cf2cb402d400e192cce98f32f65088de1766b283ed716d70c7",
-    "lib/features/nutrition/presentation/nutrition_totals_card.dart": "72a05406d5cca81f449a9842e3cc2046d63124e6d9ec6e02619b572dd2ebcf93",
+    "lib/features/nutrition/presentation/nutrition_page.dart": "bd74f6c4d3862732a9f9669fba6918ee3c4de8d52b6af2f60492edde58c96e37",
+    "lib/features/nutrition/presentation/nutrition_totals_card.dart": "638d047d7bdde846bac4ceb9591dabe9dcbc15b10b1d06aa15c25db08db83311",
+    "lib/features/nutrition/presentation/offline_sync_panel.dart": "61f13eb1bece3aaa412c5ecb3e53109aa6e88b5927ec06763b78aab27c10ed08",
     "lib/features/nutrition/presentation/own_food_picker_page.dart": "b64414ac7814e754c4084175736832d21223e7c24262c50001d18fe167c75193",
-    "lib/features/privacy/data/privacy_repository.dart": "f00c103aba21246123c1ab9c780e85a4ea43b66717c3f2439f49690c0e2c62d9",
+    "lib/features/nutrition/presentation/own_food_portions_editor.dart": "3068e8780c84c165f68f623f6ee29726d4ece26c8d9cc3621d7dfe52c5976272",
+    "lib/features/privacy/data/privacy_repository.dart": "d3d4f7225c68c39353f9700191942d4609d4486d96a2558cdb2c10d8493c6e23",
     "lib/features/privacy/domain/privacy.dart": "8fb56c4b25c4fb579279371d52b9cc453007efd013c9aaeccb5198800a8ed8d3",
     "lib/features/privacy/presentation/privacy_controller.dart": "41d52642d7c1e34368fca5cba23221950d736b05f8d6bd2906663fce31965313",
     "lib/features/privacy/presentation/privacy_feedback.dart": "a98140cbc5677d6e0cb68e6892707f93df908159207d8a2c1bb0fef3a8e07dd1",
@@ -85,31 +103,34 @@
     "lib/features/training_configuration/presentation/training_configuration_controller.dart": "6ae07af7717b0c27e45e628a33402ebfac1a6306a178850335b9790087ec536a",
     "lib/features/training_configuration/presentation/training_configuration_page.dart": "44c38b1feca488b526f338aaa0784bb92dbcd03446335e0bb4832653eacf594f",
     "lib/features/training_configuration/presentation/training_configuration_sections.dart": "38edef72046a5fead45f1de71561e831f34226bd01d1b44e0df53885e83656e4",
-    "lib/l10n/generated/app_localizations.dart": "d88ee760e64f8cc55bc4fa374be26eebcd93df82c67728e731c4d3f32c0b7eb6",
-    "lib/l10n/generated/app_localizations_en.dart": "a7eba30abdc7f0682beeeb5dd2367d2fc63bd84c4eef77c88ebf2453d4e88857",
-    "lib/l10n/generated/app_localizations_es.dart": "4671371f6ced9620551f2cd418ebe8f96f8a36cbc3330a5c339114153a94b306",
-    "lib/l10n/generated/app_localizations_pt.dart": "477ab28227691e07efe0bcb5f329281b601bed4e6f54fa45f4d11353c44eff3e",
+    "lib/l10n/generated/app_localizations.dart": "16ae3d1a95e759a082b139029bf7ae0ba44d7b8cc0f1e6a8b28eafcc4a95daf8",
+    "lib/l10n/generated/app_localizations_en.dart": "a61e2890c0a1eef8308367096ebcf9ff977c11a589623ca9350c2714a20cbde2",
+    "lib/l10n/generated/app_localizations_es.dart": "ee43ab2bc0567cb16606ed35ebc313bb699f23ba2ad14e55d63bafcaefac4c7d",
+    "lib/l10n/generated/app_localizations_pt.dart": "43a80cff86c919491be77cc27654ff8d2df71b0015dd5beab3401e6730e4d032",
     "lib/main.dart": "52f6c5157237688537f3708474237531876f1340ada0a363c0ddda8bcf38ce7f",
     "lib/shared/widgets/account_page.dart": "b03596fe0e4cced58e8dd31e65fd34905c4e9040476ee5b122510f3c959fa6fc",
     "lib/shared/widgets/app_loading.dart": "b041a11b964f4943b9902ee7dd380171a2cdca8f9440fa06658b329ee8bb66e3",
-    "lib/shared/widgets/auth_gate.dart": "7b9ab00076f06be804b147e1d6baa01860cc001d36b46d4320bc5ad97d52ed39",
-    "lib/shared/widgets/content_sources_page.dart": "7055bf4248b29a50ff2a6fc7b70665534fe37dfa89cd24f17ba1f7684f1d3df4",
+    "lib/shared/widgets/auth_gate.dart": "cd7d57ea0d6a8b7af58333f57eb80989a851c8ad9f81ee9077422c258825bb24",
+    "lib/shared/widgets/content_sources_page.dart": "a16105129b7752cc229a221c2b06dd4c8c66624505b59b2a4456aca0d22ca101",
     "lib/shared/widgets/draft_guard.dart": "e07551083f2f42de6b6787ab3c354a9f9d8c75b65f71e25a076f8bcbd596f28b",
     "lib/shared/widgets/evaluation_guide_page.dart": "302e04793b0e634b756d7a8785f9f64d74a03653a27f85f7ec7285249fd24900",
     "lib/shared/widgets/figma_bottom_nav.dart": "2dae71a63f9b01be7e39ad6828d0eacd1f75ed149e8b2fc5ba89606c96bf387b",
     "lib/shared/widgets/figma_components.dart": "943d5f779c7c134724a4539b0a4ce102a6ad81ee7f411ffe0d279ee7ec598ba5",
     "lib/shared/widgets/flow_components.dart": "1d3cf303b115d8136388cd5ea8fb3508a4f95cc721d7b5a11e9f97cba10e3238",
+    "lib/shared/widgets/food_catalog_credits_page.dart": "3e2b980601c7f976fa7e897eca951602f8de08bbe9d135ee5bccd5d92123a4b6",
     "lib/shared/widgets/plans_overview.dart": "0c241a43c2069cb49568c8a8bce2d5e8b389f1d9e5433548c290114baae90ab9",
     "lib/shared/widgets/product_overviews.dart": "a05a5e5ff02cc6d17aa8fe9ebaecf3f01b78d52bce6ff325cd14f7bca738d4fa",
     "lib/shared/widgets/product_shell.dart": "f9a8de8188396d9dcbc3558267831f9b07063f7b0a5705669a78411d1b8e2871",
-    "lib/shared/widgets/startup_page.dart": "d2e0df1bffadf352f148103a0411a6209fb278ff069d60e67ca3df0c237b5c4f",
-    "services/api/cmd/api/main.go": "ea1785666bc4dce59e9f032c7488c557c648c0398ac9a3332f6648b2421017cd",
+    "lib/shared/widgets/startup_page.dart": "f57230d55be844cd1d9654d70822ac2c8179b5ef0bd6cd5f07c0c7bfa56db71c",
+    "services/api/cmd/api/main.go": "c50062a67790c01c7db63c8b825b9ce4dc445e2df6bb8c528ec04f7a0f3c8f40",
     "services/api/cmd/catalog-migrate/main.go": "baa58f3b644dfc8bcd5c3657f5495b04d8202e385166ca3ad968869fa6e313ff",
     "services/api/cmd/catalog-release/main.go": "19723348d4d564413ae2369ed7cdcd15b9c37f61b409f3fe17cb2c520c0cda16",
     "services/api/cmd/catalog-transition/main.go": "88a395068323dc02e4834028c9177fecac5f0bcb6c2d8dc8ad93f61ef3075de0",
     "services/api/cmd/catalog/main.go": "5a4d1938494bd3e0746189743ecbc6f0d051c88af225771f9d26479c5b82d8d9",
+    "services/api/cmd/food-maintenance/main.go": "43c436158dbd9bf248446ea751d0920f29abbfa61afc03e2ea1ea7d8fd0d8ab6",
     "services/api/cmd/food-names/main.go": "05afd3970ef798aeca3f94f4de26c35c7bf8c5775be9cc7eae0524da1163c426",
     "services/api/cmd/import-content/main.go": "72f485596019ba97c893b2c1488f8aeb620f09c796716a12da55c2ba8fd14684",
+    "services/api/cmd/import-food-catalog/main.go": "d3a447dd26badd333e2e96533debc2ba89c35a96ca8a821621a48777770340d7",
     "services/api/cmd/import-food/main.go": "964a0496cdff8a546c4fbdac1eb44d1e18da620c09e7cc2444b2de52af5ed319",
     "services/api/cmd/migrate/main.go": "91a4e9f2f301d2c80252b43e5752bb57b6756c9520270f84eeb19aca8892d498",
     "services/api/cmd/privacy-maintenance/main.go": "4beac3b5fc92b092780a8b58f176b90ac2259b3fdd8a5045d0b2ec4b8bb4da84",
@@ -144,43 +165,54 @@
     "services/api/internal/catalogtarget/target.go": "d64cd2268b10003a0fe1f05d536fe303f8b6fe862f642264d6990d414315ddf0",
     "services/api/internal/foodnamesops/package.go": "149f7c8416af93699aa1613186fef0e4f190df303a92cbd385e7c5c0eba6e3c4",
     "services/api/internal/foodnamesops/run.go": "89ed0d151d2aa70ea9aa91e2169d3810c4ea7975a9f0923cfa422ea562bae5b7",
+    "services/api/internal/nutrition/canonical.go": "4f7a83752fbb0199a8f2c0091a6932419ecb729c9b004a23d489fce38723719b",
+    "services/api/internal/nutrition/catalog_bundle.go": "48a68c40ea310ea87776df2065ca3a6b4b7ad4e8431435aac59ee39a2502f672",
+    "services/api/internal/nutrition/catalog_import.go": "9604c7f6254a905b44769eca96d0f79e39b946ca9f4c72edcb6edc89b056f924",
+    "services/api/internal/nutrition/contributions.go": "484be3ded60e357b8843ea86afc051e782fab1ea5162984bbc74b5ee8d49f6c2",
+    "services/api/internal/nutrition/contributions_handler.go": "a7b8fa39896232a827f638d332fcf4c543fdff3772ac376f7ca806786009557f",
+    "services/api/internal/nutrition/contributions_postgres.go": "35e59dd03877548a8584c3aa19b485a764427587363010216138f6275a7c2c9e",
+    "services/api/internal/nutrition/contributions_review.go": "344ba373172806c8179fae0f7a40992b14dd4aeb93a6e72735443267ad149318",
     "services/api/internal/nutrition/doc.go": "b46f6e493e50360eea09d4faaaaff4f67317ce57acf46377742fa5416ea3441a",
-    "services/api/internal/nutrition/entries.go": "b218079ec5498769d3db8b6bdbe9d789a2ce4adf42cf8753597e988cd1a71d18",
+    "services/api/internal/nutrition/entries.go": "123017705438a43916da5c2b7093285f2822be4b43466385c9fb3d94ee0289b7",
     "services/api/internal/nutrition/entries_handler.go": "2b798def4ee12d7d17c49f11e39a87dc1cc9ff78404467b7f32f6d335b5a8135",
     "services/api/internal/nutrition/entries_names.go": "6de6734e461f155b7e93cd435d4ba5fde857748b2266566543e8ffec4758c992",
-    "services/api/internal/nutrition/food.go": "2c0148fb297b6cc79e109f3ee053c9150e7bc728dc452035135be2f835511800",
+    "services/api/internal/nutrition/food.go": "530b7bc3406d05180b9ae873f9cf33c8b03b2f7a31ec1d52b268405d78787c20",
     "services/api/internal/nutrition/handler.go": "6ed0246e14b2a8466300a27bbaa48ee6837d9f95a5bb3a8967007ec3100a120b",
     "services/api/internal/nutrition/import.go": "747fa2552d92ee27b103804a8a01d8895c27ff36de0f1bbfd6c7fed0f56f7894",
     "services/api/internal/nutrition/load.go": "40cc38994faa0bc5d04919f7d68cde930a314ab3d52c4531c95c94b34b12e58e",
     "services/api/internal/nutrition/meals.go": "742c1816e907d25c89ef59f5273931c0f07517567a0b086ac09e516e035657ca",
     "services/api/internal/nutrition/meals_commands.go": "50272994603a8bfe562ef86cafd368ecbbb8e5e2bf5fa4a830d3c2f67e9004a5",
-    "services/api/internal/nutrition/meals_create.go": "7e0858bd438080b4bf62c63c4181df55cb11d0f247e296a9a612dca4ccb5bb2e",
+    "services/api/internal/nutrition/meals_create.go": "804e14baf211ca7e4520ba1674dac43500cff2f68d9d34d0b47d6b4fda17e140",
     "services/api/internal/nutrition/meals_handler.go": "b6c515d9e5680ad1576f85e2a6ce46f2e5758481ae4c4c3baba1afd4340f142d",
-    "services/api/internal/nutrition/meals_postgres.go": "cfd2c167ef82e1daf5b077251ca2104d5da818eadd52d3dc86c66b2b7d4671b8",
+    "services/api/internal/nutrition/meals_postgres.go": "3a379b3f78bbeda569c3705eee0df81db71c6f45f63a3f6ed8f8ccb3499bed8e",
     "services/api/internal/nutrition/meals_service.go": "1c0cd2cb62d99d075aa45f19f307358185674182fb22da0e4c436380fc370d40",
     "services/api/internal/nutrition/names.go": "d168d2dc875e6e6b617ad5da92cc6fb02dc44ff67b9c2d2d210e07f03513fe77",
     "services/api/internal/nutrition/names_coverage.go": "66ccf8417695c802f0a30835909fba7d85961ba364b82173894d6ed4dd2fb4a5",
-    "services/api/internal/nutrition/names_localized.go": "9d6a97fb54ea72d7d3a41e5842dd13ce1fd0d31bd5a31e0700401cc57d093d22",
+    "services/api/internal/nutrition/names_localized.go": "9a55981289a65e8fc12ee23cc9f5f5b16e1b54a9e15306d36677079201f3a030",
     "services/api/internal/nutrition/names_postgres.go": "300f92b7fdbc115b6f7a6f6f1f46f6f9892ea2aca9406f6fd77495a1b6d5dd53",
     "services/api/internal/nutrition/names_read.go": "e35bff8c5fa564a0935656333bc8b58a468b2d5116e1be3962fec10dccb79669",
     "services/api/internal/nutrition/names_withdraw.go": "1a19b8f2f2d9c3d0500c82979a03fea6e5103cca0fb5eb5349b80b9ca0d58808",
-    "services/api/internal/nutrition/postgres_entries.go": "4744d090a3e68e09e724f4395a9f89f0b5c712fd497c4431c395c52930122e26",
-    "services/api/internal/nutrition/postgres_read.go": "b73a14fff71c9a4e8c74ef36bb3dd82976707fd1a871f78d4fba72e0d2fbccbd",
-    "services/api/internal/nutrition/read.go": "23a68f95fc68a2b9704995ec7ec6a72e352f5dc20f86e375cd82ad3ffbd4100e",
+    "services/api/internal/nutrition/postgres_entries.go": "51df66a78a1491103e726e92d4ebf1c83048a2ed8a22a7ca97fd5dee107b338b",
+    "services/api/internal/nutrition/postgres_read.go": "b2315c25a79d0b1c3699a05c218ff45d8cc2c396fab8636b0f18a1ea0b9cab46",
+    "services/api/internal/nutrition/read.go": "7f9bf41b82a3fea7b1ed6f0979967a4010cca89924dbfb9e992504ca11c407e7",
     "services/api/internal/nutrition/search_terms.go": "9ca3d25e32962810e8f0485eaac5f761966f0314e39c15d3a9212f23666d7564",
-    "services/api/internal/platform/config/config.go": "e7a4ab356bf80f788156e7792b36f03ee90ec1fb2586e56dad7882ff3aa2fd73",
+    "services/api/internal/nutrition/sync.go": "22efa0258a46005c8ff658bb3e4c91162b0c46c19dd37632feb7788fe8a3d95b",
+    "services/api/internal/nutrition/sync_handler.go": "daf35c1d445ba929540a3fa339f867aab6c770c64b59808dcf5fbcb492fe1ee9",
+    "services/api/internal/nutrition/sync_postgres.go": "3d7d42e3914ea187b56b6474a3eaa4a3fbc0c206834265d6df8f81d1f27a6491",
+    "services/api/internal/platform/config/config.go": "d3d0f36450fd07fc6630de414486d0ad06ed928554420bf7654a321e43c2da8c",
     "services/api/internal/platform/httpapi/listener.go": "ec3c0da4efc9fa26b52b2b7b4a88e78ee73ea667a5d78c351b0b53e4aabc9299",
     "services/api/internal/platform/httpapi/network.go": "5cb49fae6d593a237b5051f851586c78f5209d011d2bafa43e95e14addbf2d53",
     "services/api/internal/platform/httpapi/observability.go": "fcd3be9dfa325d37e96c7720e4b9df9e6ba010bd4f38bc02f71e3611fc4d7dd0",
-    "services/api/internal/platform/httpapi/server.go": "b319c6c5f07dbd646463cfdb94f3c1b83c89ab10f542cb605d45d51c1cadf8fe",
+    "services/api/internal/platform/httpapi/server.go": "53c326ef0a15351bcd181a9037030e7f0f3d736bbb6d40a6accd89f621b5bbaf",
     "services/api/internal/platform/postgres/pool.go": "4ac15128e50a29730538ad905a3bf81b9fd4c29c508868c7224734e550c703a6",
-    "services/api/internal/platform/postgres/readiness.go": "48868148e4f32ef8faa8a2ffc2ec6c1263b6f160d758551801dddda115b8f801",
+    "services/api/internal/platform/postgres/readiness.go": "5b381653f71c3150f207d50c42523c39feee6f2fa82601598bbea810d63ce7ed",
     "services/api/internal/privacy/handler.go": "0e9cd6b1624dc3f9994c60304ea6ba31de5408a79950ae6b24925cbbe280fc0d",
     "services/api/internal/privacy/maintenance.go": "28839628a18ea2ff02c73e2cf41b4aafe4a97bfc8e8088551d620df806c00031",
-    "services/api/internal/privacy/postgres.go": "fc33b79d308ed3ae2be100b56e96efdc4b74c04273a5e7888abb86e1ec4709ba",
-    "services/api/internal/privacy/privacy.go": "76e4621f9de424170834c209c0c448b709524450b20ea29a673445e6d1715221",
+    "services/api/internal/privacy/postgres.go": "3cc2b8dc2c3bf2d3ed9e0bf6c0aa3b20b0fcc255f4e529584ff7b03b9d2b5f71",
+    "services/api/internal/privacy/privacy.go": "477c5751c079c916c9ae2d694f5be25e95c7f4c03bf07ca480a62ad1f9bde69d",
     "services/api/internal/privacy/restore.go": "ebae788a93e7bff709eceff5af1c0d65d120fd033ef0a235c18114867afe4dfd",
-    "services/api/internal/swaggerdocs/docs.go": "3f3f967134e1a8988df1aef52582deb715c0835cc17b7b56a0f44bfadcb953d7",
+    "services/api/internal/publiccatalog/files.go": "8fc3e879ee919d4f91ce5c3a5e88380f5b6f18b12a28d36f0d643c904ac3e7fd",
+    "services/api/internal/swaggerdocs/docs.go": "9fbf3376062bf40150356536b00f7b8664c8848fa90926bfcaa0789da62fdec3",
     "services/api/internal/trainingconfig/handler.go": "91ae45e50be819c31ff131fad2fab6572a2e23805338cc6df3bdd01357471bf8",
     "services/api/internal/trainingconfig/model.go": "326fd6f118cef58cb34eeefc5deb254bb3130a708f2e2a9b9232084e193fcae2",
     "services/api/internal/trainingconfig/postgres.go": "64e903486724f7adc4f3190ab794a3dbf3d00efa12e0692c58b3f4043455bd44",
@@ -199,51 +231,66 @@
     "services/api/migrations/00011_private_food_unknown_language.sql": "37a81044528e711bcf57262f3801efb5cadfa81d5821547d00bbd31453b4613d",
     "services/api/migrations/00012_training_configuration.sql": "6d38423c1e5a80bcf88752429a44bee490f97ac7e0b4bc32c68b72627c2859ff",
     "services/api/migrations/00013_meal_groups.sql": "6a7c6cc57c3d4f87b1815b9fb2a314b2829badb4498816a085ad1a4e36fd5f1f",
+    "services/api/migrations/00014_nutrition_offline.sql": "e5f9e5090b9d901e4795bca134cf6ac0747061ec8618871291af50ec2fda4c6e",
+    "services/api/migrations/00015_food_contributions.sql": "fcce1c22736f3b9826e3727ebb700666c500e7fa54c6d95a445cd7fc175599ce",
+    "services/api/migrations/00016_food_catalog_releases.sql": "281cd398b1355f508660bfa105d2ee1caea315b846c15803dd0a00e9dbb1a98c",
     "services/api/migrations/files.go": "93671bcc8533e02c98368384e6e0261f2f5a70407f64166aa557535d40dabbaa",
     "tools/alimentos_lote.py": "68e31390f1dd5cbee54c855901d87f9908f63a8bb972a68c02c95ca2f2bd6ddd",
     "tools/ambiente.py": "e5af86ed61296d81aa0a24f5d2ad3bb6308edc0957cdf24575786ddbaf30ec96",
-    "tools/android_security_inventory.py": "4200ec44711fb240f76016b4e4b96b85dcb5165acc46999e12072ebf533f9188",
+    "tools/android_security_inventory.py": "fc265147ef83d0852abfb8966814d45bef05ecc883f381c1133bb683a52a81c4",
     "tools/android_signing.py": "8e8e4abd4b70b88b8c2eaa3c5917a347061c0747977bfc7c392b6b01380b0e34",
     "tools/aplicar_exclusoes_restore.py": "c5562fd3213c1824367110115382bdafb0395891204df316b39005d81d0ae93d",
+    "tools/ativar_alimentacao_offline_local.py": "bebeb07bfa23fd59a0a4a521755ca585b6d882596aca33bd794821ba4ea0ae14",
     "tools/ativar_configuracao_local.py": "341e5463f75be49c174eb21d0bf20343ecb6574355735a3ed41ad78d9935f4c2",
     "tools/ativar_refeicoes_local.py": "a7ec395a586c97358ed7163d37619f5bac01a78560dab288092887b25085177e",
     "tools/atualizar_graphify.py": "9ee4eae18575ba63802da07c3f521ccbd30d8a1737b976875b53b137898abfe0",
     "tools/auditar_conteudo_local.py": "a6a5d11fff81a5bca07bd7ccb0a68d0fcceddb6f88d2ca8e2dbe4f705c5145fd",
-    "tools/avaliar_android.py": "237533eb97156589bf73e7e8a45a0072fec23186c05cb645913dad7a55c6d790",
+    "tools/avaliar_android.py": "357b98fadbe412d8a9015625593899377d6102d15d352c9c41430dc31d8a741c",
     "tools/catalog_local.py": "d2d0c9a24e43ab298d897d191bafff39748e6b7b0f8843f63946aa5d8c9c30fe",
     "tools/catalog_m1_ci.py": "62f5d8a44daf12e1e3d29aa5059bd6a1bbb23bddbc146cee58e179eb73cf1ad6",
     "tools/catalog_rollout_ci.py": "1d04e5ae729204ff0346f4abc286561c087148b0165c0910f5b3c6f3833d305e",
     "tools/conteudo_editorial.py": "2e6bc4dbd6b8b80c686018aa4083a7cde97fcef91844b584b4aa73596bbfd4ca",
-    "tools/db_local.py": "185f0a766675743ebda653f33e9c3c3161ad2bd1c6167ea01489fbd73156cf5e",
-    "tools/db_permissions.py": "e0f7ba0c5fdf3c6da6e351b7b2d81473e8ab37c117e2b27a05d959c819d3f4e3",
+    "tools/db_local.py": "72dbef85f5618c5f75c2dcc6af4547448f11a0a56a98f219dde3d66d4548add7",
+    "tools/db_permissions.py": "00c23ac3f0d4fa0535e83a4a386aa7717c0ceabdab6a5be6175cf49351efc9cf",
     "tools/dev_api.py": "40ce01e21da13f5e2425963dffa43c7b2e3d92ab52cc21e5e6a11f5d1051e28f",
     "tools/documentacao_backlog.py": "24139b729cb72175bbf8bae73dba635206a1dae94a12f3bede6a091fa263f3b1",
     "tools/documentacao_inventario.py": "e04d886c3c9af8ca4e308016e805850edd31ff09a75a4b4c6eaffa6fb70de660",
     "tools/evidence_store.py": "e004ea78476c931a081b9ecf227d35af94797088d3d9e11f55cadfeda6e98523",
     "tools/evidencias.py": "3c943217a4e709bd377780917ffa7f4445ea12944e766fe847037007039be566",
     "tools/fechar_triagem_piloto.py": "9680f470c0c461676c9c3138d858213e0657ff8df038f7e1379cbec41db9b027",
+    "tools/food_catalog.py": "78db7285649da28a6067c4f0afa23feff4872dd6d09113c74224e357456fbe8c",
+    "tools/food_catalog_build.py": "c6326cac207b1f62eab497f83052218b4d8d7c5add45c6048cc0e11157166059",
+    "tools/food_catalog_ci.py": "6345c4eb97ad9349cf005e10a7cf94727b84ad9d1ea87cc023de4484cf6fa69b",
+    "tools/food_catalog_compact.py": "4bf4f024ebbd4f72e9521c2b56fc8e9cc716c97a2fed8d4dda3a1dd98020600c",
+    "tools/food_catalog_download.py": "3e8301467c561d87024b2fc5522443c53829995bd9e1a9cb8cf9ace3014cfa25",
+    "tools/food_catalog_package.py": "25811a0cc7d74a196fc2f2c838300e250dd1a2aa54985e4787048086a9932446",
+    "tools/food_catalog_publish.py": "8e84e4fbf02a24581064d8475fabb4d2fc7a461f36a543283213fb417da7984d",
+    "tools/food_catalog_resume.py": "0ee37a7388b619c647fa3ef845c2518dd1e72e996579169fb1de2a13ca206ff9",
     "tools/gerar_catalogo_m1_swagger.py": "4ccdc44d5be7869a0d9769ec02b4614b008478606f335c710c7bcd40a1d1d82c",
     "tools/gerar_diagramas.py": "5081a43639b7b4cb443692c1d1505ea43a97e0e783ae8bb6ef0cfde5d2d983f6",
     "tools/gerar_documentacao.py": "4d3715a33f95d520bd56b82c5ba9696c57fa24601cb83669230793b4481735f8",
-    "tools/gerar_identidade_nativa.py": "a31cc309a23d0a9504fe98f00fbb0b5d1f57922a6d76af956d80afba3cd79ebd",
+    "tools/gerar_identidade_nativa.py": "3813c60ef70441f67e18b82f5aedd926b7dde9aa9901644bd63d1468d94b98cf",
     "tools/gerar_swagger.py": "fabd74db2c93ee8e16a87b5ea52c2795dac2996d7dc59dc1d331796da9489e4b",
     "tools/image_ci.py": "9ad0cc16f02526805a7cd1aedbea1ae1bef17e97469d75a214255445bc629380",
     "tools/importar_alimentos_local.py": "cf0889e37105cf1b72be2a0b4e9860139c3458b14960ffb8e2cf7eac01e0a3b3",
+    "tools/importar_catalogo_alimentar_local.py": "d836c96f6a0d64c73e95846742dc8a48e5699ff950a4a01197489af49a45c665",
     "tools/importar_catalogo_local.py": "e211270973fd327581373e865a15b7b1baebc2b2a638748109884cb0114cfd3d",
     "tools/manter_privacidade_local.py": "8322d8e7858c1881c795e82accfef8a137394bfeeabc2ded34bbfa993f9ba22b",
     "tools/migrate_local.py": "04c795436d4d6a00881ca7a1cd0b401c7e3104cc4187e1c82b3fbe59c583b589",
     "tools/preparar_alimentos_v1.py": "836f4759e17a8a790f754c3b38f5d593f055b3253304e4bd619a5a68fb6d26a9",
     "tools/preparar_conteudo_local.py": "e65f64541eccc390f8c52fb3aad7ecf8c97823c0941abb903df8bcc99be3a36a",
+    "tools/preparar_release_android.py": "ba7855fdc03fe77148db95f9d2f1b28f247e4e4db12f8b12aaf28415cb9cd0c9",
     "tools/prepare_history_remediation.py": "4a84ca42de16cf52c4cdca55c69969d1c95495a08bcc12d71caad888b321f513",
-    "tools/restore_ci.py": "831ec34e09ee9576a0b4f5fa7ef76c1e81d1476d2a0f453b702616233e5a642f",
+    "tools/restore_ci.py": "3818fd1b3684255edc6335e478de0c50798fb8ecddb667f5e2d6d82525480d9b",
     "tools/revisar_alimentos_v1.py": "3f1c34c48c94cd38ccd9bba7133fb7b4c67c0054040bcadc0356ae3839612f91",
     "tools/revisar_conteudo_local.py": "11b2ddb2bb43bbd07ade17ef630f37ed45d69500310672e17d80f1adfb622090",
     "tools/secret_ci.py": "a79a87e3597cdb58fc2edd8bb3413663ee78d8e9dfc9709b039044ba306d4270",
     "tools/secret_review.py": "2345a74610ff0650a4d83ddf210c4b31935d83f128036f7f9c4da8d79fabc385",
-    "tools/sql_ci.py": "e41c9dd9880c2cb2d64500de494689ea72f6684a756c326280aab4782caf8e63",
+    "tools/sql_ci.py": "09cb23441f2196de35824ca2a86cf8bbb5a82486cf7e993fe68158402a0e2f9b",
     "tools/test_alimentos_lote.py": "eaba7be2f68b933e1c3887f3dcd553791090ff1f04cbfc56cf8f0ebaf5a36640",
     "tools/test_ambiente.py": "46e0e2a86dee55d74cc7c7dacfe2d8225820ba1bf93e9793b1d1f40a43611313",
-    "tools/test_android_security_inventory.py": "85532340c08b003a446127d516fe37b45278071417da653c463ab3238d9e7abd",
+    "tools/test_android_security_inventory.py": "55841b6038e5d76220306ea490b54ffce292a44a7d0ca496ed842c9db2ece910",
+    "tools/test_ativar_alimentacao_offline_local.py": "a430dc17ceacdad5d72921cba6a8078cbe16b77f5f899055c496f8c310cd0ada",
     "tools/test_avaliar_android.py": "3dad8d9b17eb4394509d75f94af447c6134386f877b63cf584bc32193f48bb44",
     "tools/test_catalog_local.py": "e6afd9ee2e59ab42f431da7abfa7d091fba891d475debd4ac13e1f9532748346",
     "tools/test_catalog_m1_ci.py": "c4186d546910e7c10d63313f74130c0ce4339d42d7070c37a5718504f0cf011b",
@@ -255,10 +302,14 @@
     "tools/test_diagramas.py": "4169c469ea43f7ef3e0ea933d37343a848d6b5e578e9a9e525648a367f233dfc",
     "tools/test_documentacao.py": "ec5c5a1d512281d02c5b6048620f0515965521ae774b2a185c5194a6e0fe8c22",
     "tools/test_evidence_store.py": "20e206b1a66748f4cbca0a5b86489d729cf1b25ad8abaa3103b03e8d9f65c1a8",
+    "tools/test_food_catalog.py": "ea3c29654b640067cf5001f924e00ba6f74497873ff29db7e17de17bbe9f0ef8",
+    "tools/test_food_catalog_compact.py": "4f3025c329f4b619e820f605eb64fa9fa2e5ce63ac0195eb80eec83ae1cf88be",
+    "tools/test_food_catalog_publish.py": "91c1c80839d6cff009eea8dd4e287fe5caefef88c50d31b1b32cf61d2c912646",
     "tools/test_history_remediation.py": "5701e94cd1844f82b7250616df870c539d1a12091a6218657f5084479e524f20",
-    "tools/test_identidade_nativa.py": "9311f6da366c082af29f4aae5d0b09fc84e7feb71253fb7bd22af3e281bcdac6",
+    "tools/test_identidade_nativa.py": "3a7e8087c562bb170c06c491ef9a807a2fcf4a071dc8d5bd4919f92c5ba45422",
     "tools/test_image_ci.py": "e73f87aae11f6dde7a7d790127d9d23d1210d78c17407ef4776a49c344409fd1",
     "tools/test_nomes_alimentares.py": "2b9be67a54abd764247d29aaa03c9ae8c3ae50f0f8afe4c31cf734fe1e6ca97e",
+    "tools/test_preparar_release_android.py": "7bcd9cd5f81c7bfa2980f0c4a92b236a561499685ba0ae6f034e2b8ba00fd349",
     "tools/test_privacidade.py": "8f6f73cccad40a54e8b3fa42e8a06ce998fa78345f2d74f00ba8edf9e7aa50df",
     "tools/test_restore_ci.py": "d04af6c1a7a80fb9a8e6c15247da7391d1a4e859bed9c32e311051d04e499bb9",
     "tools/test_revisao_alimentos.py": "0ae834acb727dcd8706cec9a9f62171be2cfdc61fc6b008012606055023dd13f",
@@ -268,12 +319,15 @@
     "tools/test_sql_ci.py": "429f3bdd5fa9cc0c728c75b8eb4c9566e66a3a92898c8b0a13edf2028d12e1bb",
     "tools/test_swagger_build.py": "c80a91b7a5be372ba1f2a515f5d1abf84d4e981adbd4b2c35e7d21913992444f",
     "tools/test_verificar_atividade_local.py": "428a25c11f56dae21b6bf4fd7ff18aaeaa5b5e9ee858588313724c21ab9fdc4e",
+    "tools/test_verificar_catalogo_apk.py": "b9b04a40587cbbe9568f9c94342cda3cc6a8b768aceaf3a16998e070fbc5e612",
     "tools/validar_manifesto_piloto.py": "85bb3d0d1053794bf9a61a8f25c1cb2693e49c445924be79691d81fb291cdefe",
+    "tools/verificar_alimentacao_offline_local.py": "dba0f438a38066955123b1ed2ea7b1d2adf8b01c1d453fcef6402b1a4a9b8dc8",
     "tools/verificar_api_local.py": "c2f379d46bf585082e5f22f6011f0599b9547ad474889972aaa97c2c90cbd387",
     "tools/verificar_atividade_local.py": "d16cd65a35c5148bf43161c41698cb743ce2064af5f9b713b05e5fb3e3d9a870",
     "tools/verificar_auth_http.py": "68e244652e209e269db877f823781317f0e1bb5c86b7a890e8f828017489a74c",
     "tools/verificar_auth_local.py": "171628f8808cbb7dc625a04462138a7a1eeb9491a1ec15db1a3b89f2feeeebf4",
     "tools/verificar_banco_local.py": "2271c0800ec58831d7156c7a46e3f79b45d32c07f95ea26fe84dbaac5ab84776",
+    "tools/verificar_catalogo_apk.py": "975fd136c3620fdf689917528ee69ed934020e0bcccc33c39b8e2460985de68b",
     "tools/verificar_catalogo_local.py": "0882d55611e55885c9861c2864d8449864109e27f0140c6c5fa30bdcc4765439",
     "tools/verificar_configuracao_local.py": "92a1eaac1851bdc2d4e6859d24125318671991e705211b9aa569d8a462b05167",
     "tools/verificar_consulta_alimentos.py": "16aa67a95b803f0be740159a3250c8c44544efa3807bc806ef2b483ca43eb86a",
@@ -286,15 +340,15 @@
     "tools/verificar_refeicoes_local.py": "3edaca4b221d8b2ed67a11813f719bbc4526bcd8a9e330c00600cbabfaab879c"
   },
   "coverage": {
-    "dartFiles": 95,
+    "dartFiles": 114,
     "backendMode": "versioned-reference",
     "backendCommit": "523f6d9609bef532958f14227b2b2e105d5f3bcf",
     "backendTsFiles": 33,
     "legacyRoutes": 29,
-    "httpCalls": 28,
+    "httpCalls": 34,
     "legacyMatches": 0,
-    "goFiles": 82,
-    "goRegistrations": 40,
+    "goFiles": 95,
+    "goRegistrations": 53,
     "modelsInReference": 9
   },
   "groups": [
@@ -324,6 +378,21 @@
         },
         {
           "repository": "trainforge",
+          "path": "lib/features/auth/presentation/pages/guest_page.dart",
+          "line": 1
+        },
+        {
+          "repository": "trainforge",
+          "path": "lib/features/auth/presentation/widgets/entry_scene.dart",
+          "line": 1
+        },
+        {
+          "repository": "trainforge",
+          "path": "lib/features/auth/presentation/widgets/google_sign_in_button.dart",
+          "line": 1
+        },
+        {
+          "repository": "trainforge",
           "path": "lib/features/catalog/presentation/catalog_controller.dart",
           "line": 1
         },
@@ -340,6 +409,16 @@
         {
           "repository": "trainforge",
           "path": "lib/features/catalog/presentation/catalog_page.dart",
+          "line": 1
+        },
+        {
+          "repository": "trainforge",
+          "path": "lib/features/food_reference/presentation/barcode_scanner_page.dart",
+          "line": 1
+        },
+        {
+          "repository": "trainforge",
+          "path": "lib/features/food_reference/presentation/catalog_tools_page.dart",
           "line": 1
         },
         {
@@ -380,6 +459,16 @@
         {
           "repository": "trainforge",
           "path": "lib/features/nutrition/presentation/entry_read_controller.dart",
+          "line": 1
+        },
+        {
+          "repository": "trainforge",
+          "path": "lib/features/nutrition/presentation/food_contribution_page.dart",
+          "line": 1
+        },
+        {
+          "repository": "trainforge",
+          "path": "lib/features/nutrition/presentation/food_offline_labels.dart",
           "line": 1
         },
         {
@@ -449,7 +538,17 @@
         },
         {
           "repository": "trainforge",
+          "path": "lib/features/nutrition/presentation/offline_sync_panel.dart",
+          "line": 1
+        },
+        {
+          "repository": "trainforge",
           "path": "lib/features/nutrition/presentation/own_food_picker_page.dart",
+          "line": 1
+        },
+        {
+          "repository": "trainforge",
+          "path": "lib/features/nutrition/presentation/own_food_portions_editor.dart",
           "line": 1
         },
         {
@@ -529,6 +628,11 @@
         },
         {
           "repository": "trainforge",
+          "path": "lib/shared/widgets/food_catalog_credits_page.dart",
+          "line": 1
+        },
+        {
+          "repository": "trainforge",
           "path": "lib/shared/widgets/plans_overview.dart",
           "line": 1
         },
@@ -580,7 +684,17 @@
         },
         {
           "repository": "trainforge",
+          "path": "lib/features/food_reference/data/local_food_repository.dart",
+          "line": 1
+        },
+        {
+          "repository": "trainforge",
           "path": "lib/features/nutrition/data/nutrition_repository.dart",
+          "line": 1
+        },
+        {
+          "repository": "trainforge",
+          "path": "lib/features/nutrition/data/offline_nutrition_repository.dart",
           "line": 1
         },
         {
@@ -657,12 +771,22 @@
         },
         {
           "repository": "trainforge",
+          "path": "lib/features/nutrition/domain/exact_nutrition.dart",
+          "line": 1
+        },
+        {
+          "repository": "trainforge",
           "path": "lib/features/nutrition/domain/meals.dart",
           "line": 1
         },
         {
           "repository": "trainforge",
           "path": "lib/features/nutrition/domain/nutrition.dart",
+          "line": 1
+        },
+        {
+          "repository": "trainforge",
+          "path": "lib/features/nutrition/domain/portion_quantity.dart",
           "line": 1
         },
         {
@@ -721,6 +845,11 @@
         },
         {
           "repository": "trainforge",
+          "path": "lib/features/nutrition/data/offline_nutrition_repository.dart",
+          "line": 10
+        },
+        {
+          "repository": "trainforge",
           "path": "lib/features/privacy/data/privacy_repository.dart",
           "line": 4
         },
@@ -767,6 +896,11 @@
         },
         {
           "repository": "trainforge",
+          "path": "lib/features/food_reference/data/local_food_repository.dart",
+          "line": 6
+        },
+        {
+          "repository": "trainforge",
           "path": "lib/features/nutrition/data/nutrition_repository.dart",
           "line": 3
         },
@@ -782,13 +916,44 @@
         },
         {
           "repository": "trainforge",
+          "path": "lib/features/nutrition/data/offline_nutrition_repository.dart",
+          "line": 12
+        },
+        {
+          "repository": "trainforge",
+          "path": "lib/features/nutrition/data/offline_nutrition_repository.dart",
+          "line": 13
+        },
+        {
+          "repository": "trainforge",
+          "path": "lib/features/nutrition/data/offline_nutrition_repository.dart",
+          "line": 14
+        },
+        {
+          "repository": "trainforge",
+          "path": "lib/features/nutrition/data/offline_nutrition_repository.dart",
+          "line": 15
+        },
+        {
+          "repository": "trainforge",
           "path": "lib/features/privacy/data/privacy_repository.dart",
-          "line": 6
+          "line": 7
         },
         {
           "repository": "trainforge",
           "path": "lib/features/training_configuration/data/training_configuration_repository.dart",
           "line": 3
+        }
+      ]
+    },
+    {
+      "from": "ui",
+      "to": "http",
+      "sources": [
+        {
+          "repository": "trainforge",
+          "path": "lib/features/food_reference/presentation/catalog_tools_page.dart",
+          "line": 9
         }
       ]
     },
@@ -819,7 +984,7 @@
         {
           "repository": "trainforge",
           "path": "lib/features/auth/presentation/auth_controller.dart",
-          "line": 4
+          "line": 5
         },
         {
           "repository": "trainforge",
@@ -888,6 +1053,11 @@
         },
         {
           "repository": "trainforge",
+          "path": "lib/features/nutrition/presentation/food_contribution_page.dart",
+          "line": 7
+        },
+        {
+          "repository": "trainforge",
           "path": "lib/features/nutrition/presentation/meal_controllers.dart",
           "line": 3
         },
@@ -900,6 +1070,11 @@
           "repository": "trainforge",
           "path": "lib/features/nutrition/presentation/meal_controllers.dart",
           "line": 5
+        },
+        {
+          "repository": "trainforge",
+          "path": "lib/features/nutrition/presentation/meal_controllers.dart",
+          "line": 6
         },
         {
           "repository": "trainforge",
@@ -978,6 +1153,11 @@
         },
         {
           "repository": "trainforge",
+          "path": "lib/features/nutrition/presentation/nutrition_forms.dart",
+          "line": 18
+        },
+        {
+          "repository": "trainforge",
           "path": "lib/features/nutrition/presentation/nutrition_page.dart",
           "line": 3
         },
@@ -998,6 +1178,11 @@
         },
         {
           "repository": "trainforge",
+          "path": "lib/features/nutrition/presentation/offline_sync_panel.dart",
+          "line": 4
+        },
+        {
+          "repository": "trainforge",
           "path": "lib/features/nutrition/presentation/own_food_picker_page.dart",
           "line": 6
         },
@@ -1005,6 +1190,11 @@
           "repository": "trainforge",
           "path": "lib/features/nutrition/presentation/own_food_picker_page.dart",
           "line": 9
+        },
+        {
+          "repository": "trainforge",
+          "path": "lib/features/nutrition/presentation/own_food_portions_editor.dart",
+          "line": 4
         },
         {
           "repository": "trainforge",
@@ -1062,6 +1252,52 @@
           "line": 20
         }
       ]
+    },
+    {
+      "from": "ui",
+      "to": "repositories",
+      "sources": [
+        {
+          "repository": "trainforge",
+          "path": "lib/features/food_reference/presentation/barcode_scanner_page.dart",
+          "line": 5
+        },
+        {
+          "repository": "trainforge",
+          "path": "lib/features/food_reference/presentation/food_page.dart",
+          "line": 13
+        },
+        {
+          "repository": "trainforge",
+          "path": "lib/features/nutrition/presentation/food_contribution_page.dart",
+          "line": 6
+        },
+        {
+          "repository": "trainforge",
+          "path": "lib/features/nutrition/presentation/nutrition_forms.dart",
+          "line": 15
+        },
+        {
+          "repository": "trainforge",
+          "path": "lib/features/nutrition/presentation/nutrition_forms.dart",
+          "line": 19
+        },
+        {
+          "repository": "trainforge",
+          "path": "lib/features/nutrition/presentation/nutrition_page.dart",
+          "line": 19
+        },
+        {
+          "repository": "trainforge",
+          "path": "lib/features/nutrition/presentation/nutrition_page.dart",
+          "line": 21
+        },
+        {
+          "repository": "trainforge",
+          "path": "lib/features/nutrition/presentation/offline_sync_panel.dart",
+          "line": 3
+        }
+      ]
     }
   ],
   "screens": [
@@ -1094,7 +1330,15 @@
       "source": {
         "repository": "trainforge",
         "path": "lib/features/auth/presentation/pages/auth_page.dart",
-        "line": 16
+        "line": 21
+      }
+    },
+    {
+      "id": "GuestPage",
+      "source": {
+        "repository": "trainforge",
+        "path": "lib/features/auth/presentation/pages/guest_page.dart",
+        "line": 11
       }
     },
     {
@@ -1114,6 +1358,22 @@
       }
     },
     {
+      "id": "BarcodeScannerPage",
+      "source": {
+        "repository": "trainforge",
+        "path": "lib/features/food_reference/presentation/barcode_scanner_page.dart",
+        "line": 7
+      }
+    },
+    {
+      "id": "CatalogToolsPage",
+      "source": {
+        "repository": "trainforge",
+        "path": "lib/features/food_reference/presentation/catalog_tools_page.dart",
+        "line": 14
+      }
+    },
+    {
       "id": "FoodDetailPage",
       "source": {
         "repository": "trainforge",
@@ -1126,7 +1386,7 @@
       "source": {
         "repository": "trainforge",
         "path": "lib/features/food_reference/presentation/food_page.dart",
-        "line": 14
+        "line": 17
       }
     },
     {
@@ -1142,7 +1402,23 @@
       "source": {
         "repository": "trainforge",
         "path": "lib/features/nutrition/presentation/entry_detail_page.dart",
-        "line": 14
+        "line": 15
+      }
+    },
+    {
+      "id": "FoodContributionPage",
+      "source": {
+        "repository": "trainforge",
+        "path": "lib/features/nutrition/presentation/food_contribution_page.dart",
+        "line": 60
+      }
+    },
+    {
+      "id": "FoodContributionsPage",
+      "source": {
+        "repository": "trainforge",
+        "path": "lib/features/nutrition/presentation/food_contribution_page.dart",
+        "line": 179
       }
     },
     {
@@ -1182,7 +1458,7 @@
       "source": {
         "repository": "trainforge",
         "path": "lib/features/nutrition/presentation/nutrition_forms.dart",
-        "line": 38
+        "line": 44
       }
     },
     {
@@ -1190,7 +1466,7 @@
       "source": {
         "repository": "trainforge",
         "path": "lib/features/nutrition/presentation/nutrition_forms.dart",
-        "line": 428
+        "line": 550
       }
     },
     {
@@ -1198,7 +1474,7 @@
       "source": {
         "repository": "trainforge",
         "path": "lib/features/nutrition/presentation/nutrition_page.dart",
-        "line": 19
+        "line": 26
       }
     },
     {
@@ -1246,7 +1522,7 @@
       "source": {
         "repository": "trainforge",
         "path": "lib/shared/widgets/content_sources_page.dart",
-        "line": 9
+        "line": 10
       }
     },
     {
@@ -1255,6 +1531,14 @@
         "repository": "trainforge",
         "path": "lib/shared/widgets/evaluation_guide_page.dart",
         "line": 11
+      }
+    },
+    {
+      "id": "FoodCatalogCreditsPage",
+      "source": {
+        "repository": "trainforge",
+        "path": "lib/shared/widgets/food_catalog_credits_page.dart",
+        "line": 10
       }
     },
     {
@@ -1281,7 +1565,7 @@
       "source": {
         "repository": "trainforge",
         "path": "lib/features/auth/presentation/pages/auth_page.dart",
-        "line": 156
+        "line": 867
       }
     },
     {
@@ -1290,25 +1574,16 @@
       "source": {
         "repository": "trainforge",
         "path": "lib/features/auth/presentation/pages/auth_page.dart",
-        "line": 145
+        "line": 862
       }
     },
     {
       "from": "AuthPage",
-      "to": "CatalogPage",
+      "to": "GuestPage",
       "source": {
         "repository": "trainforge",
         "path": "lib/features/auth/presentation/pages/auth_page.dart",
-        "line": 125
-      }
-    },
-    {
-      "from": "AuthPage",
-      "to": "FoodPage",
-      "source": {
-        "repository": "trainforge",
-        "path": "lib/features/auth/presentation/pages/auth_page.dart",
-        "line": 135
+        "line": 722
       }
     },
     {
@@ -1317,7 +1592,7 @@
       "source": {
         "repository": "trainforge",
         "path": "lib/features/auth/presentation/pages/auth_page.dart",
-        "line": 167
+        "line": 872
       }
     },
     {
@@ -1326,7 +1601,25 @@
       "source": {
         "repository": "trainforge",
         "path": "lib/features/auth/presentation/pages/auth_page.dart",
-        "line": 23
+        "line": 107
+      }
+    },
+    {
+      "from": "GuestPage",
+      "to": "CatalogPage",
+      "source": {
+        "repository": "trainforge",
+        "path": "lib/features/auth/presentation/pages/guest_page.dart",
+        "line": 31
+      }
+    },
+    {
+      "from": "GuestPage",
+      "to": "FoodPage",
+      "source": {
+        "repository": "trainforge",
+        "path": "lib/features/auth/presentation/pages/guest_page.dart",
+        "line": 42
       }
     },
     {
@@ -1340,11 +1633,20 @@
     },
     {
       "from": "FoodPage",
+      "to": "CatalogToolsPage",
+      "source": {
+        "repository": "trainforge",
+        "path": "lib/features/food_reference/presentation/food_page.dart",
+        "line": 145
+      }
+    },
+    {
+      "from": "FoodPage",
       "to": "FoodDetailPage",
       "source": {
         "repository": "trainforge",
         "path": "lib/features/food_reference/presentation/food_page.dart",
-        "line": 76
+        "line": 79
       }
     },
     {
@@ -1353,7 +1655,25 @@
       "source": {
         "repository": "trainforge",
         "path": "lib/features/nutrition/presentation/entry_detail_page.dart",
-        "line": 75
+        "line": 76
+      }
+    },
+    {
+      "from": "FoodContributionPage",
+      "to": "FoodContributionsPage",
+      "source": {
+        "repository": "trainforge",
+        "path": "lib/features/nutrition/presentation/food_contribution_page.dart",
+        "line": 181
+      }
+    },
+    {
+      "from": "FoodContributionsPage",
+      "to": "FoodContributionPage",
+      "source": {
+        "repository": "trainforge",
+        "path": "lib/features/nutrition/presentation/food_contribution_page.dart",
+        "line": 55
       }
     },
     {
@@ -1434,7 +1754,7 @@
       "source": {
         "repository": "trainforge",
         "path": "lib/features/nutrition/presentation/nutrition_forms.dart",
-        "line": 430
+        "line": 553
       }
     },
     {
@@ -1443,7 +1763,16 @@
       "source": {
         "repository": "trainforge",
         "path": "lib/features/nutrition/presentation/nutrition_forms.dart",
-        "line": 44
+        "line": 50
+      }
+    },
+    {
+      "from": "NutritionPage",
+      "to": "BarcodeScannerPage",
+      "source": {
+        "repository": "trainforge",
+        "path": "lib/features/nutrition/presentation/nutrition_page.dart",
+        "line": 187
       }
     },
     {
@@ -1452,7 +1781,7 @@
       "source": {
         "repository": "trainforge",
         "path": "lib/features/nutrition/presentation/nutrition_page.dart",
-        "line": 141
+        "line": 178
       }
     },
     {
@@ -1461,7 +1790,16 @@
       "source": {
         "repository": "trainforge",
         "path": "lib/features/nutrition/presentation/nutrition_page.dart",
-        "line": 127
+        "line": 164
+      }
+    },
+    {
+      "from": "NutritionPage",
+      "to": "FoodContributionsPage",
+      "source": {
+        "repository": "trainforge",
+        "path": "lib/features/nutrition/presentation/nutrition_page.dart",
+        "line": 428
       }
     },
     {
@@ -1470,7 +1808,7 @@
       "source": {
         "repository": "trainforge",
         "path": "lib/features/nutrition/presentation/nutrition_page.dart",
-        "line": 153
+        "line": 267
       }
     },
     {
@@ -1479,7 +1817,7 @@
       "source": {
         "repository": "trainforge",
         "path": "lib/features/nutrition/presentation/nutrition_page.dart",
-        "line": 115
+        "line": 152
       }
     },
     {
@@ -1488,7 +1826,7 @@
       "source": {
         "repository": "trainforge",
         "path": "lib/features/nutrition/presentation/nutrition_page.dart",
-        "line": 171
+        "line": 226
       }
     },
     {
@@ -1560,7 +1898,7 @@
       "source": {
         "repository": "trainforge",
         "path": "lib/shared/widgets/auth_gate.dart",
-        "line": 70
+        "line": 72
       }
     },
     {
@@ -1569,7 +1907,7 @@
       "source": {
         "repository": "trainforge",
         "path": "lib/shared/widgets/auth_gate.dart",
-        "line": 60
+        "line": 61
       }
     },
     {
@@ -1578,7 +1916,7 @@
       "source": {
         "repository": "trainforge",
         "path": "lib/shared/widgets/content_sources_page.dart",
-        "line": 27
+        "line": 28
       }
     },
     {
@@ -1587,7 +1925,7 @@
       "source": {
         "repository": "trainforge",
         "path": "lib/shared/widgets/content_sources_page.dart",
-        "line": 34
+        "line": 35
       }
     },
     {
@@ -1596,7 +1934,16 @@
       "source": {
         "repository": "trainforge",
         "path": "lib/shared/widgets/content_sources_page.dart",
-        "line": 44
+        "line": 52
+      }
+    },
+    {
+      "from": "ContentSourcesPage",
+      "to": "FoodCatalogCreditsPage",
+      "source": {
+        "repository": "trainforge",
+        "path": "lib/shared/widgets/content_sources_page.dart",
+        "line": 42
       }
     },
     {
@@ -2190,6 +2537,134 @@
       ]
     },
     {
+      "method": "DELETE",
+      "path": "/api/v1/me/food-contributions/${Uri.encodeComponent(remoteId)}",
+      "keys": [],
+      "source": {
+        "repository": "trainforge",
+        "path": "lib/features/nutrition/data/nutrition_sync.dart",
+        "line": 20
+      },
+      "legacyMatches": [],
+      "goMatches": [
+        {
+          "method": "DELETE",
+          "path": "/api/v1/me/food-contributions/{id}",
+          "source": {
+            "repository": "trainforge",
+            "path": "services/api/internal/nutrition/contributions_handler.go",
+            "line": 20
+          }
+        }
+      ]
+    },
+    {
+      "method": "POST",
+      "path": "/api/v1/me/nutrition/sync",
+      "keys": [
+        "code",
+        "contract",
+        "operations",
+        "remote_id",
+        "state",
+        "sync_state"
+      ],
+      "source": {
+        "repository": "trainforge",
+        "path": "lib/features/nutrition/data/nutrition_sync.dart",
+        "line": 184
+      },
+      "legacyMatches": [],
+      "goMatches": [
+        {
+          "method": "POST",
+          "path": "/api/v1/me/nutrition/sync",
+          "source": {
+            "repository": "trainforge",
+            "path": "services/api/internal/nutrition/sync_handler.go",
+            "line": 17
+          }
+        }
+      ]
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/me/nutrition/changes",
+      "keys": [
+        "cursor",
+        "limit"
+      ],
+      "source": {
+        "repository": "trainforge",
+        "path": "lib/features/nutrition/data/nutrition_sync.dart",
+        "line": 438
+      },
+      "legacyMatches": [],
+      "goMatches": [
+        {
+          "method": "GET",
+          "path": "/api/v1/me/nutrition/changes",
+          "source": {
+            "repository": "trainforge",
+            "path": "services/api/internal/nutrition/sync_handler.go",
+            "line": 16
+          }
+        }
+      ]
+    },
+    {
+      "method": "POST",
+      "path": "/api/v1/me/food-contributions",
+      "keys": [
+        "state"
+      ],
+      "source": {
+        "repository": "trainforge",
+        "path": "lib/features/nutrition/data/nutrition_sync.dart",
+        "line": 576
+      },
+      "legacyMatches": [],
+      "goMatches": [
+        {
+          "method": "POST",
+          "path": "/api/v1/me/food-contributions",
+          "source": {
+            "repository": "trainforge",
+            "path": "services/api/internal/nutrition/contributions_handler.go",
+            "line": 17
+          }
+        }
+      ]
+    },
+    {
+      "method": "POST",
+      "path": "/api/v1/me/food-contributions/${Uri.encodeComponent(row[",
+      "keys": [
+        "state"
+      ],
+      "source": {
+        "repository": "trainforge",
+        "path": "lib/features/nutrition/data/nutrition_sync.dart",
+        "line": 618
+      },
+      "legacyMatches": [],
+      "goMatches": []
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/me/food-contributions/${Uri.encodeComponent(row[",
+      "keys": [
+        "cancelled"
+      ],
+      "source": {
+        "repository": "trainforge",
+        "path": "lib/features/nutrition/data/nutrition_sync.dart",
+        "line": 647
+      },
+      "legacyMatches": [],
+      "goMatches": []
+    },
+    {
       "method": "GET",
       "path": "/api/v1/privacy",
       "keys": [
@@ -2198,7 +2673,7 @@
       "source": {
         "repository": "trainforge",
         "path": "lib/features/privacy/data/privacy_repository.dart",
-        "line": 20
+        "line": 27
       },
       "legacyMatches": [],
       "goMatches": [
@@ -2224,7 +2699,7 @@
       "source": {
         "repository": "trainforge",
         "path": "lib/features/privacy/data/privacy_repository.dart",
-        "line": 29
+        "line": 36
       },
       "legacyMatches": [],
       "goMatches": [
@@ -2248,7 +2723,7 @@
       "source": {
         "repository": "trainforge",
         "path": "lib/features/privacy/data/privacy_repository.dart",
-        "line": 43
+        "line": 50
       },
       "legacyMatches": [],
       "goMatches": [
@@ -2273,7 +2748,7 @@
       "source": {
         "repository": "trainforge",
         "path": "lib/features/privacy/data/privacy_repository.dart",
-        "line": 55
+        "line": 62
       },
       "legacyMatches": [],
       "goMatches": [
@@ -3507,9 +3982,11 @@
       "services/api/cmd/catalog-migrate/main.go",
       "services/api/cmd/catalog-release/main.go",
       "services/api/cmd/catalog-transition/main.go",
+      "services/api/cmd/food-maintenance/main.go",
       "services/api/cmd/food-names/main.go",
       "services/api/cmd/import-content/main.go",
       "services/api/cmd/import-food/main.go",
+      "services/api/cmd/import-food-catalog/main.go",
       "services/api/cmd/migrate/main.go",
       "services/api/cmd/privacy-maintenance/main.go",
       "services/api/cmd/privacy-restore/main.go",
@@ -3541,6 +4018,13 @@
       "services/api/internal/catalogtarget/target.go",
       "services/api/internal/foodnamesops/package.go",
       "services/api/internal/foodnamesops/run.go",
+      "services/api/internal/nutrition/canonical.go",
+      "services/api/internal/nutrition/catalog_bundle.go",
+      "services/api/internal/nutrition/catalog_import.go",
+      "services/api/internal/nutrition/contributions.go",
+      "services/api/internal/nutrition/contributions_handler.go",
+      "services/api/internal/nutrition/contributions_postgres.go",
+      "services/api/internal/nutrition/contributions_review.go",
       "services/api/internal/nutrition/doc.go",
       "services/api/internal/nutrition/entries.go",
       "services/api/internal/nutrition/entries_handler.go",
@@ -3565,6 +4049,9 @@
       "services/api/internal/nutrition/postgres_read.go",
       "services/api/internal/nutrition/read.go",
       "services/api/internal/nutrition/search_terms.go",
+      "services/api/internal/nutrition/sync.go",
+      "services/api/internal/nutrition/sync_handler.go",
+      "services/api/internal/nutrition/sync_postgres.go",
       "services/api/internal/platform/config/config.go",
       "services/api/internal/platform/httpapi/listener.go",
       "services/api/internal/platform/httpapi/network.go",
@@ -3577,6 +4064,7 @@
       "services/api/internal/privacy/postgres.go",
       "services/api/internal/privacy/privacy.go",
       "services/api/internal/privacy/restore.go",
+      "services/api/internal/publiccatalog/files.go",
       "services/api/internal/swaggerdocs/docs.go",
       "services/api/internal/trainingconfig/handler.go",
       "services/api/internal/trainingconfig/model.go",
@@ -3923,6 +4411,138 @@
           "repository": "trainforge",
           "path": "services/api/internal/catalog/handler.go",
           "line": 164
+        },
+        "registrationDetected": true
+      },
+      {
+        "method": "POST",
+        "path": "/api/v1/me/food-contributions",
+        "params": [
+          "body body ContributionInput true \"Explicit CC0 consent and food fields; no meal or account payload\""
+        ],
+        "responses": [
+          [
+            "Success",
+            "201 {object} Contribution"
+          ],
+          [
+            "Failure",
+            "400 {object} map[string]string"
+          ],
+          [
+            "Failure",
+            "401 {object} map[string]string"
+          ],
+          [
+            "Failure",
+            "409 {object} map[string]string"
+          ]
+        ],
+        "source": {
+          "repository": "trainforge",
+          "path": "services/api/internal/nutrition/contributions_handler.go",
+          "line": 45
+        },
+        "registrationDetected": true
+      },
+      {
+        "method": "GET",
+        "path": "/api/v1/me/food-contributions",
+        "params": [
+          "cursor query string false \"Account-bound cursor\"",
+          "limit query int false \"Page size 1-100\""
+        ],
+        "responses": [
+          [
+            "Success",
+            "200 {object} ContributionPage"
+          ]
+        ],
+        "source": {
+          "repository": "trainforge",
+          "path": "services/api/internal/nutrition/contributions_handler.go",
+          "line": 66
+        },
+        "registrationDetected": true
+      },
+      {
+        "method": "GET",
+        "path": "/api/v1/me/food-contributions/{id}",
+        "params": [
+          "id path string true \"Contribution UUID\""
+        ],
+        "responses": [
+          [
+            "Success",
+            "200 {object} Contribution"
+          ]
+        ],
+        "source": {
+          "repository": "trainforge",
+          "path": "services/api/internal/nutrition/contributions_handler.go",
+          "line": 97
+        },
+        "registrationDetected": true
+      },
+      {
+        "method": "DELETE",
+        "path": "/api/v1/me/food-contributions/{id}",
+        "params": [
+          "id path string true \"Contribution UUID\""
+        ],
+        "responses": [
+          [
+            "Success",
+            "200 {object} Contribution"
+          ],
+          [
+            "Failure",
+            "409 {object} map[string]string"
+          ]
+        ],
+        "source": {
+          "repository": "trainforge",
+          "path": "services/api/internal/nutrition/contributions_handler.go",
+          "line": 113
+        },
+        "registrationDetected": true
+      },
+      {
+        "method": "POST",
+        "path": "/api/v1/me/food-contributions/{id}/media",
+        "params": [
+          "id path string true \"Contribution UUID\""
+        ],
+        "responses": [
+          [
+            "Success",
+            "200 {object} Contribution"
+          ]
+        ],
+        "source": {
+          "repository": "trainforge",
+          "path": "services/api/internal/nutrition/contributions_handler.go",
+          "line": 129
+        },
+        "registrationDetected": true
+      },
+      {
+        "method": "GET",
+        "path": "/api/v1/me/food-contributions/{id}/media/{mediaId}",
+        "params": [
+          "id path string true \"Contribution UUID\"",
+          "mediaId path string true \"Media UUID\""
+        ],
+        "responses": [
+          [
+            "Success",
+            "200 {file} binary"
+          ]
+        ],
+        "source": {
+          "repository": "trainforge",
+          "path": "services/api/internal/nutrition/contributions_handler.go",
+          "line": 156
         },
         "registrationDetected": true
       },
@@ -4335,6 +4955,101 @@
         "registrationDetected": true
       },
       {
+        "method": "POST",
+        "path": "/api/v1/me/nutrition/sync",
+        "params": [
+          "body body SyncPush true \"Stable operation IDs, dependencies and legacy domain bodies\""
+        ],
+        "responses": [
+          [
+            "Success",
+            "200 {object} SyncPushResult"
+          ],
+          [
+            "Failure",
+            "400 {object} map[string]string"
+          ],
+          [
+            "Failure",
+            "401 {object} map[string]string"
+          ],
+          [
+            "Failure",
+            "503 {object} map[string]string"
+          ]
+        ],
+        "source": {
+          "repository": "trainforge",
+          "path": "services/api/internal/nutrition/sync_handler.go",
+          "line": 32
+        },
+        "registrationDetected": true
+      },
+      {
+        "method": "GET",
+        "path": "/api/v1/me/nutrition/changes",
+        "params": [
+          "cursor query string false \"Opaque account-bound checkpoint\"",
+          "limit query int false \"Page size 1-200, default 100\""
+        ],
+        "responses": [
+          [
+            "Success",
+            "200 {object} SyncPage"
+          ],
+          [
+            "Failure",
+            "400 {object} map[string]string"
+          ],
+          [
+            "Failure",
+            "401 {object} map[string]string"
+          ],
+          [
+            "Failure",
+            "503 {object} map[string]string"
+          ]
+        ],
+        "source": {
+          "repository": "trainforge",
+          "path": "services/api/internal/nutrition/sync_handler.go",
+          "line": 62
+        },
+        "registrationDetected": true
+      },
+      {
+        "method": "GET",
+        "path": "/api/v1/me/nutrition/sync",
+        "params": [
+          "cursor query string false \"Opaque account-bound checkpoint\"",
+          "limit query int false \"Page size 1-200, default 100\""
+        ],
+        "responses": [
+          [
+            "Success",
+            "200 {object} SyncPage"
+          ],
+          [
+            "Failure",
+            "400 {object} map[string]string"
+          ],
+          [
+            "Failure",
+            "401 {object} map[string]string"
+          ],
+          [
+            "Failure",
+            "503 {object} map[string]string"
+          ]
+        ],
+        "source": {
+          "repository": "trainforge",
+          "path": "services/api/internal/nutrition/sync_handler.go",
+          "line": 63
+        },
+        "registrationDetected": true
+      },
+      {
         "method": "GET",
         "path": "/api/v1/health/live",
         "params": [],
@@ -4347,7 +5062,7 @@
         "source": {
           "repository": "trainforge",
           "path": "services/api/internal/platform/httpapi/server.go",
-          "line": 47
+          "line": 49
         },
         "registrationDetected": true
       },
@@ -4368,7 +5083,7 @@
         "source": {
           "repository": "trainforge",
           "path": "services/api/internal/platform/httpapi/server.go",
-          "line": 58
+          "line": 60
         },
         "registrationDetected": true
       },
@@ -4466,6 +5181,155 @@
       },
       {
         "method": "GET",
+        "path": "/api/v1/food-catalog/manifest",
+        "params": [
+          "If-None-Match header string false \"Quoted SHA-256 ETag of the signed manifest payload\""
+        ],
+        "responses": [
+          [
+            "Success",
+            "200 {object} SignedManifestEnvelope"
+          ],
+          [
+            "Success",
+            "304"
+          ],
+          [
+            "Failure",
+            "503 {object} httpapi.Problem \"Distribution is unconfigured, untrusted or inactive\""
+          ]
+        ],
+        "source": {
+          "repository": "trainforge",
+          "path": "services/api/internal/publiccatalog/files.go",
+          "line": 68
+        },
+        "registrationDetected": true
+      },
+      {
+        "method": "GET",
+        "path": "/api/v1/food-catalog/archive",
+        "params": [
+          "Range header string false \"HTTP byte range, for example bytes=0-1048575\"",
+          "If-Range header string false \"ETag or last-modified date for resumable downloads\"",
+          "If-None-Match header string false \"Previously received ETag\""
+        ],
+        "responses": [
+          [
+            "Success",
+            "200 {file} file \"Verified catalog update ZIP\""
+          ],
+          [
+            "Success",
+            "206 {file} file \"Requested ZIP byte range\""
+          ],
+          [
+            "Success",
+            "304"
+          ],
+          [
+            "Failure",
+            "416 {string} string \"HTTP range is not satisfiable\""
+          ],
+          [
+            "Failure",
+            "503 {object} httpapi.Problem \"Distribution unavailable, integrity check failed or all download slots busy\""
+          ]
+        ],
+        "source": {
+          "repository": "trainforge",
+          "path": "services/api/internal/publiccatalog/files.go",
+          "line": 86
+        },
+        "registrationDetected": true
+      },
+      {
+        "method": "GET",
+        "path": "/api/v1/food-catalog/exports/{file}",
+        "params": [
+          "file path string true \"Exact export filename declared by the signed manifest, ending in .jsonl.gz\"",
+          "Range header string false \"HTTP byte range\"",
+          "If-Range header string false \"ETag or last-modified date for resumable downloads\"",
+          "If-None-Match header string false \"Previously received export ETag\""
+        ],
+        "responses": [
+          [
+            "Success",
+            "200 {file} file \"Verified gzip JSONL source export\""
+          ],
+          [
+            "Success",
+            "206 {file} file \"Requested export byte range\""
+          ],
+          [
+            "Success",
+            "304"
+          ],
+          [
+            "Failure",
+            "404 {object} httpapi.Problem \"Export is undeclared, malformed or has query parameters\""
+          ],
+          [
+            "Failure",
+            "416 {string} string \"HTTP range is not satisfiable\""
+          ],
+          [
+            "Failure",
+            "503 {object} httpapi.Problem \"Current release unavailable, file integrity failed or download slots busy\""
+          ]
+        ],
+        "source": {
+          "repository": "trainforge",
+          "path": "services/api/internal/publiccatalog/files.go",
+          "line": 106
+        },
+        "registrationDetected": true
+      },
+      {
+        "method": "GET",
+        "path": "/api/v1/food-catalog/exports/{artifact}/{file}",
+        "params": [
+          "artifact path string true \"Lowercase 64-character SHA-256 of the signed distributed catalog artifact\" minLength(64) maxLength(64)",
+          "file path string true \"Exact export filename declared by this artifact manifest, ending in .jsonl.gz\"",
+          "Range header string false \"HTTP byte range\"",
+          "If-Range header string false \"ETag or last-modified date for resumable downloads\"",
+          "If-None-Match header string false \"Previously received export ETag\""
+        ],
+        "responses": [
+          [
+            "Success",
+            "200 {file} file \"Verified gzip JSONL source export for the requested artifact\""
+          ],
+          [
+            "Success",
+            "206 {file} file \"Requested export byte range\""
+          ],
+          [
+            "Success",
+            "304"
+          ],
+          [
+            "Failure",
+            "404 {object} httpapi.Problem \"Artifact is unknown, untrusted, mismatched or inactive, or export request is invalid\""
+          ],
+          [
+            "Failure",
+            "416 {string} string \"HTTP range is not satisfiable\""
+          ],
+          [
+            "Failure",
+            "503 {object} httpapi.Problem \"Source file unavailable, integrity check failed or download slots busy\""
+          ]
+        ],
+        "source": {
+          "repository": "trainforge",
+          "path": "services/api/internal/publiccatalog/files.go",
+          "line": 127
+        },
+        "registrationDetected": true
+      },
+      {
+        "method": "GET",
         "path": "/api/v1/me/training-configuration",
         "params": [],
         "responses": [
@@ -4541,9 +5405,11 @@
       "cmd/catalog-migrate",
       "cmd/catalog-release",
       "cmd/catalog-transition",
+      "cmd/food-maintenance",
       "cmd/food-names",
       "cmd/import-content",
       "cmd/import-food",
+      "cmd/import-food-catalog",
       "cmd/migrate",
       "cmd/privacy-maintenance",
       "cmd/privacy-restore",
@@ -4561,6 +5427,7 @@
       "internal/platform/httpapi",
       "internal/platform/postgres",
       "internal/privacy",
+      "internal/publiccatalog",
       "internal/swaggerdocs",
       "internal/trainingconfig",
       "migrations"
@@ -4604,6 +5471,10 @@
       ],
       [
         "cmd/api",
+        "internal/publiccatalog"
+      ],
+      [
+        "cmd/api",
         "internal/swaggerdocs"
       ],
       [
@@ -4635,6 +5506,10 @@
         "internal/catalogtarget"
       ],
       [
+        "cmd/food-maintenance",
+        "internal/nutrition"
+      ],
+      [
         "cmd/food-names",
         "internal/foodnamesops"
       ],
@@ -4653,6 +5528,10 @@
       [
         "cmd/import-food",
         "internal/platform/postgres"
+      ],
+      [
+        "cmd/import-food-catalog",
+        "internal/nutrition"
       ],
       [
         "cmd/migrate",
@@ -4739,6 +5618,14 @@
         "internal/platform/httpapi"
       ],
       [
+        "internal/publiccatalog",
+        "internal/nutrition"
+      ],
+      [
+        "internal/publiccatalog",
+        "internal/platform/httpapi"
+      ],
+      [
         "internal/trainingconfig",
         "internal/auth"
       ],
@@ -4760,7 +5647,10 @@
       "services/api/migrations/00010_food_name_catalog_revision.sql",
       "services/api/migrations/00011_private_food_unknown_language.sql",
       "services/api/migrations/00012_training_configuration.sql",
-      "services/api/migrations/00013_meal_groups.sql"
+      "services/api/migrations/00013_meal_groups.sql",
+      "services/api/migrations/00014_nutrition_offline.sql",
+      "services/api/migrations/00015_food_contributions.sql",
+      "services/api/migrations/00016_food_catalog_releases.sql"
     ],
     "tables": [
       {
@@ -5002,6 +5892,70 @@
           "path": "services/api/migrations/00013_meal_groups.sql",
           "line": 26
         }
+      },
+      {
+        "name": "nutrition_sync_state",
+        "source": {
+          "repository": "trainforge",
+          "path": "services/api/migrations/00014_nutrition_offline.sql",
+          "line": 3
+        }
+      },
+      {
+        "name": "nutrition_changes",
+        "source": {
+          "repository": "trainforge",
+          "path": "services/api/migrations/00014_nutrition_offline.sql",
+          "line": 8
+        }
+      },
+      {
+        "name": "nutrition_operation_receipts",
+        "source": {
+          "repository": "trainforge",
+          "path": "services/api/migrations/00014_nutrition_offline.sql",
+          "line": 18
+        }
+      },
+      {
+        "name": "food_contributions",
+        "source": {
+          "repository": "trainforge",
+          "path": "services/api/migrations/00015_food_contributions.sql",
+          "line": 2
+        }
+      },
+      {
+        "name": "food_contribution_media",
+        "source": {
+          "repository": "trainforge",
+          "path": "services/api/migrations/00015_food_contributions.sql",
+          "line": 17
+        }
+      },
+      {
+        "name": "food_catalog_releases",
+        "source": {
+          "repository": "trainforge",
+          "path": "services/api/migrations/00016_food_catalog_releases.sql",
+          "line": 4
+        }
+      },
+      {
+        "name": "food_catalog_import_progress",
+        "source": {
+          "repository": "trainforge",
+          "path": "services/api/migrations/00016_food_catalog_releases.sql",
+          "line": 14
+        }
+      },
+      {
+        "name": "food_catalog_annotations",
+        "source": {
+          "repository": "trainforge",
+          "path": "services/api/migrations/00016_food_catalog_releases.sql",
+          "line": 22
+        }
       }
     ],
     "registrations": [
@@ -5129,6 +6083,60 @@
           "repository": "trainforge",
           "path": "services/api/internal/catalogruntime/runtime.go",
           "line": 88
+        }
+      },
+      {
+        "method": "POST",
+        "path": "/api/v1/me/food-contributions",
+        "source": {
+          "repository": "trainforge",
+          "path": "services/api/internal/nutrition/contributions_handler.go",
+          "line": 17
+        }
+      },
+      {
+        "method": "GET",
+        "path": "/api/v1/me/food-contributions",
+        "source": {
+          "repository": "trainforge",
+          "path": "services/api/internal/nutrition/contributions_handler.go",
+          "line": 18
+        }
+      },
+      {
+        "method": "GET",
+        "path": "/api/v1/me/food-contributions/{id}",
+        "source": {
+          "repository": "trainforge",
+          "path": "services/api/internal/nutrition/contributions_handler.go",
+          "line": 19
+        }
+      },
+      {
+        "method": "DELETE",
+        "path": "/api/v1/me/food-contributions/{id}",
+        "source": {
+          "repository": "trainforge",
+          "path": "services/api/internal/nutrition/contributions_handler.go",
+          "line": 20
+        }
+      },
+      {
+        "method": "POST",
+        "path": "/api/v1/me/food-contributions/{id}/media",
+        "source": {
+          "repository": "trainforge",
+          "path": "services/api/internal/nutrition/contributions_handler.go",
+          "line": 21
+        }
+      },
+      {
+        "method": "GET",
+        "path": "/api/v1/me/food-contributions/{id}/media/{mediaId}",
+        "source": {
+          "repository": "trainforge",
+          "path": "services/api/internal/nutrition/contributions_handler.go",
+          "line": 22
         }
       },
       {
@@ -5277,11 +6285,38 @@
       },
       {
         "method": "GET",
+        "path": "/api/v1/me/nutrition/sync",
+        "source": {
+          "repository": "trainforge",
+          "path": "services/api/internal/nutrition/sync_handler.go",
+          "line": 15
+        }
+      },
+      {
+        "method": "GET",
+        "path": "/api/v1/me/nutrition/changes",
+        "source": {
+          "repository": "trainforge",
+          "path": "services/api/internal/nutrition/sync_handler.go",
+          "line": 16
+        }
+      },
+      {
+        "method": "POST",
+        "path": "/api/v1/me/nutrition/sync",
+        "source": {
+          "repository": "trainforge",
+          "path": "services/api/internal/nutrition/sync_handler.go",
+          "line": 17
+        }
+      },
+      {
+        "method": "GET",
         "path": "/api/v1/health/live",
         "source": {
           "repository": "trainforge",
           "path": "services/api/internal/platform/httpapi/server.go",
-          "line": 81
+          "line": 83
         }
       },
       {
@@ -5290,7 +6325,7 @@
         "source": {
           "repository": "trainforge",
           "path": "services/api/internal/platform/httpapi/server.go",
-          "line": 82
+          "line": 84
         }
       },
       {
@@ -5299,7 +6334,7 @@
         "source": {
           "repository": "trainforge",
           "path": "services/api/internal/platform/httpapi/server.go",
-          "line": 84
+          "line": 86
         }
       },
       {
@@ -5336,6 +6371,42 @@
           "repository": "trainforge",
           "path": "services/api/internal/privacy/handler.go",
           "line": 31
+        }
+      },
+      {
+        "method": "GET",
+        "path": "/api/v1/food-catalog/manifest",
+        "source": {
+          "repository": "trainforge",
+          "path": "services/api/internal/publiccatalog/files.go",
+          "line": 51
+        }
+      },
+      {
+        "method": "GET",
+        "path": "/api/v1/food-catalog/archive",
+        "source": {
+          "repository": "trainforge",
+          "path": "services/api/internal/publiccatalog/files.go",
+          "line": 52
+        }
+      },
+      {
+        "method": "GET",
+        "path": "/api/v1/food-catalog/exports/{file}",
+        "source": {
+          "repository": "trainforge",
+          "path": "services/api/internal/publiccatalog/files.go",
+          "line": 53
+        }
+      },
+      {
+        "method": "GET",
+        "path": "/api/v1/food-catalog/exports/{artifact}/{file}",
+        "source": {
+          "repository": "trainforge",
+          "path": "services/api/internal/publiccatalog/files.go",
+          "line": 54
         }
       },
       {
@@ -6325,6 +7396,321 @@
       },
       {
         "method": "GET",
+        "path": "/api/v1/food-catalog/archive",
+        "operationId": null,
+        "parameters": [
+          {
+            "type": "string",
+            "description": "HTTP byte range, for example bytes=0-1048575",
+            "name": "Range",
+            "in": "header"
+          },
+          {
+            "type": "string",
+            "description": "ETag or last-modified date for resumable downloads",
+            "name": "If-Range",
+            "in": "header"
+          },
+          {
+            "type": "string",
+            "description": "Previously received ETag",
+            "name": "If-None-Match",
+            "in": "header"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Verified catalog update ZIP",
+            "schema": {
+              "type": "file"
+            },
+            "headers": {
+              "ETag": {
+                "type": "string",
+                "description": "Quoted SHA-256 of the signed manifest payload"
+              }
+            }
+          },
+          "206": {
+            "description": "Requested ZIP byte range",
+            "schema": {
+              "type": "file"
+            },
+            "headers": {
+              "Content-Range": {
+                "type": "string",
+                "description": "Requested byte range and complete archive size"
+              },
+              "ETag": {
+                "type": "string",
+                "description": "Quoted SHA-256 of the signed manifest payload"
+              }
+            }
+          },
+          "304": {
+            "description": "Not Modified"
+          },
+          "416": {
+            "description": "HTTP range is not satisfiable",
+            "schema": {
+              "type": "string"
+            }
+          },
+          "503": {
+            "description": "Distribution unavailable, integrity check failed or all download slots busy",
+            "schema": {
+              "$ref": "#/definitions/httpapi.Problem"
+            }
+          }
+        },
+        "source": {
+          "repository": "trainforge",
+          "path": "contracts/generated/swagger-v1.json",
+          "line": 1
+        }
+      },
+      {
+        "method": "GET",
+        "path": "/api/v1/food-catalog/exports/{artifact}/{file}",
+        "operationId": null,
+        "parameters": [
+          {
+            "maxLength": 64,
+            "minLength": 64,
+            "type": "string",
+            "description": "Lowercase 64-character SHA-256 of the signed distributed catalog artifact",
+            "name": "artifact",
+            "in": "path",
+            "required": true
+          },
+          {
+            "type": "string",
+            "description": "Exact export filename declared by this artifact manifest, ending in .jsonl.gz",
+            "name": "file",
+            "in": "path",
+            "required": true
+          },
+          {
+            "type": "string",
+            "description": "HTTP byte range",
+            "name": "Range",
+            "in": "header"
+          },
+          {
+            "type": "string",
+            "description": "ETag or last-modified date for resumable downloads",
+            "name": "If-Range",
+            "in": "header"
+          },
+          {
+            "type": "string",
+            "description": "Previously received export ETag",
+            "name": "If-None-Match",
+            "in": "header"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Verified gzip JSONL source export for the requested artifact",
+            "schema": {
+              "type": "file"
+            },
+            "headers": {
+              "ETag": {
+                "type": "string",
+                "description": "Quoted SHA-256 of this source export"
+              }
+            }
+          },
+          "206": {
+            "description": "Requested export byte range",
+            "schema": {
+              "type": "file"
+            },
+            "headers": {
+              "Content-Range": {
+                "type": "string",
+                "description": "Requested byte range and complete export size"
+              },
+              "ETag": {
+                "type": "string",
+                "description": "Quoted SHA-256 of this source export"
+              }
+            }
+          },
+          "304": {
+            "description": "Not Modified"
+          },
+          "404": {
+            "description": "Artifact is unknown, untrusted, mismatched or inactive, or export request is invalid",
+            "schema": {
+              "$ref": "#/definitions/httpapi.Problem"
+            }
+          },
+          "416": {
+            "description": "HTTP range is not satisfiable",
+            "schema": {
+              "type": "string"
+            }
+          },
+          "503": {
+            "description": "Source file unavailable, integrity check failed or download slots busy",
+            "schema": {
+              "$ref": "#/definitions/httpapi.Problem"
+            }
+          }
+        },
+        "source": {
+          "repository": "trainforge",
+          "path": "contracts/generated/swagger-v1.json",
+          "line": 1
+        }
+      },
+      {
+        "method": "GET",
+        "path": "/api/v1/food-catalog/exports/{file}",
+        "operationId": null,
+        "parameters": [
+          {
+            "type": "string",
+            "description": "Exact export filename declared by the signed manifest, ending in .jsonl.gz",
+            "name": "file",
+            "in": "path",
+            "required": true
+          },
+          {
+            "type": "string",
+            "description": "HTTP byte range",
+            "name": "Range",
+            "in": "header"
+          },
+          {
+            "type": "string",
+            "description": "ETag or last-modified date for resumable downloads",
+            "name": "If-Range",
+            "in": "header"
+          },
+          {
+            "type": "string",
+            "description": "Previously received export ETag",
+            "name": "If-None-Match",
+            "in": "header"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Verified gzip JSONL source export",
+            "schema": {
+              "type": "file"
+            },
+            "headers": {
+              "ETag": {
+                "type": "string",
+                "description": "Quoted SHA-256 of this source export"
+              }
+            }
+          },
+          "206": {
+            "description": "Requested export byte range",
+            "schema": {
+              "type": "file"
+            },
+            "headers": {
+              "Content-Range": {
+                "type": "string",
+                "description": "Requested byte range and complete export size"
+              },
+              "ETag": {
+                "type": "string",
+                "description": "Quoted SHA-256 of this source export"
+              }
+            }
+          },
+          "304": {
+            "description": "Not Modified"
+          },
+          "404": {
+            "description": "Export is undeclared, malformed or has query parameters",
+            "schema": {
+              "$ref": "#/definitions/httpapi.Problem"
+            }
+          },
+          "416": {
+            "description": "HTTP range is not satisfiable",
+            "schema": {
+              "type": "string"
+            }
+          },
+          "503": {
+            "description": "Current release unavailable, file integrity failed or download slots busy",
+            "schema": {
+              "$ref": "#/definitions/httpapi.Problem"
+            }
+          }
+        },
+        "source": {
+          "repository": "trainforge",
+          "path": "contracts/generated/swagger-v1.json",
+          "line": 1
+        }
+      },
+      {
+        "method": "GET",
+        "path": "/api/v1/food-catalog/manifest",
+        "operationId": null,
+        "parameters": [
+          {
+            "type": "string",
+            "description": "Quoted SHA-256 ETag of the signed manifest payload",
+            "name": "If-None-Match",
+            "in": "header"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/publiccatalog.SignedManifestEnvelope"
+            },
+            "headers": {
+              "Cache-Control": {
+                "type": "string",
+                "description": "public, max-age=300"
+              },
+              "ETag": {
+                "type": "string",
+                "description": "Quoted SHA-256 of the signed manifest payload"
+              }
+            }
+          },
+          "304": {
+            "description": "Not Modified",
+            "headers": {
+              "Cache-Control": {
+                "type": "string",
+                "description": "public, max-age=300"
+              },
+              "ETag": {
+                "type": "string",
+                "description": "Quoted SHA-256 of the signed manifest payload"
+              }
+            }
+          },
+          "503": {
+            "description": "Distribution is unconfigured, untrusted or inactive",
+            "schema": {
+              "$ref": "#/definitions/httpapi.Problem"
+            }
+          }
+        },
+        "source": {
+          "repository": "trainforge",
+          "path": "contracts/generated/swagger-v1.json",
+          "line": 1
+        }
+      },
+      {
+        "method": "GET",
         "path": "/api/v1/foods",
         "operationId": null,
         "parameters": [
@@ -7107,6 +8493,218 @@
             "description": "Service Unavailable",
             "schema": {
               "$ref": "#/definitions/httpapi.Problem"
+            }
+          }
+        },
+        "source": {
+          "repository": "trainforge",
+          "path": "contracts/generated/swagger-v1.json",
+          "line": 1
+        }
+      },
+      {
+        "method": "GET",
+        "path": "/api/v1/me/food-contributions",
+        "operationId": null,
+        "parameters": [
+          {
+            "type": "string",
+            "description": "Account-bound cursor",
+            "name": "cursor",
+            "in": "query"
+          },
+          {
+            "type": "integer",
+            "description": "Page size 1-100",
+            "name": "limit",
+            "in": "query"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/nutrition.ContributionPage"
+            }
+          }
+        },
+        "source": {
+          "repository": "trainforge",
+          "path": "contracts/generated/swagger-v1.json",
+          "line": 1
+        }
+      },
+      {
+        "method": "POST",
+        "path": "/api/v1/me/food-contributions",
+        "operationId": null,
+        "parameters": [
+          {
+            "description": "Explicit CC0 consent and food fields; no meal or account payload",
+            "name": "body",
+            "in": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/nutrition.ContributionInput"
+            }
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Created",
+            "schema": {
+              "$ref": "#/definitions/nutrition.Contribution"
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "schema": {
+              "type": "object",
+              "additionalProperties": {
+                "type": "string"
+              }
+            }
+          },
+          "401": {
+            "description": "Unauthorized",
+            "schema": {
+              "type": "object",
+              "additionalProperties": {
+                "type": "string"
+              }
+            }
+          },
+          "409": {
+            "description": "Conflict",
+            "schema": {
+              "type": "object",
+              "additionalProperties": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "source": {
+          "repository": "trainforge",
+          "path": "contracts/generated/swagger-v1.json",
+          "line": 1
+        }
+      },
+      {
+        "method": "GET",
+        "path": "/api/v1/me/food-contributions/{id}",
+        "operationId": null,
+        "parameters": [
+          {
+            "type": "string",
+            "description": "Contribution UUID",
+            "name": "id",
+            "in": "path",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/nutrition.Contribution"
+            }
+          }
+        },
+        "source": {
+          "repository": "trainforge",
+          "path": "contracts/generated/swagger-v1.json",
+          "line": 1
+        }
+      },
+      {
+        "method": "DELETE",
+        "path": "/api/v1/me/food-contributions/{id}",
+        "operationId": null,
+        "parameters": [
+          {
+            "type": "string",
+            "description": "Contribution UUID",
+            "name": "id",
+            "in": "path",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/nutrition.Contribution"
+            }
+          },
+          "409": {
+            "description": "Conflict",
+            "schema": {
+              "type": "object",
+              "additionalProperties": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "source": {
+          "repository": "trainforge",
+          "path": "contracts/generated/swagger-v1.json",
+          "line": 1
+        }
+      },
+      {
+        "method": "POST",
+        "path": "/api/v1/me/food-contributions/{id}/media",
+        "operationId": null,
+        "parameters": [
+          {
+            "type": "string",
+            "description": "Contribution UUID",
+            "name": "id",
+            "in": "path",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/nutrition.Contribution"
+            }
+          }
+        },
+        "source": {
+          "repository": "trainforge",
+          "path": "contracts/generated/swagger-v1.json",
+          "line": 1
+        }
+      },
+      {
+        "method": "GET",
+        "path": "/api/v1/me/food-contributions/{id}/media/{mediaId}",
+        "operationId": null,
+        "parameters": [
+          {
+            "type": "string",
+            "description": "Contribution UUID",
+            "name": "id",
+            "in": "path",
+            "required": true
+          },
+          {
+            "type": "string",
+            "description": "Media UUID",
+            "name": "mediaId",
+            "in": "path",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "type": "file"
             }
           }
         },
@@ -8133,6 +9731,180 @@
             "description": "Service Unavailable",
             "schema": {
               "$ref": "#/definitions/httpapi.Problem"
+            }
+          }
+        },
+        "source": {
+          "repository": "trainforge",
+          "path": "contracts/generated/swagger-v1.json",
+          "line": 1
+        }
+      },
+      {
+        "method": "GET",
+        "path": "/api/v1/me/nutrition/changes",
+        "operationId": null,
+        "parameters": [
+          {
+            "type": "string",
+            "description": "Opaque account-bound checkpoint",
+            "name": "cursor",
+            "in": "query"
+          },
+          {
+            "type": "integer",
+            "description": "Page size 1-200, default 100",
+            "name": "limit",
+            "in": "query"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/nutrition.SyncPage"
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "schema": {
+              "type": "object",
+              "additionalProperties": {
+                "type": "string"
+              }
+            }
+          },
+          "401": {
+            "description": "Unauthorized",
+            "schema": {
+              "type": "object",
+              "additionalProperties": {
+                "type": "string"
+              }
+            }
+          },
+          "503": {
+            "description": "Service Unavailable",
+            "schema": {
+              "type": "object",
+              "additionalProperties": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "source": {
+          "repository": "trainforge",
+          "path": "contracts/generated/swagger-v1.json",
+          "line": 1
+        }
+      },
+      {
+        "method": "GET",
+        "path": "/api/v1/me/nutrition/sync",
+        "operationId": null,
+        "parameters": [
+          {
+            "type": "string",
+            "description": "Opaque account-bound checkpoint",
+            "name": "cursor",
+            "in": "query"
+          },
+          {
+            "type": "integer",
+            "description": "Page size 1-200, default 100",
+            "name": "limit",
+            "in": "query"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/nutrition.SyncPage"
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "schema": {
+              "type": "object",
+              "additionalProperties": {
+                "type": "string"
+              }
+            }
+          },
+          "401": {
+            "description": "Unauthorized",
+            "schema": {
+              "type": "object",
+              "additionalProperties": {
+                "type": "string"
+              }
+            }
+          },
+          "503": {
+            "description": "Service Unavailable",
+            "schema": {
+              "type": "object",
+              "additionalProperties": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "source": {
+          "repository": "trainforge",
+          "path": "contracts/generated/swagger-v1.json",
+          "line": 1
+        }
+      },
+      {
+        "method": "POST",
+        "path": "/api/v1/me/nutrition/sync",
+        "operationId": null,
+        "parameters": [
+          {
+            "description": "Stable operation IDs, dependencies and legacy domain bodies",
+            "name": "body",
+            "in": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/nutrition.SyncPush"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/nutrition.SyncPushResult"
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "schema": {
+              "type": "object",
+              "additionalProperties": {
+                "type": "string"
+              }
+            }
+          },
+          "401": {
+            "description": "Unauthorized",
+            "schema": {
+              "type": "object",
+              "additionalProperties": {
+                "type": "string"
+              }
+            }
+          },
+          "503": {
+            "description": "Service Unavailable",
+            "schema": {
+              "type": "object",
+              "additionalProperties": {
+                "type": "string"
+              }
             }
           }
         },

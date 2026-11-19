@@ -1,6 +1,6 @@
 # Validação e entrega: como interpretar e testar o estado atual
 
-Consolidado em **17/11/2026**. O APK debug **0.4.7+29** foi compilado, teve assinatura/hash e correspondência às fontes conferidos; **não foi instalado nem publicado**. O último checkpoint instalado documentado foi0.4.6+28. Inspecionar o aparelho antes de agir: um relato antigo não descreve a tela atual.
+Atualizado em **18/11/2026**. Alimentação offline está em integração: [handoff com próximo comando](handoff.md), [cliente](food-offline-client-verification-20261118.json) e [SQL](offline-nutrition-sql-verification.json). O APK0.5.0+30 ainda não foi gerado ou validado nativamente. No checkpoint anterior, O APK debug **0.4.7+29** foi compilado, teve assinatura/hash e correspondência às fontes conferidos; **não foi instalado nem publicado**. O último checkpoint instalado documentado foi0.4.6+28. Inspecionar o aparelho antes de agir: um relato antigo não descreve a tela atual.
 
 <a id="android"></a>
 ## Avaliação Android local
@@ -33,6 +33,8 @@ No checkpoint recente, testes cobriram formulários320px/texto2x, pt-BR/pt-PT/in
 |---|---|---|
 | Flutter | `flutter test --no-pub`, `flutter analyze --no-pub` | Contratos, controllers/widgets e análise; não comprova backend real por si só |
 | Go | `tools/go-api.ps1 test ./...`, `tools/go-api.ps1 vet ./...` | Unidade, handlers e análise; SQL pode ficar explicitamente skip sem ambiente isolado |
+| SQL alimentar offline | `python tools/verificar_alimentacao_offline_local.py` | Schema16 descartável, sync/contribuições/catálogo/refeições/privacidade, preservação da base entregue |
+| Catálogo e APK | `python tools/food_catalog_build.py --verify`, `python tools/verificar_catalogo_apk.py --apk CAMINHO` | Assinatura/hash/cobertura, bytes presentes no APK e SQLCipher por ABI; não substitui execução nativa |
 | SQL de atividade | `python tools/verificar_atividade_local.py` | Banco descartável, credenciais reais do runtime local, concorrência e preservação da base entregue |
 | CI SQL | `tools/sql_ci.py`, workflowGo | Bancos descartáveis em runner provisionado; não executar como migração da base pessoal |
 | Documentação | `python tools/gerar_documentacao.py --write --check` | Inventário/backlog reproduzíveis e links da documentação |
@@ -49,4 +51,4 @@ Usar a [matriz completa](matriz-cenarios.md), registrando pré-condição, açã
 
 Os dados humanos e a refeição de teste existentes são preservados. Testes destrutivos usam fixtures descartáveis ou uma decisão específica do titular. Uma fonte pública, uma tabela, um HTTP200 ou uma prévia visual não constituem prática aprovada.
 
-**Gates restantes:** programa próprio com revisão verificável; seleção/agenda; ciclo real de execução; fotos, composição e histórico/análise; fila offline privada; papel master; acessibilidade e carga; HTTPS/release/OAuth de distribuição; iOS. Critérios e dependências exatos permanecem no [backlog](backlog.json).
+**Gates restantes:** programa próprio com revisão verificável; seleção/agenda; ciclo real de execução; fotos, composição e histórico/análise; offline de atividade e aceite nativo alimentar; papel master; acessibilidade e carga; HTTPS/release/OAuth de distribuição; iOS. Critérios e dependências exatos permanecem no [backlog](backlog.json).

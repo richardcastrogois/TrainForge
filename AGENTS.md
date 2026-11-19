@@ -1,12 +1,18 @@
 # TrainForge — instruções para agentes
 
-Estado documental: **17/11/2026**. Checkout ativo `C:/dev/TrainForge/trainforge`; o diretório pai não é este repositório. A solicitação atual do autor prevalece sobre snapshots históricos.
+Estado documental: **18/11/2026**. Checkout ativo `C:/dev/TrainForge/trainforge`; o diretório pai não é este repositório. A solicitação atual do autor prevalece sobre snapshots históricos.
 
 ## Primeiro contexto
 
 Ler `docs/README.md`, `docs/execucao/v1/handoff.md`, `docs/execucao/v1/escopo.md` e a história/dependências no `backlog.json`. Para código, `docs/arquitetura/README.md`; para comandos/ensino pessoal, `docs/aprendizado/README.md`. Pesquisas e marcos ficam em `docs/conteudo/README.md` e `docs/historico/README.md`.
 
 ## Estado e prioridade
+
+Pedido mais recente do autor: finalizar a frente de alimentação SEM depender do Claude e SEM gerar APK agora. Claude ainda edita inicialização/intro/logo/splash e testes; preservar e NÃO commitar suas alterações. Build/testes integrados Android ficam para quando a outra frente terminar. Validar dados/Go/SQL/testes automatizados alimentares agora; se commitar, isolar somente os paths/hunks próprios e os derivados correspondentes.
+
+Pedido do autor em18/11: ao concluir CADA etapa alimentar, atualizar `docs/execucao/v1/food-offline-progress.json` e o ponto atual do handoff antes de iniciar a próxima. Registrar evidência/comando e limites; não deixar o estado só na conversa.
+
+Prioridade desta rodada: alimentação offline ampla, autorizada, em implementação. Ler o checkpoint exato em `docs/execucao/v1/handoff.md` antes de qualquer pesquisa/rebuild: downloads TACO/USDA/OFF já existem, recuperação do catálogo está avançada e não deve recomeçar do zero. Flutter358 completos,16 dirigidos após correção final e análise0 passaram; SQL descartável e ativação local13→16/38tabelas aprovados, com30tabelas preexistentes inalteradas. Catálogo6702350 em finish/gzip (PID53824); APK0.5.0+30 e importação global ainda pendentes. O autor pediu conservar o ponto exato após limites e concentrar o trabalho em finalizar, sem novos refinamentos. Os números abaixo descrevem o checkpoint funcional anterior.
 
 SDK mínimo Go **1.27.4**, conferido em17/11 após o achado GO-2026-6859 no CI. Helpers preferem `.tools/go-1.27.4/`; o SDK anterior foi preservado. JSON de testes Go usa stdout separado de stderr; não ignorar linhas inválidas para esconder falhas de evidência.
 

@@ -1,0 +1,62 @@
+{
+  "contract": "trainforge.food-catalog-local-import/1",
+  "importedAt": "2026-11-19T06:59:48.725115+00:00",
+  "verifiedAt": "2026-11-19T07:08:27.646309+00:00",
+  "artifactSha256": "08abd86fa9abd2d4e3e92d326c5f6bf398c334613aebaae272d3678b9503207c",
+  "catalogVersion": "042e99d9fcd9d474cf53d20ddd2f58a5e3e7d9d4cb161d872712357b098c0562",
+  "rows": 6702350,
+  "linkedVersions": 6702350,
+  "releaseStatus": "active",
+  "operations": {
+    "stage": {
+      "result": {
+        "artifactSha256": "08abd86fa9abd2d4e3e92d326c5f6bf398c334613aebaae272d3678b9503207c",
+        "version": "042e99d9fcd9d474cf53d20ddd2f58a5e3e7d9d4cb161d872712357b098c0562",
+        "expectedRows": 6702350,
+        "stagedRows": 6702350,
+        "active": false
+      },
+      "secondsFromLogFileTimes": 16567,
+      "log": ".local/food-catalog/import-stage-20261119T022305Z.log"
+    },
+    "activate": {
+      "result": {
+        "artifactSha256": "08abd86fa9abd2d4e3e92d326c5f6bf398c334613aebaae272d3678b9503207c",
+        "version": "042e99d9fcd9d474cf53d20ddd2f58a5e3e7d9d4cb161d872712357b098c0562",
+        "expectedRows": 6702350,
+        "stagedRows": 6702350,
+        "active": true
+      },
+      "secondsFromLogFileTimes": 3,
+      "log": ".local/food-catalog/import-activate-20261119T022305Z.log"
+    }
+  },
+  "resumedFromRows": 3000,
+  "nonCatalogTablesCompared": 32,
+  "nonCatalogTablesUnchanged": true,
+  "preexistingCatalogRowsKept": {
+    "trainforge_v1.sources": 14,
+    "trainforge_v1.food_import_batches": 2,
+    "trainforge_v1.food_catalog_releases": 0,
+    "trainforge_v1.food_catalog_import_progress": 0,
+    "trainforge_v1.food_versions": 6369,
+    "trainforge_v1.food_batch_versions": 9369,
+    "trainforge_v1.food_catalog_annotations": 3000
+  },
+  "snapshotBeforeSha256": "5d64fbf65bb2c477cfc39d5b42592f9220cb9d427d3116e83ef7cc5e557c3802",
+  "checkpointRestoredDatabaseBytes": 76410003,
+  "databaseBytesAfter": 37696539795,
+  "checkpointRelativePath": ".local/checkpoints/food-catalog-before-import-20261119T022305Z-d5d5141c/database.dump",
+  "checkpointSha256": "a89658bfedd4d865c1e6628eb750e26cf903e4a2690f5cf19f57ec32d88405ba",
+  "checkpointBytes": 15930782,
+  "exportsRelativePath": ".local/food-catalog/exports/08abd86fa9abd2d4e3e92d326c5f6bf398c334613aebaae272d3678b9503207c",
+  "apiRemainedStopped": true,
+  "verification": "The original run staged and activated, then its final comparison hit the 35 s psql timeout; the preservation comparison was completed from the pre-import checkpoint restored into a disposable database that was dropped afterwards.",
+  "limits": [
+    "Checkpoint restored only into a disposable database, never over the delivered one.",
+    "Import does not establish native, sync or human acceptance."
+  ],
+  "postgresWasRunning": false,
+  "clusterRunningStatePreserved": true,
+  "disposableDatabaseDropped": true
+}

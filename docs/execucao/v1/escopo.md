@@ -1,6 +1,6 @@
 # Produto acordado e prioridades da V1
 
-Consolidado em **17/11/2026**. O TrainForge é um produto móvel Android/iOS para treino, alimentação e acompanhamento, com prioridade a idosos e cuidadores como praticantes, em casa, praça/parque, academia e outros contextos pesquisados. [Visão R01–R18](../../planejamento/visao-produto.md) conserva os requisitos; [backlog](backlog.json) contém histórias e critérios. A faculdade é uma apresentação do trabalho, não o limite comercial do produto.
+Consolidado em **18/11/2026**. O TrainForge é um produto móvel Android/iOS para treino, alimentação e acompanhamento, com prioridade a idosos e cuidadores como praticantes, em casa, praça/parque, academia e outros contextos pesquisados. [Visão R01–R18](../../planejamento/visao-produto.md) conserva os requisitos; [backlog](backlog.json) contém histórias e critérios. A faculdade é uma apresentação do trabalho, não o limite comercial do produto.
 
 <a id="decisoes"></a>
 ## Decisões do autor e consequências
@@ -14,6 +14,7 @@ Consolidado em **17/11/2026**. O TrainForge é um produto móvel Android/iOS par
 | Q5 —25/10 | Etapas curtas de configuração com revisão final; nome traduzido quando revisado, original/fonte nos detalhes. | Preservar respostas ao voltar; quatro idiomas naUI não equivalem a cobertura editorial integral. |
 | Q6 —25/10 | Dados particulares excluíveis pelo titular ou pelo master do autor, com permissão real no servidor; avaliar todos os cenários. | Master revogável/auditável é uma história pendente, sem bypass por e-mail/GitHub. Não presumir participantes ou autorização para apagar dados reais. |
 | 16/11 | Incorporar comportamentos úteis com implementação própria, mantendoFlutter/Go/PostgreSQL; sem web, alimentação como foco desta rodada ou cópiaAGPL/mídia com novas obrigações. | Avançar execução sem reescrever a base, criar treinos fictícios ou comprar mídia por inferência. |
+| 17–18/11 | Catálogo alimentar amplo completo no APK; primeiro login online e alimentação offline durável com sincronização própria; contribuições opcionais com consentimento e revisão. Open Food Facts/ODbL aceito. | Ampliar fontes sem APIs de fornecedores no cliente; medir tamanho real, preservar dados pessoais e publicar versões do catálogo no servidor antes de distribuí-las. A prioridade atual de alimentação substitui a rodada anterior. |
 
 As perguntas e respostas originais estão em `docs/execucao/v1/decisoes-piloto.md` no [acervo histórico](../../historico/README.md). A organização acima reúne a decisão final, sem tratar cada proposta anterior como vigente.
 
@@ -29,7 +30,7 @@ As perguntas e respostas originais estão em `docs/execucao/v1/decisoes-piloto.m
 <a id="prioridades"></a>
 ## O que vem antes do quê
 
-O JSON do backlog é a fonte única de status/dependências: **19 done,6 doing,24 todo** no checkpoint funcional. A limpeza documental não encerra histórias. A próxima funcional é **V1-015**, condicionada a um primeiro programa próprio com instruções, dose e revisão verificáveis, seguido de seleção/adesão e agenda. Execução017/023 já tem motor/API/UI, sem conteúdo liberado para completar o ciclo.
+O JSON do backlog é a fonte única de status/dependências: **18 done, 8 doing, 23 todo** em 18/11. Próxima: **V1-019**, concluir o catálogo global e a alimentação offline autorizados nesta rodada. O fechamento anterior Ciqual/CoFID continua como evidência histórica. V1-015/016 e execução017/023 dependem do primeiro programa próprio com instruções, dose e revisão verificáveis; o catálogo alimentar não libera prática de treino.
 
 Trabalho independente de conteúdo pode continuar pelos gates de qualidade, privacidade e operação. Fotos042, composição044, refeições045, histórico/análise046, offline026, master049, acessibilidade027 e entrega035 têm critérios próprios; não são substituídos por uma tela, uma tabela ou documentação.
 

@@ -1,0 +1,319 @@
+{
+  "contract": "trainforge.food-catalog-exports-verification/1",
+  "attemptCount": 4,
+  "startedAtUtc": "2026-11-19T00:00:34.469785+00:00",
+  "completedAtUtc": "2026-11-19T01:08:14.507656+00:00",
+  "status": "passed",
+  "passed": true,
+  "operation": "verify",
+  "goExitCode": 0,
+  "durationSeconds": 377,
+  "expectedRows": 6702350,
+  "verifiedRows": 6702350,
+  "sourceCount": 13,
+  "exports": [
+    {
+      "file": "AL-CIQUAL-2025.jsonl.gz",
+      "sourceId": "AL-CIQUAL-2025",
+      "sha256": "5acb7b586f6ab884daef1e55900026043b5d1eb514593e8096536a788022189d",
+      "bytes": 14203731,
+      "rows": 3484,
+      "license": "Licence Ouverte Etalab 2.0"
+    },
+    {
+      "file": "AL-COFID-2021.jsonl.gz",
+      "sourceId": "AL-COFID-2021",
+      "sha256": "9b2f5413ac5a1d91beb04da56764fecd9f3847204a508660fb0489a95018506d",
+      "bytes": 15990933,
+      "rows": 2885,
+      "license": "Open Government Licence v3.0"
+    },
+    {
+      "file": "AL-OFF.jsonl.gz",
+      "sourceId": "AL-OFF",
+      "sha256": "0663df9430e1db49eccba2cb86cc6d5a2ef27a15402a0a543f9a596b2d4da418",
+      "bytes": 2324897008,
+      "rows": 4570308,
+      "license": "ODbL 1.0 / DbCL 1.0"
+    },
+    {
+      "file": "AL-TACO.jsonl.gz",
+      "sourceId": "AL-TACO",
+      "sha256": "8cfd4a448d8175acb40b3977da4e82b8edf99c783cd76ab66b842b02d85acb7a",
+      "bytes": 701562,
+      "rows": 597,
+      "license": "Reprodu\u00e7\u00e3o permitida com cita\u00e7\u00e3o da fonte"
+    },
+    {
+      "file": "AL-USDA-AGRICULTURAL_ACQUISITION.jsonl.gz",
+      "sourceId": "AL-USDA-AGRICULTURAL_ACQUISITION",
+      "sha256": "380f0c5e1ed0afc649329c44dbf37cb0042f6f832f3cd7c76d5e518a0e29bbb4",
+      "bytes": 432605,
+      "rows": 810,
+      "license": "CC0 1.0 / Public domain"
+    },
+    {
+      "file": "AL-USDA-BRANDED.jsonl.gz",
+      "sourceId": "AL-USDA-BRANDED",
+      "sha256": "bae83801b3e614e7e9e91b0a1be1915dfcca73fac292f0b4e7aeaf2d8b6250a9",
+      "bytes": 1090641751,
+      "rows": 2010211,
+      "license": "CC0 1.0 / Public domain"
+    },
+    {
+      "file": "AL-USDA-EXPERIMENTAL.jsonl.gz",
+      "sourceId": "AL-USDA-EXPERIMENTAL",
+      "sha256": "6ccce9289e91608638bdaab1ce4b8ea10d6f98d81937b2d6ea8b9e54346a2a25",
+      "bytes": 20345,
+      "rows": 116,
+      "license": "CC0 1.0 / Public domain"
+    },
+    {
+      "file": "AL-USDA-FNDDS.jsonl.gz",
+      "sourceId": "AL-USDA-FNDDS",
+      "sha256": "003cf28630855bf902d1f28ed8bb464935a6b8f7ce7df18e47c750d6e7e1133a",
+      "bytes": 10256649,
+      "rows": 5432,
+      "license": "CC0 1.0 / Public domain"
+    },
+    {
+      "file": "AL-USDA-FOUNDATION.jsonl.gz",
+      "sourceId": "AL-USDA-FOUNDATION",
+      "sha256": "4547178788d30e8ed3cf1ea701ee6dcf11527903481f6a66781e935582eba1a0",
+      "bytes": 848886,
+      "rows": 498,
+      "license": "CC0 1.0 / Public domain"
+    },
+    {
+      "file": "AL-USDA-MARKET_ACQUISTION.jsonl.gz",
+      "sourceId": "AL-USDA-MARKET_ACQUISTION",
+      "sha256": "8200d32148c4c6174cda1495eaa5f12b0fcd3cf12b309b3b0de14715051f6645",
+      "bytes": 1319816,
+      "rows": 7607,
+      "license": "CC0 1.0 / Public domain"
+    },
+    {
+      "file": "AL-USDA-SAMPLE_FOOD.jsonl.gz",
+      "sourceId": "AL-USDA-SAMPLE_FOOD",
+      "sha256": "b4a1222b6d1a9416bf3739c794168bcf1ae47881f93169288944adce2d7abfd4",
+      "bytes": 419759,
+      "rows": 4109,
+      "license": "CC0 1.0 / Public domain"
+    },
+    {
+      "file": "AL-USDA-SR-LEGACY.jsonl.gz",
+      "sourceId": "AL-USDA-SR-LEGACY",
+      "sha256": "864703936f2eb1a343ec1cf4a6cea9d30477a4c3c242479c3b18f6ee25785347",
+      "bytes": 20491420,
+      "rows": 7793,
+      "license": "CC0 1.0 / Public domain"
+    },
+    {
+      "file": "AL-USDA-SUB_SAMPLE_FOOD.jsonl.gz",
+      "sourceId": "AL-USDA-SUB_SAMPLE_FOOD",
+      "sha256": "83d531c651c9ea43ad61a67c5dae038416c59a9c77fb8a11879211ac9f08aa92",
+      "bytes": 13066966,
+      "rows": 88500,
+      "license": "CC0 1.0 / Public domain"
+    }
+  ],
+  "exportIdentitySha256": "ded6bfe926ac2a3e3f41d6532140b901c9ccd328c36dfe42f4fdad8c2ab95916",
+  "exportInputsUnchanged": true,
+  "scope": "normalized-exports-only-independent-of-sqlite-physical-layout",
+  "initialCatalogVersion": "042e99d9fcd9d474cf53d20ddd2f58a5e3e7d9d4cb161d872712357b098c0562",
+  "initialDistributionArtifactSha256": "835398a38b93e9fde4a51d173b288d710436592cc81f1462b4152812fa8c2a2a",
+  "verifierResult": null,
+  "capturedManifestSha256": "1a3cb2784e55815d86307c3aff5baa67e0ed635055ae815be7a66420ae2d1527",
+  "capturedTrustSha256": "e19264f315131f619398f08034589ed4e12df3b1471f3220d1171c0670f7d389",
+  "manifestChangedDuringVerification": false,
+  "sdkOnlyEnvironment": true,
+  "databaseEnvironmentInherited": false,
+  "databaseAccessed": false,
+  "databaseWrites": 0,
+  "globalCatalogImported": false,
+  "rawValuesPublished": false,
+  "processMemorySettings": {
+    "GOMEMLIMIT": "256MiB",
+    "GOGC": "50"
+  },
+  "verifierSourceSha256": {
+    "services/api/cmd/import-food-catalog/main.go": "d3a447dd26badd333e2e96533debc2ba89c35a96ca8a821621a48777770340d7",
+    "services/api/internal/nutrition/catalog_bundle.go": "a1752137611abe1ff59370e0afb62ca2b2af6714ab4f061ed386d1a5a741bf92",
+    "services/api/internal/nutrition/catalog_import.go": "e470a1dc54a8555a143b0fe50e9fad3119aa521b4ac5af09260d97d24c8ad85f",
+    "services/api/internal/nutrition/food.go": "530b7bc3406d05180b9ae873f9cf33c8b03b2f7a31ec1d52b268405d78787c20",
+    "services/api/internal/nutrition/canonical.go": "4f7a83752fbb0199a8f2c0091a6932419ecb729c9b004a23d489fce38723719b",
+    "services/api/internal/nutrition/entries.go": "123017705438a43916da5c2b7093285f2822be4b43466385c9fb3d94ee0289b7",
+    "services/api/internal/nutrition/meals_create.go": "804e14baf211ca7e4520ba1674dac43500cff2f68d9d34d0b47d6b4fda17e140"
+  },
+  "privateEvidenceDirectory": ".local/food-catalog/go-exports-verification-attempt3-20261119T000034467380Z",
+  "stdoutSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "stderrSha256": "0463deabc3391434de1cb178956153a1487255467a8195dbd92a83be040d64e2",
+  "attempts": [
+    {
+      "attempt": 1,
+      "status": "failed",
+      "goExitCode": 1,
+      "durationSeconds": 7.766,
+      "privateEvidenceDirectory": ".local/food-catalog/go-exports-verification-20261118T233826889683Z",
+      "diagnosis": {
+        "sourceId": "AL-CIQUAL-2025",
+        "exportFile": "AL-CIQUAL-2025.jsonl.gz",
+        "exportLine": 4,
+        "sourceFoodId": "10002",
+        "field": "nameOriginal",
+        "goValidation": "CatalogRow.validate -> textValid",
+        "cause": "The approved original name contains U+000A at rune offset43; the generic user-input validator rejects all Unicode control characters.",
+        "nameUTF8Bytes": 68,
+        "controlCodepoints": [
+          {
+            "offset": 43,
+            "codepoint": "U+000A"
+          }
+        ],
+        "approvedOriginalSource": "content/local/food-approved-v1.jsonl",
+        "approvedOriginalLine": 4,
+        "originalComparison": {
+          "nameOriginalMatchesApprovedSource": true,
+          "foodIdMatchesApprovedSource": true,
+          "versionIdMatchesApprovedOriginalLineSha256": true
+        },
+        "allOtherCheckedRowSectionsPassed": true,
+        "privateBoundedDiagnostic": ".local/food-catalog/go-exports-verification-20261118T233826889683Z/diagnostic.metadata.json",
+        "proposal": "Introduce a source-name validator that preserves UTF-8 and bounded original text, allowing documented newline/carriage-return/tab whitespace. Keep private-input textValid unchanged. Add a regression fixture for this exact original row. Do not rewrite food IDs, versions, names or exports.",
+        "globalVerificationRepeated": false,
+        "dataChanged": false,
+        "temporaryDiagnosticGoSourceRemoved": true
+      },
+      "receiptSha256": "9463ba43654e7fe8baac9926f3610316d9c0e836702c1c4b8bc2ab5e8ac0fac6"
+    },
+    {
+      "attempt": 2,
+      "status": "failed",
+      "goExitCode": 1,
+      "durationSeconds": 39.047,
+      "privateEvidenceDirectory": ".local/food-catalog/go-exports-verification-attempt2-20261118T234815007309Z",
+      "change": "Source-name-only documentary whitespace compatibility; original data and exports unchanged.",
+      "diagnosis": {
+        "sourceId": "AL-OFF",
+        "exportFile": "AL-OFF.jsonl.gz",
+        "exportLine": 15,
+        "sourceFoodId": "0000111301201",
+        "field": "portions[0].quantity",
+        "goValidation": "CatalogRow.validate -> validFoodPortion -> quantity/plainDecimal",
+        "cause": "The original explicit metric serving has15 fractional digits; the shared user-input regex permits at most6.",
+        "fractionalDigits": 15,
+        "maxPrivateFractionalDigits": 6,
+        "rawSource": ".local/food-catalog/raw/off-products.csv.gz",
+        "rawLogicalRow": 15,
+        "rawServingLabelAndDecimalPreserved": true,
+        "exportDataChanged": false,
+        "completedSourceExportsBeforeFailure": [
+          {
+            "sourceId": "AL-CIQUAL-2025",
+            "rows": 3484,
+            "sha256": "5acb7b586f6ab884daef1e55900026043b5d1eb514593e8096536a788022189d"
+          },
+          {
+            "sourceId": "AL-COFID-2021",
+            "rows": 2885,
+            "sha256": "9b2f5413ac5a1d91beb04da56764fecd9f3847204a508660fb0489a95018506d"
+          }
+        ],
+        "proposal": "Separate source-portion decimal validation (positive exact number, bounded80 characters) from personal-input validation. Canonical entry quantities derived from an exact server-verified source portion also need matching precision; keep manual declarations and portion counts strict. Do not round or rewrite source exports."
+      },
+      "diagnosticReceiptSha256": "668a3eb61eb2433b436087e330bfabc32d51718f287bd598128ab6e752ba60d9"
+    },
+    {
+      "attempt": 3,
+      "status": "failed",
+      "goExitCode": 1,
+      "durationSeconds": 47.469,
+      "privateEvidenceDirectory": ".local/food-catalog/go-exports-verification-attempt3-20261119T000034467380Z",
+      "change": "Separate exact source-portion validation from manual declarations; exact canonical portion-derived quantities and meal parity, all source bytes unchanged.",
+      "diagnosis": {
+        "sourceId": "AL-OFF",
+        "exportFile": "AL-OFF.jsonl.gz",
+        "exportLine": 213882,
+        "sourceFoodId": "2301786005660",
+        "field": "portions[0].quantity",
+        "quantityCharacters": 95,
+        "fractionalDigits": 92,
+        "goValidation": "CatalogRow.validate -> validSourceFoodPortion -> number(length80)",
+        "cause": "The documented label preserves95 finite decimal characters, exceeding the operational80-character quantity limit.",
+        "retainedSourceLabelContainsExactQuantity": true,
+        "rawCSVRecordNotRescanned": true,
+        "sourceNutrientCount": 0,
+        "exportDataChanged": false,
+        "completedLegacyExportRows": 6369,
+        "offPrefixRowsValidatedBeforeFailure": 213881,
+        "proposal": "Preserve longer documentary source-portion quantities as metadata under a separate bounded catalog limit, keeping intake wire and source selection80 characters. Mark an unrepresentable portion unavailable for exact selection without rounding or dropping the food."
+      }
+    },
+    {
+      "attempt": 4,
+      "status": "passed",
+      "goExitCode": 0,
+      "durationSeconds": 377,
+      "recordedAtUtc": "2026-11-19T01:08:14.507656+00:00",
+      "agent": "Claude",
+      "command": "go run ./cmd/import-food-catalog --operation verify --exports <repo>/.local/food-catalog/exports (SDK-only env)",
+      "result": {
+        "verified": true,
+        "databaseWrites": 0,
+        "rows": 6702350,
+        "artifactSha256": "08abd86fa9abd2d4e3e92d326c5f6bf398c334613aebaae272d3678b9503207c",
+        "version": "042e99d9fcd9d474cf53d20ddd2f58a5e3e7d9d4cb161d872712357b098c0562"
+      },
+      "preScan": {
+        "method": "temporary Go test classifying every row with the package validators, removed after use",
+        "rows": 6702350,
+        "violationsBefore": {
+          "AL-OFF|name:control": 79,
+          "AL-OFF|name:tooLong(1141 runes)": 2,
+          "AL-OFF|portion:label(380 runes)": 1,
+          "AL-OFF|portion:quantityLong(95/169 chars)": 2
+        },
+        "violationsAfter": 0,
+        "nulRows": {
+          "count": 3,
+          "fields": [
+            "nameOriginal",
+            "brand(2)"
+          ]
+        },
+        "privateEvidence": ".local/food-catalog/go-exports-scan-20261119/"
+      },
+      "change": "Catalog-only validators preserve every valid UTF-8 rune (names<=4000 runes, portion text<=1000, documentary quantity<=512 chars). Private/intake validation unchanged; long portions stay non-selectable. PostgreSQL staging maps U+0000 to U+FFFD and keeps exact original base64 in the annotation. No export, ID or version changed.",
+      "sourceSha256": {
+        "services/api/internal/nutrition/catalog_bundle.go": "48a68c40ea310ea87776df2065ca3a6b4b7ad4e8431435aac59ee39a2502f672",
+        "services/api/internal/nutrition/catalog_import.go": "8a58f7d73936da8f84e41a58bdb8b5bd05eda3edbfb217dc7fb0c3e7a96a9391",
+        "services/api/internal/nutrition/catalog_bundle_test.go": "a364f8659a4fad35d67880e40ea48a29db2f285f53978a8c52c86d130b252f58"
+      }
+    }
+  ],
+  "limits": [
+    "Three CLI executions occurred: attempt1 failed in7.766s on a legacy name line wrap; attempt2 failed in39.047s on an original15-fraction-digit serving; the corrected third attempt is recorded separately.",
+    "The proof can be reused only while exact per-export SHA256, bytes, rows and source identities remain unchanged.",
+    "No PostgreSQL access was made; the added disposable SQL precision assertion remains unexecuted.",
+    "SQLite layout, APK size, native installation, publication and global PostgreSQL activation are separate gates."
+  ],
+  "diagnosis": {
+    "sourceId": "AL-OFF",
+    "exportFile": "AL-OFF.jsonl.gz",
+    "exportLine": 213882,
+    "sourceFoodId": "2301786005660",
+    "field": "portions[0].quantity",
+    "quantityCharacters": 95,
+    "fractionalDigits": 92,
+    "goValidation": "CatalogRow.validate -> validSourceFoodPortion -> number(length80)",
+    "cause": "The documented label preserves95 finite decimal characters, exceeding the operational80-character quantity limit.",
+    "retainedSourceLabelContainsExactQuantity": true,
+    "rawCSVRecordNotRescanned": true,
+    "sourceNutrientCount": 0,
+    "exportDataChanged": false,
+    "completedLegacyExportRows": 6369,
+    "offPrefixRowsValidatedBeforeFailure": 213881,
+    "proposal": "Preserve longer documentary source-portion quantities as metadata under a separate bounded catalog limit, keeping intake wire and source selection80 characters. Mark an unrepresentable portion unavailable for exact selection without rounding or dropping the food."
+  },
+  "latestAttemptNote": "Top-level status/passed/exit/duration/verifiedRows describe attempt4; other top-level evidence fields remain from attempt3."
+}

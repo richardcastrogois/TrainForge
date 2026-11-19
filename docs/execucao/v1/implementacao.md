@@ -1,6 +1,6 @@
 # Implementação: o que foi entregue e como foi comprovado
 
-Consolidado em **17/11/2026**. API **0.10.0/38 operações**, núcleo PostgreSQL **schema 13/30 tabelas**, catálogo **0.2.0/schema 2/4 tabelas**, APK debug **0.4.7+29 gerado**. Os resultados abaixo pertencem aos seus checkpoints; esta reorganização não repetiu login, importação ou teste humano.
+Atualizado em **18/11/2026**. Código alimentar em integração: API **0.11.0**, migrations até **16**, Flutter **0.5.0+30**, catálogo local amplo em geração. A base pessoal está no **schema16/38tabelas** após ativação protegida, com as30tabelas anteriores intactas, catálogo de treinos **0.2.0/schema 2/4 tabelas**; último APK anterior debug **0.4.7+29 gerado**. Os resultados abaixo pertencem aos seus checkpoints; esta reorganização não repetiu login, importação ou teste humano.
 
 O [histórico](../../historico/README.md) explica a ordem das decisões. O [modelo técnico](../../arquitetura/modelo-e-contratos.md) e o [Swagger](../../../contracts/generated/swagger-v1.json) descrevem os contratos. O [backlog](backlog.json) conserva critérios e dependências: código detectado não encerra uma história.
 
@@ -50,15 +50,21 @@ O checkpoint humano recuperou a revisão 2 com o horário14:00 escolhido pelo au
 Evidências: [fundação](training-configuration-foundation-verification.json), [SQL](training-configuration-sql-verification.json), [cliente](training-configuration-client-verification.json), [aceite humano](training-configuration-human-verification.json), [fechamento](training-configuration-047-fechamento.json).
 
 <a id="alimentacao"></a>
-## Alimentação manual, nomes e refeições
+## Alimentação offline, nomes e refeições
 
-O produto consulta referências alimentares, permite alimento particular e registra consumo com quantidade, base, unidade, data e fuso. Valores ausentes não viram zero, composição por100g não vira porção por inferência, métodos/fatores de energia são rastreáveis e identidades de alimentos não são mescladas pelo nome traduzido.
+A consulta alimentar nova usa SQLite público assinado no aparelho, com TACO/USDA/OFF e legados. O pacote global ainda está em recuperação/conferência, conforme [handoff](handoff.md). FTS4, GTIN e leitura ML Kit estão integrados; a validação nativa permanece pendente. O cadastro particular permite marca/códigos e porções medidas, incluindo colher/unidade/lata quando seu peso ou volume forem conhecidos.
+
+Primeiro login online, depois recursos e operações alimentares em SQLCipher por conta, com outbox durável e sync própria. O estado local pendente aparece como tal; confirmação exige igualdade do cálculo. Reenvio, conflitos, revogação conhecida e exclusão têm guardas persistentes. Contribuir é opcional, com convite dispensável, campos/fotos revisados e consentimento CC0; revisão pelo mantenedor precede export/publicação. Créditos/ODbL e downloads por versão ficam em Fontes e transparência.
+
+O produto permite alimento particular e registra consumo com quantidade, base, unidade, data e fuso. Valores ausentes não viram zero, composição por100g não vira porção por inferência, métodos/fatores de energia são rastreáveis e identidades de alimentos não são mescladas pelo nome traduzido.
 
 A base preparada/importada conserva fontes e direitos por lote, rejeições e lacunas. A UI apresenta pt-BR, pt-PT, inglês e espanhol; nomes editoriais são uma camada separada da composição. A infraestrutura multilíngue não significa cobertura editorial completa: o checkpoint registrou0/6369 nomes alimentares publicados como revisão profissional. As apresentações dos73 movimentos e31 variantes alimentares são vinculadas a ID/versão/original; faltas mantêm o original.
 
 Refeição e alimento são visões dos mesmos registros. Agrupamento, correção de metadados e exclusão possuem revisão esperada, confirmação e proteção contra reenvio. O lançamento20g foi identificado pelo autor como teste de navegação; preservar esse registro, sem reclassificá-lo como ingestão real. V1-045 mantém aceite/correção/exclusão real e ligação com fotos pendentes. Nenhuma operação alimentar foi executada pela limpeza documental.
 
-Evidências: [preflight](food-preflight-verification.json), [importação](food-import-verification.json), [consumo](nutrition-local-verification.json), [nomes](food-names-consumption-verification.json), [SQL refeições](meal-grouping-sql-verification.json), [integração](meal-grouping-client-verification.json). Quando um recibo distingue fixture e teste humano, essa distinção é vinculante.
+Verificação desta ampliação: [cliente Flutter](food-offline-client-verification-20261118.json) e [SQL descartável schema16](offline-nutrition-sql-verification.json). A implantação pessoal e o catálogo final não estão comprovados por esses testes.
+
+Evidências históricas: [preflight](food-preflight-verification.json), [importação](food-import-verification.json), [consumo](nutrition-local-verification.json), [nomes](food-names-consumption-verification.json), [SQL refeições](meal-grouping-sql-verification.json), [integração](meal-grouping-client-verification.json). Quando um recibo distingue fixture e teste humano, essa distinção é vinculante.
 
 <a id="atividade"></a>
 ## Execução de atividade: persistência e tela única

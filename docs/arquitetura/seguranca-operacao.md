@@ -1,6 +1,6 @@
 # Segurança, observabilidade e capacidade
 
-Estado consolidado em **16/11/2026**. Existem controles e verificações locais; V1-028/029/030 mantêm critérios abertos. Não há certificação integral, pentest completo ou capacidade de milhões comprovada. [Modelo e contratos](modelo-e-contratos.md) · [Operação diária](../aprendizado/operacao-local.md).
+Atualizado em **18/11/2026**; implantação e catálogo final estão em integração no [handoff](../execucao/v1/handoff.md). Existem controles e verificações locais; V1-028/029/030 mantêm critérios abertos. Não há certificação integral, pentest completo ou capacidade de milhões comprovada. [Modelo e contratos](modelo-e-contratos.md) · [Operação diária](../aprendizado/operacao-local.md).
 
 ## Controles implementados e evidência
 
@@ -36,7 +36,7 @@ Restore permanece separado/offline: aplicar migrations/registro atual, conferir 
 | Outro aparelho/backup tem cópia antiga | Aplicar exclusões em reconciliação/restore e explicar os limites externos |
 | Exclusão por master | Permissão explícita/revogável no servidor, identidade estável, titular/recurso exatos, confirmação e auditoria mínima |
 
-Antes de usar filas/imagens privadas, definir limites, proteção em repouso, ciclo de chaves, backup e expurgo. Tokens não ficam no payload da fila/log; sincronização exige autenticação válida. Master não é inferido por e-mail, GitHub ou campo do aplicativo e não implica leitura/edição irrestritas. Ensaiar papel forjado/revogado, conta alheia, confirmação inválida, repetição e concorrência em ambiente isolado. [Decisões Q4/Q6](../execucao/v1/escopo.md).
+A fila alimentar e as fotos opcionais de rótulo usam SQLCipher por conta/chave segura, lock persistente após 401 e erasure local; o servidor revalida sessão e mantém ledger/tombstones duráveis. Mídia enviada é sanitizada e limitada. Esses controles passaram em unidade/SQL; execução nativa, morte do processo e demais cenários acima conservam seus aceites. Fotos de refeição e offline de atividade têm escopo próprio. Tokens não ficam no payload da fila/log; sincronização exige autenticação válida. Master não é inferido por e-mail, GitHub ou campo do aplicativo e não implica leitura/edição irrestritas. Ensaiar papel forjado/revogado, conta alheia, confirmação inválida, repetição e concorrência em ambiente isolado. [Decisões Q4/Q6](../execucao/v1/escopo.md).
 
 ## Instrumentação e dados que podem aparecer em log
 

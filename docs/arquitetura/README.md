@@ -1,10 +1,12 @@
 # Arquitetura do TrainForge
 
-O TrainForge tem um aplicativo **Flutter para Android/iOS**, uma **API Go** e um **catálogo Go separado**, com PostgreSQL e papéis próprios. SDK mínimo: **Go 1.27.4**, com patch de segurança conferido em17/11/2026. O núcleo reúne autenticação, privacidade, configuração, alimentação e execução; o catálogo fornece referências públicas. Estado consolidado em **16/11/2026**.
+O TrainForge tem um aplicativo **Flutter para Android/iOS**, uma **API Go** e um **catálogo Go separado**, com PostgreSQL e papéis próprios. SDK mínimo: **Go 1.27.4**, com patch de segurança conferido em17/11/2026. O núcleo reúne autenticação, privacidade, configuração, alimentação e execução; o catálogo fornece referências públicas. Estado do código em **18/11/2026**; implantação local conservada até a ativação descrita no handoff.
 
 ![Quem conversa com quem](diagramas/02-arquitetura.svg)
 
-O celular envia HTTP para a API; a API consulta o banco privado ou encaminha cinco leituras ao catálogo. O celular não acessa PostgreSQL diretamente. Regras, revisões, titularidade e idempotência ficam no servidor. Go usa pgx/SQL e Goose, sem ORM; Prisma pertence ao backend histórico.
+A busca alimentar e o barcode usam um SQLite público assinado no celular. Consumos/alimentos particulares ficam em SQLCipher por conta e uma fila durável; a sincronização usa a API Go própria após autenticação. Atualizações do catálogo e exportações de licença são opcionais e usam a infraestrutura própria.
+
+Nas demais jornadas, o celular envia HTTP para a API; a API consulta o banco privado ou encaminha cinco leituras ao catálogo. O celular não acessa PostgreSQL diretamente. Regras, revisões, titularidade e idempotência ficam no servidor. Go usa pgx/SQL e Goose, sem ORM; Prisma pertence ao backend histórico.
 
 | Quero entender | Leitura |
 |---|---|
@@ -16,8 +18,8 @@ O celular envia HTTP para a API; a API consulta o banco privado ou encaminha cin
 | Ver os desenhos por assunto | [15 mapas](diagramas/README.md) ou [índice visual local](diagramas/index.html) |
 | Consultar detalhes exatos | [APIs](diagramas/apis.md), [tabelas/colunas](diagramas/banco.md), [inventário do código](gerado/referencia.md) |
 
-A API 0.10.0 tem 38 operações; o núcleo está no schema 13 com 30 tabelas e o catálogo no schema 2 com quatro. Login local, leituras, configuração e capacidades de alimentação/execução possuem evidências próprias. Tabela, endpoint ou tela não significam jornada integral aprovada.
+O código da API é 0.11.0, com migrations até 16 testadas em descartável. A base pessoal está no schema16/38tabelas após ativação protegida; o serviço de catálogo de treinos permanece 0.2.0/schema 2/quatro tabelas. Login local, leituras, configuração e capacidades de alimentação/execução possuem evidências próprias. Tabela, endpoint ou tela não significam jornada integral aprovada.
 
-**Prática continua condicionada a conteúdo humano aprovado.** Há referências de consulta e motor de execução, mas nenhum programa/instrução/dose/mídia liberado por esta documentação. Seleção/adesão/agenda, foto, fila offline durável, master, carga, distribuição release e validação nativa iOS conservam etapas próprias. A ausência real de programa é um estado esperado.
+**Prática continua condicionada a conteúdo humano aprovado.** Há referências de consulta e motor de execução, mas nenhum programa/instrução/dose/mídia liberado por esta documentação. Seleção/adesão/agenda, foto de refeição, offline de atividade, master, carga, distribuição release e validação nativa iOS conservam etapas próprias. A ausência real de programa é um estado esperado.
 
 Para iniciar, observar logs e parar, use o [guia de operação](../aprendizado/operacao-local.md). Para retomar implementação e saber a próxima história, leia o [handoff](../execucao/v1/handoff.md) e o [backlog](../execucao/v1/backlog.md). Os guias podem ser lidos sem iniciar nenhum serviço.

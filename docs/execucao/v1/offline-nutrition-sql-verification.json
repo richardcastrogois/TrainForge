@@ -1,0 +1,76 @@
+{
+  "contract": "trainforge.offline-nutrition-sql-verification/1",
+  "verifiedAt": "2026-11-19T02:22:36.087340+00:00",
+  "schemaTested": 16,
+  "deliveredDatabase": "trainforge_v1_dev",
+  "deliveredSchemaMigrated": false,
+  "deliveredRecordsUnchanged": true,
+  "disposableDatabaseRemoved": true,
+  "clusterRunningStatePreserved": true,
+  "results": [
+    {
+      "package": "./internal/nutrition",
+      "tests": [
+        {
+          "test": "TestFoodCatalogPostgresLegacyNameEdgeWhitespaceOnly",
+          "result": "pass"
+        },
+        {
+          "test": "TestFoodCatalogPostgresPreservesUnstorableSourceTextLosslessly",
+          "result": "pass"
+        },
+        {
+          "test": "TestFoodCatalogPostgresStagingActivationAndCanonicalSnapshot",
+          "result": "pass"
+        },
+        {
+          "test": "TestFoodContributionPostgresConsentOwnershipMediaWithdrawalAndErasure",
+          "result": "pass"
+        },
+        {
+          "test": "TestMealPostgresAtomicOwnershipReplayAndPrivacy",
+          "result": "pass"
+        },
+        {
+          "test": "TestNutritionSyncPostgresDurabilityBaselineMappingsAndTombstones",
+          "result": "pass"
+        }
+      ]
+    },
+    {
+      "package": "./internal/privacy",
+      "tests": [
+        {
+          "test": "TestPrivacyPostgresOwnerExportConfirmedDeletionAndRollback",
+          "result": "pass"
+        }
+      ]
+    },
+    {
+      "package": "./internal/platform/postgres",
+      "tests": [
+        {
+          "test": "TestPostgresRuntimeReadiness",
+          "result": "pass"
+        },
+        {
+          "test": "TestPostgresRuntimeReadiness/missing_function_grant",
+          "result": "pass"
+        },
+        {
+          "test": "TestPostgresRuntimeReadiness/missing_object",
+          "result": "pass"
+        },
+        {
+          "test": "TestPostgresRuntimeReadiness/missing_read_grant",
+          "result": "pass"
+        },
+        {
+          "test": "TestPostgresRuntimeReadiness/unexpected_private_write",
+          "result": "pass"
+        }
+      ]
+    }
+  ],
+  "humanOrNativeAcceptance": false
+}

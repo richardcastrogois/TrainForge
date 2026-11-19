@@ -1,6 +1,6 @@
 # Documentação do TrainForge
 
-Escolha a leitura pelo que precisa entender. Estado consolidado em **17/11/2026**; a apresentaçãoSENAS e os estudos visuais foram preservados.
+Escolha a leitura pelo que precisa entender. Estado consolidado em **18/11/2026**; a apresentaçãoSENAS e os estudos visuais foram preservados.
 
 | Quero… | Abrir |
 |---|---|
@@ -11,6 +11,8 @@ Escolha a leitura pelo que precisa entender. Estado consolidado em **17/11/2026*
 | Ver o que foi pesquisado, onde e por que decidimos | [Pesquisa/fontes/direitos](conteudo/README.md) e [histórico cronológico](historico/README.md) |
 | Preparar a apresentação e consultar o visual | [SENAS preservado](apresentacao-senas/output/Roteiro-e-pendencias.md), [estudosSVG](design/README.md) |
 | Navegar pelo código com Graphify | [Escopo e uso do grafo](graphify.md) |
+
+A alimentação offline está em integração; o [handoff vigente](execucao/v1/handoff.md) registra os arquivos já baixados, recuperação do catálogo e próximos comandos.
 
 Não é preciso ler todos os recibos ou inventários. Os guias acima são as entradas; detalhes técnicos gerados, provasJSON e acervosZIP ficam disponíveis para consulta. Cada documento diferencia proposta, implementação, teste técnico e aceite humano.
 

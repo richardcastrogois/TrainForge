@@ -1,6 +1,6 @@
 # Graphify: mapa do código e seus limites
 
-Verificação de **17/11/2026**: **95 arquivos Dart,4.430 nós e5.046 arestas**. A atualização atual conferiu zero arquivos alterados: a reorganização de documentos não modificou o Flutter. O grafo e o HTML foram conferidos/exportados; o recibo distingue essa verificação de uma nova extração de código.
+Verificação de **18/11/2026**: **109 arquivos Dart, 4.713 nós e 5.443 arestas**. A atualização AST incremental reextraiu 26 arquivos alterados, sem rede, LLM ou clustering. [Recibo](../graphify-out/update.json). Isso atualiza as relações estáticas do código alimentar; não demonstra execução nativa.
 
 ## Consultar
 

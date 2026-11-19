@@ -1,0 +1,393 @@
+{
+  "contract": "trainforge.food-offline-progress/1",
+  "updatedAtUtc": "2026-11-19T07:08:52.502842+00:00",
+  "instruction": "Append/update after every finished stage. Handoff is the human entry point. Never infer native/publication completion from unit tests.",
+  "stages": [
+    {
+      "id": "source-downloads",
+      "status": "complete",
+      "recordedAtUtc": "2026-11-18T18:38:15.016513+00:00",
+      "result": "Official full TACO/USDA/OFF snapshots and receipts preserved; no repeat download",
+      "evidence": [
+        ".local/food-catalog/raw/",
+        "tools/food_catalog_download.py"
+      ]
+    },
+    {
+      "id": "client-unit-widget",
+      "status": "complete",
+      "recordedAtUtc": "2026-11-18T18:38:15.016513+00:00",
+      "result": "358 full Flutter tests;16 targeted after facet-count correction; analyze0. Native is a separate pending step",
+      "evidence": [
+        "docs/execucao/v1/food-offline-client-verification-20261118.json"
+      ]
+    },
+    {
+      "id": "backend-contracts-and-disposable-sql",
+      "status": "complete",
+      "recordedAtUtc": "2026-11-18T18:38:15.016513+00:00",
+      "result": "Go test/vet and Swagger0.11.0/51operations passed; disposableSQL16 passed, delivered records unchanged",
+      "evidence": [
+        "docs/execucao/v1/offline-nutrition-sql-verification.json",
+        "contracts/generated/swagger-v1.json"
+      ]
+    },
+    {
+      "id": "local-schema-activation",
+      "status": "complete",
+      "recordedAtUtc": "2026-11-18T18:38:15.016513+00:00",
+      "result": "13->16,38tables;30 existing tables unchanged,8 new empty; fresh Fc backup and runtime readiness; API/PG stopped as before",
+      "evidence": [
+        "docs/execucao/v1/food-offline-local-activation.json"
+      ]
+    },
+    {
+      "id": "global-ingestion",
+      "status": "complete",
+      "recordedAtUtc": "2026-11-18T18:38:15.016513+00:00",
+      "result": {
+        "foods": 6702350,
+        "usdaInputRows": 2125085,
+        "usdaUsableRows": 2125076,
+        "usdaExcludedMissingName": 9,
+        "offInputRows": 4916182,
+        "offUsableRows": 4570308
+      },
+      "evidence": [
+        ".local/food-catalog/build-finalize.log:finishing_complete_catalog"
+      ]
+    },
+    {
+      "id": "catalog-indexes-and-fts",
+      "status": "complete",
+      "recordedAtUtc": "2026-11-18T18:41:47.712218+00:00",
+      "result": {
+        "committedIndexes": [
+          "foods_search",
+          "foods_source",
+          "barcodes_normalized"
+        ],
+        "ftsContentMaxDocid": 6702350,
+        "catalogVersion": "042e99d9fcd9d474cf53d20ddd2f58a5e3e7d9d4cb161d872712357b098c0562"
+      },
+      "evidence": [
+        ".local/food-catalog/build/catalog.resuming.sqlite:sqlite_master/foods_fts_content/metadata"
+      ],
+      "limit": "Integrity, hash, signature and packaging remain separate pending checks"
+    },
+    {
+      "id": "catalog-indexes-and-integrity",
+      "status": "complete",
+      "recordedAtUtc": "2026-11-18T18:44:17.950388+00:00",
+      "processId": 53824,
+      "command": "python -u tools/food_catalog_resume.py",
+      "logs": [
+        ".local/food-catalog/build-finalize.log",
+        ".local/food-catalog/build-finalize-errors.log"
+      ],
+      "next": "Wait for recovered_catalog_complete; do not start another generator",
+      "result": "Worker finished indexes/FTS/integrity/hash and wrote signed complete manifest",
+      "evidence": [
+        ".local/food-catalog/build-finalize.log:recovered_catalog_complete",
+        "assets/food_catalog/manifest.json"
+      ]
+    },
+    {
+      "id": "signed-gzip-and-update-zip",
+      "status": "complete",
+      "next": "Done",
+      "result": {
+        "gzipBytes": 3231875230,
+        "artifactSha256": "08abd86fa9abd2d4e3e92d326c5f6bf398c334613aebaae272d3678b9503207c",
+        "databaseBytes": 8820420608,
+        "databaseSha256": "fa60453ef874bd0217f9745e5a5f103c615d348a2597944881c5f94b1bf7f6da",
+        "updateZipBytes": 3231893210,
+        "updateZipMembers": [
+          "manifest.json",
+          "catalog.sqlite.gz"
+        ],
+        "zipStored": true,
+        "zipTest": "ok"
+      },
+      "recordedAtUtc": "2026-11-19T01:08:14.507656+00:00",
+      "evidence": [
+        ".local/food-catalog/package-compact.log",
+        "assets/food_catalog/manifest.json",
+        ".local/food-catalog/distribution/catalog-update.zip"
+      ],
+      "agent": "Claude",
+      "commands": [
+        "python -u tools/food_catalog_compact.py --package --defer-archive",
+        "food_catalog_package.write_update_archive"
+      ],
+      "cleanup": {
+        "removed": ".local/food-catalog/distribution/catalog-uncompact.sqlite.gz",
+        "bytes": 5565671901,
+        "authorizedByAuthor": "2026-11-19",
+        "reason": "old-layout gzip, not distributable, regenerable from baseline"
+      }
+    },
+    {
+      "id": "production-catalog-verification",
+      "status": "complete",
+      "next": "python tools/food_catalog_build.py --verify",
+      "recordedAtUtc": "2026-11-19T01:08:14.507656+00:00",
+      "agent": "Claude",
+      "command": "python tools/food_catalog_build.py --verify",
+      "result": "exit0: signature, complete/non-fixture, gzip size/hash and decompressed database size/hash verified"
+    },
+    {
+      "id": "public-export-preservation-and-go-verification",
+      "status": "complete",
+      "next": "Done; importer must use --exports <that path>",
+      "recordedAtUtc": "2026-11-19T01:08:42.589936+00:00",
+      "agent": "Claude",
+      "result": "Go verify passed (attempt4): 6,702,350 rows, 0 DB writes",
+      "evidence": "docs/execucao/v1/food-catalog-exports-verification.json",
+      "archive": {
+        "command": "python tools/food_catalog_publish.py --confirm 08abd86f...207c",
+        "sources": 13,
+        "moved": 13,
+        "databaseWrites": 0,
+        "publishedToInternet": false,
+        "path": ".local/food-catalog/exports/08abd86fa9abd2d4e3e92d326c5f6bf398c334613aebaae272d3678b9503207c/"
+      }
+    },
+    {
+      "id": "native-android",
+      "status": "deferred_by_user",
+      "next": "Do not build/install APK in current scope. Preserve native integration harness for later joint test.",
+      "reason": "Author explicitly requested finishing nutrition without building APK now; joint Android build/tests will follow when Claude UI work ends",
+      "recordedAtUtc": "2026-11-18T23:46:52.581385+00:00"
+    },
+    {
+      "id": "disposable-sql-nul-mapping",
+      "status": "complete",
+      "recordedAtUtc": "2026-11-19T01:19:57.485261+00:00",
+      "agent": "Claude",
+      "command": "python tools/verificar_alimentacao_offline_local.py",
+      "result": "schema16 disposable DB: 7 tests + 4 subtests pass incl. TestFoodCatalogPostgresPreservesUnstorableSourceTextLosslessly; delivered records unchanged; disposable DB removed; PG left stopped",
+      "evidence": "docs/execucao/v1/offline-nutrition-sql-verification.json",
+      "fix": "tools/db_local.run reads localized pg_ctl output with errors=replace (cp1252 message broke status check before any DB action)"
+    },
+    {
+      "id": "server-catalog-stage-and-activation",
+      "status": "complete",
+      "next": "Done; local Postgres serves the active global catalog. Native/sync/human acceptance not established.",
+      "recordedAtUtc": "2026-11-19T02:23:05.087650+00:00",
+      "cleanup": {
+        "removed": ".local/food-catalog/distribution/catalog.baseline.sqlite",
+        "bytes": 12829270016,
+        "authorizedByAuthor": "2026-11-19",
+        "reason": "old layout duplicate of verified compact database"
+      },
+      "sizing": {
+        "exportsUncompressedBytes": 39384652615,
+        "legacyRowsInPg": 6369,
+        "legacyFoodVersionsBytes": 49545216,
+        "bytesPerLegacyRow": 7779,
+        "estimate": "~40-60GB for 6.7M rows plus WAL/indexes (per-row rights citation and annotations duplicate content)",
+        "diskFreeBytes": 15200000000,
+        "otherDrives": "none"
+      },
+      "agent": "Claude",
+      "diskFreeBytesAtStart": 78385700864,
+      "command": "python -u tools/importar_catalogo_alimentar_local.py --apply (second run resumes)",
+      "logs": [
+        ".local/food-catalog/import-run2.log",
+        ".local/food-catalog/import-run2-errors.log"
+      ],
+      "safeguards": "fresh pg_dump checkpoint first; non-catalog tables hashed before/after; every pre-existing catalog row hash must survive; importer stopped if free disk <10GiB (batches resume); PG returned to prior running state",
+      "firstAttempt": {
+        "status": "failed_safely",
+        "error": "catalog version conflicts with immutable source",
+        "cause": "1 of 6,369 legacy Ciqual/CoFID versions: approved name 'Pain bis (à la farine T80 ou T110)' ends in U+00A0; export carries trimmed name with same food/version identity",
+        "committedBefore": "AL-CIQUAL-2025 3,000 rows staged (additive, resumable); legacy row unchanged",
+        "checkpoint": ".local/checkpoints/food-catalog-before-import-20261119T021934Z-2fa100f0/database.dump"
+      },
+      "fix": "Legacy (pre-contract) versions accept only an edge-whitespace-trimmed export name; legacy row never rewritten. Disposable SQL: TestFoodCatalogPostgresLegacyNameEdgeWhitespaceOnly + 7 others pass",
+      "completedAtUtc": "2026-11-19T07:08:52.502842+00:00",
+      "secondRun": {
+        "status": "stage_and_activate_succeeded_final_comparison_timed_out",
+        "cause": "surviving() hashed 6.7M food_versions rows through db_local.sql, whose psql timeout is 35 s (subprocess.TimeoutExpired, reported as the generic failure message)",
+        "fix": "tools/importar_catalogo_alimentar_local.py: long_sql (3600 s) for row hashing/snapshots; before-snapshot skips catalog tables (covered by per-row hashes); new --verify-from-checkpoint restores the pre-import checkpoint into a disposable database, compares, drops it and writes the receipt"
+      },
+      "result": {
+        "receipt": "docs/execucao/v1/food-catalog-local-import.json",
+        "command": "python -u tools/importar_catalogo_alimentar_local.py --verify-from-checkpoint .local/checkpoints/food-catalog-before-import-20261119T022305Z-d5d5141c/database.dump",
+        "rows": 6702350,
+        "linkedVersions": 6702350,
+        "releaseStatus": "active",
+        "stageSecondsFromLogFileTimes": 16567,
+        "nonCatalogTablesCompared": 32,
+        "nonCatalogTablesUnchanged": true,
+        "preexistingCatalogRowsKept": {
+          "trainforge_v1.sources": 14,
+          "trainforge_v1.food_import_batches": 2,
+          "trainforge_v1.food_catalog_releases": 0,
+          "trainforge_v1.food_catalog_import_progress": 0,
+          "trainforge_v1.food_versions": 6369,
+          "trainforge_v1.food_batch_versions": 9369,
+          "trainforge_v1.food_catalog_annotations": 3000
+        },
+        "databaseBytesAfter": 37696539795,
+        "postgresLeftStopped": true,
+        "disposableDatabaseDropped": true
+      }
+    },
+    {
+      "id": "final-docs-review-and-git",
+      "status": "pending",
+      "next": "Update Swagger/docs/diagrams/Graphify only as needed, reconcile secret scan, stage explicit reviewed paths and complete authorized Git delivery",
+      "completedChecks": [
+        {
+          "id": "source-secret-triage",
+          "status": "complete",
+          "candidateCount": 45,
+          "verifiedFileHashes": 45,
+          "blockingCandidates": 0,
+          "exactNewLineDigests": 8,
+          "testsPassed": 19,
+          "evidence": [
+            "docs/execucao/v1/git-secret-nonsecret-review.json",
+            ".local/food-offline-client-20261118/source-secret-classification-20261118T184130Z.metadata.json"
+          ],
+          "limit": "Final Git interval and ZIP scan remain pending"
+        }
+      ],
+      "recordedAtUtc": "2026-11-18T23:46:52.581385+00:00",
+      "externalDependency": {
+        "status": "not_blocking_current_nutrition_scope",
+        "claudeStillEditing": true,
+        "deferredUntilClaudeFinishes": [
+          "joint APK build",
+          "integrated native testing"
+        ],
+        "mustNotCommitClaudeChanges": true
+      },
+      "currentScope": "Finish nutrition independently. Commit only reviewed nutrition changes, exclude all Claude startup/logo/splash/UI edits. Use isolated index/snapshot if a commit is needed while Claude continues."
+    },
+    {
+      "id": "catalog-storage-compaction",
+      "status": "complete",
+      "reason": "Process ended during barcode copy without stderr; target food table committed, source unchanged. Cause is not established. Agent is preparing a memory-bounded resume without repeating food copy.",
+      "result": {
+        "bytes": 8820420608,
+        "complete": true,
+        "contract": "trainforge.food-catalog-compaction/1",
+        "elapsedSeconds": 3616,
+        "equivalence": {
+          "barcodeEquivalence": "counts-and-bidirectional-indexed-not-exists",
+          "barcodes": 6340572,
+          "foodCells": {
+            "rows": 6702350,
+            "sha256": "0c0636686ea29181fbd1ee9f9db0c30e5ca1025126a39922f558ececab8317ad"
+          },
+          "foreignKeys": "ok",
+          "sources": 14,
+          "storageLayout": "row-key-external-fts/1"
+        },
+        "sha256": "fa60453ef874bd0217f9745e5a5f103c615d348a2597944881c5f94b1bf7f6da",
+        "source": "C:\\dev\\TrainForge\\trainforge\\.local\\food-catalog\\distribution\\catalog.sqlite",
+        "state": "compaction_verified",
+        "target": "C:\\dev\\TrainForge\\trainforge\\.local\\food-catalog\\compact\\catalog.sqlite",
+        "version": "042e99d9fcd9d474cf53d20ddd2f58a5e3e7d9d4cb161d872712357b098c0562"
+      },
+      "next": "Package with tools/food_catalog_compact.py --package --defer-archive after freeing disk; ZIP afterwards",
+      "recordedAtUtc": "2026-11-19T00:46:20.970845+00:00",
+      "currentAction": "compaction_verified",
+      "diskFreeBytes": 16580739072,
+      "cleanup": {
+        "removedGeneratedFlutterTestCopyBytes": 5565671901,
+        "retainedOriginalGzip": ".local/food-catalog/distribution/catalog-uncompact.sqlite.gz",
+        "retainedOriginalRaw": ".local/food-catalog/distribution/catalog.sqlite",
+        "privateDataTouched": false
+      },
+      "collaboration": "Claude edits startup/logo/splash and other UI. Preserve these changes and identify ownership before commits; no broad staging.",
+      "retiredDerivedArtifacts": [
+        ".local/food-catalog/recovery/catalog-interrupted.sqlite",
+        ".local/food-catalog/build/usda-stage.sqlite"
+      ],
+      "retirementReason": "Complete normalized raw and signed gzip retained, full ingestion/integrity already passed; these older generated prefix/staging duplicates are no longer needed",
+      "retained": [
+        ".local/food-catalog/raw/",
+        ".local/food-catalog/exports/",
+        ".local/food-catalog/distribution/catalog.sqlite",
+        ".local/food-catalog/distribution/catalog-uncompact.sqlite.gz"
+      ],
+      "privateDataTouched": false,
+      "processId": 77620,
+      "logs": [
+        ".local/food-catalog/compact.log",
+        ".local/food-catalog/compact-errors.log"
+      ],
+      "completedSubsteps": [
+        {
+          "id": "signed-baseline-hash",
+          "status": "complete",
+          "evidence": ".local/food-catalog/compact.log:signed_baseline_verified"
+        },
+        {
+          "id": "copy-all-food-fields",
+          "status": "complete",
+          "evidence": ".local/food-catalog/compact.log:copying_barcode_links"
+        },
+        {
+          "id": "copy-all-barcode-links",
+          "status": "complete",
+          "evidence": ".local/food-catalog/compact.log:building_compact_indexes"
+        },
+        {
+          "id": "build-compact-indexes",
+          "status": "complete",
+          "evidence": ".local/food-catalog/compact.log:building_external_fts"
+        },
+        {
+          "id": "build-external-fts",
+          "status": "complete",
+          "evidence": ".local/food-catalog/compact.log:proving_full_equivalence"
+        },
+        {
+          "id": "prove-full-equivalence",
+          "status": "complete",
+          "evidence": ".local/food-catalog/compact.log:checking_compact_integrity"
+        },
+        {
+          "id": "compact-integrity",
+          "status": "complete",
+          "evidence": ".local/food-catalog/compact.log:hashing_compact_database"
+        }
+      ],
+      "copiedFoodsCheckpoint": {
+        "status": "complete",
+        "foods": 6702350,
+        "targetBytesApprox": 6285000000,
+        "evidence": ".local/food-catalog/compact.log:copying_barcode_links",
+        "limit": "All food fields still require final streaming equivalence proof"
+      },
+      "evidence": [
+        ".local/food-catalog/compact.log:compaction_verified",
+        ".local/food-catalog/compact/catalog.compaction.json"
+      ],
+      "verifiedReport": {
+        "bytes": 8820420608,
+        "sha256": "fa60453ef874bd0217f9745e5a5f103c615d348a2597944881c5f94b1bf7f6da",
+        "foodCellsRows": 6702350,
+        "foodCellsSha256": "0c0636686ea29181fbd1ee9f9db0c30e5ca1025126a39922f558ececab8317ad",
+        "barcodes": 6340572,
+        "foreignKeys": "ok",
+        "sources": 14,
+        "evidence": ".local/food-catalog/compact/catalog.compaction.json"
+      },
+      "gzipMeasurement": {
+        "compresslevel": 6,
+        "gzipBytes": 3231875203,
+        "seconds": 321,
+        "writtenToDisk": false,
+        "zip32Fits": true,
+        "agent": "Claude",
+        "note": "Streaming count only; package step still has to write, sign and verify"
+      }
+    }
+  ]
+}

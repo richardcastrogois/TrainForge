@@ -1,0 +1,35 @@
+{
+  "contract": "trainforge.food-offline-local-activation/1",
+  "activatedAt": "2026-11-18T18:31:33.002848+00:00",
+  "schemaFrom": 13,
+  "schemaTo": 16,
+  "newTables": 8,
+  "preexistingDataTablesCompared": 30,
+  "deliveredRowsUnchanged": true,
+  "preexistingDataSnapshotSha256": "ca1f129b1dcd1de4eca56f4f52cdb18a25a08ca2cc918043565f1d0e697afbb0",
+  "fullSnapshotBeforeSha256": "0cb0b0b05ab26ff0b1e9c18bb977bd616710347c46e93fb950d58a7133bac857",
+  "fullSnapshotAfterSha256": "11a8788b4934f9a44d6e335898aee6570640de01d0fa5731dba77870a8e6cf8f",
+  "priorSchemaHistoryUnchanged": true,
+  "newTableRows": 0,
+  "runtimeGrantsApplied": true,
+  "runtimeReadinessVerified": true,
+  "apiRemainedStopped": true,
+  "fullCheckpointLocal": true,
+  "checkpointRelativePath": ".local/checkpoints/food-offline-before-16-20261118T183119373819Z-f20c4ec7/database.dump",
+  "checkpointSha256": "e62f5b5e337d46600e072b2e2b0b166601ffea779ea66c7e6c5f787ecbea6a81",
+  "checkpointBytes": 14926349,
+  "sqlVerificationReceiptSha256": "c3265a1372a8a2a510eb6c2c8fc6c4c36b9d75d03aa4e6ff4fc6c55e96419516",
+  "migrationSha256": {
+    "00014_nutrition_offline.sql": "e5f9e5090b9d901e4795bca134cf6ac0747061ec8618871291af50ec2fda4c6e",
+    "00015_food_contributions.sql": "fcce1c22736f3b9826e3727ebb700666c500e7fa54c6d95a445cd7fc175599ce",
+    "00016_food_catalog_releases.sql": "281cd398b1355f508660bfa105d2ee1caea315b846c15803dd0a00e9dbb1a98c"
+  },
+  "dataSeeded": false,
+  "globalCatalogImported": false,
+  "postgresWasRunning": false,
+  "limits": [
+    "The new local checkpoint was inspected with pg_restore --list, not restored.",
+    "Schema and readiness activation do not establish native or human acceptance."
+  ],
+  "clusterRunningStatePreserved": true
+}
