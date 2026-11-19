@@ -30,6 +30,10 @@ Pendências tratadas **uma por vez**; ao fechar cada uma: commit/push quando hou
 
 Hoje o app oferece só o pacote Brasil (aparece como **Instalado**, com aviso de tamanho e progresso no botão). O `br-pt` não é oferecido: substituiria o catálogo e alimentos portugueses não sincronizariam. Próxima melhoria, decidida pelo autor: [6 pacotes regionais que se somam](../../planejamento/melhoria-pacotes-regionais.md), publicados no GitHub Releases, com o banco só com o Brasil.
 
+## Distribuição (19/11)
+
+APK **0.5.1+31** publicado no [GitHub Release v0.5.1](https://github.com/richardcastrogois/TrainForge/releases/tag/v0.5.1) como `TrainForge.apk` (SHA `f4567de648a04caf…`, download conferido). Link fixo e QR code em [distribuição](../../distribuicao/README.md); novas versões com `tools/publicar_release_android.py --confirm-publish`. Login Google ainda em modo **Testando** no Google Cloud (só usuários de teste) até o autor completar a Identidade visual e publicar.
+
 ## Licença, termos e aceite registrado (pendência 6)
 
 - [LICENSE](../../../LICENSE) proprietária com exceção de terceiros; [avisos de terceiros](../../../THIRD_PARTY_NOTICES.md); [Termos de Uso](../../../assets/legal/termos-de-uso.md) e [Política de Privacidade](../../../assets/legal/politica-de-privacidade.md) v1.0 (titular Richard Castro Gois, contato público aprovado pelo autor). Não houve revisão jurídica; recomendada antes de lançamento comercial.
