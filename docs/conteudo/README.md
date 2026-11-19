@@ -9,6 +9,7 @@ O TrainForge conserva origem, autoria, versão e direitos por uso. Pesquisa conc
 | Direitos, autoria profissional, revisão e limites de uso | [Direitos e curadoria](direitos-e-curadoria.md). |
 | O que foi preparado/revisado e como integrar | [Integração e operações editoriais](evidencias-para-integracao.md). |
 | Comparação de APIs, datasets e mídia | [Registro único de opções](opcoes-apis-exercicios.md) e [avaliação MoveKit](avaliacao-movekit-2026-10-29.md). |
+| Como integrar as mídias após receber o pacote | [Plano MoveKit para o Claude](plano-integracao-midias-movekit.md): inspeção primeiro, ajustes concretos depois, um exercício completo antes do lote. |
 | A prova original de uma rodada | [Acervo de pesquisa](evidencias/README.md), com ZIP, índice e consulta por caminho antigo. |
 | Uma instrução ou relato anterior à consolidação | [Memória documental e cronologia](../historico/README.md). |
 
