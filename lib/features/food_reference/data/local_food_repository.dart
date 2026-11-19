@@ -22,7 +22,24 @@ class LocalFoodRepository
     implements FoodRepository, LocalizedFoodRepository, BarcodeFoodRepository {
   final CatalogDatabase open;
   final CatalogInstaller? installer;
-  LocalFoodRepository(this.open, {this.installer});
+
+  /// Server catalog used for search and details when the device catalog
+  /// cannot be installed or opened, so the screen never stays empty.
+  final FoodRepository? fallback;
+  LocalFoodRepository(this.open, {this.installer, this.fallback});
+
+  Future<T> _orFallback<T>(
+    Future<T> Function() local,
+    Future<T> Function(FoodRepository server) remote,
+  ) async {
+    try {
+      return await local();
+    } catch (_) {
+      final server = fallback;
+      if (server == null) rethrow;
+      return remote(server);
+    }
+  }
 
   static String normalize(String value) {
     const accents = 'áàâãäåéèêëíìîïóòôõöúùûüçñ';
@@ -209,7 +226,10 @@ class LocalFoodRepository
     String q = '',
     String sourceId = '',
     String? cursor,
-  }) => _list(q, sourceId, cursor, null);
+  }) => _orFallback(
+    () => _list(q, sourceId, cursor, null),
+    (server) => server.list(q: q, sourceId: sourceId, cursor: cursor),
+  );
 
   @override
   Future<FoodPageData> localizedList({
@@ -218,10 +238,24 @@ class LocalFoodRepository
     String sourceId = '',
     String? cursor,
     String? namesVersion,
-  }) => _list(q, sourceId, cursor, locale);
+  }) => _orFallback(
+    () => _list(q, sourceId, cursor, locale),
+    (server) => server is LocalizedFoodRepository
+        ? (server as LocalizedFoodRepository).localizedList(
+            locale: locale,
+            q: q,
+            sourceId: sourceId,
+            cursor: cursor,
+            namesVersion: namesVersion,
+          )
+        : server.list(q: q, sourceId: sourceId, cursor: cursor),
+  );
 
   @override
-  Future<FoodFacets> facets() async {
+  Future<FoodFacets> facets() =>
+      _orFallback(_facets, (server) => server.facets());
+
+  Future<FoodFacets> _facets() async {
     if (installer != null) {
       final manifest = await installer!.manifest();
       final sources = (manifest['sources'] as List)
@@ -266,21 +300,31 @@ class LocalFoodRepository
   }
 
   @override
-  Future<FoodDetailData> detail(FoodReference food) async =>
-      FoodDetailData.fromJson({
-        ...await foodJson(food.id, food.versionId),
-        'notice': '',
-      });
+  Future<FoodDetailData> detail(FoodReference food) => _orFallback(
+    () async => FoodDetailData.fromJson({
+      ...await foodJson(food.id, food.versionId),
+      'notice': '',
+    }),
+    (server) => server.detail(food),
+  );
 
   @override
   Future<FoodDetailData> localizedDetail(
     FoodReference food, {
     required String locale,
-  }) async => FoodDetailData.fromJson({
-    ...await foodJson(food.id, food.versionId),
-    'notice': '',
-    'nameCatalog': {'locale': locale, 'version': '0'},
-  });
+  }) => _orFallback(
+    () async => FoodDetailData.fromJson({
+      ...await foodJson(food.id, food.versionId),
+      'notice': '',
+      'nameCatalog': {'locale': locale, 'version': '0'},
+    }),
+    (server) => server is LocalizedFoodRepository
+        ? (server as LocalizedFoodRepository).localizedDetail(
+            food,
+            locale: locale,
+          )
+        : server.detail(food),
+  );
 
   @override
   Future<List<FoodReference>> barcode(String code) async {

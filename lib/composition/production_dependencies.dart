@@ -2,6 +2,7 @@ import '../features/auth/data/auth_repository.dart';
 import '../features/catalog/data/catalog_repository.dart';
 import '../features/food_reference/data/local_food_repository.dart';
 import '../features/food_reference/data/catalog_installer.dart';
+import '../features/food_reference/data/food_repository.dart';
 import '../features/nutrition/data/offline_nutrition_repository.dart';
 import '../features/nutrition/data/nutrition_local_store.dart';
 import '../features/privacy/data/privacy_repository.dart';
@@ -12,7 +13,11 @@ import '../features/activity/data/activity_repository.dart';
 
 AppDependencies productionDependencies() {
   final installer = CatalogInstaller();
-  final catalog = LocalFoodRepository(installer.open, installer: installer);
+  final catalog = LocalFoodRepository(
+    installer.open,
+    installer: installer,
+    fallback: GoFoodRepository(),
+  );
   return AppDependencies(
     createActivityRepository:
         ({required accountId, required currentAccountId}) =>
