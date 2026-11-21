@@ -46,3 +46,40 @@ Total estimado: R$ 663–713. Sobra pouca margem para câmbio.
 - **Testar as amostras grátis** (MoveKit 2, GymVisual 5, Exercise Animatic 4) no celular de um idoso. Misturar estilos é perceptível.
 - **Decidir o A16** (programas autônomos ou com profissional). Os vídeos só servem aos exercícios dos programas que o app realmente vai oferecer. Hoje só o Workout to Go é autônomo e tem 2 clipes exatos na MoveKit.
 - Licenças: a MoveKit exige armazenamento privado com link temporário. GymVisual e Exercise Animatic proíbem revenda e uso como biblioteca concorrente. Conferir também cache offline e usuário sem login em cada licença.
+
+
+## Revisão de 21/11, com a biblioteca de 122 sessões prontas
+
+**O que foi analisado:** as 122 sessões prontas têm 436 entradas de exercício. Muitas repetem o mesmo movimento com outra dose.
+
+**O que a MoveKit não cobre:**
+- os aparelhos de praça (ATI, 11 aparelhos);
+- Baduanjin, Pilates e relaxamento (34 entradas);
+- os exercícios sentados da UFPR (27) e do Vivifrail (23);
+- as caminhadas de equilíbrio do Otago;
+- a maior parte dos alongamentos da UFDPar e do NIA.
+
+**O que a MoveKit cobre bem:**
+- as máquinas das sessões NSCA, no pacote Gym;
+- a parte de força do NIA com halteres e elástico, no pacote Home.
+
+### Fontes novas encontradas
+
+| Fonte | Formato | Preço | Uso no TrainForge | Risco |
+|---|---|---|---|---|
+| **RepDB, camada grátis** | 708 ilustrações estáticas de 512 px, JSON | **Grátis**, uso comercial em app | Ilustração de apoio para academia e casa | Atribuição visível obrigatória ("Exercise data by RepDB"); proibido redistribuir como dataset; foco em academia, sem idosos |
+| RepDB Standard | Animações e GIFs | US$ 299–499 | Alternativa à MoveKit | Acima do orçamento |
+| HEP2go, PhysioTools, Rehab My Patient, SimpleSet | Bibliotecas de fisioterapia | Assinatura mensal por profissional | Têm o conteúdo de idosos | São para uso clínico; a licença não permite embutir no app |
+| Animação sob encomenda (Fiverr, Workana) | GIF 2D | US$ 50–200 por GIF | ATI e Baduanjin | Caro: no máximo 3 a 5 GIFs com o orçamento |
+| **Gravação própria** | Vídeo curto feito com o celular | **R$ 0** | ATI numa praça real, Baduanjin, exercícios sentados da UFPR; relaxamento progressivo como áudio guiado | Termo de uso de imagem de quem aparece; roteiro fiel à fonte e crédito do autor do exercício |
+
+### Proposta revisada dentro de R$ 720
+
+1. **MoveKit Gym: R$ 454** (preço de Black Friday, até 30/11). Inclui Starter + Home + Gym e cobre academia e a força de casa.
+2. **RepDB grátis: R$ 0.** Ilustrações estáticas onde não houver animação, com atribuição.
+3. **Gravação própria: R$ 0.** Cobre os 11 aparelhos de ATI, o Baduanjin, os exercícios sentados e as caminhadas de equilíbrio. O relaxamento vira áudio.
+4. **Reserva de R$ 266:** GymVisual, a US$ 0,90 por GIF, para cerca de 40 GIFs de idosos sentados ou em pé com apoio, depois de testar os 5 grátis. Também serve de folga para o câmbio.
+
+Plano alternativo mais barato: MoveKit Home (R$ 363) + RepDB + gravação, com R$ 357 de reserva. Nesse caso, a academia fica só com ilustração estática.
+
+A compra e o cadastro são do autor. Antes de comprar, testar as amostras grátis no celular.
