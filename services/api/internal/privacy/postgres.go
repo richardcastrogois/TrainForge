@@ -37,6 +37,7 @@ var columns = map[string]string{
 	"nutrition_operation_receipts":    "user_id operation_id kind local_id request_hash result created_at",
 	"food_contributions":              "id user_id operation_id request_hash food consent status review_note created_at updated_at reviewed_at",
 	"food_contribution_media":         "id contribution_id user_id sha256 media_type content width height created_at",
+	"legal_consents":                  "id user_id document version document_sha decision app_version locale client_recorded_at recorded_at",
 }
 
 // Inventory is deliberately explicit: a new private table/column must not silently
@@ -85,6 +86,8 @@ func coverage(ctx context.Context, tx pgx.Tx) error {
 	optionalGroups := [][]string{
 		{"nutrition_sync_state", "nutrition_changes", "nutrition_operation_receipts"},
 		{"food_contributions", "food_contribution_media"},
+		// Schema17: append-only acceptance history, removed with the account (ON DELETE CASCADE).
+		{"legal_consents"},
 	}
 	absent := map[string]bool{}
 	for _, group := range optionalGroups {
@@ -172,6 +175,7 @@ var sections = map[string]section{
 	"activityEvents":         {"activity_events", "v.id::text", "v.user_id", `jsonb_build_object('id',v.id,'sessionId',v.session_id,'type',v.event_type,'occurredAt',v.occurred_at,'payload',v.payload)`},
 	"foods":                  {"food_versions", "v.food_id||':'||v.version_sha", "v.owner_id", `jsonb_build_object('id',v.food_id,'versionId',v.version_sha,'sourceId',v.source_id,'sourceFoodId',v.source_food_id,'sourceRowKey',v.source_row_key,'sourcePublishedVersion',v.source_published_version,'nameLocale',v.name_locale,'allowedOperations',v.allowed_operations,'nameOriginal',v.name_original,'namePt',v.name_pt,'preparation',v.preparation,'basisQuantity',v.basis_quantity::text,'basisUnit',v.basis_unit,'nutrients',v.nutrients,'provenance',v.provenance,'createdAt',v.created_at)`},
 	"trainingConfigurations": {"training_configuration_versions", "lpad(v.revision::text,10,'0')", "v.user_id", `jsonb_build_object('contract','trainforge.training-configuration/1','revision',v.revision,'configuration',v.configuration,'confirmedAt',v.confirmed_at)`},
+	"legalConsents":          {"legal_consents", "lpad(v.id::text,20,'0')", "v.user_id", `jsonb_build_object('document',v.document,'version',v.version,'documentSha',v.document_sha,'decision',v.decision,'appVersion',v.app_version,'locale',v.locale,'clientRecordedAt',v.client_recorded_at,'recordedAt',v.recorded_at)`},
 	"foodEntries":            {"food_entries", "v.id::text", "v.user_id", `jsonb_build_object('id',v.id,'foodId',v.food_id,'foodVersion',v.food_sha,'quantity',v.quantity::text,'unit',v.unit,'occurredAt',v.occurred_at,'timezone',v.timezone,'calculation',v.calculation,'deletedAt',v.deleted_at,'createdAt',v.created_at)`},
 }
 
@@ -186,9 +190,13 @@ func (p Postgres) Export(ctx context.Context, subject auth.Principal, f ExportFi
 		return result, err
 	}
 	defer tx.Rollback(ctx)
-	if f.Section == "foodContributions" || f.Section == "foodContributionMedia" {
+	if f.Section == "foodContributions" || f.Section == "foodContributionMedia" || f.Section == "legalConsents" {
+		table := "trainforge_v1.food_contributions"
+		if f.Section == "legalConsents" {
+			table = "trainforge_v1.legal_consents"
+		}
 		var present bool
-		if tx.QueryRow(ctx, "SELECT to_regclass('trainforge_v1.food_contributions') IS NOT NULL").Scan(&present) != nil {
+		if tx.QueryRow(ctx, "SELECT to_regclass($1) IS NOT NULL", table).Scan(&present) != nil {
 			return result, ErrUnavailable
 		}
 		if !present {

@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "inputRevision": "84a1de9863a3da1103f41453a23708b5b8488b67e023f01b89821bca10b57f92",
+  "inputRevision": "d683f44a7ef80665c0ab730f09881f85f8c101df59113defa684945ff64bd4a1",
   "inputs": {
     "contracts/generated/catalog-m1.swagger.json": "7f59b699f1c4c032e0652c31f44fac9a8d3a77115639a24408725427e97b0339",
     "contracts/generated/swagger-v1.json": "437504d14c4210b1a385fc87132aaea0f0970e67545e077b6bca6866cda530fa",
@@ -218,8 +218,8 @@
     "services/api/internal/platform/postgres/readiness.go": "5b381653f71c3150f207d50c42523c39feee6f2fa82601598bbea810d63ce7ed",
     "services/api/internal/privacy/handler.go": "0e9cd6b1624dc3f9994c60304ea6ba31de5408a79950ae6b24925cbbe280fc0d",
     "services/api/internal/privacy/maintenance.go": "28839628a18ea2ff02c73e2cf41b4aafe4a97bfc8e8088551d620df806c00031",
-    "services/api/internal/privacy/postgres.go": "3cc2b8dc2c3bf2d3ed9e0bf6c0aa3b20b0fcc255f4e529584ff7b03b9d2b5f71",
-    "services/api/internal/privacy/privacy.go": "477c5751c079c916c9ae2d694f5be25e95c7f4c03bf07ca480a62ad1f9bde69d",
+    "services/api/internal/privacy/postgres.go": "36b44b993d556e3536dc10c5a2d2386e1f82fd7a4b931da19c49e97ec58e0c15",
+    "services/api/internal/privacy/privacy.go": "8672420febc64fea8bac7d075ecc663675dc06404ac939289732d2573644e81f",
     "services/api/internal/privacy/restore.go": "ebae788a93e7bff709eceff5af1c0d65d120fd033ef0a235c18114867afe4dfd",
     "services/api/internal/publiccatalog/files.go": "8fc3e879ee919d4f91ce5c3a5e88380f5b6f18b12a28d36f0d643c904ac3e7fd",
     "services/api/internal/swaggerdocs/docs.go": "38c779675c9ae60fbc30657e19a8f2bd4ff0ddb40e695f3a774e9977661ea49e",

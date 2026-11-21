@@ -46,7 +46,7 @@ func CurrentPolicy() Policy {
 		ErasureLedger:      "Mantemos somente um identificador interno da conta e a data da exclusão para impedir que os dados retornem ao recuperar uma cópia de segurança. Esse registro não contém nome, e-mail ou credenciais.",
 		OtherServices:      "A conta Google e dados mantidos pelo Google não são apagados por esta ação.",
 		FutureStorage:      "Fotos de rótulo só são enviadas quando você as seleciona para uma contribuição voluntária. Metadados da imagem são removidos; refeições, peso e histórico não são enviados como contribuição. A exclusão da conta apaga contribuições e fotos privadas; dados já publicados com sua autorização podem continuar nas cópias distribuídas do catálogo aberto. Recibos e alterações internos de sincronização são excluídos da exportação por serem cópias operacionais dos registros exportados, e são apagados com a conta. As credenciais da sessão ficam no armazenamento protegido deste aparelho.",
-		ExportSections:     []string{"account", "sessions", "enrollments", "occurrences", "activitySessions", "activityEvents", "foods", "foodEntries", "trainingConfigurations", "meals", "mealItems", "mealVersions", "foodContributions", "foodContributionMedia"},
+		ExportSections:     []string{"account", "sessions", "enrollments", "occurrences", "activitySessions", "activityEvents", "foods", "foodEntries", "trainingConfigurations", "meals", "mealItems", "mealVersions", "foodContributions", "foodContributionMedia", "legalConsents"},
 		FreshLoginMinutes:  15, IntentMinutes: 5,
 	}
 }
