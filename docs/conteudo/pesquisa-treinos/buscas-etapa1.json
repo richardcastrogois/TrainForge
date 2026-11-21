@@ -1,0 +1,1879 @@
+{
+ "contract": "trainforge.pesquisa-treinos.buscas/1",
+ "etapa": "1-idosos",
+ "executadoEm": "2026-11-21",
+ "ferramenta": "NCBI E-utilities esearch (sort=relevance, retmax=20) + esummary",
+ "buscas": [
+  {
+   "id": "E1-Q1",
+   "pergunta": "E1-Q1 forca+equilibrio domiciliar idosos quedas",
+   "base": "PubMed",
+   "termo": "(\"aged\"[MeSH Terms]) AND (\"Accidental Falls/prevention and control\"[MeSH]) AND (\"Exercise Therapy\"[MeSH] OR \"Resistance Training\"[MeSH]) AND (home OR \"home-based\")",
+   "totalResultados": 375,
+   "top20": [
+    {
+     "pmid": "34318929",
+     "ano": "2021",
+     "primeiroAutor": "Dautzenberg L",
+     "titulo": "Interventions for preventing falls and fall-related fractures in community-dwelling older adults: A systematic review and network meta-analysis.",
+     "revista": "J Am Geriatr Soc",
+     "doi": "10.1111/jgs.17375",
+     "pmc": "PMC8518387"
+    },
+    {
+     "pmid": "39918027",
+     "ano": "2025",
+     "primeiroAutor": "Zhou J",
+     "titulo": "Home-based strength and balance exercises for fall prevention among older individuals of advanced age: a randomized controlled single-blind study.",
+     "revista": "Ann Med",
+     "doi": "10.1080/07853890.2025.2459818",
+     "pmc": "PMC11809163"
+    },
+    {
+     "pmid": "31339100",
+     "ano": "2019",
+     "primeiroAutor": "Ashburn A",
+     "titulo": "Exercise- and strategy-based physiotherapy-delivered intervention for preventing repeat falls in people with Parkinson's: the PDSAFE RCT.",
+     "revista": "Health Technol Assess",
+     "doi": "10.3310/hta23360",
+     "pmc": "PMC6680369"
+    },
+    {
+     "pmid": "33074327",
+     "ano": "2020",
+     "primeiroAutor": "Rooks D",
+     "titulo": "Bimagrumab vs Optimized Standard of Care for Treatment of Sarcopenia in Community-Dwelling Older Adults: A Randomized Clinical Trial.",
+     "revista": "JAMA Netw Open",
+     "doi": "10.1001/jamanetworkopen.2020.20836",
+     "pmc": "PMC7573681"
+    },
+    {
+     "pmid": "31162569",
+     "ano": "2019",
+     "primeiroAutor": "Liu-Ambrose T",
+     "titulo": "Effect of a Home-Based Exercise Program on Subsequent Falls Among Community-Dwelling High-Risk Older Adults After a Fall: A Randomized Clinical Trial.",
+     "revista": "JAMA",
+     "doi": "10.1001/jama.2019.5795",
+     "pmc": "PMC6549299"
+    },
+    {
+     "pmid": "25799402",
+     "ano": "2015",
+     "primeiroAutor": "Uusi-Rasi K",
+     "titulo": "Exercise and vitamin D in fall prevention among older women: a randomized clinical trial.",
+     "revista": "JAMA Intern Med",
+     "doi": "10.1001/jamainternmed.2015.0225",
+     "pmc": null
+    },
+    {
+     "pmid": "28635391",
+     "ano": "2017",
+     "primeiroAutor": "Theiler R",
+     "titulo": "Gezielte Trainingstherapie zur Sekundärprävention von Stürzen und Hüftfrakturen.",
+     "revista": "Praxis (Bern 1994)",
+     "doi": "10.1024/1661-8157/a002704",
+     "pmc": null
+    },
+    {
+     "pmid": "38847714",
+     "ano": "2024",
+     "primeiroAutor": "Kp N",
+     "titulo": "Comparison of effects of Otago exercise program vs gaze stability exercise on balance and fear of fall in older adults: A randomized trial.",
+     "revista": "Medicine (Baltimore)",
+     "doi": "10.1097/MD.0000000000038345",
+     "pmc": "PMC11155577"
+    },
+    {
+     "pmid": "35704055",
+     "ano": "2022",
+     "primeiroAutor": "Zhang F",
+     "titulo": "Effect of a home-based resistance exercise program in elderly participants with osteoporosis: a randomized controlled trial.",
+     "revista": "Osteoporos Int",
+     "doi": "10.1007/s00198-022-06456-1",
+     "pmc": null
+    },
+    {
+     "pmid": "24106864",
+     "ano": "2013",
+     "primeiroAutor": "Gschwind YJ",
+     "titulo": "A best practice fall prevention exercise program to improve balance, strength / power, and psychosocial health in older adults: study protocol for a randomized controlled trial.",
+     "revista": "BMC Geriatr",
+     "doi": "10.1186/1471-2318-13-105",
+     "pmc": "PMC3852637"
+    },
+    {
+     "pmid": "38701490",
+     "ano": "2024",
+     "primeiroAutor": "Román E",
+     "titulo": "Home exercise, branched-chain amino acids, and probiotics improve frailty in cirrhosis: A randomized clinical trial.",
+     "revista": "Hepatol Commun",
+     "doi": "10.1097/HC9.0000000000000443",
+     "pmc": "PMC11073778"
+    },
+    {
+     "pmid": "30642252",
+     "ano": "2019",
+     "primeiroAutor": "Mittaz Hager AG",
+     "titulo": "Effects of three home-based exercise programmes regarding falls, quality of life and exercise-adherence in older adults at risk of falling: protocol for a randomized controlled trial.",
+     "revista": "BMC Geriatr",
+     "doi": "10.1186/s12877-018-1021-y",
+     "pmc": "PMC6332592"
+    },
+    {
+     "pmid": "33237565",
+     "ano": "2021",
+     "primeiroAutor": "Jahanpeyma P",
+     "titulo": "Effects of the Otago exercise program on falls, balance, and physical performance in older nursing home residents with high fall risk: a randomized controlled trial.",
+     "revista": "Eur Geriatr Med",
+     "doi": "10.1007/s41999-020-00403-1",
+     "pmc": null
+    },
+    {
+     "pmid": "25432016",
+     "ano": "2014",
+     "primeiroAutor": "Kendrick D",
+     "titulo": "Exercise for reducing fear of falling in older people living in the community.",
+     "revista": "Cochrane Database Syst Rev",
+     "doi": "10.1002/14651858.CD009848.pub2",
+     "pmc": "PMC7388865"
+    },
+    {
+     "pmid": "26626157",
+     "ano": "2015",
+     "primeiroAutor": "de Labra C",
+     "titulo": "Effects of physical exercise interventions in frail older adults: a systematic review of randomized controlled trials.",
+     "revista": "BMC Geriatr",
+     "doi": "10.1186/s12877-015-0155-4",
+     "pmc": "PMC4667405"
+    },
+    {
+     "pmid": "33587271",
+     "ano": "2021",
+     "primeiroAutor": "Coelho-Júnior HJ",
+     "titulo": "Evidence-based recommendations for resistance and power training to prevent frailty in community-dwellers.",
+     "revista": "Aging Clin Exp Res",
+     "doi": "10.1007/s40520-021-01802-5",
+     "pmc": null
+    },
+    {
+     "pmid": "18667626",
+     "ano": "2009",
+     "primeiroAutor": "Dukyoo Jung",
+     "titulo": "A meta-analysis of fear of falling treatment programs for the elderly.",
+     "revista": "West J Nurs Res",
+     "doi": "10.1177/0193945908320466",
+     "pmc": null
+    },
+    {
+     "pmid": "34027869",
+     "ano": "2021",
+     "primeiroAutor": "Afridi A",
+     "titulo": "Wii Fit for Balance Training in Elderly: A Systematic Review.",
+     "revista": "J Coll Physicians Surg Pak",
+     "doi": "10.29271/jcpsp.2021.05.559",
+     "pmc": null
+    },
+    {
+     "pmid": "34197791",
+     "ano": "2022",
+     "primeiroAutor": "Courel-Ibáñez J",
+     "titulo": "Impact of Tailored Multicomponent Exercise for Preventing Weakness and Falls on Nursing Home Residents' Functional Capacity.",
+     "revista": "J Am Med Dir Assoc",
+     "doi": "10.1016/j.jamda.2021.05.037",
+     "pmc": null
+    },
+    {
+     "pmid": "30033755",
+     "ano": "2019",
+     "primeiroAutor": "Thaut MH",
+     "titulo": "Rhythmic auditory stimulation for reduction of falls in Parkinson's disease: a randomized controlled study.",
+     "revista": "Clin Rehabil",
+     "doi": "10.1177/0269215518788615",
+     "pmc": null
+    }
+   ]
+  },
+  {
+   "id": "E1-Q2",
+   "pergunta": "E1-Q2 revisoes sistematicas exercicio prevencao quedas comunidade",
+   "base": "PubMed",
+   "termo": "(\"aged\"[MeSH Terms]) AND (\"Accidental Falls/prevention and control\"[MeSH]) AND exercise AND (systematic[sb])",
+   "totalResultados": 251,
+   "top20": [
+    {
+     "pmid": "34318929",
+     "ano": "2021",
+     "primeiroAutor": "Dautzenberg L",
+     "titulo": "Interventions for preventing falls and fall-related fractures in community-dwelling older adults: A systematic review and network meta-analysis.",
+     "revista": "J Am Geriatr Soc",
+     "doi": "10.1111/jgs.17375",
+     "pmc": "PMC8518387"
+    },
+    {
+     "pmid": "27707740",
+     "ano": "2017",
+     "primeiroAutor": "Sherrington C",
+     "titulo": "Exercise to prevent falls in older adults: an updated systematic review and meta-analysis.",
+     "revista": "Br J Sports Med",
+     "doi": "10.1136/bjsports-2016-096547",
+     "pmc": null
+    },
+    {
+     "pmid": "34910151",
+     "ano": "2021",
+     "primeiroAutor": "Montero-Odasso MM",
+     "titulo": "Evaluation of Clinical Practice Guidelines on Fall Prevention and Management for Older Adults: A Systematic Review.",
+     "revista": "JAMA Netw Open",
+     "doi": "10.1001/jamanetworkopen.2021.38911",
+     "pmc": "PMC8674747"
+    },
+    {
+     "pmid": "38833257",
+     "ano": "2024",
+     "primeiroAutor": "Guirguis-Blake JM",
+     "titulo": "Interventions to Prevent Falls in Older Adults: Updated Evidence Report and Systematic Review for the US Preventive Services Task Force.",
+     "revista": "JAMA",
+     "doi": "10.1001/jama.2024.4166",
+     "pmc": "PMC13552531"
+    },
+    {
+     "pmid": "30703272",
+     "ano": "2019",
+     "primeiroAutor": "Sherrington C",
+     "titulo": "Exercise for preventing falls in older people living in the community.",
+     "revista": "Cochrane Database Syst Rev",
+     "doi": "10.1002/14651858.CD012424.pub2",
+     "pmc": "PMC6360922"
+    },
+    {
+     "pmid": "39593159",
+     "ano": "2024",
+     "primeiroAutor": "Pillay J",
+     "titulo": "Falls prevention interventions for community-dwelling older adults: systematic review and meta-analysis of benefits, harms, and patient values and preferences.",
+     "revista": "Syst Rev",
+     "doi": "10.1186/s13643-024-02681-3",
+     "pmc": "PMC11590344"
+    },
+    {
+     "pmid": "31277132",
+     "ano": "2019",
+     "primeiroAutor": "Thomas E",
+     "titulo": "Physical activity programs for balance and fall prevention in elderly: A systematic review.",
+     "revista": "Medicine (Baltimore)",
+     "doi": "10.1097/MD.0000000000016218",
+     "pmc": "PMC6635278"
+    },
+    {
+     "pmid": "38109410",
+     "ano": "2023",
+     "primeiroAutor": "Dyer SM",
+     "titulo": "Exercise for falls prevention in aged care: systematic review and trial endpoint meta-analyses.",
+     "revista": "Age Ageing",
+     "doi": "10.1093/ageing/afad217",
+     "pmc": "PMC10727475"
+    },
+    {
+     "pmid": "31792067",
+     "ano": "2020",
+     "primeiroAutor": "Sherrington C",
+     "titulo": "Exercise for preventing falls in older people living in the community: an abridged Cochrane systematic review.",
+     "revista": "Br J Sports Med",
+     "doi": "10.1136/bjsports-2019-101512",
+     "pmc": null
+    },
+    {
+     "pmid": "34331491",
+     "ano": "2021",
+     "primeiroAutor": "Ong MF",
+     "titulo": "Fall prevention education to reduce fall risk among community-dwelling older persons: A systematic review.",
+     "revista": "J Nurs Manag",
+     "doi": "10.1111/jonm.13434",
+     "pmc": "PMC9291009"
+    },
+    {
+     "pmid": "33239019",
+     "ano": "2020",
+     "primeiroAutor": "Sherrington C",
+     "titulo": "Evidence on physical activity and falls prevention for people aged 65+ years: systematic review to inform the WHO guidelines on physical activity and sedentary behaviour.",
+     "revista": "Int J Behav Nutr Phys Act",
+     "doi": "10.1186/s12966-020-01041-3",
+     "pmc": "PMC7689963"
+    },
+    {
+     "pmid": "36361073",
+     "ano": "2022",
+     "primeiroAutor": "Linhares DG",
+     "titulo": "Effects of Multicomponent Exercise Training on the Health of Older Women with Osteoporosis: A Systematic Review and Meta-Analysis.",
+     "revista": "Int J Environ Res Public Health",
+     "doi": "10.3390/ijerph192114195",
+     "pmc": "PMC9655411"
+    },
+    {
+     "pmid": "32525097",
+     "ano": "2021",
+     "primeiroAutor": "Di Lorito C",
+     "titulo": "Exercise interventions for older adults: A systematic review of meta-analyses.",
+     "revista": "J Sport Health Sci",
+     "doi": "10.1016/j.jshs.2020.06.003",
+     "pmc": "PMC7858023"
+    },
+    {
+     "pmid": "37601180",
+     "ano": "2023",
+     "primeiroAutor": "Sadaqa M",
+     "titulo": "Effectiveness of exercise interventions on fall prevention in ambulatory community-dwelling older adults: a systematic review with narrative synthesis.",
+     "revista": "Front Public Health",
+     "doi": "10.3389/fpubh.2023.1209319",
+     "pmc": "PMC10435089"
+    },
+    {
+     "pmid": "36339194",
+     "ano": "2022",
+     "primeiroAutor": "Yang Y",
+     "titulo": "The impact of Otago exercise programme on the prevention of falls in older adult: A systematic review.",
+     "revista": "Front Public Health",
+     "doi": "10.3389/fpubh.2022.953593",
+     "pmc": "PMC9631473"
+    },
+    {
+     "pmid": "40054127",
+     "ano": "2025",
+     "primeiroAutor": "Lee D",
+     "titulo": "A systematic review of fall prevention interventions in frail older adults.",
+     "revista": "Geriatr Nurs",
+     "doi": "10.1016/j.gerinurse.2025.02.018",
+     "pmc": null
+    },
+    {
+     "pmid": "22972103",
+     "ano": "2012",
+     "primeiroAutor": "Gillespie LD",
+     "titulo": "Interventions for preventing falls in older people living in the community.",
+     "revista": "Cochrane Database Syst Rev",
+     "doi": "10.1002/14651858.CD007146.pub3",
+     "pmc": "PMC8095069"
+    },
+    {
+     "pmid": "40832852",
+     "ano": "2025",
+     "primeiroAutor": "Dyer SM",
+     "titulo": "Interventions for preventing falls in older people in care facilities.",
+     "revista": "Cochrane Database Syst Rev",
+     "doi": "10.1002/14651858.CD016064",
+     "pmc": "PMC12365945"
+    },
+    {
+     "pmid": "37489124",
+     "ano": "2023",
+     "primeiroAutor": "Lektip C",
+     "titulo": "Home hazard modification programs for reducing falls in older adults: a systematic review and meta-analysis.",
+     "revista": "PeerJ",
+     "doi": "10.7717/peerj.15699",
+     "pmc": "PMC10363339"
+    },
+    {
+     "pmid": "38180112",
+     "ano": "2024",
+     "primeiroAutor": "Lewis SR",
+     "titulo": "Population-based interventions for preventing falls and fall-related injuries in older people.",
+     "revista": "Cochrane Database Syst Rev",
+     "doi": "10.1002/14651858.CD013789.pub2",
+     "pmc": "PMC10767771"
+    }
+   ]
+  },
+  {
+   "id": "E1-Q3",
+   "pergunta": "E1-Q3 treino de forca idosos dose (revisoes)",
+   "base": "PubMed",
+   "termo": "(\"aged\"[MeSH Terms]) AND (\"Resistance Training\"[MeSH]) AND (dose OR dosage OR \"dose-response\") AND (systematic[sb])",
+   "totalResultados": 52,
+   "top20": [
+    {
+     "pmid": "41212331",
+     "ano": "2025",
+     "primeiroAutor": "Yan R",
+     "titulo": "Optimal resistance training prescriptions to improve muscle strength, physical function, and muscle mass in older adults diagnosed with sarcopenia: a systematic review and meta-analysis.",
+     "revista": "Aging Clin Exp Res",
+     "doi": "10.1007/s40520-025-03235-w",
+     "pmc": "PMC12602684"
+    },
+    {
+     "pmid": "26420238",
+     "ano": "2015",
+     "primeiroAutor": "Borde R",
+     "titulo": "Dose-Response Relationships of Resistance Training in Healthy Old Adults: A Systematic Review and Meta-Analysis.",
+     "revista": "Sports Med",
+     "doi": "10.1007/s40279-015-0385-9",
+     "pmc": "PMC4656698"
+    },
+    {
+     "pmid": "38350303",
+     "ano": "2024",
+     "primeiroAutor": "Li ML",
+     "titulo": "Improving sarcopenia in older adults: a systematic review and meta-analysis of randomized controlled trials of whey protein supplementation with or without resistance training.",
+     "revista": "J Nutr Health Aging",
+     "doi": "10.1016/j.jnha.2024.100184",
+     "pmc": "PMC12877251"
+    },
+    {
+     "pmid": "34836013",
+     "ano": "2021",
+     "primeiroAutor": "Dos Santos EEP",
+     "titulo": "Efficacy of Creatine Supplementation Combined with Resistance Training on Muscle Strength and Muscle Mass in Older Females: A Systematic Review and Meta-Analysis.",
+     "revista": "Nutrients",
+     "doi": "10.3390/nu13113757",
+     "pmc": "PMC8619193"
+    },
+    {
+     "pmid": "35853549",
+     "ano": "2022",
+     "primeiroAutor": "Hortobágyi T",
+     "titulo": "The impact of aerobic and resistance training intensity on markers of neuroplasticity in health and disease.",
+     "revista": "Ageing Res Rev",
+     "doi": "10.1016/j.arr.2022.101698",
+     "pmc": null
+    },
+    {
+     "pmid": "24576864",
+     "ano": "2014",
+     "primeiroAutor": "Devries MC",
+     "titulo": "Creatine supplementation during resistance training in older adults-a meta-analysis.",
+     "revista": "Med Sci Sports Exerc",
+     "doi": "10.1249/MSS.0000000000000220",
+     "pmc": null
+    },
+    {
+     "pmid": "37774931",
+     "ano": "2023",
+     "primeiroAutor": "Nagata CA",
+     "titulo": "Are dose-response relationships of resistance training reliable to improve functional performance in frail and pre-frail older adults? A systematic review with meta-analysis and meta-regression of randomized controlled trials.",
+     "revista": "Ageing Res Rev",
+     "doi": "10.1016/j.arr.2023.102079",
+     "pmc": null
+    },
+    {
+     "pmid": "40990154",
+     "ano": "2025",
+     "primeiroAutor": "Saunders DH",
+     "titulo": "Resistance training for people with stroke.",
+     "revista": "Cochrane Database Syst Rev",
+     "doi": "10.1002/14651858.CD016001",
+     "pmc": "PMC12458981"
+    },
+    {
+     "pmid": "41086999",
+     "ano": "2026",
+     "primeiroAutor": "Qipo O",
+     "titulo": "Dose-response relationship of resistance training and the effects on circulating biomarkers of inflammation or neuroplasticity in older adults: A systematic review and meta-analysis.",
+     "revista": "Ageing Res Rev",
+     "doi": "10.1016/j.arr.2025.102917",
+     "pmc": null
+    },
+    {
+     "pmid": "32811763",
+     "ano": "2021",
+     "primeiroAutor": "Reis CEG",
+     "titulo": "Effects of pre-sleep protein consumption on muscle-related outcomes - A systematic review.",
+     "revista": "J Sci Med Sport",
+     "doi": "10.1016/j.jsams.2020.07.016",
+     "pmc": null
+    },
+    {
+     "pmid": "41194011",
+     "ano": "2025",
+     "primeiroAutor": "Ran J",
+     "titulo": "Dose-response effects of resistance training in sarcopenic older adults: systematic review and meta-analysis.",
+     "revista": "BMC Geriatr",
+     "doi": "10.1186/s12877-025-06559-4",
+     "pmc": "PMC12590801"
+    },
+    {
+     "pmid": "38374703",
+     "ano": "2024",
+     "primeiroAutor": "Whaikid P",
+     "titulo": "The effectiveness of protein supplementation combined with resistance exercise programs among community-dwelling older adults with sarcopenia: a systematic review and meta-analysis.",
+     "revista": "Epidemiol Health",
+     "doi": "10.4178/epih.e2024030",
+     "pmc": "PMC11369567"
+    },
+    {
+     "pmid": "34819097",
+     "ano": "2021",
+     "primeiroAutor": "Chen Y",
+     "titulo": "Comparison between the effects of exergame intervention and traditional physical training on improving balance and fall prevention in healthy older adults: a systematic review and meta-analysis.",
+     "revista": "J Neuroeng Rehabil",
+     "doi": "10.1186/s12984-021-00917-0",
+     "pmc": "PMC8611920"
+    },
+    {
+     "pmid": "38612975",
+     "ano": "2024",
+     "primeiroAutor": "Liao CD",
+     "titulo": "Comparative Efficacy of Different Protein Supplements on Muscle Mass, Strength, and Physical Indices of Sarcopenia among Community-Dwelling, Hospitalized or Institutionalized Older Adults Undergoing Resistance Training: A Network Meta-Analysis of Randomized Controlled Trials.",
+     "revista": "Nutrients",
+     "doi": "10.3390/nu16070941",
+     "pmc": "PMC11013298"
+    },
+    {
+     "pmid": "30762623",
+     "ano": "2020",
+     "primeiroAutor": "Stares A",
+     "titulo": "The Additive Effects of Creatine Supplementation and Exercise Training in an Aging Population: A Systematic Review of Randomized Controlled Trials.",
+     "revista": "J Geriatr Phys Ther",
+     "doi": "10.1519/JPT.0000000000000222",
+     "pmc": null
+    },
+    {
+     "pmid": "40944241",
+     "ano": "2025",
+     "primeiroAutor": "Hernandez-Martinez J",
+     "titulo": "Effects of Strength Training on Body Composition, Physical Performance, and Protein or Calcium Intake in Older People with Osteosarcopenia: A Meta-Analysis.",
+     "revista": "Nutrients",
+     "doi": "10.3390/nu17172852",
+     "pmc": "PMC12430211"
+    },
+    {
+     "pmid": "41963141",
+     "ano": "2026",
+     "primeiroAutor": "Isenmann E",
+     "titulo": "It's never too late: The impact of resistance training on strength and body composition in females across the lifespan - A systematic review and meta-analysis.",
+     "revista": "J Sci Med Sport",
+     "doi": "10.1016/j.jsams.2026.03.002",
+     "pmc": null
+    },
+    {
+     "pmid": "40260904",
+     "ano": "2026",
+     "primeiroAutor": "Johari S",
+     "titulo": "A Systematic Review and Meta-Analysis to Examine the Effectiveness of Exercise Training in People With Osteoporosis or Osteopenia Compared to Other Rehabilitation Interventions on Fear of Falling and the Number of Falls.",
+     "revista": "J Geriatr Phys Ther",
+     "doi": "10.1519/JPT.0000000000000457",
+     "pmc": null
+    },
+    {
+     "pmid": "34444975",
+     "ano": "2021",
+     "primeiroAutor": "Huang LP",
+     "titulo": "Effects of Milk Protein in Resistance Training-Induced Lean Mass Gains for Older Adults Aged ≥ 60 y: A Systematic Review and Meta-Analysis.",
+     "revista": "Nutrients",
+     "doi": "10.3390/nu13082815",
+     "pmc": "PMC8398205"
+    },
+    {
+     "pmid": "42560629",
+     "ano": "2026",
+     "primeiroAutor": "Jin-Hao H",
+     "titulo": "Effects of different exercise types and intensities in older adults with sarcopenia: a systematic review and network meta-analysis.",
+     "revista": "Eur Geriatr Med",
+     "doi": "10.1007/s41999-026-01570-3",
+     "pmc": null
+    }
+   ]
+  },
+  {
+   "id": "E1-Q4",
+   "pergunta": "E1-Q4 multicomponente idosos fragilidade",
+   "base": "PubMed",
+   "termo": "(\"Frail Elderly\"[MeSH] OR frailty) AND multicomponent AND exercise AND (Randomized Controlled Trial[pt])",
+   "totalResultados": 92,
+   "top20": [
+    {
+     "pmid": "39024000",
+     "ano": "2024",
+     "primeiroAutor": "Tuan SH",
+     "titulo": "Assessing the Clinical Effectiveness of an Exergame-Based Exercise Training Program Using Ring Fit Adventure to Prevent and Postpone Frailty and Sarcopenia Among Older Adults in Rural Long-Term Care Facilities: Randomized Controlled Trial.",
+     "revista": "J Med Internet Res",
+     "doi": "10.2196/59468",
+     "pmc": "PMC11294767"
+    },
+    {
+     "pmid": "30419096",
+     "ano": "2019",
+     "primeiroAutor": "Martínez-Velilla N",
+     "titulo": "Effect of Exercise Intervention on Functional Decline in Very Elderly Patients During Acute Hospitalization: A Randomized Clinical Trial.",
+     "revista": "JAMA Intern Med",
+     "doi": "10.1001/jamainternmed.2018.4869",
+     "pmc": "PMC6583412"
+    },
+    {
+     "pmid": "32466446",
+     "ano": "2020",
+     "primeiroAutor": "Sadjapong U",
+     "titulo": "Multicomponent Exercise Program Reduces Frailty and Inflammatory Biomarkers and Improves Physical Performance in Community-Dwelling Older Adults: A Randomized Controlled Trial.",
+     "revista": "Int J Environ Res Public Health",
+     "doi": "10.3390/ijerph17113760",
+     "pmc": "PMC7312630"
+    },
+    {
+     "pmid": "35150086",
+     "ano": "2022",
+     "primeiroAutor": "Casas-Herrero Á",
+     "titulo": "Effects of Vivifrail multicomponent intervention on functional capacity: a multicentre, randomized controlled trial.",
+     "revista": "J Cachexia Sarcopenia Muscle",
+     "doi": "10.1002/jcsm.12925",
+     "pmc": "PMC8977963"
+    },
+    {
+     "pmid": "40222237",
+     "ano": "2025",
+     "primeiroAutor": "Li N",
+     "titulo": "The impacts of a mHealth platform-enabled lifestyle-integrated multicomponent exercise program on reversing pre-frailty in community-dwelling older adults: A randomized controlled trial.",
+     "revista": "Int J Nurs Stud",
+     "doi": "10.1016/j.ijnurstu.2025.105072",
+     "pmc": null
+    },
+    {
+     "pmid": "41246478",
+     "ano": "2025",
+     "primeiroAutor": "Pan N",
+     "titulo": "Effects of Multicomponent Otago Exercise Program with Added Resistance Training on Sarcopenia in Pre-Frailty Older Adults in Nursing Homes: A Randomized Controlled Trial.",
+     "revista": "Clin Interv Aging",
+     "doi": "10.2147/CIA.S552924",
+     "pmc": "PMC12619544"
+    },
+    {
+     "pmid": "26947059",
+     "ano": "2016",
+     "primeiroAutor": "Tarazona-Santabalbina FJ",
+     "titulo": "A Multicomponent Exercise Intervention that Reverses Frailty and Improves Cognition, Emotion, and Social Networking in the Community-Dwelling Frail Elderly: A Randomized Clinical Trial.",
+     "revista": "J Am Med Dir Assoc",
+     "doi": "10.1016/j.jamda.2016.01.019",
+     "pmc": null
+    },
+    {
+     "pmid": "39478450",
+     "ano": "2024",
+     "primeiroAutor": "Fang J",
+     "titulo": "Combining motivational and exercise intervention components to reverse pre-frailty and promote self-efficacy among community-dwelling pre-frail older adults: a randomized controlled trial.",
+     "revista": "BMC Geriatr",
+     "doi": "10.1186/s12877-024-05464-6",
+     "pmc": "PMC11523852"
+    },
+    {
+     "pmid": "36580558",
+     "ano": "2022",
+     "primeiroAutor": "Sánchez-Sánchez JL",
+     "titulo": "Effects of a 12-week Vivifrail exercise program on intrinsic capacity among frail cognitively impaired community-dwelling older adults: secondary analysis of a multicentre randomised clinical trial.",
+     "revista": "Age Ageing",
+     "doi": "10.1093/ageing/afac303",
+     "pmc": "PMC9799251"
+    },
+    {
+     "pmid": "39400535",
+     "ano": "2024",
+     "primeiroAutor": "Sáez de Asteasu ML",
+     "titulo": "Short-Term Multicomponent Exercise Impact on Muscle Function and Structure in Hospitalized Older at Risk of Acute Sarcopenia.",
+     "revista": "J Cachexia Sarcopenia Muscle",
+     "doi": "10.1002/jcsm.13602",
+     "pmc": "PMC11634513"
+    },
+    {
+     "pmid": "34197791",
+     "ano": "2022",
+     "primeiroAutor": "Courel-Ibáñez J",
+     "titulo": "Impact of Tailored Multicomponent Exercise for Preventing Weakness and Falls on Nursing Home Residents' Functional Capacity.",
+     "revista": "J Am Med Dir Assoc",
+     "doi": "10.1016/j.jamda.2021.05.037",
+     "pmc": null
+    },
+    {
+     "pmid": "38479928",
+     "ano": "2024",
+     "primeiroAutor": "Chen B",
+     "titulo": "Effect of multicomponent intervention on malnutrition in older adults: A multicenter randomized clinical trial.",
+     "revista": "Clin Nutr ESPEN",
+     "doi": "10.1016/j.clnesp.2024.01.004",
+     "pmc": null
+    },
+    {
+     "pmid": "39829964",
+     "ano": "2025",
+     "primeiroAutor": "Gen A",
+     "titulo": "Intervention for Social Frailty Focusing on Physical Activity and Reducing Loneliness: A Randomized Controlled Trial.",
+     "revista": "Clin Interv Aging",
+     "doi": "10.2147/CIA.S491979",
+     "pmc": "PMC11740606"
+    },
+    {
+     "pmid": "38593983",
+     "ano": "2024",
+     "primeiroAutor": "Lozano-Vicario L",
+     "titulo": "Effects of Exercise Intervention for the Management of Delirium in Hospitalized Older Adults: A Randomized Clinical Trial.",
+     "revista": "J Am Med Dir Assoc",
+     "doi": "10.1016/j.jamda.2024.02.018",
+     "pmc": null
+    },
+    {
+     "pmid": "24030238",
+     "ano": "2014",
+     "primeiroAutor": "Cadore EL",
+     "titulo": "Multicomponent exercises including muscle power training enhance muscle mass, power output, and functional outcomes in institutionalized frail nonagenarians.",
+     "revista": "Age (Dordr)",
+     "doi": "10.1007/s11357-013-9586-z",
+     "pmc": "PMC4039263"
+    },
+    {
+     "pmid": "41456342",
+     "ano": "2026",
+     "primeiroAutor": "Abizanda Saro A",
+     "titulo": "Efficacy of a Multicomponent Intervention for Frailty or Physical Function in Prefrail or Frail Older Adults: FRAILMERIT Multicenter Clinical Trial.",
+     "revista": "J Am Geriatr Soc",
+     "doi": "10.1111/jgs.70266",
+     "pmc": "PMC12968357"
+    },
+    {
+     "pmid": "40977239",
+     "ano": "2025",
+     "primeiroAutor": "Ji S",
+     "titulo": "Effect of a combined exercise and nutrition program on sarcopenia in older adults: a randomised controlled trial in primary care.",
+     "revista": "Aust J Prim Health",
+     "doi": "10.1071/PY24197",
+     "pmc": null
+    },
+    {
+     "pmid": "35231098",
+     "ano": "2022",
+     "primeiroAutor": "Dun Y",
+     "titulo": "Effectiveness of a multicomponent exercise program to reverse pre-frailty in community-dwelling Chinese older adults: a randomised controlled trial.",
+     "revista": "Age Ageing",
+     "doi": "10.1093/ageing/afac026",
+     "pmc": null
+    },
+    {
+     "pmid": "40532064",
+     "ano": "2025",
+     "primeiroAutor": "Álvarez-Bustos A",
+     "titulo": "Adherence to Physical Activity and Incident Mobility Disability in Older Adults With Mobility Limitations.",
+     "revista": "J Cachexia Sarcopenia Muscle",
+     "doi": "10.1002/jcsm.13870",
+     "pmc": "PMC12176070"
+    },
+    {
+     "pmid": "40024357",
+     "ano": "2025",
+     "primeiroAutor": "Furtado GE",
+     "titulo": "Examining the impact of 28-week multicomponent and strength exercises on brain health, salivary stress, and mental well-being in frail older women: A controlled trial analysis.",
+     "revista": "Physiol Behav",
+     "doi": "10.1016/j.physbeh.2025.114868",
+     "pmc": null
+    }
+   ]
+  },
+  {
+   "id": "E1-Q5",
+   "pergunta": "E1-Q5 diretrizes/consenso exercicio idosos",
+   "base": "PubMed",
+   "termo": "(\"aged\"[MeSH Terms]) AND exercise AND (Practice Guideline[pt] OR Consensus[pt] OR \"position statement\"[ti])",
+   "totalResultados": 131,
+   "top20": [
+    {
+     "pmid": "35306388",
+     "ano": "2022",
+     "primeiroAutor": "Volkert D",
+     "titulo": "ESPEN practical guideline: Clinical nutrition and hydration in geriatrics.",
+     "revista": "Clin Nutr",
+     "doi": "10.1016/j.clnu.2022.01.024",
+     "pmc": null
+    },
+    {
+     "pmid": "31343601",
+     "ano": "2019",
+     "primeiroAutor": "Fragala MS",
+     "titulo": "Resistance Training for Older Adults: Position Statement From the National Strength and Conditioning Association.",
+     "revista": "J Strength Cond Res",
+     "doi": "10.1519/JSC.0000000000003230",
+     "pmc": null
+    },
+    {
+     "pmid": "30005900",
+     "ano": "2019",
+     "primeiroAutor": "Volkert D",
+     "titulo": "ESPEN guideline on clinical nutrition and hydration in geriatrics.",
+     "revista": "Clin Nutr",
+     "doi": "10.1016/j.clnu.2018.05.024",
+     "pmc": null
+    },
+    {
+     "pmid": "35262271",
+     "ano": "2022",
+     "primeiroAutor": "Schoberer D",
+     "titulo": "Fall prevention in hospitals and nursing homes: Clinical practice guideline.",
+     "revista": "Worldviews Evid Based Nurs",
+     "doi": "10.1111/wvn.12571",
+     "pmc": "PMC9310602"
+    },
+    {
+     "pmid": "19516148",
+     "ano": "2009",
+     "primeiroAutor": "American College of Sports Medicine",
+     "titulo": "American College of Sports Medicine position stand. Exercise and physical activity for older adults.",
+     "revista": "Med Sci Sports Exerc",
+     "doi": "10.1249/MSS.0b013e3181a0c95c",
+     "pmc": null
+    },
+    {
+     "pmid": "38772068",
+     "ano": "2024",
+     "primeiroAutor": "Volkert D",
+     "titulo": "ESPEN guideline on nutrition and hydration in dementia - Update 2024.",
+     "revista": "Clin Nutr",
+     "doi": "10.1016/j.clnu.2024.04.039",
+     "pmc": null
+    },
+    {
+     "pmid": "12524257",
+     "ano": "2003",
+     "primeiroAutor": "American Thoracic Society",
+     "titulo": "ATS/ACCP Statement on cardiopulmonary exercise testing.",
+     "revista": "Am J Respir Crit Care Med",
+     "doi": "10.1164/rccm.167.2.211",
+     "pmc": null
+    },
+    {
+     "pmid": "34409961",
+     "ano": "2021",
+     "primeiroAutor": "Izquierdo M",
+     "titulo": "International Exercise Recommendations in Older Adults (ICFSR): Expert Consensus Guidelines.",
+     "revista": "J Nutr Health Aging",
+     "doi": "10.1007/s12603-021-1665-8",
+     "pmc": "PMC12369211"
+    },
+    {
+     "pmid": "31641726",
+     "ano": "2019",
+     "primeiroAutor": "Dent E",
+     "titulo": "Physical Frailty: ICFSR International Clinical Practice Guidelines for Identification and Management.",
+     "revista": "J Nutr Health Aging",
+     "doi": "10.1007/s12603-019-1273-z",
+     "pmc": "PMC6800406"
+    },
+    {
+     "pmid": "37816527",
+     "ano": "2023",
+     "primeiroAutor": "Morin SN",
+     "titulo": "Clinical practice guideline for management of osteoporosis and fracture prevention in Canada: 2023 update.",
+     "revista": "CMAJ",
+     "doi": "10.1503/cmaj.221647",
+     "pmc": "PMC10610956"
+    },
+    {
+     "pmid": "25222364",
+     "ano": "2014",
+     "primeiroAutor": "Reid R",
+     "titulo": "Managing menopause.",
+     "revista": "J Obstet Gynaecol Can",
+     "doi": "10.1016/S1701-2163(15)30487-4",
+     "pmc": null
+    },
+    {
+     "pmid": "38833246",
+     "ano": "2024",
+     "primeiroAutor": "US Preventive Services Task Force",
+     "titulo": "Interventions to Prevent Falls in Community-Dwelling Older Adults: US Preventive Services Task Force Recommendation Statement.",
+     "revista": "JAMA",
+     "doi": "10.1001/jama.2024.8481",
+     "pmc": null
+    },
+    {
+     "pmid": "29866352",
+     "ano": "2018",
+     "primeiroAutor": "de Hoyos Alonso MDC",
+     "titulo": "Actividades preventivas en los mayores. Actualización PAPPS 2018.",
+     "revista": "Aten Primaria",
+     "doi": "10.1016/S0212-6567(18)30365-2",
+     "pmc": "PMC6836920"
+    },
+    {
+     "pmid": "35384943",
+     "ano": "2022",
+     "primeiroAutor": "Hartley GW",
+     "titulo": "Physical Therapist Management of Patients With Suspected or Confirmed Osteoporosis: A Clinical Practice Guideline From the Academy of Geriatric Physical Therapy.",
+     "revista": "J Geriatr Phys Ther",
+     "doi": "10.1519/JPT.0000000000000346",
+     "pmc": "PMC8983944"
+    },
+    {
+     "pmid": "37768499",
+     "ano": "2023",
+     "primeiroAutor": "Veronese N",
+     "titulo": "Physical activity and exercise for the prevention and management of mild cognitive impairment and dementia: a collaborative international guideline.",
+     "revista": "Eur Geriatr Med",
+     "doi": "10.1007/s41999-023-00858-y",
+     "pmc": "PMC10587099"
+    },
+    {
+     "pmid": "11368702",
+     "ano": "2001",
+     "primeiroAutor": "Expert Panel on Detection, Evaluation, and Treatment of High Blood Cholesterol in Adults",
+     "titulo": "Executive Summary of The Third Report of The National Cholesterol Education Program (NCEP) Expert Panel on Detection, Evaluation, And Treatment of High Blood Cholesterol In Adults (Adult Treatment Panel III).",
+     "revista": "JAMA",
+     "doi": "10.1001/jama.285.19.2486",
+     "pmc": null
+    },
+    {
+     "pmid": "32928654",
+     "ano": "2021",
+     "primeiroAutor": "Morris NR",
+     "titulo": "Exercise & Sports Science Australia (ESSA) position statement on exercise and chronic obstructive pulmonary disease.",
+     "revista": "J Sci Med Sport",
+     "doi": "10.1016/j.jsams.2020.08.007",
+     "pmc": null
+    },
+    {
+     "pmid": "27222591",
+     "ano": "2016",
+     "primeiroAutor": "Piepoli MF",
+     "titulo": "2016 European Guidelines on cardiovascular disease prevention in clinical practice: The Sixth Joint Task Force of the European Society of Cardiology and Other Societies on Cardiovascular Disease Prevention in Clinical Practice (constituted by representatives of 10 societies and by invited experts)Developed with the special contribution of the European Association for Cardiovascular Prevention & Rehabilitation (EACPR).",
+     "revista": "Eur Heart J",
+     "doi": "10.1093/eurheartj/ehw106",
+     "pmc": "PMC4986030"
+    },
+    {
+     "pmid": "22675062",
+     "ano": "2012",
+     "primeiroAutor": "Watts NB",
+     "titulo": "Osteoporosis in men: an Endocrine Society clinical practice guideline.",
+     "revista": "J Clin Endocrinol Metab",
+     "doi": "10.1210/jc.2011-3045",
+     "pmc": null
+    },
+    {
+     "pmid": "41810828",
+     "ano": "2026",
+     "primeiroAutor": "Volkert D",
+     "titulo": "[The European Society for Clinical Nutrition and Metabolism (ESPEN) Guideline on Clinical Nutrition and Hydration in Geriatrics].",
+     "revista": "Nutr Hosp",
+     "doi": "10.20960/nh.05388",
+     "pmc": null
+    }
+   ]
+  },
+  {
+   "id": "E1-Q6",
+   "pergunta": "E1-Q6 relato CERT exercicio idosos",
+   "base": "PubMed",
+   "termo": "(\"aged\"[MeSH Terms]) AND exercise AND (\"Consensus on Exercise Reporting Template\" OR CERT[tiab]) AND (Randomized Controlled Trial[pt] OR protocol[ti])",
+   "totalResultados": 3,
+   "top20": [
+    {
+     "pmid": "37866984",
+     "ano": "2024",
+     "primeiroAutor": "Rezaie M",
+     "titulo": "Comparison of the physiotherapy with and without focus on the scapulothoracic joint on pain, range of motion, functional disability, quality of life, and treatment effectiveness of patients after arthroscopic shoulder rotator cuff tendon repair: A randomized controlled trial with short-term follow-up.",
+     "revista": "J Hand Ther",
+     "doi": "10.1016/j.jht.2023.09.009",
+     "pmc": null
+    },
+    {
+     "pmid": "37960912",
+     "ano": "2023",
+     "primeiroAutor": "Fernandez-Gamez B",
+     "titulo": "Resistance Exercise Program in Cognitively Normal Older Adults: CERT-Based Exercise Protocol of the AGUEDA Randomized Controlled Trial.",
+     "revista": "J Nutr Health Aging",
+     "doi": "10.1007/s12603-023-1982-1",
+     "pmc": "PMC12880457"
+    },
+    {
+     "pmid": "42830128",
+     "ano": "2026",
+     "primeiroAutor": "Álvarez-Gallardo IC",
+     "titulo": "Land- and water-based supervised exercise intervention for women with fibromyalgia: a CERT-based protocol from the al-Ándalus randomized controlled trial.",
+     "revista": "Contemp Clin Trials",
+     "doi": "10.1016/j.cct.2026.108487",
+     "pmc": null
+    }
+   ]
+  },
+  {
+   "id": "E1-Q7",
+   "pergunta": "E1-Q7 academia ao ar livre / parque",
+   "termo": "(\"outdoor gym\" OR \"outdoor fitness equipment\" OR \"park-based\" OR \"outdoor exercise\") AND (exercise OR training) AND (Randomized Controlled Trial[pt] OR protocol[ti]) AND free full text[sb]",
+   "total": 41,
+   "top": [
+    {
+     "pmid": "31829725",
+     "ano": "2021",
+     "titulo": "Associations between air pollution and cardio-respiratory physiological measures in older adults exercising outdoors.",
+     "pmc": null
+    },
+    {
+     "pmid": "36804197",
+     "ano": "2023",
+     "titulo": "mHealth to Support Outdoor Gym Resistance Training: The ecofit Effectiveness RCT.",
+     "pmc": null
+    },
+    {
+     "pmid": "37947578",
+     "ano": "2023",
+     "titulo": "Effect of Supervised and Unsupervised Exercise Training in Outdoor Gym on the Lifestyle of Elderly People.",
+     "pmc": "PMC10648151"
+    },
+    {
+     "pmid": "40471669",
+     "ano": "2025",
+     "titulo": "Outdoor Exercise Facility-Based Integrative Mobile Health Intervention to Support Physical Activity, Mental Well-Being, and Exercise Self-Efficacy Among Older Adults With Prefrailty and Frailty in Hong Kong: Pilot Feasibility Randomized Controlled Trial Study.",
+     "pmc": "PMC12179572"
+    },
+    {
+     "pmid": "35317855",
+     "ano": "2022",
+     "titulo": "Exercise interveNtion outdoor proJect in the cOmmunitY-ENJOY program for independence in dementia: a feasibility pilot randomised controlled trial study protocol.",
+     "pmc": "PMC8938729"
+    },
+    {
+     "pmid": "31181728",
+     "ano": "2019",
+     "titulo": "Winter Exercise Reduces Allergic Airway Inflammation: A Randomized Controlled Study.",
+     "pmc": "PMC6603979"
+    },
+    {
+     "pmid": "40822958",
+     "ano": "2025",
+     "titulo": "Digital outdoor exercise program for obese patients with type 2 diabetes mellitus: a non-inferiority randomized controlled trial.",
+     "pmc": "PMC12350124"
+    },
+    {
+     "pmid": "39272125",
+     "ano": "2024",
+     "titulo": "Evaluation of the usability and acceptability of the P-STEP® mobile app: feasibility study protocol.",
+     "pmc": "PMC11395691"
+    },
+    {
+     "pmid": "34360425",
+     "ano": "2021",
+     "titulo": "Effects of Acute Beta-Alanine Ingestion and Immersion-Plus-Exercise on Connectedness to Nature and Perceived Pain.",
+     "pmc": "PMC8346088"
+    },
+    {
+     "pmid": "34185752",
+     "ano": "2021",
+     "titulo": "Intervention Effect of Research-based Psychological Counseling on Adolescents' Mental Health during the COVID-19 Epidemic.",
+     "pmc": null
+    },
+    {
+     "pmid": "38169819",
+     "ano": "2023",
+     "titulo": "Physical and psychological effects of outdoor fitness equipment training on middle-aged and older adults: study protocol of a randomised controlled trial.",
+     "pmc": "PMC10759096"
+    },
+    {
+     "pmid": "40438901",
+     "ano": "2025",
+     "titulo": "Effect of Air Quality on the Mucosal Immune Molecules in Outdoor Male Athletes.",
+     "pmc": null
+    }
+   ],
+   "base": "PubMed",
+   "executadoEm": "2026-11-21"
+  },
+  {
+   "id": "E1-Q8",
+   "pergunta": "E1-Q8 treino em máquinas idosos (texto livre)",
+   "termo": "(\"aged\"[MeSH Terms]) AND (\"Resistance Training\"[MeSH]) AND (machine OR \"leg press\" OR \"chest press\") AND (Randomized Controlled Trial[pt]) AND free full text[sb]",
+   "total": 98,
+   "top": [
+    {
+     "pmid": "31033900",
+     "ano": "2019",
+     "titulo": "Eccentric and Concentric Resistance Exercise Comparison for Knee Osteoarthritis.",
+     "pmc": "PMC6746593"
+    },
+    {
+     "pmid": "25993883",
+     "ano": "2015",
+     "titulo": "Strategic creatine supplementation and resistance training in healthy older adults.",
+     "pmc": null
+    },
+    {
+     "pmid": "32270891",
+     "ano": "2020",
+     "titulo": "Effects of High-Intensity Resistance Training on Osteopenia and Sarcopenia Parameters in Older Men with Osteosarcopenia-One-Year Results of the Randomized Controlled Franconian Osteopenia and Sarcopenia Trial (FrOST).",
+     "pmc": null
+    },
+    {
+     "pmid": "28901118",
+     "ano": "2018",
+     "titulo": "Randomized controlled trial of maximal strength training vs. standard rehabilitation following total knee arthroplasty.",
+     "pmc": null
+    },
+    {
+     "pmid": "39771028",
+     "ano": "2024",
+     "titulo": "Obesity and Metabolic Disease Impair the Anabolic Response to Protein Supplementation and Resistance Exercise: A Retrospective Analysis of a Randomized Clinical Trial with Implications for Aging, Sarcopenic Obesity, and Weight Management.",
+     "pmc": "PMC11677392"
+    },
+    {
+     "pmid": "40266553",
+     "ano": "2025",
+     "titulo": "Aerobic Exercise Preconditioning Does Not Augment Muscle Hypertrophy During Subsequent Resistance Exercise Training in Healthy Older Adults.",
+     "pmc": "PMC12476412"
+    },
+    {
+     "pmid": "23128427",
+     "ano": "2013",
+     "titulo": "Randomized clinical trial of 3 types of physical exercise for patients with Parkinson disease.",
+     "pmc": "PMC4574905"
+    },
+    {
+     "pmid": "40993122",
+     "ano": "2025",
+     "titulo": "Machine learning and data-driven inverse modeling of metabolomics unveil key processes of active aging.",
+     "pmc": "PMC12460594"
+    },
+    {
+     "pmid": "39329896",
+     "ano": "2024",
+     "titulo": "Identifying Clinically Meaningful Muscle Power Enhancements and Their Functional Correlates in Hospitalized Older Patients.",
+     "pmc": null
+    },
+    {
+     "pmid": "40375440",
+     "ano": "2025",
+     "titulo": "Effects of Blood-Flow Restricted Resistance Exercise Versus Neuromuscular Exercise on Mechanical Muscle Function in Adults With Chronic Knee Osteoarthritis-A Secondary Analysis From a Randomized Controlled Trial.",
+     "pmc": "PMC12081943"
+    },
+    {
+     "pmid": "35305276",
+     "ano": "2022",
+     "titulo": "Effectiveness of individualized training based on force-velocity profiling on physical function in older men.",
+     "pmc": "PMC9313882"
+    },
+    {
+     "pmid": "41094394",
+     "ano": "2025",
+     "titulo": "Effects of metastable resistance training with strength and balance requirements compared to traditional resistance and balance training on cognitive performance in older adults: a randomized controlled trial.",
+     "pmc": "PMC12523087"
+    }
+   ],
+   "base": "PubMed",
+   "executadoEm": "2026-11-21"
+  },
+  {
+   "id": "E1-Q9",
+   "pergunta": "E1-Q9 caminhada progressiva idosos",
+   "termo": "(\"aged\"[MeSH Terms]) AND (walking[ti] OR \"walking program\"[tiab]) AND (Randomized Controlled Trial[pt]) AND free full text[sb]",
+   "total": 498,
+   "top": [
+    {
+     "pmid": "38134254",
+     "ano": "2024",
+     "titulo": "Increasing Activity After Stroke: A Randomized Controlled Trial of High-Intensity Walking and Step Activity Intervention.",
+     "pmc": "PMC10752299"
+    },
+    {
+     "pmid": "38743389",
+     "ano": "2024",
+     "titulo": "Effects of motor and cognitive complex training on obstacle walking and brain activity in people with Parkinson's disease: a randomized controlled trial.",
+     "pmc": "PMC11391393"
+    },
+    {
+     "pmid": "40016658",
+     "ano": "2025",
+     "titulo": "Effects of multisystem exercises on balance, postural stability, mobility, walking speed, and pain in patients with diabetic peripheral neuropathy: a randomized controlled trial.",
+     "pmc": "PMC11869634"
+    },
+    {
+     "pmid": "34477171",
+     "ano": "2021",
+     "titulo": "Home-based rehabilitation programs on postural balance, walking, and quality of life in patients with stroke: A single-blind, randomized controlled trial.",
+     "pmc": "PMC8415945"
+    },
+    {
+     "pmid": "38968468",
+     "ano": "2024",
+     "titulo": "The effect of balance training using touch controller-based fully immersive virtual reality devices on balance and walking ability in patients with stroke: A pilot randomized controlled trial.",
+     "pmc": "PMC11224800"
+    },
+    {
+     "pmid": "38908392",
+     "ano": "2024",
+     "titulo": "Effectiveness and cost-effectiveness of an individualised, progressive walking and education intervention for the prevention of low back pain recurrence in Australia (WalkBack): a randomised controlled trial.",
+     "pmc": null
+    },
+    {
+     "pmid": "17605959",
+     "ano": "2007",
+     "titulo": "Effects of high-intensity interval walking training on physical fitness and blood pressure in middle-aged and older people.",
+     "pmc": null
+    },
+    {
+     "pmid": "29221643",
+     "ano": "2018",
+     "titulo": "Respiratory and cardiovascular responses to walking down a traffic-polluted road compared with walking in a traffic-free area in participants aged 60 years and older with chronic lung or heart disease and age-matched healthy controls: a randomised, crossover study.",
+     "pmc": "PMC5803182"
+    },
+    {
+     "pmid": "39448695",
+     "ano": "2024",
+     "titulo": "Optimizing rehabilitation strategies in Parkinson's disease: a comparison of dual cognitive-walking treadmill training and single treadmill training.",
+     "pmc": "PMC11502839"
+    },
+    {
+     "pmid": "37903365",
+     "ano": "2023",
+     "titulo": "Clinical Effectiveness of Cognitively Enhanced Tai Ji Quan Training on Global Cognition and Dual-Task Performance During Walking in Older Adults With Mild Cognitive Impairment or Self-Reported Memory Concerns : A Randomized Controlled Trial.",
+     "pmc": "PMC13527859"
+    },
+    {
+     "pmid": "40252300",
+     "ano": "2025",
+     "titulo": "Outdoor walking exercise therapy improves walking capacity and well-being in persons with multiple sclerosis: A randomized controlled trial.",
+     "pmc": null
+    },
+    {
+     "pmid": "39593632",
+     "ano": "2024",
+     "titulo": "Clinical effects of walking exercise program for older adults applied with an exercise assist robot (Bot Fit): A randomized controlled trial.",
+     "pmc": null
+    }
+   ],
+   "base": "PubMed",
+   "executadoEm": "2026-11-21"
+  },
+  {
+   "id": "E1-Q10",
+   "pergunta": "E1-Q10 pausas ativas cuidadores/trabalhadores",
+   "termo": "(\"workplace\" OR caregivers[MeSH]) AND (\"stretching\" OR \"exercise break\" OR \"workplace exercise\") AND (Randomized Controlled Trial[pt]) AND free full text[sb]",
+   "total": 18,
+   "top": [
+    {
+     "pmid": "29286983",
+     "ano": "2019",
+     "titulo": "Aerobic Exercise Sustains Performance of Instrumental Activities of Daily Living in Early-Stage Alzheimer Disease.",
+     "pmc": "PMC6023779"
+    },
+    {
+     "pmid": "39457334",
+     "ano": "2024",
+     "titulo": "The Effect of Stretching Exercises Applied to Caregivers of Children with Development Disabilities on Musculoskeletal Muscle Mobility and Respiratory Function.",
+     "pmc": "PMC11507477"
+    },
+    {
+     "pmid": "28598933",
+     "ano": "2017",
+     "titulo": "Evaluation of a Workplace Exercise Program for Control of Shoulder Disorders in Overhead Assembly Work.",
+     "pmc": "PMC5612443"
+    },
+    {
+     "pmid": "41094396",
+     "ano": "2025",
+     "titulo": "Effects of a workplace exercise intervention on cardiometabolic health: a randomized controlled trial.",
+     "pmc": "PMC12522563"
+    },
+    {
+     "pmid": "25296147",
+     "ano": "2014",
+     "titulo": "The effects of compensatory workplace exercises to reduce work-related stress and musculoskeletal pain.",
+     "pmc": "PMC4292657"
+    },
+    {
+     "pmid": "37084097",
+     "ano": "2023",
+     "titulo": "Intraoperative active and passive breaks during minimally invasive surgery influence upper extremity physical strain and physical stress response-A controlled, randomized cross-over, laboratory trial.",
+     "pmc": "PMC10120511"
+    },
+    {
+     "pmid": "22824853",
+     "ano": "2013",
+     "titulo": "Do micropauses prevent surgeon's fatigue and loss of accuracy associated with prolonged surgery? An experimental prospective study.",
+     "pmc": null
+    },
+    {
+     "pmid": "34587662",
+     "ano": "2021",
+     "titulo": "Effect of pain neuroscience education and exercise on presenteeism and pain intensity in health care workers: A randomized controlled trial.",
+     "pmc": "PMC8481006"
+    },
+    {
+     "pmid": "37241142",
+     "ano": "2023",
+     "titulo": "Effects of Whole-Body Stretching Exercise during Lunch Break for Reducing Musculoskeletal Pain and Physical Exertion among Healthcare Professionals.",
+     "pmc": "PMC10222752"
+    },
+    {
+     "pmid": "25306220",
+     "ano": "2014",
+     "titulo": "A workplace exercise versus health promotion intervention to prevent and reduce the economic and personal burden of non-specific neck pain in office personnel: protocol of a cluster-randomised controlled trial.",
+     "pmc": null
+    },
+    {
+     "pmid": "22622819",
+     "ano": "2013",
+     "titulo": "Influence of self-efficacy on compliance to workplace exercise.",
+     "pmc": "PMC3767884"
+    },
+    {
+     "pmid": "28003034",
+     "ano": "2016",
+     "titulo": "Resistance training program for fatigue management in the workplace: exercise protocol in a cluster randomized controlled trial.",
+     "pmc": "PMC5178090"
+    }
+   ],
+   "base": "PubMed",
+   "executadoEm": "2026-11-21"
+  },
+  {
+   "id": "E1-Q11",
+   "pergunta": "E1-Q11 máquinas para idosos frágeis",
+   "termo": "(\"Frail Elderly\"[MeSH] OR frail[ti] OR \"nursing home\"[tiab] OR \"very old\"[tiab]) AND (\"Resistance Training\"[MeSH]) AND (machine*[tiab] OR \"pneumatic\"[tiab] OR \"leg press\"[tiab]) AND free full text[sb]",
+   "total": 8,
+   "top": [
+    {
+     "pmid": "24243397",
+     "ano": "2014",
+     "titulo": "Positive effects of resistance training in frail elderly patients with dementia after long-term physical restraint.",
+     "pmc": "PMC4039260"
+    },
+    {
+     "pmid": "21143443",
+     "ano": "2010",
+     "titulo": "Are changes in leg power responsible for clinically meaningful improvements in mobility in older adults?",
+     "pmc": "PMC3051803"
+    },
+    {
+     "pmid": "32702879",
+     "ano": "2020",
+     "titulo": "Effects of concurrent aerobic and resistance exercise in frail and pre-frail older adults: A randomized trial of supervised versus home-based programs.",
+     "pmc": "PMC7373606"
+    },
+    {
+     "pmid": "23637524",
+     "ano": "2013",
+     "titulo": "Can progressive resistance training twice a week improve mobility, muscle strength, and quality of life in very elderly nursing-home residents with impaired mobility? A pilot study.",
+     "pmc": "PMC3639017"
+    },
+    {
+     "pmid": "25923482",
+     "ano": "2015",
+     "titulo": "Effect of cysteine-rich whey protein (immunocal®) supplementation in combination with resistance training on muscle strength and lean body mass in non-frail elderly subjects: a randomized, double-blind controlled study.",
+     "pmc": "PMC12877478"
+    },
+    {
+     "pmid": "29385984",
+     "ano": "2018",
+     "titulo": "Effects of low-intensity bodyweight training with slow movement on motor function in frail elderly patients: a prospective observational study.",
+     "pmc": "PMC5793376"
+    },
+    {
+     "pmid": "19470176",
+     "ano": "2009",
+     "titulo": "Health enhancing strength training in nonagenarians (STRONG): rationale, design and methods.",
+     "pmc": "PMC2693136"
+    },
+    {
+     "pmid": "41931963",
+     "ano": "2026",
+     "titulo": "Effect of a protein intervention during resistance training with varying training intensities on muscle outcomes in frail community-dwelling older adults: a randomized controlled trial.",
+     "pmc": "PMC13087472"
+    }
+   ],
+   "base": "PubMed",
+   "executadoEm": "2026-11-21"
+  },
+  {
+   "id": "E1-Q12",
+   "pergunta": "E1-Q12 caminhada ao ar livre idosos sedentários/frágeis",
+   "termo": "(\"aged\"[MeSH Terms]) AND (\"walking program\"[tiab] OR \"walking intervention\"[tiab]) AND (sedentary[tiab] OR frail*[tiab] OR \"low function\"[tiab]) AND (outdoor[tiab] OR park[tiab] OR community[tiab]) AND free full text[sb]",
+   "total": 5,
+   "top": [
+    {
+     "pmid": "39654125",
+     "ano": "2024",
+     "titulo": "An Outdoor Walking Program for Immigrant Muslim Older Adults: A Community-Based Participatory Intervention.",
+     "pmc": "PMC11628424"
+    },
+    {
+     "pmid": "41325107",
+     "ano": "2025",
+     "titulo": "Satisfaction with community walking program (Walk On!): Older adults and program leaders' perspective.",
+     "pmc": "PMC12718143"
+    },
+    {
+     "pmid": "37198670",
+     "ano": "2023",
+     "titulo": "The effects of an e-health brisk walking intervention in increasing moderate-to-vigorous physical activity in physically inactive older people with cognitive frailty: study protocol for a randomized controlled trial.",
+     "pmc": "PMC10193728"
+    },
+    {
+     "pmid": "24491137",
+     "ano": "2014",
+     "titulo": "Taking Healthy Steps: rationale, design and baseline characteristics of a randomized trial of a pedometer-based Internet-mediated walking program in veterans with chronic obstructive pulmonary disease.",
+     "pmc": "PMC3946238"
+    },
+    {
+     "pmid": "40604576",
+     "ano": "2025",
+     "titulo": "Personalised, GIS-based counselling to promote habitual walking in mobility-limited and chronically ill older adults: protocol of the MOBITEC-Routes randomised controlled trial.",
+     "pmc": "PMC12220033"
+    }
+   ],
+   "base": "PubMed",
+   "executadoEm": "2026-11-21"
+  },
+  {
+   "id": "E2-Q1",
+   "pergunta": "E2-Q1 pausa curta com elástico/trabalho",
+   "termo": "(\"workplace\"[tiab] OR \"office workers\"[tiab] OR caregivers[tiab] OR \"healthcare workers\"[tiab]) AND (\"elastic\"[tiab] OR \"resistance band\"[tiab] OR \"brief\"[ti] OR \"minutes per day\"[tiab] OR \"micro\"[tiab]) AND (exercise[ti] OR training[ti]) AND Randomized Controlled Trial[pt] AND free full text[sb]",
+   "total": 18,
+   "top": [
+    {
+     "pmid": "24490152",
+     "ano": "2013",
+     "titulo": "Effect of brief daily resistance training on occupational neck/shoulder muscle activity in office workers with chronic pain: randomized controlled trial.",
+     "pmc": "PMC3892746"
+    },
+    {
+     "pmid": "41291083",
+     "ano": "2025",
+     "titulo": "Strength training intervention for hybrid workers: a randomised pilot feasibility trial.",
+     "pmc": "PMC12647125"
+    },
+    {
+     "pmid": "41629846",
+     "ano": "2026",
+     "titulo": "Micro-exercise breaks every hour: a feasible strategy to improve metabolic health in sedentary office workers.",
+     "pmc": "PMC12952039"
+    },
+    {
+     "pmid": "35488976",
+     "ano": "2023",
+     "titulo": "A Preliminary Evaluation of a Brief Behavioral Parent Training for Challenging Behavior in Autism Spectrum Disorder.",
+     "pmc": "PMC9055015"
+    },
+    {
+     "pmid": "42449286",
+     "ano": "2026",
+     "titulo": "Acute effects of aerobic versus combined aerobic and cervical-upper extremity resistance exercise on pressure pain threshold, pain perception, and fatigue in workers exposed to high ergonomic risk with chronic non-specific neck pain: a randomized controlled trial.",
+     "pmc": "PMC13378061"
+    },
+    {
+     "pmid": "36279833",
+     "ano": "2022",
+     "titulo": "Motivational interviewing for loved ones: Randomized controlled trial of brief training for first episode psychosis caregivers.",
+     "pmc": "PMC10593126"
+    },
+    {
+     "pmid": "28045799",
+     "ano": "2017",
+     "titulo": "Effects of Brief Communication Skills Training for Workers Based on the Principles of Cognitive Behavioral Therapy: A Randomized Controlled Trial.",
+     "pmc": "PMC5704672"
+    },
+    {
+     "pmid": "25740675",
+     "ano": "2015",
+     "titulo": "Effect of a brief training program based on cognitive behavioral therapy in improving work performance: A randomized controlled trial.",
+     "pmc": null
+    },
+    {
+     "pmid": "29082831",
+     "ano": "2017",
+     "titulo": "A mindfulness training program based on brief practices (M-PBI) to reduce stress in the workplace: a randomised controlled pilot study.",
+     "pmc": "PMC6060839"
+    },
+    {
+     "pmid": "32493267",
+     "ano": "2020",
+     "titulo": "Effectiveness of a progressive resistance exercise program for industrial workers during breaks on perceived fatigue control: a cluster randomized controlled trial.",
+     "pmc": "PMC7268660"
+    },
+    {
+     "pmid": "20720342",
+     "ano": "2010",
+     "titulo": "Efficacy of cognitive behavioral therapy training using brief e-mail sessions in the workplace: a controlled clinical trial.",
+     "pmc": null
+    },
+    {
+     "pmid": "28003034",
+     "ano": "2016",
+     "titulo": "Resistance training program for fatigue management in the workplace: exercise protocol in a cluster randomized controlled trial.",
+     "pmc": "PMC5178090"
+    },
+    {
+     "pmid": "34769656",
+     "ano": "2021",
+     "titulo": "Impact of a Brief Family Skills Training Programme (\"Strong Families\") on Parenting Skills, Child Psychosocial Functioning, and Resilience in Iran: A Multisite Controlled Trial.",
+     "pmc": "PMC8583328"
+    },
+    {
+     "pmid": "24708570",
+     "ano": "2014",
+     "titulo": "Effect of workplace- versus home-based physical exercise on pain in healthcare workers: study protocol for a single blinded cluster randomized controlled trial.",
+     "pmc": "PMC3991922"
+    },
+    {
+     "pmid": "21617837",
+     "ano": "2011",
+     "titulo": "Effect of brief daily exercise on headache among adults--secondary analysis of a randomized controlled trial.",
+     "pmc": null
+    }
+   ],
+   "executadoEm": "2026-11-21",
+   "base": "PubMed"
+  },
+  {
+   "id": "E2-Q2",
+   "pergunta": "E2-Q2 exercício em cadeira idosos",
+   "termo": "(\"chair-based\"[tiab] OR \"seated exercise\"[tiab] OR \"chair yoga\"[tiab] OR \"chair exercise\"[tiab]) AND (aged[MeSH] OR older[tiab]) AND (Randomized Controlled Trial[pt] OR protocol[ti]) AND free full text[sb]",
+   "total": 24,
+   "top": [
+    {
+     "pmid": "41350709",
+     "ano": "2025",
+     "titulo": "Effects of combined nutritional supplementation and exercise on proxy measures of muscle mass, strength, and function in older adults with sarcopenia: a 12-week multicentre RCT.",
+     "pmc": "PMC12681163"
+    },
+    {
+     "pmid": "40455316",
+     "ano": "2025",
+     "titulo": "A home-based 12-week chair exercise intervention for older adults with advanced cancer receiving chemotherapy: a randomized pilot feasibility trial.",
+     "pmc": "PMC12590941"
+    },
+    {
+     "pmid": "39259017",
+     "ano": "2024",
+     "titulo": "Chair-based yoga programme for older adults with multimorbidity: RCT with embedded economic and process evaluations.",
+     "pmc": "PMC11417643"
+    },
+    {
+     "pmid": "40024357",
+     "ano": "2025",
+     "titulo": "Examining the impact of 28-week multicomponent and strength exercises on brain health, salivary stress, and mental well-being in frail older women: A controlled trial analysis.",
+     "pmc": null
+    },
+    {
+     "pmid": "42438060",
+     "ano": "2026",
+     "titulo": "Integrating Chair Yoga and Manual Therapy Into Hypertension Management: Effects on Autonomic Regulation, Muscle Viscoelasticity, and Mental Well-Being.",
+     "pmc": "PMC13357690"
+    },
+    {
+     "pmid": "29614960",
+     "ano": "2018",
+     "titulo": "Chair based exercise in community settings: a cluster randomised feasibility study.",
+     "pmc": "PMC5883353"
+    },
+    {
+     "pmid": "31533443",
+     "ano": "2020",
+     "titulo": "Feasibility of Conducting Nonpharmacological Interventions to Manage Dementia Symptoms in Community-Dwelling Older Adults: A Cluster Randomized Controlled Trial.",
+     "pmc": "PMC10623920"
+    },
+    {
+     "pmid": "39063443",
+     "ano": "2024",
+     "titulo": "Effect of 10-Week Whole-Body Vibration Training on Falls and Physical Performance in Older Adults: A Blinded, Randomized, Controlled Clinical Trial with 1-Year Follow-Up.",
+     "pmc": "PMC11276669"
+    },
+    {
+     "pmid": "40098115",
+     "ano": "2025",
+     "titulo": "Acceptability and feasibility of online delivery of chair-based yoga for older adults with multimorbidity - lessons from a process evaluation of the gentle years yoga trial.",
+     "pmc": "PMC11912673"
+    },
+    {
+     "pmid": "37941382",
+     "ano": "2025",
+     "titulo": "Online Chair Yoga and Digital Learning for Rural Underserved Older Adults at Risk for Alzheimer's Disease and Related Dementias.",
+     "pmc": "PMC11076416"
+    },
+    {
+     "pmid": "40045209",
+     "ano": "2025",
+     "titulo": "Perceptions and experiences of chair-based yoga by older adults with multimorbidity - a qualitative process evaluation of the Gentle Years Yoga randomised controlled trial.",
+     "pmc": "PMC11881412"
+    },
+    {
+     "pmid": "39909737",
+     "ano": "2025",
+     "titulo": "Supporting older adults with cancer and their support person through geriatric assessment and remote exercise and education: The SOAR study protocol.",
+     "pmc": null
+    },
+    {
+     "pmid": "33707996",
+     "ano": "2021",
+     "titulo": "Effects of Chair-Based, Low-Load Elastic Band Resistance Training on Functional Fitness and Metabolic Biomarkers in Older Women.",
+     "pmc": "PMC7919366"
+    },
+    {
+     "pmid": "40397951",
+     "ano": "2025",
+     "titulo": "Effect of an Online Mobility Self-Management Program on Walking Speed in Older Adults With Preclinical Mobility Limitation: Protocol for a Randomized Controlled Trial.",
+     "pmc": "PMC12138319"
+    },
+    {
+     "pmid": "28008603",
+     "ano": "2017",
+     "titulo": "A Pilot Randomized Controlled Trial of the Effects of Chair Yoga on Pain and Physical Function Among Community-Dwelling Older Adults With Lower Extremity Osteoarthritis.",
+     "pmc": "PMC5357158"
+    }
+   ],
+   "executadoEm": "2026-11-21",
+   "base": "PubMed"
+  },
+  {
+   "id": "E2-Q3",
+   "pergunta": "E2-Q3 programa de musculação iniciantes adultos (tabela)",
+   "termo": "(\"resistance training\"[ti] OR \"strength training\"[ti]) AND (untrained[tiab] OR novice[tiab] OR beginners[tiab]) AND (\"whole-body\"[tiab] OR \"full-body\"[tiab]) AND Randomized Controlled Trial[pt] AND free full text[sb]",
+   "total": 9,
+   "top": [
+    {
+     "pmid": "41059835",
+     "ano": "2025",
+     "titulo": "Similar effects between animal-based and plant-based protein blend as complementary dietary protein on muscle adaptations to resistance training: findings from a randomized clinical trial.",
+     "pmc": "PMC12509290"
+    },
+    {
+     "pmid": "36981609",
+     "ano": "2023",
+     "titulo": "Effects of Microfiltered Seawater Intake and Variable Resistance Training on Strength, Bone Health, Body Composition, and Quality of Life in Older Women: A 32-Week Randomized, Double-Blinded, Placebo-Controlled Trial.",
+     "pmc": "PMC10048547"
+    },
+    {
+     "pmid": "36986095",
+     "ano": "2023",
+     "titulo": "Neither Chia Flour nor Whey Protein Supplementation Further Improves Body Composition or Strength Gains after a Resistance Training Program in Young Subjects with a Habitual High Daily Protein Intake.",
+     "pmc": "PMC10051962"
+    },
+    {
+     "pmid": "33317565",
+     "ano": "2020",
+     "titulo": "The effects of resistance training with or without peanut protein supplementation on skeletal muscle and strength adaptations in older individuals.",
+     "pmc": "PMC7734909"
+    },
+    {
+     "pmid": "26677350",
+     "ano": "2015",
+     "titulo": "The effects of whey protein with or without carbohydrates on resistance training adaptations.",
+     "pmc": "PMC4681166"
+    },
+    {
+     "pmid": "29068862",
+     "ano": "2017",
+     "titulo": "Impact of Polyphenol Supplementation on Acute and Chronic Response to Resistance Training.",
+     "pmc": "PMC5662159"
+    },
+    {
+     "pmid": "28869573",
+     "ano": "2017",
+     "titulo": "Effects of Whey, Soy or Leucine Supplementation with 12 Weeks of Resistance Training on Strength, Body Composition, and Skeletal Muscle and Adipose Tissue Histological Attributes in College-Aged Males.",
+     "pmc": "PMC5622732"
+    },
+    {
+     "pmid": "40288581",
+     "ano": "2025",
+     "titulo": "Resistance training increases myofibrillar protein synthesis in middle-to-older aged adults consuming a typical diet with no influence of protein source: a randomized controlled trial.",
+     "pmc": "PMC12308137"
+    },
+    {
+     "pmid": "41525148",
+     "ano": "2026",
+     "titulo": "Limited effects of dietary nitrate supplementation with resistance training on skeletal muscle and vascular outcomes in middle-aged and older adults.",
+     "pmc": null
+    }
+   ],
+   "executadoEm": "2026-11-21",
+   "base": "PubMed"
+  },
+  {
+   "id": "E2-Q4",
+   "pergunta": "E2-Q4 treino com peso corporal em casa adultos",
+   "termo": "(\"bodyweight\"[tiab] OR \"body weight\"[tiab] OR \"calisthenics\"[tiab] OR \"home-based\"[tiab]) AND (\"high-intensity\"[tiab] OR circuit[tiab]) AND (adults[tiab]) AND Randomized Controlled Trial[pt] AND free full text[sb]",
+   "total": 41,
+   "top": [
+    {
+     "pmid": "40163873",
+     "ano": "2025",
+     "titulo": "The Effect of 4:3 Intermittent Fasting on Weight Loss at 12 Months : A Randomized Clinical Trial.",
+     "pmc": "PMC12863240"
+    },
+    {
+     "pmid": "32492705",
+     "ano": "2020",
+     "titulo": "Moderate-Intensity Exercise and High-Intensity Interval Training Affect Insulin Sensitivity Similarly in Obese Adults.",
+     "pmc": "PMC7347288"
+    },
+    {
+     "pmid": "41579235",
+     "ano": "2026",
+     "titulo": "Physical Fitness with Exercise and GLP-1 Receptor Agonist Treatment Alone or Combined After Diet-Induced Weight Loss: A Secondary Analysis of a Randomized Controlled Trial in Adults with Obesity.",
+     "pmc": "PMC13388483"
+    },
+    {
+     "pmid": "37875291",
+     "ano": "2023",
+     "titulo": "Dose-response effects of resistance training on physical function in frail older Chinese adults: A randomized controlled trial.",
+     "pmc": "PMC10751415"
+    },
+    {
+     "pmid": "29696812",
+     "ano": "2019",
+     "titulo": "Effects of Aerobic and Resistance Exercise in Older Adults With Rheumatoid Arthritis: A Randomized Controlled Trial.",
+     "pmc": "PMC6590333"
+    },
+    {
+     "pmid": "40205689",
+     "ano": "2025",
+     "titulo": "Resistance and Impact Training During Weight Loss Improves Physical Function and Body Composition in Older Adults With Obesity.",
+     "pmc": "PMC11981955"
+    },
+    {
+     "pmid": "41465480",
+     "ano": "2025",
+     "titulo": "Synergistic Effects of High-Intensity Interval Training and Asparagus officinalis L. Root Extract Supplementation on Metabolic Regulation, Oxidative Stress, and Inflammation in Overweight and Obese Adults.",
+     "pmc": "PMC12733034"
+    },
+    {
+     "pmid": "32877581",
+     "ano": "2020",
+     "titulo": "Weight Loss in Underserved Patients - A Cluster-Randomized Trial.",
+     "pmc": "PMC7493523"
+    },
+    {
+     "pmid": "31396757",
+     "ano": "2020",
+     "titulo": "Immediate post-breakfast physical activity improves interstitial postprandial glycemia: a comparison of different activity-meal timings.",
+     "pmc": "PMC7035221"
+    },
+    {
+     "pmid": "34974824",
+     "ano": "2023",
+     "titulo": "Hybrid-type, multicomponent interval training upregulates musculoskeletal fitness of adults with overweight and obesity in a volume-dependent manner: A 1-year dose-response randomised controlled trial.",
+     "pmc": null
+    },
+    {
+     "pmid": "35761262",
+     "ano": "2022",
+     "titulo": "Equipment-free, unsupervised high intensity interval training elicits significant improvements in the physiological resilience of older adults.",
+     "pmc": "PMC9238013"
+    },
+    {
+     "pmid": "35984171",
+     "ano": "2022",
+     "titulo": "Effect of circuit training with low-carbohydrate diet on body composition, cardiometabolic indices, and exercise capacity in adults with mild to moderate obesity in Saudi Arabia: A randomized control trial.",
+     "pmc": "PMC9388005"
+    },
+    {
+     "pmid": "36809292",
+     "ano": "2023",
+     "titulo": "Evaluating the feasibility and efficacy of a home-based combined high intensity interval and moderate intensity training program for increasing physical activity among low-active adults: A randomized pilot trial.",
+     "pmc": "PMC9942957"
+    },
+    {
+     "pmid": "37717560",
+     "ano": "2023",
+     "titulo": "Impact of 14 Days of Bed Rest in Older Adults and an Exercise Countermeasure on Body Composition, Muscle Strength, and Cardiovascular Function: Canadian Space Agency Standard Measures.",
+     "pmc": "PMC10634275"
+    },
+    {
+     "pmid": "28166118",
+     "ano": "2017",
+     "titulo": "All-Extremity Exercise Training Improves Arterial Stiffness in Older Adults.",
+     "pmc": "PMC5474160"
+    }
+   ],
+   "executadoEm": "2026-11-21",
+   "base": "PubMed"
+  },
+  {
+   "id": "E2-Q5",
+   "pergunta": "E2-Q5 exercício ao ar livre/parque adultos",
+   "termo": "(\"outdoor\"[ti] OR park[ti] OR \"green exercise\"[tiab] OR \"nordic walking\"[ti]) AND (exercise OR training) AND Randomized Controlled Trial[pt] AND free full text[sb]",
+   "total": 115,
+   "top": [
+    {
+     "pmid": "35779695",
+     "ano": "2022",
+     "titulo": "Time Outdoors in Reducing Myopia: A School-Based Cluster Randomized Trial with Objective Monitoring of Outdoor Time and Light Intensity.",
+     "pmc": null
+    },
+    {
+     "pmid": "35409532",
+     "ano": "2022",
+     "titulo": "Sustainability of Hiking in Combination with Coaching in Cardiorespiratory Fitness and Quality of Life.",
+     "pmc": "PMC8997695"
+    },
+    {
+     "pmid": "31703293",
+     "ano": "2019",
+     "titulo": "Walking Green: Developing an Evidence Base for Nature Prescriptions.",
+     "pmc": "PMC6888434"
+    },
+    {
+     "pmid": "28920458",
+     "ano": "2017",
+     "titulo": "Nordic walking increases circulating VEGF more than traditional walking training in postmenopause.",
+     "pmc": null
+    },
+    {
+     "pmid": "40471669",
+     "ano": "2025",
+     "titulo": "Outdoor Exercise Facility-Based Integrative Mobile Health Intervention to Support Physical Activity, Mental Well-Being, and Exercise Self-Efficacy Among Older Adults With Prefrailty and Frailty in Hong Kong: Pilot Feasibility Randomized Controlled Trial Study.",
+     "pmc": "PMC12179572"
+    },
+    {
+     "pmid": "40252300",
+     "ano": "2025",
+     "titulo": "Outdoor walking exercise therapy improves walking capacity and well-being in persons with multiple sclerosis: A randomized controlled trial.",
+     "pmc": null
+    },
+    {
+     "pmid": "36709635",
+     "ano": "2023",
+     "titulo": "Does Nordic Walking technique influence the ground reaction forces?",
+     "pmc": null
+    },
+    {
+     "pmid": "36692651",
+     "ano": "2023",
+     "titulo": "A pilot randomized controlled trial evaluating outdoor community walking for knee osteoarthritis: walk.",
+     "pmc": "PMC10102100"
+    },
+    {
+     "pmid": "36323718",
+     "ano": "2022",
+     "titulo": "A mobile EEG study on the psychophysiological effects of walking and crowding in indoor and outdoor urban environments.",
+     "pmc": "PMC9628500"
+    },
+    {
+     "pmid": "24623515",
+     "ano": "2014",
+     "titulo": "Walks4Work: assessing the role of the natural environment in a workplace physical activity intervention.",
+     "pmc": null
+    },
+    {
+     "pmid": "38876614",
+     "ano": "2024",
+     "titulo": "Exercise in a natural environment increases program compliance in people with chronic migraine: A pilot cross-over randomized trial.",
+     "pmc": "PMC11180221"
+    },
+    {
+     "pmid": "36184966",
+     "ano": "2022",
+     "titulo": "The Park Rx trial to increase physical activity among low-income youth.",
+     "pmc": "PMC10312344"
+    },
+    {
+     "pmid": "28549220",
+     "ano": "2017",
+     "titulo": "Physiological responses during intermittent running exercise differ between outdoor and treadmill running.",
+     "pmc": null
+    },
+    {
+     "pmid": "31963904",
+     "ano": "2020",
+     "titulo": "Intervention Strategies to Elicit MVPA in Preschoolers during Outdoor Play.",
+     "pmc": "PMC7014008"
+    },
+    {
+     "pmid": "36804197",
+     "ano": "2023",
+     "titulo": "mHealth to Support Outdoor Gym Resistance Training: The ecofit Effectiveness RCT.",
+     "pmc": null
+    }
+   ],
+   "executadoEm": "2026-11-21",
+   "base": "PubMed"
+  }
+ ]
+}

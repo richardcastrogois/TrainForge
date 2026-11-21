@@ -1,0 +1,3650 @@
+{
+ "contract": "trainforge.biblioteca-treinos/1",
+ "versao": "v2-pesquisa",
+ "atualizadoEm": "2026-11-21",
+ "regra": "docs/planejamento/metodo-pesquisa-treinos.md (Regra absoluta de validade, 21/11/2026)",
+ "observacoes": [
+  "Nomes e benefícios reescritos em português a partir da fonte; não são tradução literal.",
+  "Conferir a dose exata de cada exercício na fonte (campo localizador) antes de publicar no app.",
+  "Fotos, desenhos e vídeos das fontes não estão liberados; mídia virá de fonte com direitos (ex.: MoveKit).",
+  "NHS: exibir como 'Adaptado de conteúdo do NHS (Open Government Licence)', sem sugerir endosso.",
+  "movekit=a_verificar até o cruzamento com a lista pública ou o metadata real.",
+  "PDFs da rodada de 21/11 preservados em .local/pesquisa-corpos/2026-11-21-treinos/ (fora do Git e do APK) como prova da fonte."
+ ],
+ "niveis": {
+  "N1": "Mobilidade reduzida ou começando do zero (precisa de apoio ou cadeira)",
+  "N2": "Iniciante ou retorno após pausa (frágil a pouco ativo)",
+  "N3": "Prática regular (pré-frágil a moderadamente ativo)",
+  "N4": "Avançado (robusto, prática estruturada)"
+ },
+ "frequencia": {
+  "regras": [
+   {
+    "regra": "150 min/semana de atividade moderada; força e equilíbrio 2–3x/semana em dias alternados; qualquer atividade é melhor que nada",
+    "fonte": "MS2021 cap. 5"
+   },
+   {
+    "regra": "Roda completa em 3 dias não consecutivos e caminhada nos demais; ideal ≥5 dias/semana, 30 min",
+    "fonte": "VIVIFRAIL passaporte D, p. 4 e 25"
+   },
+   {
+    "regra": "Exercícios 3x/semana e caminhada 2x/semana",
+    "fonte": "OTAGO"
+   },
+   {
+    "regra": "Força 2+ dias sem repetir o mesmo grupo em dias seguidos; resistência na maioria dos dias; alongamento após o treino",
+    "fonte": "NIA pp. 43–46"
+   },
+   {
+    "regra": "Treinos A/B/C alternados, ao menos 3 dias/semana",
+    "fonte": "UFPR p. 9"
+   }
+  ],
+  "nota": "Tabela global 1–7 dias removida após o debate Claude×Codex (21/11): cada programa só pode ser oferecido nas agendas previstas pela própria fonte (campo agendasPermitidas, a extrair).",
+  "regraAgenda": {
+   "vigente": "frequencia.combinacaoModalidades",
+   "nota": "Regra anterior (dias extras só leves; exceção 'metade dos dias' na praça) substituída em 21/11."
+  },
+  "combinacaoModalidades": {
+   "decisaoAutor": "21/11: a frase 'metade dos dias com aparelhos' era exemplo, não regra. O app oferece opções de combinação; cada regra abaixo vem de fonte profissional registrada.",
+   "fontes": {
+    "MS2021": "Guia de Atividade Física para a População Brasileira (Ministério da Saúde, 2021): adultos p. 25 (força em pelo menos 2 dias/semana; 150 min de atividade moderada); idosos p. 30 (força e equilíbrio 2–3 vezes/semana em dias alternados; 150 min moderada; pode dividir em blocos; caminhada, yoga, alongamento, pilates, dança como opções); benefícios p. 24 e 29 (reduz estresse, ansiedade e depressão; melhora o sono).",
+    "NIA2018": "Exercise & Physical Activity: Your Everyday Guide (National Institute on Aging): força 2+ dias/semana sem repetir o mesmo grupo muscular em 2 dias seguidos (ex.: superiores seg/qua/sex e inferiores ter/qui/sáb, ou corpo todo em dias alternados); resistência (caminhada) na maioria ou todos os dias, começando com 5–10 min e chegando a 30 min; quem treina só resistência deve acrescentar alongamento, equilíbrio ou força; quem faz força todos os dias deve alternar grupos (pp. 32, 37, 43, 104).",
+    "OMS2020": "WHO guidelines on physical activity and sedentary behaviour (Bull et al., BJSM 2020, PMC7719906): 65+ fazem atividade multicomponente (equilíbrio funcional e força) em 3 ou mais dias/semana, além de 150–300 min de aeróbica moderada.",
+    "COCHRANE2019": "Sherrington et al., Cochrane CD012424 (2019): programas com vários tipos de exercício (equilíbrio/funcional + resistência) e Tai Chi reduzem quedas; caminhada isolada tem efeito incerto sobre quedas.",
+    "NSCA2019": "Fragala et al. 2019, Resistance Training for Older Adults: Position Statement From the NSCA (J Strength Cond Res 33(8)), Tabela 1, p. 2025: 1–3 séries; 1 série para iniciantes e frágeis progredindo a 2–3; 8–12 ou 10–15 repetições (10–15 com carga menor para iniciantes); 8–10 exercícios dos grandes grupos; máquinas indicadas para iniciantes e frágeis; 2–3 dias não consecutivos por grupo; não ir à falha; descanso 1,5–3 min (p. 2024)."
+   },
+   "regras": [
+    {
+     "regra": "Mesmo grupo muscular não treina força em 2 dias seguidos",
+     "origem": "fonte",
+     "fonte": "NIA2018 pp. 43, 104"
+    },
+    {
+     "regra": "Para treinar força em dias seguidos, alternar grupos (ex. do NIA: superiores seg/qua/sex, inferiores ter/qui/sáb) ou fazer corpo todo em dias alternados",
+     "origem": "fonte",
+     "fonte": "NIA2018 p. 104"
+    },
+    {
+     "regra": "App: até 3 dias de força usa corpo todo em dias alternados; 4–6 dias usa as sessões A (superiores) e B (inferiores) alternadas",
+     "origem": "composicaoApp",
+     "base": "aplicação do exemplo NIA p. 104"
+    },
+    {
+     "regra": "Idosos: força e equilíbrio 2–3 vezes/semana em dias alternados",
+     "origem": "fonte",
+     "fonte": "MS2021 p. 30"
+    },
+    {
+     "regra": "Adultos: força em pelo menos 2 dias/semana e 150 min de atividade moderada",
+     "origem": "fonte",
+     "fonte": "MS2021 p. 25"
+    },
+    {
+     "regra": "Quem faz principalmente resistência (caminhada) deve acrescentar alongamento, equilíbrio ou força",
+     "origem": "fonte",
+     "fonte": "NIA2018 p. 32"
+    },
+    {
+     "regra": "Caminhada: começar com 5–10 min e chegar a pelo menos 30 min moderados; aquecimento e volta à calma de cerca de 5 min",
+     "origem": "fonte",
+     "fonte": "NIA2018 pp. 35, 37"
+    },
+    {
+     "regra": "65+: atividade multicomponente (equilíbrio e força) em 3 ou mais dias/semana. O app informa essa recomendação a todo usuário 65+, inclusive quem escolhe menos dias, sem bloquear a escolha",
+     "origem": "fonte + composicaoApp (forma de informar)",
+     "fonte": "OMS2020"
+    }
+   ],
+   "opcoes": [
+    {
+     "id": "so_forca",
+     "nome": "Só força",
+     "descricao": "Todos os dias escolhidos são de força, sem repetir grupo em dias seguidos (NIA). Distribuição por número de dias definida pelo app (ver regras de origem composicaoApp).",
+     "origem": "composicaoApp",
+     "base": "NIA2018"
+    },
+    {
+     "id": "forca_caminhada",
+     "nome": "Força + caminhada",
+     "descricao": "Força 2–3 dias alternados; caminhada nos outros dias (ou depois da força, no mesmo dia).",
+     "origem": "composicaoApp",
+     "base": "NIA2018 + MS2021"
+    },
+    {
+     "id": "forca_mente",
+     "nome": "Força + corpo e mente",
+     "descricao": "Força 2–3 dias alternados; nos outros dias alongamento com respiração, equilíbrio, Tai Chi ou yoga. Alongamento com respiração não substitui o Tai Chi nos resultados sobre quedas; é a opção disponível até existir sessão fechada de Tai Chi/yoga.",
+     "origem": "composicaoApp",
+     "base": "MS2021 (yoga, alongamento; reduz ansiedade e melhora o sono) + COCHRANE2019 (Tai Chi reduz quedas)"
+    },
+    {
+     "id": "completo",
+     "nome": "Completo",
+     "descricao": "Força 2–3 dias alternados + caminhada + um dia de equilíbrio/corpo e mente.",
+     "origem": "composicaoApp",
+     "base": "OMS2020 + COCHRANE2019 (multicomponente)"
+    },
+    {
+     "id": "equilibrio_mobilidade",
+     "nome": "Equilíbrio e mobilidade (sem peso)",
+     "origem": "composicaoApp",
+     "descricao": "Só exercícios sem peso externo: equilíbrio, mobilidade, força com o próprio corpo, alongamento e corpo e mente. Para casa, pausa do cuidador e praça.",
+     "base": "COCHRANE2019 (exercícios de equilíbrio e funcionais reduzem quedas); Otago; NIA (equilíbrio e flexibilidade); Baduanjin; exercise snacking",
+     "lugares": [
+      "casa",
+      "pausa",
+      "praca"
+     ],
+     "filtro": "semCarga = true E focoEquilibrioMobilidade = true (sem restrição de público). Na praça, a opção não remove os dias ATI quando a pessoa escolhe a praça para treinar força."
+    }
+   ],
+   "porLugar": {
+    "academia": "Todas as opções. 'Só força' é comum: com 4+ dias, alternar grupos musculares.",
+    "praca": "Dias de aparelhos = dias de força. Cinco dias seguidos com todos os aparelhos repetem os mesmos grupos em dias seguidos, contra NIA; com vários dias seguidos, alternar ATI superiores (A) e inferiores + equilíbrio (B). Caminhada, Tai Chi e alongamento entram conforme a opção escolhida.",
+    "casa": "Todas as opções. Caminhada pode ser no bairro ou dentro de casa; yoga e Tai Chi só entram com sessão fechada de fonte humana."
+   },
+   "lacunas": "Corpo e mente: Tai Chi (SES-TAICHI-WALK) e yoga na cadeira (SES-CYOGA) ainda não têm sequência fechada; até fechar, a opção usa alongamento com respiração e equilíbrio (NIA, UFDPar). Regra ACSM de 48 h só foi vista em resumo secundário: não usada.",
+   "observacao": "As opções e as distribuições semanais são composição do app (permitida pela regra do autor) apoiada nas fontes; as fontes não prescrevem cada distribuição específica."
+  }
+ },
+ "fontes": {
+  "NHS": {
+   "nome": "NHS England — Live Well: exercícios (força, equilíbrio, sentado, flexibilidade, aquecimento, volta à calma, joelho, Strength and Flex)",
+   "responsavel": "NHS England (serviço público de saúde do Reino Unido); vídeos com fisioterapeuta, instrutor de reabilitação e treinadora Laura (Couch to 5K)",
+   "url": "https://www.nhs.uk/live-well/exercise/",
+   "licenca": "Open Government Licence sob os termos do NHS: adaptação/tradução com atribuição OGL; o produto não pode apresentar o conteúdo adaptado como endossado pelo NHS; fotos, vídeos e logos excluídos (catálogo PR05)",
+   "acesso": "2026-11-21",
+   "semIA": "Instituição pública de saúde; páginas com data de revisão (2022–2026)"
+  },
+  "OTAGO": {
+   "nome": "Otago Exercise Programme to prevent falls in older adults (manual)",
+   "responsavel": "A. John Campbell e M. Clare Robertson — Universidade de Otago (Medicina), para ACC Nova Zelândia; programa testado em ensaios clínicos",
+   "url": "https://ourarchive.otago.ac.nz/esploro/outputs/book/Otago-Exercise-Programme-to-prevent-falls/9926555676301891",
+   "licenca": "CC BY 4.0 declarada no registro do repositório (catálogo IC06); logo/endosso não concedidos",
+   "acesso": "leitura registrada em 2026-10-04; reaproveitada em 2026-11-21",
+   "semIA": "Manual 2003/2007, anterior à IA generativa; autores médicos/pesquisadores"
+  },
+  "NIA": {
+   "nome": "Exercise & Physical Activity: Your Everyday Guide from the National Institute on Aging (NIH 18-AG-4258, março/2018)",
+   "responsavel": "National Institute on Aging/NIH; painel coordenado por Chhanda Dutta PhD e Jack Guralnik MD PhD, com David Buchner MD MPH, Wojtek Chodzko-Zajko PhD e outros",
+   "url": "https://www.govinfo.gov/content/pkg/GOVPUB-HE20_3850-PURL-gpo124822/pdf/GOVPUB-HE20_3850-PURL-gpo124822.pdf",
+   "licenca": "Texto em domínio público salvo indicação (política NIA); fotos/ilustrações de terceiros e logo excluídos",
+   "acesso": "PDF preservado em 2026-10-11; relido em 2026-11-21",
+   "semIA": "Publicação governamental de 2018 com painel identificado"
+  },
+  "NIA-WTG": {
+   "nome": "Workout to Go (NIA/NIH, reimpressão março/2015)",
+   "responsavel": "National Institute on Aging/NIH",
+   "url": "https://order.nia.nih.gov/",
+   "licenca": "Domínio público salvo indicação (política NIA)",
+   "acesso": "leitura registrada em 2026-10-04",
+   "semIA": "Publicação governamental de 2015"
+  },
+  "GSCHWIND": {
+   "nome": "Gschwind et al. 2013 — A best practice fall prevention exercise program (BMC Geriatrics 13:105, PMC3852637)",
+   "responsavel": "Yves J. Gschwind, Reto W. Kressig, André Lacroix, Thomas Muehlbauer, Barbara Pfenninger, Urs Granacher — painel interdisciplinar",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3852637/",
+   "licenca": "CC BY (Europe PMC)",
+   "acesso": "2026-11-21",
+   "semIA": "Artigo revisado por pares de 2013",
+   "uso": "Regras de dose e progressão (tabelas 1–4)"
+  },
+  "VIVIFRAIL": {
+   "nome": "Vivifrail — Multicomponent physical exercise program to prevent frailty and the risk of falls (passaportes A, B, B+, C, C+, D, E e rodas de exercício)",
+   "responsavel": "Mikel Izquierdo (fisiologia do exercício), Alvaro Casas-Herrero, Fabricio Zambom-Ferraresi, Nicolás Martínez-Velilla, Cristina Alonso-Bouzón e Leocadio Rodríguez-Mañas (geriatria) — projeto Erasmus+ 556988-EPP-1-2014-1-ES-SPO-SCP; ensaio multicêntrico Casas-Herrero 2022 (PMC8977963)",
+   "url": "https://vivifrail.com/resources/",
+   "licenca": "© Mikel Izquierdo; sem licença aberta declarada. Uso: parâmetros reexpressos com citação; não copiar textos, figuras nem rodas",
+   "acesso": "2026-11-21",
+   "arquivoLocal": ".local/pesquisa-corpos/2026-11-21-treinos/vivifrail-*.pdf",
+   "semIA": "Material de 2016–2022 de pesquisadores e geriatras identificados, validado em ensaio clínico"
+  },
+  "UFPR": {
+   "nome": "Manual Queda + Vida: exercícios físicos para prevenção de quedas (ISBN 978-65-5458-292-6)",
+   "responsavel": "Amanda Colombo Peteck Lopes (autora), Talita Gianello Gnoato Zotz (organizadora), Anna Raquel Silveira Gomes (coordenadora) e equipe — Departamento de Prevenção e Reabilitação em Fisioterapia, UFPR, 2024",
+   "url": "https://ceprex.ufpr.br/wp-content/uploads/2021/06/menos_queda_mais_vida_exerc_isbn-digital-02-08-24.pdf",
+   "licenca": "Qualquer parte pode ser reproduzida, desde que citada a fonte (declaração na ficha técnica); fotos Canva excluídas",
+   "acesso": "2026-11-21",
+   "arquivoLocal": ".local/pesquisa-corpos/2026-11-21-treinos/ufpr-menos-queda-mais-vida.pdf",
+   "semIA": "Fisioterapeutas e pesquisadoras identificadas; exercícios baseados em Kisner & Colby e ensaios citados"
+  },
+  "MS2021": {
+   "nome": "Guia de Atividade Física para a População Brasileira (Ministério da Saúde, 2021), capítulo 5 — idosos",
+   "responsavel": "Ministério da Saúde, com a Universidade Federal de Pelotas; consulta pública",
+   "url": "http://bvsms.saude.gov.br/bvs/publicacoes/guia_atividade_fisica_populacao_brasileira.pdf",
+   "licenca": "CC BY-NC-SA 4.0 (citar a fonte). Uso: só regras de dose e frequência, reexpressas com citação",
+   "acesso": "2026-11-21",
+   "arquivoLocal": ".local/pesquisa-corpos/2026-11-21-treinos/ms-guia-atividade-fisica-2021.pdf",
+   "semIA": "Publicação oficial de 2021"
+  },
+  "UFDPAR": {
+   "nome": "Cartilha de Ginástica Laboral (ISBN 978-65-00-64037-3)",
+   "responsavel": "Antonia Cristina Silva dos Santos, Leticya Sousa Teixeira e Profa. Dra. Patrícia Chaves Coertjens — Curso de Fisioterapia, UFDPar, 2023",
+   "url": "https://ufdpar.edu.br/ufdpar/noticias-1/professora-e-alunas-de-fisioterapia-elaboram-cartilha-de-ginastica-laboral/CartilhadeGinsticaLaboral.pdf",
+   "licenca": "Sem licença declarada; parâmetros reexpressos com citação",
+   "acesso": "2026-11-21",
+   "arquivoLocal": ".local/pesquisa-corpos/2026-11-21-treinos/ufdpar-ginastica-laboral.pdf",
+   "semIA": "Fisioterapeutas identificadas"
+  },
+  "ALQHTANI": {
+   "nome": "Alqhtani et al. 2023 — Whole-Body Stretching during Lunch Break (PMC10222752)",
+   "responsavel": "Raee Saeed Alqhtani, Hashim Ahmed, Adel Alshahrani, Abdur Raheem Khan, Ashfaque Khan — fisioterapeutas",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10222752/",
+   "licenca": "CC BY",
+   "acesso": "2026-11-21",
+   "semIA": "Ensaio revisado por pares, 2023"
+  },
+  "MARCOSPARDO": {
+   "nome": "Marcos-Pardo et al. 2023 — Outdoor fitness equipment training in middle-aged and older adults (protocolo de ensaio, PMC10759096)",
+   "responsavel": "Pablo Jorge Marcos-Pardo, Alejandro Espeso-García, Raquel Vaquero-Cristóbal, Tomás Abelleira-Lamela, Francisco Esparza-Ros, Noelia González-Gálvez — Universidade Católica de Múrcia",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10759096/",
+   "licenca": "CC BY",
+   "acesso": "2026-11-21",
+   "semIA": "Protocolo revisado por pares, 2023"
+  },
+  "BARBOSA": {
+   "nome": "Barbosa et al. 2023 — Supervised and Unsupervised Exercise Training in Outdoor Gym on the Lifestyle of Elderly People (PMC10648151)",
+   "responsavel": "Welmo A. Barbosa e colaboradores — Centro de Educação Física e Desportos, Universidade Federal do Espírito Santo, e Universidade de Pádua",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10648151/",
+   "licenca": "CC BY",
+   "acesso": "2026-11-21",
+   "semIA": "Ensaio revisado por pares, 2023 (academia ao ar livre no Brasil)"
+  },
+  "ENJOY": {
+   "nome": "Levinger et al. 2022 — ENJOY / Seniors Exercise Park program (PMC8938729)",
+   "responsavel": "Pazit Levinger, Keith D. Hill e colaboradores — National Ageing Research Institute e Universidade Victoria (Austrália)",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8938729/",
+   "licenca": "CC BY 4.0",
+   "acesso": "2026-11-21",
+   "semIA": "Protocolo revisado por pares, 2022"
+  },
+  "WALKER": {
+   "nome": "Walker et al. 2019 — programa periodizado de musculação em máquinas, jovens e idosos (Front. Physiol., PMC6351450)",
+   "responsavel": "Simon Walker e colaboradores — Universidade de Jyväskylä (ciências do esporte)",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6351450/",
+   "licenca": "CC BY",
+   "acesso": "2026-11-21",
+   "semIA": "Ensaio revisado por pares, 2019"
+  },
+  "AGUEDA": {
+   "nome": "Fernandez-Gamez et al. 2023 — AGUEDA: programa de força com elástico e peso corporal relatado pelo CERT (PMC12880457)",
+   "responsavel": "Beatriz Fernandez-Gamez e colaboradores — Faculdade de Ciências do Esporte, Universidade de Granada",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12880457/",
+   "licenca": "CC BY",
+   "acesso": "2026-11-21",
+   "semIA": "Protocolo CERT revisado por pares, 2023"
+  },
+  "METASTABLE": {
+   "nome": "Claußen, Groß e Kibele 2025 — treino de força metaestável vs força e equilíbrio tradicionais em idosos (PMC12523087)",
+   "responsavel": "Lisa Claußen, Julian Groß e Armin Kibele — Instituto de Ciências do Esporte e do Movimento, Universidade de Kassel (BMC Geriatrics 2025)",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12523087/",
+   "licenca": "CC BY 4.0",
+   "acesso": "2026-11-21",
+   "semIA": "Ensaio revisado por pares, 2025"
+  },
+  "STRONG": {
+   "nome": "Serra-Rexach et al. 2009 — STRONG: strength training in nonagenarians (BMC Geriatrics, PMC2693136)",
+   "responsavel": "José A. Serra-Rexach (geriatria), Jonatan R. Ruiz e colaboradores — Hospital Gregorio Marañón e Universidade Europeia de Madri",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2693136/",
+   "licenca": "CC BY",
+   "acesso": "2026-11-21",
+   "semIA": "Protocolo revisado por pares, 2009"
+  },
+  "KRIST": {
+   "nome": "Krist, Dimeo e Keil 2013 — progressive resistance training twice a week in very elderly nursing-home residents (PMC3639017)",
+   "responsavel": "Lilian Krist, Fernando Dimeo (medicina do esporte) e Thomas Keil — Charité, Berlim",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3639017/",
+   "licenca": "a conferir (artigo em PMC); só parâmetros com citação",
+   "acesso": "2026-11-21",
+   "semIA": "Estudo revisado por pares, 2013"
+  },
+  "GOOUT": {
+   "nome": "Salma et al. 2024 — programa de caminhada ao ar livre GO-OUT adaptado (PMC11628424); programa original de Salbach et al.",
+   "responsavel": "Jordana Salma, Nancy M. Salbach (fisioterapia, Universidade de Toronto), Ruth Barclay, Allyson Jones e colaboradores",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11628424/",
+   "licenca": "a conferir; só parâmetros com citação",
+   "acesso": "2026-11-21",
+   "semIA": "Estudo revisado por pares, 2024"
+  }
+ },
+ "exercicios": [
+  {
+   "id": "NHS-F01",
+   "fonte": "NHS",
+   "nome": "Sentar e levantar da cadeira",
+   "nomeOriginal": "Sit-to-stand",
+   "categoria": "forca",
+   "contexto": "casa",
+   "beneficioDeclarado": "Melhora saúde e mobilidade (rotina de força)",
+   "dose": "5 repetições lentas",
+   "localizador": "nhs.uk/live-well/exercise/strength-exercises",
+   "movekit": {
+    "slug": "bodyweight-box-squat",
+    "correspondencia": "aproximado",
+    "menorPacote": "Starter"
+   },
+   "status": "valido_pela_regra"
+  },
+  {
+   "id": "NHS-F02",
+   "fonte": "NHS",
+   "nome": "Miniagachamento com apoio",
+   "nomeOriginal": "Mini-squats",
+   "categoria": "forca",
+   "contexto": "casa",
+   "beneficioDeclarado": "Melhora saúde e mobilidade (rotina de força)",
+   "dose": "5 repetições",
+   "localizador": "nhs.uk/live-well/exercise/strength-exercises",
+   "movekit": {
+    "slug": "bodyweight-squat",
+    "correspondencia": "aproximado",
+    "menorPacote": "Starter"
+   },
+   "status": "valido_pela_regra"
+  },
+  {
+   "id": "NHS-F03",
+   "fonte": "NHS",
+   "nome": "Elevação de calcanhares com apoio",
+   "nomeOriginal": "Calf raises",
+   "categoria": "forca",
+   "contexto": "casa",
+   "beneficioDeclarado": "Melhora saúde e mobilidade (rotina de força)",
+   "dose": "5 repetições",
+   "localizador": "nhs.uk/live-well/exercise/strength-exercises",
+   "movekit": {
+    "slug": "single-leg-standing-calf-raise",
+    "correspondencia": "aproximado",
+    "menorPacote": "Home"
+   },
+   "status": "valido_pela_regra"
+  },
+  {
+   "id": "NHS-F04",
+   "fonte": "NHS",
+   "nome": "Elevação lateral da perna",
+   "nomeOriginal": "Sideways leg lift",
+   "categoria": "forca",
+   "contexto": "casa",
+   "beneficioDeclarado": "Melhora saúde e mobilidade (rotina de força)",
+   "dose": "5 por perna",
+   "localizador": "nhs.uk/live-well/exercise/strength-exercises",
+   "movekit": {
+    "slug": "bodyweight-hip-abduction",
+    "correspondencia": "aproximado",
+    "menorPacote": "Home"
+   },
+   "status": "valido_pela_regra"
+  },
+  {
+   "id": "NHS-F05",
+   "fonte": "NHS",
+   "nome": "Extensão da perna para trás",
+   "nomeOriginal": "Leg extension",
+   "categoria": "forca",
+   "contexto": "casa",
+   "beneficioDeclarado": "Melhora saúde e mobilidade (rotina de força)",
+   "dose": "5 por perna, até 5 s",
+   "localizador": "nhs.uk/live-well/exercise/strength-exercises",
+   "movekit": {
+    "slug": null,
+    "correspondencia": "nao",
+    "menorPacote": null
+   },
+   "status": "valido_pela_regra"
+  },
+  {
+   "id": "NHS-F06",
+   "fonte": "NHS",
+   "nome": "Flexão de braço na parede",
+   "nomeOriginal": "Wall press-up",
+   "categoria": "forca",
+   "contexto": "casa",
+   "beneficioDeclarado": "Melhora saúde e mobilidade (rotina de força)",
+   "dose": "3 séries de 5–10",
+   "localizador": "nhs.uk/live-well/exercise/strength-exercises",
+   "movekit": {
+    "slug": "incline-push-up",
+    "correspondencia": "aproximado",
+    "menorPacote": "Starter"
+   },
+   "status": "valido_pela_regra"
+  },
+  {
+   "id": "NHS-F07",
+   "fonte": "NHS",
+   "nome": "Rosca de bíceps com peso leve",
+   "nomeOriginal": "Biceps curls",
+   "categoria": "forca",
+   "contexto": "casa",
+   "beneficioDeclarado": "Melhora saúde e mobilidade (rotina de força)",
+   "dose": "3 séries de 5 por braço",
+   "localizador": "nhs.uk/live-well/exercise/strength-exercises",
+   "movekit": {
+    "slug": "dumbbell-curl",
+    "correspondencia": "exato",
+    "menorPacote": "Home"
+   },
+   "status": "valido_pela_regra"
+  },
+  {
+   "id": "NHS-E01",
+   "fonte": "NHS",
+   "nome": "Caminhada lateral",
+   "nomeOriginal": "Sideways walking",
+   "categoria": "equilibrio",
+   "contexto": "casa",
+   "beneficioDeclarado": "Melhora saúde e mobilidade (rotina de equilíbrio)",
+   "dose": "10 passos para cada lado",
+   "localizador": "nhs.uk/live-well/exercise/balance-exercises",
+   "movekit": {
+    "slug": null,
+    "correspondencia": "nao",
+    "menorPacote": null
+   },
+   "status": "valido_pela_regra"
+  },
+  {
+   "id": "NHS-E02",
+   "fonte": "NHS",
+   "nome": "Passo cruzado lateral",
+   "nomeOriginal": "Simple grapevine",
+   "categoria": "equilibrio",
+   "contexto": "casa",
+   "beneficioDeclarado": "Melhora saúde e mobilidade (rotina de equilíbrio)",
+   "dose": "5 cruzamentos por lado",
+   "localizador": "nhs.uk/live-well/exercise/balance-exercises",
+   "movekit": {
+    "slug": null,
+    "correspondencia": "nao",
+    "menorPacote": null
+   },
+   "status": "valido_pela_regra"
+  },
+  {
+   "id": "NHS-E03",
+   "fonte": "NHS",
+   "nome": "Caminhada calcanhar-ponta",
+   "nomeOriginal": "Heel-to-toe walk",
+   "categoria": "equilibrio",
+   "contexto": "casa",
+   "beneficioDeclarado": "Melhora saúde e mobilidade (rotina de equilíbrio)",
+   "dose": "conforme página",
+   "localizador": "nhs.uk/live-well/exercise/balance-exercises",
+   "movekit": {
+    "slug": null,
+    "correspondencia": "nao",
+    "menorPacote": null
+   },
+   "status": "valido_pela_regra"
+  },
+  {
+   "id": "NHS-E04",
+   "fonte": "NHS",
+   "nome": "Apoio em uma perna com mãos na parede",
+   "nomeOriginal": "One-leg stand",
+   "categoria": "equilibrio",
+   "contexto": "casa",
+   "beneficioDeclarado": "Melhora saúde e mobilidade (rotina de equilíbrio)",
+   "dose": "conforme página",
+   "localizador": "nhs.uk/live-well/exercise/balance-exercises",
+   "movekit": {
+    "slug": "single-leg-balance",
+    "correspondencia": "exato",
+    "menorPacote": "Home"
+   },
+   "status": "valido_pela_regra"
+  },
+  {
+   "id": "NHS-E05",
+   "fonte": "NHS",
+   "nome": "Subir e descer degrau",
+   "nomeOriginal": "Step-up",
+   "categoria": "equilibrio",
+   "contexto": "casa/praca",
+   "beneficioDeclarado": "Melhora saúde e mobilidade (rotina de equilíbrio)",
+   "dose": "conforme página",
+   "localizador": "nhs.uk/live-well/exercise/balance-exercises",
+   "movekit": {
+    "slug": "dumbbell-step-up-low",
+    "correspondencia": "aproximado",
+    "menorPacote": "Starter"
+   },
+   "status": "valido_pela_regra"
+  },
+  {
+   "id": "NHS-S01",
+   "fonte": "NHS",
+   "nome": "Alongamento do peito sentado",
+   "nomeOriginal": "Chest stretch",
+   "categoria": "flexibilidade",
+   "contexto": "casa/pausa",
+   "beneficioDeclarado": "Bom para a postura",
+   "dose": "5–10 s",
+   "localizador": "nhs.uk/live-well/exercise/sitting-exercises",
+   "movekit": {
+    "slug": "seated-thoracic-extension-chest-opener",
+    "correspondencia": "aproximado",
+    "menorPacote": "Home"
+   },
+   "status": "valido_pela_regra"
+  },
+  {
+   "id": "NHS-S02",
+   "fonte": "NHS",
+   "nome": "Rotação do tronco sentado",
+   "nomeOriginal": "Upper-body twist",
+   "categoria": "flexibilidade",
+   "contexto": "casa/pausa",
+   "beneficioDeclarado": "Desenvolve e mantém a flexibilidade da parte superior das costas",
+   "dose": "conforme página",
+   "localizador": "nhs.uk/live-well/exercise/sitting-exercises",
+   "movekit": {
+    "slug": null,
+    "correspondencia": "nao",
+    "menorPacote": null
+   },
+   "status": "valido_pela_regra"
+  },
+  {
+   "id": "NHS-S03",
+   "fonte": "NHS",
+   "nome": "Marcha sentada",
+   "nomeOriginal": "Hip marching",
+   "categoria": "forca",
+   "contexto": "casa/pausa",
+   "beneficioDeclarado": "Fortalece quadris e coxas e melhora a flexibilidade",
+   "dose": "conforme página",
+   "localizador": "nhs.uk/live-well/exercise/sitting-exercises",
+   "movekit": {
+    "slug": null,
+    "correspondencia": "nao",
+    "menorPacote": null
+   },
+   "status": "valido_pela_regra"
+  },
+  {
+   "id": "NHS-S04",
+   "fonte": "NHS",
+   "nome": "Alongamento do tornozelo sentado",
+   "nomeOriginal": "Ankle stretch",
+   "categoria": "flexibilidade",
+   "contexto": "casa/pausa",
+   "beneficioDeclarado": "Melhora a flexibilidade do tornozelo e reduz o risco de coágulo",
+   "dose": "conforme página",
+   "localizador": "nhs.uk/live-well/exercise/sitting-exercises",
+   "movekit": {
+    "slug": "seated-ankle-circles",
+    "correspondencia": "aproximado",
+    "menorPacote": "Home"
+   },
+   "status": "valido_pela_regra"
+  },
+  {
+   "id": "NHS-S05",
+   "fonte": "NHS",
+   "nome": "Rotação do pescoço",
+   "nomeOriginal": "Neck rotation",
+   "categoria": "flexibilidade",
+   "contexto": "casa/pausa",
+   "beneficioDeclarado": "Melhora a mobilidade e a flexibilidade do pescoço",
+   "dose": "5 s por lado",
+   "localizador": "nhs.uk/live-well/exercise/sitting-exercises",
+   "movekit": {
+    "slug": null,
+    "correspondencia": "nao",
+    "menorPacote": null
+   },
+   "status": "valido_pela_regra"
+  },
+  {
+   "id": "NHS-X01",
+   "fonte": "NHS",
+   "nome": "Inclinação do pescoço",
+   "nomeOriginal": "Neck stretch",
+   "categoria": "flexibilidade",
+   "contexto": "pausa",
+   "beneficioDeclarado": "Solta músculos tensos do pescoço",
+   "dose": "conforme página",
+   "localizador": "nhs.uk/live-well/exercise/flexibility-exercises",
+   "movekit": {
+    "slug": "seated-lateral-neck-flexion-hold",
+    "correspondencia": "exato",
+    "menorPacote": "Home"
+   },
+   "status": "valido_pela_regra"
+  },
+  {
+   "id": "NHS-X02",
+   "fonte": "NHS",
+   "nome": "Inclinação lateral do tronco",
+   "nomeOriginal": "Sideways bend",
+   "categoria": "flexibilidade",
+   "contexto": "casa/pausa",
+   "beneficioDeclarado": "Ajuda a restaurar a flexibilidade da lombar",
+   "dose": "conforme página",
+   "localizador": "nhs.uk/live-well/exercise/flexibility-exercises",
+   "movekit": {
+    "slug": null,
+    "correspondencia": "nao",
+    "menorPacote": null
+   },
+   "status": "valido_pela_regra"
+  },
+  {
+   "id": "NHS-X03",
+   "fonte": "NHS",
+   "nome": "Alongamento da panturrilha na parede",
+   "nomeOriginal": "Calf stretch",
+   "categoria": "flexibilidade",
+   "contexto": "casa/praca",
+   "beneficioDeclarado": "Solta a musculatura da panturrilha",
+   "dose": "conforme página",
+   "localizador": "nhs.uk/live-well/exercise/flexibility-exercises",
+   "movekit": {
+    "slug": null,
+    "correspondencia": "nao",
+    "menorPacote": null
+   },
+   "status": "valido_pela_regra"
+  },
+  {
+   "id": "NHS-W01",
+   "fonte": "NHS",
+   "nome": "Marcha no lugar",
+   "nomeOriginal": "March on the spot",
+   "categoria": "aquecimento",
+   "contexto": "todos",
+   "beneficioDeclarado": "Aquecer para prevenir lesão e tornar o treino mais eficaz",
+   "dose": "3 min",
+   "localizador": "nhs.uk/live-well/exercise/how-to-warm-up-before-exercising",
+   "movekit": {
+    "slug": null,
+    "correspondencia": "nao",
+    "menorPacote": null
+   },
+   "status": "valido_pela_regra"
+  },
+  {
+   "id": "NHS-W02",
+   "fonte": "NHS",
+   "nome": "Toques de calcanhar à frente",
+   "nomeOriginal": "Heel digs",
+   "categoria": "aquecimento",
+   "contexto": "todos",
+   "beneficioDeclarado": "Aquecer para prevenir lesão",
+   "dose": "60 em 60 s",
+   "localizador": "nhs.uk/live-well/exercise/how-to-warm-up-before-exercising",
+   "movekit": {
+    "slug": null,
+    "correspondencia": "nao",
+    "menorPacote": null
+   },
+   "status": "valido_pela_regra"
+  },
+  {
+   "id": "NHS-W03",
+   "fonte": "NHS",
+   "nome": "Elevação de joelhos",
+   "nomeOriginal": "Knee lifts",
+   "categoria": "aquecimento",
+   "contexto": "todos",
+   "beneficioDeclarado": "Aquecer para prevenir lesão",
+   "dose": "30 em 30 s",
+   "localizador": "nhs.uk/live-well/exercise/how-to-warm-up-before-exercising",
+   "movekit": {
+    "slug": null,
+    "correspondencia": "nao",
+    "menorPacote": null
+   },
+   "status": "valido_pela_regra"
+  },
+  {
+   "id": "NHS-W04",
+   "fonte": "NHS",
+   "nome": "Rotação de ombros",
+   "nomeOriginal": "Shoulder rolls",
+   "categoria": "aquecimento",
+   "contexto": "todos",
+   "beneficioDeclarado": "Aquecer para prevenir lesão",
+   "dose": "2 x 10",
+   "localizador": "nhs.uk/live-well/exercise/how-to-warm-up-before-exercising",
+   "movekit": {
+    "slug": "seated-shoulder-rolls-scapular-retraction",
+    "correspondencia": "aproximado",
+    "menorPacote": "Home"
+   },
+   "status": "valido_pela_regra"
+  },
+  {
+   "id": "NHS-W05",
+   "fonte": "NHS",
+   "nome": "Flexão leve de joelhos",
+   "nomeOriginal": "Knee bends",
+   "categoria": "aquecimento",
+   "contexto": "todos",
+   "beneficioDeclarado": "Aquecer para prevenir lesão",
+   "dose": "10",
+   "localizador": "nhs.uk/live-well/exercise/how-to-warm-up-before-exercising",
+   "movekit": {
+    "slug": "bodyweight-squat",
+    "correspondencia": "aproximado",
+    "menorPacote": "Starter"
+   },
+   "status": "valido_pela_regra"
+  },
+  {
+   "id": "NHS-C01",
+   "fonte": "NHS",
+   "nome": "Alongamento de glúteo deitado",
+   "nomeOriginal": "Buttock stretch",
+   "categoria": "volta_calma",
+   "contexto": "casa",
+   "beneficioDeclarado": "Relaxar, melhorar a flexibilidade e baixar a frequência cardíaca após o treino",
+   "dose": "15–20 s",
+   "localizador": "nhs.uk/live-well/exercise/how-to-stretch-after-exercising",
+   "movekit": {
+    "slug": null,
+    "correspondencia": "nao",
+    "menorPacote": null
+   },
+   "status": "valido_pela_regra"
+  },
+  {
+   "id": "NHS-C02",
+   "fonte": "NHS",
+   "nome": "Alongamento posterior de coxa deitado",
+   "nomeOriginal": "Hamstring stretch",
+   "categoria": "volta_calma",
+   "contexto": "casa",
+   "beneficioDeclarado": "Relaxar e melhorar a flexibilidade após o treino",
+   "dose": "15–20 s",
+   "localizador": "nhs.uk/live-well/exercise/how-to-stretch-after-exercising",
+   "movekit": {
+    "slug": null,
+    "correspondencia": "nao",
+    "menorPacote": null
+   },
+   "status": "valido_pela_regra"
+  },
+  {
+   "id": "NHS-C03",
+   "fonte": "NHS",
+   "nome": "Alongamento da parte interna da coxa",
+   "nomeOriginal": "Inner thigh stretch",
+   "categoria": "volta_calma",
+   "contexto": "casa",
+   "beneficioDeclarado": "Relaxar e melhorar a flexibilidade após o treino",
+   "dose": "15–20 s",
+   "localizador": "nhs.uk/live-well/exercise/how-to-stretch-after-exercising",
+   "movekit": {
+    "slug": "adductor-groin-stretch",
+    "correspondencia": "aproximado",
+    "menorPacote": "Home"
+   },
+   "status": "valido_pela_regra"
+  },
+  {
+   "id": "NHS-C04",
+   "fonte": "NHS",
+   "nome": "Alongamento da frente da coxa deitado de lado",
+   "nomeOriginal": "Thigh stretch",
+   "categoria": "volta_calma",
+   "contexto": "casa",
+   "beneficioDeclarado": "Relaxar e melhorar a flexibilidade após o treino",
+   "dose": "15–20 s",
+   "localizador": "nhs.uk/live-well/exercise/how-to-stretch-after-exercising",
+   "movekit": {
+    "slug": null,
+    "correspondencia": "nao",
+    "menorPacote": null
+   },
+   "status": "valido_pela_regra"
+  },
+  {
+   "id": "NHS-K01",
+   "fonte": "NHS",
+   "nome": "Agachamento na parede",
+   "nomeOriginal": "Wall squats",
+   "categoria": "forca",
+   "contexto": "adulto/casa",
+   "beneficioDeclarado": "Fortalece a musculatura ao redor do joelho e previne dor no joelho",
+   "dose": "conforme página",
+   "localizador": "nhs.uk/live-well/exercise/knee-exercises-for-runners",
+   "movekit": {
+    "slug": "wall-sit",
+    "correspondencia": "aproximado",
+    "menorPacote": "Home"
+   },
+   "status": "valido_pela_regra"
+  },
+  {
+   "id": "NHS-K02",
+   "fonte": "NHS",
+   "nome": "Contração da coxa",
+   "nomeOriginal": "Thigh contraction",
+   "categoria": "forca",
+   "contexto": "adulto/casa",
+   "beneficioDeclarado": "Fortalece a musculatura ao redor do joelho",
+   "dose": "10 x 5 s por perna",
+   "localizador": "nhs.uk/live-well/exercise/knee-exercises-for-runners",
+   "movekit": {
+    "slug": null,
+    "correspondencia": "nao",
+    "menorPacote": null
+   },
+   "status": "valido_pela_regra"
+  },
+  {
+   "id": "NHS-K03",
+   "fonte": "NHS",
+   "nome": "Agachamento",
+   "nomeOriginal": "Squats",
+   "categoria": "forca",
+   "contexto": "adulto/casa/academia",
+   "beneficioDeclarado": "Fortalece a musculatura ao redor do joelho",
+   "dose": "conforme página",
+   "localizador": "nhs.uk/live-well/exercise/knee-exercises-for-runners",
+   "movekit": {
+    "slug": "bodyweight-squat",
+    "correspondencia": "exato",
+    "menorPacote": "Starter"
+   },
+   "status": "valido_pela_regra"
+  },
+  {
+   "id": "NHS-K04",
+   "fonte": "NHS",
+   "nome": "Avanço",
+   "nomeOriginal": "Lunges",
+   "categoria": "forca",
+   "contexto": "adulto/casa/praca",
+   "beneficioDeclarado": "Fortalece a musculatura ao redor do joelho",
+   "dose": "3 x 5 por perna",
+   "localizador": "nhs.uk/live-well/exercise/knee-exercises-for-runners",
+   "movekit": {
+    "slug": "forward-lunge",
+    "correspondencia": "exato",
+    "menorPacote": "Starter"
+   },
+   "status": "valido_pela_regra"
+  },
+  {
+   "id": "NHS-SF01",
+   "fonte": "NHS",
+   "nome": "Agachamento aberto",
+   "nomeOriginal": "Wide squat",
+   "categoria": "forca",
+   "contexto": "adulto/casa",
+   "beneficioDeclarado": "Plano Strength and Flex: força e flexibilidade",
+   "dose": "vídeo",
+   "localizador": "nhs.uk/live-well/exercise/strength-and-flex-exercise-plan-how-to-videos",
+   "movekit": {
+    "slug": "dumbbell-sumo-squat",
+    "correspondencia": "aproximado",
+    "menorPacote": "Starter"
+   },
+   "status": "valido_pela_regra"
+  },
+  {
+   "id": "NHS-SF02",
+   "fonte": "NHS",
+   "nome": "Barra (puxada)",
+   "nomeOriginal": "Pull-up",
+   "categoria": "forca",
+   "contexto": "adulto/praca/academia",
+   "beneficioDeclarado": "Plano Strength and Flex: força",
+   "dose": "vídeo",
+   "localizador": "nhs.uk/live-well/exercise/strength-and-flex-exercise-plan-how-to-videos",
+   "movekit": {
+    "slug": "pull-ups",
+    "correspondencia": "exato",
+    "menorPacote": "Starter"
+   },
+   "status": "valido_pela_regra"
+  },
+  {
+   "id": "NHS-SF03",
+   "fonte": "NHS",
+   "nome": "Mergulho no banco",
+   "nomeOriginal": "Bench dip",
+   "categoria": "forca",
+   "contexto": "adulto/praca",
+   "beneficioDeclarado": "Plano Strength and Flex: força",
+   "dose": "vídeo",
+   "localizador": "nhs.uk/live-well/exercise/strength-and-flex-exercise-plan-how-to-videos",
+   "movekit": {
+    "slug": "bench-dips",
+    "correspondencia": "exato",
+    "menorPacote": "Starter"
+   },
+   "status": "valido_pela_regra"
+  },
+  {
+   "id": "NHS-SF04",
+   "fonte": "NHS",
+   "nome": "Barra com pegada aberta",
+   "nomeOriginal": "Wide pull-up",
+   "categoria": "forca",
+   "contexto": "adulto/praca/academia",
+   "beneficioDeclarado": "Plano Strength and Flex: força",
+   "dose": "vídeo",
+   "localizador": "nhs.uk/live-well/exercise/strength-and-flex-exercise-plan-how-to-videos",
+   "movekit": {
+    "slug": "wide-grip-pull-up",
+    "correspondencia": "exato",
+    "menorPacote": "Starter"
+   },
+   "status": "valido_pela_regra"
+  },
+  {
+   "id": "NHS-SF05",
+   "fonte": "NHS",
+   "nome": "Sentar e levantar com elevação de calcanhar",
+   "nomeOriginal": "Sit to stand with calf raise",
+   "categoria": "forca",
+   "contexto": "casa",
+   "beneficioDeclarado": "Plano Strength and Flex: força",
+   "dose": "vídeo",
+   "localizador": "nhs.uk/live-well/exercise/strength-and-flex-exercise-plan-how-to-videos",
+   "movekit": {
+    "slug": null,
+    "correspondencia": "nao",
+    "menorPacote": null
+   },
+   "status": "valido_pela_regra"
+  },
+  {
+   "id": "NHS-SF06",
+   "fonte": "NHS",
+   "nome": "Alongamento da parte superior das costas",
+   "nomeOriginal": "Upper back stretch",
+   "categoria": "flexibilidade",
+   "contexto": "pausa",
+   "beneficioDeclarado": "Plano Strength and Flex: flexibilidade",
+   "dose": "vídeo",
+   "localizador": "nhs.uk/live-well/exercise/strength-and-flex-exercise-plan-how-to-videos",
+   "movekit": {
+    "slug": null,
+    "correspondencia": "nao",
+    "menorPacote": null
+   },
+   "status": "valido_pela_regra"
+  },
+  {
+   "id": "NHS-SF07",
+   "fonte": "NHS",
+   "nome": "Alongamento do tríceps",
+   "nomeOriginal": "Tricep stretch",
+   "categoria": "flexibilidade",
+   "contexto": "pausa",
+   "beneficioDeclarado": "Plano Strength and Flex: flexibilidade",
+   "dose": "vídeo",
+   "localizador": "nhs.uk/live-well/exercise/strength-and-flex-exercise-plan-how-to-videos",
+   "movekit": {
+    "slug": null,
+    "correspondencia": "nao",
+    "menorPacote": null
+   },
+   "status": "valido_pela_regra"
+  },
+  {
+   "id": "NHS-SF08",
+   "fonte": "NHS",
+   "nome": "Postura correta",
+   "nomeOriginal": "Posture",
+   "categoria": "postura",
+   "contexto": "pausa",
+   "beneficioDeclarado": "Plano Strength and Flex: como manter a postura correta",
+   "dose": "vídeo",
+   "localizador": "nhs.uk/live-well/exercise/strength-and-flex-exercise-plan-how-to-videos",
+   "movekit": {
+    "slug": null,
+    "correspondencia": "nao",
+    "menorPacote": null
+   },
+   "status": "valido_pela_regra"
+  },
+  {
+   "id": "OTG-01",
+   "fonte": "OTAGO",
+   "nome": "Mobilidade da cabeça",
+   "nomeOriginal": null,
+   "categoria": "aquecimento",
+   "contexto": "casa",
+   "beneficioDeclarado": "Programa para prevenir quedas: força de pernas e equilíbrio (eficácia em ensaios clínicos)",
+   "dose": "5 por lado",
+   "localizador": "Manual Otago pp. 36–71 (leitura de 04/10, índice I17), p. 36",
+   "movekit": {
+    "slug": null,
+    "correspondencia": "nao",
+    "menorPacote": null
+   },
+   "status": "valido_pela_regra"
+  },
+  {
+   "id": "OTG-02",
+   "fonte": "OTAGO",
+   "nome": "Retração do pescoço",
+   "nomeOriginal": null,
+   "categoria": "aquecimento",
+   "contexto": "casa",
+   "beneficioDeclarado": "Programa para prevenir quedas: força de pernas e equilíbrio (eficácia em ensaios clínicos)",
+   "dose": "5",
+   "localizador": "Manual Otago pp. 36–71 (leitura de 04/10, índice I17), p. 37",
+   "movekit": {
+    "slug": "seated-chin-tuck-neck-retraction",
+    "correspondencia": "exato",
+    "menorPacote": "Home"
+   },
+   "status": "valido_pela_regra"
+  },
+  {
+   "id": "OTG-03",
+   "fonte": "OTAGO",
+   "nome": "Extensão das costas em pé",
+   "nomeOriginal": null,
+   "categoria": "aquecimento",
+   "contexto": "casa",
+   "beneficioDeclarado": "Programa para prevenir quedas: força de pernas e equilíbrio (eficácia em ensaios clínicos)",
+   "dose": "5",
+   "localizador": "Manual Otago pp. 36–71 (leitura de 04/10, índice I17), p. 38",
+   "movekit": {
+    "slug": null,
+    "correspondencia": "nao",
+    "menorPacote": null
+   },
+   "status": "valido_pela_regra"
+  },
+  {
+   "id": "OTG-04",
+   "fonte": "OTAGO",
+   "nome": "Rotação do tronco em pé",
+   "nomeOriginal": null,
+   "categoria": "aquecimento",
+   "contexto": "casa",
+   "beneficioDeclarado": "Programa para prevenir quedas: força de pernas e equilíbrio (eficácia em ensaios clínicos)",
+   "dose": "5 por lado",
+   "localizador": "Manual Otago pp. 36–71 (leitura de 04/10, índice I17), p. 39",
+   "movekit": {
+    "slug": null,
+    "correspondencia": "nao",
+    "menorPacote": null
+   },
+   "status": "valido_pela_regra"
+  },
+  {
+   "id": "OTG-05",
+   "fonte": "OTAGO",
+   "nome": "Mobilidade dos tornozelos",
+   "nomeOriginal": null,
+   "categoria": "aquecimento",
+   "contexto": "casa",
+   "beneficioDeclarado": "Programa para prevenir quedas: força de pernas e equilíbrio (eficácia em ensaios clínicos)",
+   "dose": "10 por pé",
+   "localizador": "Manual Otago pp. 36–71 (leitura de 04/10, índice I17), p. 40",
+   "movekit": {
+    "slug": "seated-ankle-circles",
+    "correspondencia": "aproximado",
+    "menorPacote": "Home"
+   },
+   "status": "valido_pela_regra"
+  },
+  {
+   "id": "OTG-06",
+   "fonte": "OTAGO",
+   "nome": "Extensão do joelho sentado com tornozeleira",
+   "nomeOriginal": null,
+   "categoria": "forca",
+   "contexto": "casa",
+   "beneficioDeclarado": "Programa para prevenir quedas: força de pernas e equilíbrio (eficácia em ensaios clínicos)",
+   "dose": "prescrita por nível",
+   "localizador": "Manual Otago pp. 36–71 (leitura de 04/10, índice I17), p. 42",
+   "movekit": {
+    "slug": null,
+    "correspondencia": "nao",
+    "menorPacote": null
+   },
+   "status": "valido_pela_regra"
+  },
+  {
+   "id": "OTG-07",
+   "fonte": "OTAGO",
+   "nome": "Flexão do joelho em pé com tornozeleira",
+   "nomeOriginal": null,
+   "categoria": "forca",
+   "contexto": "casa",
+   "beneficioDeclarado": "Programa para prevenir quedas: força de pernas e equilíbrio (eficácia em ensaios clínicos)",
+   "dose": "prescrita por nível",
+   "localizador": "Manual Otago pp. 36–71 (leitura de 04/10, índice I17), p. 43",
+   "movekit": {
+    "slug": null,
+    "correspondencia": "nao",
+    "menorPacote": null
+   },
+   "status": "valido_pela_regra"
+  },
+  {
+   "id": "OTG-08",
+   "fonte": "OTAGO",
+   "nome": "Abertura lateral do quadril com tornozeleira",
+   "nomeOriginal": null,
+   "categoria": "forca",
+   "contexto": "casa",
+   "beneficioDeclarado": "Programa para prevenir quedas: força de pernas e equilíbrio (eficácia em ensaios clínicos)",
+   "dose": "prescrita por nível",
+   "localizador": "Manual Otago pp. 36–71 (leitura de 04/10, índice I17), p. 44",
+   "movekit": {
+    "slug": "bodyweight-hip-abduction",
+    "correspondencia": "aproximado",
+    "menorPacote": "Home"
+   },
+   "status": "valido_pela_regra"
+  },
+  {
+   "id": "OTG-09",
+   "fonte": "OTAGO",
+   "nome": "Elevação de calcanhares (com e sem apoio)",
+   "nomeOriginal": null,
+   "categoria": "forca",
+   "contexto": "casa",
+   "beneficioDeclarado": "Programa para prevenir quedas: força de pernas e equilíbrio (eficácia em ensaios clínicos)",
+   "dose": "20",
+   "localizador": "Manual Otago pp. 36–71 (leitura de 04/10, índice I17), p. 45",
+   "movekit": {
+    "slug": "single-leg-standing-calf-raise",
+    "correspondencia": "aproximado",
+    "menorPacote": "Home"
+   },
+   "status": "valido_pela_regra"
+  },
+  {
+   "id": "OTG-10",
+   "fonte": "OTAGO",
+   "nome": "Elevação da ponta dos pés (com e sem apoio)",
+   "nomeOriginal": null,
+   "categoria": "forca",
+   "contexto": "casa",
+   "beneficioDeclarado": "Programa para prevenir quedas: força de pernas e equilíbrio (eficácia em ensaios clínicos)",
+   "dose": "20",
+   "localizador": "Manual Otago pp. 36–71 (leitura de 04/10, índice I17), p. 47",
+   "movekit": {
+    "slug": "tibialis-raise",
+    "correspondencia": "exato",
+    "menorPacote": "Home"
+   },
+   "status": "valido_pela_regra"
+  },
+  {
+   "id": "OTG-11",
+   "fonte": "OTAGO",
+   "nome": "Flexão de joelhos (agachamento parcial)",
+   "nomeOriginal": null,
+   "categoria": "equilibrio",
+   "contexto": "casa",
+   "beneficioDeclarado": "Programa para prevenir quedas: força de pernas e equilíbrio (eficácia em ensaios clínicos)",
+   "dose": "por nível",
+   "localizador": "Manual Otago pp. 36–71 (leitura de 04/10, índice I17)",
+   "movekit": {
+    "slug": "bodyweight-squat",
+    "correspondencia": "aproximado",
+    "menorPacote": "Starter"
+   },
+   "status": "valido_pela_regra"
+  },
+  {
+   "id": "OTG-12",
+   "fonte": "OTAGO",
+   "nome": "Marcha para trás",
+   "nomeOriginal": null,
+   "categoria": "equilibrio",
+   "contexto": "casa",
+   "beneficioDeclarado": "Programa para prevenir quedas: força de pernas e equilíbrio (eficácia em ensaios clínicos)",
+   "dose": "10 passos, virar, repetir",
+   "localizador": "Manual Otago pp. 36–71 (leitura de 04/10, índice I17)",
+   "movekit": {
+    "slug": null,
+    "correspondencia": "nao",
+    "menorPacote": null
+   },
+   "status": "valido_pela_regra"
+  },
+  {
+   "id": "OTG-13",
+   "fonte": "OTAGO",
+   "nome": "Caminhar e virar em oito",
+   "nomeOriginal": null,
+   "categoria": "equilibrio",
+   "contexto": "casa",
+   "beneficioDeclarado": "Programa para prevenir quedas: força de pernas e equilíbrio (eficácia em ensaios clínicos)",
+   "dose": "duas voltas",
+   "localizador": "Manual Otago pp. 36–71 (leitura de 04/10, índice I17)",
+   "movekit": {
+    "slug": null,
+    "correspondencia": "nao",
+    "menorPacote": null
+   },
+   "status": "valido_pela_regra"
+  },
+  {
+   "id": "OTG-14",
+   "fonte": "OTAGO",
+   "nome": "Marcha lateral",
+   "nomeOriginal": null,
+   "categoria": "equilibrio",
+   "contexto": "casa",
+   "beneficioDeclarado": "Programa para prevenir quedas: força de pernas e equilíbrio (eficácia em ensaios clínicos)",
+   "dose": "10 passos por lado",
+   "localizador": "Manual Otago pp. 36–71 (leitura de 04/10, índice I17)",
+   "movekit": {
+    "slug": null,
+    "correspondencia": "nao",
+    "menorPacote": null
+   },
+   "status": "valido_pela_regra"
+  },
+  {
+   "id": "OTG-15",
+   "fonte": "OTAGO",
+   "nome": "Postura tandem (um pé à frente do outro)",
+   "nomeOriginal": null,
+   "categoria": "equilibrio",
+   "contexto": "casa",
+   "beneficioDeclarado": "Programa para prevenir quedas: força de pernas e equilíbrio (eficácia em ensaios clínicos)",
+   "dose": "10 s por posição",
+   "localizador": "Manual Otago pp. 36–71 (leitura de 04/10, índice I17)",
+   "movekit": {
+    "slug": null,
+    "correspondencia": "nao",
+    "menorPacote": null
+   },
+   "status": "valido_pela_regra"
+  },
+  {
+   "id": "OTG-16",
+   "fonte": "OTAGO",
+   "nome": "Marcha tandem",
+   "nomeOriginal": null,
+   "categoria": "equilibrio",
+   "contexto": "casa",
+   "beneficioDeclarado": "Programa para prevenir quedas: força de pernas e equilíbrio (eficácia em ensaios clínicos)",
+   "dose": "10 passos, virar, repetir",
+   "localizador": "Manual Otago pp. 36–71 (leitura de 04/10, índice I17)",
+   "movekit": {
+    "slug": null,
+    "correspondencia": "nao",
+    "menorPacote": null
+   },
+   "status": "valido_pela_regra"
+  },
+  {
+   "id": "OTG-17",
+   "fonte": "OTAGO",
+   "nome": "Apoio em uma perna",
+   "nomeOriginal": null,
+   "categoria": "equilibrio",
+   "contexto": "casa",
+   "beneficioDeclarado": "Programa para prevenir quedas: força de pernas e equilíbrio (eficácia em ensaios clínicos)",
+   "dose": "10–30 s conforme nível",
+   "localizador": "Manual Otago pp. 36–71 (leitura de 04/10, índice I17)",
+   "movekit": {
+    "slug": "single-leg-balance",
+    "correspondencia": "exato",
+    "menorPacote": "Home"
+   },
+   "status": "valido_pela_regra"
+  },
+  {
+   "id": "OTG-18",
+   "fonte": "OTAGO",
+   "nome": "Marcha nos calcanhares",
+   "nomeOriginal": null,
+   "categoria": "equilibrio",
+   "contexto": "casa",
+   "beneficioDeclarado": "Programa para prevenir quedas: força de pernas e equilíbrio (eficácia em ensaios clínicos)",
+   "dose": "10 passos, virar, repetir",
+   "localizador": "Manual Otago pp. 36–71 (leitura de 04/10, índice I17)",
+   "movekit": {
+    "slug": "heel-and-toe-walks",
+    "correspondencia": "exato",
+    "menorPacote": "Home"
+   },
+   "status": "valido_pela_regra"
+  },
+  {
+   "id": "OTG-19",
+   "fonte": "OTAGO",
+   "nome": "Marcha na ponta dos pés",
+   "nomeOriginal": null,
+   "categoria": "equilibrio",
+   "contexto": "casa",
+   "beneficioDeclarado": "Programa para prevenir quedas: força de pernas e equilíbrio (eficácia em ensaios clínicos)",
+   "dose": "10 passos, virar, repetir",
+   "localizador": "Manual Otago pp. 36–71 (leitura de 04/10, índice I17)",
+   "movekit": {
+    "slug": "heel-and-toe-walks",
+    "correspondencia": "exato",
+    "menorPacote": "Home"
+   },
+   "status": "valido_pela_regra"
+  },
+  {
+   "id": "OTG-20",
+   "fonte": "OTAGO",
+   "nome": "Marcha tandem para trás",
+   "nomeOriginal": null,
+   "categoria": "equilibrio",
+   "contexto": "casa",
+   "beneficioDeclarado": "Programa para prevenir quedas: força de pernas e equilíbrio (eficácia em ensaios clínicos)",
+   "dose": "10 passos, virar, repetir",
+   "localizador": "Manual Otago pp. 36–71 (leitura de 04/10, índice I17)",
+   "movekit": {
+    "slug": null,
+    "correspondencia": "nao",
+    "menorPacote": null
+   },
+   "status": "valido_pela_regra"
+  },
+  {
+   "id": "OTG-21",
+   "fonte": "OTAGO",
+   "nome": "Sentar e levantar",
+   "nomeOriginal": null,
+   "categoria": "equilibrio",
+   "contexto": "casa",
+   "beneficioDeclarado": "Programa para prevenir quedas: força de pernas e equilíbrio (eficácia em ensaios clínicos)",
+   "dose": "por nível",
+   "localizador": "Manual Otago pp. 36–71 (leitura de 04/10, índice I17)",
+   "movekit": {
+    "slug": "bodyweight-box-squat",
+    "correspondencia": "aproximado",
+    "menorPacote": "Starter"
+   },
+   "status": "valido_pela_regra"
+  },
+  {
+   "id": "OTG-22",
+   "fonte": "OTAGO",
+   "nome": "Subir e descer escadas",
+   "nomeOriginal": null,
+   "categoria": "equilibrio",
+   "contexto": "casa",
+   "beneficioDeclarado": "Programa para prevenir quedas: força de pernas e equilíbrio (eficácia em ensaios clínicos)",
+   "dose": "por nível",
+   "localizador": "Manual Otago pp. 36–71 (leitura de 04/10, índice I17)",
+   "movekit": {
+    "slug": null,
+    "correspondencia": "nao",
+    "menorPacote": null
+   },
+   "status": "valido_pela_regra"
+  },
+  {
+   "id": "NIA-01",
+   "fonte": "NIA",
+   "nome": "Preensão com bola",
+   "nomeOriginal": "Hand Grip",
+   "categoria": "forca",
+   "contexto": "casa/academia",
+   "beneficioDeclarado": "Ajuda a pegar e segurar objetos e a abrir potes",
+   "dose": "2 séries de 10–15; 2+ dias/semana; sem repetir o grupo em dias seguidos",
+   "localizador": "PDF p. 47",
+   "movekit": {
+    "slug": "plate-pinch",
+    "correspondencia": "aproximado",
+    "menorPacote": "Complete"
+   },
+   "status": "valido_pela_regra"
+  },
+  {
+   "id": "NIA-02",
+   "fonte": "NIA",
+   "nome": "Flexão de punho",
+   "nomeOriginal": "Wrist Curl",
+   "categoria": "forca",
+   "contexto": "casa/academia",
+   "beneficioDeclarado": "Fortalece os punhos e protege em outros exercícios de braço",
+   "dose": "2 séries de 10–15; 2+ dias/semana; sem repetir o grupo em dias seguidos",
+   "localizador": "PDF p. 48",
+   "movekit": {
+    "slug": "dumbbell-wrist-curl",
+    "correspondencia": "exato",
+    "menorPacote": "Home"
+   },
+   "status": "valido_pela_regra"
+  },
+  {
+   "id": "NIA-03",
+   "fonte": "NIA",
+   "nome": "Elevação dos braços acima da cabeça",
+   "nomeOriginal": "Overhead Arm Raise",
+   "categoria": "forca",
+   "contexto": "casa/academia",
+   "beneficioDeclarado": "Fortalece ombros e braços; facilita levantar e carregar",
+   "dose": "2 séries de 10–15; 2+ dias/semana; sem repetir o grupo em dias seguidos",
+   "localizador": "PDF p. 49",
+   "movekit": {
+    "slug": "standing-dumbbell-overhead-press",
+    "correspondencia": "exato",
+    "menorPacote": "Starter"
+   },
+   "status": "valido_pela_regra"
+  },
+  {
+   "id": "NIA-04",
+   "fonte": "NIA",
+   "nome": "Elevação frontal dos braços",
+   "nomeOriginal": "Front Arm Raise",
+   "categoria": "forca",
+   "contexto": "casa/academia",
+   "beneficioDeclarado": "Facilita colocar e tirar coisas de prateleiras",
+   "dose": "2 séries de 10–15; 2+ dias/semana; sem repetir o grupo em dias seguidos",
+   "localizador": "PDF p. 50",
+   "movekit": {
+    "slug": "dumbbell-front-raise",
+    "correspondencia": "exato",
+    "menorPacote": "Home"
+   },
+   "status": "valido_pela_regra"
+  },
+  {
+   "id": "NIA-05",
+   "fonte": "NIA",
+   "nome": "Elevação lateral dos braços",
+   "nomeOriginal": "Side Arm Raise",
+   "categoria": "forca",
+   "contexto": "casa/academia",
+   "beneficioDeclarado": "Fortalece os ombros; facilita levantar sacolas",
+   "dose": "2 séries de 10–15; 2+ dias/semana; sem repetir o grupo em dias seguidos",
+   "localizador": "PDF p. 51",
+   "movekit": {
+    "slug": "dumbbell-lateral-raise",
+    "correspondencia": "exato",
+    "menorPacote": "Home"
+   },
+   "status": "valido_pela_regra"
+  },
+  {
+   "id": "NIA-06",
+   "fonte": "NIA",
+   "nome": "Rosca de braço",
+   "nomeOriginal": "Arm Curl",
+   "categoria": "forca",
+   "contexto": "casa/academia",
+   "beneficioDeclarado": "Facilita levantar objetos do dia a dia",
+   "dose": "2 séries de 10–15; 2+ dias/semana; sem repetir o grupo em dias seguidos",
+   "localizador": "PDF p. 52",
+   "movekit": {
+    "slug": "dumbbell-curl",
+    "correspondencia": "exato",
+    "menorPacote": "Home"
+   },
+   "status": "valido_pela_regra"
+  },
+  {
+   "id": "NIA-07",
+   "fonte": "NIA",
+   "nome": "Remada sentada com elástico",
+   "nomeOriginal": "Seated Row",
+   "categoria": "forca",
+   "contexto": "casa/academia",
+   "beneficioDeclarado": "Fortalece costas, ombros e pescoço; facilita varrer e aspirar",
+   "dose": "2 séries de 10–15; 2+ dias/semana; sem repetir o grupo em dias seguidos",
+   "localizador": "PDF p. 54",
+   "movekit": {
+    "slug": "band-row",
+    "correspondencia": "exato",
+    "menorPacote": "Home"
+   },
+   "status": "valido_pela_regra"
+  },
+  {
+   "id": "NIA-08",
+   "fonte": "NIA",
+   "nome": "Flexão na parede",
+   "nomeOriginal": "Wall Push-Up",
+   "categoria": "forca",
+   "contexto": "casa/academia",
+   "beneficioDeclarado": "Fortalece braços, ombros e peito",
+   "dose": "2 séries de 10–15; 2+ dias/semana; sem repetir o grupo em dias seguidos",
+   "localizador": "PDF p. 55",
+   "movekit": {
+    "slug": "incline-push-up",
+    "correspondencia": "aproximado",
+    "menorPacote": "Starter"
+   },
+   "status": "valido_pela_regra"
+  },
+  {
+   "id": "NIA-09",
+   "fonte": "NIA",
+   "nome": "Extensão de cotovelo",
+   "nomeOriginal": "Elbow Extension",
+   "categoria": "forca",
+   "contexto": "casa/academia",
+   "beneficioDeclarado": "Fortalece a parte de trás do braço",
+   "dose": "2 séries de 10–15; 2+ dias/semana; sem repetir o grupo em dias seguidos",
+   "localizador": "PDF p. 56",
+   "movekit": {
+    "slug": "dumbbell-seated-overhead-tricep-extension",
+    "correspondencia": "exato",
+    "menorPacote": "Home"
+   },
+   "status": "valido_pela_regra"
+  },
+  {
+   "id": "NIA-10",
+   "fonte": "NIA",
+   "nome": "Empurrar o corpo na cadeira",
+   "nomeOriginal": "Chair Dip",
+   "categoria": "forca",
+   "contexto": "casa/academia",
+   "beneficioDeclarado": "Fortalece os braços mesmo sem conseguir sair da cadeira",
+   "dose": "2 séries de 10–15; 2+ dias/semana; sem repetir o grupo em dias seguidos",
+   "localizador": "PDF p. 57",
+   "movekit": {
+    "slug": "bench-dips",
+    "correspondencia": "aproximado",
+    "menorPacote": "Starter"
+   },
+   "status": "valido_pela_regra"
+  },
+  {
+   "id": "NIA-11",
+   "fonte": "NIA",
+   "nome": "Elevação da perna para trás",
+   "nomeOriginal": "Back Leg Raise",
+   "categoria": "forca",
+   "contexto": "casa/academia",
+   "beneficioDeclarado": "Fortalece glúteos e lombar",
+   "dose": "2 séries de 10–15; 2+ dias/semana; sem repetir o grupo em dias seguidos",
+   "localizador": "PDF p. 58",
+   "movekit": {
+    "slug": null,
+    "correspondencia": "nao",
+    "menorPacote": null
+   },
+   "status": "valido_pela_regra"
+  },
+  {
+   "id": "NIA-12",
+   "fonte": "NIA",
+   "nome": "Elevação lateral da perna",
+   "nomeOriginal": "Side Leg Raise",
+   "categoria": "forca",
+   "contexto": "casa/academia",
+   "beneficioDeclarado": "Fortalece quadris, coxas e glúteos",
+   "dose": "2 séries de 10–15; 2+ dias/semana; sem repetir o grupo em dias seguidos",
+   "localizador": "PDF p. 59",
+   "movekit": {
+    "slug": "bodyweight-hip-abduction",
+    "correspondencia": "aproximado",
+    "menorPacote": "Home"
+   },
+   "status": "valido_pela_regra"
+  },
+  {
+   "id": "NIA-13",
+   "fonte": "NIA",
+   "nome": "Flexão de joelho em pé",
+   "nomeOriginal": "Knee Curl",
+   "categoria": "forca",
+   "contexto": "casa/academia",
+   "beneficioDeclarado": "Facilita caminhar e subir escadas",
+   "dose": "2 séries de 10–15; 2+ dias/semana; sem repetir o grupo em dias seguidos",
+   "localizador": "PDF p. 60",
+   "movekit": {
+    "slug": null,
+    "correspondencia": "nao",
+    "menorPacote": null
+   },
+   "status": "valido_pela_regra"
+  },
+  {
+   "id": "NIA-14",
+   "fonte": "NIA",
+   "nome": "Extensão de perna sentado",
+   "nomeOriginal": "Leg Straightening",
+   "categoria": "forca",
+   "contexto": "casa/academia",
+   "beneficioDeclarado": "Fortalece as coxas e pode reduzir sintomas de artrose no joelho",
+   "dose": "2 séries de 10–15; 2+ dias/semana; sem repetir o grupo em dias seguidos",
+   "localizador": "PDF p. 61",
+   "movekit": {
+    "slug": null,
+    "correspondencia": "nao",
+    "menorPacote": null
+   },
+   "status": "valido_pela_regra"
+  },
+  {
+   "id": "NIA-15",
+   "fonte": "NIA",
+   "nome": "Levantar da cadeira",
+   "nomeOriginal": "Chair Stand",
+   "categoria": "forca",
+   "contexto": "casa/academia",
+   "beneficioDeclarado": "Fortalece abdômen e coxas; facilita entrar e sair do carro",
+   "dose": "2 séries de 10–15; 2+ dias/semana; sem repetir o grupo em dias seguidos",
+   "localizador": "PDF p. 62",
+   "movekit": {
+    "slug": "bodyweight-box-squat",
+    "correspondencia": "aproximado",
+    "menorPacote": "Starter"
+   },
+   "status": "valido_pela_regra"
+  },
+  {
+   "id": "NIA-16",
+   "fonte": "NIA",
+   "nome": "Ficar na ponta dos pés",
+   "nomeOriginal": "Toe Stand",
+   "categoria": "forca",
+   "contexto": "casa/academia",
+   "beneficioDeclarado": "Fortalece panturrilhas e tornozelos; facilita caminhar",
+   "dose": "2 séries de 10–15; 2+ dias/semana; sem repetir o grupo em dias seguidos",
+   "localizador": "PDF p. 64",
+   "movekit": {
+    "slug": "single-leg-standing-calf-raise",
+    "correspondencia": "aproximado",
+    "menorPacote": "Home"
+   },
+   "status": "valido_pela_regra"
+  },
+  {
+   "id": "NIA-17",
+   "fonte": "NIA",
+   "nome": "Ficar em um pé só",
+   "nomeOriginal": "Stand on One Foot",
+   "categoria": "equilibrio",
+   "contexto": "casa/praca",
+   "beneficioDeclarado": "Melhora o equilíbrio; pode ser praticado no dia a dia",
+   "dose": "conforme guia",
+   "localizador": "PDF p. 67",
+   "movekit": {
+    "slug": "single-leg-balance",
+    "correspondencia": "exato",
+    "menorPacote": "Home"
+   },
+   "status": "valido_pela_regra"
+  },
+  {
+   "id": "NIA-18",
+   "fonte": "NIA",
+   "nome": "Caminhada calcanhar-ponta",
+   "nomeOriginal": "Heel-to-Toe Walk",
+   "categoria": "equilibrio",
+   "contexto": "casa/praca",
+   "beneficioDeclarado": "Equilíbrio para atividades como subir e descer escadas",
+   "dose": "conforme guia",
+   "localizador": "PDF p. 68",
+   "movekit": {
+    "slug": null,
+    "correspondencia": "nao",
+    "menorPacote": null
+   },
+   "status": "valido_pela_regra"
+  },
+  {
+   "id": "NIA-19",
+   "fonte": "NIA",
+   "nome": "Caminhada de equilíbrio",
+   "nomeOriginal": "Balance Walk",
+   "categoria": "equilibrio",
+   "contexto": "casa/praca",
+   "beneficioDeclarado": "Ajuda a andar com segurança e evitar tropeços e quedas",
+   "dose": "conforme guia",
+   "localizador": "PDF p. 69",
+   "movekit": {
+    "slug": null,
+    "correspondencia": "nao",
+    "menorPacote": null
+   },
+   "status": "valido_pela_regra"
+  },
+  {
+   "id": "NIA-20",
+   "fonte": "NIA",
+   "nome": "Alongamento do pescoço",
+   "nomeOriginal": "Neck",
+   "categoria": "flexibilidade",
+   "contexto": "casa/pausa",
+   "beneficioDeclarado": "Alivia a tensão no pescoço",
+   "dose": "conforme guia",
+   "localizador": "PDF p. 73",
+   "movekit": {
+    "slug": "seated-lateral-neck-flexion-hold",
+    "correspondencia": "aproximado",
+    "menorPacote": "Home"
+   },
+   "status": "valido_pela_regra"
+  },
+  {
+   "id": "NIA-21",
+   "fonte": "NIA",
+   "nome": "Alongamento dos ombros na parede",
+   "nomeOriginal": "Shoulder",
+   "categoria": "flexibilidade",
+   "contexto": "casa/pausa",
+   "beneficioDeclarado": "Melhora a postura",
+   "dose": "conforme guia",
+   "localizador": "PDF p. 74",
+   "movekit": {
+    "slug": "standing-wall-shoulder-opening-stretch",
+    "correspondencia": "aproximado",
+    "menorPacote": "Home"
+   },
+   "status": "valido_pela_regra"
+  },
+  {
+   "id": "NIA-22",
+   "fonte": "NIA",
+   "nome": "Alongamento de braços, peito e ombros",
+   "nomeOriginal": "Upper Body",
+   "categoria": "flexibilidade",
+   "contexto": "casa/pausa",
+   "beneficioDeclarado": "Ajuda a alcançar prateleiras altas",
+   "dose": "conforme guia",
+   "localizador": "PDF p. 76",
+   "movekit": {
+    "slug": null,
+    "correspondencia": "nao",
+    "menorPacote": null
+   },
+   "status": "valido_pela_regra"
+  },
+  {
+   "id": "NIA-23",
+   "fonte": "NIA",
+   "nome": "Alongamento do peito",
+   "nomeOriginal": "Chest",
+   "categoria": "flexibilidade",
+   "contexto": "casa/pausa",
+   "beneficioDeclarado": "Bom para a postura",
+   "dose": "conforme guia",
+   "localizador": "PDF p. 77",
+   "movekit": {
+    "slug": "seated-thoracic-extension-chest-opener",
+    "correspondencia": "aproximado",
+    "menorPacote": "Home"
+   },
+   "status": "valido_pela_regra"
+  },
+  {
+   "id": "NIA-24",
+   "fonte": "NIA",
+   "nome": "Alongamento das costas sentado",
+   "nomeOriginal": "Back 1",
+   "categoria": "flexibilidade",
+   "contexto": "casa/pausa",
+   "beneficioDeclarado": "Alonga a musculatura das costas",
+   "dose": "conforme guia",
+   "localizador": "PDF p. 78",
+   "movekit": {
+    "slug": null,
+    "correspondencia": "nao",
+    "menorPacote": null
+   },
+   "status": "valido_pela_regra"
+  },
+  {
+   "id": "NIA-25",
+   "fonte": "NIA",
+   "nome": "Rotação das costas sentado",
+   "nomeOriginal": "Back 2",
+   "categoria": "flexibilidade",
+   "contexto": "casa/pausa",
+   "beneficioDeclarado": "Ajuda a girar o tronco para olhar para trás",
+   "dose": "conforme guia",
+   "localizador": "PDF p. 79",
+   "movekit": {
+    "slug": null,
+    "correspondencia": "nao",
+    "menorPacote": null
+   },
+   "status": "valido_pela_regra"
+  },
+  {
+   "id": "NIA-26",
+   "fonte": "NIA",
+   "nome": "Alongamento da parte superior das costas",
+   "nomeOriginal": "Upper Back",
+   "categoria": "flexibilidade",
+   "contexto": "casa/pausa",
+   "beneficioDeclarado": "Bom para ombros e parte superior das costas",
+   "dose": "conforme guia",
+   "localizador": "PDF p. 80",
+   "movekit": {
+    "slug": null,
+    "correspondencia": "nao",
+    "menorPacote": null
+   },
+   "status": "valido_pela_regra"
+  },
+  {
+   "id": "NIA-27",
+   "fonte": "NIA",
+   "nome": "Alongamento dos tornozelos",
+   "nomeOriginal": "Ankle",
+   "categoria": "flexibilidade",
+   "contexto": "casa/pausa",
+   "beneficioDeclarado": "Alonga os músculos do tornozelo",
+   "dose": "conforme guia",
+   "localizador": "PDF p. 81",
+   "movekit": {
+    "slug": "seated-ankle-circles",
+    "correspondencia": "aproximado",
+    "menorPacote": "Home"
+   },
+   "status": "valido_pela_regra"
+  },
+  {
+   "id": "NIA-28",
+   "fonte": "NIA",
+   "nome": "Alongamento posterior da perna (no chão)",
+   "nomeOriginal": "Back of Leg",
+   "categoria": "flexibilidade",
+   "contexto": "casa/pausa",
+   "beneficioDeclarado": "Alonga a parte de trás das pernas",
+   "dose": "conforme guia",
+   "localizador": "PDF p. 84",
+   "movekit": {
+    "slug": null,
+    "correspondencia": "nao",
+    "menorPacote": null
+   },
+   "status": "valido_pela_regra"
+  },
+  {
+   "id": "NIA-29",
+   "fonte": "NIA",
+   "nome": "Alongamento da coxa (no chão ou em pé)",
+   "nomeOriginal": "Thigh",
+   "categoria": "flexibilidade",
+   "contexto": "casa/pausa",
+   "beneficioDeclarado": "Alonga a musculatura da coxa",
+   "dose": "conforme guia",
+   "localizador": "PDF p. 86",
+   "movekit": {
+    "slug": null,
+    "correspondencia": "nao",
+    "menorPacote": null
+   },
+   "status": "valido_pela_regra"
+  },
+  {
+   "id": "NIA-30",
+   "fonte": "NIA",
+   "nome": "Alongamento do quadril",
+   "nomeOriginal": "Hip",
+   "categoria": "flexibilidade",
+   "contexto": "casa/pausa",
+   "beneficioDeclarado": "Alonga o quadril e a parte interna da coxa",
+   "dose": "conforme guia",
+   "localizador": "PDF p. 88",
+   "movekit": {
+    "slug": "adductor-groin-stretch",
+    "correspondencia": "aproximado",
+    "menorPacote": "Home"
+   },
+   "status": "valido_pela_regra"
+  },
+  {
+   "id": "NIA-31",
+   "fonte": "NIA",
+   "nome": "Alongamento da lombar",
+   "nomeOriginal": "Lower Back",
+   "categoria": "flexibilidade",
+   "contexto": "casa/pausa",
+   "beneficioDeclarado": "Alonga a musculatura lombar",
+   "dose": "conforme guia",
+   "localizador": "PDF p. 89",
+   "movekit": {
+    "slug": null,
+    "correspondencia": "nao",
+    "menorPacote": null
+   },
+   "status": "valido_pela_regra"
+  },
+  {
+   "id": "NIA-32",
+   "fonte": "NIA",
+   "nome": "Alongamento da panturrilha",
+   "nomeOriginal": "Calf",
+   "categoria": "flexibilidade",
+   "contexto": "casa/pausa",
+   "beneficioDeclarado": "Alonga as panturrilhas, que costumam ser tensas",
+   "dose": "conforme guia",
+   "localizador": "PDF p. 90",
+   "movekit": {
+    "slug": null,
+    "correspondencia": "nao",
+    "menorPacote": null
+   },
+   "status": "valido_pela_regra"
+  },
+  {
+   "id": "NIA-33",
+   "fonte": "NIA",
+   "nome": "Alongamento em dupla",
+   "nomeOriginal": "Buddy Stretch",
+   "categoria": "flexibilidade",
+   "contexto": "casa/pausa",
+   "beneficioDeclarado": "Alonga ombros, braços, costas e pernas com um parceiro",
+   "dose": "conforme guia",
+   "localizador": "PDF p. 91",
+   "movekit": {
+    "slug": null,
+    "correspondencia": "nao",
+    "menorPacote": null
+   },
+   "status": "valido_pela_regra"
+  },
+  {
+   "id": "VIV-01",
+   "fonte": "VIVIFRAIL",
+   "nome": "Caminhar (progressão por nível)",
+   "nomeOriginal": "WALK",
+   "categoria": "aerobico",
+   "contexto": "casa/praca",
+   "beneficioDeclarado": "Programa multicomponente para prevenir fragilidade e risco de quedas (força, equilíbrio, flexibilidade, cardiovascular)",
+   "dose": "a extrair da roda/passaporte do nível (não usar)",
+   "localizador": "Rodas A–E e passaportes",
+   "movekit": {
+    "slug": null,
+    "correspondencia": "nao",
+    "menorPacote": null
+   },
+   "status": "valido_pela_regra"
+  },
+  {
+   "id": "VIV-02",
+   "fonte": "VIVIFRAIL",
+   "nome": "Levantar uma garrafa",
+   "nomeOriginal": "LIFT A BOTTLE",
+   "categoria": "forca",
+   "contexto": "casa",
+   "beneficioDeclarado": "Programa multicomponente para prevenir fragilidade e risco de quedas (força, equilíbrio, flexibilidade, cardiovascular)",
+   "dose": "a extrair da roda/passaporte do nível (não usar)",
+   "localizador": "Rodas A–E e passaportes",
+   "movekit": {
+    "slug": null,
+    "correspondencia": "nao",
+    "menorPacote": null
+   },
+   "status": "valido_pela_regra"
+  },
+  {
+   "id": "VIV-03",
+   "fonte": "VIVIFRAIL",
+   "nome": "Apertar uma bola",
+   "nomeOriginal": "SQUEEZE A BALL",
+   "categoria": "forca",
+   "contexto": "casa",
+   "beneficioDeclarado": "Programa multicomponente para prevenir fragilidade e risco de quedas (força, equilíbrio, flexibilidade, cardiovascular)",
+   "dose": "a extrair da roda/passaporte do nível (não usar)",
+   "localizador": "Rodas A–E e passaportes",
+   "movekit": {
+    "slug": null,
+    "correspondencia": "nao",
+    "menorPacote": null
+   },
+   "status": "valido_pela_regra"
+  },
+  {
+   "id": "VIV-04",
+   "fonte": "VIVIFRAIL",
+   "nome": "Alongar os braços",
+   "nomeOriginal": "STRETCH YOUR ARMS",
+   "categoria": "flexibilidade",
+   "contexto": "casa",
+   "beneficioDeclarado": "Programa multicomponente para prevenir fragilidade e risco de quedas (força, equilíbrio, flexibilidade, cardiovascular)",
+   "dose": "a extrair da roda/passaporte do nível (não usar)",
+   "localizador": "Rodas A–E e passaportes",
+   "movekit": {
+    "slug": null,
+    "correspondencia": "nao",
+    "menorPacote": null
+   },
+   "status": "valido_pela_regra"
+  },
+  {
+   "id": "VIV-05",
+   "fonte": "VIVIFRAIL",
+   "nome": "Estender a perna com tornozeleira",
+   "nomeOriginal": "EXTEND YOUR LEGS USING A BALLASTED ANKLE BRACE",
+   "categoria": "forca",
+   "contexto": "casa",
+   "beneficioDeclarado": "Programa multicomponente para prevenir fragilidade e risco de quedas (força, equilíbrio, flexibilidade, cardiovascular)",
+   "dose": "a extrair da roda/passaporte do nível (não usar)",
+   "localizador": "Rodas A–E e passaportes",
+   "movekit": {
+    "slug": null,
+    "correspondencia": "nao",
+    "menorPacote": null
+   },
+   "status": "valido_pela_regra"
+  },
+  {
+   "id": "VIV-06",
+   "fonte": "VIVIFRAIL",
+   "nome": "Levantar da cadeira com ajuda",
+   "nomeOriginal": "GET UP FROM A CHAIR WITH HELP",
+   "categoria": "forca",
+   "contexto": "casa",
+   "beneficioDeclarado": "Programa multicomponente para prevenir fragilidade e risco de quedas (força, equilíbrio, flexibilidade, cardiovascular)",
+   "dose": "a extrair da roda/passaporte do nível (não usar)",
+   "localizador": "Rodas A–E e passaportes",
+   "movekit": {
+    "slug": "bodyweight-box-squat",
+    "correspondencia": "aproximado",
+    "menorPacote": "Starter"
+   },
+   "status": "valido_pela_regra"
+  },
+  {
+   "id": "VIV-07",
+   "fonte": "VIVIFRAIL",
+   "nome": "Andar com os pés em linha",
+   "nomeOriginal": "WALK WITH YOUR FEET IN LINE",
+   "categoria": "equilibrio",
+   "contexto": "casa",
+   "beneficioDeclarado": "Programa multicomponente para prevenir fragilidade e risco de quedas (força, equilíbrio, flexibilidade, cardiovascular)",
+   "dose": "a extrair da roda/passaporte do nível (não usar)",
+   "localizador": "Rodas A–E e passaportes",
+   "movekit": {
+    "slug": null,
+    "correspondencia": "nao",
+    "menorPacote": null
+   },
+   "status": "valido_pela_regra"
+  },
+  {
+   "id": "VIV-08",
+   "fonte": "VIVIFRAIL",
+   "nome": "Fingir que vai sentar (agachamento parcial)",
+   "nomeOriginal": "PRETEND TO SIT",
+   "categoria": "forca",
+   "contexto": "casa",
+   "beneficioDeclarado": "Programa multicomponente para prevenir fragilidade e risco de quedas (força, equilíbrio, flexibilidade, cardiovascular)",
+   "dose": "a extrair da roda/passaporte do nível (não usar)",
+   "localizador": "Rodas A–E e passaportes",
+   "movekit": {
+    "slug": "bodyweight-box-squat",
+    "correspondencia": "aproximado",
+    "menorPacote": "Starter"
+   },
+   "status": "valido_pela_regra"
+  },
+  {
+   "id": "VIV-09",
+   "fonte": "VIVIFRAIL",
+   "nome": "Andar na ponta dos pés e nos calcanhares",
+   "nomeOriginal": "WALK ON YOUR TIP TOES AND YOUR HEELS",
+   "categoria": "equilibrio",
+   "contexto": "casa",
+   "beneficioDeclarado": "Programa multicomponente para prevenir fragilidade e risco de quedas (força, equilíbrio, flexibilidade, cardiovascular)",
+   "dose": "a extrair da roda/passaporte do nível (não usar)",
+   "localizador": "Rodas A–E e passaportes",
+   "movekit": {
+    "slug": "heel-and-toe-walks",
+    "correspondencia": "exato",
+    "menorPacote": "Home"
+   },
+   "status": "valido_pela_regra"
+  },
+  {
+   "id": "VIV-10",
+   "fonte": "VIVIFRAIL",
+   "nome": "Torcer uma toalha",
+   "nomeOriginal": "TWIST A TOWEL",
+   "categoria": "forca",
+   "contexto": "casa",
+   "beneficioDeclarado": "Programa multicomponente para prevenir fragilidade e risco de quedas (força, equilíbrio, flexibilidade, cardiovascular)",
+   "dose": "a extrair da roda/passaporte do nível (não usar)",
+   "localizador": "Rodas A–E e passaportes",
+   "movekit": {
+    "slug": null,
+    "correspondencia": "nao",
+    "menorPacote": null
+   },
+   "status": "valido_pela_regra"
+  },
+  {
+   "id": "VIV-11",
+   "fonte": "VIVIFRAIL",
+   "nome": "Levantar da cadeira",
+   "nomeOriginal": "GET UP FROM A CHAIR",
+   "categoria": "forca",
+   "contexto": "casa",
+   "beneficioDeclarado": "Programa multicomponente para prevenir fragilidade e risco de quedas (força, equilíbrio, flexibilidade, cardiovascular)",
+   "dose": "a extrair da roda/passaporte do nível (não usar)",
+   "localizador": "Rodas A–E e passaportes",
+   "movekit": {
+    "slug": "bodyweight-box-squat",
+    "correspondencia": "aproximado",
+    "menorPacote": "Starter"
+   },
+   "status": "valido_pela_regra"
+  },
+  {
+   "id": "VIV-12",
+   "fonte": "VIVIFRAIL",
+   "nome": "Andar em oito",
+   "nomeOriginal": "WALK IN A FIGURE OF 8",
+   "categoria": "equilibrio",
+   "contexto": "casa/praca",
+   "beneficioDeclarado": "Programa multicomponente para prevenir fragilidade e risco de quedas (força, equilíbrio, flexibilidade, cardiovascular)",
+   "dose": "a extrair da roda/passaporte do nível (não usar)",
+   "localizador": "Rodas A–E e passaportes",
+   "movekit": {
+    "slug": null,
+    "correspondencia": "nao",
+    "menorPacote": null
+   },
+   "status": "valido_pela_regra"
+  },
+  {
+   "id": "VIV-13",
+   "fonte": "VIVIFRAIL",
+   "nome": "Passar por obstáculos",
+   "nomeOriginal": "OBSTACLES",
+   "categoria": "equilibrio",
+   "contexto": "casa/praca",
+   "beneficioDeclarado": "Programa multicomponente para prevenir fragilidade e risco de quedas (força, equilíbrio, flexibilidade, cardiovascular)",
+   "dose": "a extrair da roda/passaporte do nível (não usar)",
+   "localizador": "Rodas A–E e passaportes",
+   "movekit": {
+    "slug": null,
+    "correspondencia": "nao",
+    "menorPacote": null
+   },
+   "status": "valido_pela_regra"
+  },
+  {
+   "id": "VIV-14",
+   "fonte": "VIVIFRAIL",
+   "nome": "Alongar as pernas",
+   "nomeOriginal": "STRETCH YOUR LEGS",
+   "categoria": "flexibilidade",
+   "contexto": "casa",
+   "beneficioDeclarado": "Programa multicomponente para prevenir fragilidade e risco de quedas (força, equilíbrio, flexibilidade, cardiovascular)",
+   "dose": "a extrair da roda/passaporte do nível (não usar)",
+   "localizador": "Rodas A–E e passaportes",
+   "movekit": {
+    "slug": null,
+    "correspondencia": "nao",
+    "menorPacote": null
+   },
+   "status": "valido_pela_regra"
+  },
+  {
+   "id": "VIV-15",
+   "fonte": "VIVIFRAIL",
+   "nome": "Subir e descer escadas",
+   "nomeOriginal": "UP AND DOWN STAIRS",
+   "categoria": "forca",
+   "contexto": "casa/praca",
+   "beneficioDeclarado": "Programa multicomponente para prevenir fragilidade e risco de quedas (força, equilíbrio, flexibilidade, cardiovascular)",
+   "dose": "a extrair da roda/passaporte do nível (não usar)",
+   "localizador": "Rodas A–E e passaportes",
+   "movekit": {
+    "slug": "dumbbell-step-up-low",
+    "correspondencia": "aproximado",
+    "menorPacote": "Starter"
+   },
+   "status": "valido_pela_regra"
+  },
+  {
+   "id": "VIV-16",
+   "fonte": "VIVIFRAIL",
+   "nome": "Andar tocando um balão",
+   "nomeOriginal": "WALK WHILE TOUCHING A BALLOON",
+   "categoria": "equilibrio",
+   "contexto": "casa",
+   "beneficioDeclarado": "Programa multicomponente para prevenir fragilidade e risco de quedas (força, equilíbrio, flexibilidade, cardiovascular)",
+   "dose": "a extrair da roda/passaporte do nível (não usar)",
+   "localizador": "Rodas A–E e passaportes",
+   "movekit": {
+    "slug": null,
+    "correspondencia": "nao",
+    "menorPacote": null
+   },
+   "status": "valido_pela_regra"
+  },
+  {
+   "id": "VIV-17",
+   "fonte": "VIVIFRAIL",
+   "nome": "Equilíbrio em uma perna",
+   "nomeOriginal": "BALANCING ON ONE LEG",
+   "categoria": "equilibrio",
+   "contexto": "casa",
+   "beneficioDeclarado": "Programa multicomponente para prevenir fragilidade e risco de quedas (força, equilíbrio, flexibilidade, cardiovascular)",
+   "dose": "a extrair da roda/passaporte do nível (não usar)",
+   "localizador": "Rodas A–E e passaportes",
+   "movekit": {
+    "slug": "single-leg-balance",
+    "correspondencia": "exato",
+    "menorPacote": "Home"
+   },
+   "status": "valido_pela_regra"
+  },
+  {
+   "id": "VIV-18",
+   "fonte": "VIVIFRAIL",
+   "nome": "Caminhar ou trotar 60 min (nível E)",
+   "nomeOriginal": "WALKING OR JOGGING",
+   "categoria": "aerobico",
+   "contexto": "praca",
+   "beneficioDeclarado": "Programa multicomponente para prevenir fragilidade e risco de quedas (força, equilíbrio, flexibilidade, cardiovascular)",
+   "dose": "a extrair da roda/passaporte do nível (não usar)",
+   "localizador": "Rodas A–E e passaportes",
+   "movekit": {
+    "slug": "long-run",
+    "correspondencia": "aproximado",
+    "menorPacote": "Complete"
+   },
+   "status": "valido_pela_regra"
+  },
+  {
+   "id": "VIV-19",
+   "fonte": "VIVIFRAIL",
+   "nome": "Rosca com barra",
+   "nomeOriginal": "BARBELL CURL",
+   "categoria": "forca",
+   "contexto": "academia/casa",
+   "beneficioDeclarado": "Programa multicomponente para prevenir fragilidade e risco de quedas (força, equilíbrio, flexibilidade, cardiovascular)",
+   "dose": "a extrair da roda/passaporte do nível (não usar)",
+   "localizador": "Rodas A–E e passaportes",
+   "movekit": {
+    "slug": "barbell-curl",
+    "correspondencia": "exato",
+    "menorPacote": "Complete"
+   },
+   "status": "valido_pela_regra"
+  },
+  {
+   "id": "VIV-20",
+   "fonte": "VIVIFRAIL",
+   "nome": "Remada com barra",
+   "nomeOriginal": "BARBELL ROW",
+   "categoria": "forca",
+   "contexto": "academia",
+   "beneficioDeclarado": "Programa multicomponente para prevenir fragilidade e risco de quedas (força, equilíbrio, flexibilidade, cardiovascular)",
+   "dose": "a extrair da roda/passaporte do nível (não usar)",
+   "localizador": "Rodas A–E e passaportes",
+   "movekit": {
+    "slug": "barbell-bent-over-row",
+    "correspondencia": "exato",
+    "menorPacote": "Gym"
+   },
+   "status": "valido_pela_regra"
+  },
+  {
+   "id": "VIV-21",
+   "fonte": "VIVIFRAIL",
+   "nome": "Avanço com barra",
+   "nomeOriginal": "BARBELL LUNGE",
+   "categoria": "forca",
+   "contexto": "academia",
+   "beneficioDeclarado": "Programa multicomponente para prevenir fragilidade e risco de quedas (força, equilíbrio, flexibilidade, cardiovascular)",
+   "dose": "a extrair da roda/passaporte do nível (não usar)",
+   "localizador": "Rodas A–E e passaportes",
+   "movekit": {
+    "slug": "barbell-lunge",
+    "correspondencia": "exato",
+    "menorPacote": "Complete"
+   },
+   "status": "valido_pela_regra"
+  },
+  {
+   "id": "VIV-22",
+   "fonte": "VIVIFRAIL",
+   "nome": "Agachamento com barra",
+   "nomeOriginal": "BARBELL SQUAT",
+   "categoria": "forca",
+   "contexto": "academia",
+   "beneficioDeclarado": "Programa multicomponente para prevenir fragilidade e risco de quedas (força, equilíbrio, flexibilidade, cardiovascular)",
+   "dose": "a extrair da roda/passaporte do nível (não usar)",
+   "localizador": "Rodas A–E e passaportes",
+   "movekit": {
+    "slug": "barbell-squat",
+    "correspondencia": "exato",
+    "menorPacote": "Gym"
+   },
+   "status": "valido_pela_regra"
+  },
+  {
+   "id": "WLK-01",
+   "fonte": "WALKER",
+   "nome": "Leg press",
+   "nomeOriginal": null,
+   "categoria": "forca",
+   "contexto": "academia",
+   "beneficioDeclarado": "Programa periodizado de musculação: resistência muscular, hipertrofia e força (melhora de força máxima em jovens e idosos)",
+   "dose": "fase 1: 2–3 x 14–16 a 40–60% 1RM; fase 2: 10–12 a 70–80%",
+   "localizador": "Tabela do programa, PMC6351450",
+   "movekit": {
+    "slug": "machine-leg-press",
+    "correspondencia": "exato",
+    "menorPacote": "Gym"
+   },
+   "status": "valido_pela_regra"
+  },
+  {
+   "id": "WLK-02",
+   "fonte": "WALKER",
+   "nome": "Cadeira extensora",
+   "nomeOriginal": null,
+   "categoria": "forca",
+   "contexto": "academia",
+   "beneficioDeclarado": "Programa periodizado de musculação: resistência muscular, hipertrofia e força (melhora de força máxima em jovens e idosos)",
+   "dose": "fase 1: 2–3 x 14–16 a 40–60% 1RM; fase 2: 10–12 a 70–80%",
+   "localizador": "Tabela do programa, PMC6351450",
+   "movekit": {
+    "slug": "machine-leg-extension",
+    "correspondencia": "exato",
+    "menorPacote": "Complete"
+   },
+   "status": "valido_pela_regra"
+  },
+  {
+   "id": "WLK-03",
+   "fonte": "WALKER",
+   "nome": "Cadeira flexora",
+   "nomeOriginal": null,
+   "categoria": "forca",
+   "contexto": "academia",
+   "beneficioDeclarado": "Programa periodizado de musculação: resistência muscular, hipertrofia e força (melhora de força máxima em jovens e idosos)",
+   "dose": "fase 1: 2–3 x 14–16 a 40–60% 1RM; fase 2: 10–12 a 70–80%",
+   "localizador": "Tabela do programa, PMC6351450",
+   "movekit": {
+    "slug": "seated-leg-curl",
+    "correspondencia": "exato",
+    "menorPacote": "Complete"
+   },
+   "status": "valido_pela_regra"
+  },
+  {
+   "id": "WLK-04",
+   "fonte": "WALKER",
+   "nome": "Supino em máquina (chest press)",
+   "nomeOriginal": null,
+   "categoria": "forca",
+   "contexto": "academia",
+   "beneficioDeclarado": "Programa periodizado de musculação: resistência muscular, hipertrofia e força (melhora de força máxima em jovens e idosos)",
+   "dose": "fase 1: 2–3 x 14–16 a 40–60% 1RM; fase 2: 10–12 a 70–80%",
+   "localizador": "Tabela do programa, PMC6351450",
+   "movekit": {
+    "slug": "machine-chest-press",
+    "correspondencia": "exato",
+    "menorPacote": "Gym"
+   },
+   "status": "valido_pela_regra"
+  },
+  {
+   "id": "WLK-05",
+   "fonte": "WALKER",
+   "nome": "Puxada alta (lat pulldown)",
+   "nomeOriginal": null,
+   "categoria": "forca",
+   "contexto": "academia",
+   "beneficioDeclarado": "Programa periodizado de musculação: resistência muscular, hipertrofia e força (melhora de força máxima em jovens e idosos)",
+   "dose": "fase 1: 2–3 x 14–16 a 40–60% 1RM; fase 2: 10–12 a 70–80%",
+   "localizador": "Tabela do programa, PMC6351450",
+   "movekit": {
+    "slug": "lat-pulldown",
+    "correspondencia": "exato",
+    "menorPacote": "Gym"
+   },
+   "status": "valido_pela_regra"
+  },
+  {
+   "id": "WLK-06",
+   "fonte": "WALKER",
+   "nome": "Extensão de tríceps",
+   "nomeOriginal": null,
+   "categoria": "forca",
+   "contexto": "academia",
+   "beneficioDeclarado": "Programa periodizado de musculação: resistência muscular, hipertrofia e força (melhora de força máxima em jovens e idosos)",
+   "dose": "fase 1: 2–3 x 14–16 a 40–60% 1RM; fase 2: 10–12 a 70–80%",
+   "localizador": "Tabela do programa, PMC6351450",
+   "movekit": {
+    "slug": "machine-tricep-extension",
+    "correspondencia": "exato",
+    "menorPacote": "Complete"
+   },
+   "status": "valido_pela_regra"
+  },
+  {
+   "id": "WLK-07",
+   "fonte": "WALKER",
+   "nome": "Abdominal (ab curl)",
+   "nomeOriginal": null,
+   "categoria": "forca",
+   "contexto": "academia",
+   "beneficioDeclarado": "Programa periodizado de musculação: resistência muscular, hipertrofia e força (melhora de força máxima em jovens e idosos)",
+   "dose": "fase 1: 2–3 x 14–16 a 40–60% 1RM; fase 2: 10–12 a 70–80%",
+   "localizador": "Tabela do programa, PMC6351450",
+   "movekit": {
+    "slug": "machine-crunch",
+    "correspondencia": "exato",
+    "menorPacote": "Gym"
+   },
+   "status": "valido_pela_regra"
+  },
+  {
+   "id": "WLK-08",
+   "fonte": "WALKER",
+   "nome": "Extensão lombar",
+   "nomeOriginal": null,
+   "categoria": "forca",
+   "contexto": "academia",
+   "beneficioDeclarado": "Programa periodizado de musculação: resistência muscular, hipertrofia e força (melhora de força máxima em jovens e idosos)",
+   "dose": "fase 1: 2–3 x 14–16 a 40–60% 1RM; fase 2: 10–12 a 70–80%",
+   "localizador": "Tabela do programa, PMC6351450",
+   "movekit": {
+    "slug": "machine-back-extension",
+    "correspondencia": "exato",
+    "menorPacote": "Complete"
+   },
+   "status": "valido_pela_regra"
+  },
+  {
+   "id": "WLK-09",
+   "fonte": "WALKER",
+   "nome": "Desenvolvimento de ombros em máquina",
+   "nomeOriginal": null,
+   "categoria": "forca",
+   "contexto": "academia",
+   "beneficioDeclarado": "Programa periodizado de musculação: resistência muscular, hipertrofia e força (melhora de força máxima em jovens e idosos)",
+   "dose": "fase 1: 2–3 x 14–16 a 40–60% 1RM; fase 2: 10–12 a 70–80%",
+   "localizador": "Tabela do programa, PMC6351450",
+   "movekit": {
+    "slug": "selectorized-overhead-press-machine",
+    "correspondencia": "exato",
+    "menorPacote": "Gym"
+   },
+   "status": "valido_pela_regra"
+  },
+  {
+   "id": "WLK-10",
+   "fonte": "WALKER",
+   "nome": "Remada sentada",
+   "nomeOriginal": null,
+   "categoria": "forca",
+   "contexto": "academia",
+   "beneficioDeclarado": "Programa periodizado de musculação: resistência muscular, hipertrofia e força (melhora de força máxima em jovens e idosos)",
+   "dose": "fase 1: 2–3 x 14–16 a 40–60% 1RM; fase 2: 10–12 a 70–80%",
+   "localizador": "Tabela do programa, PMC6351450",
+   "movekit": {
+    "slug": "machine-seated-cable-row",
+    "correspondencia": "exato",
+    "menorPacote": "Gym"
+   },
+   "status": "valido_pela_regra"
+  },
+  {
+   "id": "WLK-11",
+   "fonte": "WALKER",
+   "nome": "Rosca de bíceps",
+   "nomeOriginal": null,
+   "categoria": "forca",
+   "contexto": "academia",
+   "beneficioDeclarado": "Programa periodizado de musculação: resistência muscular, hipertrofia e força (melhora de força máxima em jovens e idosos)",
+   "dose": "fase 1: 2–3 x 14–16 a 40–60% 1RM; fase 2: 10–12 a 70–80%",
+   "localizador": "Tabela do programa, PMC6351450",
+   "movekit": {
+    "slug": "machine-preacher-curl",
+    "correspondencia": "aproximado",
+    "menorPacote": "Complete"
+   },
+   "status": "valido_pela_regra"
+  },
+  {
+   "id": "WLK-12",
+   "fonte": "WALKER",
+   "nome": "Panturrilha sentado",
+   "nomeOriginal": null,
+   "categoria": "forca",
+   "contexto": "academia",
+   "beneficioDeclarado": "Programa periodizado de musculação: resistência muscular, hipertrofia e força (melhora de força máxima em jovens e idosos)",
+   "dose": "fase 1: 2–3 x 14–16 a 40–60% 1RM; fase 2: 10–12 a 70–80%",
+   "localizador": "Tabela do programa, PMC6351450",
+   "movekit": {
+    "slug": "seated-calf-raise",
+    "correspondencia": "exato",
+    "menorPacote": "Home"
+   },
+   "status": "valido_pela_regra"
+  },
+  {
+   "id": "WLK-13",
+   "fonte": "WALKER",
+   "nome": "Panturrilha em pé",
+   "nomeOriginal": null,
+   "categoria": "forca",
+   "contexto": "academia",
+   "beneficioDeclarado": "Programa periodizado de musculação: resistência muscular, hipertrofia e força (melhora de força máxima em jovens e idosos)",
+   "dose": "fase 1: 2–3 x 14–16 a 40–60% 1RM; fase 2: 10–12 a 70–80%",
+   "localizador": "Tabela do programa, PMC6351450",
+   "movekit": {
+    "slug": "standing-calf-raise-machine",
+    "correspondencia": "exato",
+    "menorPacote": "Complete"
+   },
+   "status": "valido_pela_regra"
+  },
+  {
+   "id": "OFE-01",
+   "fonte": "MARCOSPARDO",
+   "nome": "Cavalgada / remada no aparelho (Bonny rider)",
+   "nomeOriginal": null,
+   "categoria": "forca",
+   "contexto": "praca",
+   "beneficioDeclarado": "Circuito em academia ao ar livre: melhora de força, capacidade cardiovascular, equilíbrio e composição corporal (hipótese do ensaio)",
+   "dose": "8 semanas, 2x/semana, 1→3 séries de 30–45 s",
+   "localizador": "Seção de métodos e tabela 1, PMC10759096",
+   "movekit": {
+    "slug": null,
+    "correspondencia": "nao",
+    "menorPacote": null
+   },
+   "status": "valido_pela_regra"
+  },
+  {
+   "id": "OFE-02",
+   "fonte": "MARCOSPARDO",
+   "nome": "Empurrar com pegada baixa (Gemini)",
+   "nomeOriginal": null,
+   "categoria": "forca",
+   "contexto": "praca",
+   "beneficioDeclarado": "Circuito em academia ao ar livre: melhora de força, capacidade cardiovascular, equilíbrio e composição corporal (hipótese do ensaio)",
+   "dose": "8 semanas, 2x/semana, 1→3 séries de 30–45 s",
+   "localizador": "Seção de métodos e tabela 1, PMC10759096",
+   "movekit": {
+    "slug": null,
+    "correspondencia": "nao",
+    "menorPacote": null
+   },
+   "status": "valido_pela_regra"
+  },
+  {
+   "id": "OFE-03",
+   "fonte": "MARCOSPARDO",
+   "nome": "Simulador de caminhada (Air Walker)",
+   "nomeOriginal": null,
+   "categoria": "aerobico",
+   "contexto": "praca",
+   "beneficioDeclarado": "Circuito em academia ao ar livre: melhora de força, capacidade cardiovascular, equilíbrio e composição corporal (hipótese do ensaio)",
+   "dose": "8 semanas, 2x/semana, 1→3 séries de 30–45 s",
+   "localizador": "Seção de métodos e tabela 1, PMC10759096",
+   "movekit": {
+    "slug": "elliptical",
+    "correspondencia": "aproximado",
+    "menorPacote": "Complete"
+   },
+   "status": "valido_pela_regra"
+  },
+  {
+   "id": "OFE-04",
+   "fonte": "MARCOSPARDO",
+   "nome": "Barras paralelas (mergulho adaptado)",
+   "nomeOriginal": null,
+   "categoria": "forca",
+   "contexto": "praca",
+   "beneficioDeclarado": "Circuito em academia ao ar livre: melhora de força, capacidade cardiovascular, equilíbrio e composição corporal (hipótese do ensaio)",
+   "dose": "8 semanas, 2x/semana, 1→3 séries de 30–45 s",
+   "localizador": "Seção de métodos e tabela 1, PMC10759096",
+   "movekit": {
+    "slug": "parralel-bar-dips",
+    "correspondencia": "aproximado",
+    "menorPacote": "Starter"
+   },
+   "status": "valido_pela_regra"
+  },
+  {
+   "id": "OFE-05",
+   "fonte": "MARCOSPARDO",
+   "nome": "Rodas de ombro (circundução)",
+   "nomeOriginal": null,
+   "categoria": "forca",
+   "contexto": "praca",
+   "beneficioDeclarado": "Circuito em academia ao ar livre: melhora de força, capacidade cardiovascular, equilíbrio e composição corporal (hipótese do ensaio)",
+   "dose": "8 semanas, 2x/semana, 1→3 séries de 30–45 s",
+   "localizador": "Seção de métodos e tabela 1, PMC10759096",
+   "movekit": {
+    "slug": null,
+    "correspondencia": "nao",
+    "menorPacote": null
+   },
+   "status": "valido_pela_regra"
+  },
+  {
+   "id": "OFE-06",
+   "fonte": "MARCOSPARDO",
+   "nome": "Empurrar com pegada média (Gemini)",
+   "nomeOriginal": null,
+   "categoria": "forca",
+   "contexto": "praca",
+   "beneficioDeclarado": "Circuito em academia ao ar livre: melhora de força, capacidade cardiovascular, equilíbrio e composição corporal (hipótese do ensaio)",
+   "dose": "8 semanas, 2x/semana, 1→3 séries de 30–45 s",
+   "localizador": "Seção de métodos e tabela 1, PMC10759096",
+   "movekit": {
+    "slug": null,
+    "correspondencia": "nao",
+    "menorPacote": null
+   },
+   "status": "valido_pela_regra"
+  },
+  {
+   "id": "ALQ-01",
+   "fonte": "ALQHTANI",
+   "nome": "Alongamento do pescoço",
+   "nomeOriginal": null,
+   "categoria": "flexibilidade",
+   "contexto": "pausa",
+   "beneficioDeclarado": "Alongamento de corpo inteiro na pausa: reduz dor musculoesquelética e esforço físico em profissionais de saúde",
+   "dose": "20 s x 5; sessão de 30 min, 3x/semana",
+   "localizador": "Tabela 1, PMC10222752",
+   "movekit": {
+    "slug": "seated-lateral-neck-flexion-hold",
+    "correspondencia": "aproximado",
+    "menorPacote": "Home"
+   },
+   "status": "valido_pela_regra"
+  },
+  {
+   "id": "ALQ-02",
+   "fonte": "ALQHTANI",
+   "nome": "Alongamento dos ombros",
+   "nomeOriginal": null,
+   "categoria": "flexibilidade",
+   "contexto": "pausa",
+   "beneficioDeclarado": "Alongamento de corpo inteiro na pausa: reduz dor musculoesquelética e esforço físico em profissionais de saúde",
+   "dose": "20 s x 5; sessão de 30 min, 3x/semana",
+   "localizador": "Tabela 1, PMC10222752",
+   "movekit": {
+    "slug": "seated-shoulder-rolls-scapular-retraction",
+    "correspondencia": "aproximado",
+    "menorPacote": "Home"
+   },
+   "status": "valido_pela_regra"
+  },
+  {
+   "id": "ALQ-03",
+   "fonte": "ALQHTANI",
+   "nome": "Alongamento de bíceps e tríceps",
+   "nomeOriginal": null,
+   "categoria": "flexibilidade",
+   "contexto": "pausa",
+   "beneficioDeclarado": "Alongamento de corpo inteiro na pausa: reduz dor musculoesquelética e esforço físico em profissionais de saúde",
+   "dose": "20 s x 5; sessão de 30 min, 3x/semana",
+   "localizador": "Tabela 1, PMC10222752",
+   "movekit": {
+    "slug": null,
+    "correspondencia": "nao",
+    "menorPacote": null
+   },
+   "status": "valido_pela_regra"
+  },
+  {
+   "id": "ALQ-04",
+   "fonte": "ALQHTANI",
+   "nome": "Alongamento de punho",
+   "nomeOriginal": null,
+   "categoria": "flexibilidade",
+   "contexto": "pausa",
+   "beneficioDeclarado": "Alongamento de corpo inteiro na pausa: reduz dor musculoesquelética e esforço físico em profissionais de saúde",
+   "dose": "20 s x 5; sessão de 30 min, 3x/semana",
+   "localizador": "Tabela 1, PMC10222752",
+   "movekit": {
+    "slug": "seated-wrist-flexor-stretch",
+    "correspondencia": "exato",
+    "menorPacote": "Home"
+   },
+   "status": "valido_pela_regra"
+  },
+  {
+   "id": "ALQ-05",
+   "fonte": "ALQHTANI",
+   "nome": "Extensão de tronco deitado",
+   "nomeOriginal": null,
+   "categoria": "flexibilidade",
+   "contexto": "pausa",
+   "beneficioDeclarado": "Alongamento de corpo inteiro na pausa: reduz dor musculoesquelética e esforço físico em profissionais de saúde",
+   "dose": "20 s x 5; sessão de 30 min, 3x/semana",
+   "localizador": "Tabela 1, PMC10222752",
+   "movekit": {
+    "slug": null,
+    "correspondencia": "nao",
+    "menorPacote": null
+   },
+   "status": "valido_pela_regra"
+  },
+  {
+   "id": "ALQ-06",
+   "fonte": "ALQHTANI",
+   "nome": "Rotação lombar",
+   "nomeOriginal": null,
+   "categoria": "flexibilidade",
+   "contexto": "pausa",
+   "beneficioDeclarado": "Alongamento de corpo inteiro na pausa: reduz dor musculoesquelética e esforço físico em profissionais de saúde",
+   "dose": "20 s x 5; sessão de 30 min, 3x/semana",
+   "localizador": "Tabela 1, PMC10222752",
+   "movekit": {
+    "slug": null,
+    "correspondencia": "nao",
+    "menorPacote": null
+   },
+   "status": "valido_pela_regra"
+  },
+  {
+   "id": "ALQ-07",
+   "fonte": "ALQHTANI",
+   "nome": "Alongamento posterior da coxa em pé",
+   "nomeOriginal": null,
+   "categoria": "flexibilidade",
+   "contexto": "pausa",
+   "beneficioDeclarado": "Alongamento de corpo inteiro na pausa: reduz dor musculoesquelética e esforço físico em profissionais de saúde",
+   "dose": "20 s x 5; sessão de 30 min, 3x/semana",
+   "localizador": "Tabela 1, PMC10222752",
+   "movekit": {
+    "slug": null,
+    "correspondencia": "nao",
+    "menorPacote": null
+   },
+   "status": "valido_pela_regra"
+  },
+  {
+   "id": "ALQ-08",
+   "fonte": "ALQHTANI",
+   "nome": "Alongamento do quadríceps em pé",
+   "nomeOriginal": null,
+   "categoria": "flexibilidade",
+   "contexto": "pausa",
+   "beneficioDeclarado": "Alongamento de corpo inteiro na pausa: reduz dor musculoesquelética e esforço físico em profissionais de saúde",
+   "dose": "20 s x 5; sessão de 30 min, 3x/semana",
+   "localizador": "Tabela 1, PMC10222752",
+   "movekit": {
+    "slug": null,
+    "correspondencia": "nao",
+    "menorPacote": null
+   },
+   "status": "valido_pela_regra"
+  },
+  {
+   "id": "ALQ-09",
+   "fonte": "ALQHTANI",
+   "nome": "Joelho ao peito",
+   "nomeOriginal": null,
+   "categoria": "flexibilidade",
+   "contexto": "pausa",
+   "beneficioDeclarado": "Alongamento de corpo inteiro na pausa: reduz dor musculoesquelética e esforço físico em profissionais de saúde",
+   "dose": "20 s x 5; sessão de 30 min, 3x/semana",
+   "localizador": "Tabela 1, PMC10222752",
+   "movekit": {
+    "slug": "walking-knee-hugs",
+    "correspondencia": "aproximado",
+    "menorPacote": "Home"
+   },
+   "status": "valido_pela_regra"
+  },
+  {
+   "id": "ALQ-10",
+   "fonte": "ALQHTANI",
+   "nome": "Inclinação lateral",
+   "nomeOriginal": null,
+   "categoria": "flexibilidade",
+   "contexto": "pausa",
+   "beneficioDeclarado": "Alongamento de corpo inteiro na pausa: reduz dor musculoesquelética e esforço físico em profissionais de saúde",
+   "dose": "20 s x 5; sessão de 30 min, 3x/semana",
+   "localizador": "Tabela 1, PMC10222752",
+   "movekit": {
+    "slug": null,
+    "correspondencia": "nao",
+    "menorPacote": null
+   },
+   "status": "valido_pela_regra"
+  },
+  {
+   "id": "ALQ-11",
+   "fonte": "ALQHTANI",
+   "nome": "Círculos com o tornozelo",
+   "nomeOriginal": null,
+   "categoria": "flexibilidade",
+   "contexto": "pausa",
+   "beneficioDeclarado": "Alongamento de corpo inteiro na pausa: reduz dor musculoesquelética e esforço físico em profissionais de saúde",
+   "dose": "20 s x 5; sessão de 30 min, 3x/semana",
+   "localizador": "Tabela 1, PMC10222752",
+   "movekit": {
+    "slug": "seated-ankle-circles",
+    "correspondencia": "exato",
+    "menorPacote": "Home"
+   },
+   "status": "valido_pela_regra"
+  },
+  {
+   "id": "ALQ-12",
+   "fonte": "ALQHTANI",
+   "nome": "Bombeamento do tornozelo",
+   "nomeOriginal": null,
+   "categoria": "flexibilidade",
+   "contexto": "pausa",
+   "beneficioDeclarado": "Alongamento de corpo inteiro na pausa: reduz dor musculoesquelética e esforço físico em profissionais de saúde",
+   "dose": "20 s x 5; sessão de 30 min, 3x/semana",
+   "localizador": "Tabela 1, PMC10222752",
+   "movekit": {
+    "slug": null,
+    "correspondencia": "nao",
+    "menorPacote": null
+   },
+   "status": "valido_pela_regra"
+  }
+ ],
+ "treinos": [
+  {
+   "id": "PRG-01",
+   "nome": "Força em casa para idosos",
+   "fonte": "NHS",
+   "publico": "idosos",
+   "contexto": "casa",
+   "frequencia": "2+ vezes/semana",
+   "exercicios": [
+    "NHS-W01",
+    "NHS-F01",
+    "NHS-F02",
+    "NHS-F03",
+    "NHS-F04",
+    "NHS-F05",
+    "NHS-F06",
+    "NHS-F07"
+   ],
+   "estadoOferta": "fora_credito_nhs",
+   "motivoEstado": "Tradução/adaptação NHS não pode exibir crédito NHS (OGL/termos NHS 3.6b); conflita com a regra 3 do autor. Só referência interna."
+  },
+  {
+   "id": "PRG-02",
+   "nome": "Equilíbrio em casa",
+   "fonte": "NHS",
+   "publico": "idosos",
+   "contexto": "casa",
+   "frequencia": "2+ vezes/semana",
+   "exercicios": [
+    "NHS-E01",
+    "NHS-E02",
+    "NHS-E03",
+    "NHS-E04",
+    "NHS-E05"
+   ],
+   "estadoOferta": "fora_credito_nhs",
+   "motivoEstado": "Tradução/adaptação NHS não pode exibir crédito NHS (OGL/termos NHS 3.6b); conflita com a regra 3 do autor. Só referência interna."
+  },
+  {
+   "id": "PRG-03",
+   "nome": "Exercícios sentados",
+   "fonte": "NHS",
+   "publico": "idosos/cuidadores",
+   "contexto": "casa/pausa",
+   "exercicios": [
+    "NHS-S01",
+    "NHS-S02",
+    "NHS-S03",
+    "NHS-S04",
+    "NHS-S05"
+   ],
+   "estadoOferta": "fora_credito_nhs",
+   "motivoEstado": "Tradução/adaptação NHS não pode exibir crédito NHS (OGL/termos NHS 3.6b); conflita com a regra 3 do autor. Só referência interna."
+  },
+  {
+   "id": "PRG-04",
+   "nome": "Flexibilidade",
+   "fonte": "NHS",
+   "publico": "idosos/cuidadores",
+   "contexto": "casa/pausa",
+   "exercicios": [
+    "NHS-S05",
+    "NHS-X01",
+    "NHS-X02",
+    "NHS-X03"
+   ],
+   "estadoOferta": "fora_credito_nhs",
+   "motivoEstado": "Tradução/adaptação NHS não pode exibir crédito NHS (OGL/termos NHS 3.6b); conflita com a regra 3 do autor. Só referência interna."
+  },
+  {
+   "id": "PRG-05",
+   "nome": "Aquecimento",
+   "fonte": "NHS",
+   "publico": "todos",
+   "contexto": "todos",
+   "exercicios": [
+    "NHS-W01",
+    "NHS-W02",
+    "NHS-W03",
+    "NHS-W04",
+    "NHS-W05"
+   ],
+   "estadoOferta": "fora_credito_nhs",
+   "motivoEstado": "Tradução/adaptação NHS não pode exibir crédito NHS (OGL/termos NHS 3.6b); conflita com a regra 3 do autor. Só referência interna."
+  },
+  {
+   "id": "PRG-06",
+   "nome": "Volta à calma",
+   "fonte": "NHS",
+   "publico": "todos",
+   "contexto": "casa",
+   "exercicios": [
+    "NHS-C01",
+    "NHS-C02",
+    "NHS-C03",
+    "NHS-X03",
+    "NHS-C04"
+   ],
+   "estadoOferta": "fora_credito_nhs",
+   "motivoEstado": "Tradução/adaptação NHS não pode exibir crédito NHS (OGL/termos NHS 3.6b); conflita com a regra 3 do autor. Só referência interna."
+  },
+  {
+   "id": "PRG-07",
+   "nome": "Otago nível A (com apoio)",
+   "fonte": "OTAGO",
+   "publico": "idosos",
+   "contexto": "casa",
+   "frequencia": "força e equilíbrio 3x/semana + caminhada 2x/semana",
+   "exercicios": "OTG-01..05 + variantes nível A de OTG-06..22",
+   "estadoOferta": "valido",
+   "motivoEstado": "Modo único (decisão do autor 21/11); a recomendação de profissional da fonte aparece na tela do treino e nos Termos.",
+   "recomendacaoProfissionalDaFonte": "Otago: instrutor treinado avalia e define a dose individual."
+  },
+  {
+   "id": "PRG-08",
+   "nome": "Otago nível B",
+   "fonte": "OTAGO",
+   "publico": "idosos",
+   "contexto": "casa",
+   "exercicios": "variantes nível B",
+   "estadoOferta": "valido",
+   "motivoEstado": "Modo único (decisão do autor 21/11); a recomendação de profissional da fonte aparece na tela do treino e nos Termos.",
+   "recomendacaoProfissionalDaFonte": "Otago: instrutor treinado avalia e define a dose individual."
+  },
+  {
+   "id": "PRG-09",
+   "nome": "Otago nível C",
+   "fonte": "OTAGO",
+   "publico": "idosos",
+   "contexto": "casa",
+   "exercicios": "variantes nível C",
+   "estadoOferta": "valido",
+   "motivoEstado": "Modo único (decisão do autor 21/11); a recomendação de profissional da fonte aparece na tela do treino e nos Termos.",
+   "recomendacaoProfissionalDaFonte": "Otago: instrutor treinado avalia e define a dose individual."
+  },
+  {
+   "id": "PRG-10",
+   "nome": "Otago nível D (sem apoio)",
+   "fonte": "OTAGO",
+   "publico": "idosos",
+   "contexto": "casa",
+   "exercicios": "variantes nível D",
+   "estadoOferta": "valido",
+   "motivoEstado": "Modo único (decisão do autor 21/11); a recomendação de profissional da fonte aparece na tela do treino e nos Termos.",
+   "recomendacaoProfissionalDaFonte": "Otago: instrutor treinado avalia e define a dose individual."
+  },
+  {
+   "id": "PRG-11",
+   "nome": "Workout to Go",
+   "fonte": "NIA-WTG",
+   "publico": "idosos",
+   "contexto": "casa/viagem",
+   "exercicios": "6 força + 3 equilíbrio + 4 flexibilidade, com 5 min de aquecimento e 5 de volta à calma",
+   "estadoOferta": "valido",
+   "motivoEstado": "Falta extrair a dose por exercício e as precauções."
+  },
+  {
+   "id": "PRG-12",
+   "nome": "Força de corpo inteiro com pesos leves",
+   "fonte": "NIA",
+   "publico": "idosos",
+   "contexto": "casa/academia",
+   "frequencia": "2+ dias/semana",
+   "exercicios": [
+    "NIA-01",
+    "NIA-02",
+    "NIA-03",
+    "NIA-04",
+    "NIA-05",
+    "NIA-06",
+    "NIA-07",
+    "NIA-08",
+    "NIA-09",
+    "NIA-10",
+    "NIA-11",
+    "NIA-12",
+    "NIA-13",
+    "NIA-14",
+    "NIA-15",
+    "NIA-16"
+   ],
+   "estadoOferta": "valido_composicao",
+   "motivoEstado": "Composição do Claude com exercícios de autor humano, permitida pelo autor (21/11) se coerente: mesmo nível, mesma intensidade, grupos compatíveis, duração adequada.",
+   "coerencia": "Ajustar: 16 exercícios numa sessão é excessivo; dividir em A (membros superiores e preensão) e B (membros inferiores), em dias alternados, como pede a regra NIA de não repetir o grupo em dias seguidos."
+  },
+  {
+   "id": "PRG-13",
+   "nome": "Equilíbrio no dia a dia",
+   "fonte": "NIA",
+   "publico": "idosos",
+   "contexto": "casa/praca",
+   "exercicios": [
+    "NIA-17",
+    "NIA-18",
+    "NIA-19"
+   ],
+   "estadoOferta": "valido_composicao",
+   "motivoEstado": "Composição do Claude com exercícios de autor humano, permitida pelo autor (21/11) se coerente: mesmo nível, mesma intensidade, grupos compatíveis, duração adequada.",
+   "coerencia": "OK: 3 exercícios de equilíbrio, leves, mesma categoria."
+  },
+  {
+   "id": "PRG-14",
+   "nome": "Alongamento completo",
+   "fonte": "NIA",
+   "publico": "idosos/cuidadores",
+   "contexto": "casa",
+   "exercicios": [
+    "NIA-20",
+    "NIA-21",
+    "NIA-22",
+    "NIA-23",
+    "NIA-24",
+    "NIA-25",
+    "NIA-26",
+    "NIA-27",
+    "NIA-28",
+    "NIA-29",
+    "NIA-30",
+    "NIA-31",
+    "NIA-32",
+    "NIA-33"
+   ],
+   "estadoOferta": "valido_composicao",
+   "motivoEstado": "Composição do Claude com exercícios de autor humano, permitida pelo autor (21/11) se coerente: mesmo nível, mesma intensidade, grupos compatíveis, duração adequada.",
+   "coerencia": "Ajustar: inclui alongamentos no chão; fica só em casa (não na pausa)."
+  },
+  {
+   "id": "PRG-15",
+   "nome": "Pausa ativa do cuidador (~10 min)",
+   "fonte": "NHS + NIA (composição)",
+   "publico": "cuidadores",
+   "contexto": "pausa",
+   "exercicios": [
+    "NHS-SF08",
+    "NHS-S05",
+    "NHS-X01",
+    "NIA-21",
+    "NIA-23",
+    "NIA-26",
+    "NHS-S02",
+    "NHS-X02",
+    "NHS-SF07"
+   ],
+   "nota": "Composição: cada exercício mantém o autor e o benefício declarados pela própria fonte",
+   "estadoOferta": "valido_composicao",
+   "motivoEstado": "Composição do Claude com exercícios de autor humano, permitida pelo autor (21/11) se coerente: mesmo nível, mesma intensidade, grupos compatíveis, duração adequada.",
+   "coerencia": "OK: sentado/em pé, só mobilidade e alongamento leve de pescoço, ombros, tórax e tronco; ~10 min.",
+   "pendencia": "Lista atual referencia 6 exercícios NHS (fora por crédito); refazer só com NIA/UFDPar/Otago."
+  },
+  {
+   "id": "PRG-16",
+   "nome": "Força para joelhos (adultos)",
+   "fonte": "NHS",
+   "publico": "adultos",
+   "contexto": "casa",
+   "exercicios": [
+    "NHS-K01",
+    "NHS-K02",
+    "NHS-K03",
+    "NHS-K04"
+   ],
+   "estadoOferta": "fora_credito_nhs",
+   "motivoEstado": "Tradução/adaptação NHS não pode exibir crédito NHS (OGL/termos NHS 3.6b); conflita com a regra 3 do autor. Só referência interna."
+  },
+  {
+   "id": "PRG-17",
+   "nome": "Vivifrail A — pessoa com limitação funcional",
+   "fonte": "VIVIFRAIL",
+   "nivel": "N1",
+   "publico": "idosos",
+   "contexto": "casa",
+   "frequenciaFonte": "roda 5 dias/semana, 12 semanas",
+   "exercicios": [
+    "VIV-02",
+    "VIV-03",
+    "VIV-04",
+    "VIV-05",
+    "VIV-06",
+    "VIV-07",
+    "VIV-01"
+   ],
+   "estadoOferta": "valido",
+   "motivoEstado": "Modo único (decisão do autor 21/11); a recomendação de profissional da fonte aparece na tela do treino e nos Termos.",
+   "recomendacaoProfissionalDaFonte": "Vivifrail: profissional aplica contraindicações e teste funcional/SPPB e entrega o passaporte."
+  },
+  {
+   "id": "PRG-18",
+   "nome": "Vivifrail B — fragilidade",
+   "fonte": "VIVIFRAIL",
+   "nivel": "N2",
+   "publico": "idosos",
+   "contexto": "casa",
+   "frequenciaFonte": "roda 3 dias não consecutivos + caminhada 2 dias",
+   "exercicios": [
+    "VIV-02",
+    "VIV-03",
+    "VIV-08",
+    "VIV-09",
+    "VIV-04",
+    "VIV-01"
+   ],
+   "estadoOferta": "valido",
+   "motivoEstado": "Modo único (decisão do autor 21/11); a recomendação de profissional da fonte aparece na tela do treino e nos Termos.",
+   "recomendacaoProfissionalDaFonte": "Vivifrail: profissional aplica contraindicações e teste funcional/SPPB e entrega o passaporte."
+  },
+  {
+   "id": "PRG-19",
+   "nome": "Vivifrail B+ — fragilidade com risco de quedas",
+   "fonte": "VIVIFRAIL",
+   "nivel": "N2",
+   "publico": "idosos",
+   "contexto": "casa",
+   "frequenciaFonte": "idem B",
+   "estadoOferta": "valido",
+   "motivoEstado": "Modo único (decisão do autor 21/11); a recomendação de profissional da fonte aparece na tela do treino e nos Termos.",
+   "recomendacaoProfissionalDaFonte": "Vivifrail: profissional aplica contraindicações e teste funcional/SPPB e entrega o passaporte."
+  },
+  {
+   "id": "PRG-20",
+   "nome": "Vivifrail C — pré-fragilidade",
+   "fonte": "VIVIFRAIL",
+   "nivel": "N3",
+   "publico": "idosos",
+   "contexto": "casa/praca",
+   "frequenciaFonte": "roda 3 dias + caminhada 2 dias",
+   "exercicios": [
+    "VIV-02",
+    "VIV-10",
+    "VIV-11",
+    "VIV-12",
+    "VIV-13",
+    "VIV-04",
+    "VIV-14",
+    "VIV-01"
+   ],
+   "estadoOferta": "valido",
+   "motivoEstado": "Modo único (decisão do autor 21/11); a recomendação de profissional da fonte aparece na tela do treino e nos Termos.",
+   "recomendacaoProfissionalDaFonte": "Vivifrail: profissional aplica contraindicações e teste funcional/SPPB e entrega o passaporte."
+  },
+  {
+   "id": "PRG-21",
+   "nome": "Vivifrail C+ — pré-fragilidade com risco de quedas",
+   "fonte": "VIVIFRAIL",
+   "nivel": "N3",
+   "publico": "idosos",
+   "contexto": "casa",
+   "estadoOferta": "valido",
+   "motivoEstado": "Modo único (decisão do autor 21/11); a recomendação de profissional da fonte aparece na tela do treino e nos Termos.",
+   "recomendacaoProfissionalDaFonte": "Vivifrail: profissional aplica contraindicações e teste funcional/SPPB e entrega o passaporte."
+  },
+  {
+   "id": "PRG-22",
+   "nome": "Vivifrail D — pessoa robusta",
+   "fonte": "VIVIFRAIL",
+   "nivel": "N4",
+   "publico": "idosos",
+   "contexto": "casa/praca",
+   "frequenciaFonte": "roda 3 dias não consecutivos + caminhada 2 dias",
+   "exercicios": [
+    "VIV-02",
+    "VIV-10",
+    "VIV-11",
+    "VIV-15",
+    "VIV-16",
+    "VIV-12",
+    "VIV-04",
+    "VIV-14",
+    "VIV-01"
+   ],
+   "estadoOferta": "valido",
+   "motivoEstado": "Modo único (decisão do autor 21/11); a recomendação de profissional da fonte aparece na tela do treino e nos Termos.",
+   "recomendacaoProfissionalDaFonte": "Vivifrail: profissional aplica contraindicações e teste funcional/SPPB e entrega o passaporte."
+  },
+  {
+   "id": "PRG-23",
+   "nome": "Vivifrail E — robusto avançado",
+   "fonte": "VIVIFRAIL",
+   "nivel": "N4",
+   "publico": "idosos/adultos",
+   "contexto": "academia/praca",
+   "frequenciaFonte": "roda + caminhada/trote",
+   "exercicios": [
+    "VIV-04",
+    "VIV-17",
+    "VIV-14",
+    "VIV-18",
+    "VIV-19",
+    "VIV-20",
+    "VIV-21",
+    "VIV-22",
+    "VIV-15",
+    "VIV-16"
+   ],
+   "estadoOferta": "valido",
+   "motivoEstado": "Modo único (decisão do autor 21/11); a recomendação de profissional da fonte aparece na tela do treino e nos Termos.",
+   "recomendacaoProfissionalDaFonte": "Vivifrail: profissional aplica contraindicações e teste funcional/SPPB e entrega o passaporte."
+  },
+  {
+   "id": "PRG-24",
+   "nome": "UFPR Queda + Vida — fase 1 (1º mês)",
+   "fonte": "UFPR",
+   "nivel": "N1",
+   "publico": "idosos",
+   "contexto": "casa",
+   "frequenciaFonte": "treinos A/B/C alternados, ao menos 3 dias/semana",
+   "exercicios": "Exercícios 1–32 (mobilidade, força deitado/sentado, alongamento, equilíbrio com apoio)",
+   "estadoOferta": "valido",
+   "motivoEstado": "Modo único (decisão do autor 21/11); a recomendação de profissional da fonte aparece na tela do treino e nos Termos.",
+   "recomendacaoProfissionalDaFonte": "UFPR p. 4: prescrição deve ser feita por fisioterapeuta ou profissional de educação física."
+  },
+  {
+   "id": "PRG-25",
+   "nome": "UFPR Queda + Vida — fase 2 (2º mês)",
+   "fonte": "UFPR",
+   "nivel": "N2",
+   "publico": "idosos",
+   "contexto": "casa",
+   "exercicios": "Exercícios 33–56",
+   "estadoOferta": "valido",
+   "motivoEstado": "Modo único (decisão do autor 21/11); a recomendação de profissional da fonte aparece na tela do treino e nos Termos.",
+   "recomendacaoProfissionalDaFonte": "UFPR p. 4: prescrição deve ser feita por fisioterapeuta ou profissional de educação física."
+  },
+  {
+   "id": "PRG-26",
+   "nome": "UFPR Queda + Vida — fase 3 (3º mês, com pesos caseiros)",
+   "fonte": "UFPR",
+   "nivel": "N3",
+   "publico": "idosos",
+   "contexto": "casa",
+   "exercicios": "Exercícios 57–80",
+   "estadoOferta": "valido",
+   "motivoEstado": "Modo único (decisão do autor 21/11); a recomendação de profissional da fonte aparece na tela do treino e nos Termos.",
+   "recomendacaoProfissionalDaFonte": "UFPR p. 4: prescrição deve ser feita por fisioterapeuta ou profissional de educação física."
+  },
+  {
+   "id": "PRG-27",
+   "nome": "UFPR Queda + Vida — fase 4",
+   "fonte": "UFPR",
+   "nivel": "N4",
+   "publico": "idosos",
+   "contexto": "casa/praca",
+   "exercicios": "Exercícios 81–103 (extração detalhada pendente)",
+   "estadoOferta": "valido",
+   "motivoEstado": "Modo único (decisão do autor 21/11); a recomendação de profissional da fonte aparece na tela do treino e nos Termos.",
+   "recomendacaoProfissionalDaFonte": "UFPR p. 4: prescrição deve ser feita por fisioterapeuta ou profissional de educação física."
+  },
+  {
+   "id": "PRG-28",
+   "nome": "AGUEDA nível 1 (elástico e peso corporal)",
+   "fonte": "AGUEDA",
+   "nivel": "N2",
+   "publico": "idosos",
+   "contexto": "casa/academia",
+   "frequenciaFonte": "3 sessões rotativas, 24 semanas",
+   "estadoOferta": "valido",
+   "motivoEstado": "Modo único (decisão do autor 21/11); a recomendação de profissional da fonte aparece na tela do treino e nos Termos.",
+   "recomendacaoProfissionalDaFonte": "AGUEDA: sessões supervisionadas (1 profissional para 4–6 idosos)."
+  },
+  {
+   "id": "PRG-29",
+   "nome": "AGUEDA nível 2",
+   "fonte": "AGUEDA",
+   "nivel": "N3",
+   "publico": "idosos",
+   "contexto": "casa/academia",
+   "estadoOferta": "valido",
+   "motivoEstado": "Modo único (decisão do autor 21/11); a recomendação de profissional da fonte aparece na tela do treino e nos Termos.",
+   "recomendacaoProfissionalDaFonte": "AGUEDA: sessões supervisionadas (1 profissional para 4–6 idosos)."
+  },
+  {
+   "id": "PRG-30",
+   "nome": "AGUEDA nível 3",
+   "fonte": "AGUEDA",
+   "nivel": "N4",
+   "publico": "idosos/adultos",
+   "contexto": "casa/academia",
+   "estadoOferta": "valido",
+   "motivoEstado": "Modo único (decisão do autor 21/11); a recomendação de profissional da fonte aparece na tela do treino e nos Termos.",
+   "recomendacaoProfissionalDaFonte": "AGUEDA: sessões supervisionadas (1 profissional para 4–6 idosos)."
+  },
+  {
+   "id": "PRG-31",
+   "nome": "Musculação em máquinas — fase resistência (sessões A/B)",
+   "fonte": "WALKER",
+   "nivel": "N2",
+   "publico": "adultos/idosos",
+   "contexto": "academia",
+   "frequenciaFonte": "2 sessões alternadas",
+   "exercicios": [
+    "WLK-01",
+    "WLK-02",
+    "WLK-03",
+    "WLK-04",
+    "WLK-05",
+    "WLK-06",
+    "WLK-07",
+    "WLK-08",
+    "WLK-09",
+    "WLK-10",
+    "WLK-11",
+    "WLK-12"
+   ],
+   "estadoOferta": "valido",
+   "motivoEstado": "Modo único (decisão do autor 21/11); a recomendação de profissional da fonte aparece na tela do treino e nos Termos.",
+   "recomendacaoProfissionalDaFonte": "Ensaio supervisionado; cargas por %1RM/8RM exigem avaliação."
+  },
+  {
+   "id": "PRG-32",
+   "nome": "Musculação em máquinas — fase hipertrofia",
+   "fonte": "WALKER",
+   "nivel": "N3",
+   "publico": "adultos/idosos",
+   "contexto": "academia",
+   "exercicios": [
+    "WLK-01",
+    "WLK-02",
+    "WLK-03",
+    "WLK-04",
+    "WLK-05",
+    "WLK-06",
+    "WLK-13",
+    "WLK-07",
+    "WLK-08"
+   ],
+   "estadoOferta": "valido",
+   "motivoEstado": "Modo único (decisão do autor 21/11); a recomendação de profissional da fonte aparece na tela do treino e nos Termos.",
+   "recomendacaoProfissionalDaFonte": "Ensaio supervisionado; cargas por %1RM/8RM exigem avaliação."
+  },
+  {
+   "id": "PRG-33",
+   "nome": "Musculação em máquinas — fase força",
+   "fonte": "WALKER",
+   "nivel": "N4",
+   "publico": "adultos/idosos",
+   "contexto": "academia",
+   "exercicios": "Fases seguintes da tabela do artigo (extração pendente)",
+   "estadoOferta": "valido",
+   "motivoEstado": "Modo único (decisão do autor 21/11); a recomendação de profissional da fonte aparece na tela do treino e nos Termos.",
+   "recomendacaoProfissionalDaFonte": "Ensaio supervisionado; cargas por %1RM/8RM exigem avaliação."
+  },
+  {
+   "id": "PRG-34",
+   "nome": "Força + equilíbrio tradicional em academia (grupo controle ativo)",
+   "fonte": "METASTABLE",
+   "nivel": "N3",
+   "publico": "idosos",
+   "contexto": "academia",
+   "exercicios": "Aquecimento em ergômetro, mobilidade, equilíbrio em superfícies instáveis e força progressiva (tabela do artigo)",
+   "estadoOferta": "valido",
+   "motivoEstado": "Modo único (decisão do autor 21/11); a recomendação de profissional da fonte aparece na tela do treino e nos Termos.",
+   "recomendacaoProfissionalDaFonte": "Ensaio supervisionado; cargas por %1RM/8RM exigem avaliação."
+  },
+  {
+   "id": "PRG-35",
+   "nome": "Circuito na academia ao ar livre (8 semanas)",
+   "fonte": "MARCOSPARDO",
+   "nivel": "N3",
+   "publico": "adultos/idosos",
+   "contexto": "praca",
+   "frequenciaFonte": "2x/semana",
+   "exercicios": [
+    "OFE-01",
+    "OFE-02",
+    "OFE-03",
+    "OFE-04",
+    "OFE-05",
+    "OFE-06"
+   ],
+   "estadoOferta": "valido",
+   "motivoEstado": "Modo único (decisão do autor 21/11); a recomendação de profissional da fonte aparece na tela do treino e nos Termos.",
+   "recomendacaoProfissionalDaFonte": "Ensaio supervisionado; cargas por %1RM/8RM exigem avaliação."
+  },
+  {
+   "id": "PRG-36",
+   "nome": "Academia ao ar livre supervisionada (ATI)",
+   "fonte": "BARBOSA",
+   "nivel": "N2",
+   "publico": "idosos",
+   "contexto": "praca",
+   "frequenciaFonte": "3x/semana, 30 min, dias não consecutivos",
+   "exercicios": "Aquecimento 5 min caminhando + 20 séries de 30 s (remo elíptico, surf, leg press) + 5 min volta à calma",
+   "estadoOferta": "valido",
+   "motivoEstado": "Modo único (decisão do autor 21/11); a recomendação de profissional da fonte aparece na tela do treino e nos Termos.",
+   "recomendacaoProfissionalDaFonte": "Barbosa: braço supervisionado; o braço não supervisionado não descreve sessão reproduzível."
+  },
+  {
+   "id": "PRG-37",
+   "nome": "Parque de exercícios para idosos (12 semanas)",
+   "fonte": "ENJOY",
+   "nivel": "N1-N2",
+   "publico": "idosos",
+   "contexto": "praca",
+   "frequenciaFonte": "estações de 60→90 s, 12 semanas",
+   "exercicios": "Estações de equilíbrio, ombro, sentar-levantar e escada",
+   "estadoOferta": "valido",
+   "motivoEstado": "Modo único (decisão do autor 21/11); a recomendação de profissional da fonte aparece na tela do treino e nos Termos.",
+   "recomendacaoProfissionalDaFonte": "ENJOY: programa supervisionado em parque específico para idosos."
+  },
+  {
+   "id": "PRG-38",
+   "nome": "Ginástica laboral da pausa (preparatória, compensatória e relaxamento)",
+   "fonte": "UFDPAR",
+   "nivel": "todos",
+   "publico": "cuidadores",
+   "contexto": "pausa",
+   "frequenciaFonte": "até 3 vezes ao dia, 10–15 min",
+   "exercicios": "11 exercícios por região (cervical, torácica e ombros, lombar e pernas), 30 s cada",
+   "estadoOferta": "valido",
+   "motivoEstado": "UFDPar: cartilha cita programa planejado e supervisionado por profissional; confirmar se a cartilha é para autoaplicação."
+  },
+  {
+   "id": "PRG-39",
+   "nome": "Alongamento de corpo inteiro na pausa (30 min)",
+   "fonte": "ALQHTANI",
+   "nivel": "todos",
+   "publico": "cuidadores",
+   "contexto": "casa",
+   "frequenciaFonte": "3x/semana",
+   "exercicios": [
+    "ALQ-01",
+    "ALQ-02",
+    "ALQ-03",
+    "ALQ-04",
+    "ALQ-05",
+    "ALQ-06",
+    "ALQ-07",
+    "ALQ-08",
+    "ALQ-09",
+    "ALQ-10",
+    "ALQ-11",
+    "ALQ-12"
+   ],
+   "estadoOferta": "valido_fora_da_pausa",
+   "motivoEstado": "30 min: não cabe na pausa ≤15 min; pode ser usado em casa.",
+   "recomendacaoProfissionalDaFonte": "Alqhtani: aulas de 30 min com fisioterapeuta para profissionais de saúde; não cabe em pausa ≤15 min."
+  },
+  {
+   "id": "PRG-40",
+   "nome": "Força em máquinas para idosos muito velhos (2x/semana, 8 semanas)",
+   "fonte": "KRIST",
+   "nivel": "N1",
+   "publico": "idosos",
+   "contexto": "academia",
+   "frequenciaFonte": "2x/semana",
+   "exercicios": "Máquinas de supino, extensão de pernas e outras (tabela do artigo); carga pela máxima de 8 repetições",
+   "estadoOferta": "valido",
+   "motivoEstado": "Modo único (decisão do autor 21/11); a recomendação de profissional da fonte aparece na tela do treino e nos Termos.",
+   "recomendacaoProfissionalDaFonte": "Ensaio supervisionado; cargas por %1RM/8RM exigem avaliação."
+  },
+  {
+   "id": "PRG-41",
+   "nome": "STRONG — força e bicicleta para nonagenários",
+   "fonte": "STRONG",
+   "nivel": "N1",
+   "publico": "idosos",
+   "contexto": "academia",
+   "frequenciaFonte": "3x/semana não consecutivas, 45–50 min, 8 semanas",
+   "exercicios": "Leg press de 30% a 70% de 1RM e bicicleta ergométrica 3–5 → 15 min (esforço 12–14)",
+   "estadoOferta": "valido",
+   "motivoEstado": "Modo único (decisão do autor 21/11); a recomendação de profissional da fonte aparece na tela do treino e nos Termos.",
+   "recomendacaoProfissionalDaFonte": "Ensaio supervisionado; cargas por %1RM/8RM exigem avaliação."
+  },
+  {
+   "id": "PRG-42",
+   "nome": "Caminhada ao ar livre em grupo (GO-OUT, 10 semanas)",
+   "fonte": "GOOUT",
+   "nivel": "N1-N2",
+   "publico": "idosos",
+   "contexto": "praca",
+   "exercicios": "Oficina inicial + caminhada em grupo progressiva ao ar livre (detalhes no artigo)",
+   "estadoOferta": "valido",
+   "motivoEstado": "Modo único (decisão do autor 21/11); a recomendação de profissional da fonte aparece na tela do treino e nos Termos.",
+   "recomendacaoProfissionalDaFonte": "GO-OUT: oficina e caminhada em grupo com líderes."
+  }
+ ],
+ "excluidos": [
+  {
+   "fonte": "Cartilha PUC-SP (anexo de TCC, 2016)",
+   "motivo": "copia figuras de cartilhas de terceiros (SBR e INTO); usar a fonte original se for necessário"
+  },
+  {
+   "fonte": "TSE — Pausa ativa",
+   "motivo": "servidor recusou o acesso (403); não repetido"
+  }
+ ],
+ "niveisStatus": "Descontinuado como classificação da pessoa (debate 21/11): usar o critério de entrada de cada fonte; fases UFPR são progressão, não nível.",
+ "modoUnico": "Decisão do autor (21/11): sem modos separados. O app mostra o treino para a pessoa assistir e fazer; quando a fonte recomenda profissional, isso aparece no treino e nos Termos de Uso aceitos.",
+ "modalidadesComplementares": {
+  "atualizadoEm": "2026-11-21",
+  "regra": "Só entra no app com sessão fechada (lista, dose, duração, benefício) de autor humano identificável; as demais ficam como candidatas.",
+  "itens": [
+   {
+    "modalidade": "Caminhada",
+    "status": "pronta",
+    "sessoes": [
+     "SES-CAM-NIA-INI",
+     "SES-CAM-NIA-INT",
+     "SES-CAM-NIA-AVA"
+    ],
+    "fonte": "NIA 2018; MS 2021"
+   },
+   {
+    "modalidade": "Equilíbrio sem peso (Otago)",
+    "status": "pronta",
+    "sessoes": [
+     "SES-OTG-EQ-INI",
+     "SES-OTG-EQ-INT",
+     "SES-OTG-EQ-AVA"
+    ],
+    "fonte": "Otago (CC BY 4.0)"
+   },
+   {
+    "modalidade": "Baduanjin (qigong)",
+    "status": "parcial: lista e dose fechadas; falta instrução de cada postura",
+    "sessoes": [
+     "SES-BADUANJIN"
+    ],
+    "fonte": "PMC9673889, PMC7312696 (CC BY)"
+   },
+   {
+    "modalidade": "Miniexercícios ao longo do dia (exercise snacking)",
+    "status": "pronta",
+    "sessoes": [
+     "SES-SNACK-A",
+     "SES-SNACK-B"
+    ],
+    "fonte": "Fyfe et al. 2022 (CC BY 4.0)"
+   },
+   {
+    "modalidade": "Alongamento com respiração",
+    "status": "pronta",
+    "sessoes": [
+     "SES-COMP-SENT-D",
+     "SES-COMP-PAUSA-RELAX",
+     "SES-PE-NIA-ALONG",
+     "SES-PS-NIA-COSTAS"
+    ],
+    "fonte": "NIA; UFDPar"
+   },
+   {
+    "modalidade": "LiFE: equilíbrio e força nas tarefas do dia",
+    "status": "candidata (hábitos, sem dose fixa por desenho)",
+    "fonte": "Clemson et al. 2012, BMJ (PMC3413733, CC BY-NC 2.0): 31% menos quedas; estratégias de equilíbrio (diminuir a base, ir ao limite do balanço, passar o peso de um pé ao outro, passar por cima de objetos, virar e mudar de direção) e de força (dobrar os joelhos, ponta dos pés, subir escadas, calcanhares, sentar e levantar, andar de lado, contrair músculos)",
+    "uso": "dicas para o cuidador encaixar no dia; licença não comercial: usar só as estratégias (fatos), sem reproduzir o manual; a licença do artigo não cobre o manual nem vídeos do programa"
+   },
+   {
+    "modalidade": "Tai Ji Quan: Moving for Better Balance",
+    "status": "candidata",
+    "fonte": "Li et al. 2018 JAMA Intern Med; PMC6484587 (CC BY): 2×/semana, 60 min, reduz quedas",
+    "falta": "8 formas não descritas no texto aberto; programa com instrutor licenciado"
+   },
+   {
+    "modalidade": "Dança sênior",
+    "status": "candidata",
+    "fonte": "Franco et al. 2016, BMJ Open (PMC5223667, CC BY-NC 4.0): 12 semanas, 2×/semana; MS 2021 cita dança",
+    "falta": "coreografias não descritas",
+    "uso": "licença CC BY-NC 4.0: usar só parâmetros (frequência, duração); coreografias, textos e mídia exigem autorização"
+   },
+   {
+    "modalidade": "Square Stepping (passos no tapete quadriculado)",
+    "status": "candidata",
+    "fonte": "Shigematsu 2008 (PubMed 18283224); PMC8910098, PMC11046944 (CC BY)",
+    "falta": "padrões de passos e tapete de 250 cm; protocolo completo não extraído"
+   },
+   {
+    "modalidade": "Lian Gong em 18 terapias",
+    "status": "candidata",
+    "fonte": "Prática do SUS (Portaria 971/2006, PNPIC); muito praticada em praças",
+    "falta": "manual oficial com descrição e dose não encontrado em acesso aberto"
+   },
+   {
+    "modalidade": "Pilates solo",
+    "status": "pronta",
+    "fonte": "Jirapongsatorn et al. 2026 (PMC13116437, CC BY 4.0); meta-análise PMC8947639",
+    "falta": "exige descer ao chão: oferecer só a quem consegue",
+    "sessoes": [
+     "SES-PILATES-SOLO"
+    ]
+   },
+   {
+    "modalidade": "Yoga na cadeira e Tai Chi + caminhada",
+    "status": "parcial",
+    "sessoes": [
+     "SES-CYOGA",
+     "SES-TAICHI-WALK"
+    ],
+    "falta": "sequência fechada"
+   },
+   {
+    "modalidade": "Relaxamento muscular progressivo",
+    "status": "pronta",
+    "sessoes": [
+     "SES-RELAX-PMR"
+    ],
+    "fonte": "Maritescu et al. 2025 (PMC12027757, CC BY 4.0); ensaios em idosos em instituição (Psychogeriatrics 2021)"
+   },
+   {
+    "modalidade": "Yoga na cadeira (Gentle Years Yoga)",
+    "status": "candidata",
+    "fonte": "Tew et al. 2024 (PMC11411245, CC BY 4.0): aula de 75 min = 5 acolhimento + 5 respiração e foco + 30–35 aquecimento/mobilização + 10–15 posturas e restaurativas + 5–10 respiração + 5–10 relaxamento; seguro e aceitável",
+    "falta": "posturas não listadas no artigo; programa © British Wheel of Yoga"
+   }
+  ],
+  "licencas": "Licença de artigo (CC BY/CC BY-NC) cobre o artigo, não manuais, coreografias ou vídeos citados. NC: só parâmetros reexpressos; nada de texto adaptado ou mídia sem autorização."
+ }
+}
