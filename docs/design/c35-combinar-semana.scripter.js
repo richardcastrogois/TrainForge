@@ -18,11 +18,11 @@ await figma.loadFontAsync({ family: "Inter", style: "Semi Bold" });
 await figma.loadFontAsync({ family: "Inter", style: "Bold" });
 
 const ref = await figma.getNodeByIdAsync("23:1080");
-const screen = figma.createAutoLayout("VERTICAL", { name: "26 · Combinar a semana (C35)", itemSpacing: 16 });
+const screen = figma.createAutoLayout("VERTICAL", { name: "26 · Combinar a semana (C35)", itemSpacing: 12 });
 screen.resize(390, 844);
 screen.primaryAxisSizingMode = "FIXED";
 screen.paddingLeft = screen.paddingRight = 24;
-screen.paddingTop = 56;
+screen.paddingTop = 40;
 screen.paddingBottom = 24;
 screen.fills = [{ type: "SOLID", color: C.bg }];
 screen.x = ref ? ref.x + ref.width + 80 : 4000;
@@ -50,13 +50,13 @@ const options = [
   ["Equilíbrio e mobilidade (sem peso)", "Só sessões sem levantar peso: equilíbrio, mobilidade, alongamento e peso do corpo. Para casa, praça ou pausa do cuidador.", true],
   ["Decidir depois", "", false],
 ];
-const list = figma.createAutoLayout("VERTICAL", { name: "Opções", itemSpacing: 8 });
+const list = figma.createAutoLayout("VERTICAL", { name: "Opções", itemSpacing: 6 });
 screen.appendChild(list);
 list.layoutSizingHorizontal = "FILL";
 for (const [title, hint, selected] of options) {
   const row = figma.createAutoLayout("HORIZONTAL", { name: `Opção · ${title}`, itemSpacing: 12 });
   row.paddingLeft = row.paddingRight = 16;
-  row.paddingTop = row.paddingBottom = 14;
+  row.paddingTop = row.paddingBottom = 10;
   row.cornerRadius = 16;
   row.fills = [{ type: "SOLID", color: C.card }];
   row.strokes = [{ type: "SOLID", color: selected ? C.primary : C.line }];
