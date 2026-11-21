@@ -40,7 +40,8 @@ class AppearanceController extends ChangeNotifier {
     AppearanceStore? store,
     this.restoreTimeout = const Duration(seconds: 2),
   }) : store = store ?? NativeAppearanceStore();
-  ThemeMode mode = ThemeMode.system;
+  // Fresh installs start light; the person can choose dark or system.
+  ThemeMode mode = ThemeMode.light;
   bool loaded = false, reading = false, saving = false, _disposed = false;
   ThemeMode? _retryMode;
   bool get readFailed =>
@@ -55,7 +56,8 @@ class AppearanceController extends ChangeNotifier {
     mode = switch (saved) {
       'light' => ThemeMode.light,
       'dark' => ThemeMode.dark,
-      _ => ThemeMode.system,
+      'system' => ThemeMode.system,
+      _ => ThemeMode.light,
     };
     feedback = saved != null && !{'system', 'light', 'dark'}.contains(saved)
         ? AppearanceFeedback.appearanceInvalid

@@ -67,16 +67,29 @@ void main() {
       final store = MemoryAppearance()..saved = 'invalid';
       final c = AppearanceController(store: store);
       await c.restore();
-      expect(c.mode, ThemeMode.system);
+      // Invalid or missing preference falls back to the light default.
+      expect(c.mode, ThemeMode.light);
       expect(c.message, isNotNull);
       store.failure = StateError('private details must not be exposed');
       await c.select(ThemeMode.dark);
-      expect(c.mode, ThemeMode.system);
+      expect(c.mode, ThemeMode.light);
       expect(c.message, contains('Não foi possível'));
       expect(c.message, isNot(contains('private')));
       c.dispose();
     },
   );
+  test('fresh install starts light; saved system is kept', () async {
+    final fresh = AppearanceController(store: MemoryAppearance());
+    await fresh.restore();
+    expect(fresh.mode, ThemeMode.light);
+    final system = AppearanceController(
+      store: MemoryAppearance()..saved = 'system',
+    );
+    await system.restore();
+    expect(system.mode, ThemeMode.system);
+    fresh.dispose();
+    system.dispose();
+  });
   test('late appearance write does not notify a disposed controller', () async {
     final store = MemoryAppearance(),
         c = AppearanceController(store: MemoryAppearance());

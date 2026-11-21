@@ -105,24 +105,32 @@ class _AuthPageState extends State<AuthPage> with TickerProviderStateMixin {
   Widget build(BuildContext context) {
     final controller = widget.controller;
     if (controller == null) return AuthGate();
-    return AnnotatedRegion<SystemUiOverlayStyle>(
-      value: const SystemUiOverlayStyle(
-        statusBarColor: Colors.transparent,
-        statusBarIconBrightness: Brightness.light,
-        statusBarBrightness: Brightness.dark,
-        systemNavigationBarColor: TrainForgeTheme.background,
-        systemNavigationBarIconBrightness: Brightness.dark,
-      ),
-      child: Scaffold(
-        backgroundColor: TrainForgeTheme.canvas,
-        body: AnimatedBuilder(
-          animation: Listenable.merge([master, beat, idle, pulse]),
-          builder: (context, _) {
-            final t = master.value * EntryTimeline.total;
-            if (t < EntryTimeline.bigEnd) {
-              WidgetsBinding.instance.addPostFrameCallback((_) => measure());
-            }
-            return GestureDetector(
+    return Scaffold(
+      backgroundColor: TrainForgeTheme.canvas,
+      body: AnimatedBuilder(
+        animation: Listenable.merge([master, beat, idle, pulse]),
+        builder: (context, _) {
+          final t = master.value * EntryTimeline.total;
+          if (t < EntryTimeline.bigEnd) {
+            WidgetsBinding.instance.addPostFrameCallback((_) => measure());
+          }
+          // The canvas runs behind a transparent navigation bar: no system
+          // scrim over the splash, light icons on green, dark icons once the
+          // login sheet (which already pads for the bar) covers the bottom.
+          final sheetUp = EntryTimeline.span(t, 4750, 5450) > .5;
+          return AnnotatedRegion<SystemUiOverlayStyle>(
+            value: SystemUiOverlayStyle(
+              statusBarColor: Colors.transparent,
+              statusBarIconBrightness: Brightness.light,
+              statusBarBrightness: Brightness.dark,
+              systemNavigationBarColor: Colors.transparent,
+              systemNavigationBarDividerColor: Colors.transparent,
+              systemNavigationBarContrastEnforced: false,
+              systemNavigationBarIconBrightness: sheetUp
+                  ? Brightness.dark
+                  : Brightness.light,
+            ),
+            child: GestureDetector(
               behavior: HitTestBehavior.translucent,
               onTap: t < EntryTimeline.bigEnd ? skip : null,
               child: LayoutBuilder(
@@ -135,9 +143,9 @@ class _AuthPageState extends State<AuthPage> with TickerProviderStateMixin {
                   ],
                 ),
               ),
-            );
-          },
-        ),
+            ),
+          );
+        },
       ),
     );
   }

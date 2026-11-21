@@ -112,4 +112,41 @@ void main() {
     );
     image.dispose();
   });
+  testWidgets(
+    'dragging along the bar lights the icon under the finger and opens it on release',
+    (t) async {
+      final opened = <TrainForgeDestination>[];
+      await t.pumpWidget(
+        MaterialApp(
+          home: Scaffold(
+            body: Center(
+              child: SizedBox(
+                width: 342,
+                child: FigmaBottomNav(
+                  selected: TrainForgeDestination.today,
+                  onSelected: opened.add,
+                ),
+              ),
+            ),
+          ),
+        ),
+      );
+      await t.pumpAndSettle();
+      final start = t.getCenter(
+        find.byTooltip(TrainForgeDestination.today.label),
+      );
+      final end = t.getCenter(find.byTooltip(TrainForgeDestination.food.label));
+      final gesture = await t.startGesture(start);
+      await t.pump(const Duration(milliseconds: 600));
+      await gesture.moveTo(Offset.lerp(start, end, .5)!);
+      await t.pump();
+      expect(opened, isEmpty, reason: 'nothing opens while the finger is down');
+      await gesture.moveTo(end);
+      await t.pump();
+      await gesture.up();
+      await t.pumpAndSettle();
+      expect(opened, [TrainForgeDestination.food]);
+      expect(t.takeException(), isNull);
+    },
+  );
 }
