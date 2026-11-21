@@ -85,6 +85,7 @@ func TestConfigurationPostgresLifecycle(t *testing.T) {
 	}
 	command := declared()
 	command.Configuration.Resources = Resources{Status: "declared", Items: []ResourceRef{{"config-source", 7}}}
+	command.Configuration.WeeklyMix = pointer("balance_mobility")
 	saved, e := service.Save(ctx, a, command, fixtureKey)
 	if e != nil || saved.Revision != 1 {
 		t.Fatal("save configuration", e)
@@ -95,6 +96,8 @@ func TestConfigurationPostgresLifecycle(t *testing.T) {
 		func(doc map[string]any) { doc["owner"] = "forged" },
 		func(doc map[string]any) { doc["configuration"].(map[string]any)["height"] = 170 },
 		func(doc map[string]any) { doc["configuration"].(map[string]any)["timezone"] = "Local" },
+		func(doc map[string]any) { doc["configuration"].(map[string]any)["weeklyMix"] = "only_cardio" },
+		func(doc map[string]any) { doc["configuration"].(map[string]any)["weeklyMix"] = 3 },
 	} {
 		encoded, _ := json.Marshal(command.Canonical())
 		var doc map[string]any
@@ -110,6 +113,9 @@ func TestConfigurationPostgresLifecycle(t *testing.T) {
 	var before string
 	if writer.QueryRow(ctx, "SELECT configuration::text FROM trainforge_v1.training_configuration_versions WHERE user_id=$1 AND revision=1", a.User.ID).Scan(&before) != nil {
 		t.Fatal("stored version")
+	}
+	if !strings.Contains(before, `"weeklyMix": "balance_mobility"`) || saved.Configuration.WeeklyMix == nil || *saved.Configuration.WeeklyMix != "balance_mobility" {
+		t.Fatal("declared weekly mix not persisted", before)
 	}
 	repeated, e := service.Save(ctx, a, command, fixtureKey)
 	if e != nil || !repeated.ConfirmedAt.Equal(saved.ConfirmedAt) {

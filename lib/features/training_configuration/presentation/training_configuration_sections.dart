@@ -21,6 +21,21 @@ String configPlace(BuildContext context, String place) => switch (place) {
   'park' => context.l10n.configPark,
   _ => context.l10n.configGym,
 };
+String configWeeklyMix(BuildContext context, String? mix) => switch (mix) {
+  'strength_only' => context.l10n.configMixStrength,
+  'strength_walking' => context.l10n.configMixWalking,
+  'strength_mind' => context.l10n.configMixMind,
+  'complete' => context.l10n.configMixComplete,
+  'balance_mobility' => context.l10n.configMixBalance,
+  _ => context.l10n.configMixLater,
+};
+String configWeeklyMixHint(BuildContext context, String mix) => switch (mix) {
+  'strength_only' => context.l10n.configMixStrengthHint,
+  'strength_walking' => context.l10n.configMixWalkingHint,
+  'strength_mind' => context.l10n.configMixMindHint,
+  'complete' => context.l10n.configMixCompleteHint,
+  _ => context.l10n.configMixBalanceHint,
+};
 String configResourceStatus(BuildContext context, String? status) =>
     switch (status) {
       'declared' => context.l10n.configDeclared,
@@ -312,8 +327,61 @@ class TrainingConfigurationSections extends StatelessWidget {
           ],
         ),
       ),
+      const SizedBox(height: 16),
+      weeklyMix(context),
     ],
   );
+  Widget weeklyMix(BuildContext context) {
+    // Without home, park or a caregiver break, the no-weight option has no matching sessions.
+    final balanceAvailable =
+        d.environments.contains('home') ||
+        d.environments.contains('park') ||
+        d.context == 'caregiver_break';
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.stretch,
+      children: [
+        FlowSectionTitle(context.l10n.configMixTitle),
+        Text(context.l10n.configMixHint),
+        group(
+          'configuration.weeklyMix',
+          context.l10n.configMixInvalid,
+          RadioGroup<String>(
+            groupValue: d.weeklyMix ?? '',
+            onChanged: enabled
+                ? (value) => controller.update(
+                    (d) => d.weeklyMix = value == null || value.isEmpty
+                        ? null
+                        : value,
+                  )
+                : (_) {},
+            child: Column(
+              children: [
+                for (final mix in trainingWeeklyMixes)
+                  RadioListTile<String>(
+                    key: ValueKey('mix-$mix'),
+                    enabled:
+                        enabled &&
+                        (mix != 'balance_mobility' || balanceAvailable),
+                    contentPadding: EdgeInsets.zero,
+                    value: mix,
+                    title: Text(configWeeklyMix(context, mix)),
+                    subtitle: Text(configWeeklyMixHint(context, mix)),
+                  ),
+                RadioListTile<String>(
+                  key: const ValueKey('mix-later'),
+                  enabled: enabled,
+                  contentPadding: EdgeInsets.zero,
+                  value: '',
+                  title: Text(context.l10n.configMixLater),
+                ),
+              ],
+            ),
+          ),
+        ),
+      ],
+    );
+  }
+
   Widget slot(BuildContext context, AvailabilityDraft a, int index) {
     final field = 'configuration.availability.$index';
     return Padding(
@@ -439,6 +507,12 @@ class TrainingConfigurationSections extends StatelessWidget {
       ]),
       reviewSection(context, context.l10n.configAvailability, 2, [
         Text(d.timezone),
+        Padding(
+          padding: const EdgeInsets.only(top: 8),
+          child: Text(
+            '${context.l10n.configMixTitle}: ${configWeeklyMix(context, d.weeklyMix)}',
+          ),
+        ),
         for (final a in d.availability)
           Padding(
             padding: const EdgeInsets.only(top: 8),

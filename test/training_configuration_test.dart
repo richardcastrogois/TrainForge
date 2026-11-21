@@ -145,6 +145,22 @@ void main() {
       expect(s.draft().environments, {'home'});
     },
   );
+  test('weekly mix is optional, round-trips and rejects unknown values', () {
+    final d = TrainingDraft.fromJson(configFixture());
+    expect(d.weeklyMix, isNull);
+    expect(d.toJson().containsKey('weeklyMix'), false);
+    for (final mix in trainingWeeklyMixes) {
+      d.weeklyMix = mix;
+      expect(d.validate(), isEmpty);
+      expect(TrainingDraft.fromJson(d.toJson()).weeklyMix, mix);
+    }
+    d.weeklyMix = 'only_cardio';
+    expect(d.validate(), contains('configuration.weeklyMix'));
+    expect(
+      () => TrainingDraft.fromJson({...configFixture(), 'weeklyMix': 'x'}),
+      throwsFormatException,
+    );
+  });
   test(
     'resource projection rejects unrelated, duplicate or missing identities',
     () {
@@ -396,6 +412,9 @@ void main() {
         await reach(t, find.byKey(const Key('minutes-1')));
         await t.enterText(find.byKey(const Key('minutes-1')), '15');
         await t.pumpAndSettle();
+        await reach(t, find.byKey(const Key('mix-balance_mobility')));
+        await t.tap(find.byKey(const Key('mix-balance_mobility')));
+        await t.pumpAndSettle();
         // Locale changes must not refetch private data or erase answers.
         language.value = const Locale('en');
         await t.pumpAndSettle();
@@ -414,6 +433,10 @@ void main() {
         expect(r.bodies.length, 1);
         expect(r.bodies.single['reviewed'], true);
         expect(r.bodies.single['configuration']['context'], 'caregiver_break');
+        expect(
+          r.bodies.single['configuration']['weeklyMix'],
+          'balance_mobility',
+        );
         final body = jsonEncode(r.bodies.single), key = r.keys.single;
         r.error = null;
         await reach(t, find.text('Retry confirmation'), delta: -250);

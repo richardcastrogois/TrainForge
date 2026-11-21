@@ -2291,4 +2291,52 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get logoPulse => 'Feel TrainForge\'s pulse';
+
+  @override
+  String get configMixTitle => 'How to combine your week';
+
+  @override
+  String get configMixHint =>
+      'Optional. It only guides which kinds of sessions the app suggests; you can change it anytime.';
+
+  @override
+  String get configMixStrength => 'Strength only';
+
+  @override
+  String get configMixStrengthHint =>
+      'Strength sessions on the chosen days, alternating muscle groups on consecutive days.';
+
+  @override
+  String get configMixWalking => 'Strength + walking';
+
+  @override
+  String get configMixWalkingHint =>
+      'Strength 2–3 days, alternating, and walking on the other days.';
+
+  @override
+  String get configMixMind => 'Strength + body and mind';
+
+  @override
+  String get configMixMindHint =>
+      'Strength 2–3 days and stretching, breathing, balance or relaxation on the others.';
+
+  @override
+  String get configMixComplete => 'Complete';
+
+  @override
+  String get configMixCompleteHint =>
+      'Strength, walking and a balance or body-and-mind day.';
+
+  @override
+  String get configMixBalance => 'Balance and mobility (no weights)';
+
+  @override
+  String get configMixBalanceHint =>
+      'Only sessions without lifting weights: balance, mobility, stretching and body weight. For home, the park or the caregiver break.';
+
+  @override
+  String get configMixLater => 'Decide later';
+
+  @override
+  String get configMixInvalid => 'Choose one of the options.';
 }

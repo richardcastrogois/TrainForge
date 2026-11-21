@@ -38,6 +38,7 @@ func TestInvalidFieldsHaveStableCodesWithoutEchoingValues(t *testing.T) {
 		{"review", func(c *SaveCommand) { c.Reviewed = false }, "reviewed", "review_required"},
 		{"revision", func(c *SaveCommand) { c.Revision = -1 }, "revision", "invalid_revision"},
 		{"unknown context", func(c *SaveCommand) { c.Configuration.Context = "patient" }, "configuration.context", "choose_context"},
+		{"unknown weekly mix", func(c *SaveCommand) { c.Configuration.WeeklyMix = pointer("only_cardio") }, "configuration.weeklyMix", "invalid_weekly_mix"},
 		{"no environment", func(c *SaveCommand) { c.Configuration.Environments = nil }, "configuration.environments", "choose_environment"},
 		{"duplicate environment", func(c *SaveCommand) { c.Configuration.Environments = []string{"gym", "gym"} }, "configuration.environments", "invalid_environment"},
 		{"unsupported environment", func(c *SaveCommand) { c.Configuration.Environments = []string{"clinic"} }, "configuration.environments", "invalid_environment"},
@@ -144,5 +145,23 @@ func TestOversizedCollectionsFailBeforePerItemWork(t *testing.T) {
 	issues := c.Validate()
 	if len(issues) != 3 || issues["configuration.resources.items"] != "invalid_resources" || issues["configuration.availability"] != "choose_availability" {
 		t.Fatal("unbounded or partial size checks")
+	}
+}
+
+func TestWeeklyMixIsOptionalAndOmittedWhenUndecided(t *testing.T) {
+	c := declared()
+	raw, e := json.Marshal(c.Canonical())
+	if e != nil || strings.Contains(string(raw), "weeklyMix") {
+		t.Fatal("undecided mix must stay absent", string(raw))
+	}
+	for mix := range WeeklyMixes {
+		c.Configuration.WeeklyMix = pointer(mix)
+		if issues := c.Validate(); len(issues) != 0 {
+			t.Fatal(mix, issues)
+		}
+		canonical := c.Canonical()
+		if canonical.Configuration.WeeklyMix == c.Configuration.WeeklyMix || *canonical.Configuration.WeeklyMix != mix {
+			t.Fatal("canonical copy must be independent", mix)
+		}
 	}
 }

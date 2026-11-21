@@ -2309,4 +2309,52 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get logoPulse => 'Sentir el pulso de TrainForge';
+
+  @override
+  String get configMixTitle => 'Cómo combinar tu semana';
+
+  @override
+  String get configMixHint =>
+      'Opcional. Solo orienta qué tipo de sesión sugiere la app; puedes cambiarlo cuando quieras.';
+
+  @override
+  String get configMixStrength => 'Solo fuerza';
+
+  @override
+  String get configMixStrengthHint =>
+      'Fuerza en los días elegidos, alternando grupos musculares en días seguidos.';
+
+  @override
+  String get configMixWalking => 'Fuerza + caminata';
+
+  @override
+  String get configMixWalkingHint =>
+      'Fuerza 2 a 3 días alternos y caminata los demás.';
+
+  @override
+  String get configMixMind => 'Fuerza + cuerpo y mente';
+
+  @override
+  String get configMixMindHint =>
+      'Fuerza 2 a 3 días y estiramiento, respiración, equilibrio o relajación los demás.';
+
+  @override
+  String get configMixComplete => 'Completo';
+
+  @override
+  String get configMixCompleteHint =>
+      'Fuerza, caminata y un día de equilibrio o cuerpo y mente.';
+
+  @override
+  String get configMixBalance => 'Equilibrio y movilidad (sin peso)';
+
+  @override
+  String get configMixBalanceHint =>
+      'Solo sesiones sin levantar peso: equilibrio, movilidad, estiramiento y peso corporal. Para casa, parque o la pausa de quien cuida.';
+
+  @override
+  String get configMixLater => 'Decidir después';
+
+  @override
+  String get configMixInvalid => 'Elige una de las opciones.';
 }

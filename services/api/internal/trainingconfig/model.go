@@ -38,7 +38,12 @@ type Configuration struct {
 	Context      string         `json:"context"`
 	Timezone     string         `json:"timezone"`
 	Availability []Availability `json:"availability"`
+	// WeeklyMix is the declared preference for combining activities in the week; absent means "decide later".
+	WeeklyMix *string `json:"weeklyMix,omitempty" enums:"strength_only,strength_walking,strength_mind,complete,balance_mobility" extensions:"x-nullable"`
 }
+
+// WeeklyMixes lists the accepted combination preferences. They are declarations, never prescriptions.
+var WeeklyMixes = map[string]bool{"strength_only": true, "strength_walking": true, "strength_mind": true, "complete": true, "balance_mobility": true}
 
 // SaveCommand requires explicit review and optimistic revision. Identity never comes from this body.
 type SaveCommand struct {
@@ -98,6 +103,9 @@ func (c SaveCommand) Validate() FieldIssues {
 	}
 	if f.Context != "personal" && f.Context != "caregiver_break" {
 		issues["configuration.context"] = "choose_context"
+	}
+	if f.WeeklyMix != nil && !WeeklyMixes[*f.WeeklyMix] {
+		issues["configuration.weeklyMix"] = "invalid_weekly_mix"
 	}
 	if !validTimezone(f.Timezone) {
 		issues["configuration.timezone"] = "invalid_timezone"
@@ -181,6 +189,10 @@ func validTimezone(value string) bool {
 // It is valid only after Validate has no issues. Null start means no fixed time, never midnight.
 func (c SaveCommand) Canonical() SaveCommand {
 	result := c
+	if c.Configuration.WeeklyMix != nil {
+		value := *c.Configuration.WeeklyMix
+		result.Configuration.WeeklyMix = &value
+	}
 	result.Configuration.Environments = append([]string{}, c.Configuration.Environments...)
 	sort.Strings(result.Configuration.Environments)
 	result.Configuration.Resources.Items = append([]ResourceRef{}, c.Configuration.Resources.Items...)

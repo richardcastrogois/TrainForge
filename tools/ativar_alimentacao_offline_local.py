@@ -136,9 +136,9 @@ def activate(apply=False):
     if NAME != 'trainforge_v1_dev' or PORT != 15432 or state.get('port') != 15432 or state.get('database') != NAME:
         raise RuntimeError('Unexpected owned local database registration')
     migrations = sorted((SERVICE / 'migrations').glob('*.sql'))
-    # 17 (legal consents) is reviewed too; the applied-count check below still
+    # 17 (legal consents) and 18 (optional training weekly mix) are reviewed too; the applied-count check below still
     # refuses to run this one-shot 13->16 transition on a different history.
-    if [int(path.name.split('_', 1)[0]) for path in migrations] not in (list(range(1, 17)), list(range(1, 18))):
+    if [int(path.name.split('_', 1)[0]) for path in migrations] not in (list(range(1, 17)), list(range(1, 18)), list(range(1, 19))):
         raise RuntimeError('Only reviewed migrations through schema16 are accepted')
     validate_sql_receipt(json.loads(SQL_RECEIPT.read_text(encoding='utf-8')))
     migrator = target(load_env(LOCAL / 'migrate.env')['TF_MIGRATION_DATABASE_URL'], 'migrator')

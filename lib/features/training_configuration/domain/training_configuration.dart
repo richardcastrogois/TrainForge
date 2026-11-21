@@ -4,6 +4,15 @@ Map<String, dynamic> configObject(Object? value) =>
     Map<String, dynamic>.from(value as Map);
 const trainingConfigurationContract = 'trainforge.training-configuration/1';
 
+/// Declared preference for combining activities in the week (C35); null means "decide later".
+const trainingWeeklyMixes = [
+  'strength_only',
+  'strength_walking',
+  'strength_mind',
+  'complete',
+  'balance_mobility',
+];
+
 class TrainingResourceRef {
   final String sourceId;
   final int equipmentId;
@@ -65,7 +74,7 @@ class AvailabilityDraft {
 
 class TrainingDraft {
   Set<String> environments = {};
-  String? resourceStatus, context;
+  String? resourceStatus, context, weeklyMix;
   Map<String, TrainingResourceRef> resources = {};
   String timezone;
   List<AvailabilityDraft> availability = [];
@@ -77,6 +86,7 @@ class TrainingDraft {
     final d = TrainingDraft(timezone: j['timezone'] as String);
     d.environments = Set.from(j['environments'] as List);
     d.context = j['context'] as String;
+    d.weeklyMix = j['weeklyMix'] as String?;
     final resources = configObject(j['resources']);
     d.resourceStatus = resources['status'] as String;
     for (final item in resources['items'] as List) {
@@ -112,6 +122,7 @@ class TrainingDraft {
       'items': resources.values.map((r) => r.toJson()).toList(),
     },
     'availability': availability.map((a) => a.toJson()).toList(),
+    if (weeklyMix != null) 'weeklyMix': weeklyMix,
   };
   String get fingerprint => jsonEncode(toJson());
   Map<String, String> validate() {
@@ -123,6 +134,9 @@ class TrainingDraft {
     }
     if (!{'personal', 'caregiver_break'}.contains(context)) {
       e['configuration.context'] = 'choose_context';
+    }
+    if (weeklyMix != null && !trainingWeeklyMixes.contains(weeklyMix)) {
+      e['configuration.weeklyMix'] = 'invalid_weekly_mix';
     }
     if (!{'declared', 'none', 'unknown'}.contains(resourceStatus)) {
       e['configuration.resources.status'] = 'choose_resource_status';

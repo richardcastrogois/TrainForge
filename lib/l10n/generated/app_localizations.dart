@@ -4157,6 +4157,90 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Feel TrainForge\'s pulse'**
   String get logoPulse;
+
+  /// No description provided for @configMixTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'How to combine your week'**
+  String get configMixTitle;
+
+  /// No description provided for @configMixHint.
+  ///
+  /// In en, this message translates to:
+  /// **'Optional. It only guides which kinds of sessions the app suggests; you can change it anytime.'**
+  String get configMixHint;
+
+  /// No description provided for @configMixStrength.
+  ///
+  /// In en, this message translates to:
+  /// **'Strength only'**
+  String get configMixStrength;
+
+  /// No description provided for @configMixStrengthHint.
+  ///
+  /// In en, this message translates to:
+  /// **'Strength sessions on the chosen days, alternating muscle groups on consecutive days.'**
+  String get configMixStrengthHint;
+
+  /// No description provided for @configMixWalking.
+  ///
+  /// In en, this message translates to:
+  /// **'Strength + walking'**
+  String get configMixWalking;
+
+  /// No description provided for @configMixWalkingHint.
+  ///
+  /// In en, this message translates to:
+  /// **'Strength 2–3 days, alternating, and walking on the other days.'**
+  String get configMixWalkingHint;
+
+  /// No description provided for @configMixMind.
+  ///
+  /// In en, this message translates to:
+  /// **'Strength + body and mind'**
+  String get configMixMind;
+
+  /// No description provided for @configMixMindHint.
+  ///
+  /// In en, this message translates to:
+  /// **'Strength 2–3 days and stretching, breathing, balance or relaxation on the others.'**
+  String get configMixMindHint;
+
+  /// No description provided for @configMixComplete.
+  ///
+  /// In en, this message translates to:
+  /// **'Complete'**
+  String get configMixComplete;
+
+  /// No description provided for @configMixCompleteHint.
+  ///
+  /// In en, this message translates to:
+  /// **'Strength, walking and a balance or body-and-mind day.'**
+  String get configMixCompleteHint;
+
+  /// No description provided for @configMixBalance.
+  ///
+  /// In en, this message translates to:
+  /// **'Balance and mobility (no weights)'**
+  String get configMixBalance;
+
+  /// No description provided for @configMixBalanceHint.
+  ///
+  /// In en, this message translates to:
+  /// **'Only sessions without lifting weights: balance, mobility, stretching and body weight. For home, the park or the caregiver break.'**
+  String get configMixBalanceHint;
+
+  /// No description provided for @configMixLater.
+  ///
+  /// In en, this message translates to:
+  /// **'Decide later'**
+  String get configMixLater;
+
+  /// No description provided for @configMixInvalid.
+  ///
+  /// In en, this message translates to:
+  /// **'Choose one of the options.'**
+  String get configMixInvalid;
 }
 
 class _AppLocalizationsDelegate

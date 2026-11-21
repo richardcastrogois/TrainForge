@@ -2302,6 +2302,54 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get logoPulse => 'Sentir o pulso do TrainForge';
+
+  @override
+  String get configMixTitle => 'Como combinar a tua semana';
+
+  @override
+  String get configMixHint =>
+      'Opcional. Só orienta o tipo de sessão que a app sugere; podes mudar quando quiseres.';
+
+  @override
+  String get configMixStrength => 'Só força';
+
+  @override
+  String get configMixStrengthHint =>
+      'Força nos dias escolhidos, alternando os grupos musculares em dias seguidos.';
+
+  @override
+  String get configMixWalking => 'Força + caminhada';
+
+  @override
+  String get configMixWalkingHint =>
+      'Força em 2 a 3 dias alternados e caminhada nos restantes.';
+
+  @override
+  String get configMixMind => 'Força + corpo e mente';
+
+  @override
+  String get configMixMindHint =>
+      'Força em 2 a 3 dias e alongamento, respiração, equilíbrio ou relaxamento nos restantes.';
+
+  @override
+  String get configMixComplete => 'Completo';
+
+  @override
+  String get configMixCompleteHint =>
+      'Força, caminhada e um dia de equilíbrio ou corpo e mente.';
+
+  @override
+  String get configMixBalance => 'Equilíbrio e mobilidade (sem peso)';
+
+  @override
+  String get configMixBalanceHint =>
+      'Só sessões sem levantar peso: equilíbrio, mobilidade, alongamento e peso do corpo. Para casa, parque ou pausa de quem cuida.';
+
+  @override
+  String get configMixLater => 'Decidir depois';
+
+  @override
+  String get configMixInvalid => 'Escolhe uma das opções.';
 }
 
 /// The translations for Portuguese, as used in Brazil (`pt_BR`).
@@ -4602,6 +4650,54 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
 
   @override
   String get logoPulse => 'Sentir o pulso do TrainForge';
+
+  @override
+  String get configMixTitle => 'Como combinar sua semana';
+
+  @override
+  String get configMixHint =>
+      'Opcional. Só orienta que tipo de sessão o app sugere; você pode mudar quando quiser.';
+
+  @override
+  String get configMixStrength => 'Só força';
+
+  @override
+  String get configMixStrengthHint =>
+      'Força nos dias escolhidos, alternando os grupos musculares em dias seguidos.';
+
+  @override
+  String get configMixWalking => 'Força + caminhada';
+
+  @override
+  String get configMixWalkingHint =>
+      'Força em 2 a 3 dias alternados e caminhada nos outros.';
+
+  @override
+  String get configMixMind => 'Força + corpo e mente';
+
+  @override
+  String get configMixMindHint =>
+      'Força em 2 a 3 dias e alongamento, respiração, equilíbrio ou relaxamento nos outros.';
+
+  @override
+  String get configMixComplete => 'Completo';
+
+  @override
+  String get configMixCompleteHint =>
+      'Força, caminhada e um dia de equilíbrio ou corpo e mente.';
+
+  @override
+  String get configMixBalance => 'Equilíbrio e mobilidade (sem peso)';
+
+  @override
+  String get configMixBalanceHint =>
+      'Só sessões sem levantar peso: equilíbrio, mobilidade, alongamento e peso do corpo. Para casa, praça ou pausa do cuidador.';
+
+  @override
+  String get configMixLater => 'Decidir depois';
+
+  @override
+  String get configMixInvalid => 'Escolha uma das opções.';
 }
 
 /// The translations for Portuguese, as used in Portugal (`pt_PT`).
@@ -6902,4 +6998,52 @@ class AppLocalizationsPtPt extends AppLocalizationsPt {
 
   @override
   String get logoPulse => 'Sentir o pulso do TrainForge';
+
+  @override
+  String get configMixTitle => 'Como combinar a tua semana';
+
+  @override
+  String get configMixHint =>
+      'Opcional. Só orienta o tipo de sessão que a app sugere; podes mudar quando quiseres.';
+
+  @override
+  String get configMixStrength => 'Só força';
+
+  @override
+  String get configMixStrengthHint =>
+      'Força nos dias escolhidos, alternando os grupos musculares em dias seguidos.';
+
+  @override
+  String get configMixWalking => 'Força + caminhada';
+
+  @override
+  String get configMixWalkingHint =>
+      'Força em 2 a 3 dias alternados e caminhada nos restantes.';
+
+  @override
+  String get configMixMind => 'Força + corpo e mente';
+
+  @override
+  String get configMixMindHint =>
+      'Força em 2 a 3 dias e alongamento, respiração, equilíbrio ou relaxamento nos restantes.';
+
+  @override
+  String get configMixComplete => 'Completo';
+
+  @override
+  String get configMixCompleteHint =>
+      'Força, caminhada e um dia de equilíbrio ou corpo e mente.';
+
+  @override
+  String get configMixBalance => 'Equilíbrio e mobilidade (sem peso)';
+
+  @override
+  String get configMixBalanceHint =>
+      'Só sessões sem levantar peso: equilíbrio, mobilidade, alongamento e peso do corpo. Para casa, parque ou pausa de quem cuida.';
+
+  @override
+  String get configMixLater => 'Decidir depois';
+
+  @override
+  String get configMixInvalid => 'Escolhe uma das opções.';
 }

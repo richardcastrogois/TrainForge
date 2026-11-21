@@ -5814,6 +5814,18 @@ const docTemplate = `{
                 },
                 "timezone": {
                     "type": "string"
+                },
+                "weeklyMix": {
+                    "description": "WeeklyMix is the declared preference for combining activities in the week; absent means \"decide later\".",
+                    "type": "string",
+                    "enum": [
+                        "strength_only",
+                        "strength_walking",
+                        "strength_mind",
+                        "complete",
+                        "balance_mobility"
+                    ],
+                    "x-nullable": true
                 }
             }
         },
