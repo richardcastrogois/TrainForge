@@ -1,9 +1,9 @@
 {
   "schemaVersion": 2,
-  "inputRevision": "e628c4df604f6fc98d6b057c755f4f7313fc99931d5c35e03efce2af2c603ef0",
+  "inputRevision": "84a1de9863a3da1103f41453a23708b5b8488b67e023f01b89821bca10b57f92",
   "inputs": {
     "contracts/generated/catalog-m1.swagger.json": "7f59b699f1c4c032e0652c31f44fac9a8d3a77115639a24408725427e97b0339",
-    "contracts/generated/swagger-v1.json": "4a87cb3da8b20510f236ef3f1aefb3eb2149a7faad47ba02d144f4d1ee67004d",
+    "contracts/generated/swagger-v1.json": "437504d14c4210b1a385fc87132aaea0f0970e67545e077b6bca6866cda530fa",
     "docs/arquitetura/achados.json": "df4d63722b7b6969773069d12d2118ca8ed3aab1b19dd7a6747ea49f1dd34984",
     "docs/arquitetura/plano.json": "b6be7e4a7c2704f72bcd2dd178672f7664a0e706ecbd59feb46703108460a3f9",
     "docs/execucao/v1/backlog.json": "076e0d6872cf6933462199a77509f1e5612138a520610fb5c77dcbc5b8dd0fef",
@@ -22,7 +22,7 @@
     "lib/core/motion/app_motion.dart": "64334c33c53e70e731682b62af1065d57628695b964e37a9066b0269ddb43670",
     "lib/core/preferences/read_diagnostics.dart": "5a418fe03bd2f7411af117916b0a8dd952fa9e4835d8bbdc1f784291b39e0cbf",
     "lib/core/scroll/trainforge_scroll_behavior.dart": "5161f121bdd1a0b467c4df0bc550731e98843945acc8bd65b32d676d79d431de",
-    "lib/core/theme/appearance_controller.dart": "57afd6db739b972a1938076c5153da00ca3eb1581de6f53aa500c2cbdde83bcf",
+    "lib/core/theme/appearance_controller.dart": "51236f90781e3be70186a7531bea9a3d060ce4c6c0e7986ebd4164cc79a225ca",
     "lib/core/theme/appearance_page.dart": "87933e1347e88edbfec65d0d3603f1b629c1492bc92d4cb4710b1f991122bb5f",
     "lib/core/theme/brand_mark.dart": "92d4b8bde205ebc8a1bc75cd3604106d36908e80f0134d58765fc67f66cdfe04",
     "lib/core/theme/trainforge_colors.dart": "4244b42ff45116d85f37c3c2547082878926ff7c6506d59924f023db04f91219",
@@ -39,7 +39,7 @@
     "lib/features/auth/domain/auth_profile.dart": "38cad0c132036198101a13cdae4b1246fed525c618452eacc0c06bee3ce6e66a",
     "lib/features/auth/domain/auth_user.dart": "23fc72f3d3053841f054f8c8c2147301c81204d4131e30185827906301e88c76",
     "lib/features/auth/presentation/auth_controller.dart": "e564e3cb05e70189a2e072f178a7643ab794fab95ff62618833d56ed9de82c5d",
-    "lib/features/auth/presentation/pages/auth_page.dart": "77c1ee5ed9e8d77fe1db1b26c07de4aecdd588ef867b5b1b7ed74ed5de0b31da",
+    "lib/features/auth/presentation/pages/auth_page.dart": "06f8741bd2a18681d523983e2d700b19f2cc60d72d9e5fa0e221ff6a6f5606e4",
     "lib/features/auth/presentation/pages/guest_page.dart": "782efcacc60cd15350b4882c38646683f40f9fbf70e070e9ae7d39534eb8a9f9",
     "lib/features/auth/presentation/widgets/entry_scene.dart": "5c37acfc3b28028c9eb5a0cb1a61158cabf393330734ae1bdc7e5db492085404",
     "lib/features/auth/presentation/widgets/google_sign_in_button.dart": "401f8adbaad1621ebe32409286f301f364577ad4085e4e630cf108bb22eaf268",
@@ -104,14 +104,14 @@
     "lib/features/privacy/presentation/privacy_feedback.dart": "a98140cbc5677d6e0cb68e6892707f93df908159207d8a2c1bb0fef3a8e07dd1",
     "lib/features/privacy/presentation/privacy_page.dart": "36646536475ce869dc2a3411b6fea8b6cb98e91b620cbbf9307790bfe03f52a2",
     "lib/features/training_configuration/data/training_configuration_repository.dart": "997807df68f44f4105a28b58dd7c9a17c991367fa26117019631854b92f499d0",
-    "lib/features/training_configuration/domain/training_configuration.dart": "c0df17a72add0756294c80269eee96882f7b25866c8af53eb21e8a929ac01bb1",
+    "lib/features/training_configuration/domain/training_configuration.dart": "5ee46484acb69e3e9e64ea7213cf9c1c0330df1435a11578d920d17a32eda0d5",
     "lib/features/training_configuration/presentation/training_configuration_controller.dart": "6ae07af7717b0c27e45e628a33402ebfac1a6306a178850335b9790087ec536a",
     "lib/features/training_configuration/presentation/training_configuration_page.dart": "44c38b1feca488b526f338aaa0784bb92dbcd03446335e0bb4832653eacf594f",
-    "lib/features/training_configuration/presentation/training_configuration_sections.dart": "38edef72046a5fead45f1de71561e831f34226bd01d1b44e0df53885e83656e4",
-    "lib/l10n/generated/app_localizations.dart": "f14879832c89a4b1405f2ca47b974abc20487050c9b4d1b360dbcfdf4ec2cdca",
-    "lib/l10n/generated/app_localizations_en.dart": "792339f7bf50f4977cbf1d32db8f5866c3a120c3c9aa7087d9016d088b44047b",
-    "lib/l10n/generated/app_localizations_es.dart": "85e133d4b1ac4029d8123dbec60e1d5c84cd068417edaa57ea6dc6c7964d7f45",
-    "lib/l10n/generated/app_localizations_pt.dart": "62a4a00a084e54b6b9811e1d740a1ac8e5e988b9f05890d974200085d6f61405",
+    "lib/features/training_configuration/presentation/training_configuration_sections.dart": "8004ba7282b278968677c37f0dbe419eac5d2bd76bdd6ea04c889b234e48cee6",
+    "lib/l10n/generated/app_localizations.dart": "2190b705abaa9fdb0a1ec94776a8fef370fc2ec5fc8ef704ae56e4106a464bc7",
+    "lib/l10n/generated/app_localizations_en.dart": "f2bdfe080a6473c26abd23d3f41b6a5ff9ef3ea68470500c065cf0c6d7c1529b",
+    "lib/l10n/generated/app_localizations_es.dart": "0ec55e15addc509b487de973b394d029c56c96e6d2b50b73e5c65f98434d7280",
+    "lib/l10n/generated/app_localizations_pt.dart": "f7656f3362bd50424e51b080cced988346694bdf411d3048ef602ea3c5dd8c51",
     "lib/main.dart": "52f6c5157237688537f3708474237531876f1340ada0a363c0ddda8bcf38ce7f",
     "lib/shared/widgets/account_page.dart": "c7324fca0923ea4279a78061ff70a3ed67c2b163338ba83b659a49ed4f549a7c",
     "lib/shared/widgets/app_loading.dart": "b041a11b964f4943b9902ee7dd380171a2cdca8f9440fa06658b329ee8bb66e3",
@@ -119,14 +119,14 @@
     "lib/shared/widgets/content_sources_page.dart": "a16105129b7752cc229a221c2b06dd4c8c66624505b59b2a4456aca0d22ca101",
     "lib/shared/widgets/draft_guard.dart": "e07551083f2f42de6b6787ab3c354a9f9d8c75b65f71e25a076f8bcbd596f28b",
     "lib/shared/widgets/evaluation_guide_page.dart": "302e04793b0e634b756d7a8785f9f64d74a03653a27f85f7ec7285249fd24900",
-    "lib/shared/widgets/figma_bottom_nav.dart": "2dae71a63f9b01be7e39ad6828d0eacd1f75ed149e8b2fc5ba89606c96bf387b",
+    "lib/shared/widgets/figma_bottom_nav.dart": "d2ad7bc1d47ad4fc87716d65556fc23397fcd97d44b5da6459499261cba88177",
     "lib/shared/widgets/figma_components.dart": "943d5f779c7c134724a4539b0a4ce102a6ad81ee7f411ffe0d279ee7ec598ba5",
     "lib/shared/widgets/flow_components.dart": "1d3cf303b115d8136388cd5ea8fb3508a4f95cc721d7b5a11e9f97cba10e3238",
     "lib/shared/widgets/food_catalog_credits_page.dart": "3e2b980601c7f976fa7e897eca951602f8de08bbe9d135ee5bccd5d92123a4b6",
     "lib/shared/widgets/plans_overview.dart": "0c241a43c2069cb49568c8a8bce2d5e8b389f1d9e5433548c290114baae90ab9",
     "lib/shared/widgets/product_overviews.dart": "a05a5e5ff02cc6d17aa8fe9ebaecf3f01b78d52bce6ff325cd14f7bca738d4fa",
     "lib/shared/widgets/product_shell.dart": "f9a8de8188396d9dcbc3558267831f9b07063f7b0a5705669a78411d1b8e2871",
-    "lib/shared/widgets/startup_page.dart": "f57230d55be844cd1d9654d70822ac2c8179b5ef0bd6cd5f07c0c7bfa56db71c",
+    "lib/shared/widgets/startup_page.dart": "2ddd61e2ef4b9fe3bd6d84d31a3550dc1ed273891c3e5d88a2e04d4e9f83e168",
     "services/api/api/index.go": "bff6d65701fca9a0c3e16c3b41ff8bf9d44be886abe42d37842a5a90b875b878",
     "services/api/cmd/api/main.go": "da7e84e3337e3c9a45a36c426011b291be6f2aa1310c4ce6c8ae282d39c98bc6",
     "services/api/cmd/catalog-migrate/main.go": "baa58f3b644dfc8bcd5c3657f5495b04d8202e385166ca3ad968869fa6e313ff",
@@ -222,9 +222,9 @@
     "services/api/internal/privacy/privacy.go": "477c5751c079c916c9ae2d694f5be25e95c7f4c03bf07ca480a62ad1f9bde69d",
     "services/api/internal/privacy/restore.go": "ebae788a93e7bff709eceff5af1c0d65d120fd033ef0a235c18114867afe4dfd",
     "services/api/internal/publiccatalog/files.go": "8fc3e879ee919d4f91ce5c3a5e88380f5b6f18b12a28d36f0d643c904ac3e7fd",
-    "services/api/internal/swaggerdocs/docs.go": "2ae3a232d54fd3dfd42ce2baebc318bd332fd24b6bb8edf4648ee52fb9d988c6",
+    "services/api/internal/swaggerdocs/docs.go": "38c779675c9ae60fbc30657e19a8f2bd4ff0ddb40e695f3a774e9977661ea49e",
     "services/api/internal/trainingconfig/handler.go": "91ae45e50be819c31ff131fad2fab6572a2e23805338cc6df3bdd01357471bf8",
-    "services/api/internal/trainingconfig/model.go": "326fd6f118cef58cb34eeefc5deb254bb3130a708f2e2a9b9232084e193fcae2",
+    "services/api/internal/trainingconfig/model.go": "821450b4c4dec07bce436c2ed6f61ae3a2e80b07a67efcf4f619d68f76e0bef6",
     "services/api/internal/trainingconfig/postgres.go": "64e903486724f7adc4f3190ab794a3dbf3d00efa12e0692c58b3f4043455bd44",
     "services/api/internal/trainingconfig/resources.go": "cbe835eb25eddd1f41522747a42fa226480ba491087afd10b096a16461dc5039",
     "services/api/internal/trainingconfig/service.go": "25c855ceb641d75b7e13c3410d41e9fa8f51cca05e91ad35089bc85ff86b7fa6",
@@ -245,6 +245,7 @@
     "services/api/migrations/00015_food_contributions.sql": "fcce1c22736f3b9826e3727ebb700666c500e7fa54c6d95a445cd7fc175599ce",
     "services/api/migrations/00016_food_catalog_releases.sql": "281cd398b1355f508660bfa105d2ee1caea315b846c15803dd0a00e9dbb1a98c",
     "services/api/migrations/00017_legal_consents.sql": "9e3e029b47e9efbbffb4e2db19193000e4974548b85ddccd0d48e5e8c3009d21",
+    "services/api/migrations/00018_training_weekly_mix.sql": "c541dbc0533aac573ffd06b950b0b4e9204a1ad9aa9cd51ae800c4a2bf8576bc",
     "services/api/migrations/files.go": "93671bcc8533e02c98368384e6e0261f2f5a70407f64166aa557535d40dabbaa",
     "services/api/serverless/serverless.go": "96fbcc812b31950f1c4371d018d0eb08cb8bb28c0cc11cd5f0721ac593473391",
     "tools/alimentos_lote.py": "68e31390f1dd5cbee54c855901d87f9908f63a8bb972a68c02c95ca2f2bd6ddd",
@@ -252,7 +253,7 @@
     "tools/android_security_inventory.py": "fc265147ef83d0852abfb8966814d45bef05ecc883f381c1133bb683a52a81c4",
     "tools/android_signing.py": "8e8e4abd4b70b88b8c2eaa3c5917a347061c0747977bfc7c392b6b01380b0e34",
     "tools/aplicar_exclusoes_restore.py": "c5562fd3213c1824367110115382bdafb0395891204df316b39005d81d0ae93d",
-    "tools/ativar_alimentacao_offline_local.py": "3386751ceabfb35ed6e51b94083d13f7da08ed5602a8ee2d3413b60d5eeaedaf",
+    "tools/ativar_alimentacao_offline_local.py": "c3b98b1ee05aeefc0892b4ebf25685f68fa00c6e1169cc35b8a051ae6c363036",
     "tools/ativar_configuracao_local.py": "341e5463f75be49c174eb21d0bf20343ecb6574355735a3ed41ad78d9935f4c2",
     "tools/ativar_refeicoes_local.py": "a7ec395a586c97358ed7163d37619f5bac01a78560dab288092887b25085177e",
     "tools/atualizar_graphify.py": "9ee4eae18575ba63802da07c3f521ccbd30d8a1737b976875b53b137898abfe0",
@@ -1609,7 +1610,7 @@
       "source": {
         "repository": "trainforge",
         "path": "lib/features/auth/presentation/pages/auth_page.dart",
-        "line": 867
+        "line": 875
       }
     },
     {
@@ -1618,7 +1619,7 @@
       "source": {
         "repository": "trainforge",
         "path": "lib/features/auth/presentation/pages/auth_page.dart",
-        "line": 862
+        "line": 870
       }
     },
     {
@@ -1627,7 +1628,7 @@
       "source": {
         "repository": "trainforge",
         "path": "lib/features/auth/presentation/pages/auth_page.dart",
-        "line": 722
+        "line": 730
       }
     },
     {
@@ -1636,7 +1637,7 @@
       "source": {
         "repository": "trainforge",
         "path": "lib/features/auth/presentation/pages/auth_page.dart",
-        "line": 872
+        "line": 880
       }
     },
     {
@@ -4702,7 +4703,8 @@
       "services/api/migrations/00014_nutrition_offline.sql",
       "services/api/migrations/00015_food_contributions.sql",
       "services/api/migrations/00016_food_catalog_releases.sql",
-      "services/api/migrations/00017_legal_consents.sql"
+      "services/api/migrations/00017_legal_consents.sql",
+      "services/api/migrations/00018_training_weekly_mix.sql"
     ],
     "tables": [
       {

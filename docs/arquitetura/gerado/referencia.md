@@ -1,6 +1,6 @@
 # Referência técnica extraída do código
 
-> Gerado de código e registros versionados por `tools/gerar_documentacao.py`. Não editar este arquivo à mão. Revisão das entradas: `e628c4df604f6fc9`.
+> Gerado de código e registros versionados por `tools/gerar_documentacao.py`. Não editar este arquivo à mão. Revisão das entradas: `84a1de9863a3da11`.
 
 [Arquitetura explicada](../README.md) · [APIs](../diagramas/apis.md) · [Banco e colunas](../diagramas/banco.md) · [Backlog](../../execucao/v1/backlog.md)
 
@@ -61,10 +61,10 @@ Uma referência de construtor não demonstra clique ou condição de navegação
 
 | Origem | Widget referenciado | Fonte |
 | --- | --- | --- |
-| AuthPage | LanguagePage | [lib/features/auth/presentation/pages/auth_page.dart:867](../../../lib/features/auth/presentation/pages/auth_page.dart) |
-| AuthPage | AppearancePage | [lib/features/auth/presentation/pages/auth_page.dart:862](../../../lib/features/auth/presentation/pages/auth_page.dart) |
-| AuthPage | GuestPage | [lib/features/auth/presentation/pages/auth_page.dart:722](../../../lib/features/auth/presentation/pages/auth_page.dart) |
-| AuthPage | PrivacyPage | [lib/features/auth/presentation/pages/auth_page.dart:872](../../../lib/features/auth/presentation/pages/auth_page.dart) |
+| AuthPage | LanguagePage | [lib/features/auth/presentation/pages/auth_page.dart:875](../../../lib/features/auth/presentation/pages/auth_page.dart) |
+| AuthPage | AppearancePage | [lib/features/auth/presentation/pages/auth_page.dart:870](../../../lib/features/auth/presentation/pages/auth_page.dart) |
+| AuthPage | GuestPage | [lib/features/auth/presentation/pages/auth_page.dart:730](../../../lib/features/auth/presentation/pages/auth_page.dart) |
+| AuthPage | PrivacyPage | [lib/features/auth/presentation/pages/auth_page.dart:880](../../../lib/features/auth/presentation/pages/auth_page.dart) |
 | AuthPage | AuthGate | [lib/features/auth/presentation/pages/auth_page.dart:107](../../../lib/features/auth/presentation/pages/auth_page.dart) |
 | GuestPage | CatalogPage | [lib/features/auth/presentation/pages/guest_page.dart:31](../../../lib/features/auth/presentation/pages/guest_page.dart) |
 | GuestPage | FoodPage | [lib/features/auth/presentation/pages/guest_page.dart:42](../../../lib/features/auth/presentation/pages/guest_page.dart) |
