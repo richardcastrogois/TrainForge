@@ -86,7 +86,7 @@ Criado em **20/11/2026**. Contexto e motivos estão no [plano do incremento](pla
 - [ ] **C18** Executar o [plano MoveKit](../conteudo/plano-integracao-midias-movekit.md) a partir dos arquivos reais
 
 ### Planos anteriores
-- [ ] **C19** [Pesquisa de voz e foto](pesquisa-registro-voz-e-foto.md)
+- [ ] **C19** [Pesquisa de voz e foto](pesquisa-registro-voz-e-foto.md) — decisão fechada em 22/11, só IA discriminativa: voz pelo motor de fala do sistema (offline primeiro, online coberto pelos termos) + busca própria no catálogo com 5 opções; foto por modelo aluno próprio (~4–8 MB, >300 alimentos, destilado do SigLIP 2 no PC, bases públicas) + aprendizado local dos pratos da pessoa; faltam inventário de bases, treino, protótipo e medição em aparelho
 - [ ] **A15** Decidir o que fica no [APK simples](melhoria-apk-simplificado.md)
 - [ ] **C20** [Pacotes regionais](melhoria-pacotes-regionais.md)
 
