@@ -90,6 +90,14 @@ Criado em **20/11/2026**. Contexto e motivos estão no [plano do incremento](pla
 - [ ] **A15** Decidir o que fica no [APK simples](melhoria-apk-simplificado.md)
 - [ ] **C20** [Pacotes regionais](melhoria-pacotes-regionais.md)
 
+### Teste no celular do autor (0.5.6, 23/11)
+- [ ] **C40** [Teste ao vivo por Wi-Fi](../aprendizado/teste-ao-vivo-wifi.md): autor pareia o celular; agente assina o debug com a chave do release e inicia o `flutter run` com hot reload
+- [ ] **C41** Voz: aproveitar a quantidade falada com unidade clara (g, ml, litro) e abrir o formulário preenchido para conferir (aprovado pelo autor em 23/11)
+- [ ] **C42** Treinos prontos: explicar cada nível com o texto da pesquisa e ajudar a escolher lugar e nível ("Não sei qual escolher", 2–3 perguntas como ponto de partida, aprovado em 23/11); mostrar o critério de entrada da fonte quando houver
+- [ ] **C43** [Hidratação](melhoria-hidratacao.md): registro de água com um toque reaproveitando o consumo de "Água" do catálogo; decisões do autor listadas no plano
+- [ ] **C44** Redesenho didático para pessoas mais velhas e leigas (telas iniciais e principais): menos listas, uma ação principal por tela, linguagem simples; feito ao vivo depois do C40
+- [ ] **A17** (autor, até 30/11) Testar a amostra de mídia e decidir a compra MoveKit Home ou Gym ([revisão de 23/11](../conteudo/pesquisa-treinos/midia-orcamento-20261121.md#revisão-de-2311-decisão-para-comprar-até-3011))
+
 ---
 
 ## Como fazer cada item

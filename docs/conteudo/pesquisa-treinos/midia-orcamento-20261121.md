@@ -83,3 +83,27 @@ Total estimado: R$ 663–713. Sobra pouca margem para câmbio.
 Plano alternativo mais barato: MoveKit Home (R$ 363) + RepDB + gravação, com R$ 357 de reserva. Nesse caso, a academia fica só com ilustração estática.
 
 A compra e o cadastro são do autor. Antes de comprar, testar as amostras grátis no celular.
+
+## Revisão de 23/11: decisão para comprar até 30/11
+
+**Medido no arquivo do app (`assets/training/sessions.json`, 122 sessões):** 974 entradas de exercício e **466 nomes distintos** (contagem por nome normalizado; variações do mesmo movimento contam separado, então o número real de movimentos é menor). A cauda é longa:
+
+| Exercícios com mídia (os mais usados) | Entradas cobertas | Sessões 100% com mídia |
+|---|---|---|
+| 50 | 36% | 17 |
+| 100 | 55% | 42 |
+| 150 | 65% | 58 |
+
+- **Os 12 aparelhos de praça (ATI)** somam **127 entradas (13%)** e estão entre os mais usados (leg press, simulador de caminhada, surf/esqui, remada, supino, paralelas). A MoveKit não os tem; gravar numa praça real resolve com custo zero.
+- **Nenhum pacote cobre tudo.** A MoveKit tem 33 clipes no Home e 41 no Gym que correspondem à biblioteca; o resto precisa de ilustração estática, gravação própria ou texto.
+- **Formato:** MP4 em loop com imagem de capa, não GIF. Os clipes da amostra MoveKit têm 3,8–4,4 MB em 9 s; convertidos para 480p ficam por volta de 0,3–0,6 MB (estimativa, medir com a amostra). Cem clipes somariam 30–60 MB: **não cabem todos no APK** (folga atual ~45 MB até 200 MB). Caminho natural: baixar a mídia da sessão na primeira vez que ela é aberta e guardar no aparelho. A licença MoveKit pede armazenamento privado com link temporário (A12/A14), o que já leva a esse caminho.
+
+**Recomendação para hoje à noite:**
+
+1. **Testar a amostra (10 min, C38):** instalar `.local/amostras-midia/TF-Amostras-midia.apk` (app separado, não mexe no TrainForge) e ver se o boneco e o ritmo da MoveKit servem para idosos. Se não servirem, não comprar.
+2. **Se servir, comprar até 30/11:** **MoveKit Home (R$ 363)** se o lançamento for casa e pausa; **Gym (R$ 454)** só se a academia entrar no lançamento. A compra e o cadastro são do autor.
+3. **Grátis e já liberado:** desenhos do Otago (CC BY 4.0, atribuição) e ilustrações RepDB (atribuição visível) para dar apoio visual estático onde não houver vídeo.
+4. **Gravação própria dos 12 aparelhos ATI** numa praça, com termo de uso de imagem de quem aparece.
+5. **No app (depois da compra):** campo `midia` por exercício na pesquisa (clipe, capa, crédito), player em loop com capa (C21), download por sessão com cache e crédito na tela.
+
+**Perguntas para decidir:** (a) Home ou Gym; (b) gravar os aparelhos da praça; (c) aceitar baixar a mídia na primeira abertura da sessão (exige internet uma vez) ou embutir só um pacote pequeno no APK.
