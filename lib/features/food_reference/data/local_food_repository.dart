@@ -326,6 +326,20 @@ class LocalFoodRepository
         : server.detail(food),
   );
 
+  /// Food suggested by the photo model. Falls back to the installed version of the
+  /// same food when the catalog was updated after the model was trained.
+  Future<FoodReference?> photoFood(String id, String version) async {
+    final rows = await (await open()).rawQuery(
+      'SELECT version_id FROM foods WHERE food_id=? '
+      'ORDER BY version_id=? DESC LIMIT 1',
+      [id, version],
+    );
+    if (rows.isEmpty) return null;
+    return FoodReference.fromJson(
+      await foodJson(id, rows.single['version_id'] as String),
+    );
+  }
+
   @override
   Future<List<FoodReference>> barcode(String code) async {
     final normalized = normalizedBarcode(code);

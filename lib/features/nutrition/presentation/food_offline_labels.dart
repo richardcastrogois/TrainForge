@@ -27,6 +27,17 @@ const _labels = <String, Map<String, String>>{
     'withdrawn': 'Withdrawn',
     'conflictNotice':
         'Your local change has not replaced the server record. Review both versions before choosing.',
+    'photoRecognize': 'Recognize from photo',
+    'photoCamera': 'Take a photo',
+    'photoGallery': 'Choose from gallery',
+    'photoBusy': 'Analyzing the photo…',
+    'photoSuggestions': 'Which of these is in the photo?',
+    'photoHint':
+        'Automatic suggestions: check before recording. The photo stays on this device and is deleted after the analysis.',
+    'photoNone':
+        'No food was recognized with confidence. Search by name instead.',
+    'photoSearch': 'Search another food',
+    'photoUnavailable': 'The photo could not be analyzed.',
     'scan': 'Scan barcode',
     'scanHint':
         'Point the camera at the product barcode. The lookup works offline.',
@@ -115,6 +126,17 @@ const _labels = <String, Map<String, String>>{
     'withdrawn': 'Retirada',
     'conflictNotice':
         'Sua alteração local não substituiu o registro do servidor. Confira as duas versões antes de escolher.',
+    'photoRecognize': 'Reconhecer por foto',
+    'photoCamera': 'Tirar foto',
+    'photoGallery': 'Escolher da galeria',
+    'photoBusy': 'Analisando a foto…',
+    'photoSuggestions': 'Qual destes está na foto?',
+    'photoHint':
+        'Sugestões automáticas: confira antes de registrar. A foto fica neste aparelho e é apagada após a análise.',
+    'photoNone':
+        'Nenhum alimento foi reconhecido com segurança. Busque pelo nome.',
+    'photoSearch': 'Buscar outro alimento',
+    'photoUnavailable': 'Não foi possível analisar a foto.',
     'scan': 'Ler código de barras',
     'scanHint':
         'Aponte a câmera para o código de barras do produto. A consulta funciona offline.',
@@ -204,6 +226,17 @@ const _labels = <String, Map<String, String>>{
     'withdrawn': 'Retirada',
     'conflictNotice':
         'Tu cambio local no ha sustituido el registro del servidor. Revisa ambas versiones antes de elegir.',
+    'photoRecognize': 'Reconocer por foto',
+    'photoCamera': 'Tomar una foto',
+    'photoGallery': 'Elegir de la galería',
+    'photoBusy': 'Analizando la foto…',
+    'photoSuggestions': '¿Cuál de estos está en la foto?',
+    'photoHint':
+        'Sugerencias automáticas: revísalas antes de registrar. La foto se queda en este dispositivo y se borra después del análisis.',
+    'photoNone':
+        'No se reconoció ningún alimento con seguridad. Busca por nombre.',
+    'photoSearch': 'Buscar otro alimento',
+    'photoUnavailable': 'No se pudo analizar la foto.',
     'scan': 'Leer código de barras',
     'scanHint':
         'Apunta la cámara al código de barras. La consulta funciona sin conexión.',

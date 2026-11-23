@@ -1,0 +1,3358 @@
+[
+ {
+  "slug": "arroz_branco",
+  "pt": "Arroz branco",
+  "en": "white rice",
+  "food_id": "food:2a16a6e5bffb3a82378723045f0fa97eb7be3477a08a77dc4979c9456290ae7b",
+  "version_id": "804b8f43800f7d16332c02f796eb074bbd237be8571861a64e7b3770f3e686a8",
+  "source": "AL-TACO",
+  "catalog_name": "Arroz, tipo 1, cozido"
+ },
+ {
+  "slug": "arroz_integral",
+  "pt": "Arroz integral",
+  "en": "brown rice",
+  "food_id": "food:7621d81b1516c7fc09847680d8dc8111e84786c6c523a3ddef850ff434e2f068",
+  "version_id": "100206eb0e56de926343995b240632365756888e8195f59c0ea90e1664b94587",
+  "source": "AL-TACO",
+  "catalog_name": "Arroz, integral, cozido"
+ },
+ {
+  "slug": "arroz_carreteiro",
+  "pt": "Arroz carreteiro",
+  "en": "rice with shredded dried beef",
+  "food_id": "food:fe45711462e16fac16f281910bf2f424a9847ed256a80b91e36aa9b6fad45b18",
+  "version_id": "6965275cbf97d1545a6e3ca4cb1e8e8dab9127a3b518a2bd2473521d8b37ac25",
+  "source": "AL-TACO",
+  "catalog_name": "Arroz carreteiro"
+ },
+ {
+  "slug": "baiao_de_dois",
+  "pt": "Baião de dois",
+  "en": "baiao de dois, rice and beans with cheese",
+  "food_id": "food:e9fac458cc2bdd487717cc2904705340658bec03deadcc36b19d734bf2b62b52",
+  "version_id": "021e0fbe94e9bffd3ab7e58a3199dfaa888f0f31453744239f01c556f041c93a",
+  "source": "AL-TACO",
+  "catalog_name": "Baião de dois, arroz e feijão-de-corda"
+ },
+ {
+  "slug": "risoto",
+  "pt": "Risoto",
+  "en": "risotto",
+  "food_id": "food:18de3917740a92ed5ce634793b72a6f66e39e240ff114861e6ffd9485f502217",
+  "version_id": "61bd91f1c1ff1541d27de2d93f1223ab5bf72175c03ea32902af047d8049af72",
+  "source": "AL-COFID-2021",
+  "catalog_name": "Risotto, plain, homemade"
+ },
+ {
+  "slug": "arroz_frito",
+  "pt": "Arroz frito",
+  "en": "fried rice",
+  "food_id": "food:2862523940fd8521c80ff0176181e44c6f747e14106592ad6c22258d17168f7b",
+  "version_id": "1ea6dee3796cf711da322a13a6b80c364aed7ece172dbde5d7f105cd80c1435d",
+  "source": "AL-USDA-FNDDS",
+  "catalog_name": "Rice, fried, NFS"
+ },
+ {
+  "slug": "arroz_doce",
+  "pt": "Arroz-doce",
+  "en": "rice pudding",
+  "food_id": "food:27a2d345bd4793b35f1f7a109e77162a6eebe95934e9936df5ef73b47b26eecf",
+  "version_id": "74ef742c2db19f9f37d2b11433c4e9760c46c992d87998a3378c8680a041460a",
+  "source": "AL-USDA-FNDDS",
+  "catalog_name": "Pudding, rice"
+ },
+ {
+  "slug": "aveia",
+  "pt": "Aveia",
+  "en": "rolled oats",
+  "food_id": "food:ac629463fcc362cc1131b69543292a3d1e745f6e1df0385ebf45721ec961cb5a",
+  "version_id": "e58bf5e240cdb055db185f9fc5a693a3c05cd55a36e8e679521cce4f65efc6df",
+  "source": "AL-TACO",
+  "catalog_name": "Aveia, flocos, crua"
+ },
+ {
+  "slug": "mingau",
+  "pt": "Mingau",
+  "en": "porridge",
+  "food_id": "food:8cb7df9ea63fb9f266442d308001a2fa2329812ae8e0af1ab8e49f308a3e8e92",
+  "version_id": "e77d5c7be6c55236698f10054ca3525b266795627c18698af5f9ef96ec7cc403",
+  "source": "AL-USDA-FNDDS",
+  "catalog_name": "Oatmeal, NFS",
+  "review": null
+ },
+ {
+  "slug": "granola",
+  "pt": "Granola",
+  "en": "granola",
+  "food_id": "food:15e9e44ba617615985cf559dbe6e239b31f99177f8611fb09f655dbd786d148f",
+  "version_id": "ae6aa0e31f00417b8b8ac25ad7774041239e80fce9a60d9956185083627d234c",
+  "source": "AL-USDA-FNDDS",
+  "catalog_name": "Cereal, granola"
+ },
+ {
+  "slug": "barra_cereal",
+  "pt": "Barra de cereal",
+  "en": "granola bar",
+  "food_id": "food:ffa98cd020277d309badbfeaee24177f478a66f3fd0c55758b45dff65a39161d",
+  "version_id": "6fd8818eb6497faf1683748171c7460411b881905070cce8e0835f88e4e8fad9",
+  "source": "AL-USDA-FNDDS",
+  "catalog_name": "Cereal or Granola bar, NFS"
+ },
+ {
+  "slug": "cereal_matinal",
+  "pt": "Cereal matinal",
+  "en": "breakfast cereal flakes in a bowl",
+  "food_id": "food:93042d28ccc50d92dfd805f0786da5cc0d7187a9813b8fe75e5990a84afcc884",
+  "version_id": "2ddf4c328f8126c34f3f796ec2dfa1445224bc48ed908622b26490632870a364",
+  "source": "AL-TACO",
+  "catalog_name": "Cereal matinal, milho"
+ },
+ {
+  "slug": "biscoito_maisena",
+  "pt": "Biscoito doce",
+  "en": "plain sweet biscuits",
+  "food_id": "food:7f1d1def3c4e5bd17ea686d5a4c208ad8cec345da3e737dd3ef55a5702eb5389",
+  "version_id": "10b2f73e695f4203380c8c9f0e41de22a0a7150ae9de7aac0f897b773c7be327",
+  "source": "AL-TACO",
+  "catalog_name": "Biscoito, doce, maisena"
+ },
+ {
+  "slug": "biscoito_recheado",
+  "pt": "Biscoito recheado",
+  "en": "sandwich cookies",
+  "food_id": "food:f3423d93315bad47636ce71cd6270dada27e96dc56a23179c67a07b92229ef64",
+  "version_id": "1526ba906e80bae27ec2967130739300c3bdf661017807ea92539cd18a2b5add",
+  "source": "AL-TACO",
+  "catalog_name": "Biscoito, doce, recheado com chocolate"
+ },
+ {
+  "slug": "wafer",
+  "pt": "Wafer",
+  "en": "wafer cookies",
+  "food_id": "food:748e1348260c2501af10272d06da2e383303c57a4c5cb831c081282ce8d21ed6",
+  "version_id": "12a5edece62303751475c697556f8cc8b45cbf7d097e6892e1dbb05752c9f604",
+  "source": "AL-TACO",
+  "catalog_name": "Biscoito, doce, wafer, recheado de chocolate"
+ },
+ {
+  "slug": "cream_cracker",
+  "pt": "Biscoito salgado",
+  "en": "crackers",
+  "food_id": "food:ff19fdfe98496d4668f12513935d62381770873dd2e0668d211f330cc0d4adf7",
+  "version_id": "22fdcfb72b48345afb749c4968277cf365b81c6dbb9a135d5fcc09e10d1cc954",
+  "source": "AL-TACO",
+  "catalog_name": "Biscoito, salgado, cream cracker"
+ },
+ {
+  "slug": "biscoito_polvilho",
+  "pt": "Biscoito de polvilho",
+  "en": "cassava starch biscuit rings",
+  "food_id": "food:31275dcd80e3e2febd0a6b27f4e2c5839c08b640d17caa33b14a3944044a8414",
+  "version_id": "9825de4a6613843becd0c02b640fd7bb27d532361eea312bb2b2486c9bcc7bac",
+  "source": "AL-TACO",
+  "catalog_name": "Biscoito, polvilho doce"
+ },
+ {
+  "slug": "bolo_chocolate",
+  "pt": "Bolo de chocolate",
+  "en": "chocolate cake",
+  "food_id": "food:5efcd1b345a3372d0b3afa8a528a5dc92db98a86ca4b86834c38fc0665496c06",
+  "version_id": "64373b7b6d3fb449c1d03a33d2f33f976f3f6127eb96eb5d83ee2006ba9b3bbd",
+  "source": "AL-TACO",
+  "catalog_name": "Bolo, pronto, chocolate"
+ },
+ {
+  "slug": "bolo_milho",
+  "pt": "Bolo de milho",
+  "en": "corn cake",
+  "food_id": "food:f08cb2153795c74a4aef47fc4621bd13a320ab0cb7188866b7902d905d0b4147",
+  "version_id": "ccc0f37b5495803f2208848d389ddb135e7e7d4f1ac4020bb535b39f4c73660a",
+  "source": "AL-TACO",
+  "catalog_name": "Bolo, pronto, milho"
+ },
+ {
+  "slug": "bolo_coco",
+  "pt": "Bolo de coco",
+  "en": "coconut cake",
+  "food_id": "food:fc827ec668ee33f39fc77f490a64866a86dc529c53eb12fb33dc263df62ea557",
+  "version_id": "122afd781d4776cb2e34353ca7c1982e2ec5420bdbe9a68f0600e834fedcd044",
+  "source": "AL-TACO",
+  "catalog_name": "Bolo, pronto, coco"
+ },
+ {
+  "slug": "bolo_aipim",
+  "pt": "Bolo de aipim",
+  "en": "cassava cake",
+  "food_id": "food:918a2d4ad138b8d7842ac2c59e24474206b4bd91af38fb2cc7a76fce6c04d333",
+  "version_id": "4d30a9d948b0995d37d664c1627c7d0657ed2f587b7160b14ed6d07dfb201872",
+  "source": "AL-TACO",
+  "catalog_name": "Bolo, pronto, aipim"
+ },
+ {
+  "slug": "bolo_cenoura",
+  "pt": "Bolo de cenoura",
+  "en": "carrot cake with chocolate frosting",
+  "food_id": "food:6b15dd1ebbf52b8f789ee8c9a65fc9dbb88734e722e99b2b01e40f21883a8855",
+  "version_id": "1a34642400e125f85276d072a43e79453e1811b4678b181e988c3dd2e76c71bf",
+  "source": "AL-USDA-FNDDS",
+  "catalog_name": "Cake or cupcake, carrot"
+ },
+ {
+  "slug": "bolo_simples",
+  "pt": "Bolo simples",
+  "en": "plain sponge cake",
+  "food_id": "food:59780ffd56fb25f46555ac9bed8bf9d8c477819897d4dd7d085040b57efbcc80",
+  "version_id": "472fd9e28af138b2a3917977ef5deea2c0a61b5bb553089f785b522f90159cde",
+  "source": "AL-USDA-SR-LEGACY",
+  "catalog_name": "Cake, yellow, prepared from recipe without frosting",
+  "review": null
+ },
+ {
+  "slug": "cupcake",
+  "pt": "Cupcake",
+  "en": "cupcake",
+  "food_id": "food:0cc4db4f93649ae4662eb0ecb057ed95c6cd4e9e52998a08c095f548d7f64091",
+  "version_id": "9977368f1ba7e44b78dc3f08419fa1b38512c0736af648c4333488f6569b50c0",
+  "source": "AL-USDA-FNDDS",
+  "catalog_name": "Cake or cupcake, NFS"
+ },
+ {
+  "slug": "canjica",
+  "pt": "Canjica",
+  "en": "white hominy corn pudding",
+  "food_id": "food:b27bf129d96bc7acc74e1c3e95b23125818ca964b3ebece671db05af1740a8f4",
+  "version_id": "a44d14a7e05243cf0c110bfed031abcef32ad2ddb5893e7366c9f6dfcd68ac98",
+  "source": "AL-TACO",
+  "catalog_name": "Canjica, com leite integral"
+ },
+ {
+  "slug": "curau",
+  "pt": "Curau",
+  "en": "sweet corn pudding",
+  "food_id": "food:1426f78115f3d3e2b6fc17e53b4d913fba6a30180f504a7aafb6fd160bc74bdd",
+  "version_id": "820b522b615514e7c5004a01f9137a125bb2eb9e858526803b9e00cdb58d5677",
+  "source": "AL-TACO",
+  "catalog_name": "Curau, milho verde"
+ },
+ {
+  "slug": "pamonha",
+  "pt": "Pamonha",
+  "en": "pamonha corn tamale",
+  "food_id": "food:681a2e8f79423e57e257ad27f2be2470334e39ac32d07304f5e8fb166f771476",
+  "version_id": "09abdaad8a825ef64113592f425be25ece79bed3b351ebd55b36ae85e64d95b5",
+  "source": "AL-TACO",
+  "catalog_name": "Pamonha, barra para cozimento, pré-cozida"
+ },
+ {
+  "slug": "lasanha",
+  "pt": "Lasanha",
+  "en": "lasagna",
+  "food_id": "food:7d3b22c605c06355beaf8760eb7f356d06a2a1f0d30123ea444eda55cdc6294a",
+  "version_id": "5d0ddb637bd247371d48372523eea9410a299bdceb6df9672a0582858637cbfc",
+  "source": "AL-USDA-FNDDS",
+  "catalog_name": "Lasagna with meat"
+ },
+ {
+  "slug": "macarrao",
+  "pt": "Macarrão",
+  "en": "cooked pasta",
+  "food_id": "food:e938da77bffcafff24a56e02dba79340027d8db677f42db1a0092be39a5ec286",
+  "version_id": "044215d574afe66a7645c28914e2743d152ad95bd7f385a838b87aa4ac968415",
+  "source": "AL-USDA-FNDDS",
+  "catalog_name": "Pasta, cooked"
+ },
+ {
+  "slug": "macarrao_bolonhesa",
+  "pt": "Macarrão à bolonhesa",
+  "en": "spaghetti bolognese",
+  "food_id": "food:9142d811d225294942247950846ec87bca5bf4341483017738c754ed1d496fed",
+  "version_id": "a7d827cfcacaf74d1d8cc0b9721fd841a666c990cae1f425a9c03d2385759b66",
+  "source": "AL-TACO",
+  "catalog_name": "Macarrão, molho bolognesa"
+ },
+ {
+  "slug": "macarrao_queijo",
+  "pt": "Macarrão com queijo",
+  "en": "macaroni and cheese",
+  "food_id": "food:4bfa09cbb9ec8f3c40c6d4921f3ec94e56500a8f839ed35521b1d949b140bab3",
+  "version_id": "0c704db53d4b0207780f6121cacd7b23a65019249c9a45277875c8a708abcabf",
+  "source": "AL-USDA-FNDDS",
+  "catalog_name": "Macaroni or noodles with cheese",
+  "review": null
+ },
+ {
+  "slug": "macarrao_instantaneo",
+  "pt": "Macarrão instantâneo",
+  "en": "instant noodles",
+  "food_id": "food:1ee6212e7ef27fb9b25e42fdef382b98898657c297df3a4af59368d6d99c5480",
+  "version_id": "02d98bc38f3bb1ccef0b7f54378c5c1cc987684f886af29c26ee8cf67f5e40c8",
+  "source": "AL-TACO",
+  "catalog_name": "Macarrão, instantâneo"
+ },
+ {
+  "slug": "yakisoba",
+  "pt": "Yakisoba",
+  "en": "yakisoba stir-fried noodles",
+  "food_id": "food:1c705f5cb423db9780f5f6128ff90947e704ce669e4af5d8acdc2b1c5c8815ee",
+  "version_id": "51efbac07da8163b97626db0c50d021ba77bf7211c898a11141637664c40c430",
+  "source": "AL-TACO",
+  "catalog_name": "Yakisoba"
+ },
+ {
+  "slug": "lamen",
+  "pt": "Lámen",
+  "en": "ramen noodle soup",
+  "food_id": "food:b96e0601e316f50be3d64e7259beb11a7a55eb418a132ea8258589759377ccd5",
+  "version_id": "693d91b23ef15589f871493b3cf06841598d3f7ae6da94c860cf663fd6292627",
+  "source": "AL-USDA-FNDDS",
+  "catalog_name": "Ramen bowl, NFS"
+ },
+ {
+  "slug": "nhoque",
+  "pt": "Nhoque",
+  "en": "gnocchi",
+  "food_id": "food:2131855ebb62e6eb8d4e80c19b11e69cfad3e0e41be4a41fbf2d96398bf755a8",
+  "version_id": "5d1ddc9d2ec71eb0a49cf5a1cf21d16e7777273f706daa98be1830463cdf035e",
+  "source": "AL-TACO",
+  "catalog_name": "Nhoque, batata, cozido"
+ },
+ {
+  "slug": "ravioli",
+  "pt": "Ravioli",
+  "en": "ravioli",
+  "food_id": "food:ebfab6b4107b5c2086feb7d4651d982e6043efaef7629f509e22602a5a9ac2c0",
+  "version_id": "125dc5cb868d043926f00b89a4ddd6e55edfe3d831a2a3acb1cf045c93c64220",
+  "source": "AL-USDA-FNDDS",
+  "catalog_name": "Ravioli, meat-filled, no sauce"
+ },
+ {
+  "slug": "capeletti",
+  "pt": "Capeletti",
+  "en": "tortellini",
+  "food_id": "food:b6eb56d4159c557967bd03124e540d8a9210b0011db7f03a6e924551ff39fdc5",
+  "version_id": "76b55edee2e93693c221a8b858cf774d26ece1c89d187ed17bdf5c12d6ba598d",
+  "source": "AL-USDA-FNDDS",
+  "catalog_name": "Tortellini, meat-filled, no sauce"
+ },
+ {
+  "slug": "pao_frances",
+  "pt": "Pão francês",
+  "en": "french bread roll",
+  "food_id": "food:391e108e36834032007694447403d1112c7dbc286ab53010da699a6483d2ba21",
+  "version_id": "ffb068aa1f3aed375d9a86bc1e2bb90568bb6bf10697a816ebb4446c5a45cb33",
+  "source": "AL-TACO",
+  "catalog_name": "Pão, trigo, francês"
+ },
+ {
+  "slug": "pao_forma",
+  "pt": "Pão de forma",
+  "en": "sliced white bread",
+  "food_id": "food:b360e540a890c7d0532148ea2d3d23fa75b4b36facb2950411ade3a2babd59c2",
+  "version_id": "bb82f2c3d58e6bb339414f7f9f0f268fc144ba4a1a6f239c8c448eb76a5ae071",
+  "source": "AL-USDA-FNDDS",
+  "catalog_name": "Bread, white"
+ },
+ {
+  "slug": "pao_integral",
+  "pt": "Pão integral",
+  "en": "whole wheat bread",
+  "food_id": "food:50cfe7ebbcb34690a81166b243ed82cedbeee46e78523f46efa88a5d7179afb3",
+  "version_id": "299e9cfe5baf41c46ccb5e93f9909a31d8d84c647e5a3834c3c7208e78250d16",
+  "source": "AL-TACO",
+  "catalog_name": "Pão, trigo, forma, integral"
+ },
+ {
+  "slug": "pao_doce",
+  "pt": "Pão doce",
+  "en": "sweet bread roll",
+  "food_id": "food:28a214ffb85a188f8c3daa89e4d2696790974724e8a07ec3aee4ca0e9551895e",
+  "version_id": "158eeabf4c30b583a5da8df55502d7df49c8eed202023d770472c8ed91c50334",
+  "source": "AL-TACO",
+  "catalog_name": "Pão, trigo, sovado"
+ },
+ {
+  "slug": "pao_de_queijo",
+  "pt": "Pão de queijo",
+  "en": "pao de queijo cheese bread balls",
+  "food_id": "food:f526143c9fb0d802a5b5d293c2b4b4613c24b094f14389da351fa66bd1779cb3",
+  "version_id": "ae390d0b3f52f3b4d16aea30ff8a15055b9bbed31404b47f7e4a24bb3ef8cb7e",
+  "source": "AL-TACO",
+  "catalog_name": "Pão, de queijo, assado"
+ },
+ {
+  "slug": "pao_alho",
+  "pt": "Pão de alho",
+  "en": "garlic bread",
+  "food_id": "food:6792082b5e8231046e3b7adc5ac2ae0491d6c3bc4b273737365a3941389959e3",
+  "version_id": "c5c229fa32f02d701b369dcc93dfca76231614cc3ac0619aae20ef00f7248ae6",
+  "source": "AL-USDA-FNDDS",
+  "catalog_name": "Garlic bread, NFS"
+ },
+ {
+  "slug": "torrada",
+  "pt": "Torrada",
+  "en": "toast",
+  "food_id": "food:39a2e518684d8ace5c9f4441e1ae6f418ae867703bb966b87ac971bcb871ada6",
+  "version_id": "d239993f30e1c85c68c15e0806dd2159db2f45d5a7237f4e0b9da70f91352413",
+  "source": "AL-TACO",
+  "catalog_name": "Torrada, pão francês"
+ },
+ {
+  "slug": "croissant",
+  "pt": "Croissant",
+  "en": "croissant",
+  "food_id": "food:282402c51781f8c01992eb3526dfcf507041380587662ac05aa44d46fcd6d7ce",
+  "version_id": "a36235e6e38ea758ba6f0e056190321f86c6d1d6f31b4af6746e8ad90a1707ca",
+  "source": "AL-USDA-FNDDS",
+  "catalog_name": "Croissant"
+ },
+ {
+  "slug": "bagel",
+  "pt": "Bagel",
+  "en": "bagel",
+  "food_id": "food:d08cc486118d5933e61bc9f801de6190a266d4c91e83dc18010ef292f6ebf2c2",
+  "version_id": "1577d7df4faec823f3d92d433cc1b084eba8bf1056e6138976814496433af02a",
+  "source": "AL-USDA-FNDDS",
+  "catalog_name": "Bagel"
+ },
+ {
+  "slug": "muffin",
+  "pt": "Muffin",
+  "en": "muffin",
+  "food_id": "food:cdd64f95c21dbf65e967b8d3021c76d5f358149ba86d005c17c391f21cc296d3",
+  "version_id": "b76d93101fc6f7a859b640b9b4f243d393437a75a9c5edc138d631387f81a8bb",
+  "source": "AL-USDA-FNDDS",
+  "catalog_name": "Muffin, NFS"
+ },
+ {
+  "slug": "donut",
+  "pt": "Donut",
+  "en": "doughnut",
+  "food_id": "food:970655e41e7f984aafc3aaab1c0da735b9a70110b09fed17c01104be153d841e",
+  "version_id": "65538bce882f8658779a82fd35060e73e7ed7b105ce05cfbf00914e7864a635d",
+  "source": "AL-USDA-FNDDS",
+  "catalog_name": "Doughnut, NFS"
+ },
+ {
+  "slug": "sonho",
+  "pt": "Sonho",
+  "en": "cream filled doughnut",
+  "food_id": "food:d31af905f55ce2cf377a9fefacd6cf5274304435c2f927d09997518161dce1e7",
+  "version_id": "c4a229f45f68ac2918e69087596fc5491dd9ff22e5287f63c8608258a9ae2dbb",
+  "source": "AL-USDA-FNDDS",
+  "catalog_name": "Doughnut, custard-filled",
+  "review": null
+ },
+ {
+  "slug": "churros",
+  "pt": "Churros",
+  "en": "churros",
+  "food_id": "food:b986223ad548062e4284288eea12a7593114d82c03ae259e3e1c3d8612945023",
+  "version_id": "235587f57d0b9b3db6f848ff4a9634ecf509e35f8799bec4f73c540352ce93c7",
+  "source": "AL-USDA-FNDDS",
+  "catalog_name": "Churros"
+ },
+ {
+  "slug": "waffle",
+  "pt": "Waffle",
+  "en": "waffle",
+  "food_id": "food:236a1ed365994b10b77439f078ab3ef4541f4d88408e5b466494ee0cb8610adb",
+  "version_id": "fd52df43ba7926fa47c7c78cfad9904157e0fa7de787b4587fb0ff5a2ab72174",
+  "source": "AL-USDA-FNDDS",
+  "catalog_name": "Waffle, NFS"
+ },
+ {
+  "slug": "panqueca",
+  "pt": "Panqueca",
+  "en": "pancakes",
+  "food_id": "food:9fd00d47d319f0b355aa464190a4a843054148e28d822e08d691c05766a1a77a",
+  "version_id": "834885e8b31976247f1b5784938af59bd69bf89be99111fbdc2d2b04f22a1d49",
+  "source": "AL-USDA-FNDDS",
+  "catalog_name": "Pancakes, plain",
+  "review": null
+ },
+ {
+  "slug": "crepe",
+  "pt": "Crepe",
+  "en": "crepe",
+  "food_id": "food:4e08e48909df26a21d39462f954673b20c9f85e0232054a3267065d1bef31f04",
+  "version_id": "8c2ee32913d2e255f7930c2967bb8d6d539b4a1072e8811c28da146be1a12f37",
+  "source": "AL-USDA-FNDDS",
+  "catalog_name": "Crepe, NFS"
+ },
+ {
+  "slug": "tapioca",
+  "pt": "Tapioca",
+  "en": "tapioca crepe",
+  "food_id": "food:d49fc01c4623824c571393fa50d836f1283099b51e4e5b3af52d9fb61dfb014b",
+  "version_id": "b383b9a0bd5220d9cc4056d8c4d8bdd0563d13bdad1ff73a52b733b6c5ea5dac",
+  "source": "AL-TACO",
+  "catalog_name": "Tapioca, com manteiga"
+ },
+ {
+  "slug": "cuscuz_milho",
+  "pt": "Cuscuz de milho",
+  "en": "steamed corn couscous",
+  "food_id": "food:fdfbc1e4c20766a6f7b57d2374420b2acff27d941e3e77bf58843f522b269e7b",
+  "version_id": "9387dbce6a6f15bc67499a4cca0fd56f3d477a275b4b172623581de947e53987",
+  "source": "AL-TACO",
+  "catalog_name": "Cuscuz, de milho, cozido com sal"
+ },
+ {
+  "slug": "cuscuz_paulista",
+  "pt": "Cuscuz paulista",
+  "en": "cuscuz paulista molded corn dish",
+  "food_id": "food:de15226383d36e8dfc10239062217ace91e9264257ae1fd4cfae2d57d5e8694a",
+  "version_id": "b470729b80ba656becf969985d106d86476d73492e9a370215e018aa950fd47c",
+  "source": "AL-TACO",
+  "catalog_name": "Cuscuz, paulista"
+ },
+ {
+  "slug": "cuscuz_marroquino",
+  "pt": "Cuscuz marroquino",
+  "en": "couscous",
+  "food_id": "food:93aa33c8eb612a1f82f91ea6b9d81f12162f86ac9c0d63660fca92f439be51de",
+  "version_id": "7d49b425ebebd3a7d511a0e374f9303208985de501f640c80ef94011a115186a",
+  "source": "AL-USDA-FNDDS",
+  "catalog_name": "Couscous, plain, cooked"
+ },
+ {
+  "slug": "quinoa",
+  "pt": "Quinoa",
+  "en": "cooked quinoa",
+  "food_id": "food:d44a2e4a849eaabe6b02e0bb66521712f2aa7c8be014d415f2757429d825f2c5",
+  "version_id": "4f66398d00537e137af77bce25602155ba9c3993b75b0a85f9554e69d77ee7ff",
+  "source": "AL-USDA-SR-LEGACY",
+  "catalog_name": "Quinoa, cooked"
+ },
+ {
+  "slug": "polenta",
+  "pt": "Polenta",
+  "en": "polenta",
+  "food_id": "food:49c176e2db7241d1efe9e3d6a555f8fd9e6a77e5fb4887d927e7d71ba47feb5d",
+  "version_id": "664b6046fdff9d2eaeffc799b91045ac7bd6fb64972e36a58b71b4854f828a8c",
+  "source": "AL-TACO",
+  "catalog_name": "Polenta, pré-cozida"
+ },
+ {
+  "slug": "pipoca",
+  "pt": "Pipoca",
+  "en": "popcorn",
+  "food_id": "food:573103b6b9e6caf32294e2164314281fa6d59c5c93a62956c1d4d3eaed9db350",
+  "version_id": "07a6d485adc5fe7b4926861d0ca013a294f6c27ee3ce9a25740a118c40e8fcb8",
+  "source": "AL-TACO",
+  "catalog_name": "Pipoca, com óleo de soja, sem sal"
+ },
+ {
+  "slug": "pizza",
+  "pt": "Pizza",
+  "en": "pizza",
+  "food_id": "food:5637b36c634e90e0d58a8413703def115882bc07ed50674eea0af53c2b8bb65c",
+  "version_id": "6c6c50c41bf5a1d8abc5a467286ce4975bad301e03379cbee9f536525e2172e6",
+  "source": "AL-COFID-2021",
+  "catalog_name": "Pizza, cheese and tomato, retail",
+  "review": null
+ },
+ {
+  "slug": "hamburguer_lanche",
+  "pt": "Hambúrguer (lanche)",
+  "en": "hamburger sandwich",
+  "food_id": "food:893deb0a691d871d1f3828bfc7fb1d063dc65ef4899e3301cc5bd38af11ae0ff",
+  "version_id": "4759c9ee6e383fc13f8ae60666480958f9871e4b9df53fb4b208780223b9e32c",
+  "source": "AL-USDA-FNDDS",
+  "catalog_name": "Hamburger, NFS"
+ },
+ {
+  "slug": "cachorro_quente",
+  "pt": "Cachorro-quente",
+  "en": "hot dog",
+  "food_id": "food:d329ac059fd511dddacad91ecc3b40fbb3a812fde99047933bd9f6127cf3f70f",
+  "version_id": "659f703064b427bcaf2804ce7ddf5c43008ef2f6a6836179cb7d935e0303802a",
+  "source": "AL-USDA-FNDDS",
+  "catalog_name": "Hot dog, NFS"
+ },
+ {
+  "slug": "sanduiche",
+  "pt": "Sanduíche",
+  "en": "sandwich",
+  "food_id": "food:c5c58259964b7208449811fe5d48226e19797d98e1ab533f1a01cb0ce8b900e7",
+  "version_id": "f04a166cd8c5cc7830c4543dfcec0722d5756573348638b74aacfcbcab18df1b",
+  "source": "AL-USDA-FNDDS",
+  "catalog_name": "Sandwich, NFS",
+  "review": null
+ },
+ {
+  "slug": "misto_quente",
+  "pt": "Misto-quente",
+  "en": "grilled ham and cheese sandwich",
+  "food_id": "food:94b0a86c1216cac2d4fd6612cab7224417979364a499a9888a4d024a7e158dc1",
+  "version_id": "b224b87a5cf95b2a815fc4bad1ab776d66036fff2d407e75922985519aef82bd",
+  "source": "AL-USDA-FNDDS",
+  "catalog_name": "Grilled cheese sandwich, NFS"
+ },
+ {
+  "slug": "burrito",
+  "pt": "Burrito",
+  "en": "burrito",
+  "food_id": "food:d52f7a9e0be38eab9646bc6c610f2c270072a1024294b3c8252a9063346cce05",
+  "version_id": "e60a0be4127be225b9ee90ecb6efa17dae027ad69dc62cf5c463984a631bfb22",
+  "source": "AL-USDA-FNDDS",
+  "catalog_name": "Burrito, NFS",
+  "review": null
+ },
+ {
+  "slug": "taco",
+  "pt": "Taco",
+  "en": "taco",
+  "food_id": "food:9ab395b75463c5409063f7c19dad76747d448ebf6a6fe392a1c1533c8d4836ea",
+  "version_id": "87d0b1f85385cf2909dfbd40cb3be9ff554fc7d44ea2be2e5030fbec55d52fb1",
+  "source": "AL-USDA-FNDDS",
+  "catalog_name": "Taco, NFS"
+ },
+ {
+  "slug": "nachos",
+  "pt": "Nachos",
+  "en": "nachos",
+  "food_id": "food:a4a7ca022f2ca2dc323536a8d150e5cfeb6b165a2c9b417b3573d56028344b5b",
+  "version_id": "5d4fb3dbad15659953ec0929b6aa763bf06bcf87c4e5122ad161413f953755c4",
+  "source": "AL-USDA-FNDDS",
+  "catalog_name": "Nachos, NFS"
+ },
+ {
+  "slug": "esfiha",
+  "pt": "Esfiha",
+  "en": "esfiha open meat pie",
+  "food_id": "food:08bc6e0d2d5068a2b84e57bd2cd341967ea0fa8e999b5269d5e4ad6c4129c792",
+  "version_id": "c00f4bfca74244e87adc4cd6404d3d2781d2d785e5bdc4538079b0b981d739ab",
+  "source": "AL-USDA-FNDDS",
+  "catalog_name": "Ripe plantain meat pie, Puerto Rican style",
+  "review": null
+ },
+ {
+  "slug": "empada",
+  "pt": "Empada",
+  "en": "small chicken pie",
+  "food_id": "food:44efb15bc0de5633cf8b45e0cdded7e6159958f9871559e714bbc587b2947a83",
+  "version_id": "06f02eed5ba27ba879b47aa8a42025ef83a4c56933e92b48ca95b1d259677ba3",
+  "source": "AL-TACO",
+  "catalog_name": "Empada de frango, pré-cozida, assada"
+ },
+ {
+  "slug": "coxinha",
+  "pt": "Coxinha",
+  "en": "coxinha chicken croquette",
+  "food_id": "food:023f0b7743bf3962b3db40ff0eaf4c80e0e2544c5722b596e7f984168069880e",
+  "version_id": "b8f6d6e746ff7be6edf8207cd7216becaeec02543bd66421333b581cd5a66461",
+  "source": "AL-TACO",
+  "catalog_name": "Coxinha de frango, frita"
+ },
+ {
+  "slug": "croquete",
+  "pt": "Croquete",
+  "en": "croquette",
+  "food_id": "food:3bd33aaef7a45d1c02b01f7f0d40a576a2bdde003f19e9dde7155816b3083d2a",
+  "version_id": "b5469bfb6c32dc4f64668204f2ee301bfc0c5dc0e8ad1cebde01cd034611792b",
+  "source": "AL-TACO",
+  "catalog_name": "Croquete, de carne, frito"
+ },
+ {
+  "slug": "quibe",
+  "pt": "Quibe",
+  "en": "fried kibbeh",
+  "food_id": "food:5af5eb9544e220e8fc1d16479a8e724c15822a5f7ba59f1bdb14deb533dbba68",
+  "version_id": "e6d5f96b0f62231cbb1d1ce457298a3159a0bf3b8dbf7396ff729168b87d3376",
+  "source": "AL-TACO",
+  "catalog_name": "Quibe, frito"
+ },
+ {
+  "slug": "pastel",
+  "pt": "Pastel",
+  "en": "pastel fried pastry",
+  "food_id": "food:6a3e864687bc29d95ab4a70bacb10ba0caaaf2509320b1f92dc3ca562918d996",
+  "version_id": "89110ad982ae9ae9558d86f28999b8f789bbdddd56a9257c7e8922a8ebb79ca7",
+  "source": "AL-TACO",
+  "catalog_name": "Pastel, de carne, frito"
+ },
+ {
+  "slug": "enroladinho",
+  "pt": "Enroladinho de salsicha",
+  "en": "sausage roll",
+  "food_id": "food:c8f8b952bc881bc8337890a602cf38f2b44d4a4f6d1a6856b98a0570e80a857d",
+  "version_id": "3014be8986ef058262f2b9ca2c348c142b07e7156d14b3495407d0b1cd7a70d2",
+  "source": "AL-USDA-FNDDS",
+  "catalog_name": "Pig in a blanket",
+  "review": null
+ },
+ {
+  "slug": "bolinho_arroz",
+  "pt": "Bolinho de arroz",
+  "en": "rice fritters",
+  "food_id": "food:6577d4e341a443bb96172ec6d6a37bacbe876d49e9adb05143ca40f58f02e0fd",
+  "version_id": "7d81c06f16d00cfc2283f3804b3fb0584434af263a5e2fd3ed84ec1552202e11",
+  "source": "AL-TACO",
+  "catalog_name": "Bolinho de arroz"
+ },
+ {
+  "slug": "acaraje",
+  "pt": "Acarajé",
+  "en": "acaraje fried bean fritter",
+  "food_id": "food:5aef59107e5d6f15e908096a7baab363ac3f11226b22f23f4a693fe6547d8d5c",
+  "version_id": "544f5a8f4770e53f7f80486745d490b13eae853405ecdd4b3e9678943cd8b25d",
+  "source": "AL-TACO",
+  "catalog_name": "Acarajé"
+ },
+ {
+  "slug": "falafel",
+  "pt": "Falafel",
+  "en": "falafel",
+  "food_id": "food:cb4baf444851c08586756beaf49d10df882d3c7a8ff5f78b2a97c6c31fda1b7d",
+  "version_id": "58c4c58cab1760a1010e4c016eeb28c644294b78dc63119c01257ff127a2bef4",
+  "source": "AL-USDA-FNDDS",
+  "catalog_name": "Falafel"
+ },
+ {
+  "slug": "sushi",
+  "pt": "Sushi",
+  "en": "sushi",
+  "food_id": "food:d9354f546614af0cada9de77adfc1d5f5dde35e5bc22ada7ca7ceb4f2ce52c27",
+  "version_id": "1f4bc00132a702edda489c40230711450aae8bcadafa59faba3237741c5cd688",
+  "source": "AL-USDA-FNDDS",
+  "catalog_name": "Sushi, NFS"
+ },
+ {
+  "slug": "temaki",
+  "pt": "Temaki",
+  "en": "temaki hand roll",
+  "food_id": "food:bdae22bdbb82a3098bd3f1bd7b083e5d8dfcd5c7bfb224c0f1d44a21fa233d2c",
+  "version_id": "ada2a28655ea9f0e522e7300b41fb3751f43762a5cc7451afad03fc01185e379",
+  "source": "AL-USDA-FNDDS",
+  "catalog_name": "Sushi roll tuna"
+ },
+ {
+  "slug": "guioza",
+  "pt": "Guioza",
+  "en": "dumplings",
+  "food_id": "food:f369b3e0aeeea413875d6d5a4ccc729b1894ec24d9955675c292d9b0dda8ef87",
+  "version_id": "6fd00f3724241710eb595516474cd2f451dc4ffecf68f96d8809a4d77071cb5e",
+  "source": "AL-USDA-FNDDS",
+  "catalog_name": "Dumpling, no meat"
+ },
+ {
+  "slug": "rolinho_primavera",
+  "pt": "Rolinho primavera",
+  "en": "spring rolls",
+  "food_id": "food:8424554e9890942b716790cb8f316a2ac93a42e2e9209ef46e28712e8e43b632",
+  "version_id": "4f953fb74651ed825a8a7a4792e46a5ffba665a3ccc3e79620bb095dd9a522c1",
+  "source": "AL-USDA-FNDDS",
+  "catalog_name": "Egg roll, meatless",
+  "review": null
+ },
+ {
+  "slug": "pretzel",
+  "pt": "Pretzel",
+  "en": "pretzel",
+  "food_id": "food:a896790e3d342bcb7c59a0e31cd0d32c9223978a31c168493c5106cfde13a0f4",
+  "version_id": "fd96ad464b7c53bcf01e4a801667230f386d9612904bdb26c9d0578a62b07224",
+  "source": "AL-USDA-FNDDS",
+  "catalog_name": "Pretzels, NFS"
+ },
+ {
+  "slug": "batata_chips",
+  "pt": "Batata chips",
+  "en": "potato chips",
+  "food_id": "food:d6c7bd9e445fe76f70ef2ed65bed51ca8883ff2705f88d302acbf2d3bdc77575",
+  "version_id": "81aa91e6f4df0c67aeb2e2ab9b3f5bf164d2cd1a6c9e0d8c6ac1d2d1f795fc3d",
+  "source": "AL-TACO",
+  "catalog_name": "Batata, frita, tipo chips, industrializada"
+ },
+ {
+  "slug": "batata_palha",
+  "pt": "Batata palha",
+  "en": "shoestring potato sticks",
+  "food_id": "food:83dc4705a1c9e123c35d1453fa90156566ee6627351c8625419c81ebd300ad13",
+  "version_id": "c21041fac8521e893f2c2d19ebf06578db96263b4533e7c9a841195b4f8acfbe",
+  "source": "AL-USDA-FNDDS",
+  "catalog_name": "Potato sticks, plain"
+ },
+ {
+  "slug": "salgadinho",
+  "pt": "Salgadinho",
+  "en": "corn snack chips",
+  "food_id": "food:eac28749c915c1780715ec2ebd0e099cdc6e738b1a1b2fd54864183eee799c8f",
+  "version_id": "4d33809fc1ee511193567ef8a249c48fa9b0fbf309778796d0ac49e243e7ac58",
+  "source": "AL-USDA-FNDDS",
+  "catalog_name": "Corn chips, plain"
+ },
+ {
+  "slug": "abobora",
+  "pt": "Abóbora",
+  "en": "cooked pumpkin",
+  "food_id": "food:3e121aa7ba1e3b90171114bf66404ea8e7bd88c38648937a1d0a7bb72f921eb1",
+  "version_id": "aaa8ee32d10dba6074344f80cd4b60277eef9ad44a0b8715c5400182e0241833",
+  "source": "AL-TACO",
+  "catalog_name": "Abóbora, cabotian, cozida"
+ },
+ {
+  "slug": "abobrinha",
+  "pt": "Abobrinha",
+  "en": "zucchini",
+  "food_id": "food:4b1bdcb723b3df6bc4cad068dbea3735bbecf71f19c60e56592f9261a32a5764",
+  "version_id": "213c86df825f269e9c01d2ad0b8e56fd52abcba89d15759a67ed519b1ba7de59",
+  "source": "AL-TACO",
+  "catalog_name": "Abobrinha, italiana, cozida"
+ },
+ {
+  "slug": "acelga",
+  "pt": "Acelga",
+  "en": "chard",
+  "food_id": "food:231a55dd4f2d81a62e020a0f4ec0a2ebe0a512e7b8759286484d426f7f54ac99",
+  "version_id": "14f8a44960cedad6547d66178dd10c83b0ae6431a9608cf4f1c61eb687c5a3aa",
+  "source": "AL-TACO",
+  "catalog_name": "Acelga, crua"
+ },
+ {
+  "slug": "agriao",
+  "pt": "Agrião",
+  "en": "watercress",
+  "food_id": "food:7fd78fe6271a218d5d9e62840f1dca35293b4a7e7d02beb099361debe9f64252",
+  "version_id": "d177ed2d27b1a2bb07c3ec1e11bb9e8eea149eac06263fddce260c68cd753e41",
+  "source": "AL-TACO",
+  "catalog_name": "Agrião, cru"
+ },
+ {
+  "slug": "alface",
+  "pt": "Alface",
+  "en": "lettuce",
+  "food_id": "food:c970a277140baae09a8ead284fa69fad8de81096681407d6068f094eae680096",
+  "version_id": "aeb90fde14bd1f8df36679092bfad581f75ff80de9916f917cd0da278921075a",
+  "source": "AL-TACO",
+  "catalog_name": "Alface, crespa, crua"
+ },
+ {
+  "slug": "alho",
+  "pt": "Alho",
+  "en": "garlic",
+  "food_id": "food:e372182380714c8f12d34cb37872089f4d829e3816a069c0fd1b8e4a81a1a578",
+  "version_id": "4c913d8ed303c03f758e61dafff8f8aa3ff128cc16f776be58f53f35454193d0",
+  "source": "AL-TACO",
+  "catalog_name": "Alho, cru"
+ },
+ {
+  "slug": "alho_poro",
+  "pt": "Alho-poró",
+  "en": "leek",
+  "food_id": "food:ddb9bbb4f104b7b0a0f27d4676ddfa402364b30cb4ed3f15b13a4c67af3caa47",
+  "version_id": "ccd15b36b5cf9babb5f826535528438bdf79f019d427b62ec7aad708f801ec9c",
+  "source": "AL-TACO",
+  "catalog_name": "Alho-poró, cru"
+ },
+ {
+  "slug": "almeirao",
+  "pt": "Almeirão",
+  "en": "chicory greens",
+  "food_id": "food:6f62dac9d5fea72eba0ec2f33798a28dbaf52a224a6f5b5eb8306b84d74e4dbf",
+  "version_id": "284de0f2a0707b9c2b44df59cd5ab422388e9be319791b6b25abf942a86ef59b",
+  "source": "AL-TACO",
+  "catalog_name": "Almeirão, refogado"
+ },
+ {
+  "slug": "mandioquinha",
+  "pt": "Mandioquinha",
+  "en": "arracacha root",
+  "food_id": "food:60d8d0f417ec806dbed0bc8baf930c9b07d3d08217ee10d3f6f0007c1cbea615",
+  "version_id": "c01eda8c48af7ea0920cfbe182a33c37af207d13f8dd7e0319983df5595cfeee",
+  "source": "AL-TACO",
+  "catalog_name": "Batata, baroa, cozida"
+ },
+ {
+  "slug": "batata_doce",
+  "pt": "Batata-doce",
+  "en": "sweet potato",
+  "food_id": "food:8b6a7018b44d0b5d8b64e7600410540599ccbe76709c4957700ffa5f5c9af473",
+  "version_id": "12e1da691ce65f2f518752301bf4aee8e70f5a6407c47a89c659135223378e14",
+  "source": "AL-TACO",
+  "catalog_name": "Batata, doce, cozida"
+ },
+ {
+  "slug": "batata_cozida",
+  "pt": "Batata cozida",
+  "en": "boiled potatoes",
+  "food_id": "food:1db2b24df50b7efbd8b80c813e43da342a187bcc707c09ec11a61a4dfb375a37",
+  "version_id": "3aa36271c89d514a784951c30dd8e6ea8927ae6a6490fcf6aaf28cf2691bafa6",
+  "source": "AL-TACO",
+  "catalog_name": "Batata, inglesa, cozida"
+ },
+ {
+  "slug": "batata_frita",
+  "pt": "Batata frita",
+  "en": "french fries",
+  "food_id": "food:8975e142ea40759e8d19a859b89eb84406c6e9cb9d0a9854dc6ee23e7f256c09",
+  "version_id": "18855ab3e988ca7b723a0c56352f1874fdf342166048c6e6eef749d9834e7a33",
+  "source": "AL-TACO",
+  "catalog_name": "Batata, inglesa, frita"
+ },
+ {
+  "slug": "batata_saute",
+  "pt": "Batata sauté",
+  "en": "sauteed potatoes",
+  "food_id": "food:26ca5b86cfa33ac2cbf412ee38cf02230a9887339fc43aec41372a33748b676d",
+  "version_id": "f70d2fbddbe6d2dcaf247fd47e6dec58c2580a2285b9480caab3726bf4890e87",
+  "source": "AL-TACO",
+  "catalog_name": "Batata, inglesa, sauté"
+ },
+ {
+  "slug": "batata_assada",
+  "pt": "Batata assada",
+  "en": "baked potato",
+  "food_id": "food:8d707a5f8d02a18d878e44acacceaa87ad60b6ddff1afd62678f54dbe3c9368f",
+  "version_id": "7b9ecf5830cede188e8bbb57e0fd33becf685833186c7ff8f9122c8241671571",
+  "source": "AL-USDA-FNDDS",
+  "catalog_name": "Potato, baked, NFS"
+ },
+ {
+  "slug": "pure_batata",
+  "pt": "Purê de batata",
+  "en": "mashed potatoes",
+  "food_id": "food:b2556f702b09f19ddbe20b15ef4117853632c6ba97f7f36060f07590f12a6d95",
+  "version_id": "e66ae7a8cb6f224fef3203a7ed59a7c6099a5b6d49f4444981a2ad3db708f8cc",
+  "source": "AL-USDA-FNDDS",
+  "catalog_name": "Potato, mashed, NFS"
+ },
+ {
+  "slug": "berinjela",
+  "pt": "Berinjela",
+  "en": "eggplant",
+  "food_id": "food:f6f4237173a76625a4c0c452fa660c2d2c1535b81b6b1b73e3e2252e79714a2b",
+  "version_id": "88b4f110baad095e77d632df0af591f75010c54a6295f14b67faf872368d0c98",
+  "source": "AL-TACO",
+  "catalog_name": "Berinjela, cozida"
+ },
+ {
+  "slug": "beterraba",
+  "pt": "Beterraba",
+  "en": "beetroot",
+  "food_id": "food:12c8811a5aee7533086b16afe2c2a9b4c92d04724cdc877ecb599e37880360ae",
+  "version_id": "7deea27a935ec828be0b8e3767ddcd397d1facb83b25ea1335687f8c2de6a16d",
+  "source": "AL-TACO",
+  "catalog_name": "Beterraba, cozida"
+ },
+ {
+  "slug": "brocolis",
+  "pt": "Brócolis",
+  "en": "broccoli",
+  "food_id": "food:2d125997b18a422ca45866bdde640cfd36a343f71b8bf7e786e67750086048b6",
+  "version_id": "45c36f0d05d0e3ac7aa77fe539fbe647ec0f8f0a99ddd0e08952bf9d16a861d6",
+  "source": "AL-TACO",
+  "catalog_name": "Brócolis, cozido"
+ },
+ {
+  "slug": "couve_bruxelas",
+  "pt": "Couve-de-bruxelas",
+  "en": "brussels sprouts",
+  "food_id": "food:ecf423258743b4aa0a1d18ec427be86b23dc9c48d9df43c62a035f5d97704430",
+  "version_id": "a0119ac366524ca03f63872dbdbd905bc8d61206103bb3686eb203c2313d154e",
+  "source": "AL-USDA-FNDDS",
+  "catalog_name": "Brussels sprouts, raw"
+ },
+ {
+  "slug": "cara",
+  "pt": "Cará",
+  "en": "yam",
+  "food_id": "food:890888cf6a13706bc9cc8ba29fe0151927b15744616294973a71eb4202b83b77",
+  "version_id": "b7d9a236fbdb85d372219990c256e65de217f5e2b008bad9491a3aec45575ec7",
+  "source": "AL-TACO",
+  "catalog_name": "Cará, cozido"
+ },
+ {
+  "slug": "inhame",
+  "pt": "Inhame",
+  "en": "taro root",
+  "food_id": "food:16be47f83d7434f3fee38042b7ef84af7d16210c1bfa2e10638b05e4ee86d61c",
+  "version_id": "1f4c7943dea88b40cba243ae78d8aa7648b448ad26ad3e417d3b7fd5a36b3e43",
+  "source": "AL-TACO",
+  "catalog_name": "Inhame, cru"
+ },
+ {
+  "slug": "cebola",
+  "pt": "Cebola",
+  "en": "onion",
+  "food_id": "food:aca92f8b2a70d0b7e6b97eb8c6ef41e8456ed4b0b7509fe4e1334ac85cdea047",
+  "version_id": "afa5d8bb53acb71e70c72a8f88ab8e1c8598596da3eacdebbd0a10cb19acfff0",
+  "source": "AL-TACO",
+  "catalog_name": "Cebola, crua"
+ },
+ {
+  "slug": "cebolinha",
+  "pt": "Cebolinha",
+  "en": "chives",
+  "food_id": "food:2029b01c62dd0ae889d653cb5d8c1743d591ebcdc79660b6cc16814790476cee",
+  "version_id": "4c3ace4da50ef0b1d8f7976a8d69344d85529dd386c34c4acc4dd51bba9f5849",
+  "source": "AL-TACO",
+  "catalog_name": "Cebolinha, crua"
+ },
+ {
+  "slug": "cenoura",
+  "pt": "Cenoura",
+  "en": "carrot",
+  "food_id": "food:1cff480b3a387a51491bcca98a45eb50725868c9ff1e3c2739ad02f52af14cae",
+  "version_id": "052f4df172d6d3c32437daff0c0cc1092aab9ceefb0a2b478af85e36b9ac777c",
+  "source": "AL-TACO",
+  "catalog_name": "Cenoura, cozida"
+ },
+ {
+  "slug": "chuchu",
+  "pt": "Chuchu",
+  "en": "chayote",
+  "food_id": "food:d744a620a564af8b1209b918b280dec908c3a3e39b9a0aa703a93d0346781870",
+  "version_id": "b7f4b650abebac5f7c7040928a5538a0714fe3a3aded4c3a5a47a021dbacc49e",
+  "source": "AL-TACO",
+  "catalog_name": "Chuchu, cozido"
+ },
+ {
+  "slug": "couve",
+  "pt": "Couve refogada",
+  "en": "sauteed collard greens",
+  "food_id": "food:087867bfd497eba450b3d2b35ff67a498b345f0b9fec02b4d8862c3448bd26be",
+  "version_id": "f96ba87eff824f4b7aff283925868865663801a3f3ff1ca751994b8574bf7bad",
+  "source": "AL-TACO",
+  "catalog_name": "Couve, manteiga, refogada"
+ },
+ {
+  "slug": "couve_flor",
+  "pt": "Couve-flor",
+  "en": "cauliflower",
+  "food_id": "food:efa10f0939efc8be82c9c633c0db959e21b65dad46ef2b87244970c1da69b731",
+  "version_id": "b3887bd3225da7a7d0d59c9d1fc07d8d5069778f41aec182f4667bd0360b5d99",
+  "source": "AL-TACO",
+  "catalog_name": "Couve-flor, cozida"
+ },
+ {
+  "slug": "espinafre",
+  "pt": "Espinafre",
+  "en": "spinach",
+  "food_id": "food:d5493a6ca5973665f7183a489f43e3876010fd0359dc4aa7264749f5e8a03ba6",
+  "version_id": "fdcf81e91d5b177f570594cc723aa5495aa7378dba1c6f9ce6cd316d338618ca",
+  "source": "AL-TACO",
+  "catalog_name": "Espinafre, Nova Zelândia, refogado"
+ },
+ {
+  "slug": "farofa",
+  "pt": "Farofa",
+  "en": "farofa toasted cassava flour",
+  "food_id": "food:e0f8e0cbfc8286865fc884e79eafbafe70591d1e2ad99e47a907d54280e8f31f",
+  "version_id": "fd1b46f115f0398cd59b355fbd43fcc30b209fdb60327639f87ce804b84011aa",
+  "source": "AL-TACO",
+  "catalog_name": "Mandioca, farofa, temperada"
+ },
+ {
+  "slug": "mandioca_cozida",
+  "pt": "Mandioca cozida",
+  "en": "boiled cassava",
+  "food_id": "food:5d29c26c444454fb583ba03c1d20d77c8ba9cab427b5a4a80eb3ebe110abe3e9",
+  "version_id": "f2f0f069b0ca58e50794edd2cf0ebcb22c69768054c447247c7a3e44152d988c",
+  "source": "AL-TACO",
+  "catalog_name": "Mandioca, cozida"
+ },
+ {
+  "slug": "mandioca_frita",
+  "pt": "Mandioca frita",
+  "en": "fried cassava",
+  "food_id": "food:6960223b8f5b49e2531e4b6a5b40ecd5a196e960bd31780700f70aaaf303c367",
+  "version_id": "eeef9cac7a1d0b64497797d88c0d1c5b544d6b66b5fb8687458a62eec4a5c734",
+  "source": "AL-TACO",
+  "catalog_name": "Mandioca, frita"
+ },
+ {
+  "slug": "jilo",
+  "pt": "Jiló",
+  "en": "scarlet eggplant jilo",
+  "food_id": "food:adb3cb8327235c7f48b113b020c3e73d23673d0560abfa15663e213ed4711c01",
+  "version_id": "15c66ff97f21cba015fb4eb93357fce59f5a4da620de4622c5d2d6ce6c0671a2",
+  "source": "AL-TACO",
+  "catalog_name": "Jiló, cru"
+ },
+ {
+  "slug": "maxixe",
+  "pt": "Maxixe",
+  "en": "maxixe gherkin",
+  "food_id": "food:9f460ea3be9d647fc9c2336dd7321f2c6cf48e374e418501a7828eb7cecfe3f4",
+  "version_id": "1a0734540eaee83c6b7540373269fff82e852a6bc58cb8e965676bd22e39e9de",
+  "source": "AL-TACO",
+  "catalog_name": "Maxixe, cru"
+ },
+ {
+  "slug": "palmito",
+  "pt": "Palmito",
+  "en": "hearts of palm",
+  "food_id": "food:d5777cbede9bae37d98883d51e29eb1259d278051fe6e93cab7c18e47735d8f8",
+  "version_id": "87e6dfbdd18e1405b60ae916c251b5797834c866c44fce9608ea239a13287d0c",
+  "source": "AL-TACO",
+  "catalog_name": "Palmito, pupunha, em conserva"
+ },
+ {
+  "slug": "pepino",
+  "pt": "Pepino",
+  "en": "cucumber",
+  "food_id": "food:88767942393fffc5232dc2e5ce4cfe0a5e32e925682e4614c03441629d188e72",
+  "version_id": "8696ac0c147695a0874f3a626c9c09ef6517640b92ba8a537bd627cccb6c069e",
+  "source": "AL-TACO",
+  "catalog_name": "Pepino, cru"
+ },
+ {
+  "slug": "pimentao",
+  "pt": "Pimentão",
+  "en": "bell pepper",
+  "food_id": "food:8f8a989543833c7b0819d004b129c7755beae6cbaa96cbeb8883b6e208a86fd5",
+  "version_id": "589a705f7020bdd30ad03a1cfb50de96753181fa055a078d76198e60097e1baa",
+  "source": "AL-TACO",
+  "catalog_name": "Pimentão, verde, cru"
+ },
+ {
+  "slug": "pimenta",
+  "pt": "Pimenta",
+  "en": "chili peppers",
+  "food_id": "food:5aa5e4ae221f803a490f13be5c606a4347aea87477b3699b39c8e850a46019d7",
+  "version_id": "0224d812182f441d5207147b397c89c4dcc41520e8ac34083d1fecbcb3132d5f",
+  "source": "AL-USDA-SR-LEGACY",
+  "catalog_name": "Peppers, hot chili, red, raw"
+ },
+ {
+  "slug": "quiabo",
+  "pt": "Quiabo",
+  "en": "okra",
+  "food_id": "food:c94ce61b5cc9cccf6dc28c8b1beb47291679b9f7b538cd15fbdc5f9062d16fad",
+  "version_id": "1aa7244b34a05fe98a2e7fcae2a5c3bac20a3d662ee4bfdfb7fc567ad6987d7f",
+  "source": "AL-TACO",
+  "catalog_name": "Quiabo, cru"
+ },
+ {
+  "slug": "rabanete",
+  "pt": "Rabanete",
+  "en": "radish",
+  "food_id": "food:ebf8e7721f6fd58d0ac2df8917d367f29129741f13ba8f3e9a0c1367d79fe3d7",
+  "version_id": "7307585367bfecf8e34c51e52295dfbad4ced9f6e4bb38b55097793fdcd35d63",
+  "source": "AL-TACO",
+  "catalog_name": "Rabanete, cru"
+ },
+ {
+  "slug": "repolho",
+  "pt": "Repolho",
+  "en": "cabbage",
+  "food_id": "food:4b0002f45e122ffeabdc47790fb94d2bd9782e15c4199baa755cd19eb1c923a6",
+  "version_id": "64c1becc37ab36eb698a79b4ac4baafddf70e507f44d5a24fae43525b053a7cc",
+  "source": "AL-TACO",
+  "catalog_name": "Repolho, branco, cru"
+ },
+ {
+  "slug": "repolho_roxo",
+  "pt": "Repolho roxo",
+  "en": "red cabbage",
+  "food_id": "food:4a6f9f823fd6ec0411435513cd1f5fb3351c52adcbbed650d006b0a3d18df41f",
+  "version_id": "132707938df7d01091c6a8ac569e30bec169f16f0b1e6d3de3731d32c7e316d2",
+  "source": "AL-TACO",
+  "catalog_name": "Repolho, roxo, cru"
+ },
+ {
+  "slug": "rucula",
+  "pt": "Rúcula",
+  "en": "arugula",
+  "food_id": "food:821b954a1d7e58b5cb9404f064b45663d43375cc77fa819355ff186ed2eb799c",
+  "version_id": "c9764faa66bebb3e20b77b34a57961a47f242aad52b6ccea0a02dfbad659d7ff",
+  "source": "AL-TACO",
+  "catalog_name": "Rúcula, crua"
+ },
+ {
+  "slug": "salsa",
+  "pt": "Salsinha",
+  "en": "parsley",
+  "food_id": "food:7dcf85e6f4959c2ebeb37532c337a2894240f70aa2ca7ed33c740b7c9fa136fd",
+  "version_id": "48c3094f66f9922255626789692ed6cc73c8f7a2d1d7f4365cb09b52f7a3dbc6",
+  "source": "AL-TACO",
+  "catalog_name": "Salsa, crua"
+ },
+ {
+  "slug": "coentro",
+  "pt": "Coentro",
+  "en": "cilantro",
+  "food_id": "food:f2d044fad48dd6fd058e308482b5b5a4174b9e0163231bff089e2657cd612827",
+  "version_id": "ba5a8dcd9f4963256f7957ff0faf3802b74cdb3767364d2019b4048e019b7387",
+  "source": "AL-USDA-SR-LEGACY",
+  "catalog_name": "Coriander (cilantro) leaves, raw"
+ },
+ {
+  "slug": "manjericao",
+  "pt": "Manjericão",
+  "en": "basil leaves",
+  "food_id": "food:ac4828454bdb2e9f0511707562701096518dbb298d70a4faa3b19422bb9ef5c3",
+  "version_id": "64aa51af72fe05f2282b73f9236d2d441748dea30c9c49864392d257a16cd13f",
+  "source": "AL-TACO",
+  "catalog_name": "Manjericão, cru"
+ },
+ {
+  "slug": "chicoria",
+  "pt": "Chicória",
+  "en": "endive",
+  "food_id": "food:0415cb69f0b7c1dc0655a5c32d828f52aaeb764852914ffd815348d234434910",
+  "version_id": "03afe41d2b7461a4faf56ceb2c4613463aa16e034f0d6297c78ad45a28b9398f",
+  "source": "AL-TACO",
+  "catalog_name": "Chicória, crua"
+ },
+ {
+  "slug": "mostarda_folha",
+  "pt": "Mostarda (folha)",
+  "en": "mustard greens",
+  "food_id": "food:0b8788c7eaef781a41bf1c0400ab4eaf92226ba8836ceb2b0d451a1d827443c2",
+  "version_id": "8923363528edc4daebf57c01e6fc66c24ac9717379496f800b8a831ff101b4c6",
+  "source": "AL-TACO",
+  "catalog_name": "Mostarda, folha, crua"
+ },
+ {
+  "slug": "serralha",
+  "pt": "Serralha",
+  "en": "sow thistle greens",
+  "food_id": "food:8be66a706b4f6e95248819feff61139a0f3ec35e9ff8c91197948553163b77a1",
+  "version_id": "40207caf1e48a3eb192253e16fcc29b23293023fb2200ff07f68f7442640ddb7",
+  "source": "AL-TACO",
+  "catalog_name": "Serralha, crua"
+ },
+ {
+  "slug": "taioba",
+  "pt": "Taioba",
+  "en": "taioba leaves",
+  "food_id": "food:83d0209ae6bd8dde7cabd973705a3db1b92eeb458911d6e8e137da53bfe81bd5",
+  "version_id": "2f3d9da8ff1021581c537a1085f9a7a52d98f811d79ad54ae246642aa3d8967e",
+  "source": "AL-TACO",
+  "catalog_name": "Taioba, crua"
+ },
+ {
+  "slug": "caruru",
+  "pt": "Caruru",
+  "en": "amaranth greens caruru",
+  "food_id": "food:b6a47b28fa42a4393420f6e5fb40f2d929577d37fb10dd0062db1fee158f53c7",
+  "version_id": "98016061e2f7bdc1f725cee3710b60e4b9722326d6a806206b749f6f396d3de3",
+  "source": "AL-TACO",
+  "catalog_name": "Caruru, cru"
+ },
+ {
+  "slug": "aipo",
+  "pt": "Salsão",
+  "en": "celery",
+  "food_id": "food:bf5b24700f84043514575a59872a3a41094be45dde4bb0ebf3a18e6930ecf390",
+  "version_id": "d690c15e5f708e2b51eac6e279277962431889f003c3353462583d095e7f571f",
+  "source": "AL-TACO",
+  "catalog_name": "Aipo, cru"
+ },
+ {
+  "slug": "nabo",
+  "pt": "Nabo",
+  "en": "turnip",
+  "food_id": "food:1a5249004658f9ac1d03ac855d7eb06627404addcf5f97bef91221aaa42be0e0",
+  "version_id": "eeff8b75ae31c2030b4258bea73f2c2281a548102e00199c24759dcaf301b441",
+  "source": "AL-TACO",
+  "catalog_name": "Nabo, cru"
+ },
+ {
+  "slug": "gengibre",
+  "pt": "Gengibre",
+  "en": "ginger root",
+  "food_id": "food:1b17442d693852e78b7ad64f0f983d0c123e389fa0670b6ef6bb635cea758ae0",
+  "version_id": "fe7168139e1639c560f5644246335e5b5c21bbecd7a757bc83cbb8cb3aa60869",
+  "source": "AL-USDA-SR-LEGACY",
+  "catalog_name": "Ginger root, raw",
+  "review": null
+ },
+ {
+  "slug": "tomate",
+  "pt": "Tomate",
+  "en": "tomato",
+  "food_id": "food:19e27a308a0370e72b458fc4c8df34c2d8c4fa4dea326a0f1f4b79ebe05c11b5",
+  "version_id": "5215bb27731223bf0b2324068c8f18663873381b21eb91c1ec196a06fe127c65",
+  "source": "AL-TACO",
+  "catalog_name": "Tomate, com semente, cru"
+ },
+ {
+  "slug": "salada_tomate",
+  "pt": "Salada de tomate",
+  "en": "tomato salad",
+  "food_id": "food:fe8c3a6f0267229957d96106eac1d3db612533f3e546295e0883553d302f783a",
+  "version_id": "06c597dc851395b4dc02e9921b60f9d28672fdaf4cdb0a69c5d3fea482df268b",
+  "source": "AL-TACO",
+  "catalog_name": "Tomate, salada"
+ },
+ {
+  "slug": "vagem",
+  "pt": "Vagem",
+  "en": "green beans",
+  "food_id": "food:2a103dc958d3d74a137f5a2b422653687ada0bb04bf9c3052d78a1daa3ec1c1d",
+  "version_id": "d305368c8b657680bbd4e51520f9e7006e895c061ddc98e6dc98ff60bb054dcf",
+  "source": "AL-TACO",
+  "catalog_name": "Vagem, crua"
+ },
+ {
+  "slug": "milho_verde",
+  "pt": "Milho verde",
+  "en": "corn on the cob",
+  "food_id": "food:d7ca1d2cad7468023dda76fc61ce148c373220dd3a4e68c94ad8a55ab7f63fc9",
+  "version_id": "a50a634480a4d5a8dd737839b296caf163eb8386c13af4969507dfac6c905be3",
+  "source": "AL-TACO",
+  "catalog_name": "Milho, verde, cru"
+ },
+ {
+  "slug": "ervilha",
+  "pt": "Ervilha",
+  "en": "green peas",
+  "food_id": "food:4c29e130fd38cdc313de57068383ebb8284726f4a999779e1b1e6790d8a95ad7",
+  "version_id": "a109fa6dff185442d3dce0af8f05b8d204cde96b3eecfb7bdc59d7fef1a18494",
+  "source": "AL-TACO",
+  "catalog_name": "Ervilha, enlatada, drenada"
+ },
+ {
+  "slug": "broto_feijao",
+  "pt": "Broto de feijão",
+  "en": "bean sprouts",
+  "food_id": "food:e97b0603bff3bb578da80f37df7db85be332748ddd0955bdd1dceff3c114b9d6",
+  "version_id": "26e1f826b4ec8e87ebc6d6a8252ed8351d79ee2a803feb7a03378b63f23744a0",
+  "source": "AL-TACO",
+  "catalog_name": "Feijão, broto, cru"
+ },
+ {
+  "slug": "cogumelo",
+  "pt": "Cogumelo",
+  "en": "mushrooms",
+  "food_id": "food:96efed47316d28dd4e6da60a522f9bdeadebf060f842bdce5c4d736b5b6a820d",
+  "version_id": "c24b0aa67483deaed74688651381bcfe2e069c7be511bca43f157c2cda13a16a",
+  "source": "AL-USDA-FNDDS",
+  "catalog_name": "Mushrooms, raw"
+ },
+ {
+  "slug": "alcachofra",
+  "pt": "Alcachofra",
+  "en": "artichoke",
+  "food_id": "food:31435cfaa8fffdba4480328b4696ed6ad2902d56c9d64006b83dd6cac9c4cbc9",
+  "version_id": "3389056410a149a16862f430513a7ceadd7886f4c473a740c4dc73476227365e",
+  "source": "AL-USDA-FNDDS",
+  "catalog_name": "Artichoke"
+ },
+ {
+  "slug": "aspargo",
+  "pt": "Aspargo",
+  "en": "asparagus",
+  "food_id": "food:21bbaca996a475cfa4ae51851462fedc1a2dba62a66f3a16da4d71976faa9036",
+  "version_id": "f47047647341be2a203b2f6e30c72e72f343f1f974d13533b8283504980fcb53",
+  "source": "AL-USDA-FNDDS",
+  "catalog_name": "Asparagus, raw"
+ },
+ {
+  "slug": "azeitona",
+  "pt": "Azeitona",
+  "en": "olives",
+  "food_id": "food:6599299f87a12fb8ab56ac5801063c2ffd13d64bc459155870bb549aa7576cca",
+  "version_id": "73fa737a6578354a6490e10bc812f898123b526f704dec8a7b30396737625d91",
+  "source": "AL-TACO",
+  "catalog_name": "Azeitona, verde, conserva"
+ },
+ {
+  "slug": "abacate",
+  "pt": "Abacate",
+  "en": "avocado",
+  "food_id": "food:239958b4faa85836fa0c8d9085313a6ef1cfb70aef3a04050c25187b349c6b40",
+  "version_id": "92ecc66ab4ecc41e4cf989d5b96feda34a6279be4f8f1a264bfbd09916ab9488",
+  "source": "AL-TACO",
+  "catalog_name": "Abacate, cru"
+ },
+ {
+  "slug": "guacamole",
+  "pt": "Guacamole",
+  "en": "guacamole",
+  "food_id": "food:c75b8e323c8cf8a270fb2c2256dd2103d0df62de20d3e9c00aae9aaaa691b2e5",
+  "version_id": "3a0b18120846b3b77bc0ebaed8b847b445eb2e891861ee41d1afeddb257f26ff",
+  "source": "AL-USDA-FNDDS",
+  "catalog_name": "Guacamole, NFS"
+ },
+ {
+  "slug": "salada_verde",
+  "pt": "Salada verde",
+  "en": "green leaf salad",
+  "food_id": "food:ce497b711a46e436c35e4693170867494d9b710d61ab1ca33d362f39e6ace29c",
+  "version_id": "91d0a833088a213a6c5a17cf7e2e5e2fefdcd9be39e96a29ff805cbc8e7ee9a7",
+  "source": "AL-USDA-FNDDS",
+  "catalog_name": "Mixed salad greens, raw"
+ },
+ {
+  "slug": "salada_caesar",
+  "pt": "Salada Caesar",
+  "en": "caesar salad",
+  "food_id": "food:03a1ac30c79b20511834e2b453a599ed6a6fb23f25eb46a5e7bc2410edfe1b9a",
+  "version_id": "4c7b8a359c9085794b7ea61ca46e775f1a96f73729d366cf3f720fea54750e8e",
+  "source": "AL-USDA-FNDDS",
+  "catalog_name": "Caesar salad, with romaine, no dressing"
+ },
+ {
+  "slug": "salada_maionese",
+  "pt": "Salada de maionese",
+  "en": "potato salad with mayonnaise",
+  "food_id": "food:c0f5501378fdee31b621620f61e6c38aec74a86251fcdfc8a10884e632954a04",
+  "version_id": "8a1f7f8c41fa78dab20fc979a605c0814e7cb9b8fe51b2c7c5d2e55044dd384d",
+  "source": "AL-TACO",
+  "catalog_name": "Salada, de legumes, com maionese"
+ },
+ {
+  "slug": "legumes_vapor",
+  "pt": "Legumes no vapor",
+  "en": "steamed mixed vegetables",
+  "food_id": "food:8aa1bafbf974fb26ae4ce2223c2edd18df43c3b90b330963b5d0588558953ebc",
+  "version_id": "6c9bba20ebbcb1ff27b5040dfecac129c2dad773a1b1ce3864af3e7f356d242d",
+  "source": "AL-TACO",
+  "catalog_name": "Salada, de legumes, cozida no vapor"
+ },
+ {
+  "slug": "seleta_legumes",
+  "pt": "Seleta de legumes",
+  "en": "diced mixed vegetables",
+  "food_id": "food:edc83ae5d1b998d443c2c6a13d58ed3340ad89be5109e0b3ef8ca56b121ecd46",
+  "version_id": "08b56fcfa0533ed21961dc17d2605499acd2b75f9d1aad9ea2451743db0997f6",
+  "source": "AL-TACO",
+  "catalog_name": "Seleta de legumes, enlatada"
+ },
+ {
+  "slug": "abacaxi",
+  "pt": "Abacaxi",
+  "en": "pineapple",
+  "food_id": "food:770a87c7f4428984d552bc732c155eee5ddea9d250cdaf5c7463c1beaa4678f7",
+  "version_id": "4047904c64c0b40c9d9ad7598aa0045791a9f32093168f7c3470bfb571615dff",
+  "source": "AL-TACO",
+  "catalog_name": "Abacaxi, cru"
+ },
+ {
+  "slug": "acai",
+  "pt": "Açaí na tigela",
+  "en": "acai bowl",
+  "food_id": "food:037a35aa8d9db145a50f30ec8b17213c20e92d95f6b897cf4c8ef8ccd1710dea",
+  "version_id": "114049772b35fcf1977c7fbb49d31a66e51723b36dba1d09d5d45429a6f698fa",
+  "source": "AL-TACO",
+  "catalog_name": "Açaí, polpa, com xarope de guaraná e glucose"
+ },
+ {
+  "slug": "acerola",
+  "pt": "Acerola",
+  "en": "acerola cherries",
+  "food_id": "food:b868242161460e40ffb489f47e3e20eb3e43f2f4259e8f279fcd9027646f03c3",
+  "version_id": "29e9a6b84f6ec106341745f1857ec3375682c45e7d1dc40f32f311d044399505",
+  "source": "AL-TACO",
+  "catalog_name": "Acerola, crua"
+ },
+ {
+  "slug": "ameixa",
+  "pt": "Ameixa",
+  "en": "plum",
+  "food_id": "food:d03c6b9374564e21658091dadd0897107743d6e55c2f97d3018e4a758a993f98",
+  "version_id": "bf34e3c6786636134e926ada22f5e95388cd4026bc59283dc7b6096f86cda2e5",
+  "source": "AL-TACO",
+  "catalog_name": "Ameixa, crua"
+ },
+ {
+  "slug": "atemoia",
+  "pt": "Atemoia",
+  "en": "atemoya",
+  "food_id": "food:ec238819a11f1ac5e9aa5f960d89ee2c23d0151570520755c13590429572bf4d",
+  "version_id": "52c8757119e0a799f9d701da6235c7c4f5afa27ef895e12a29478a404864c221",
+  "source": "AL-TACO",
+  "catalog_name": "Atemóia, crua"
+ },
+ {
+  "slug": "banana",
+  "pt": "Banana",
+  "en": "banana",
+  "food_id": "food:773d0966971179592bf89b8df9754deffc1ea678e8420c643b7de311d3208401",
+  "version_id": "1b7741cda0092a8d3dd57d27910ad6c90eac0befbabfac24f7fbf9278d303763",
+  "source": "AL-TACO",
+  "catalog_name": "Banana, prata, crua"
+ },
+ {
+  "slug": "banana_terra",
+  "pt": "Banana-da-terra",
+  "en": "plantain",
+  "food_id": "food:360eb7d5b17c4d49147c95f25acb9ca015fdeaea5f7d78f7c537dbb00187b63b",
+  "version_id": "25303fc767a45bf5d2f40ff91c86e283da4426952eaa4b896b035ae16346f61a",
+  "source": "AL-TACO",
+  "catalog_name": "Banana, da terra, crua"
+ },
+ {
+  "slug": "banana_frita",
+  "pt": "Banana frita",
+  "en": "fried plantain",
+  "food_id": "food:8c8bc78def38d8b155ced5ef5f28951442f2a0597bf3da667281bece4ca3f4bc",
+  "version_id": "ef5c4e231fce4e3f0cdf2fd0fdeba0545859259e7d6b07a8eec7229c0f5a1880",
+  "source": "AL-USDA-SR-LEGACY",
+  "catalog_name": "Plantains, green, fried"
+ },
+ {
+  "slug": "caju",
+  "pt": "Caju",
+  "en": "cashew apple fruit",
+  "food_id": "food:e768dd6872a6e4d7713d412368644b09cfea0cd5c6b0ca13795c27c9c2623f17",
+  "version_id": "795e36bfa78a1f1a2dcd6e9ea761f237e3d40bed916ce52d85d98a5ecca72729",
+  "source": "AL-TACO",
+  "catalog_name": "Caju, cru"
+ },
+ {
+  "slug": "caqui",
+  "pt": "Caqui",
+  "en": "persimmon",
+  "food_id": "food:9f57506ecb2b21135150072eb54bfbf4186af109498fea8f992987b4226598c5",
+  "version_id": "5edb5b0c9f9a7017856efc3c63dffbca2353f9b695bd7d11e8d348005a70b822",
+  "source": "AL-TACO",
+  "catalog_name": "Caqui, chocolate, cru"
+ },
+ {
+  "slug": "carambola",
+  "pt": "Carambola",
+  "en": "starfruit",
+  "food_id": "food:48ed2b4ab8cddc31e39b8c91c8be4471bdb2f721961a55414ba9f7388aa957a1",
+  "version_id": "d2559c797f7627aae3054d5f0bb9c03cae17a190447398128a66adb0e2b1694c",
+  "source": "AL-TACO",
+  "catalog_name": "Carambola, crua"
+ },
+ {
+  "slug": "cereja",
+  "pt": "Cereja",
+  "en": "cherries",
+  "food_id": "food:92b269c593dfd6901676b7729934abff5ba3867422e43e632ebc2cd1c91bc266",
+  "version_id": "8063bb7fa6b494c1078e971e872cc488414239b2d89ea93854b2fe7f00a5f1e4",
+  "source": "AL-USDA-SR-LEGACY",
+  "catalog_name": "Cherries, sweet, raw"
+ },
+ {
+  "slug": "coco",
+  "pt": "Coco",
+  "en": "coconut",
+  "food_id": "food:7ae25ebaedb78acfea92388c98c1ee50a11540122e504b34088a64a21f02b0f0",
+  "version_id": "ea1a3da9e3087bbaddf66b6781562afee1d01db589c9bc0721482a9327df9885",
+  "source": "AL-TACO",
+  "catalog_name": "Coco, cru"
+ },
+ {
+  "slug": "cupuacu",
+  "pt": "Cupuaçu",
+  "en": "cupuacu fruit",
+  "food_id": "food:ca555ecc7d279e773425e20c2379814cb9f95735a98ac204059fd28ea3e78f0e",
+  "version_id": "6d5e604b796b9efe59c1102b0f90feb7f217b7a5dbe7becceca81600367e64fe",
+  "source": "AL-TACO",
+  "catalog_name": "Cupuaçu, cru"
+ },
+ {
+  "slug": "figo",
+  "pt": "Figo",
+  "en": "fig",
+  "food_id": "food:acee12c5156a7fd94e39451f47e821a41dd02e261f3da807d918a947b0b249b9",
+  "version_id": "16713f202dbcbc9c82b7ffeac8991fec6b517550ab362db4d1308dab8be404e8",
+  "source": "AL-TACO",
+  "catalog_name": "Figo, cru"
+ },
+ {
+  "slug": "framboesa",
+  "pt": "Framboesa",
+  "en": "raspberries",
+  "food_id": "food:f6a43307e0b68054281ed71505a1f126d0b82a5320987669660ff7d5ad46526a",
+  "version_id": "83f124de90f101bcb1480770eb0fd34edba7ee3c25167eba8ca27acb397ed2ff",
+  "source": "AL-USDA-FNDDS",
+  "catalog_name": "Raspberries, raw"
+ },
+ {
+  "slug": "mirtilo",
+  "pt": "Mirtilo",
+  "en": "blueberries",
+  "food_id": "food:ea0284dd4af69b425897250f287e90a2af10606cd7822a1604ef16e9173d9e96",
+  "version_id": "d47b11269886a814112a07b2e16f498d0d8c912e338e29cbf69f1c09f568fe43",
+  "source": "AL-USDA-FNDDS",
+  "catalog_name": "Blueberries, raw"
+ },
+ {
+  "slug": "amora",
+  "pt": "Amora",
+  "en": "blackberries",
+  "food_id": "food:045952fa738ac5dbf930afec618612fdc7143d574e1ca1c87bff2e9b009751a1",
+  "version_id": "43c3c7e909867cf58cb136497eb77d011d6593012e49789941de06c61921c879",
+  "source": "AL-USDA-FNDDS",
+  "catalog_name": "Blackberries, raw"
+ },
+ {
+  "slug": "goiaba",
+  "pt": "Goiaba",
+  "en": "guava",
+  "food_id": "food:d25790459aa5954abb5185b3f57037abe073d718440a7fc2131ad4c86781522e",
+  "version_id": "b4a37b435ccfb7d460c3156d6d3ba54b0dc3d03f205d0bae47c32784f89902b0",
+  "source": "AL-TACO",
+  "catalog_name": "Goiaba, vermelha, com casca, crua"
+ },
+ {
+  "slug": "graviola",
+  "pt": "Graviola",
+  "en": "soursop",
+  "food_id": "food:1acc09d8430b59ace20037d50f92cbbbb70e979998fa7650cdae91dac4c77922",
+  "version_id": "f1dfa9115c41f5e86e5dbd7996a63f8158a8b418b460ae75a44999985428051e",
+  "source": "AL-TACO",
+  "catalog_name": "Graviola, crua"
+ },
+ {
+  "slug": "jabuticaba",
+  "pt": "Jabuticaba",
+  "en": "jabuticaba",
+  "food_id": "food:1157b8d7969929aaba5c29c7dfb5cf156f2bac6832f3a1d72e88a984df087952",
+  "version_id": "37d2b7db8eef455de7987280b646b95f3da2e5a81361046885533dafe6185b35",
+  "source": "AL-TACO",
+  "catalog_name": "Jabuticaba, crua"
+ },
+ {
+  "slug": "jaca",
+  "pt": "Jaca",
+  "en": "jackfruit",
+  "food_id": "food:f8b4a2173c4a8c83e26898a20b6cc90222d95e1712a8439e76a6f51e89a5520b",
+  "version_id": "7e69a3ba3a89b571a1961eaa7c1fc8ada804a6e0a593aff4cf58b191452c48da",
+  "source": "AL-TACO",
+  "catalog_name": "Jaca, crua"
+ },
+ {
+  "slug": "kiwi",
+  "pt": "Kiwi",
+  "en": "kiwi fruit",
+  "food_id": "food:95b6234a307b5c475ae5c43759a65846751ca6ad3f2a02e5efcdae9a61129bf2",
+  "version_id": "36b45ddc2bd2870843562fd6e82d69a41971621ae659252a88f07684fd240a66",
+  "source": "AL-TACO",
+  "catalog_name": "Kiwi, cru"
+ },
+ {
+  "slug": "laranja",
+  "pt": "Laranja",
+  "en": "orange",
+  "food_id": "food:23366b649fde48795dec23fdb63547f21acabc4c0ae4aea038d1eea8ef09a5ed",
+  "version_id": "da46da067c3d754cda1721856231d28eeaae03e48d57cf7dea587bda679cfd71",
+  "source": "AL-TACO",
+  "catalog_name": "Laranja, pêra, crua"
+ },
+ {
+  "slug": "limao",
+  "pt": "Limão",
+  "en": "lime",
+  "food_id": "food:c17ab1b02f8b0a2156baffcf4a4bfd93cc14508286db93f57f539ecd141489e2",
+  "version_id": "d6b51d6c30ddb47c7900f09aafa8053a3a1a7ca6d877bb9f816c821c76f98434",
+  "source": "AL-TACO",
+  "catalog_name": "Limão, tahiti, cru"
+ },
+ {
+  "slug": "maca",
+  "pt": "Maçã",
+  "en": "apple",
+  "food_id": "food:c5cc71b6e29d637039bcb5f305ef7ac110628630f3b64e265112a7d5888b0e63",
+  "version_id": "e7587bad4af087829f2c5366fc209573f1cf277594be7e2bdde27ee75f3f0e7d",
+  "source": "AL-TACO",
+  "catalog_name": "Maçã, Fuji, com casca, crua"
+ },
+ {
+  "slug": "mamao",
+  "pt": "Mamão",
+  "en": "papaya",
+  "food_id": "food:638efc1b5aa48765543eca31a9086afd1dcaeec12ea7fb71e8178f86f6502430",
+  "version_id": "211e2778896ed98c07d42d2570d5ce1a7937ca4999d4a0cf4c873c9112f745e2",
+  "source": "AL-TACO",
+  "catalog_name": "Mamão, Papaia, cru"
+ },
+ {
+  "slug": "manga",
+  "pt": "Manga",
+  "en": "mango",
+  "food_id": "food:7c7752ce3ff54fdd173423e200fe26405ba3cc0abb3570b7b43c53624e372371",
+  "version_id": "7453283d58faba922bbc73699f91caafce2b5250964e2edc27e91c998c1b5920",
+  "source": "AL-TACO",
+  "catalog_name": "Manga, Tommy Atkins, crua"
+ },
+ {
+  "slug": "maracuja",
+  "pt": "Maracujá",
+  "en": "passion fruit",
+  "food_id": "food:5b68f1772cdfc11bbd018aea5e67d3350dc344f0e955fc7eb2f375027ac4e367",
+  "version_id": "283b3184390d0a2aec2a36e67f0abb1c50536757c89f19eb960e64c6290c3f94",
+  "source": "AL-TACO",
+  "catalog_name": "Maracujá, cru"
+ },
+ {
+  "slug": "melancia",
+  "pt": "Melancia",
+  "en": "watermelon",
+  "food_id": "food:d9e7382228594c621e6cdb090fe0962e4e6b9e58a8d307d7961fb6b4cbdc2a49",
+  "version_id": "e5c602a107343796c87152c9f76571d0cd8ace4cb093ddd36becdaafebc33d13",
+  "source": "AL-TACO",
+  "catalog_name": "Melancia, crua"
+ },
+ {
+  "slug": "melao",
+  "pt": "Melão",
+  "en": "melon",
+  "food_id": "food:707633a521c70ff9ddf62c820adcd6a85e83159db1b69e4f62e7696daf81cf8c",
+  "version_id": "f8f92db30d0413e8cccb869b8164faccfaa1431072744f8240f858f2d1d94687",
+  "source": "AL-TACO",
+  "catalog_name": "Melão, cru"
+ },
+ {
+  "slug": "mexerica",
+  "pt": "Mexerica",
+  "en": "tangerine",
+  "food_id": "food:cc1164e84ed23e6efbf6ceaada4cdeb22528c0bcb5a0c5048dc5a88e3132b564",
+  "version_id": "f4516e9ec67afa6546b4f469623739b4381440754c531af68db5dcf7fa3bac22",
+  "source": "AL-TACO",
+  "catalog_name": "Tangerina, Poncã, crua"
+ },
+ {
+  "slug": "morango",
+  "pt": "Morango",
+  "en": "strawberries",
+  "food_id": "food:2214d19563c3907506a4c07d806e66dd79378d99957a16d5b8c7473bb788d44f",
+  "version_id": "0bf88ac2fbbb22dc65b9d9dd0d681b94f502529b69b75e33041c8557272946bb",
+  "source": "AL-TACO",
+  "catalog_name": "Morango, cru"
+ },
+ {
+  "slug": "pera",
+  "pt": "Pera",
+  "en": "pear",
+  "food_id": "food:69213066cb91e79af4f3fcc64f0dbcfbc61bffb5dacac7a4dd65f69d0804728d",
+  "version_id": "c72405accafb06cacb0dd2627d9d7b3060abb0d5893ac17ca67f48ae24019a73",
+  "source": "AL-TACO",
+  "catalog_name": "Pêra, Williams, crua"
+ },
+ {
+  "slug": "pessego",
+  "pt": "Pêssego",
+  "en": "peach",
+  "food_id": "food:a4c17972638efe63ce7457a5034c0740de704e995ebf8e216ba3db5b062217a0",
+  "version_id": "1b96ce18d167b1cc4c5283210f314f95a4db5a4906f3b0bdd9cc561ef0948a59",
+  "source": "AL-TACO",
+  "catalog_name": "Pêssego, Aurora, cru"
+ },
+ {
+  "slug": "nectarina",
+  "pt": "Nectarina",
+  "en": "nectarine",
+  "food_id": "food:5a28f6b47509f1e1cf4895b1287f6e2492b164784dd2d46f075d43b6a35b150f",
+  "version_id": "c4f5a49ff39985b1a6e03e59afb14e70a5c52761c9f12e294d8d0b4ea92ece9f",
+  "source": "AL-USDA-FNDDS",
+  "catalog_name": "Nectarine, raw"
+ },
+ {
+  "slug": "pinha",
+  "pt": "Pinha",
+  "en": "sugar apple",
+  "food_id": "food:7046cc7d7378166d7720c837986f8ce20f1f772b977dbc8e4b0a6b4da429ec39",
+  "version_id": "4787a60242d3849c67bf99d2a2ebfa58e064701fc5358124ab03ae151fd02aef",
+  "source": "AL-TACO",
+  "catalog_name": "Pinha, crua"
+ },
+ {
+  "slug": "pitanga",
+  "pt": "Pitanga",
+  "en": "pitanga cherries",
+  "food_id": "food:f9505c86bf5c57af3682742e7ad96449fae5cbb5d149b52e15d617e904e8d42d",
+  "version_id": "c518cdbb461e50c1c25b203c245c3ce240e0e779a4b3d1d850d039415cf34b3d",
+  "source": "AL-TACO",
+  "catalog_name": "Pitanga, crua"
+ },
+ {
+  "slug": "roma",
+  "pt": "Romã",
+  "en": "pomegranate",
+  "food_id": "food:3caeaddf65f1588ed145ed92659eeef27d18af0312596d7de5ebca07518a8d9b",
+  "version_id": "970509b5bfacf751fd0aed8ceb41b5f4a8e3250bf7bafcb21ac16143c5e82c68",
+  "source": "AL-TACO",
+  "catalog_name": "Romã, crua"
+ },
+ {
+  "slug": "uva",
+  "pt": "Uva",
+  "en": "grapes",
+  "food_id": "food:ccba19cf0ee6d268444710c0162503d7e1811c40f4a174c9cb3d0dc6e1fa6037",
+  "version_id": "f72929c8351bb6ea77e020f2d73c6d7ab1510a656f883d9601a525248881b5c6",
+  "source": "AL-TACO",
+  "catalog_name": "Uva, Itália, crua"
+ },
+ {
+  "slug": "uva_passa",
+  "pt": "Uva-passa",
+  "en": "raisins",
+  "food_id": "food:ecc4375d23203dd92dbc159b9ab2573e51f8ebda5421254937351bdc383086fc",
+  "version_id": "fc92197e9bdda7793a82b5afec202c9ea061c19d2218bab934cebc5ac0391850",
+  "source": "AL-USDA-FNDDS",
+  "catalog_name": "Raisins"
+ },
+ {
+  "slug": "tamara",
+  "pt": "Tâmara",
+  "en": "dates fruit",
+  "food_id": "food:43886ade51b5b12edb1ea4d9df1c3e5b771c17177cce131cd68bea3b3113d5a8",
+  "version_id": "242f46351a7a4d08c18719f3e131b4b9e01ae9d9dbf90254fe4c71789988d19b",
+  "source": "AL-USDA-SR-LEGACY",
+  "catalog_name": "Dates, medjool"
+ },
+ {
+  "slug": "lichia",
+  "pt": "Lichia",
+  "en": "lychee",
+  "food_id": "food:0eed18cbce6e1a6a94dcc34f8441e3c4500d87599f94afcae5cf6db929348ce5",
+  "version_id": "ffcee6389da6617cc03b0508d7e732a59a1c943b58a2c18bbb731e29cf7f4a5a",
+  "source": "AL-USDA-SR-LEGACY",
+  "catalog_name": "Litchis, raw"
+ },
+ {
+  "slug": "toranja",
+  "pt": "Toranja",
+  "en": "grapefruit",
+  "food_id": "food:7a01c572860b2f8c0537222f04b2e93afe0ecbafc1952b1aa2ac006571e8d5e9",
+  "version_id": "aa7cbf41167df60dfbd579939b96254b718d02aaaf043c3f4da603ed72f4e210",
+  "source": "AL-USDA-FNDDS",
+  "catalog_name": "Grapefruit, raw"
+ },
+ {
+  "slug": "pequi",
+  "pt": "Pequi",
+  "en": "pequi fruit",
+  "food_id": "food:a89314e355c35e9c5a581e948fb7f7dca849cf45e2bcf41316765ba5ec60b3a2",
+  "version_id": "ecdfb1a7eae932bf627c10c29d7e67d68154cf5969e7704c368d2e1fb1d6585f",
+  "source": "AL-TACO",
+  "catalog_name": "Pequi, cru"
+ },
+ {
+  "slug": "umbu",
+  "pt": "Umbu",
+  "en": "umbu fruit",
+  "food_id": "food:1303c6d52940f1e1908248eac0bd2fce99ecf9234c60c314e32555e3352f8975",
+  "version_id": "618087129edc1e0fa2597afd0d3c19ebef99d5ccc6871ff600b2191a8f23a014",
+  "source": "AL-TACO",
+  "catalog_name": "Umbu, cru"
+ },
+ {
+  "slug": "tamarindo",
+  "pt": "Tamarindo",
+  "en": "tamarind",
+  "food_id": "food:77cb874d3227005f67eb2228bbfb606f5541ace21250ee1d47ca1348e2867123",
+  "version_id": "4e96109556a9bb79579cc827616cf35910563e3a1df6edf9a2ca20876a69f3b3",
+  "source": "AL-TACO",
+  "catalog_name": "Tamarindo, cru"
+ },
+ {
+  "slug": "cacau",
+  "pt": "Cacau",
+  "en": "cacao pod fruit",
+  "food_id": "food:c783baf8f262c3f017bcc0e8212576170f9a71e62fd5f0e09fb6d015d3113d9a",
+  "version_id": "2dc83a26aad24f58cd5d3193dac4816a72147c78bf28167c04ee40cfcd485186",
+  "source": "AL-TACO",
+  "catalog_name": "Cacau, cru"
+ },
+ {
+  "slug": "pupunha",
+  "pt": "Pupunha",
+  "en": "pupunha palm fruit",
+  "food_id": "food:22b6f4aec64ad7594205353154678d9f6f4e724718c29523020b616fe3ed57bd",
+  "version_id": "1e9a3a5c8002ab691be8b4583b6a6acb5d3a95cd55a94799d1f5e223404d4552",
+  "source": "AL-TACO",
+  "catalog_name": "Pupunha, cozida"
+ },
+ {
+  "slug": "fruta_pao",
+  "pt": "Fruta-pão",
+  "en": "breadfruit",
+  "food_id": "food:6fa4b366e099bd2408aacdc08a76c0ca6e51f7eefd6df4c0808ce14ff31bfd7c",
+  "version_id": "15139c5c58a62200875f96bce21ad7bb9fddf31e78f3559d6e1058d51bcbf720",
+  "source": "AL-TACO",
+  "catalog_name": "Fruta-pão, crua"
+ },
+ {
+  "slug": "seriguela",
+  "pt": "Seriguela",
+  "en": "seriguela fruit",
+  "food_id": "food:72340611e09778855a2954355b7c505d8808662b362e113fc14f9890c687dbb3",
+  "version_id": "a9a562621dc0154bfd66fdc09ea9a0fe556b70c3d0a66a849ec6bcf864ac2462",
+  "source": "AL-TACO",
+  "catalog_name": "Ciriguela, crua"
+ },
+ {
+  "slug": "jambo",
+  "pt": "Jambo",
+  "en": "jambo fruit",
+  "food_id": "food:ac89e8f1c9d9deccb46220b79eb4afae8a167046247c1a13ef0b0181c58baf7a",
+  "version_id": "554ec56dedd6ed15a7094e7260084f0933669414b50e7b702d3576649b0eb0b8",
+  "source": "AL-TACO",
+  "catalog_name": "Jambo, cru"
+ },
+ {
+  "slug": "nespera",
+  "pt": "Nêspera",
+  "en": "loquat",
+  "food_id": "food:68580f94976afee302178e7aaa8999897423edefbf032009ea7669b27b8a15a6",
+  "version_id": "4ac10efab02f4c6d19469b7271b2ee14b611437eaaf760894b9cc5abe36156af",
+  "source": "AL-TACO",
+  "catalog_name": "Nêspera, crua"
+ },
+ {
+  "slug": "tucuma",
+  "pt": "Tucumã",
+  "en": "tucuma fruit",
+  "food_id": "food:fc3e5a86461f51235f47e441a5a5965c27d98363749f516ffe534922d9b2c190",
+  "version_id": "7d024f5a3d167c77103d654fd5fdd64a46b008b7eaa21998e13649a107126ef5",
+  "source": "AL-TACO",
+  "catalog_name": "Tucumã, cru"
+ },
+ {
+  "slug": "salada_frutas",
+  "pt": "Salada de frutas",
+  "en": "fruit salad",
+  "food_id": "food:5dd39eab26a86d5ec596f705695b88446569051823b5b88f432eabb353ebfe07",
+  "version_id": "13a101c86461f7481383b41b20c55b6fe2dc5cf207431356f59df37bab51eb4a",
+  "source": "AL-COFID-2021",
+  "catalog_name": "Fruit salad, homemade",
+  "review": null
+ },
+ {
+  "slug": "bife",
+  "pt": "Bife",
+  "en": "grilled beef steak",
+  "food_id": "food:ab7386e3e79a4bd799864ebfed3977b59e0f1073628aa5ad1708a66004993c2e",
+  "version_id": "edade72ee1dea84d9993fd28fa44921d37c16a550a707e4f11729ccc88111d30",
+  "source": "AL-TACO",
+  "catalog_name": "Carne, bovina, contra-filé, sem gordura, grelhado"
+ },
+ {
+  "slug": "picanha",
+  "pt": "Picanha",
+  "en": "grilled picanha beef",
+  "food_id": "food:0bbc31919f54ad4dff9c76c30a459aa9fed07dcf2c589146b0e3d474482659aa",
+  "version_id": "10ce5f3b0564ed566216da2fc0d493350f2402c608ce9fb42b6b2e6cd7fe76c6",
+  "source": "AL-TACO",
+  "catalog_name": "Carne, bovina, picanha, com gordura, grelhada"
+ },
+ {
+  "slug": "churrasco",
+  "pt": "Churrasco",
+  "en": "barbecue grilled meat",
+  "food_id": "food:25abf52bf50dd0b3f6612a3955977180b46cb1bdff0f989a4d2cd5f3945ed803",
+  "version_id": "61a105838df5c639ea97242ede58ce66091b3cb3d397449d6d71fba95169ba24",
+  "source": "AL-TACO",
+  "catalog_name": "Carne, bovina, maminha, grelhada"
+ },
+ {
+  "slug": "espetinho",
+  "pt": "Espetinho",
+  "en": "meat skewer kebab",
+  "food_id": "food:c8a250d0af5393e2f97571392f81187abc9c4b73acc5e40106e97daa23ae51a1",
+  "version_id": "b9062bd2e48c04d38532a3debbf3e6043d483c4f081ee758c098cb994298fb43",
+  "source": "AL-USDA-FNDDS",
+  "catalog_name": "Beef shish kabob with vegetables, excluding potatoes"
+ },
+ {
+  "slug": "carne_moida",
+  "pt": "Carne moída",
+  "en": "cooked ground beef",
+  "food_id": "food:195cc09aa4f635b3946118d066222f0c39c17386f7395188b15c9bdf0d0d7e7c",
+  "version_id": "3bbb89eae1556cccdc2d128499a9629b7b9cdb0f5818a727fc04f8c66c8dc0d0",
+  "source": "AL-TACO",
+  "catalog_name": "Carne, bovina, acém, moído, cozido"
+ },
+ {
+  "slug": "carne_panela",
+  "pt": "Carne de panela",
+  "en": "braised beef pot roast",
+  "food_id": "food:146cc2c931180d74367c132bcf0cc954beabeabe9f31089da0290502697d53d6",
+  "version_id": "60433e929dedf82f1fc1dde420749c09eb2898ef1234994ebaebf6ee03394e0a",
+  "source": "AL-TACO",
+  "catalog_name": "Carne, bovina, músculo, sem gordura, cozido"
+ },
+ {
+  "slug": "costela_bovina",
+  "pt": "Costela bovina",
+  "en": "beef ribs",
+  "food_id": "food:bad93dbbea3b46ef753be5b9032b50a1e63da7b64f895f988001259a3ab1dc93",
+  "version_id": "322fc03868ab02124fc006a5bf5b0bcbebbc564ad37c5ecd72f58ddfa7ea84d5",
+  "source": "AL-TACO",
+  "catalog_name": "Carne, bovina, costela, assada"
+ },
+ {
+  "slug": "cupim",
+  "pt": "Cupim",
+  "en": "roasted beef hump cupim",
+  "food_id": "food:cf45becf69185d08588cf27c30582a86587ff2402b71376f455cfe971c6a9589",
+  "version_id": "76d9a9fa70809cb18dbc3d0acecf5700cc3388c312d6239e9ebd4a1e5d102f49",
+  "source": "AL-TACO",
+  "catalog_name": "Carne, bovina, cupim, assado"
+ },
+ {
+  "slug": "bife_milanesa",
+  "pt": "Bife à milanesa",
+  "en": "breaded beef cutlet",
+  "food_id": "food:c6165e339e395e0c006e292c6d6e0c35cb47def6a6199b4e6b650c0c410750c9",
+  "version_id": "841002935fcb2ba84c0df9c2c41c04858d1e9ee7b0cba3f46f5c8dd5ac9ef450",
+  "source": "AL-TACO",
+  "catalog_name": "Carne, bovina, contra-filé, à milanesa"
+ },
+ {
+  "slug": "bife_cavalo",
+  "pt": "Bife a cavalo",
+  "en": "steak topped with fried egg",
+  "food_id": "food:6158518a0df27ba2eb41bdf15ddc553da1b41b830a918f60c29ef696c5ce10e2",
+  "version_id": "1d294cc1b6fb24db7f26b40285f09f7e6a63ab280f15d431e16d0e4926245aec",
+  "source": "AL-TACO",
+  "catalog_name": "Bife à cavalo, com contra filé"
+ },
+ {
+  "slug": "almondega",
+  "pt": "Almôndega",
+  "en": "meatballs",
+  "food_id": "food:bd95b6156c9f54490cefed8ba1f8ba79de704f35ecf3a7457ed2573f587ae382",
+  "version_id": "c200a0fb87fc9fd85ae6803a70cc3bf4ba46c51ffce318382261d725b9c7f77d",
+  "source": "AL-TACO",
+  "catalog_name": "Carne, bovina, almôndegas, fritas"
+ },
+ {
+  "slug": "figado",
+  "pt": "Fígado",
+  "en": "cooked liver",
+  "food_id": "food:54abd39a061c2da8c9c8dc1962a766ecac8b03a2374c5f8ba9fa1c1c743064b2",
+  "version_id": "6fa089d53d9994e2e0ed53dfd9e56946395e51ad7c4d93dee23c4a4da2d61e68",
+  "source": "AL-TACO",
+  "catalog_name": "Carne, bovina, fígado, grelhado"
+ },
+ {
+  "slug": "carne_seca",
+  "pt": "Carne seca",
+  "en": "dried salted beef",
+  "food_id": "food:7395ec4466076db30e12158f73af8f220d566bb63f6cca3618cd27afd6351b65",
+  "version_id": "3a616a094230cd98e52dd91b581ea7cc50feb08d37a5dad57155605587b4c8da",
+  "source": "AL-TACO",
+  "catalog_name": "Carne, bovina, seca, cozida"
+ },
+ {
+  "slug": "dobradinha",
+  "pt": "Dobradinha",
+  "en": "tripe stew",
+  "food_id": "food:2c5c87838dd5aedee7d782a3d9b4c7eca5969b21d020c91b0e9d7a29f581bc72",
+  "version_id": "77809bb7b9688f2f8a36606c845de1277d01d2ab0a303fc2be978eef13fade3a",
+  "source": "AL-TACO",
+  "catalog_name": "Dobradinha"
+ },
+ {
+  "slug": "lingua",
+  "pt": "Língua",
+  "en": "beef tongue",
+  "food_id": "food:2788cec41de5401194e75638d89b3b1892e18f081d4b405339bf84ce3ab075b3",
+  "version_id": "c014ac2ac4590dc74ed42e3c94ee007e96075678d3abe6410138337da9415a7b",
+  "source": "AL-TACO",
+  "catalog_name": "Carne, bovina, língua, cozida"
+ },
+ {
+  "slug": "estrogonofe_carne",
+  "pt": "Estrogonofe de carne",
+  "en": "beef stroganoff",
+  "food_id": "food:542685b83fa5d6d25961fa311db96f9f9036b3952ae373a77da1fa8828fb954f",
+  "version_id": "2a97d7cbb38471e2651057c6f97fae5841d8cdd8b6e9b47851a89dc38011c0df",
+  "source": "AL-TACO",
+  "catalog_name": "Estrogonofe de carne"
+ },
+ {
+  "slug": "estrogonofe_frango",
+  "pt": "Estrogonofe de frango",
+  "en": "chicken stroganoff",
+  "food_id": "food:7569133956b17f49fc4e20010432e7dd9d563ca58fbf37f0fd84edf2fac45a62",
+  "version_id": "b35e3e49c8197a7c4e82aab73554d1f6624df2f18e23c01f02d6f7f894ba86ee",
+  "source": "AL-TACO",
+  "catalog_name": "Estrogonofe de frango"
+ },
+ {
+  "slug": "vaca_atolada",
+  "pt": "Vaca atolada",
+  "en": "beef ribs and cassava stew",
+  "food_id": "food:b4a72e1959c9911dfe228ab6363000af6c3897611956dfa137d88f49ac75df08",
+  "version_id": "c11b52920b6ce02ef09a9a1dec18cc3fada1ba9e2323fb961d0e1331856c8a09",
+  "source": "AL-TACO",
+  "catalog_name": "Vaca atolada"
+ },
+ {
+  "slug": "ensopado",
+  "pt": "Ensopado",
+  "en": "meat stew",
+  "food_id": "food:7dbdf783ac496b10e607da97a87b069c1fb1e04fe19e36b7c2c5dd2aa8b95ff8",
+  "version_id": "b4cc90f4fcd51fe4f5dc024ea00e6bd6d639b93663453287d17cdfaca34a6f22",
+  "source": "AL-USDA-FNDDS",
+  "catalog_name": "Stew, beef"
+ },
+ {
+  "slug": "hamburguer_carne",
+  "pt": "Hambúrguer (carne)",
+  "en": "grilled hamburger patty",
+  "food_id": "food:c7fcb7ee66b1c090762a4033859572fe87b09411e3f40d22ca9afd701ac233ee",
+  "version_id": "7126f561b745f92a30101485c309a60a2de43c7d10e4253e2d8bca9825b89406",
+  "source": "AL-TACO",
+  "catalog_name": "Hambúrguer, bovino, grelhado"
+ },
+ {
+  "slug": "frango_grelhado",
+  "pt": "Frango grelhado",
+  "en": "grilled chicken breast",
+  "food_id": "food:a25603cfafb23d0aaf32655834bbe90a2ff8ecfe8881aae5ac3570c8affadd7c",
+  "version_id": "36cd32002f409779826c6c5185e4bb0ea93ffe980a1dfbfe021547b553c51ef1",
+  "source": "AL-TACO",
+  "catalog_name": "Frango, peito, sem pele, grelhado"
+ },
+ {
+  "slug": "frango_assado",
+  "pt": "Frango assado",
+  "en": "roast chicken",
+  "food_id": "food:abc65b2c8f602eab63ec0f0f2da4efb259b74de9948a110d0393ce860ab69e24",
+  "version_id": "1abd7dcbb67d203a8eeb1747a64f2b4c7fd64ff6d6e459f16a808eb0a5c65d32",
+  "source": "AL-TACO",
+  "catalog_name": "Frango, inteiro, sem pele, assado"
+ },
+ {
+  "slug": "coxa_frango",
+  "pt": "Coxa de frango",
+  "en": "chicken drumstick",
+  "food_id": "food:4e0d50f5285d09b9e656922a6e64586034ae8f10888af04affe6f6fd680ef8ef",
+  "version_id": "c170d2f12cafc5dde35aba30c8e341deb400341eea4609f84fcc666613a72418",
+  "source": "AL-TACO",
+  "catalog_name": "Frango, coxa, com pele, assada"
+ },
+ {
+  "slug": "sobrecoxa",
+  "pt": "Sobrecoxa",
+  "en": "chicken thigh",
+  "food_id": "food:b7cded764319165c6a0d0cb9d7dbaa4bc4c4be62c04eb01231a2605236923c2a",
+  "version_id": "27a95d957c58fbb6a834bbd9b70c454891b36e8823d3c9b3852e029be8e6196e",
+  "source": "AL-TACO",
+  "catalog_name": "Frango, sobrecoxa, com pele, assada"
+ },
+ {
+  "slug": "asa_frango",
+  "pt": "Asa de frango",
+  "en": "chicken wings",
+  "food_id": "food:18ea20f30232250cbbb0dfcfd8d9f980b7372312379f2423bd32be70d3c1edfd",
+  "version_id": "37158ae121f91b336c1e5ea64fa3f889acbc182fe6e8c19b3fea967950ab1949",
+  "source": "AL-USDA-FNDDS",
+  "catalog_name": "Chicken \"wings\", plain, from precooked"
+ },
+ {
+  "slug": "frango_frito",
+  "pt": "Frango frito",
+  "en": "fried chicken",
+  "food_id": "food:cb33aa39f8379f9ac3370412a0b3175914daf5655d9c0aa62853610a6bac77c6",
+  "version_id": "3fc1096e08a8360b634006372c20f904fae65e87b0ebc06138e5735a2875b542",
+  "source": "AL-USDA-FNDDS",
+  "catalog_name": "Chicken breast, fried, coated, skin / coating eaten, from raw",
+  "review": null
+ },
+ {
+  "slug": "frango_milanesa",
+  "pt": "Frango à milanesa",
+  "en": "breaded chicken cutlet",
+  "food_id": "food:5c70d6e0a7729e0379e9dab3cf4f1ffdcd8a132dee05c585dc40252886e28be5",
+  "version_id": "edafa23182bbf90d88d2b7341fdc47527362b00f422e47991b31ae0f4b3b41dd",
+  "source": "AL-TACO",
+  "catalog_name": "Frango, filé, à milanesa"
+ },
+ {
+  "slug": "frango_desfiado",
+  "pt": "Frango desfiado",
+  "en": "shredded chicken",
+  "food_id": "food:8ae3c98a8e0239e0c60d7278a4fa6bbf74d38e0b63cc332efd7d0b0d8de026f1",
+  "version_id": "61acc00e896f31de844c2ad5517867038ac7e3a0553bfcde57fcd9c1d9ec27ef",
+  "source": "AL-TACO",
+  "catalog_name": "Frango, peito, sem pele, cozido"
+ },
+ {
+  "slug": "coracao_frango",
+  "pt": "Coração de frango",
+  "en": "grilled chicken hearts",
+  "food_id": "food:6b896eaa6b5c71825ed1abc139100c4f00fdca00dd2e342ca38723959f2027f0",
+  "version_id": "6eb489813173af94f461c66008d151399ef18692d7cdb55e8ef6a0da268c1a56",
+  "source": "AL-TACO",
+  "catalog_name": "Frango, coração, grelhado"
+ },
+ {
+  "slug": "frango_acafrao",
+  "pt": "Frango com açafrão",
+  "en": "chicken with turmeric",
+  "food_id": "food:6540d943c23bf5b232d892f7e2f745d445937aa0782e2b7dbd4a1835986a993b",
+  "version_id": "630132a09f710133b2cf054c2cde495ef01e4776914fd0465f385c650f42fed1",
+  "source": "AL-TACO",
+  "catalog_name": "Frango, com açafrão"
+ },
+ {
+  "slug": "nuggets",
+  "pt": "Nuggets",
+  "en": "chicken nuggets",
+  "food_id": "food:b5e3aede57562eae7270356e2989921bebfe21e08bac01b279f68d94b22427bc",
+  "version_id": "d6222e1bdfe688d2d9aaf22a33d00d14eed921ca6dc8960bb07f6565da210fa8",
+  "source": "AL-USDA-FNDDS",
+  "catalog_name": "Chicken nuggets, NFS"
+ },
+ {
+  "slug": "peru",
+  "pt": "Peru assado",
+  "en": "roast turkey",
+  "food_id": "food:442707eb0cb3a5e262236a34c87681cb49fd61d6fb2bc719175b9043fa6a11fc",
+  "version_id": "b3df013441997f743491006bb7ad91808faf254314756a23c9025e01890890c4",
+  "source": "AL-TACO",
+  "catalog_name": "Peru, congelado, assado"
+ },
+ {
+  "slug": "bisteca",
+  "pt": "Bisteca",
+  "en": "pork chop",
+  "food_id": "food:7c0cbcf48cd05277d310ca27169abedd4c0e2a3dec18fc9ffacd0bf9f81b0886",
+  "version_id": "755f264091b895bd6b74849c76be7d583037cfeae651c5953d01c1230c305950",
+  "source": "AL-TACO",
+  "catalog_name": "Porco, bisteca, grelhada"
+ },
+ {
+  "slug": "lombo",
+  "pt": "Lombo",
+  "en": "roast pork loin",
+  "food_id": "food:da3caafa933658a5938d0a6d3cbab67dfe35d2ab89bdf87a8916dcbd09785ff2",
+  "version_id": "ffb72f6ac88f9a5dc9ae39e820a990965e7cfc59c6a0a078d2b9746691374a50",
+  "source": "AL-TACO",
+  "catalog_name": "Porco, lombo, assado"
+ },
+ {
+  "slug": "pernil",
+  "pt": "Pernil",
+  "en": "roast pork leg",
+  "food_id": "food:a96fc8794c6da55345ed1dbe7752c1ca2bc9ddd919ffed6cd7821da5ee50060b",
+  "version_id": "79dd210bece6291d6eddeed7af2be4dd1cf97718d1e174cc093d3d8f52f0f939",
+  "source": "AL-TACO",
+  "catalog_name": "Porco, pernil, assado"
+ },
+ {
+  "slug": "costela_porco",
+  "pt": "Costela de porco",
+  "en": "pork ribs",
+  "food_id": "food:b1e060238aa9408c9e79b0c5e93e2ba08e7b782ced86f3718290b016125dd57f",
+  "version_id": "ccae17765c77849057bd9515dff8e0ae6f0b9c895a63576d33a708ae23aec095",
+  "source": "AL-TACO",
+  "catalog_name": "Porco, costela, assada"
+ },
+ {
+  "slug": "linguica",
+  "pt": "Linguiça",
+  "en": "grilled sausage",
+  "food_id": "food:77d993c0e1f01e9c2b7c266326f1633ee524af45787b3f720ed3823d2cbbb97e",
+  "version_id": "fb4dc86dad33a05e3cd795936d719f14b8497151b38d3102fd04bac584869c18",
+  "source": "AL-TACO",
+  "catalog_name": "Lingüiça, porco, grelhada"
+ },
+ {
+  "slug": "salsicha",
+  "pt": "Salsicha",
+  "en": "frankfurter",
+  "food_id": "food:061985244674c3ebadd7a8e72a4ad41eb682778c582825d1522d7b1b37207087",
+  "version_id": "cf50586d8e3895c9d7eb070da5dab298e2acbf3af1a67bc2054f005691d36faa",
+  "source": "AL-USDA-SR-LEGACY",
+  "catalog_name": "Frankfurter, meat",
+  "review": null
+ },
+ {
+  "slug": "bacon",
+  "pt": "Bacon",
+  "en": "bacon",
+  "food_id": "food:31ca36bf4f19d0e15bc91b1c40466caabcdceaf613ab71050e3fe863dcb09557",
+  "version_id": "4ee285487ec6d4a5a37c60877d0a9a2f20c505e1e74e593097c98bd2c2af2ff9",
+  "source": "AL-TACO",
+  "catalog_name": "Toucinho, frito"
+ },
+ {
+  "slug": "presunto",
+  "pt": "Presunto",
+  "en": "ham slices",
+  "food_id": "food:9a12e220e1098b5c62f2bd4286d2d422da95124d9baafe9d8b3226d2cd97e70f",
+  "version_id": "d8e90cfe461ea182ae3e4b58be09f759a51dffb44a9323baad7189e4b7abdb80",
+  "source": "AL-TACO",
+  "catalog_name": "Presunto, sem capa de gordura"
+ },
+ {
+  "slug": "mortadela",
+  "pt": "Mortadela",
+  "en": "mortadella",
+  "food_id": "food:8856de7e3542272363b18514ba108c7fc7ba25a051741279784a3c5aef94937a",
+  "version_id": "04e207b421f47971bd0d91c24d95cbbc6d2e366d09cd6fbd055b97e73bf0f809",
+  "source": "AL-TACO",
+  "catalog_name": "Mortadela"
+ },
+ {
+  "slug": "salame",
+  "pt": "Salame",
+  "en": "salami",
+  "food_id": "food:e96e3ba98349b4faa3916c227388ee92d872de28c3241406f4ed1120b151e37f",
+  "version_id": "85f1bcbaa7c8962cb1ba2112f558853b6b03b1b8b31d69b89f4cbac2adba50d2",
+  "source": "AL-TACO",
+  "catalog_name": "Salame"
+ },
+ {
+  "slug": "feijoada",
+  "pt": "Feijoada",
+  "en": "feijoada black bean and pork stew",
+  "food_id": "food:f16b6c355799e70b3306566a99632e0f3fb6047b9c73aeb691d2e464a1d1d535",
+  "version_id": "19b9f4c249bdaaf265292940b0dd69249eff48607f0e6fd332719bee4a8b893e",
+  "source": "AL-OFF",
+  "catalog_name": "Feijoada",
+  "review": "OFF"
+ },
+ {
+  "slug": "feijao_tropeiro",
+  "pt": "Feijão tropeiro",
+  "en": "feijao tropeiro beans with cassava flour",
+  "food_id": "food:fd22375a659386d5a504f6efc1e5cafa08b5e64914c0dc43cdb1f04f7c99e3cb",
+  "version_id": "baa48373f7342fef2a81f7469429747ae3c9e37d2749b5b66d09ed62fddb0d87",
+  "source": "AL-TACO",
+  "catalog_name": "Feijão tropeiro mineiro"
+ },
+ {
+  "slug": "virado_paulista",
+  "pt": "Virado à paulista",
+  "en": "virado a paulista plate",
+  "food_id": "food:f76ddcae4f58e68899cb1d04f7d32f46e096ca80205b08aafa3b45fd5d98de34",
+  "version_id": "37c88528391f50912a3be3a33c445b6f7d58b09b2a621bcdbfb5a22d198f70a7",
+  "source": "AL-TACO",
+  "catalog_name": "Virado à paulista"
+ },
+ {
+  "slug": "charuto_repolho",
+  "pt": "Charuto de repolho",
+  "en": "stuffed cabbage rolls",
+  "food_id": "food:4013f97fc648665ad1465572bd361077741bb913569b322e45bec7ee6c1790e7",
+  "version_id": "edfc6e3170478dfbe153de7a5b478a39b3f58da52c29e5483d446380cf8778cf",
+  "source": "AL-TACO",
+  "catalog_name": "Charuto, de repolho"
+ },
+ {
+  "slug": "sarapatel",
+  "pt": "Sarapatel",
+  "en": "sarapatel offal stew",
+  "food_id": "food:f02e9674dfa08822d7738d2a8b3f56f6c63b5085a924d06ab57aeadc6f83035d",
+  "version_id": "d5a0d73ac6798e4d4619367d35a46f76f4e859fa797688ec08f2b9ca419756d9",
+  "source": "AL-TACO",
+  "catalog_name": "Sarapatel"
+ },
+ {
+  "slug": "barreado",
+  "pt": "Barreado",
+  "en": "barreado slow cooked beef",
+  "food_id": "food:6719d15eec9111e5a87987ce5ce058e15d3e08e7fe1cdb733dfac4ddb479bec4",
+  "version_id": "68c0dd4fd3ecb2e733f0a8978c3fd5724e4fc1be602b0a9e36438a4fbf806850",
+  "source": "AL-TACO",
+  "catalog_name": "Barreado"
+ },
+ {
+  "slug": "escondidinho",
+  "pt": "Escondidinho",
+  "en": "cassava and meat gratin",
+  "food_id": "food:39a5e0271c06ddb8b0e47f54e7b1151464f03583af5447ea99be90807fc39ceb",
+  "version_id": "c0f74746eaa6c676466d48186e729f90475b11a69050fafe7db61a434caa06e3",
+  "source": "AL-USDA-FNDDS",
+  "catalog_name": "Shepherd's pie",
+  "review": null
+ },
+ {
+  "slug": "peixe_grelhado",
+  "pt": "Peixe grelhado",
+  "en": "grilled fish fillet",
+  "food_id": "food:daedfdf4950db553d0b898bd9a9c68609919bd182b935c927ef2eb5e5f69e98d",
+  "version_id": "00fe3af9500ec6995d23ec67dbde58397ff72065b7c17bedc431821f74a73b0b",
+  "source": "AL-TACO",
+  "catalog_name": "Pintado, grelhado"
+ },
+ {
+  "slug": "peixe_frito",
+  "pt": "Peixe frito",
+  "en": "fried fish",
+  "food_id": "food:36436c20f40bafffdeadb24cf908c23c860a922a625f48b661b055be494cbc29",
+  "version_id": "ea62c29ab76957fd6a16a2050420a9733253d46aff0d40b866600fdd6c25cffa",
+  "source": "AL-TACO",
+  "catalog_name": "Pescada, filé, frito"
+ },
+ {
+  "slug": "peixe_assado",
+  "pt": "Peixe assado",
+  "en": "baked fish",
+  "food_id": "food:2f9ba312f139c3dbd5211f5cb61e125ed676cfa5089df2234e3e680e3b36dd9e",
+  "version_id": "5a16f24bc977d20ddc7160ffba78cb7116164b18c02c6e600e8bec6e203b6c18",
+  "source": "AL-TACO",
+  "catalog_name": "Merluza, filé, assado"
+ },
+ {
+  "slug": "salmao",
+  "pt": "Salmão",
+  "en": "grilled salmon",
+  "food_id": "food:00c26cd4b75942cb221a1caed5e7318fed30d6ac52dfcd9ca3e87314e58c6bbf",
+  "version_id": "eab7eacfa83fb9d4a477b3bbd298c57cfc891a853a92be36ed3115a3310bf9ba",
+  "source": "AL-TACO",
+  "catalog_name": "Salmão, sem pele, fresco, grelhado"
+ },
+ {
+  "slug": "atum",
+  "pt": "Atum",
+  "en": "canned tuna",
+  "food_id": "food:889f65dae4201bab60413ad8ce37dd58674e81f034c31e5e41634eb3e44ace97",
+  "version_id": "96c0c9e5779f85c3d0686702b5671473710b3e0b9c5743d2fd958d22db10d3a7",
+  "source": "AL-TACO",
+  "catalog_name": "Atum, conserva em óleo"
+ },
+ {
+  "slug": "sardinha",
+  "pt": "Sardinha",
+  "en": "sardines",
+  "food_id": "food:1329fa67cf5feecfa4f6fe498a94dd5fb52f312561fd298f6de68cd142aa1d79",
+  "version_id": "46f1846bc409fc64f489d0ca1911a7f681a22085d6348b19ee658425641fb9c8",
+  "source": "AL-TACO",
+  "catalog_name": "Sardinha, assada"
+ },
+ {
+  "slug": "bacalhau",
+  "pt": "Bacalhau",
+  "en": "salt cod dish",
+  "food_id": "food:cb432d15479d79d7e5661fd0c4e4c3fceab4fc79e4962fd9d1f16a99d0e35b0b",
+  "version_id": "2655073884637171ec6354dd1004981720b01bf8bbd3f1ec992d34450ec44c20",
+  "source": "AL-TACO",
+  "catalog_name": "Bacalhau, salgado, refogado"
+ },
+ {
+  "slug": "camarao",
+  "pt": "Camarão",
+  "en": "cooked shrimp",
+  "food_id": "food:b54124905489e19b77903f8906f69d566917d3d5b6a54901f0bb7cf9bb5a19ca",
+  "version_id": "f5668bfe7f4036cc5785a1a93438dd0edfe4e404a46a41528cc3d41262c8e2af",
+  "source": "AL-TACO",
+  "catalog_name": "Camarão, Rio Grande, grande, cozido"
+ },
+ {
+  "slug": "camarao_frito",
+  "pt": "Camarão frito",
+  "en": "fried shrimp",
+  "food_id": "food:732be4a56ba18b62a7ff97614bad90daba939f27f36ddc8ee8ebb43827360fda",
+  "version_id": "d742e140df0fa90174c99b6cad9a0251483890e1abb0110d0acf2b6077719446",
+  "source": "AL-TACO",
+  "catalog_name": "Camarão, Sete Barbas, sem cabeça, com casca, frito"
+ },
+ {
+  "slug": "camarao_baiana",
+  "pt": "Camarão à baiana",
+  "en": "shrimp in tomato coconut sauce",
+  "food_id": "food:ab18dc9c9b5ed11de76963c5b287f369dabf8b8fd194c18c6ae08ab300c5207e",
+  "version_id": "01895fcae6d6ffadc27c6c35e464d56b7f359d5ae55f592ffb995ee1730061bc",
+  "source": "AL-TACO",
+  "catalog_name": "Camarão à baiana"
+ },
+ {
+  "slug": "caranguejo",
+  "pt": "Caranguejo",
+  "en": "crab",
+  "food_id": "food:ab194fc0d2e4cbae8c2ad15d1387b5726541175168ac4d5b635ec37c96a21fd8",
+  "version_id": "af1371fa12454659809133ebe807e6f70e27281ce69a62d185d6f89151546835",
+  "source": "AL-TACO",
+  "catalog_name": "Caranguejo, cozido"
+ },
+ {
+  "slug": "lagosta",
+  "pt": "Lagosta",
+  "en": "lobster",
+  "food_id": "food:9f3cf23199a503bbdee13e46427e2e7e2301df4120510472d611c6cb2ede951c",
+  "version_id": "dbd6504f22b8e6f2b00fb45b0763ea4185b7b0e08b1855d46606f23eaeab554a",
+  "source": "AL-USDA-FNDDS",
+  "catalog_name": "Lobster"
+ },
+ {
+  "slug": "lula",
+  "pt": "Lula",
+  "en": "fried calamari rings",
+  "food_id": "food:b4ed321d59b35afc33a73b9b141fc2b3add6a6ccad77b75b015f737c398934a7",
+  "version_id": "4702880ca50825f553c51676ff9994b91c7f7fc7508048dbd7b5f43c56d25e29",
+  "source": "AL-COFID-2021",
+  "catalog_name": "Squid, raw",
+  "review": null
+ },
+ {
+  "slug": "polvo",
+  "pt": "Polvo",
+  "en": "octopus dish",
+  "food_id": "food:04dc940d76c5a5f4ffd898f4c342f1e60f383d7ea94973926da35bcadd9a8a6b",
+  "version_id": "a1ac942100230bcde802f0091bb01ec342995e583888c205e1fcbceed85549b1",
+  "source": "AL-USDA-FNDDS",
+  "catalog_name": "Octopus"
+ },
+ {
+  "slug": "ostra",
+  "pt": "Ostra",
+  "en": "oysters",
+  "food_id": "food:c65441a64b5a68e8e36ff7c8359c4aa4d7ffddd3b475b0984e6308252a28499c",
+  "version_id": "2eac7926f9a41bd482af8a8f19999f0fd23d75cb09745505c4e6e269d7986e7c",
+  "source": "AL-USDA-FNDDS",
+  "catalog_name": "Oysters, steamed",
+  "review": null
+ },
+ {
+  "slug": "mexilhao",
+  "pt": "Mexilhão",
+  "en": "mussels",
+  "food_id": "food:51e0887c12aa4202f80447c88f73aecff6ba273408cb3d74097f18c9eebfe17c",
+  "version_id": "79add19bdf6bdcff048d1a5354d049dcf85ecdfdea8b846751e26f61a25b77b3",
+  "source": "AL-USDA-FNDDS",
+  "catalog_name": "Mussels"
+ },
+ {
+  "slug": "moqueca",
+  "pt": "Moqueca",
+  "en": "moqueca fish stew",
+  "food_id": "food:ebced5e795a990db0470c69ab5293d99681c7bc7df93d8b24abc73c3ddcf7e95",
+  "version_id": "f4c58e9dca6410d35ae7593c9580e48074e5d459c67fc7743b7ea665b1ceb4c7",
+  "source": "AL-USDA-FNDDS",
+  "catalog_name": "Stew, fish",
+  "review": null
+ },
+ {
+  "slug": "vatapa",
+  "pt": "Vatapá",
+  "en": "vatapa",
+  "food_id": "food:95cd63ae9d271db1e985065d214455defce74ef6e9799e8f3373c3a143903106",
+  "version_id": "3be52ce54d2fcdeb1035522cf03e8c1e23c6ca9900c5fe8e90a3c3f626d9de59",
+  "source": "AL-TACO",
+  "catalog_name": "Vatapá"
+ },
+ {
+  "slug": "manjuba",
+  "pt": "Manjuba frita",
+  "en": "fried small fish",
+  "food_id": "food:a8e8bb414333cc0ff8c12a9c86c0d80e62810fdcf087c360db05eadb89150848",
+  "version_id": "3d9c517fed7b15c8cc1066ccdeb09c802fcbaa546eab4782d498d98c8a06e44b",
+  "source": "AL-TACO",
+  "catalog_name": "Manjuba, frita"
+ },
+ {
+  "slug": "ovo_frito",
+  "pt": "Ovo frito",
+  "en": "fried egg",
+  "food_id": "food:44821fa2cf1c29dfc12ad5b8c01f6cce63a2862cf1117ad260cb7bc23e337cc5",
+  "version_id": "b137f9b5a67b6cc79a59b1e283323e7f28a8dc4e6868564f20eb0b4e0c143409",
+  "source": "AL-TACO",
+  "catalog_name": "Ovo, de galinha, inteiro, frito"
+ },
+ {
+  "slug": "ovo_cozido",
+  "pt": "Ovo cozido",
+  "en": "boiled egg",
+  "food_id": "food:665a3e577cf64e89d800fa65721ee340d9954b42157bb013ac30b1894c0d0fe8",
+  "version_id": "e56994f54c3e1b43cae7418c1e73547c00592ea835612953549843f1368a7d6f",
+  "source": "AL-TACO",
+  "catalog_name": "Ovo, de galinha, inteiro, cozido/10minutos"
+ },
+ {
+  "slug": "ovo_mexido",
+  "pt": "Ovo mexido",
+  "en": "scrambled eggs",
+  "food_id": "food:f888d40df1be71c1ca578ae0ece19e9bec6eaaad450d8916300c97dab2b25486",
+  "version_id": "ca1c3e48bb96ee19be73d17d99a5959f7eee90745b8c18229d94a2b4c8e4b579",
+  "source": "AL-USDA-FNDDS",
+  "catalog_name": "Egg omelet or scrambled egg, NS as to fat"
+ },
+ {
+  "slug": "omelete",
+  "pt": "Omelete",
+  "en": "omelette",
+  "food_id": "food:a9bcb874231b71c9326b12ddf7130937830c168b4b209ba47c5abf4759a6b588",
+  "version_id": "3cea9dfb97165c000353ce2ddf6e938d87ce431781a9c0c733180e82f399588e",
+  "source": "AL-TACO",
+  "catalog_name": "Omelete, de queijo"
+ },
+ {
+  "slug": "ovo_codorna",
+  "pt": "Ovo de codorna",
+  "en": "quail eggs",
+  "food_id": "food:9938ef116c3234d37426484e3b0b8f72cbc85160aab38927b46705b605931753",
+  "version_id": "4709429238cbc5fd33a9bccfb447e7c573126b245548b6f9f6cf9172a1329ce4",
+  "source": "AL-TACO",
+  "catalog_name": "Ovo, de codorna, inteiro, cru"
+ },
+ {
+  "slug": "queijo_minas",
+  "pt": "Queijo minas",
+  "en": "fresh white cheese",
+  "food_id": "food:7c57d2147cb402b48d257b99cfa8bc9cf001b17caa8092fcfe8c88428a367a0c",
+  "version_id": "725bf8af391141372727757b246d11e137c2d5164bb7d7e6528ef2b3d354c7eb",
+  "source": "AL-TACO",
+  "catalog_name": "Queijo, minas, frescal"
+ },
+ {
+  "slug": "queijo_coalho",
+  "pt": "Queijo coalho",
+  "en": "grilled coalho cheese skewer",
+  "food_id": "food:cd6ea0b4af8d929c34141001506de30679e70f2b5b1ff03b707207b374944266",
+  "version_id": "ef37a63173ec13b40e27699e7497a18fd4004e1da9bb0725b54348266f9bb490",
+  "source": "AL-TACO",
+  "catalog_name": "Queijo, minas, meia cura"
+ },
+ {
+  "slug": "mussarela",
+  "pt": "Mussarela",
+  "en": "mozzarella cheese",
+  "food_id": "food:9dd7259e79e71bb4a2a17433bf8fa69893b6199b4272a0177859f81bf2637830",
+  "version_id": "fe07093139dc15b17c3baf42c0f0ff5930be97ae8ed39f9239850b0d4948c1f5",
+  "source": "AL-TACO",
+  "catalog_name": "Queijo, mozarela"
+ },
+ {
+  "slug": "queijo_prato",
+  "pt": "Queijo prato",
+  "en": "sliced yellow cheese",
+  "food_id": "food:39958da843f4433fff2db41e0596b49c106586a64b0ca61ac4db596025c7a94f",
+  "version_id": "d0c7b1a1a7a0ddc69cc834828acc8614ce7ab19726ff329df49d718f3b729553",
+  "source": "AL-TACO",
+  "catalog_name": "Queijo, prato"
+ },
+ {
+  "slug": "parmesao",
+  "pt": "Parmesão",
+  "en": "parmesan cheese",
+  "food_id": "food:9642b489c932855fd7bed1c89d77767c0dcd0b9cc2df342c12b896c81d49f616",
+  "version_id": "777e8fdc0d34a0d2282b8ed8edee4b4c2a30598461888f122c0c7297cc5053e9",
+  "source": "AL-TACO",
+  "catalog_name": "Queijo, parmesão"
+ },
+ {
+  "slug": "requeijao",
+  "pt": "Requeijão",
+  "en": "creamy cheese spread",
+  "food_id": "food:1faf8a48a118cd28d87e15ec94027ffce53407d9e2e846255aee058ecb568abd",
+  "version_id": "8b9d43e48fec954d6ea239e0897e3189b5252a52d66667ed8f60a26bdaac80c7",
+  "source": "AL-TACO",
+  "catalog_name": "Queijo, requeijão, cremoso"
+ },
+ {
+  "slug": "ricota",
+  "pt": "Ricota",
+  "en": "ricotta",
+  "food_id": "food:68701059aba467f5a8a2d711e96621d66b0e66ffc56c54c4c12f247c1c5c603b",
+  "version_id": "d4bb2a6eeb3f67b1e6fdc512180f15959e9960d7a38eabc5199481693f38c5b4",
+  "source": "AL-TACO",
+  "catalog_name": "Queijo, ricota"
+ },
+ {
+  "slug": "iogurte",
+  "pt": "Iogurte",
+  "en": "yogurt",
+  "food_id": "food:a8a5c86f66ede145a098bb8c3814bc2ac923638f79e332c73665a15d50e056e4",
+  "version_id": "627830eb29654512b26fd5c055c57f0e880cf20ce243453e7cb475c433698e1c",
+  "source": "AL-TACO",
+  "catalog_name": "Iogurte, natural"
+ },
+ {
+  "slug": "leite",
+  "pt": "Leite",
+  "en": "glass of milk",
+  "food_id": "food:05cface67aaa413f20373f44c58219b45e222eb6bd269ba1c98c5997a27b8339",
+  "version_id": "b06c0cb83488687a167196d49cf9f2eb5493aaa6e32d8d3a02d8c1619b514bce",
+  "source": "AL-TACO",
+  "catalog_name": "Leite, de vaca, integral"
+ },
+ {
+  "slug": "achocolatado",
+  "pt": "Achocolatado",
+  "en": "chocolate milk",
+  "food_id": "food:273a4cc7fa52f68fc8932bcfa27b02020d60b953cc06b6ff84dc04b260c4f32b",
+  "version_id": "d1fa7f451a597beccd1aa26f18ea18bbe777e53b26866cef3dd4d46f82610688",
+  "source": "AL-TACO",
+  "catalog_name": "Leite, de vaca, achocolatado"
+ },
+ {
+  "slug": "leite_condensado",
+  "pt": "Leite condensado",
+  "en": "condensed milk",
+  "food_id": "food:819ad4c1a952b8dce6248654e553179c7185724a7a8254a730285245502cad3a",
+  "version_id": "2e53dd013cc33d4fe598e5f2ef68303ff2cbc692a8bb9160d579e69b5467acad",
+  "source": "AL-TACO",
+  "catalog_name": "Leite, condensado"
+ },
+ {
+  "slug": "chantilly",
+  "pt": "Chantilly",
+  "en": "whipped cream",
+  "food_id": "food:2a8882f7221eab1e5455e3dacaa856b05be3355cf189050a7f75cee6b0bbead1",
+  "version_id": "da66cd7aaf2443ea2bcf6655e86dba73759c4cfc73ebeaefe72940ed63f9fa6f",
+  "source": "AL-TACO",
+  "catalog_name": "Chantilly, spray, com gordura vegetal"
+ },
+ {
+  "slug": "manteiga",
+  "pt": "Manteiga",
+  "en": "butter",
+  "food_id": "food:998ea5e055339fd9bc1f9e2e4e62174246e490b7710a820f72be1ba00bc9d8ef",
+  "version_id": "328eb9a6975c358ac2e49ba21d4e07e56ebde70b20f2ffaf02bb7e0fae7bdf02",
+  "source": "AL-TACO",
+  "catalog_name": "Manteiga, com sal"
+ },
+ {
+  "slug": "tofu",
+  "pt": "Tofu",
+  "en": "tofu",
+  "food_id": "food:2ec85d992ff21b032cb2990ce1949b9a625011915c7622359276fdc6f13de09d",
+  "version_id": "3d0f39a679b0c7c0b59af77f10d0ed04318b52fc5c3d7f7fd4e681da9d045ce4",
+  "source": "AL-TACO",
+  "catalog_name": "Soja, queijo (tofu)"
+ },
+ {
+  "slug": "feijao_carioca",
+  "pt": "Feijão carioca",
+  "en": "cooked pinto beans",
+  "food_id": "food:6e8226a01c3a29b5afe94d4f9c7f88b96438be174c2e6b7b385c1293daf2b9be",
+  "version_id": "cb855ad8e0cccf355a8a83c2f93528320eb0ae8b4cbcc7f6a5ec7371230f49d6",
+  "source": "AL-TACO",
+  "catalog_name": "Feijão, carioca, cozido"
+ },
+ {
+  "slug": "feijao_preto",
+  "pt": "Feijão preto",
+  "en": "cooked black beans",
+  "food_id": "food:0a34e20d6c0d5238d7d616161070453c0c9e7f11467d886f154e0255671a9260",
+  "version_id": "0cbcfe81ab12ca8131f2b6bb93fed7568518c4207b9f64d7ee4fac2aa30c5d93",
+  "source": "AL-TACO",
+  "catalog_name": "Feijão, preto, cozido"
+ },
+ {
+  "slug": "feijao_fradinho",
+  "pt": "Feijão fradinho",
+  "en": "black-eyed peas",
+  "food_id": "food:47a64829b52e22cce423ff94c1889186c5270471059c2eef8e9929d92855802b",
+  "version_id": "5f5b3c1a635972d52527abc631aa794f2b012257bdbf183b651b3cc2dcb7a3c0",
+  "source": "AL-TACO",
+  "catalog_name": "Feijão, fradinho, cozido"
+ },
+ {
+  "slug": "lentilha",
+  "pt": "Lentilha",
+  "en": "lentils",
+  "food_id": "food:1c26ca98053af9685bea2e0f3887ce577868c8ab7c49847ee6b362e826972a1a",
+  "version_id": "9e6a08b2e6d5fb106629beff15a25ada094c0f49606b0450c0dcf111d6d2925a",
+  "source": "AL-TACO",
+  "catalog_name": "Lentilha, cozida"
+ },
+ {
+  "slug": "grao_de_bico",
+  "pt": "Grão-de-bico",
+  "en": "chickpeas",
+  "food_id": "food:241f92c982a6962ee2ed1893ec0ec30684d309973e9adb831ec4d56874bafb77",
+  "version_id": "dd1ca9d17f4bc529de5bbb5560813700c8575f1c65c9c19a0505e486c73a853f",
+  "source": "AL-TACO",
+  "catalog_name": "Grão-de-bico, cru"
+ },
+ {
+  "slug": "homus",
+  "pt": "Homus",
+  "en": "hummus",
+  "food_id": "food:ee20fbb5069b7eb3c535e0bf8e1715c5d0326b025be98481b5e1e2c54076a784",
+  "version_id": "526edeb7bc843b809f5a9c3d52ce3a5c2729d0d7f0d4cd8e5d1d9cc3fa34e7fc",
+  "source": "AL-USDA-FNDDS",
+  "catalog_name": "Hummus, plain"
+ },
+ {
+  "slug": "tabule",
+  "pt": "Tabule",
+  "en": "tabbouleh",
+  "food_id": "food:d8f0c9bb24bb54cd1bc61875371ac7f00e09679fc3253b076d03aa5229421540",
+  "version_id": "412835ffda7f6fe972b9bbe7e35d5d8667addd9e3c6b41edf934980ebfdd694a",
+  "source": "AL-TACO",
+  "catalog_name": "Tabule"
+ },
+ {
+  "slug": "amendoim",
+  "pt": "Amendoim",
+  "en": "peanuts",
+  "food_id": "food:291e5e9f5d8b6f1d648d1f3615be56e959cb2e9076d941bc26516a16ac57d1ae",
+  "version_id": "97cfc8968023c16eecc8b61c5c2f62b21950f46a07858933c5669745830855d1",
+  "source": "AL-TACO",
+  "catalog_name": "Amendoim, torrado, salgado"
+ },
+ {
+  "slug": "castanha_caju",
+  "pt": "Castanha de caju",
+  "en": "cashew nuts",
+  "food_id": "food:4c758f1cd0aa6b448d96a9bb8d84de31c3b87ad8e021dd9ee631585d41979665",
+  "version_id": "227388cffbba1af96c64b6e1cf3a2fc40b71e1f21b320c50bb09d9752e75d1a1",
+  "source": "AL-TACO",
+  "catalog_name": "Castanha-de-caju, torrada, salgada"
+ },
+ {
+  "slug": "castanha_para",
+  "pt": "Castanha-do-pará",
+  "en": "brazil nuts",
+  "food_id": "food:7254ffa68a2976d91c96e8fe283f00ab2bbde8deb3d17f175537be0402801db0",
+  "version_id": "94714a24c99247a8cae69c252f426590d6a92a5d9131b8d12f0f90bbce6d81f0",
+  "source": "AL-TACO",
+  "catalog_name": "Castanha-do-Brasil, crua"
+ },
+ {
+  "slug": "amendoa",
+  "pt": "Amêndoa",
+  "en": "almonds",
+  "food_id": "food:402cefea18ca810c3d2a91cc50201a02848a235b9bce2890ceadaf7b04e52d38",
+  "version_id": "763dd9e611219d54e65eebfbf0b9ea01913e660aa0830d070ac6c11fe908e5d7",
+  "source": "AL-TACO",
+  "catalog_name": "Amêndoa, torrada, salgada"
+ },
+ {
+  "slug": "noz",
+  "pt": "Nozes",
+  "en": "walnuts",
+  "food_id": "food:d90687b7720c878dabf253e4f01423359d612f85f329c7837ff64b3e682d987b",
+  "version_id": "5b0ef4e2e0f785c4376c303dac4e89d35f0779e0b1400cdfee637b6d8e9ec2d4",
+  "source": "AL-TACO",
+  "catalog_name": "Noz, crua"
+ },
+ {
+  "slug": "pistache",
+  "pt": "Pistache",
+  "en": "pistachios",
+  "food_id": "food:676914072844448129f9cc8675521128fb92c2d392ada88a2494d900476801b4",
+  "version_id": "6f7954e34e852324c830fc4f9f970cc4ea0b5465e888abcf5acd4be84b0d84a1",
+  "source": "AL-USDA-FNDDS",
+  "catalog_name": "Pistachio nuts, NFS"
+ },
+ {
+  "slug": "pinhao",
+  "pt": "Pinhão",
+  "en": "cooked pinhao pine nuts",
+  "food_id": "food:4de5de54acecf40d54937bca1cdfe8f46ee9e36eaab9bcbdef51d098312151ef",
+  "version_id": "8ee94f7d5d982e040bd83c095238a672bbdb962e559ebbcd134103fb696eef00",
+  "source": "AL-TACO",
+  "catalog_name": "Pinhão, cozido"
+ },
+ {
+  "slug": "pacoca",
+  "pt": "Paçoca",
+  "en": "pacoca peanut candy",
+  "food_id": "food:92da5fca4c17e4789fefba77fd4962bc7ac982144aa95adf35adf2e9ef536683",
+  "version_id": "c7b76a1b15c7eb7d1445f97a0dcd0cd44917437825c26ebc062f7f35e9353bcc",
+  "source": "AL-TACO",
+  "catalog_name": "Paçoca, amendoim"
+ },
+ {
+  "slug": "pe_de_moleque",
+  "pt": "Pé-de-moleque",
+  "en": "peanut brittle",
+  "food_id": "food:3f8f85ba75a07fa9b08c707cadacb90cb237ceffc9d8245d9a8e411c4940e85b",
+  "version_id": "63eb3336a2465b1d07245964e5bbe88012c2a0cb6d989525f17bb4daddfef669",
+  "source": "AL-TACO",
+  "catalog_name": "Pé-de-moleque, amendoim"
+ },
+ {
+  "slug": "chocolate",
+  "pt": "Chocolate",
+  "en": "chocolate bar",
+  "food_id": "food:2da9deaf7d52f76113866d056f2995489d67516a6722e724656a6ab12da61b4a",
+  "version_id": "9b410a88854f949fc4f5d354f90d379f8fede0581dcd0596f5af2da77bd1b85d",
+  "source": "AL-TACO",
+  "catalog_name": "Chocolate, ao leite"
+ },
+ {
+  "slug": "brigadeiro",
+  "pt": "Brigadeiro",
+  "en": "brigadeiro chocolate truffles",
+  "food_id": "food:b826143dbacd983a3c0f8694e8bfd9949d008203995613d19cb91ee273ba9feb",
+  "version_id": "da8e7d1b6e078f9a2288f7ebde33130b94f9ea58aa22dee7ca1a08c776118673",
+  "source": "AL-OFF",
+  "catalog_name": "Brigadeiro",
+  "review": "OFF"
+ },
+ {
+  "slug": "cocada",
+  "pt": "Cocada",
+  "en": "coconut candy cocada",
+  "food_id": "food:8ecaac21dd9236d49e19249499e14e909ff84562d059f8420704d8c4a0df0eb9",
+  "version_id": "671327a49864ab6db319b8bd1a4ff37e1e76d545b46abbcd7ade18ac43079011",
+  "source": "AL-TACO",
+  "catalog_name": "Cocada branca"
+ },
+ {
+  "slug": "doce_leite",
+  "pt": "Doce de leite",
+  "en": "dulce de leche",
+  "food_id": "food:41cc51836a67ba59334727f60c325a57e80fdb4316009a1e7cc47a1e1c680145",
+  "version_id": "df89e3aa5e14bf3e4582951d4293bb7d969b21ac3c25d6a69d2ef4b102e39f39",
+  "source": "AL-TACO",
+  "catalog_name": "Doce, de leite, cremoso"
+ },
+ {
+  "slug": "goiabada",
+  "pt": "Goiabada",
+  "en": "guava paste",
+  "food_id": "food:3bcd5f20ff27e475d538d92db0f64972f3f81e918e4bd684e2dfb63d62fdf419",
+  "version_id": "68838db52694ac8935599dc4af0aba8709f56d85e0a98afe312e5f16c955f2b8",
+  "source": "AL-TACO",
+  "catalog_name": "Goiaba, doce em pasta"
+ },
+ {
+  "slug": "marmelada",
+  "pt": "Marmelada",
+  "en": "quince paste",
+  "food_id": "food:635f4f2f0b37c1c6e5cb453cc7f5b028fd41a95cd3b0af95549480cfb2d37d80",
+  "version_id": "aa2f22d63bea55cf44a8d4cfd5a1b8af8362113cfa398df43d21105a68d56848",
+  "source": "AL-TACO",
+  "catalog_name": "Marmelada"
+ },
+ {
+  "slug": "doce_abobora",
+  "pt": "Doce de abóbora",
+  "en": "pumpkin sweet",
+  "food_id": "food:bb188cdc4e506dfb738af318c2dcbdf9558f7404de9b30ceeaff50cc6472b115",
+  "version_id": "b3f435e416b0ec4448ae69794790fd3f5efd8e8ee285ae10bc18a31e802c1a46",
+  "source": "AL-TACO",
+  "catalog_name": "Doce, de abóbora, cremoso"
+ },
+ {
+  "slug": "pudim",
+  "pt": "Pudim",
+  "en": "caramel flan pudding",
+  "food_id": "food:03b132fe2a18975ee8174af2a318a27c40a62c4eba54be4f9a472be35f6f3ed7",
+  "version_id": "5cda6b6ed9fd37cae6c0d3734ec33a0e17e7922085cbc2a8d13b7b0aab97e3c0",
+  "source": "AL-USDA-FNDDS",
+  "catalog_name": "Flan"
+ },
+ {
+  "slug": "quindim",
+  "pt": "Quindim",
+  "en": "quindim coconut custard",
+  "food_id": "food:beb8b83c01b21d17eb5ea1660e6b1ba7e4caa3794ab8fe5529ef4b4ec6984034",
+  "version_id": "5bd566bd9d56ebc867ec227151133fae50a03759fd93ae7b17cd2c92f49cedef",
+  "source": "AL-TACO",
+  "catalog_name": "Quindim"
+ },
+ {
+  "slug": "mousse",
+  "pt": "Mousse",
+  "en": "chocolate mousse",
+  "food_id": "food:e8c48c34ffd42d4ceab8a803483939be01179d8200dc013d0d4f459012584988",
+  "version_id": "70ae776d27dd7d90b8838ea75f07a15da2f8076aca846616498b2b1d6b4d1dca",
+  "source": "AL-USDA-FNDDS",
+  "catalog_name": "Mousse"
+ },
+ {
+  "slug": "sorvete",
+  "pt": "Sorvete",
+  "en": "ice cream",
+  "food_id": "food:3a9fd23c17806e1efebb609deb6eeb58a67787c8cdee2bfbf044233db40aa8b5",
+  "version_id": "ba7cf766892c463e4ff4cf1ff70e4f9501e1790dd413abb137b9eef7888dc807",
+  "source": "AL-USDA-FNDDS",
+  "catalog_name": "Ice cream, NFS",
+  "review": null
+ },
+ {
+  "slug": "picole",
+  "pt": "Picolé",
+  "en": "popsicle",
+  "food_id": "food:c7b3f5d25021eaecfd808446fd69a3d507c7b9f39bc1c60c45d632ef81edb13f",
+  "version_id": "36eee921caad41b814cb3736553f08478f5ee0c869f448f5832e30cde7de8637",
+  "source": "AL-USDA-SR-LEGACY",
+  "catalog_name": "Frozen novelties, ice type, pop"
+ },
+ {
+  "slug": "gelatina",
+  "pt": "Gelatina",
+  "en": "gelatin dessert",
+  "food_id": "food:c485f0db3862b53794eea5f7e3078e47148d01e7a47df218ff901f5437dd9821",
+  "version_id": "97e31ebd51f3122c231aea918d68ed9c6f65561790a7a3890ed7bae2067102c9",
+  "source": "AL-USDA-FNDDS",
+  "catalog_name": "Gelatin dessert"
+ },
+ {
+  "slug": "torta_doce",
+  "pt": "Torta doce",
+  "en": "sweet pie",
+  "food_id": "food:9ea0ad455d5ec3e09678b72171431a934dd6b0ef327e936f9905401cba5b2734",
+  "version_id": "dc5bc962d14566d76cf2f543eda5466cf6baa77f05c8dc9f6df72b7e1e98b96d",
+  "source": "AL-USDA-FNDDS",
+  "catalog_name": "Pie, apple",
+  "review": null
+ },
+ {
+  "slug": "cheesecake",
+  "pt": "Cheesecake",
+  "en": "cheesecake",
+  "food_id": "food:21e1fc9170001fe38c140c14daf15bfb2e7afe098da4c95a777410903eef9d57",
+  "version_id": "8c52f39e3caa0d9e3a2e9c0f6739d2fb63f0bfc134dfe0d079c962b70ebab6be",
+  "source": "AL-USDA-FNDDS",
+  "catalog_name": "Cheesecake, fruit"
+ },
+ {
+  "slug": "brownie",
+  "pt": "Brownie",
+  "en": "brownie",
+  "food_id": "food:5471680c45d49c7e93ecdc722e142b076523c61b6ec5df2f1a0a8d2f32a80673",
+  "version_id": "51b7de61ad1d0ca426547ca70b98cd92c8d113950da9a770e93f46978ec74d94",
+  "source": "AL-USDA-FNDDS",
+  "catalog_name": "Cookie, butterscotch, brownie"
+ },
+ {
+  "slug": "cookie",
+  "pt": "Cookie",
+  "en": "chocolate chip cookies",
+  "food_id": "food:6dd7d9dbd38d82738804d0d8a6686b84139b45c1d958360e735a29c2dd94c137",
+  "version_id": "8b3a2fb5b4bb95759ab25573ecca6e850995c4592bcf56d61e2e76677174d15a",
+  "source": "AL-USDA-FNDDS",
+  "catalog_name": "Cookie, chocolate chip"
+ },
+ {
+  "slug": "bala",
+  "pt": "Bala",
+  "en": "candy",
+  "food_id": "food:eec9bfd60bc2e524784c71dc50536528aacfa79de02690b987754c96c45475b9",
+  "version_id": "756635a51b76cebfe7ac5a2435b913a419801e84bc99ab6f25ad8456fa298b5f",
+  "source": "AL-USDA-FNDDS",
+  "catalog_name": "Candy, hard"
+ },
+ {
+  "slug": "mel",
+  "pt": "Mel",
+  "en": "honey",
+  "food_id": "food:9e0708538ac4cb0d5f120b491b593723996e0171bfea5c069a1d025c304c474c",
+  "version_id": "0699fce53002d2d7605a99a7e014091d275981d8df49326001f3199824f44478",
+  "source": "AL-TACO",
+  "catalog_name": "Mel, de abelha"
+ },
+ {
+  "slug": "geleia",
+  "pt": "Geleia",
+  "en": "fruit jam",
+  "food_id": "food:7ec9377052d3f8091008ed81be5c5e220d7c7e0c72347be1b0367a40378482e2",
+  "version_id": "0e94a4abade9b56c5205e999c4ce183e27c3f25f585e12debee958483bb2032b",
+  "source": "AL-USDA-FNDDS",
+  "catalog_name": "Jam"
+ },
+ {
+  "slug": "rapadura",
+  "pt": "Rapadura",
+  "en": "rapadura cane sugar block",
+  "food_id": "food:f3896aa5dfe0cc3095d6683f5efbc25dc6b6ff32a860c52daa09ad637b5b96a3",
+  "version_id": "a1c3de9b75686cc9e8c55b1c217103928e7c6934e254838364bd77f2bd1eb8ac",
+  "source": "AL-TACO",
+  "catalog_name": "Rapadura"
+ },
+ {
+  "slug": "maria_mole",
+  "pt": "Maria-mole",
+  "en": "maria mole coconut marshmallow",
+  "food_id": "food:2e5eb623836ddcff1e8896a9c7f551872b68a6d607f6005d98372e432f8c4b33",
+  "version_id": "490373eb91c4c6880532dcecbcaa3807c1aaee402f24ee2a231d2a96de88de15",
+  "source": "AL-TACO",
+  "catalog_name": "Maria mole"
+ },
+ {
+  "slug": "torta_salgada",
+  "pt": "Torta salgada",
+  "en": "savory pie quiche",
+  "food_id": "food:29b07908e66df1a1ff57977f550a8f15ea6fe1f86a5ed07402c05e572e2abeec",
+  "version_id": "836adbd3852ca5b69276e2b23f0604adb0c644203f8ebdea0020aa45432527af",
+  "source": "AL-USDA-FNDDS",
+  "catalog_name": "Cheese quiche, meatless"
+ },
+ {
+  "slug": "cafe",
+  "pt": "Café",
+  "en": "cup of black coffee",
+  "food_id": "food:ab4ecb5d195e68537b4f378a66182033514f773a7479c3b40fe54b82d712ba77",
+  "version_id": "8c70db43222e75fbf62b29fb67df33241735a968a561af9c483290acc1ac7ff2",
+  "source": "AL-TACO",
+  "catalog_name": "Café, infusão 10%"
+ },
+ {
+  "slug": "cafe_com_leite",
+  "pt": "Café com leite",
+  "en": "coffee with milk",
+  "food_id": "food:58d9b8ee00014bbf7b53ae42527e004429ddcae676edf59933694e91376e5acc",
+  "version_id": "75999cdaad58f2efaa98ac71b7e0b81e7fc588bf89403b55c1d31bd4eb60fffa",
+  "source": "AL-USDA-FNDDS",
+  "catalog_name": "Coffee, Latte",
+  "review": null
+ },
+ {
+  "slug": "cappuccino",
+  "pt": "Cappuccino",
+  "en": "cappuccino",
+  "food_id": "food:89db5109b7d83e57052ac56f3c07c2e9b113b122ae415da160455fba8f1f1b7f",
+  "version_id": "2ff9650e18d8d0f2df531113de88be302ca30bb4e810bfc428ff8769392a1a73",
+  "source": "AL-USDA-FNDDS",
+  "catalog_name": "Coffee, Cappuccino"
+ },
+ {
+  "slug": "cha",
+  "pt": "Chá",
+  "en": "cup of tea",
+  "food_id": "food:8765f8944eae9ba0c1ba3c61624da5852e4c3d9c0ea82b8799bdfc5547bd66af",
+  "version_id": "1579b6435e361aad62909ae8d9369e9ad687db0c884af9e3231663c3a3c7a8c6",
+  "source": "AL-TACO",
+  "catalog_name": "Chá, preto, infusão 5%"
+ },
+ {
+  "slug": "chimarrao",
+  "pt": "Chimarrão",
+  "en": "chimarrao mate in a gourd",
+  "food_id": "food:8612cc241d285aec374286d143da894e4f995327d1d2c18a1518d0e68278a415",
+  "version_id": "f66264fc4a3aaee0900c0020256be82cb2977066354590a3192a82638e3ce9fc",
+  "source": "AL-TACO",
+  "catalog_name": "Chá, mate, infusão 5%"
+ },
+ {
+  "slug": "suco_laranja",
+  "pt": "Suco de laranja",
+  "en": "orange juice",
+  "food_id": "food:642abcccf6290be84d0dbd634c713dff59c310b74f9ecf6bebf82d5cea2647ba",
+  "version_id": "d8e387ff8acf4ae7fba8743013a41de80161c53413ea3a6e190412af4468f04e",
+  "source": "AL-TACO",
+  "catalog_name": "Laranja, pêra, suco"
+ },
+ {
+  "slug": "suco_fruta",
+  "pt": "Suco de fruta",
+  "en": "fruit juice",
+  "food_id": "food:daaa3db49ac488ec3b1d367be36b3e08b630f21e7a347e584d8664b2881af2b0",
+  "version_id": "9017765d0669f575cf26da176cbe1c8f16b25863b188a8b30bb6b722cf2f2615",
+  "source": "AL-USDA-FNDDS",
+  "catalog_name": "Fruit juice, NFS"
+ },
+ {
+  "slug": "vitamina",
+  "pt": "Vitamina",
+  "en": "fruit smoothie",
+  "food_id": "food:75ebbd8a876cc51fa46b385d7ea5698b7dc59c7d31696ce1089f6bd912c4c0fb",
+  "version_id": "342c9e2b026bde5f8b64732e15fb275e7e4175ce40488f1aa4e1cb4b14ddd7d4",
+  "source": "AL-USDA-FNDDS",
+  "catalog_name": "Fruit smoothie, NFS",
+  "review": null
+ },
+ {
+  "slug": "milkshake",
+  "pt": "Milk-shake",
+  "en": "milkshake",
+  "food_id": "food:0de5b87e14e3e4324133fb5b51db9118773091bcb5059228cbd83d0679e86789",
+  "version_id": "4a14bdb92340624efbaa31f154bb35f2da63f1a954d6d54f0696c1ec142107c8",
+  "source": "AL-COFID-2021",
+  "catalog_name": "Milkshake, thick, takeaway"
+ },
+ {
+  "slug": "agua_coco",
+  "pt": "Água de coco",
+  "en": "coconut water",
+  "food_id": "food:7a5ee24ee41ccf2c0cceb87f435d6bfb8c79d3db52ed4a61cd87b9782e1a3113",
+  "version_id": "bbf656308b4c12ab70aab67bfc84ae1e6de2a9043b8991ae78fae779278b1a6f",
+  "source": "AL-TACO",
+  "catalog_name": "Coco, água de"
+ },
+ {
+  "slug": "refrigerante",
+  "pt": "Refrigerante",
+  "en": "cola soft drink",
+  "food_id": "food:4fbcdfb86dec031107860337280a1742b9fcece70057ae62fe8db345a866d0e2",
+  "version_id": "2ce36535eca16a44b6517734d7a2080545a78a3fd410b84c8e76eddc76ca9950",
+  "source": "AL-TACO",
+  "catalog_name": "Refrigerante, tipo cola"
+ },
+ {
+  "slug": "guarana",
+  "pt": "Guaraná",
+  "en": "guarana soda",
+  "food_id": "food:2158f8f550c4babfefcbe44eb7c56da565fbcbe97f62fb7e393f27ca19b78c47",
+  "version_id": "8248161b904a90ffc08de8f3deb3f559d78321bc62400d7755be8205efc50652",
+  "source": "AL-TACO",
+  "catalog_name": "Refrigerante, tipo guaraná"
+ },
+ {
+  "slug": "cerveja",
+  "pt": "Cerveja",
+  "en": "beer",
+  "food_id": "food:5e50e6746173019afd67dc17dc2b053ce4b0ae61ca9a121f1c54ce0e7185276e",
+  "version_id": "4f5408619ee0e5f792cd19b082514c4cea80e3a5076c3f7139022566a193716a",
+  "source": "AL-TACO",
+  "catalog_name": "Cerveja, pilsen 2"
+ },
+ {
+  "slug": "vinho",
+  "pt": "Vinho",
+  "en": "wine",
+  "food_id": "food:1b0ce7109b6c7b590cb81ec2e15b40e38e6aa54874cb6d8db9765778df85bbfe",
+  "version_id": "d4afcceb63ca1451bbdc01ccfd4d406275fbf76cb1848e2c2a864c0332cb61c8",
+  "source": "AL-USDA-SR-LEGACY",
+  "catalog_name": "Alcoholic beverage, wine, table, red"
+ },
+ {
+  "slug": "caipirinha",
+  "pt": "Caipirinha",
+  "en": "caipirinha cocktail",
+  "food_id": "food:8b5a94ccf66656cbce2b71bd81f46d89ad41fa12ccf177fbdee8984973d1bf46",
+  "version_id": "25c387fb3056823ccadf0e8d9b3460051a94246d679be2a0df83d9cc5b69bd88",
+  "source": "AL-TACO",
+  "catalog_name": "Cana, aguardente 1"
+ },
+ {
+  "slug": "coquetel",
+  "pt": "Coquetel",
+  "en": "cocktail",
+  "food_id": "food:b97a310a6fa50b161175d1fee0ec098f1bdebfa614a74e8100e8c353891a7b64",
+  "version_id": "8e7b82390869f0ecc6bd0718835ce9438acaec666852fedb656796f8fbfd3556",
+  "source": "AL-USDA-FNDDS",
+  "catalog_name": "Cocktail, NFS"
+ },
+ {
+  "slug": "caldo_cana",
+  "pt": "Caldo de cana",
+  "en": "sugarcane juice",
+  "food_id": "food:f8dfea4d1b3097c63aaf372f1145e8a42588ee94aaf0c18bcee184cc5565b247",
+  "version_id": "ced97f3333c12ad5b44228de52a5580bce10c6def1223d8955b642d0727cce66",
+  "source": "AL-TACO",
+  "catalog_name": "Cana, caldo de"
+ },
+ {
+  "slug": "agua",
+  "pt": "Água",
+  "en": "glass of water",
+  "food_id": "food:4ecb104ae98ff16f4204ed8d0c6cfbaa86b7ec9e87a8003d99760fd8dd319bbb",
+  "version_id": "52d114284f9d721495a8668b72f768e0163f6989bd65ffbe9616f4089fb4e72f",
+  "source": "AL-USDA-FNDDS",
+  "catalog_name": "Water, tap"
+ },
+ {
+  "slug": "sopa",
+  "pt": "Sopa",
+  "en": "vegetable soup",
+  "food_id": "food:fc77a5bc35c5865678e7acedca8f512b914cb001fcd475ca1d5ca44b43dc87a3",
+  "version_id": "9688dfd9fe7a98f5528c1ac715bd9b791e81d249b98ee9020f8b4b1e21d550e4",
+  "source": "AL-USDA-FNDDS",
+  "catalog_name": "Soup, vegetable"
+ },
+ {
+  "slug": "canja",
+  "pt": "Canja",
+  "en": "chicken and rice soup",
+  "food_id": "food:d9fece0ae196675a8001580fae2e180192827f4909016b8c0c8aca9c91641cd5",
+  "version_id": "c3e94a5ebbd198ef212586e363102ac49261a447432e9ef9b711e542774cbd5d",
+  "source": "AL-USDA-SR-LEGACY",
+  "catalog_name": "Soup, HEALTHY CHOICE Chicken and Rice Soup, canned",
+  "review": null
+ },
+ {
+  "slug": "caldo_verde",
+  "pt": "Caldo verde",
+  "en": "kale and potato soup",
+  "food_id": "food:c57b884d44bf006d49194d17d9ed5e11f07e598f292a1a93a3ba43ac84ebad2a",
+  "version_id": "f2b6377f00446c5cbc8bb68154eaf051ddb9e174487a4a3108fec7828d0c1719",
+  "source": "AL-USDA-FNDDS",
+  "catalog_name": "Soup, potato"
+ },
+ {
+  "slug": "tacaca",
+  "pt": "Tacacá",
+  "en": "tacaca soup",
+  "food_id": "food:ffb126d2b8e4735ba04efeab5630f70e9f05e0f5e30caf521de5b2b2cc2ce270",
+  "version_id": "d107ad026e3d67b602386acc2eaef218290c8757ef13fc59de72fe97919346b2",
+  "source": "AL-TACO",
+  "catalog_name": "Tacacá"
+ },
+ {
+  "slug": "manicoba",
+  "pt": "Maniçoba",
+  "en": "manicoba stew",
+  "food_id": "food:c09612e5a09bbde2ed690695ae088c47e3e4c554d4537fabb893bb8facb8ef42",
+  "version_id": "ad2a924e8f3082099f88165fbaded9a203c1028d20dba27d51433ac89904dea9",
+  "source": "AL-TACO",
+  "catalog_name": "Maniçoba"
+ },
+ {
+  "slug": "quibebe",
+  "pt": "Quibebe",
+  "en": "mashed pumpkin quibebe",
+  "food_id": "food:c00789a2b7a7882c91904d52344cc9bfd3f03306b2955e21555cfac97290ae41",
+  "version_id": "c62d128311ea92b1377a45bf4a44efa5f0253c7b6d61f418b8ccf6f9f6a0601a",
+  "source": "AL-TACO",
+  "catalog_name": "Quibebe"
+ },
+ {
+  "slug": "salpicao",
+  "pt": "Salpicão",
+  "en": "chicken salad salpicao",
+  "food_id": "food:cdeb6a4e2028839fbe9df6d74164bd1c85c717cac48e057b59432573398160b1",
+  "version_id": "c9c963522d0a64c937a45e96e91720150f9f8fb73c47e9ab3f3912e97f0bbbe0",
+  "source": "AL-TACO",
+  "catalog_name": "Salpicão, de frango"
+ },
+ {
+  "slug": "curry",
+  "pt": "Curry",
+  "en": "curry",
+  "food_id": "food:e77761e018d468368c33894c85f5cacaf5fe65989f249252f118e3d959588c63",
+  "version_id": "ebbbca00a7049c65aa5181a9b3443b15e991034d864d0199997dbe5ffe0abf3c",
+  "source": "AL-USDA-FNDDS",
+  "catalog_name": "Beef curry"
+ },
+ {
+  "slug": "paella",
+  "pt": "Paella",
+  "en": "paella",
+  "food_id": "food:e89edc2d5f04f83360f66d5f212bb527b5fea781d90ab5aa170510205555c5f0",
+  "version_id": "0ced6c3ad7d69e10f14c2c96e7d7852152dd1e7ad96d5083771b488bf604a603",
+  "source": "AL-USDA-FNDDS",
+  "catalog_name": "Paella, NFS"
+ },
+ {
+  "slug": "molho_tomate",
+  "pt": "Molho de tomate",
+  "en": "tomato sauce",
+  "food_id": "food:fba5dce33905d260ad68b53f1ec2ad0e524be6bb6800deee2c9e2ef2835fda78",
+  "version_id": "49506d6401514d6c83aef763fd98e167446acd90bb5060366e4be607bfeacabc",
+  "source": "AL-TACO",
+  "catalog_name": "Tomate, molho industrializado"
+ },
+ {
+  "slug": "ketchup",
+  "pt": "Ketchup",
+  "en": "ketchup",
+  "food_id": "food:7bfae78330680569be71cc681bc62bf8f10b04eea7777f85105ac71e182a020a",
+  "version_id": "962ab0d8dc422b34e3ad7547255b3658468c2facb9ccc1c3e5605c9dd2e72f7e",
+  "source": "AL-USDA-FNDDS",
+  "catalog_name": "Ketchup"
+ },
+ {
+  "slug": "maionese",
+  "pt": "Maionese",
+  "en": "mayonnaise",
+  "food_id": "food:535fb0f78536d62650d325397a1caac8de83ae35d1c55aa6ee84c0498589fbde",
+  "version_id": "ec6ccf86247123ffc1c20e0c4155822a72440846b744848d8c2f0621db4b646c",
+  "source": "AL-TACO",
+  "catalog_name": "Maionese, tradicional com ovos"
+ },
+ {
+  "slug": "mostarda",
+  "pt": "Mostarda",
+  "en": "mustard",
+  "food_id": "food:732c3d644951c4fe62223ab8ec4489a1170bac0cca875d77499deb4f3167f067",
+  "version_id": "effb6999c1a90d496f15f96c242bb076e02190bc7ed94dfecf457ef14cbdf8d2",
+  "source": "AL-USDA-SR-LEGACY",
+  "catalog_name": "Mustard, prepared, yellow"
+ },
+ {
+  "slug": "azeite",
+  "pt": "Azeite",
+  "en": "olive oil",
+  "food_id": "food:4ad4cc748cc7546f2d3638845cc22b99b47cfec2c894132d4472fcb7e4563639",
+  "version_id": "1f5fab8bc7a55e062f526657703754e6cd0713b7d38c1cee53ce695144e6224d",
+  "source": "AL-TACO",
+  "catalog_name": "Azeite, de oliva, extra virgem"
+ },
+ {
+  "slug": "shoyu",
+  "pt": "Shoyu",
+  "en": "soy sauce",
+  "food_id": "food:0e47abc930fe5f361a41321d1b3487b3adb7d6c43948425749ccd4860a83714d",
+  "version_id": "8bc2c3fffee9400b9c97f4904518fdfeae7b879acdfe6c6b2f901e148c9a1efd",
+  "source": "AL-TACO",
+  "catalog_name": "Shoyu"
+ }
+]

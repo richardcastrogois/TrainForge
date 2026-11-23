@@ -4,6 +4,7 @@
 *.pdf binary
 *.pptx binary
 *.png binary
+*.tflite binary
 
 # Generated indexes and historical design exports do not define source language
 **/graphify-out/** linguist-generated=true

@@ -20,6 +20,10 @@ O TrainForge é proprietário (ver [LICENSE](LICENSE)), mas usa dados, fontes e 
 
 Os 73 metadados de exercícios usados para consulta guardam autor, licença e origem em `content/manifests/`.
 
+## Modelo de reconhecimento de alimentos por foto
+
+O modelo `assets/models/food_photo_int8.tflite` é próprio do TrainForge, partindo dos pesos `tf_efficientnet_lite0.in1k` (timm, Apache 2.0). Foi treinado com marcações do SigLIP 2 (Apache 2.0) sobre fotos de Nutrition5k (CC BY 4.0), Open Images V7 (somente fotos CC BY 2.0, rótulos CC BY 4.0) e Wikimedia Commons (somente CC0, domínio público e CC BY). Autor, licença e origem de cada foto ficam nos manifestos de treino. As fotos não são distribuídas com o app.
+
 ## Fontes tipográficas
 
 | Fonte | Licença |

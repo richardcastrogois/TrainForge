@@ -9,6 +9,8 @@ class MainActivity : FlutterActivity() {
         super.configureFlutterEngine(flutterEngine)
         MethodChannel(flutterEngine.dartExecutor.binaryMessenger, "trainforge/catalog_assets")
             .setMethodCallHandler(CatalogAssetInstaller(applicationContext))
+        MethodChannel(flutterEngine.dartExecutor.binaryMessenger, "trainforge/food_photo")
+            .setMethodCallHandler(FoodPhotoClassifier(applicationContext))
         val preferences = getSharedPreferences("trainforge_appearance", MODE_PRIVATE)
         MethodChannel(flutterEngine.dartExecutor.binaryMessenger, "trainforge/appearance").setMethodCallHandler { call, result ->
             when (call.method) {

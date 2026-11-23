@@ -16,6 +16,9 @@ import '../domain/nutrition.dart';
 import 'nutrition_forms.dart';
 import 'entry_detail_page.dart';
 import 'dart:async';
+import 'dart:io';
+import 'package:image_picker/image_picker.dart';
+import '../../food_reference/data/food_photo_classifier.dart';
 import '../data/offline_nutrition_repository.dart';
 import '../../food_reference/presentation/barcode_scanner_page.dart';
 import '../../food_reference/data/local_food_repository.dart';
@@ -30,6 +33,12 @@ class NutritionPage extends StatefulWidget {
   final Listenable sessionChanges;
   final NutritionRepository? repository;
   final DateTime? initialDate;
+
+  /// Photo recognition; injectable for tests. Defaults to the bundled model.
+  final FoodPhotoClassifier? photoClassifier;
+
+  /// Returns the path of a photo the app may read and delete, or null when cancelled.
+  final Future<String?> Function(ImageSource source)? pickPhoto;
   const NutritionPage({
     super.key,
     required this.accountId,
@@ -38,6 +47,8 @@ class NutritionPage extends StatefulWidget {
     this.repository,
     this.initialDate,
     this.evidenceMode = false,
+    this.photoClassifier,
+    this.pickPhoto,
   });
   @override
   State<NutritionPage> createState() => _NutritionPageState();
@@ -48,6 +59,8 @@ class _NutritionPageState extends State<NutritionPage>
   late final NutritionRepository repository;
   late final NutritionController controller;
   final search = TextEditingController();
+  late final FoodPhotoClassifier photoClassifier;
+  bool photoAvailable = false, photoBusy = false;
   bool get active => mounted && controller.active;
 
   @override
@@ -68,8 +81,14 @@ class _NutritionPageState extends State<NutritionPage>
     widget.sessionChanges.addListener(accountChanged);
     WidgetsBinding.instance.addObserver(this);
     controller.searchOwn();
+    photoClassifier = widget.photoClassifier ?? FoodPhotoClassifier();
     final offline = repository;
     if (offline is OfflineNutritionRepository) {
+      unawaited(
+        photoClassifier.available().then((ok) {
+          if (mounted && ok) setState(() => photoAvailable = true);
+        }),
+      );
       offline.addListener(offlineChanged);
       unawaited(
         offline.synchronize().then((_) async {
@@ -258,6 +277,112 @@ class _NutritionPageState extends State<NutritionPage>
     }
   }
 
+  Future<String?> _pick(ImageSource source) async {
+    final image = await ImagePicker().pickImage(
+      source: source,
+      maxWidth: 1280,
+      maxHeight: 1280,
+      imageQuality: 90,
+    );
+    return image?.path;
+  }
+
+  /// Photo → up to 5 catalog foods; the person picks one and confirms the quantity.
+  Future<void> photo() async {
+    final offline = repository;
+    if (!active || photoBusy || offline is! OfflineNutritionRepository) return;
+    final source = await showModalBottomSheet<ImageSource>(
+      context: context,
+      builder: (context) => SafeArea(
+        child: Column(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            ListTile(
+              leading: const Icon(Icons.photo_camera),
+              title: Text(foodOfflineLabel(context, 'photoCamera')),
+              onTap: () => Navigator.pop(context, ImageSource.camera),
+            ),
+            ListTile(
+              leading: const Icon(Icons.photo_library),
+              title: Text(foodOfflineLabel(context, 'photoGallery')),
+              onTap: () => Navigator.pop(context, ImageSource.gallery),
+            ),
+          ],
+        ),
+      ),
+    );
+    if (source == null || !active) return;
+    String? path;
+    try {
+      path = await (widget.pickPhoto ?? _pick)(source);
+    } catch (_) {
+      path = null;
+      if (mounted) _photoMessage('photoUnavailable');
+      return;
+    }
+    if (path == null || !active) return;
+    setState(() => photoBusy = true);
+    final foods = <FoodReference>[];
+    var failed = false;
+    try {
+      for (final suggestion in await photoClassifier.suggest(path)) {
+        final food = await offline.catalog.photoFood(
+          suggestion.food.foodId,
+          suggestion.food.versionId,
+        );
+        if (food != null) foods.add(food);
+      }
+    } catch (_) {
+      failed = true;
+    } finally {
+      // The photo is never stored: it only feeds this analysis.
+      try {
+        await File(path).delete();
+      } catch (_) {}
+      if (mounted) setState(() => photoBusy = false);
+    }
+    if (!mounted || !active) return;
+    if (failed) return _photoMessage('photoUnavailable');
+    const searchOther = Object();
+    final selected = await showDialog<Object>(
+      context: context,
+      builder: (context) => SimpleDialog(
+        title: Text(
+          foodOfflineLabel(
+            context,
+            foods.isEmpty ? 'photoNone' : 'photoSuggestions',
+          ),
+        ),
+        children: [
+          if (foods.isNotEmpty)
+            Padding(
+              padding: const EdgeInsets.fromLTRB(24, 0, 24, 8),
+              child: Text(foodOfflineLabel(context, 'photoHint')),
+            ),
+          for (final food in foods)
+            SimpleDialogOption(
+              onPressed: () => Navigator.pop(context, food),
+              child: Text(food.localizedName(context)),
+            ),
+          SimpleDialogOption(
+            onPressed: () => Navigator.pop(context, searchOther),
+            child: Text(foodOfflineLabel(context, 'photoSearch')),
+          ),
+        ],
+      ),
+    );
+    if (!active) return;
+    if (selected is FoodReference) {
+      await record(selected);
+    } else if (identical(selected, searchOther)) {
+      await chooseReference();
+    }
+  }
+
+  void _photoMessage(String key) => ScaffoldMessenger.of(
+    context,
+  ).showSnackBar(SnackBar(content: Text(foodOfflineLabel(context, key))));
+
   Future<void> meals() async {
     final source = repository;
     if (!active || source is! MealRepository) return;
@@ -373,6 +498,17 @@ class _NutritionPageState extends State<NutritionPage>
             onPressed: scan,
             icon: const Icon(Icons.barcode_reader),
             label: Text(foodOfflineLabel(context, 'scan')),
+          ),
+        if (repository is OfflineNutritionRepository && photoAvailable)
+          OutlinedButton.icon(
+            onPressed: photoBusy ? null : photo,
+            icon: const Icon(Icons.photo_camera),
+            label: Text(
+              foodOfflineLabel(
+                context,
+                photoBusy ? 'photoBusy' : 'photoRecognize',
+              ),
+            ),
           ),
         const SizedBox(height: 12),
         Text(context.l10n.diaryNoPrescription),

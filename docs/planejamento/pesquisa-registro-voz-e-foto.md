@@ -56,6 +56,76 @@ No celular (sem internet, sem servidor)
 - **Referência pública:** MobileNetV2 82,1% e EfficientNet-B2 87,5% top-1 no Food-101; pratos brasileiros não medidos. Meta: top-5 ≥ 70% por item.
 - **A verificar:** licença dos pesos iniciais (ImageNet), tamanho do motor por ABI, plugin Flutter de inferência.
 
+### Inventário de bases públicas para o treino (22/11, antes de qualquer download)
+
+| Base | Licença declarada | Conteúdo | Tamanho | Acesso | Situação |
+|---|---|---|---|---|---|
+| MyFoodRepo / Food Recognition Benchmark 2022 (AIcrowd) | CC BY 4.0 segundo os autores (Frontiers 2022); Dataset Ninja diz CC0 | ~40 mil fotos reais de refeições, 498 classes com segmentação (pratos com vários itens) | ~2 GB (v2.0, terceiro) | exige conta AIcrowd | **Principal**; conferir termos da v2.1 na página |
+| Open Images V7 (Google) | imagens CC BY 2.0, anotações CC BY 4.0; Google não garante a licença de cada imagem | ~20,6 mil classes por imagem, incluindo centenas de alimentos, rótulos verificados | seletivo; teto proposto ~25 GB | bucket público, sem conta | **Principal**; manifesto de atribuição por imagem |
+| Nutrition5k (Google) | CC BY 4.0 (espelho; conferir no GitHub oficial) | ~5 mil pratos de refeitório com ingredientes e pesos (multirrótulo) | completo ~181 GB; só fotos de cima, a medir | bucket público, sem conta | Baixar só fotos de cima |
+| Wikimedia Commons | por imagem: só CC0, domínio público e CC BY; **sem CC BY-SA** | pratos brasileiros e regionais | ~1–3 GB | API pública | Complementar para pratos brasileiros |
+| Brazilian food images (Mendeley, UNIFEI, v2 2023, DOI 10.17632/7n36jtcpv3.2) | CC BY 4.0 na página (22/11); rodapé da Elsevier reserva mineração/treino "salvo conteúdo aberto" | 20 classes brasileiras (arroz, feijão, farofa, bife à milanesa, mandioca, purê, maionese de batata…) com máscara por alimento; ~505 fotos segundo terceiro | a medir | público | **Origem das fotos não informada** (artigo Springer fechado); só usar após confirmar com o autor ou no artigo |
+| MyFood (Zenodo) | CC BY 4.0 no registro (conferido em 22/11), mas imagens coletadas do Google/Flickr/Bing pelo autor | 9 classes, 1.250 fotos | pequeno | público | **Excluída** (direitos das imagens incertos) |
+
+Não verificáveis sem navegador/conta: Kaggle "Tipical Brazilian Foods" (26 classes) e Roboflow "food-segmentation-tcc" (43 classes); espelhos não valem sozinhos. Excluídas por licença ou origem: Food-101, UEC-Food, FoodX-251, ISIA Food-500, VireoFood-172, FoodSeg103 (imagens sem licença comercial clara ou uso só de pesquisa); Fruits-360 (CC BY-SA). Etiquetas de licença em espelhos (Kaggle, Roboflow, Hugging Face) não valem sozinhas: auditoria pública encontrou base marcada CC BY 4.0 com imagens protegidas.
+
+### Execução do treino (22/11, concluída)
+
+- **Dados baixados em `.local/fotos-alimentos/`** (apagar ao fim do treino, mantendo só manifestos de atribuição, por pedido do autor): Nutrition5k 3.490 fotos de cima + metadados (1,4 GB, licença CC BY 4.0 confirmada no repositório oficial, SHA-256 por arquivo); Open Images V7 56.564 fotos de 130 classes de alimentos com rótulo humano positivo, só CC BY 2.0, reduzidas a 512 px (3,0 GB); Wikimedia Commons "Cuisine of Brazil" (887 categorias, profundidade 3) 4.078 fotos só CC0/domínio público/CC BY, 640 px (627 MB). Cada base tem `manifest.json` com origem, autor, licença e SHA-256. MyFoodRepo depende de conta AIcrowd do autor.
+- **Lista de classes:** 370 alimentos, cada um ligado a um item do catálogo (256 TACO, 93 USDA FNDDS, 14 USDA SR, 5 CoFID, 2 OFF a revisar: feijoada e brigadeiro). Panetone ficou fora por falta de item adequado.
+- **Ambiente:** venv isolado em `.local/treino-foto-venv` (PyTorch 2.11 + CUDA 12.8, transformers 5.24, timm 1.0.31) e cache do modelo em `.local/treino-foto-cache`; GPU RTX 3050 6 GB confirmada.
+- **Primeira medição do professor** (SigLIP 2 so400m-patch14-384, zero-shot, 4 frases-modelo em inglês) contra 6.802 ingredientes ≥ 15 g anotados no Nutrition5k: top-1 24,9%, top-3 44,8%, **top-5 54,2%**, top-10 64,9%; mesma família (ex.: qualquer frango) top-5 58,5%. Abaixo da meta de 70%: pratos de refeitório com ingredientes pequenos, misturados ou invisíveis (azeite, folhas refogadas). Normalizar logits por classe piorou (top-5 46,0%).
+- **Professor com recortes:** imagem inteira + 4 recortes de 60%, valendo o maior (com penalidade 1,0 nos recortes): top-5 **58,7%** no Nutrition5k. Aplicado às três bases (64.720 fotos).
+- **Aluno:** `tf_efficientnet_lite0.in1k` (timm, Apache 2.0), 224 px, 12 épocas (~3 min/época na RTX 3050), 63.434 fotos de treino. Alvo = marcações do professor suavizadas (sigmoid(logit/2)) com os rótulos reais forçados a 1 e peso 5× (ingredientes ≥ 15 g do Nutrition5k; rótulos humanos do Open Images mapeados por nome). Validação: 20% dos pratos do Nutrition5k (698 fotos, 1.374 ingredientes), separados por prato e nunca vistos no treino.
+- **Resultado do aluno:** melhor época 11 com top-1 37,5% e **top-5 80,9%**, acima da meta de 70% e acima do professor (58,7%), porque aprendeu com os rótulos reais.
+- **Exportação** (PyTorch → ONNX → TFLite via onnx2tf 1.28.8; a normalização e a sigmoid ficam dentro do modelo, que recebe RGB 0..1 224×224 e devolve 370 probabilidades): mesma validação medida no arquivo final.
+
+| Arquivo | Tamanho | top-1 | top-5 |
+|---|---|---|---|
+| PyTorch fp32 | — | 37,5% | 80,9% |
+| TFLite float16 | 7,7 MB | 37,5% | 80,9% |
+| **TFLite int8 completo** | **4,4 MB** | 37,9% | **81,1%** |
+| TFLite int8 só pesos | 4,2 MB | 37,4% | 80,9% |
+
+- **Escolha:** int8 completo (4,4 MB), dentro do limite de 5–10 MB e sem perda. No Android roda pelo LiteRT; no iOS o mesmo `.tflite` roda pelo LiteRT para iOS, evitando um segundo formato (Core ML exigiria macOS para converter).
+- **Limites conhecidos:** a validação é de pratos de refeitório dos EUA (Nutrition5k); não há base pública rotulada de pratos brasileiros, então a qualidade em feijoada, farofa, moqueca etc. vem só do professor e do Commons e precisa ser conferida no aparelho com fotos reais. A busca por categorias no Commons trouxe também fotos que não são comida (ex.: audiências públicas), tratadas como negativas pelo professor.
+- **Correções de execução:** o treino travou 7 h no Windows porque os processos auxiliares de leitura reexecutavam o script (corrigido com `if __name__ == "__main__"`); nomes de arquivo do Commons herdaram `.org&` da URL e foram renomeados para `.jpg`; o onnx2tf tenta baixar do GitHub uma amostra em pickle, substituída por uma amostra gerada das nossas fotos.
+- **Acréscimo medido no APK** (22/11, build release num worktree descartável a partir de `ca2a076`, `tflite_flutter` 0.12.1 Apache 2.0, que traz o LiteRT nativo; base 137.618.383 bytes):
+
+| Distribuição | Com delegado GPU | Sem delegado GPU |
+|---|---|---|
+| APK universal (3 ABIs, formato atual) | +24,4 MB | +17,7 MB |
+| APK por ABI arm64-v8a | ~+11,3 MB (estimado) | **+8,8 MB** (76,5 → 85,3 MB) |
+| APK por ABI armeabi-v7a | ~+8,8 MB (estimado) | **+7,3 MB** (71,4 → 78,7 MB) |
+
+  Composição: modelo 4,4 MB + `libtensorflowlite_jni.so` 2,9–6,1 MB por ABI + GPU 1,5–2,6 MB por ABI. **Só fica dentro de 5–10 MB distribuindo por ABI (split ou App Bundle) e sem o delegado GPU**; o modelo é pequeno o bastante para CPU. O LiteRT do Google Play Services, adotado abaixo, deixa só o modelo. A divisão por ABI sozinha reduz o APK atual de 137,6 para 76,5 MB (arm64).
+- **Orçamento de tamanho (decisão do autor, 22/11):** o APK único pode chegar a ~200 MB. Na Play Store o envio será por App Bundle, e cada celular recebe só a sua ABI (≈ APK único − ~70 MB enquanto o crescimento for conteúdo). O x86_64 fica no APK único.
+- **Motor escolhido: LiteRT do Google Play Services** (`com.google.android.gms:play-services-tflite-java:16.5.0`, `TfLiteRuntime.FROM_SYSTEM_ONLY`) por canal próprio `trainforge/food_photo` (`FoodPhotoClassifier.kt`), sem `tflite_flutter`. Medido em build release assinado (22/11) contra o 0.5.4+34 (139.268.925 bytes): **145.341.534 bytes, +6,1 MB** no APK único (modelo 4,4 MB sem compressão para mapear direto do APK, lista de classes 35 KB, cliente `libtensorflowlite_jni_gms_client.so` 0,35–0,57 MB por ABI, dex +22 KB). Antes eram +17,7 MB com o LiteRT embutido.
+- **Sem Play Services** (Huawei recentes, alguns aparelhos chineses) ou no iOS, `FoodPhotoClassifier.available()` responde falso e a foto fica oculta; o resto do app segue igual. A pré-condição de "nada baixado após instalar" depende de o Play Services já ter o LiteRT; a documentação oficial não diz se ele baixa o módulo sob demanda em algum aparelho.
+- **No app:** `assets/models/food_photo_int8.tflite` e `food_photo_classes.json` (370 classes com `foodId`/`versionId` do catálogo); `lib/features/food_reference/data/food_photo_classifier.dart` devolve até 5 sugestões acima de 0,1. O pré-processamento nativo repete o do treino (lado menor 256, recorte central 224, orientação EXIF); entrada int8 = pixel − 128, saída = (q + 128)/256. Só lê fotos do cache/arquivos do próprio app.
+- **Tela de consumo (22/11):** botão "Reconhecer por foto" abaixo de "Ler código de barras" (código de barras continua sendo o caminho para embalados), visível só com o diário offline e o motor disponível. Câmera ou galeria (`image_picker`, até 1280 px), até 5 sugestões acima de 0,1 resolvidas no catálogo instalado (`LocalFoodRepository.photoFood`, com a versão instalada do mesmo alimento se o catálogo mudar), opção "Buscar outro alimento" e, ao escolher, o formulário de consumo existente (quantidade e evidência). A foto é apagada logo após a análise e nunca é enviada. Textos em pt, en e es (`food_offline_labels.dart`). Os 370 pares `foodId`/`versionId` existem no catálogo embarcado atual (conferido no `catalog.sqlite.gz`).
+- **Correção encontrada no caminho:** o cartão de totais (`NutritionTotalsCard`) dividia o espaço de estado da lista rolável e quebrava ao aparecer depois de uma rolagem ("double não é bool"); ganhou `PageStorageKey` própria.
+- **Validado:** 398 testes Flutter (8 novos: classificador e fluxo da tela com foto, sem foto confiável e sem motor), `flutter analyze` sem achados, build release 145.374.446 bytes. **Não validado:** inferência no aparelho (fica para o teste do autor no celular) e a igualdade numérica entre o pré-processamento Kotlin e o Python.
+- **Scripts de treino** preservados em `tools/treino_foto/` (com `classes_final.json`); dados, pesos intermediários e manifestos continuam em `.local/fotos-alimentos/`.
+- **Taxa de acerto acima de 95% (pedido do autor, 22/11):** na foto, 95% na primeira sugestão com 370 alimentos e pratos misturados não é alcançável com modelo de ~5 MB (modelos grandes ficam perto de 93% top-1 no Food-101, com um prato por foto). O alcançável é medir "o alimento certo aparece nas sugestões ou entre os pratos já registrados pela pessoa": hoje 81% no top-5 por ingrediente (ver a métrica por foto abaixo); modelo maior (+3 a 6 MB), fotos brasileiras e aprendizado dos pratos repetidos elevam isso. Na voz, a transcrição é do motor do celular (fora do nosso controle); a parte nossa, texto → alimento do catálogo, pode passar de 95% e ser medida com frases de teste.
+- **Métrica certa (22/11):** "top-1 37,9%" contava cada ingrediente; como os pratos têm em média 2 ingredientes, o teto dessa conta é 45,7%. Por foto, no int8 anterior: **1ª sugestão é um alimento do prato 83,0%**, algum acerto nas 3 primeiras 95,2%. O professor zero-shot: 65,0% / 83,4%.
+
+### Retreino com professor ajustado (23/11, a pedido do autor)
+
+- **Professor ajustado** (`teacher_embed.py`, `teacher_probe.py`, `teacher_ensemble.py`): vetores do SigLIP 2 guardados uma vez (Nutrition5k e Commons com 4 recortes; Open Images só a foto inteira, 5× mais rápido; ~1 h 40 min na RTX 3050), camada linear partindo dos textos em inglês e ajustada com rótulos humanos (Nutrition5k de treino e Open Images), só nas 139 classes que têm rótulo. Textos em português derrubam o zero-shot (8% sozinhos, 53% misturados), por isso ficaram de fora.
+- **Achado:** o ajuste sozinho sobe os refeitórios de 65% para 83% na 1ª sugestão, mas derruba os pratos brasileiros do Commons (fotos cuja categoria é o nome de uma classe) de 74% para 63%: alimentos genéricos com rótulo passam por cima dos brasileiros parecidos (picanha → bife, queijo coalho → muçarela, pão francês → pão de forma). Um desconto nas classes ajustadas não resolveu. **Professor final = média do zero-shot com o ajustado**: refeitórios 76% / 92% (1ª / 3 primeiras), brasileiros 66% / 83%.
+- **Aluno novo:** mesmo `tf_efficientnet_lite0`, 20 épocas, professor = média. Metade das 109 fotos brasileiras rotuladas entra no treino com rótulo humano; a outra metade (54) fica só para medir. Separar todas tirou do aluno quase todos os exemplos desses 19 pratos e ele caiu para 5,5% nelas: o aluno só aprende o que vê.
+
+| Medida (int8 no app, 4,4 MB) | Aluno anterior | **Aluno novo** | Professor zero-shot |
+|---|---|---|---|
+| Refeitórios (628 fotos): 1ª sugestão no prato | 83,0% | **87,1%** | 65,0% |
+| Refeitórios: algum acerto nas 3 primeiras | 95,2% | **95,9%** | 83,4% |
+| Brasileiras fora do treino (54): 1ª / 3 primeiras | não medível (estavam no treino) | **29,6% / 53,7%** | 64,8% / 77,8% |
+
+- **Leitura:** nos refeitórios o app chega perto de 96% com 3 sugestões; nos pratos brasileiros o aluno ainda fica bem abaixo do professor porque há poucas fotos brasileiras com licença (as 54 medidas são poucas: cada uma vale 1,9 ponto). O próximo ganho real vem de fotos brasileiras rotuladas (do autor, com consentimento, ou base com origem confirmada) e do aprendizado dos pratos repetidos de cada pessoa no app.
+- **No app:** `food_photo_int8.tflite` trocado pelo aluno novo (mesmo tamanho, mesma entrada/saída int8 e mesmas 370 classes; Kotlin inalterado).
+- **Falta:** teste no celular do autor; fotos brasileiras rotuladas; revisar feijoada e brigadeiro (OFF); apagar dados, venv e cache após aprovação do autor; voz.
+
 ## Análise anterior (gerativa, descartada em 21/11)
 
 A tabela abaixo registra a primeira recomendação, mantida como evidência. Whisper, Qwen e Gemma ficaram fora por decisão do autor.

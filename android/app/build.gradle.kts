@@ -28,6 +28,8 @@ android {
     androidResources {
         // The signed catalog is already gzip-compressed; stream its ZIP member.
         noCompress += "gz"
+        // The photo model is memory-mapped straight from the APK.
+        noCompress += "tflite"
     }
 
     defaultConfig {
@@ -62,6 +64,11 @@ android {
 
 flutter {
     source = "../.."
+}
+
+dependencies {
+    // LiteRT runtime from Google Play services: no native runtime bundled in the APK.
+    implementation("com.google.android.gms:play-services-tflite-java:16.5.0")
 }
 
 // Never silently sign a release with the debug certificate.

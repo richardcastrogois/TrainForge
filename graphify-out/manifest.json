@@ -192,9 +192,9 @@
     "semantic_hash": ""
   },
   "features/nutrition/presentation/nutrition_page.dart": {
-    "mtime": 1795009800.3971918,
-    "seen": 1795025834.3103662,
-    "ast_hash": "e25271518316c65a4170fc5c27b57c1d",
+    "mtime": 1795385765.8208718,
+    "seen": 1795386157.7138793,
+    "ast_hash": "0aa34882a3d2c7eee30094a0459fdda9",
     "semantic_hash": ""
   },
   "core/theme/trainforge_theme.dart": {
@@ -366,26 +366,26 @@
     "semantic_hash": "86f580c2e7459f20bd5462171429437e"
   },
   "l10n/generated/app_localizations.dart": {
-    "mtime": 1795274152.59318,
-    "seen": 1795274572.39975,
+    "mtime": 1795382353.2273092,
+    "seen": 1795382510.2185643,
     "ast_hash": "ad22189fb6cb97a4193f7bfd566fe3d8",
     "semantic_hash": ""
   },
   "l10n/generated/app_localizations_en.dart": {
-    "mtime": 1795274152.51759,
-    "seen": 1795274572.39975,
+    "mtime": 1795382353.1690168,
+    "seen": 1795382510.2185643,
     "ast_hash": "1e80bbd28542f9f627f0394e191593e8",
     "semantic_hash": ""
   },
   "l10n/generated/app_localizations_es.dart": {
-    "mtime": 1795274152.5347457,
-    "seen": 1795274572.39975,
+    "mtime": 1795382353.181778,
+    "seen": 1795382510.2185643,
     "ast_hash": "02be0848eee0eab29185e50e5caefbed",
     "semantic_hash": ""
   },
   "l10n/generated/app_localizations_pt.dart": {
-    "mtime": 1795274152.582049,
-    "seen": 1795274572.39975,
+    "mtime": 1795382353.2165997,
+    "seen": 1795382510.2185643,
     "ast_hash": "e32df3b4e1343ffdf08ea247024a76e1",
     "semantic_hash": ""
   },
@@ -486,9 +486,9 @@
     "semantic_hash": "6ee0b053d80d94357654812b5d9247f2"
   },
   "features/nutrition/presentation/nutrition_totals_card.dart": {
-    "mtime": 1794964510.956676,
-    "seen": 1795025834.3103662,
-    "ast_hash": "35b92369ae73ebf9fe516973536edc3a",
+    "mtime": 1795385923.926977,
+    "seen": 1795386157.7138793,
+    "ast_hash": "f4ecea89784ff37dc7c1d753122e472e",
     "semantic_hash": ""
   },
   "features/nutrition/presentation/meal_metadata_controller.dart": {
@@ -576,9 +576,9 @@
     "semantic_hash": ""
   },
   "features/food_reference/data/local_food_repository.dart": {
-    "mtime": 1795123843.355435,
-    "seen": 1795125563.6844826,
-    "ast_hash": "a4fd7f559c7dbc594990936db53fed9f",
+    "mtime": 1795385696.9381857,
+    "seen": 1795386157.7138793,
+    "ast_hash": "357de31b4c273299182ad65a5c8fb42f",
     "semantic_hash": ""
   },
   "features/food_reference/presentation/barcode_scanner_page.dart": {
@@ -630,9 +630,9 @@
     "semantic_hash": ""
   },
   "features/nutrition/presentation/food_offline_labels.dart": {
-    "mtime": 1795124887.590236,
-    "seen": 1795125563.6844826,
-    "ast_hash": "5db1bf501d9d60b5d45b0b3bdd16f53f",
+    "mtime": 1795385762.918224,
+    "seen": 1795386157.7138793,
+    "ast_hash": "ca31e234f6ae1eed21057dd351915514",
     "semantic_hash": ""
   },
   "features/nutrition/presentation/offline_sync_panel.dart": {
@@ -717,6 +717,12 @@
     "mtime": 1795122215.5799067,
     "seen": 1795122484.562031,
     "ast_hash": "f8b9b370bebbee0c6225b963cfef5505",
+    "semantic_hash": ""
+  },
+  "features/food_reference/data/food_photo_classifier.dart": {
+    "mtime": 1795382290.3854234,
+    "seen": 1795382510.2185643,
+    "ast_hash": "3657769acd737e628bebc79783191b7b",
     "semantic_hash": ""
   }
 }
