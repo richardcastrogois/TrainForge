@@ -11,6 +11,9 @@ class NutritionTotalsCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) => FigmaSection(
     child: ExpansionTile(
+      // Own storage slot: without it the expanded state collides with the
+      // enclosing list's scroll offset (double read as bool).
+      key: const PageStorageKey('nutrition-totals'),
       tilePadding: EdgeInsets.zero,
       title: Text(
         totals['complete'] == true
