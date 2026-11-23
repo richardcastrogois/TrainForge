@@ -1,3 +1,4 @@
+import 'package:trainforge/features/training_library/presentation/training_library_page.dart';
 import 'package:trainforge/core/l10n/localized_context.dart';
 import 'evaluation_guide_page.dart';
 import 'package:trainforge/shared/widgets/app_loading.dart';
@@ -76,6 +77,16 @@ class _PlansOverviewState extends State<PlansOverview> {
                 ],
               ),
             ),
+          ),
+        ),
+        FigmaActionCard(
+          title: trainingLabel(context, 'title'),
+          subtitle: trainingLabel(context, 'subtitle'),
+          asset: 'plan',
+          color: context.tf.blue,
+          onTap: () => Navigator.push<void>(
+            context,
+            MaterialPageRoute(builder: (_) => const TrainingLibraryPage()),
           ),
         ),
         if (controller.busy) AppProgress(label: context.l10n.loadingPrograms),

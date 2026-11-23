@@ -2,6 +2,10 @@
 
 Segue o [método de pesquisa de treinos](../../planejamento/metodo-pesquisa-treinos.md): base própria em camadas (exercício, segurança, dose, progressão, programa), origem registrada por campo, profissional responsável que assina e nenhum treino gerado por IA. Não repetir a pesquisa de bibliotecas de exercícios já registrada no [catálogo de fontes](../catalogo-fontes.md). As fontes de programa citadas lá são reaproveitadas pelo id (`IC06`, `PR53` etc.).
 
+## No app (23/11)
+
+`python tools/gerar_treinos_app.py` gera `assets/training/sessions.json` com as **122 sessões `prontaComprovada`** (exercícios, dose, duração, material, benefício, recomendação e fonte de cada uma; `--check` confere). Na aba Planos, "Treinos prontos" leva a lugar → nível → sessão, offline, com aviso de segurança e link da fonte. Sem mídia (MoveKit não comprada), sem montar agenda semanal e sem registrar a prática na Atividade.
+
 ## Arquivos
 
 - [`buscas-etapa1.json`](buscas-etapa1.json): registro reproduzível das buscas (base, termo exato, data, total e os 20 primeiros por relevância).
