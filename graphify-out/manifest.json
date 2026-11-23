@@ -192,9 +192,9 @@
     "semantic_hash": ""
   },
   "features/nutrition/presentation/nutrition_page.dart": {
-    "mtime": 1795385765.8208718,
-    "seen": 1795386157.7138793,
-    "ast_hash": "0aa34882a3d2c7eee30094a0459fdda9",
+    "mtime": 1795435469.0238707,
+    "seen": 1795435852.0227938,
+    "ast_hash": "f43ca9dd6c5e140d172479b58db02e68",
     "semantic_hash": ""
   },
   "core/theme/trainforge_theme.dart": {
@@ -228,10 +228,10 @@
     "semantic_hash": "622256f87ab83dbc2a1628e9557e7fcf"
   },
   "shared/widgets/plans_overview.dart": {
-    "mtime": 1793146069.1418538,
-    "seen": 1793187588.4409957,
-    "ast_hash": "060abffb03a71634db41241ee095ec4f",
-    "semantic_hash": "060abffb03a71634db41241ee095ec4f"
+    "mtime": 1795435621.7517135,
+    "seen": 1795435852.0227938,
+    "ast_hash": "059a77f6cbe0951f77d660e411960189",
+    "semantic_hash": ""
   },
   "shared/widgets/product_overviews.dart": {
     "mtime": 1793012862.4374075,
@@ -366,26 +366,26 @@
     "semantic_hash": "86f580c2e7459f20bd5462171429437e"
   },
   "l10n/generated/app_localizations.dart": {
-    "mtime": 1795382353.2273092,
-    "seen": 1795382510.2185643,
+    "mtime": 1795435113.703015,
+    "seen": 1795435852.0227938,
     "ast_hash": "ad22189fb6cb97a4193f7bfd566fe3d8",
     "semantic_hash": ""
   },
   "l10n/generated/app_localizations_en.dart": {
-    "mtime": 1795382353.1690168,
-    "seen": 1795382510.2185643,
+    "mtime": 1795435113.653149,
+    "seen": 1795435852.0227938,
     "ast_hash": "1e80bbd28542f9f627f0394e191593e8",
     "semantic_hash": ""
   },
   "l10n/generated/app_localizations_es.dart": {
-    "mtime": 1795382353.181778,
-    "seen": 1795382510.2185643,
+    "mtime": 1795435113.6630757,
+    "seen": 1795435852.0227938,
     "ast_hash": "02be0848eee0eab29185e50e5caefbed",
     "semantic_hash": ""
   },
   "l10n/generated/app_localizations_pt.dart": {
-    "mtime": 1795382353.2165997,
-    "seen": 1795382510.2185643,
+    "mtime": 1795435113.6958237,
+    "seen": 1795435852.0227938,
     "ast_hash": "e32df3b4e1343ffdf08ea247024a76e1",
     "semantic_hash": ""
   },
@@ -630,9 +630,9 @@
     "semantic_hash": ""
   },
   "features/nutrition/presentation/food_offline_labels.dart": {
-    "mtime": 1795385762.918224,
-    "seen": 1795386157.7138793,
-    "ast_hash": "ca31e234f6ae1eed21057dd351915514",
+    "mtime": 1795435472.4034486,
+    "seen": 1795435852.0227938,
+    "ast_hash": "7fa68acdc65bf79c256f1fb6358fead1",
     "semantic_hash": ""
   },
   "features/nutrition/presentation/offline_sync_panel.dart": {
@@ -696,9 +696,9 @@
     "semantic_hash": ""
   },
   "features/legal/legal_documents.dart": {
-    "mtime": 1795125399.2855341,
-    "seen": 1795125563.6844826,
-    "ast_hash": "4c7f98eea966d2d49859a5a4e6674bca",
+    "mtime": 1795435786.937741,
+    "seen": 1795435852.0227938,
+    "ast_hash": "afe57618a92e81b280117a5375c3408f",
     "semantic_hash": ""
   },
   "features/legal/presentation/legal_labels.dart": {
@@ -723,6 +723,30 @@
     "mtime": 1795382290.3854234,
     "seen": 1795382510.2185643,
     "ast_hash": "3657769acd737e628bebc79783191b7b",
+    "semantic_hash": ""
+  },
+  "features/food_reference/data/food_voice_matcher.dart": {
+    "mtime": 1795435359.2243557,
+    "seen": 1795435852.0227938,
+    "ast_hash": "5cb15fba9fa345b1583af174023795ed",
+    "semantic_hash": ""
+  },
+  "features/nutrition/presentation/voice_meal_page.dart": {
+    "mtime": 1795435472.483958,
+    "seen": 1795435852.0227938,
+    "ast_hash": "d32666c5edba89c92ea9e8248d91ba52",
+    "semantic_hash": ""
+  },
+  "features/training_library/data/training_library.dart": {
+    "mtime": 1795435610.2222095,
+    "seen": 1795435852.0227938,
+    "ast_hash": "c3b6572e0d9bec1639da6453b7032fe2",
+    "semantic_hash": ""
+  },
+  "features/training_library/presentation/training_library_page.dart": {
+    "mtime": 1795435657.650289,
+    "seen": 1795435852.0227938,
+    "ast_hash": "96341fba2e5c5f0cd65441707019dba1",
     "semantic_hash": ""
   }
 }

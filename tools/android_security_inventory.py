@@ -14,6 +14,8 @@ REVIEWED_PERMISSIONS={
  "android.permission.INTERNET",
  # Bundled ML Kit barcode scanning and user-initiated label photos.
  "android.permission.CAMERA",
+ # Meal logging by voice through the phone's speech recognizer, user-initiated.
+ "android.permission.RECORD_AUDIO",
  "android.permission.USE_BIOMETRIC",
  "android.permission.USE_FINGERPRINT",
  PACKAGE+".DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION",

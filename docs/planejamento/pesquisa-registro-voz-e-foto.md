@@ -124,7 +124,15 @@ Não verificáveis sem navegador/conta: Kaggle "Tipical Brazilian Foods" (26 cla
 
 - **Leitura:** nos refeitórios o app chega perto de 96% com 3 sugestões; nos pratos brasileiros o aluno ainda fica bem abaixo do professor porque há poucas fotos brasileiras com licença (as 54 medidas são poucas: cada uma vale 1,9 ponto). O próximo ganho real vem de fotos brasileiras rotuladas (do autor, com consentimento, ou base com origem confirmada) e do aprendizado dos pratos repetidos de cada pessoa no app.
 - **No app:** `food_photo_int8.tflite` trocado pelo aluno novo (mesmo tamanho, mesma entrada/saída int8 e mesmas 370 classes; Kotlin inalterado).
-- **Falta:** teste no celular do autor; fotos brasileiras rotuladas; revisar feijoada e brigadeiro (OFF); apagar dados, venv e cache após aprovação do autor; voz.
+- **Falta:** teste no celular do autor; fotos brasileiras rotuladas; revisar feijoada e brigadeiro (OFF); apagar dados, venv e cache após aprovação do autor.
+
+### Voz implementada (23/11)
+
+- **Botão "Registrar por voz"** na tela de consumo (diário offline), ao lado de foto e código de barras. Usa o reconhecimento de fala do próprio celular pelo `speech_to_text` 7.4.0 (BSD-3; a 7.5.0 exige Dart 3.12), em pt-BR/en-US/es-ES conforme o idioma do app, com os 370 nomes como vocabulário de reforço (Android 13+). Permissão `RECORD_AUDIO` e consulta a `RecognitionService` no manifesto; descrições de microfone e fala no iOS. O app não grava áudio: o reconhecedor do sistema roda só com a janela "Ouvindo…" aberta e pode usar a internet do Google/Apple quando o aparelho não tem o pacote offline (dito na tela).
+- **Texto → alimentos** (`food_voice_matcher.dart`): escolhe só entre os 370 alimentos do modelo de foto (ligados ao catálogo), com o nome mais longo primeiro ("café com leite" fica inteiro), plural e gênero normalizados, quantidades e palavras como "comi", "um copo de", "colher de sopa" ignoradas, apelidos comuns (pãozinho, aipim, macaxeira, refri, bergamota) e palavras genéricas indo para a escolha usual com as variações como alternativa ("feijão" → carioca, preto, fradinho). O que não é reconhecido vira busca no catálogo instalado; nada é inventado.
+- **Medida:** 66 frases de teste escritas como fala comum: **111 de 111 alimentos esperados como 1ª sugestão (100%)**, com 4 sugestões a mais (`test/food_voice_matcher_test.dart`, meta ≥ 95%). Limite: as frases foram escritas por quem fez o tradutor; o acerto real depende também da transcrição do celular e só aparece no teste do autor.
+- **Tela:** "Ouvi: …" e um cartão por alimento com até 3 opções; tocar abre o formulário de consumo existente e marca "Registrado". "Buscar pelo nome" continua disponível.
+- **Pendente:** a Política de Privacidade não cita foto e voz; o texto da tela informa, mas a atualização jurídica (com nova versão dos termos) é decisão do autor.
 
 ## Análise anterior (gerativa, descartada em 21/11)
 

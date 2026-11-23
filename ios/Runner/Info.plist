@@ -34,7 +34,11 @@
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>NSCameraUsageDescription</key>
-	<string>Leia códigos de barras e fotografe rótulos de alimentos que você escolher compartilhar.</string>
+	<string>Leia códigos de barras, fotografe refeições para sugerir alimentos e rótulos que você escolher compartilhar.</string>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>Ouça o que você comeu quando você tocar em registrar por voz.</string>
+	<key>NSSpeechRecognitionUsageDescription</key>
+	<string>Transforme a sua fala em texto para sugerir alimentos do catálogo.</string>
 	<key>NSPhotoLibraryUsageDescription</key>
 	<string>Selecione fotos de rótulos para revisar uma contribuição alimentar.</string>
 	<key>UIApplicationSceneManifest</key>

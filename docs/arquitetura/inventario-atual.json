@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "inputRevision": "642995a56fa48dd359e7d8f8bab1d858bd0ed6111edbaeb05b5d6d4e7f4b457f",
+  "inputRevision": "b12b56413469b76ebd0d9f8859c6eeeb4e7a77f65f2709cb7059e6cbc3a7bdac",
   "inputs": {
     "contracts/generated/catalog-m1.swagger.json": "7f59b699f1c4c032e0652c31f44fac9a8d3a77115639a24408725427e97b0339",
     "contracts/generated/swagger-v1.json": "437504d14c4210b1a385fc87132aaea0f0970e67545e077b6bca6866cda530fa",
@@ -53,6 +53,7 @@
     "lib/features/food_reference/data/catalog_installer.dart": "c7616388bb2af8c8da3053036dc1525402f1bb7eb58a4f2a3b64fb428209b9d3",
     "lib/features/food_reference/data/food_photo_classifier.dart": "1b865e68254cdd9cbeafc7e8a108471bba9bc54a58af98846b74313e47101c3c",
     "lib/features/food_reference/data/food_repository.dart": "dcaec1701228f80257f4c669bdb7b6c99382d28fa08130a29c33cd564120c3fd",
+    "lib/features/food_reference/data/food_voice_matcher.dart": "6239fbd733c996c9b13a1290e50f8a8dc9fa1b8964c41f6b98d498cb780886cf",
     "lib/features/food_reference/data/local_food_repository.dart": "2b01008569cb396a264b2df09134cabfa195b82cb1283e2d4b9dc5ce324f9459",
     "lib/features/food_reference/domain/food_display_names.dart": "7726898f0346a8e3c9d8487bba2406d34660b16b0ac9337da436e7470d5a688f",
     "lib/features/food_reference/domain/food_reference.dart": "9eff2ba051f6a341696861e2d5fe50c3850ed61dbe30d6e0ae319849cb948ba3",
@@ -65,7 +66,7 @@
     "lib/features/home/presentation/pages/today_page.dart": "93f240ab972b62adee5c1796d1dcea3a6abfd0c866bef37f075cd1c0c9b26a66",
     "lib/features/legal/legal_consent_store.dart": "33ea7c1eca83e0994cb3536f1d863c26ef38445b38b74ee7c3e4ee25aebcf361",
     "lib/features/legal/legal_controller.dart": "0103cbd52a19b51b803baee13cfb6648811c3df6e7ddcc0c2da919b3d60dde73",
-    "lib/features/legal/legal_documents.dart": "8493e2e3c64f151801b75ac925ecd19e34f7a06feb0d7d071f23be08cc1753fd",
+    "lib/features/legal/legal_documents.dart": "72f3edfb8b368b6135dda23a59cb40fee4f2f793ac7ed11715a3a012bf38f442",
     "lib/features/legal/presentation/legal_labels.dart": "f7651123b89623d4da47b895b0d07e7e0d970583f32316233de784544fb03d52",
     "lib/features/legal/presentation/legal_pages.dart": "231cd9263852687c820524e5f7202ef42571793a86a083f80fba5067c8bd19db",
     "lib/features/legal/presentation/staggered_entrance.dart": "a2877f7614af7d3613c6e75d6508f0f97604ca4973ddf1b7ceb8f2a142ead1e7",
@@ -82,7 +83,7 @@
     "lib/features/nutrition/presentation/entry_detail_page.dart": "cf8a064952b4d2b940529b62569b999ede7c2d3c82ca1da15042eb198c0b33aa",
     "lib/features/nutrition/presentation/entry_read_controller.dart": "cf3a0d40c1eebf83826cb41da855fb6f085d6f5d7d78797f82cc2cef6fe63e7a",
     "lib/features/nutrition/presentation/food_contribution_page.dart": "0173381f2dc6e1112ee1d548e98b5c827b1446ac561057543132256eb0b27ba1",
-    "lib/features/nutrition/presentation/food_offline_labels.dart": "92e0e14a2e50f79857f3f0fc53f5c021716647d5620425ddcd93b6badf82a27b",
+    "lib/features/nutrition/presentation/food_offline_labels.dart": "c41a94522d200232bf1225672af656c37c502d8509f7094f0a8bb3aaec66c475",
     "lib/features/nutrition/presentation/meal_controllers.dart": "035f86c358066f935bb85f55ccfe74a3477ae3ca377c40858f266f040cc0d20a",
     "lib/features/nutrition/presentation/meal_detail_page.dart": "054c7343cf01be42a8abf4a6648f7f679389bbed8dcb533dd2d9b9e94d928cc4",
     "lib/features/nutrition/presentation/meal_diary_page.dart": "7781ec3a00443081736a99423924e5cf6520ed727dca87236f4060f8b80bf55d",
@@ -94,11 +95,12 @@
     "lib/features/nutrition/presentation/nutrition_feedback.dart": "b0dc077fb83fbbb7c0e0a403f076008307e96914f4f09c8124085b4bbdb1637d",
     "lib/features/nutrition/presentation/nutrition_forms.dart": "bf81e606353d24bdf55cf9fc2bccbb61de5129bf39b184fac03c800e1f31f263",
     "lib/features/nutrition/presentation/nutrition_messages.dart": "f6a020b3e6a86e8e15110f41bd49ee38ae69ef1656f1a64ea279594dc35fff51",
-    "lib/features/nutrition/presentation/nutrition_page.dart": "df862b593449cd47455b8187781c99a302d9a40a46b39395db5ebfd43b01703c",
+    "lib/features/nutrition/presentation/nutrition_page.dart": "7679f671a6dff11851246cb83776185677fbc3313395658692e7b1e554b4e18b",
     "lib/features/nutrition/presentation/nutrition_totals_card.dart": "c3cb308dd4aa53bf75332e2b0549ed1c7b285ed9d85132e3953fc87f88d13cdd",
     "lib/features/nutrition/presentation/offline_sync_panel.dart": "93f5ddd2d2e16d03749b0f43411c716af09fbe6ac4531de194fb4436ad13a23e",
     "lib/features/nutrition/presentation/own_food_picker_page.dart": "b64414ac7814e754c4084175736832d21223e7c24262c50001d18fe167c75193",
     "lib/features/nutrition/presentation/own_food_portions_editor.dart": "3068e8780c84c165f68f623f6ee29726d4ece26c8d9cc3621d7dfe52c5976272",
+    "lib/features/nutrition/presentation/voice_meal_page.dart": "5c5fd8ebe6e48a0751ab2c46b2e5861ca6a46a1e3e661905bc15b3e05fea1a66",
     "lib/features/privacy/data/privacy_repository.dart": "d3d4f7225c68c39353f9700191942d4609d4486d96a2558cdb2c10d8493c6e23",
     "lib/features/privacy/domain/privacy.dart": "8fb56c4b25c4fb579279371d52b9cc453007efd013c9aaeccb5198800a8ed8d3",
     "lib/features/privacy/presentation/privacy_controller.dart": "41d52642d7c1e34368fca5cba23221950d736b05f8d6bd2906663fce31965313",
@@ -109,6 +111,8 @@
     "lib/features/training_configuration/presentation/training_configuration_controller.dart": "6ae07af7717b0c27e45e628a33402ebfac1a6306a178850335b9790087ec536a",
     "lib/features/training_configuration/presentation/training_configuration_page.dart": "44c38b1feca488b526f338aaa0784bb92dbcd03446335e0bb4832653eacf594f",
     "lib/features/training_configuration/presentation/training_configuration_sections.dart": "8004ba7282b278968677c37f0dbe419eac5d2bd76bdd6ea04c889b234e48cee6",
+    "lib/features/training_library/data/training_library.dart": "2e2265cba93281775583f88c2dd41d60ecace3d3ed6caa26848bb839d53f3e8e",
+    "lib/features/training_library/presentation/training_library_page.dart": "3f2cbbfdd65a70c957c4be6e5b3e14ea13feb775fa796081184437b7005ba056",
     "lib/l10n/generated/app_localizations.dart": "2190b705abaa9fdb0a1ec94776a8fef370fc2ec5fc8ef704ae56e4106a464bc7",
     "lib/l10n/generated/app_localizations_en.dart": "f2bdfe080a6473c26abd23d3f41b6a5ff9ef3ea68470500c065cf0c6d7c1529b",
     "lib/l10n/generated/app_localizations_es.dart": "0ec55e15addc509b487de973b394d029c56c96e6d2b50b73e5c65f98434d7280",
@@ -124,7 +128,7 @@
     "lib/shared/widgets/figma_components.dart": "943d5f779c7c134724a4539b0a4ce102a6ad81ee7f411ffe0d279ee7ec598ba5",
     "lib/shared/widgets/flow_components.dart": "1d3cf303b115d8136388cd5ea8fb3508a4f95cc721d7b5a11e9f97cba10e3238",
     "lib/shared/widgets/food_catalog_credits_page.dart": "3e2b980601c7f976fa7e897eca951602f8de08bbe9d135ee5bccd5d92123a4b6",
-    "lib/shared/widgets/plans_overview.dart": "0c241a43c2069cb49568c8a8bce2d5e8b389f1d9e5433548c290114baae90ab9",
+    "lib/shared/widgets/plans_overview.dart": "7cbf8ca335c3d063c62b2fd00324b354d5524e444ddac56cec6ad29f47d5e2d0",
     "lib/shared/widgets/product_overviews.dart": "a05a5e5ff02cc6d17aa8fe9ebaecf3f01b78d52bce6ff325cd14f7bca738d4fa",
     "lib/shared/widgets/product_shell.dart": "f9a8de8188396d9dcbc3558267831f9b07063f7b0a5705669a78411d1b8e2871",
     "lib/shared/widgets/startup_page.dart": "2ddd61e2ef4b9fe3bd6d84d31a3550dc1ed273891c3e5d88a2e04d4e9f83e168",
@@ -251,7 +255,7 @@
     "services/api/serverless/serverless.go": "96fbcc812b31950f1c4371d018d0eb08cb8bb28c0cc11cd5f0721ac593473391",
     "tools/alimentos_lote.py": "68e31390f1dd5cbee54c855901d87f9908f63a8bb972a68c02c95ca2f2bd6ddd",
     "tools/ambiente.py": "e5af86ed61296d81aa0a24f5d2ad3bb6308edc0957cdf24575786ddbaf30ec96",
-    "tools/android_security_inventory.py": "fc265147ef83d0852abfb8966814d45bef05ecc883f381c1133bb683a52a81c4",
+    "tools/android_security_inventory.py": "17ed699ee7423f3ed846fdd3056e7838a1da0d73e134bfcb12c2d6e3c8d166c7",
     "tools/android_signing.py": "8e8e4abd4b70b88b8c2eaa3c5917a347061c0747977bfc7c392b6b01380b0e34",
     "tools/aplicar_exclusoes_restore.py": "c5562fd3213c1824367110115382bdafb0395891204df316b39005d81d0ae93d",
     "tools/ativar_alimentacao_offline_local.py": "c3b98b1ee05aeefc0892b4ebf25685f68fa00c6e1169cc35b8a051ae6c363036",
@@ -286,6 +290,7 @@
     "tools/gerar_documentacao.py": "8e9717d497eb9f9bc912facb8de9e2e04f5c7d965f72493a6526d3c91f2de1fb",
     "tools/gerar_identidade_nativa.py": "3813c60ef70441f67e18b82f5aedd926b7dde9aa9901644bd63d1468d94b98cf",
     "tools/gerar_swagger.py": "fabd74db2c93ee8e16a87b5ea52c2795dac2996d7dc59dc1d331796da9489e4b",
+    "tools/gerar_treinos_app.py": "1dd215ec288478abb4139cf6626dfc7d9658f97b84df01e281b9e16e89e726a2",
     "tools/image_ci.py": "9ad0cc16f02526805a7cd1aedbea1ae1bef17e97469d75a214255445bc629380",
     "tools/importar_alimentos_local.py": "cf0889e37105cf1b72be2a0b4e9860139c3458b14960ffb8e2cf7eac01e0a3b3",
     "tools/importar_catalogo_alimentar_local.py": "d836c96f6a0d64c73e95846742dc8a48e5699ff950a4a01197489af49a45c665",
@@ -321,6 +326,7 @@
     "tools/test_food_catalog.py": "ea3c29654b640067cf5001f924e00ba6f74497873ff29db7e17de17bbe9f0ef8",
     "tools/test_food_catalog_compact.py": "4f3025c329f4b619e820f605eb64fa9fa2e5ce63ac0195eb80eec83ae1cf88be",
     "tools/test_food_catalog_publish.py": "91c1c80839d6cff009eea8dd4e287fe5caefef88c50d31b1b32cf61d2c912646",
+    "tools/test_gerar_treinos_app.py": "f740b1b260632760c575c76759b3e63f0824301122ba5581dcee7736562b553e",
     "tools/test_history_remediation.py": "5701e94cd1844f82b7250616df870c539d1a12091a6218657f5084479e524f20",
     "tools/test_identidade_nativa.py": "3a7e8087c562bb170c06c491ef9a807a2fcf4a071dc8d5bd4919f92c5ba45422",
     "tools/test_image_ci.py": "e73f87aae11f6dde7a7d790127d9d23d1210d78c17407ef4776a49c344409fd1",
@@ -356,7 +362,7 @@
     "tools/verificar_refeicoes_local.py": "3edaca4b221d8b2ed67a11813f719bbc4526bcd8a9e330c00600cbabfaab879c"
   },
   "coverage": {
-    "dartFiles": 121,
+    "dartFiles": 125,
     "httpCalls": 35,
     "goFiles": 101,
     "goRegistrations": 55
@@ -578,6 +584,11 @@
         },
         {
           "repository": "trainforge",
+          "path": "lib/features/nutrition/presentation/voice_meal_page.dart",
+          "line": 1
+        },
+        {
+          "repository": "trainforge",
           "path": "lib/features/privacy/presentation/privacy_controller.dart",
           "line": 1
         },
@@ -604,6 +615,11 @@
         {
           "repository": "trainforge",
           "path": "lib/features/training_configuration/presentation/training_configuration_sections.dart",
+          "line": 1
+        },
+        {
+          "repository": "trainforge",
+          "path": "lib/features/training_library/presentation/training_library_page.dart",
           "line": 1
         },
         {
@@ -1212,6 +1228,11 @@
         },
         {
           "repository": "trainforge",
+          "path": "lib/features/nutrition/presentation/voice_meal_page.dart",
+          "line": 5
+        },
+        {
+          "repository": "trainforge",
           "path": "lib/features/privacy/presentation/privacy_controller.dart",
           "line": 3
         },
@@ -1248,7 +1269,7 @@
         {
           "repository": "trainforge",
           "path": "lib/shared/widgets/plans_overview.dart",
-          "line": 7
+          "line": 8
         },
         {
           "repository": "trainforge",
@@ -1299,12 +1320,12 @@
         {
           "repository": "trainforge",
           "path": "lib/features/nutrition/presentation/nutrition_page.dart",
-          "line": 22
+          "line": 24
         },
         {
           "repository": "trainforge",
           "path": "lib/features/nutrition/presentation/nutrition_page.dart",
-          "line": 24
+          "line": 26
         },
         {
           "repository": "trainforge",
@@ -1520,7 +1541,7 @@
       "source": {
         "repository": "trainforge",
         "path": "lib/features/nutrition/presentation/nutrition_page.dart",
-        "line": 29
+        "line": 31
       }
     },
     {
@@ -1529,6 +1550,14 @@
         "repository": "trainforge",
         "path": "lib/features/nutrition/presentation/own_food_picker_page.dart",
         "line": 14
+      }
+    },
+    {
+      "id": "VoiceMealPage",
+      "source": {
+        "repository": "trainforge",
+        "path": "lib/features/nutrition/presentation/voice_meal_page.dart",
+        "line": 137
       }
     },
     {
@@ -1545,6 +1574,22 @@
         "repository": "trainforge",
         "path": "lib/features/training_configuration/presentation/training_configuration_page.dart",
         "line": 35
+      }
+    },
+    {
+      "id": "TrainingLibraryPage",
+      "source": {
+        "repository": "trainforge",
+        "path": "lib/features/training_library/presentation/training_library_page.dart",
+        "line": 79
+      }
+    },
+    {
+      "id": "TrainingSessionPage",
+      "source": {
+        "repository": "trainforge",
+        "path": "lib/features/training_library/presentation/training_library_page.dart",
+        "line": 195
       }
     },
     {
@@ -1926,7 +1971,7 @@
       "source": {
         "repository": "trainforge",
         "path": "lib/features/nutrition/presentation/nutrition_page.dart",
-        "line": 206
+        "line": 213
       }
     },
     {
@@ -1935,7 +1980,7 @@
       "source": {
         "repository": "trainforge",
         "path": "lib/features/nutrition/presentation/nutrition_page.dart",
-        "line": 197
+        "line": 204
       }
     },
     {
@@ -1944,7 +1989,7 @@
       "source": {
         "repository": "trainforge",
         "path": "lib/features/nutrition/presentation/nutrition_page.dart",
-        "line": 183
+        "line": 190
       }
     },
     {
@@ -1953,7 +1998,7 @@
       "source": {
         "repository": "trainforge",
         "path": "lib/features/nutrition/presentation/nutrition_page.dart",
-        "line": 564
+        "line": 645
       }
     },
     {
@@ -1962,7 +2007,7 @@
       "source": {
         "repository": "trainforge",
         "path": "lib/features/nutrition/presentation/nutrition_page.dart",
-        "line": 392
+        "line": 467
       }
     },
     {
@@ -1971,7 +2016,7 @@
       "source": {
         "repository": "trainforge",
         "path": "lib/features/nutrition/presentation/nutrition_page.dart",
-        "line": 171
+        "line": 178
       }
     },
     {
@@ -1980,7 +2025,16 @@
       "source": {
         "repository": "trainforge",
         "path": "lib/features/nutrition/presentation/nutrition_page.dart",
-        "line": 245
+        "line": 252
+      }
+    },
+    {
+      "from": "NutritionPage",
+      "to": "VoiceMealPage",
+      "source": {
+        "repository": "trainforge",
+        "path": "lib/features/nutrition/presentation/nutrition_page.dart",
+        "line": 447
       }
     },
     {
@@ -1999,6 +2053,24 @@
         "repository": "trainforge",
         "path": "lib/features/privacy/presentation/privacy_page.dart",
         "line": 75
+      }
+    },
+    {
+      "from": "TrainingLibraryPage",
+      "to": "TrainingSessionPage",
+      "source": {
+        "repository": "trainforge",
+        "path": "lib/features/training_library/presentation/training_library_page.dart",
+        "line": 176
+      }
+    },
+    {
+      "from": "TrainingSessionPage",
+      "to": "TrainingLibraryPage",
+      "source": {
+        "repository": "trainforge",
+        "path": "lib/features/training_library/presentation/training_library_page.dart",
+        "line": 81
       }
     },
     {

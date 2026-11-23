@@ -19,6 +19,8 @@ import 'dart:async';
 import 'dart:io';
 import 'package:image_picker/image_picker.dart';
 import '../../food_reference/data/food_photo_classifier.dart';
+import '../../food_reference/data/food_voice_matcher.dart';
+import 'voice_meal_page.dart';
 import '../data/offline_nutrition_repository.dart';
 import '../../food_reference/presentation/barcode_scanner_page.dart';
 import '../../food_reference/data/local_food_repository.dart';
@@ -39,6 +41,10 @@ class NutritionPage extends StatefulWidget {
 
   /// Returns the path of a photo the app may read and delete, or null when cancelled.
   final Future<String?> Function(ImageSource source)? pickPhoto;
+
+  /// Returns the spoken sentence, or null; injectable for tests.
+  final Future<String?> Function(BuildContext context, List<String> vocabulary)?
+  listenVoice;
   const NutritionPage({
     super.key,
     required this.accountId,
@@ -49,6 +55,7 @@ class NutritionPage extends StatefulWidget {
     this.evidenceMode = false,
     this.photoClassifier,
     this.pickPhoto,
+    this.listenVoice,
   });
   @override
   State<NutritionPage> createState() => _NutritionPageState();
@@ -60,7 +67,7 @@ class _NutritionPageState extends State<NutritionPage>
   late final NutritionController controller;
   final search = TextEditingController();
   late final FoodPhotoClassifier photoClassifier;
-  bool photoAvailable = false, photoBusy = false;
+  bool photoAvailable = false, photoBusy = false, voiceBusy = false;
   bool get active => mounted && controller.active;
 
   @override
@@ -379,6 +386,74 @@ class _NutritionPageState extends State<NutritionPage>
     }
   }
 
+  Future<bool> _recordSaved(FoodReference food) async {
+    if (!active) return false;
+    final result = await Navigator.push<Json>(
+      context,
+      MaterialPageRoute(
+        builder: (_) => EntryFormPage(food: food, repository: repository),
+      ),
+    );
+    if (active) await controller.load();
+    return result != null;
+  }
+
+  /// Voice → known foods (same 370 as the photo model) or a catalog search per item.
+  Future<void> voice() async {
+    final offline = repository;
+    if (!active || voiceBusy || offline is! OfflineNutritionRepository) return;
+    final locale = foodContentLocale(context);
+    final List<FoodPhotoClass> known;
+    try {
+      known = await photoClassifier.classes();
+    } catch (_) {
+      return _photoMessage('voiceUnavailable');
+    }
+    if (!mounted) return;
+    final listen =
+        widget.listenVoice ??
+        (context, vocabulary) => listenForMeal(context, vocabulary: vocabulary);
+    final sentence = await listen(context, [for (final c in known) c.name]);
+    if (sentence == null || !mounted || !active) return;
+    setState(() => voiceBusy = true);
+    final items = <VoiceMealItem>[];
+    try {
+      for (final heard in FoodVoiceMatcher(known).match(sentence)) {
+        final options = <FoodReference>[];
+        for (final c in heard.candidates) {
+          final food = await offline.catalog.photoFood(c.foodId, c.versionId);
+          if (food != null && !options.any((o) => o.id == food.id)) {
+            options.add(food);
+          }
+        }
+        if (options.isEmpty) {
+          try {
+            final page = await offline.catalog.localizedList(
+              locale: locale,
+              q: heard.heard,
+            );
+            options.addAll(page.items.take(3));
+          } catch (_) {}
+        }
+        items.add(VoiceMealItem(heard.heard, options));
+      }
+    } finally {
+      if (mounted) setState(() => voiceBusy = false);
+    }
+    if (!mounted || !active) return;
+    await Navigator.push<void>(
+      context,
+      MaterialPageRoute(
+        builder: (_) => VoiceMealPage(
+          sentence: sentence,
+          items: items,
+          record: _recordSaved,
+          searchByName: chooseReference,
+        ),
+      ),
+    );
+  }
+
   void _photoMessage(String key) => ScaffoldMessenger.of(
     context,
   ).showSnackBar(SnackBar(content: Text(foodOfflineLabel(context, key))));
@@ -498,6 +573,12 @@ class _NutritionPageState extends State<NutritionPage>
             onPressed: scan,
             icon: const Icon(Icons.barcode_reader),
             label: Text(foodOfflineLabel(context, 'scan')),
+          ),
+        if (repository is OfflineNutritionRepository)
+          OutlinedButton.icon(
+            onPressed: voiceBusy ? null : voice,
+            icon: const Icon(Icons.mic),
+            label: Text(foodOfflineLabel(context, 'voice')),
           ),
         if (repository is OfflineNutritionRepository && photoAvailable)
           OutlinedButton.icon(

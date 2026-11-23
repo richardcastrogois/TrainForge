@@ -91,6 +91,7 @@ void main() {
     await db.close();
   });
 
+  String? spoken;
   Future<void> open(WidgetTester t, _Engine engine) async {
     t.view.physicalSize = const Size(800, 2400);
     t.view.devicePixelRatio = 1;
@@ -107,6 +108,10 @@ void main() {
             loadClasses: () async => _classes,
           ),
           pickPhoto: (_) async => photo.path,
+          listenVoice: (_, vocabulary) async {
+            expect(vocabulary, contains('Feijão'));
+            return spoken;
+          },
         ),
       ),
     );
@@ -170,5 +175,31 @@ void main() {
     );
     expect(find.text('Scan barcode'), findsOneWidget);
     expect(find.text('Recognize from photo'), findsNothing);
+  });
+
+  testWidgets('voice lists each food heard and records the chosen one', (
+    t,
+  ) async {
+    spoken = 'comi arroz e feijão e um quinoto';
+    await open(t, _Engine('ready', const []));
+    final button = find.text('Record by voice');
+    await t.scrollUntilVisible(
+      button,
+      120,
+      scrollable: find.byType(Scrollable).at(1),
+    );
+    await t.tap(button);
+    await _settle(t);
+    expect(find.textContaining('comi arroz e feijão'), findsOneWidget);
+    expect(find.text('arroz'), findsOneWidget);
+    expect(find.text('feijao'), findsOneWidget);
+    expect(find.text('Isolated food rice'), findsOneWidget);
+    expect(find.text('Isolated food beans'), findsOneWidget);
+    // An unknown word falls back to the catalog search, which has nothing here.
+    expect(find.text('quinoto'), findsOneWidget);
+    expect(find.text('Not found: search by name'), findsOneWidget);
+    await t.tap(find.text('Isolated food beans'));
+    await _settle(t);
+    expect(find.byType(EntryFormPage), findsOneWidget);
   });
 }
