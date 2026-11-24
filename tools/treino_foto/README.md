@@ -1,6 +1,6 @@
 # Treino do modelo de foto de alimentos
 
-Scripts que geraram `assets/models/food_photo_int8.tflite` (22/11/2026). Rodam fora do app, num venv com PyTorch/timm/transformers e GPU. Dados e pesos ficam em `.local/fotos-alimentos/`, nunca no repositório. Decisões, números e limites: `docs/planejamento/pesquisa-registro-voz-e-foto.md`.
+Scripts que geraram `assets/models/food_photo_int8.tflite` (22–23/11/2026). Rodam fora do app, num venv com PyTorch/timm/transformers e GPU. Dados e pesos ficavam em `.local/fotos-alimentos/`, nunca no repositório; em 23/11 foram apagados a pedido do autor e só o essencial ficou em `.local/fotos-alimentos-preservado/` (manifestos, modelos, métricas e logs). Para retreinar, baixar de novo pelos scripts e recriar o venv. Decisões, números e limites: `docs/planejamento/pesquisa-registro-voz-e-foto.md`.
 
 Ordem:
 

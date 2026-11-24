@@ -124,7 +124,8 @@ Não verificáveis sem navegador/conta: Kaggle "Tipical Brazilian Foods" (26 cla
 
 - **Leitura:** nos refeitórios o app chega perto de 96% com 3 sugestões; nos pratos brasileiros o aluno ainda fica bem abaixo do professor porque há poucas fotos brasileiras com licença (as 54 medidas são poucas: cada uma vale 1,9 ponto). O próximo ganho real vem de fotos brasileiras rotuladas (do autor, com consentimento, ou base com origem confirmada) e do aprendizado dos pratos repetidos de cada pessoa no app.
 - **No app:** `food_photo_int8.tflite` trocado pelo aluno novo (mesmo tamanho, mesma entrada/saída int8 e mesmas 370 classes; Kotlin inalterado).
-- **Falta:** teste no celular do autor; fotos brasileiras rotuladas; revisar feijoada e brigadeiro (OFF); apagar dados, venv e cache após aprovação do autor.
+- **Falta:** teste no celular do autor; fotos brasileiras rotuladas; revisar feijoada e brigadeiro (OFF).
+- **Limpeza (23/11, pedido do autor):** apagados fotos, vetores, marcações, venv e cache do treino (~24 GB com a pasta de medida do APK). Preservados em `.local/fotos-alimentos-preservado/` (63 MB): manifestos de licença das três bases, o modelo do app (`.tflite` idêntico ao do APK e o `student_best.pt`), o modelo anterior, métricas (`export_eval.json`, `teacher_probe_eval.json`), a lista das fotos brasileiras de medida e os logs. Retreinar exige baixar de novo pelos scripts de `tools/treino_foto/`.
 
 ### Voz implementada (23/11)
 
