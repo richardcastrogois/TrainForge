@@ -59,6 +59,11 @@ android {
             if (tfSigningFile.exists()) { signingConfig = signingConfigs.getByName("evaluationRelease") }
             proguardFiles(getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro")
         }
+        debug {
+            // Live testing on the author's phone: same certificate as the installed release, so the debug
+            // build installs over it keeping local data and Google sign-in (OAuth checks the certificate).
+            if (tfSigningFile.exists()) { signingConfig = signingConfigs.getByName("evaluationRelease") }
+        }
     }
 }
 
