@@ -1,6 +1,6 @@
 # Referência técnica extraída do código
 
-> Gerado de código e registros versionados por `tools/gerar_documentacao.py`. Não editar este arquivo à mão. Revisão das entradas: `b12b56413469b76e`.
+> Gerado de código e registros versionados por `tools/gerar_documentacao.py`. Não editar este arquivo à mão. Revisão das entradas: `567c2a27cbfc38c7`.
 
 [Arquitetura explicada](../README.md) · [APIs](../diagramas/apis.md) · [Banco e colunas](../diagramas/banco.md) · [Backlog](../../execucao/v1/backlog.md)
 
@@ -8,8 +8,8 @@ Este inventário lê padrões estáticos de Dart, Go, SQL e Swagger. Não execut
 
 | Entrada | Quantidade detectada |
 | --- | --- |
-| Arquivos Dart | 125 |
-| Telas/widgets | 39 |
+| Arquivos Dart | 131 |
+| Telas/widgets | 40 |
 | Literais HTTP Flutter | 35 |
 | Arquivos Go de produção | 101 |
 | Registros HTTP Go | 55 |
@@ -33,7 +33,7 @@ Uma referência de construtor não demonstra clique ou condição de navegação
 | CatalogToolsPage | [lib/features/food_reference/presentation/catalog_tools_page.dart:35](../../../lib/features/food_reference/presentation/catalog_tools_page.dart) |
 | FoodDetailPage | [lib/features/food_reference/presentation/food_detail_page.dart:10](../../../lib/features/food_reference/presentation/food_detail_page.dart) |
 | FoodPage | [lib/features/food_reference/presentation/food_page.dart:17](../../../lib/features/food_reference/presentation/food_page.dart) |
-| TodayPage | [lib/features/home/presentation/pages/today_page.dart:10](../../../lib/features/home/presentation/pages/today_page.dart) |
+| TodayPage | [lib/features/home/presentation/pages/today_page.dart:14](../../../lib/features/home/presentation/pages/today_page.dart) |
 | LegalConsentPage | [lib/features/legal/presentation/legal_pages.dart:10](../../../lib/features/legal/presentation/legal_pages.dart) |
 | HealthConsentPage | [lib/features/legal/presentation/legal_pages.dart:124](../../../lib/features/legal/presentation/legal_pages.dart) |
 | LegalSettingsPage | [lib/features/legal/presentation/legal_pages.dart:211](../../../lib/features/legal/presentation/legal_pages.dart) |
@@ -50,16 +50,17 @@ Uma referência de construtor não demonstra clique ou condição de navegação
 | NutritionPage | [lib/features/nutrition/presentation/nutrition_page.dart:31](../../../lib/features/nutrition/presentation/nutrition_page.dart) |
 | OwnFoodPickerPage | [lib/features/nutrition/presentation/own_food_picker_page.dart:14](../../../lib/features/nutrition/presentation/own_food_picker_page.dart) |
 | VoiceMealPage | [lib/features/nutrition/presentation/voice_meal_page.dart:137](../../../lib/features/nutrition/presentation/voice_meal_page.dart) |
+| OnboardingPage | [lib/features/onboarding/onboarding_page.dart:186](../../../lib/features/onboarding/onboarding_page.dart) |
 | PrivacyPage | [lib/features/privacy/presentation/privacy_page.dart:11](../../../lib/features/privacy/presentation/privacy_page.dart) |
 | TrainingConfigurationPage | [lib/features/training_configuration/presentation/training_configuration_page.dart:35](../../../lib/features/training_configuration/presentation/training_configuration_page.dart) |
 | TrainingLibraryPage | [lib/features/training_library/presentation/training_library_page.dart:79](../../../lib/features/training_library/presentation/training_library_page.dart) |
-| TrainingSessionPage | [lib/features/training_library/presentation/training_library_page.dart:195](../../../lib/features/training_library/presentation/training_library_page.dart) |
-| AccountPage | [lib/shared/widgets/account_page.dart:18](../../../lib/shared/widgets/account_page.dart) |
-| AuthGate | [lib/shared/widgets/auth_gate.dart:13](../../../lib/shared/widgets/auth_gate.dart) |
+| TrainingSessionPage | [lib/features/training_library/presentation/training_library_page.dart:203](../../../lib/features/training_library/presentation/training_library_page.dart) |
+| AccountPage | [lib/shared/widgets/account_page.dart:19](../../../lib/shared/widgets/account_page.dart) |
+| AuthGate | [lib/shared/widgets/auth_gate.dart:15](../../../lib/shared/widgets/auth_gate.dart) |
 | ContentSourcesPage | [lib/shared/widgets/content_sources_page.dart:10](../../../lib/shared/widgets/content_sources_page.dart) |
 | EvaluationGuidePage | [lib/shared/widgets/evaluation_guide_page.dart:11](../../../lib/shared/widgets/evaluation_guide_page.dart) |
 | FoodCatalogCreditsPage | [lib/shared/widgets/food_catalog_credits_page.dart:10](../../../lib/shared/widgets/food_catalog_credits_page.dart) |
-| ProductShell | [lib/shared/widgets/product_shell.dart:23](../../../lib/shared/widgets/product_shell.dart) |
+| ProductShell | [lib/shared/widgets/product_shell.dart:24](../../../lib/shared/widgets/product_shell.dart) |
 | StartupPage | [lib/shared/widgets/startup_page.dart:6](../../../lib/shared/widgets/startup_page.dart) |
 
 | Origem | Widget referenciado | Fonte |
@@ -74,6 +75,7 @@ Uma referência de construtor não demonstra clique ou condição de navegação
 | CatalogPage | CatalogDetailPage | [lib/features/catalog/presentation/catalog_page.dart:353](../../../lib/features/catalog/presentation/catalog_page.dart) |
 | FoodPage | CatalogToolsPage | [lib/features/food_reference/presentation/food_page.dart:145](../../../lib/features/food_reference/presentation/food_page.dart) |
 | FoodPage | FoodDetailPage | [lib/features/food_reference/presentation/food_page.dart:79](../../../lib/features/food_reference/presentation/food_page.dart) |
+| TodayPage | OnboardingPage | [lib/features/home/presentation/pages/today_page.dart:76](../../../lib/features/home/presentation/pages/today_page.dart) |
 | LegalConsentPage | HealthConsentPage | [lib/features/legal/presentation/legal_pages.dart:127](../../../lib/features/legal/presentation/legal_pages.dart) |
 | LegalConsentPage | LegalSettingsPage | [lib/features/legal/presentation/legal_pages.dart:214](../../../lib/features/legal/presentation/legal_pages.dart) |
 | LegalConsentPage | LegalDocumentPage | [lib/features/legal/presentation/legal_pages.dart:333](../../../lib/features/legal/presentation/legal_pages.dart) |
@@ -109,28 +111,29 @@ Uma referência de construtor não demonstra clique ou condição de navegação
 | NutritionPage | VoiceMealPage | [lib/features/nutrition/presentation/nutrition_page.dart:447](../../../lib/features/nutrition/presentation/nutrition_page.dart) |
 | OwnFoodPickerPage | FoodPage | [lib/features/nutrition/presentation/own_food_picker_page.dart:79](../../../lib/features/nutrition/presentation/own_food_picker_page.dart) |
 | PrivacyPage | ContentSourcesPage | [lib/features/privacy/presentation/privacy_page.dart:75](../../../lib/features/privacy/presentation/privacy_page.dart) |
-| TrainingLibraryPage | TrainingSessionPage | [lib/features/training_library/presentation/training_library_page.dart:176](../../../lib/features/training_library/presentation/training_library_page.dart) |
-| TrainingSessionPage | TrainingLibraryPage | [lib/features/training_library/presentation/training_library_page.dart:81](../../../lib/features/training_library/presentation/training_library_page.dart) |
-| AccountPage | LanguagePage | [lib/shared/widgets/account_page.dart:171](../../../lib/shared/widgets/account_page.dart) |
-| AccountPage | AppearancePage | [lib/shared/widgets/account_page.dart:159](../../../lib/shared/widgets/account_page.dart) |
-| AccountPage | LegalSettingsPage | [lib/shared/widgets/account_page.dart:203](../../../lib/shared/widgets/account_page.dart) |
-| AccountPage | PrivacyPage | [lib/shared/widgets/account_page.dart:25](../../../lib/shared/widgets/account_page.dart) |
-| AccountPage | ContentSourcesPage | [lib/shared/widgets/account_page.dart:220](../../../lib/shared/widgets/account_page.dart) |
-| AuthGate | AuthPage | [lib/shared/widgets/auth_gate.dart:77](../../../lib/shared/widgets/auth_gate.dart) |
-| AuthGate | LegalConsentPage | [lib/shared/widgets/auth_gate.dart:93](../../../lib/shared/widgets/auth_gate.dart) |
-| AuthGate | HealthConsentPage | [lib/shared/widgets/auth_gate.dart:101](../../../lib/shared/widgets/auth_gate.dart) |
-| AuthGate | ProductShell | [lib/shared/widgets/auth_gate.dart:111](../../../lib/shared/widgets/auth_gate.dart) |
-| AuthGate | StartupPage | [lib/shared/widgets/auth_gate.dart:71](../../../lib/shared/widgets/auth_gate.dart) |
+| TrainingLibraryPage | TrainingSessionPage | [lib/features/training_library/presentation/training_library_page.dart:184](../../../lib/features/training_library/presentation/training_library_page.dart) |
+| TrainingSessionPage | TrainingLibraryPage | [lib/features/training_library/presentation/training_library_page.dart:84](../../../lib/features/training_library/presentation/training_library_page.dart) |
+| AccountPage | LanguagePage | [lib/shared/widgets/account_page.dart:189](../../../lib/shared/widgets/account_page.dart) |
+| AccountPage | AppearancePage | [lib/shared/widgets/account_page.dart:177](../../../lib/shared/widgets/account_page.dart) |
+| AccountPage | LegalSettingsPage | [lib/shared/widgets/account_page.dart:221](../../../lib/shared/widgets/account_page.dart) |
+| AccountPage | PrivacyPage | [lib/shared/widgets/account_page.dart:34](../../../lib/shared/widgets/account_page.dart) |
+| AccountPage | ContentSourcesPage | [lib/shared/widgets/account_page.dart:238](../../../lib/shared/widgets/account_page.dart) |
+| AuthGate | AuthPage | [lib/shared/widgets/auth_gate.dart:84](../../../lib/shared/widgets/auth_gate.dart) |
+| AuthGate | LegalConsentPage | [lib/shared/widgets/auth_gate.dart:100](../../../lib/shared/widgets/auth_gate.dart) |
+| AuthGate | HealthConsentPage | [lib/shared/widgets/auth_gate.dart:108](../../../lib/shared/widgets/auth_gate.dart) |
+| AuthGate | OnboardingPage | [lib/shared/widgets/auth_gate.dart:123](../../../lib/shared/widgets/auth_gate.dart) |
+| AuthGate | ProductShell | [lib/shared/widgets/auth_gate.dart:137](../../../lib/shared/widgets/auth_gate.dart) |
+| AuthGate | StartupPage | [lib/shared/widgets/auth_gate.dart:78](../../../lib/shared/widgets/auth_gate.dart) |
 | ContentSourcesPage | CatalogPage | [lib/shared/widgets/content_sources_page.dart:28](../../../lib/shared/widgets/content_sources_page.dart) |
 | ContentSourcesPage | FoodPage | [lib/shared/widgets/content_sources_page.dart:35](../../../lib/shared/widgets/content_sources_page.dart) |
 | ContentSourcesPage | NutritionPage | [lib/shared/widgets/content_sources_page.dart:52](../../../lib/shared/widgets/content_sources_page.dart) |
 | ContentSourcesPage | FoodCatalogCreditsPage | [lib/shared/widgets/content_sources_page.dart:42](../../../lib/shared/widgets/content_sources_page.dart) |
 | EvaluationGuidePage | CatalogPage | [lib/shared/widgets/evaluation_guide_page.dart:113](../../../lib/shared/widgets/evaluation_guide_page.dart) |
 | EvaluationGuidePage | FoodPage | [lib/shared/widgets/evaluation_guide_page.dart:121](../../../lib/shared/widgets/evaluation_guide_page.dart) |
-| ProductShell | ActivityPage | [lib/shared/widgets/product_shell.dart:172](../../../lib/shared/widgets/product_shell.dart) |
-| ProductShell | CatalogPage | [lib/shared/widgets/product_shell.dart:130](../../../lib/shared/widgets/product_shell.dart) |
-| ProductShell | NutritionPage | [lib/shared/widgets/product_shell.dart:114](../../../lib/shared/widgets/product_shell.dart) |
-| ProductShell | AccountPage | [lib/shared/widgets/product_shell.dart:224](../../../lib/shared/widgets/product_shell.dart) |
+| ProductShell | ActivityPage | [lib/shared/widgets/product_shell.dart:186](../../../lib/shared/widgets/product_shell.dart) |
+| ProductShell | CatalogPage | [lib/shared/widgets/product_shell.dart:144](../../../lib/shared/widgets/product_shell.dart) |
+| ProductShell | NutritionPage | [lib/shared/widgets/product_shell.dart:118](../../../lib/shared/widgets/product_shell.dart) |
+| ProductShell | AccountPage | [lib/shared/widgets/product_shell.dart:238](../../../lib/shared/widgets/product_shell.dart) |
 
 ## Flutter: chamadas e registros Go
 

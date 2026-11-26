@@ -159,8 +159,13 @@ def main():
             path.write_text(content, encoding="utf-8", newline="\n")
     if args.check:
         stale = [p for p, text in expected.items() if not (ROOT / p).exists() or read(ROOT / p) != text]
-        active_docs = list(expected) + [p.relative_to(ROOT).as_posix() for p in (ROOT / "docs").rglob("*.md")
-                                     if 'apresentacao-senas' not in p.parts]
+        # Prune the presentation folder before walking: its ignored build output
+        # may hold junctions to folders that no longer exist.
+        docs_md = []
+        for folder, subdirs, files in os.walk(ROOT / "docs"):
+            subdirs[:] = [d for d in subdirs if d != "apresentacao-senas"]
+            docs_md += [(Path(folder) / f).relative_to(ROOT).as_posix() for f in files if f.endswith(".md")]
+        active_docs = list(expected) + sorted(docs_md)
         active_docs += ["README.md", "AGENTS.md", "guia-do-projeto.md", "documentacao-tecnica.md", "docs/README.md",
                         "docs/execucao/v1/handoff.md", "docs/execucao/v1/escopo.md", "docs/historico/README.md"]
         broken = check_links(ROOT, active_docs)

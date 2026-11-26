@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "inputRevision": "b12b56413469b76ebd0d9f8859c6eeeb4e7a77f65f2709cb7059e6cbc3a7bdac",
+  "inputRevision": "567c2a27cbfc38c7e1a6f0f568568438a9747c95a5ac8a799d325d0cbc2e1ede",
   "inputs": {
     "contracts/generated/catalog-m1.swagger.json": "7f59b699f1c4c032e0652c31f44fac9a8d3a77115639a24408725427e97b0339",
     "contracts/generated/swagger-v1.json": "437504d14c4210b1a385fc87132aaea0f0970e67545e077b6bca6866cda530fa",
@@ -31,7 +31,7 @@
     "lib/features/activity/domain/activity_repository.dart": "d252cb46251d4aec1686e611c160e7b02cf03d5ec8712f7692ab4d4060973d3a",
     "lib/features/activity/domain/activity_session.dart": "4f0bc2aaa7d0dce6b58e55ce8a517ed3d8dbbf53f8eb7efb8c1e0961051f7472",
     "lib/features/activity/presentation/activity_controller.dart": "1aa5ad6d649acef1886d7054e4a9b36d2f24bb2d104e719d112b3cfdb4e88a62",
-    "lib/features/activity/presentation/activity_page.dart": "1393a75c1f10d6af53ca56c4eaee22b10b591f3a62d3efbbd9cf8c5a859bbb5e",
+    "lib/features/activity/presentation/activity_page.dart": "8ef9f6562737a9385f6d7e0db164ddee14fe273811a4a6261d12c41cb38e6496",
     "lib/features/auth/data/auth_api.dart": "4e3775e3adfa57804907e943cceb0b4992df04fdaaf65465cdcf66824e40fad0",
     "lib/features/auth/data/auth_repository.dart": "30f9e39c6d23083cd0e65b43a6caeccb8f96064a8a1c90440d8acc067e96c826",
     "lib/features/auth/data/auth_storage.dart": "e7ad445f68fd2cf55c947cf9929ca9319b6aa132c946ababb4857d6fc98b62a8",
@@ -63,10 +63,11 @@
     "lib/features/food_reference/presentation/food_detail_page.dart": "48ad87a959dd4963c2c6d9b8f89a900b8ec633e955cf2492cb14c692e64d63a1",
     "lib/features/food_reference/presentation/food_labels.dart": "4c10a94596bf42f566fa51a8e94eaac3ca4831add72e3f0782e02fd84282d309",
     "lib/features/food_reference/presentation/food_page.dart": "5763653ce3c6ef373d82dd489711a8e8b0a69cfa428d2cafdf0b3b19b727c3dd",
-    "lib/features/home/presentation/pages/today_page.dart": "93f240ab972b62adee5c1796d1dcea3a6abfd0c866bef37f075cd1c0c9b26a66",
+    "lib/features/home/presentation/pages/today_page.dart": "31b5fdd558b8f60f0c607496d24fa7ecba35f2c6ccfbed7ebd31da01c9ef0297",
+    "lib/features/home/presentation/widgets/home_cards.dart": "eddae457dadd06b8fab61e06de34cfb133e756cb22c530bf5b3d9195c22e1ec5",
     "lib/features/legal/legal_consent_store.dart": "33ea7c1eca83e0994cb3536f1d863c26ef38445b38b74ee7c3e4ee25aebcf361",
     "lib/features/legal/legal_controller.dart": "0103cbd52a19b51b803baee13cfb6648811c3df6e7ddcc0c2da919b3d60dde73",
-    "lib/features/legal/legal_documents.dart": "72f3edfb8b368b6135dda23a59cb40fee4f2f793ac7ed11715a3a012bf38f442",
+    "lib/features/legal/legal_documents.dart": "bf178b0f0677528b4ba4d139a595c74a289438033aed3ffe8be47784f9bdfec0",
     "lib/features/legal/presentation/legal_labels.dart": "f7651123b89623d4da47b895b0d07e7e0d970583f32316233de784544fb03d52",
     "lib/features/legal/presentation/legal_pages.dart": "231cd9263852687c820524e5f7202ef42571793a86a083f80fba5067c8bd19db",
     "lib/features/legal/presentation/staggered_entrance.dart": "a2877f7614af7d3613c6e75d6508f0f97604ca4973ddf1b7ceb8f2a142ead1e7",
@@ -101,6 +102,10 @@
     "lib/features/nutrition/presentation/own_food_picker_page.dart": "b64414ac7814e754c4084175736832d21223e7c24262c50001d18fe167c75193",
     "lib/features/nutrition/presentation/own_food_portions_editor.dart": "3068e8780c84c165f68f623f6ee29726d4ece26c8d9cc3621d7dfe52c5976272",
     "lib/features/nutrition/presentation/voice_meal_page.dart": "5c5fd8ebe6e48a0751ab2c46b2e5861ca6a46a1e3e661905bc15b3e05fea1a66",
+    "lib/features/onboarding/onboarding_page.dart": "c06fbbd197d36bb3ea49e6a444f56ef83f5259f030197c8fcb91aba67c604d3c",
+    "lib/features/onboarding/onboarding_profile.dart": "18bf8ea5317347415522a63e9efa32081e681b9007b4107309751565205f4dd4",
+    "lib/features/onboarding/place_photos.dart": "7eceb00cf5b229b3fa549dff589d646890ca61dcdca94a1966bd1efb33d2b524",
+    "lib/features/onboarding/welcome_animation.dart": "c84b93f71418e8f410e6c1f66e3fe310512280b7b22b11ce1f4b5f4e10978637",
     "lib/features/privacy/data/privacy_repository.dart": "d3d4f7225c68c39353f9700191942d4609d4486d96a2558cdb2c10d8493c6e23",
     "lib/features/privacy/domain/privacy.dart": "8fb56c4b25c4fb579279371d52b9cc453007efd013c9aaeccb5198800a8ed8d3",
     "lib/features/privacy/presentation/privacy_controller.dart": "41d52642d7c1e34368fca5cba23221950d736b05f8d6bd2906663fce31965313",
@@ -112,25 +117,26 @@
     "lib/features/training_configuration/presentation/training_configuration_page.dart": "44c38b1feca488b526f338aaa0784bb92dbcd03446335e0bb4832653eacf594f",
     "lib/features/training_configuration/presentation/training_configuration_sections.dart": "8004ba7282b278968677c37f0dbe419eac5d2bd76bdd6ea04c889b234e48cee6",
     "lib/features/training_library/data/training_library.dart": "2e2265cba93281775583f88c2dd41d60ecace3d3ed6caa26848bb839d53f3e8e",
-    "lib/features/training_library/presentation/training_library_page.dart": "3f2cbbfdd65a70c957c4be6e5b3e14ea13feb775fa796081184437b7005ba056",
+    "lib/features/training_library/presentation/training_library_page.dart": "251cf7b9316e0695b6fb08f86b1dc812ad61d219dd441da8870a4b204bfd00eb",
     "lib/l10n/generated/app_localizations.dart": "2190b705abaa9fdb0a1ec94776a8fef370fc2ec5fc8ef704ae56e4106a464bc7",
     "lib/l10n/generated/app_localizations_en.dart": "f2bdfe080a6473c26abd23d3f41b6a5ff9ef3ea68470500c065cf0c6d7c1529b",
     "lib/l10n/generated/app_localizations_es.dart": "0ec55e15addc509b487de973b394d029c56c96e6d2b50b73e5c65f98434d7280",
-    "lib/l10n/generated/app_localizations_pt.dart": "f7656f3362bd50424e51b080cced988346694bdf411d3048ef602ea3c5dd8c51",
+    "lib/l10n/generated/app_localizations_pt.dart": "95bc8c11328651553bde50d3b84dc30bcd5686899c8cf9d7f5bfe045ab6e880b",
     "lib/main.dart": "52f6c5157237688537f3708474237531876f1340ada0a363c0ddda8bcf38ce7f",
-    "lib/shared/widgets/account_page.dart": "c7324fca0923ea4279a78061ff70a3ed67c2b163338ba83b659a49ed4f549a7c",
+    "lib/shared/widgets/account_page.dart": "dd8b40f4b1e4111c80eea8999b2e9b96cbf52513df49ca2788b6f16eb005b1e2",
     "lib/shared/widgets/app_loading.dart": "b041a11b964f4943b9902ee7dd380171a2cdca8f9440fa06658b329ee8bb66e3",
-    "lib/shared/widgets/auth_gate.dart": "40a8b0e2ebc55b1dca9600e001c2845bd7fa4ef0cf4cac10f442edf8220eeb5e",
+    "lib/shared/widgets/auth_gate.dart": "752b26516f9e635329024ce1fba328ee3f14c067a5b6e8547267da6ce9682c92",
     "lib/shared/widgets/content_sources_page.dart": "a16105129b7752cc229a221c2b06dd4c8c66624505b59b2a4456aca0d22ca101",
     "lib/shared/widgets/draft_guard.dart": "e07551083f2f42de6b6787ab3c354a9f9d8c75b65f71e25a076f8bcbd596f28b",
     "lib/shared/widgets/evaluation_guide_page.dart": "302e04793b0e634b756d7a8785f9f64d74a03653a27f85f7ec7285249fd24900",
-    "lib/shared/widgets/figma_bottom_nav.dart": "d2ad7bc1d47ad4fc87716d65556fc23397fcd97d44b5da6459499261cba88177",
-    "lib/shared/widgets/figma_components.dart": "943d5f779c7c134724a4539b0a4ce102a6ad81ee7f411ffe0d279ee7ec598ba5",
+    "lib/shared/widgets/figma_bottom_nav.dart": "ccb5168dc7c9cea4141177cc239565f7ab7635837c298506f278dce11d885929",
+    "lib/shared/widgets/figma_components.dart": "816371c2cc379ecd5b5fb3e88604b0034cbe91854e742b48a44c5b157695df66",
     "lib/shared/widgets/flow_components.dart": "1d3cf303b115d8136388cd5ea8fb3508a4f95cc721d7b5a11e9f97cba10e3238",
     "lib/shared/widgets/food_catalog_credits_page.dart": "3e2b980601c7f976fa7e897eca951602f8de08bbe9d135ee5bccd5d92123a4b6",
+    "lib/shared/widgets/glass_surface.dart": "d5a2c41e258515c0eb54cf88ef56ca2330ead958ac6aa9aac7d6cda32e769f7a",
     "lib/shared/widgets/plans_overview.dart": "7cbf8ca335c3d063c62b2fd00324b354d5524e444ddac56cec6ad29f47d5e2d0",
     "lib/shared/widgets/product_overviews.dart": "a05a5e5ff02cc6d17aa8fe9ebaecf3f01b78d52bce6ff325cd14f7bca738d4fa",
-    "lib/shared/widgets/product_shell.dart": "f9a8de8188396d9dcbc3558267831f9b07063f7b0a5705669a78411d1b8e2871",
+    "lib/shared/widgets/product_shell.dart": "7cdba486b0f5e4cf4d730f53874cf8d955559500c66100d6a886416a1e26ca9a",
     "lib/shared/widgets/startup_page.dart": "2ddd61e2ef4b9fe3bd6d84d31a3550dc1ed273891c3e5d88a2e04d4e9f83e168",
     "services/api/api/index.go": "bff6d65701fca9a0c3e16c3b41ff8bf9d44be886abe42d37842a5a90b875b878",
     "services/api/cmd/api/main.go": "da7e84e3337e3c9a45a36c426011b291be6f2aa1310c4ce6c8ae282d39c98bc6",
@@ -287,7 +293,7 @@
     "tools/food_catalog_slim.py": "0e1aabae7c558dfdd72d16c312173aa954d21847e3cad7692042902663840159",
     "tools/gerar_catalogo_m1_swagger.py": "4ccdc44d5be7869a0d9769ec02b4614b008478606f335c710c7bcd40a1d1d82c",
     "tools/gerar_diagramas.py": "5081a43639b7b4cb443692c1d1505ea43a97e0e783ae8bb6ef0cfde5d2d983f6",
-    "tools/gerar_documentacao.py": "8e9717d497eb9f9bc912facb8de9e2e04f5c7d965f72493a6526d3c91f2de1fb",
+    "tools/gerar_documentacao.py": "487d4afc7e3401aad6c18c2213e25edb87a51196055fe022c5f9b29e2bbf355c",
     "tools/gerar_identidade_nativa.py": "3813c60ef70441f67e18b82f5aedd926b7dde9aa9901644bd63d1468d94b98cf",
     "tools/gerar_swagger.py": "fabd74db2c93ee8e16a87b5ea52c2795dac2996d7dc59dc1d331796da9489e4b",
     "tools/gerar_treinos_app.py": "1dd215ec288478abb4139cf6626dfc7d9658f97b84df01e281b9e16e89e726a2",
@@ -362,7 +368,7 @@
     "tools/verificar_refeicoes_local.py": "3edaca4b221d8b2ed67a11813f719bbc4526bcd8a9e330c00600cbabfaab879c"
   },
   "coverage": {
-    "dartFiles": 125,
+    "dartFiles": 131,
     "httpCalls": 35,
     "goFiles": 101,
     "goRegistrations": 55
@@ -460,6 +466,11 @@
         {
           "repository": "trainforge",
           "path": "lib/features/home/presentation/pages/today_page.dart",
+          "line": 1
+        },
+        {
+          "repository": "trainforge",
+          "path": "lib/features/home/presentation/widgets/home_cards.dart",
           "line": 1
         },
         {
@@ -670,6 +681,11 @@
         {
           "repository": "trainforge",
           "path": "lib/shared/widgets/food_catalog_credits_page.dart",
+          "line": 1
+        },
+        {
+          "repository": "trainforge",
+          "path": "lib/shared/widgets/glass_surface.dart",
           "line": 1
         },
         {
@@ -1284,7 +1300,7 @@
         {
           "repository": "trainforge",
           "path": "lib/shared/widgets/product_shell.dart",
-          "line": 20
+          "line": 21
         }
       ]
     },
@@ -1429,7 +1445,7 @@
       "source": {
         "repository": "trainforge",
         "path": "lib/features/home/presentation/pages/today_page.dart",
-        "line": 10
+        "line": 14
       }
     },
     {
@@ -1561,6 +1577,14 @@
       }
     },
     {
+      "id": "OnboardingPage",
+      "source": {
+        "repository": "trainforge",
+        "path": "lib/features/onboarding/onboarding_page.dart",
+        "line": 186
+      }
+    },
+    {
       "id": "PrivacyPage",
       "source": {
         "repository": "trainforge",
@@ -1589,7 +1613,7 @@
       "source": {
         "repository": "trainforge",
         "path": "lib/features/training_library/presentation/training_library_page.dart",
-        "line": 195
+        "line": 203
       }
     },
     {
@@ -1597,7 +1621,7 @@
       "source": {
         "repository": "trainforge",
         "path": "lib/shared/widgets/account_page.dart",
-        "line": 18
+        "line": 19
       }
     },
     {
@@ -1605,7 +1629,7 @@
       "source": {
         "repository": "trainforge",
         "path": "lib/shared/widgets/auth_gate.dart",
-        "line": 13
+        "line": 15
       }
     },
     {
@@ -1637,7 +1661,7 @@
       "source": {
         "repository": "trainforge",
         "path": "lib/shared/widgets/product_shell.dart",
-        "line": 23
+        "line": 24
       }
     },
     {
@@ -1738,6 +1762,15 @@
         "repository": "trainforge",
         "path": "lib/features/food_reference/presentation/food_page.dart",
         "line": 79
+      }
+    },
+    {
+      "from": "TodayPage",
+      "to": "OnboardingPage",
+      "source": {
+        "repository": "trainforge",
+        "path": "lib/features/home/presentation/pages/today_page.dart",
+        "line": 76
       }
     },
     {
@@ -2061,7 +2094,7 @@
       "source": {
         "repository": "trainforge",
         "path": "lib/features/training_library/presentation/training_library_page.dart",
-        "line": 176
+        "line": 184
       }
     },
     {
@@ -2070,7 +2103,7 @@
       "source": {
         "repository": "trainforge",
         "path": "lib/features/training_library/presentation/training_library_page.dart",
-        "line": 81
+        "line": 84
       }
     },
     {
@@ -2079,7 +2112,7 @@
       "source": {
         "repository": "trainforge",
         "path": "lib/shared/widgets/account_page.dart",
-        "line": 171
+        "line": 189
       }
     },
     {
@@ -2088,7 +2121,7 @@
       "source": {
         "repository": "trainforge",
         "path": "lib/shared/widgets/account_page.dart",
-        "line": 159
+        "line": 177
       }
     },
     {
@@ -2097,7 +2130,7 @@
       "source": {
         "repository": "trainforge",
         "path": "lib/shared/widgets/account_page.dart",
-        "line": 203
+        "line": 221
       }
     },
     {
@@ -2106,7 +2139,7 @@
       "source": {
         "repository": "trainforge",
         "path": "lib/shared/widgets/account_page.dart",
-        "line": 25
+        "line": 34
       }
     },
     {
@@ -2115,7 +2148,7 @@
       "source": {
         "repository": "trainforge",
         "path": "lib/shared/widgets/account_page.dart",
-        "line": 220
+        "line": 238
       }
     },
     {
@@ -2124,7 +2157,7 @@
       "source": {
         "repository": "trainforge",
         "path": "lib/shared/widgets/auth_gate.dart",
-        "line": 77
+        "line": 84
       }
     },
     {
@@ -2133,7 +2166,7 @@
       "source": {
         "repository": "trainforge",
         "path": "lib/shared/widgets/auth_gate.dart",
-        "line": 93
+        "line": 100
       }
     },
     {
@@ -2142,7 +2175,16 @@
       "source": {
         "repository": "trainforge",
         "path": "lib/shared/widgets/auth_gate.dart",
-        "line": 101
+        "line": 108
+      }
+    },
+    {
+      "from": "AuthGate",
+      "to": "OnboardingPage",
+      "source": {
+        "repository": "trainforge",
+        "path": "lib/shared/widgets/auth_gate.dart",
+        "line": 123
       }
     },
     {
@@ -2151,7 +2193,7 @@
       "source": {
         "repository": "trainforge",
         "path": "lib/shared/widgets/auth_gate.dart",
-        "line": 111
+        "line": 137
       }
     },
     {
@@ -2160,7 +2202,7 @@
       "source": {
         "repository": "trainforge",
         "path": "lib/shared/widgets/auth_gate.dart",
-        "line": 71
+        "line": 78
       }
     },
     {
@@ -2223,7 +2265,7 @@
       "source": {
         "repository": "trainforge",
         "path": "lib/shared/widgets/product_shell.dart",
-        "line": 172
+        "line": 186
       }
     },
     {
@@ -2232,7 +2274,7 @@
       "source": {
         "repository": "trainforge",
         "path": "lib/shared/widgets/product_shell.dart",
-        "line": 130
+        "line": 144
       }
     },
     {
@@ -2241,7 +2283,7 @@
       "source": {
         "repository": "trainforge",
         "path": "lib/shared/widgets/product_shell.dart",
-        "line": 114
+        "line": 118
       }
     },
     {
@@ -2250,7 +2292,7 @@
       "source": {
         "repository": "trainforge",
         "path": "lib/shared/widgets/product_shell.dart",
-        "line": 224
+        "line": 238
       }
     }
   ],
