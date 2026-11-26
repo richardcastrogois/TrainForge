@@ -1,3 +1,4 @@
+import 'glass_surface.dart';
 import 'package:trainforge/core/l10n/localized_context.dart';
 import 'package:trainforge/core/motion/app_motion.dart';
 import 'package:trainforge/core/theme/trainforge_theme.dart';
@@ -89,19 +90,16 @@ class _FigmaBottomNavState extends State<FigmaBottomNav> {
     final reduced = AppMotion.reduced(context);
     return SizedBox(
       height: 66,
-      child: DecoratedBox(
-        decoration: BoxDecoration(
-          color: context.tf.navSurface,
-          border: Border.all(color: context.tf.navBorder),
-          borderRadius: BorderRadius.circular(33),
-          boxShadow: const [
-            BoxShadow(
-              color: Color(0x1a183e32),
-              offset: Offset(0, 3),
-              blurRadius: 5,
-            ),
-          ],
-        ),
+      child: GlassSurface(
+        tint: context.tf.navSurface.withValues(alpha: .72),
+        borderRadius: BorderRadius.circular(33),
+        shadows: const [
+          BoxShadow(
+            color: Color(0x26183e32),
+            offset: Offset(0, 6),
+            blurRadius: 16,
+          ),
+        ],
         child: Padding(
           padding: const EdgeInsets.symmetric(horizontal: 7, vertical: 6),
           child: LayoutBuilder(

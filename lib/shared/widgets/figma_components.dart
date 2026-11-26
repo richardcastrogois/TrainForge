@@ -16,7 +16,13 @@ class FigmaContent extends StatelessWidget {
   @override
   Widget build(BuildContext context) => ListView(
     physics: AlwaysScrollableScrollPhysics(),
-    padding: const EdgeInsets.fromLTRB(24, 0, 24, 16),
+    // Room for the floating bottom bar when the shell provides it.
+    padding: EdgeInsets.fromLTRB(
+      24,
+      0,
+      24,
+      16 + MediaQuery.paddingOf(context).bottom,
+    ),
     children: [
       Semantics(
         header: true,

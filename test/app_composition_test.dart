@@ -295,6 +295,16 @@ void main() {
             )
             .first,
       );
+      // Clear the bottom navigation bar before tapping.
+      await tester.drag(
+        find
+            .byWidgetPredicate(
+              (w) => w is Scrollable && w.axisDirection == AxisDirection.down,
+            )
+            .first,
+        const Offset(0, -200),
+      );
+      await tester.pumpAndSettle();
       await tester.tap(find.text('Minha alimentação'));
       await tester.pumpAndSettle();
       final page = tester.widget<NutritionPage>(find.byType(NutritionPage));

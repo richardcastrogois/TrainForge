@@ -24,6 +24,10 @@ void main() {
   testWidgets(
     'Hoje distinguishes loading, failure, empty and partial without fabricated totals',
     (t) async {
+      // Tall view: the hero card sits above the day section.
+      t.view.physicalSize = const Size(800, 2400);
+      t.view.devicePixelRatio = 1;
+      addTearDown(t.view.reset);
       final repo = TodayData()..pending = Completer<Json>();
       final c = DailySummaryController(
         repository: repo,
@@ -47,7 +51,8 @@ void main() {
         ),
       );
       await t.pump();
-      expect(find.byType(AppMetricSkeleton), findsOneWidget);
+      // An empty first load does not flash the day section.
+      expect(find.byType(AppMetricSkeleton), findsNothing);
       expect(find.text('Bora mexer!'), findsOneWidget);
       repo.pending!.complete({'entries': 0, 'complete': true, 'nutrients': []});
       await task;
@@ -71,7 +76,12 @@ void main() {
   testWidgets(
     'week uses real dates across month boundaries and keeps48px targets',
     (t) async {
-      final repo = TodayData();
+      // Tall view: the hero card sits above the day section.
+      t.view.physicalSize = const Size(800, 2400);
+      t.view.devicePixelRatio = 1;
+      addTearDown(t.view.reset);
+      final repo = TodayData()
+        ..data = {'entries': 1, 'complete': true, 'nutrients': []};
       final c = DailySummaryController(
         repository: repo,
         accountId: 'fixture',

@@ -9,16 +9,20 @@ import 'package:trainforge/features/auth/presentation/pages/auth_page.dart';
 import 'product_shell.dart';
 import 'package:trainforge/features/legal/legal_controller.dart';
 import 'package:trainforge/features/legal/presentation/legal_pages.dart';
+import 'package:trainforge/features/onboarding/onboarding_page.dart';
+import 'package:trainforge/features/onboarding/onboarding_profile.dart';
 
 class AuthGate extends StatefulWidget {
   final AuthController? controller;
   final NutritionRepository? nutritionRepository;
   final LegalController? legal;
+  final OnboardingController? onboarding;
   const AuthGate({
     super.key,
     this.controller,
     this.nutritionRepository,
     this.legal,
+    this.onboarding,
   });
   @override
   State<AuthGate> createState() => _AuthGateState();
@@ -27,6 +31,8 @@ class AuthGate extends StatefulWidget {
 class _AuthGateState extends State<AuthGate> {
   late final AuthController controller;
   late final LegalController legal = widget.legal ?? LegalController();
+  late final OnboardingController onboarding =
+      widget.onboarding ?? OnboardingController();
   String? accountId;
   @override
   void initState() {
@@ -58,12 +64,13 @@ class _AuthGateState extends State<AuthGate> {
     controller.removeListener(accountChanged);
     if (widget.controller == null) controller.dispose();
     if (widget.legal == null) legal.dispose();
+    if (widget.onboarding == null) onboarding.dispose();
     super.dispose();
   }
 
   @override
   Widget build(BuildContext context) => ListenableBuilder(
-    listenable: Listenable.merge([controller, legal]),
+    listenable: Listenable.merge([controller, legal, onboarding]),
     builder: (context, _) {
       final profile = controller.profile;
       // Only session restoration covers the screen; sign-in keeps the entry visible.
@@ -104,14 +111,34 @@ class _AuthGateState extends State<AuthGate> {
           accountId: profile.id,
         );
       }
+      // First questions: once per account on this device, all optional.
+      if (!onboarding.loaded(profile.id)) {
+        final id = profile.id;
+        WidgetsBinding.instance.addPostFrameCallback((_) {
+          if (mounted) onboarding.load(id);
+        });
+        return StartupPage(label: context.l10n.restoringSession);
+      }
+      if (onboarding.profile(profile.id)?.completed != true) {
+        return OnboardingPage(
+          key: ValueKey('onboarding-${profile.id}'),
+          initial: onboarding.profile(profile.id),
+          askBody: legal.healthGranted(profile.id) == true,
+          onDone: (answers) => onboarding.save(profile.id, answers),
+        );
+      }
       return LegalScope(
         controller: legal,
-        child: AppAppear(
-          key: ValueKey(profile.id),
-          child: ProductShell(
+        child: OnboardingScope(
+          controller: onboarding,
+          accountId: profile.id,
+          child: AppAppear(
             key: ValueKey(profile.id),
-            controller: controller,
-            nutritionRepository: widget.nutritionRepository,
+            child: ProductShell(
+              key: ValueKey(profile.id),
+              controller: controller,
+              nutritionRepository: widget.nutritionRepository,
+            ),
           ),
         ),
       );

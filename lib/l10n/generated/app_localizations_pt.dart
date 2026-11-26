@@ -2628,26 +2628,26 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   }
 
   @override
-  String get dailyRhythm => 'O teu ritmo, todos os dias';
+  String get dailyRhythm => 'No seu ritmo, todos os dias';
 
   @override
   String get strongerDaily => 'UM POUCO MAIS FORTE, TODOS OS DIAS';
 
   @override
-  String get nextMovement => 'O teu próximo movimento';
+  String get nextMovement => 'O seu próximo movimento';
 
   @override
   String get libraryReadOnly =>
       'Biblioteca para consulta. Prática guiada ainda indisponível.';
 
   @override
-  String get yourWeek => 'A tua semana';
+  String get yourWeek => 'A sua semana';
 
   @override
   String get diaryByDate => 'Consultar o diário alimentar por data.';
 
   @override
-  String get yourDay => 'O teu dia';
+  String get yourDay => 'O seu dia';
 
   @override
   String get loadingDayData => 'Consultando os dados reais do dia';
@@ -2726,7 +2726,7 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   }
 
   @override
-  String get whatToday => 'O que te apetece hoje?';
+  String get whatToday => 'O que você quer fazer hoje?';
 
   @override
   String get exploreActivities => 'Caminhar, correr, explorar outra modalidade';
@@ -2740,10 +2740,10 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   }
 
   @override
-  String get findMovement => 'Encontra o teu movimento.';
+  String get findMovement => 'Encontre o seu movimento.';
 
   @override
-  String get atYourPace => 'Com orientação, ao teu ritmo.';
+  String get atYourPace => 'Com orientação, no seu ritmo.';
 
   @override
   String get searchUpper => 'PESQUISAR';
@@ -2850,7 +2850,7 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   String get outdoorsCounts => 'Lá fora também conta.';
 
   @override
-  String get activityIntro => 'Caminha, corre ou regista a tua atividade.';
+  String get activityIntro => 'Caminhe, corra ou registre a sua atividade.';
 
   @override
   String get routeUnavailable =>
@@ -2882,7 +2882,7 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   String get yourProgress => 'Olha o que já construíste.';
 
   @override
-  String get historyWithSource => 'O TEU HISTÓRICO, COM ORIGEM';
+  String get historyWithSource => 'O SEU HISTÓRICO, COM ORIGEM';
 
   @override
   String get chartUnavailable =>
@@ -3320,7 +3320,7 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   String get originalLanguage => 'Idioma original';
 
   @override
-  String get portionYours => 'A porção é tua.';
+  String get portionYours => 'A porção é sua.';
 
   @override
   String get correctIntake => 'Corrigir consumo';
@@ -3888,7 +3888,7 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   String get understood => 'Entendi';
 
   @override
-  String get startingPoint => 'O teu ponto de partida';
+  String get startingPoint => 'O seu ponto de partida';
 
   @override
   String get activityProgress => 'Atividade e evolução';
@@ -3903,11 +3903,11 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   String get evaluationUpper => 'VERSÃO DE AVALIAÇÃO · DISPONIBILIDADE REAL';
 
   @override
-  String get exploreWithoutSetup => 'Podes explorar sem configurar';
+  String get exploreWithoutSetup => 'Você pode explorar sem configurar';
 
   @override
   String get exploreWithoutSetupHint =>
-      'A biblioteca de movimentos e a composição alimentar já podem ser consultadas. Para teus registros particulares de alimentação, entra com Google.';
+      'A biblioteca de movimentos e a composição alimentar já podem ser consultadas. Para os seus registros particulares de alimentação, entre com o Google.';
 
   @override
   String get setupNotAvailable => 'Configuração ainda não disponível';
@@ -3956,11 +3956,11 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
       'Claro, escuro, seguir o aparelho e idioma já estão disponíveis nas preferências. Essas escolhas ficam neste aparelho e são separadas da conta. Unidades, medidas e objetivos ainda não têm edição persistida. Os alimentos preservam nome, base e unidades da fonte até haver tradução revisada.';
 
   @override
-  String get whatToTest => 'O que já podes testar';
+  String get whatToTest => 'O que você já pode testar';
 
   @override
   String get whatToTestHint =>
-      'Entrar com Google, consultar movimentos e alimentos, cadastrar alimento particular e registrar o que consumiste. O Diário permite conferir origem, corrigir e excluir consumo; Privacidade permite consultar e copiar páginas dos teus dados.';
+      'Entrar com o Google, consultar movimentos e alimentos, cadastrar alimento particular e registrar o que você consumiu. O Diário permite conferir origem, corrigir e excluir consumo; Privacidade permite consultar e copiar páginas dos seus dados.';
 
   @override
   String get faq => 'Perguntas frequentes';
@@ -4118,7 +4118,7 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
 
   @override
   String get configTimezoneHint =>
-      'Começa com o deslocamento observado neste aparelho. Você pode usar UTC, um deslocamento como -03:00 ou uma zona como America/Sao_Paulo. Um deslocamento fixo não acompanha mudanças de horário.';
+      'Começa com o fuso observado neste aparelho. Você pode usar UTC, um deslocamento como -03:00 ou uma zona como America/Sao_Paulo. Um deslocamento fixo não acompanha mudanças de horário.';
 
   @override
   String get configAvailabilityHint =>

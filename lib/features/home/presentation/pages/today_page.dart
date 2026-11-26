@@ -6,6 +6,10 @@ import 'package:trainforge/features/nutrition/domain/nutrition.dart';
 import 'package:trainforge/features/nutrition/presentation/daily_summary_controller.dart';
 import 'package:trainforge/shared/widgets/app_loading.dart';
 import 'package:trainforge/shared/widgets/figma_components.dart';
+import 'package:trainforge/features/legal/legal_controller.dart';
+import 'package:trainforge/features/onboarding/onboarding_page.dart';
+import 'package:trainforge/features/onboarding/onboarding_profile.dart';
+import '../widgets/home_cards.dart';
 
 class TodayPage extends StatefulWidget {
   final DailySummaryController controller;
@@ -62,16 +66,48 @@ class _TodayPageState extends State<TodayPage> with WidgetsBindingObserver {
     super.dispose();
   }
 
+  /// Opens the first questions again to fill what is missing; answers stay editable.
+  void completeAnswers(BuildContext context, OnboardingScope? scope) {
+    if (scope == null) return;
+    final controller = scope.notifier!, id = scope.accountId;
+    Navigator.push<void>(
+      context,
+      MaterialPageRoute(
+        builder: (route) => OnboardingPage(
+          initial: scope.profile,
+          askBody: LegalScope.maybeOf(context)?.healthGranted(id) == true,
+          onDone: (answers) {
+            controller.save(id, answers);
+            Navigator.pop(route);
+          },
+        ),
+      ),
+    );
+  }
+
+  bool _showDay = false;
+
   @override
   Widget build(BuildContext context) => ListenableBuilder(
     listenable: widget.controller,
     builder: (context, _) {
       final controller = widget.controller, now = controller.now();
-      final dark = Theme.of(context).brightness == Brightness.dark;
       final snapshot = controller.loading ? null : controller.summary;
       final complete = snapshot?['complete'] == true;
       final int? count = complete ? (snapshot?['entries'] as int?) : null;
       final energy = dailyEnergy(snapshot);
+      final scope = OnboardingScope.maybeOf(context);
+      final answers = scope?.profile;
+      // Failures and partial summaries stay visible; only a quiet, empty day is
+      // hidden. While reloading, keep whatever the last answer showed.
+      if (!controller.loading) {
+        _showDay =
+            (count ?? 0) > 0 ||
+            energy != null ||
+            controller.failed ||
+            (snapshot != null && !complete);
+      }
+      final hasRecords = _showDay;
       final name = widget.name
           .trim()
           .split(RegExp(r'\s+'))
@@ -85,144 +121,107 @@ class _TodayPageState extends State<TodayPage> with WidgetsBindingObserver {
           subtitle:
               '${context.displayLongDate(now)} · ${context.l10n.dailyRhythm}',
           children: [
-            Material(
-              color: dark ? context.tf.surface : TrainForgeTheme.primary,
-              borderRadius: BorderRadius.circular(24),
-              child: InkWell(
-                onTap: widget.openCatalog,
-                borderRadius: BorderRadius.circular(24),
-                child: Padding(
-                  padding: EdgeInsets.all(16),
+            TrainingHeroCard(profile: answers),
+            BuildWorkoutCard(
+              profile: answers,
+              completeAnswers: () => completeAnswers(context, scope),
+            ),
+            // Week strip and day numbers only once there is something recorded.
+            if (hasRecords) ...[
+              Text(
+                context.l10n.yourWeek,
+                style: TextStyle(fontSize: 17, fontWeight: FontWeight.w700),
+              ),
+              Text(
+                context.l10n.diaryByDate,
+                style: TextStyle(
+                  fontSize: 12,
+                  height: 1.35,
+                  color: context.tf.muted,
+                ),
+              ),
+              _Week(
+                now: now,
+                onSelected: (date) {
+                  if (widget.openDay != null) {
+                    widget.openDay!(date);
+                  } else {
+                    widget.openNutrition();
+                  }
+                },
+              ),
+              Text(
+                context.l10n.yourDay,
+                style: TextStyle(fontSize: 17, fontWeight: FontWeight.w700),
+              ),
+              if (controller.loading) ...[
+                AppMetricSkeleton(label: context.l10n.loadingDayData),
+                AppProgress(label: context.l10n.loadingDayRecords),
+              ] else if (controller.failed)
+                FigmaSection(
                   child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
+                    crossAxisAlignment: CrossAxisAlignment.stretch,
                     children: [
-                      Text(
-                        context.l10n.strongerDaily,
-                        style: TextStyle(
-                          fontSize: 10,
-                          fontWeight: FontWeight.w700,
-                          color: dark
-                              ? context.tf.primary
-                              : TrainForgeTheme.accent,
+                      Semantics(
+                        liveRegion: true,
+                        child: Text(
+                          context.l10n.dayUpdateFailed,
+                          style: TextStyle(
+                            fontSize: 15,
+                            fontWeight: FontWeight.w700,
+                          ),
                         ),
                       ),
-                      SizedBox(height: 6),
-                      Text(
-                        context.l10n.nextMovement,
-                        style: TextStyle(
-                          fontSize: 24,
-                          fontWeight: FontWeight.w700,
-                          height: 1.35,
-                          color: dark ? context.tf.ink : Colors.white,
+                      SizedBox(height: 8),
+                      Text(context.l10n.dayUnconfirmed),
+                      SizedBox(height: 12),
+                      OutlinedButton(
+                        onPressed: controller.load,
+                        child: Text(context.l10n.retryUpdate),
+                      ),
+                    ],
+                  ),
+                )
+              else ...[
+                IntrinsicHeight(
+                  child: Row(
+                    crossAxisAlignment: CrossAxisAlignment.stretch,
+                    children: [
+                      Expanded(
+                        child: _Metric(
+                          value: energy ?? '—',
+                          label: energy == null
+                              ? context.l10n.energyNoSubtotal
+                              : context.l10n.energySourceMethod,
+                          color: context.tf.nutrition,
+                          onTap: widget.openNutrition,
                         ),
                       ),
-                      SizedBox(height: 6),
-                      Text(
-                        context.l10n.libraryReadOnly,
-                        style: TextStyle(
-                          fontSize: 12,
-                          height: 1.35,
-                          color: dark ? context.tf.ink : Colors.white,
+                      SizedBox(width: 10),
+                      Expanded(
+                        child: _Metric(
+                          value: '—',
+                          label: context.l10n.activityUnavailable,
+                          color: context.tf.blue,
+                          onTap: widget.openActivity,
                         ),
                       ),
                     ],
                   ),
                 ),
-              ),
-            ),
-            Text(
-              context.l10n.yourWeek,
-              style: TextStyle(fontSize: 17, fontWeight: FontWeight.w700),
-            ),
-            Text(
-              context.l10n.diaryByDate,
-              style: TextStyle(
-                fontSize: 12,
-                height: 1.35,
-                color: context.tf.muted,
-              ),
-            ),
-            _Week(
-              now: now,
-              onSelected: (date) {
-                if (widget.openDay != null) {
-                  widget.openDay!(date);
-                } else {
-                  widget.openNutrition();
-                }
-              },
-            ),
-            Text(
-              context.l10n.yourDay,
-              style: TextStyle(fontSize: 17, fontWeight: FontWeight.w700),
-            ),
-            if (controller.loading) ...[
-              AppMetricSkeleton(label: context.l10n.loadingDayData),
-              AppProgress(label: context.l10n.loadingDayRecords),
-            ] else if (controller.failed)
-              FigmaSection(
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.stretch,
-                  children: [
-                    Semantics(
-                      liveRegion: true,
-                      child: Text(
-                        context.l10n.dayUpdateFailed,
-                        style: TextStyle(
-                          fontSize: 15,
-                          fontWeight: FontWeight.w700,
-                        ),
-                      ),
-                    ),
-                    SizedBox(height: 8),
-                    Text(context.l10n.dayUnconfirmed),
-                    SizedBox(height: 12),
-                    OutlinedButton(
-                      onPressed: controller.load,
-                      child: Text(context.l10n.retryUpdate),
-                    ),
-                  ],
-                ),
-              )
-            else ...[
-              IntrinsicHeight(
-                child: Row(
-                  crossAxisAlignment: CrossAxisAlignment.stretch,
-                  children: [
-                    Expanded(
-                      child: _Metric(
-                        value: energy ?? '—',
-                        label: energy == null
-                            ? context.l10n.energyNoSubtotal
-                            : context.l10n.energySourceMethod,
-                        color: context.tf.nutrition,
-                        onTap: widget.openNutrition,
-                      ),
-                    ),
-                    SizedBox(width: 10),
-                    Expanded(
-                      child: _Metric(
-                        value: '—',
-                        label: context.l10n.activityUnavailable,
-                        color: context.tf.blue,
-                        onTap: widget.openActivity,
-                      ),
-                    ),
-                  ],
-                ),
-              ),
-              if (snapshot != null && !complete)
-                Text(
-                  context.l10n.summaryLimit,
-                  style: TextStyle(fontSize: 12, height: 1.35),
-                ),
-              if (energy != null &&
-                  snapshot?['measuredEntries'] is int &&
-                  snapshot?['estimatedEntries'] is int)
-                Text(
-                  '${context.l10n.quantityEvidenceCounts(snapshot!["measuredEntries"] as int, snapshot["estimatedEntries"] as int)}. ${context.l10n.originMethodDiary}',
-                  style: TextStyle(fontSize: 12, height: 1.35),
-                ),
+                if (snapshot != null && !complete)
+                  Text(
+                    context.l10n.summaryLimit,
+                    style: TextStyle(fontSize: 12, height: 1.35),
+                  ),
+                if (energy != null &&
+                    snapshot?['measuredEntries'] is int &&
+                    snapshot?['estimatedEntries'] is int)
+                  Text(
+                    '${context.l10n.quantityEvidenceCounts(snapshot!["measuredEntries"] as int, snapshot["estimatedEntries"] as int)}. ${context.l10n.originMethodDiary}',
+                    style: TextStyle(fontSize: 12, height: 1.35),
+                  ),
+              ],
             ],
             FigmaActionCard(
               title: context.l10n.myNutrition,
@@ -239,13 +238,14 @@ class _TodayPageState extends State<TodayPage> with WidgetsBindingObserver {
                   : context.l10n.confirmedDayCount(count),
               onTap: widget.openNutrition,
             ),
-            FigmaActionCard(
-              title: context.l10n.whatToday,
-              subtitle: context.l10n.exploreActivities,
-              asset: 'activity',
-              color: context.tf.yellow,
-              onTap: widget.openActivity,
-            ),
+            if (hasRecords)
+              FigmaActionCard(
+                title: context.l10n.whatToday,
+                subtitle: context.l10n.exploreActivities,
+                asset: 'activity',
+                color: context.tf.yellow,
+                onTap: widget.openActivity,
+              ),
             TextButton(
               onPressed: controller.loading ? null : controller.load,
               child: Text(context.l10n.updateDay),

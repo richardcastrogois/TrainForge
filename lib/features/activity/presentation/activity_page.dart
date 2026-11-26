@@ -455,7 +455,12 @@ class _ActivityPageState extends State<ActivityPage>
       child: ListView.builder(
         key: ValueKey(detail?.snapshot.id ?? 'activity-feed'),
         physics: const AlwaysScrollableScrollPhysics(),
-        padding: const EdgeInsets.fromLTRB(24, 0, 24, 24),
+        padding: EdgeInsets.fromLTRB(
+          24,
+          0,
+          24,
+          24 + MediaQuery.paddingOf(context).bottom,
+        ),
         itemCount: rows.length,
         itemBuilder: (context, index) => Padding(
           padding: const EdgeInsets.only(bottom: 12),

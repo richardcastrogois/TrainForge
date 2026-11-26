@@ -78,7 +78,15 @@ const _labels = <String, Map<String, String>>{
 /// Place → level → sessions; everything offline from the bundled research asset.
 class TrainingLibraryPage extends StatefulWidget {
   final Future<String> Function()? read;
-  const TrainingLibraryPage({super.key, this.read});
+
+  /// Preselected from the first answers; the person can still change both.
+  final String? initialPlace, initialCell;
+  const TrainingLibraryPage({
+    super.key,
+    this.read,
+    this.initialPlace,
+    this.initialCell,
+  });
   @override
   State<TrainingLibraryPage> createState() => _TrainingLibraryPageState();
 }
@@ -87,7 +95,7 @@ class _TrainingLibraryPageState extends State<TrainingLibraryPage> {
   late final Future<TrainingLibrary> library = TrainingLibrary.load(
     widget.read,
   );
-  String? place, cell;
+  late String? place = widget.initialPlace, cell = widget.initialCell;
 
   @override
   Widget build(BuildContext context) => Scaffold(

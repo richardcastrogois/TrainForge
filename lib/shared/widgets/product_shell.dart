@@ -13,6 +13,7 @@ import 'package:trainforge/features/nutrition/presentation/daily_summary_control
 import 'package:trainforge/features/nutrition/presentation/nutrition_page.dart';
 import 'package:trainforge/features/catalog/presentation/catalog_page.dart';
 import 'account_page.dart';
+import 'package:trainforge/features/onboarding/onboarding_profile.dart';
 import 'package:trainforge/features/training_configuration/presentation/training_configuration_page.dart';
 import 'figma_bottom_nav.dart';
 import 'plans_overview.dart';
@@ -40,6 +41,9 @@ class ProductShell extends StatefulWidget {
 
 class _ProductShellState extends State<ProductShell>
     with WidgetsBindingObserver, SingleTickerProviderStateMixin {
+  /// Floating bar height plus its margins.
+  static const _navSpace = 82.0;
+
   TrainForgeDestination selected = TrainForgeDestination.today;
   final visited = {TrainForgeDestination.today};
   late final String accountId;
@@ -123,6 +127,16 @@ class _ProductShellState extends State<ProductShell>
     if (mounted && widget.controller.profile?.id == accountId) {
       await daily.load();
     }
+  }
+
+  /// The gate shows the questions again once the answers are forgotten.
+  VoidCallback? redoFirstQuestions(BuildContext context) {
+    final scope = OnboardingScope.maybeOf(context);
+    if (scope == null) return null;
+    return () {
+      Navigator.of(context).popUntil((route) => route.isFirst);
+      scope.notifier!.reset(scope.accountId);
+    };
   }
 
   void openCatalog() => Navigator.push<void>(
@@ -223,6 +237,7 @@ class _ProductShellState extends State<ProductShell>
                       MaterialPageRoute(
                         builder: (_) => AccountPage(
                           controller: widget.controller,
+                          redoFirstQuestions: redoFirstQuestions(context),
                           configure: configuration == null
                               ? null
                               : () => openTrainingConfiguration(
@@ -249,30 +264,47 @@ class _ProductShellState extends State<ProductShell>
                       ),
                     ),
                   Expanded(
-                    child: FadeTransition(
-                      opacity: tabMotion.drive(
-                        CurveTween(curve: Curves.easeOutCubic),
-                      ),
-                      child: IndexedStack(
-                        index: selected.index,
-                        children: [
-                          for (final value in TrainForgeDestination.values)
-                            TickerMode(
-                              enabled: value == selected,
-                              child: ExcludeFocus(
-                                excluding: value != selected,
-                                child: page(value),
+                    child: Stack(
+                      children: [
+                        Positioned.fill(
+                          // Pages leave room at the end for the floating bar.
+                          child: MediaQuery(
+                            data: MediaQuery.of(context).copyWith(
+                              padding: MediaQuery.paddingOf(
+                                context,
+                              ).copyWith(bottom: _navSpace),
+                            ),
+                            child: FadeTransition(
+                              opacity: tabMotion.drive(
+                                CurveTween(curve: Curves.easeOutCubic),
+                              ),
+                              child: IndexedStack(
+                                index: selected.index,
+                                children: [
+                                  for (final value
+                                      in TrainForgeDestination.values)
+                                    TickerMode(
+                                      enabled: value == selected,
+                                      child: ExcludeFocus(
+                                        excluding: value != selected,
+                                        child: page(value),
+                                      ),
+                                    ),
+                                ],
                               ),
                             ),
-                        ],
-                      ),
-                    ),
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.fromLTRB(24, 16, 24, 0),
-                    child: FigmaBottomNav(
-                      selected: selected,
-                      onSelected: select,
+                          ),
+                        ),
+                        Positioned(
+                          left: 24,
+                          right: 24,
+                          bottom: 8,
+                          child: FigmaBottomNav(
+                            selected: selected,
+                            onSelected: select,
+                          ),
+                        ),
+                      ],
                     ),
                   ),
                 ],

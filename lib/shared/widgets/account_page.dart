@@ -7,6 +7,7 @@ import 'package:trainforge/core/l10n/localized_context.dart';
 import 'evaluation_guide_page.dart';
 import 'content_sources_page.dart';
 import 'package:trainforge/core/theme/appearance_page.dart';
+import 'package:trainforge/features/onboarding/onboarding_page.dart';
 import 'package:trainforge/shared/widgets/app_loading.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
@@ -18,7 +19,15 @@ import 'figma_components.dart';
 class AccountPage extends StatelessWidget {
   final AuthController controller;
   final VoidCallback? configure;
-  const AccountPage({super.key, required this.controller, this.configure});
+
+  /// Forgets the first answers on this device and shows the questions again.
+  final VoidCallback? redoFirstQuestions;
+  const AccountPage({
+    super.key,
+    required this.controller,
+    this.configure,
+    this.redoFirstQuestions,
+  });
   void privacy(BuildContext context) => Navigator.push<void>(
     context,
     MaterialPageRoute(
@@ -148,6 +157,15 @@ class AccountPage extends StatelessWidget {
                                 EvaluationTopic.firstAccess,
                               ),
                         ),
+                        if (redoFirstQuestions != null) ...[
+                          SizedBox(height: 12),
+                          FigmaActionCard(
+                            title: onboardingLabel(context, 'redoTitle'),
+                            subtitle: onboardingLabel(context, 'redoHint'),
+                            asset: 'user',
+                            onTap: redoFirstQuestions!,
+                          ),
+                        ],
                         SizedBox(height: 12),
                         FigmaActionCard(
                           title: context.l10n.preferences,
