@@ -142,3 +142,11 @@ Problemas vistos pelo autor e correções:
   - Decisões assumidas sem o autor: só água, volumes 200/500, sem meta nem referência EFSA e sem lembretes. Ver [hidratação](melhoria-hidratacao.md).
 - **Foto do perfil:** a foto do Google é salva no login e buscada em silêncio uma vez para quem já estava logado. Em "Perfil e ajustes → Foto do perfil" dá para escolher da galeria, tirar uma foto, voltar à do Google ou remover.
   - A foto fica só no aparelho, em pasta privada, e é apagada junto com a conta. A API não guarda foto.
+
+### Terceira revisão do autor (27/11/2026)
+
+- **Liquid Glass no fundo da barra, não no ícone.**
+  - A barra é um `GlassContainer` premium do `liquid_glass_widgets`: refração do conteúdo que passa atrás, luz na borda e aberração cromática leve. Os shaders são pré-aquecidos em `main.dart`.
+  - O círculo da página aberta voltou a ser verde sólido.
+  - O pacote não recorta o vidro, então o entalhe saiu. Alto contraste usa barra opaca.
+- **Novo ícone de Alimentação:** garfo e copo com linha de água (`assets/figma/food-drink.svg`).
