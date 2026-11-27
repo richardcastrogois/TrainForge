@@ -12,6 +12,7 @@ A [visão R01–R18](visao-produto.md) preserva o produto pretendido: treino, mo
 - [Método de pesquisa de treinos](metodo-pesquisa-treinos.md): programas comprovados, com autor humano identificado e revisão CREF; sem treino gerado por IA.
 - [Pesquisa: registrar refeição por voz e por foto](pesquisa-registro-voz-e-foto.md): transcrição e extração locais e gratuitas, foto/OCR no aparelho, sempre com confirmação; pesquisa ainda não executada.
 - [Melhoria: APK simples e didático](melhoria-apk-simplificado.md): inventário, decisão do que ocultar ou tirar e registro do que ficou fora, sem perder código.
+- [Melhoria: navegação em 5 posições e tela Hoje em dois cenários](melhoria-navegacao-e-inicio.md): pesquisa de 10 apps líderes, barra Hoje · Treinos · + · Alimentação · Evolução, perfil na foto, primeiro uso com uma única ação; aprovado em 27/11, não implementado.
 
 Planejamento descreve a intenção e seus critérios. Não certifica que uma jornada, licença, capacidade clínica ou infraestrutura já foi entregue. As antigas filas “próxima V1-001” e “Go futuro” foram substituídas pelo backlog e pelo handoff. Os documentos originais continuam no [acervo documental](../historico/README.md).
 

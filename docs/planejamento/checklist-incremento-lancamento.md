@@ -95,7 +95,7 @@ Criado em **20/11/2026**. Contexto e motivos estão no [plano do incremento](pla
 - [ ] **C41** Voz: aproveitar a quantidade falada com unidade clara (g, ml, litro) e abrir o formulário preenchido para conferir (aprovado pelo autor em 23/11)
 - [ ] **C42** Treinos prontos: explicar cada nível com o texto da pesquisa e ajudar a escolher lugar e nível ("Não sei qual escolher", 2–3 perguntas como ponto de partida, aprovado em 23/11); mostrar o critério de entrada da fonte quando houver
 - [ ] **C43** [Hidratação](melhoria-hidratacao.md): registro de água com um toque reaproveitando o consumo de "Água" do catálogo; decisões do autor listadas no plano
-- [ ] **C44** Redesenho didático para pessoas mais velhas e leigas (telas iniciais e principais): menos listas, uma ação principal por tela, linguagem simples; feito ao vivo depois do C40
+- [ ] **C44** Redesenho didático para pessoas mais velhas e leigas (telas iniciais e principais): menos listas, uma ação principal por tela, linguagem simples; feito ao vivo depois do C40; estrutura aprovada em 27/11: [navegação em 5 posições e Hoje em dois cenários](melhoria-navegacao-e-inicio.md)
 - [ ] **A17** (autor, até 30/11) Testar a amostra de mídia e decidir a compra MoveKit Home ou Gym ([revisão de 23/11](../conteudo/pesquisa-treinos/midia-orcamento-20261121.md#revisão-de-2311-decisão-para-comprar-até-3011))
 
 ---
