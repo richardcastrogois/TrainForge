@@ -39,8 +39,11 @@ class FigmaBottomNav extends StatelessWidget {
   });
 
   /// Bar height plus the part of the "+" above it.
-  static const height = 92.0;
-  static const _bar = 64.0, _add = 31.0;
+  static const height = 82.0;
+  static const _bar = 64.0, _add = 30.0;
+
+  /// Orange that keeps 3:1 against the light glass (non-text contrast).
+  static const activeOrange = Color(0xffd95c0b);
 
   /// Slot order on screen; null is the "+".
   static const slots = <TrainForgeDestination?>[
@@ -91,12 +94,27 @@ class FigmaBottomNav extends StatelessWidget {
               horizontalPadding: 0,
               verticalPadding: 0,
               iconSize: 26,
-              selectedIconColor: context.tf.primary,
+              // The icon under the lens turns orange, the app's second colour.
+              selectedIconColor: dark
+                  ? TrainForgeTheme.highlight
+                  : FigmaBottomNav.activeOrange,
               unselectedIconColor: context.tf.ink,
-              indicatorColor: context.tf.primary.withValues(
-                alpha: dark ? .3 : .14,
+              indicatorColor: TrainForgeTheme.highlight.withValues(
+                alpha: dark ? .22 : .16,
               ),
               quality: GlassQuality.premium,
+              // Liquid glass with a little frost, so the icons stay readable
+              // over busy content (as iOS does).
+              settings: LiquidGlassSettings(
+                glassColor: context.tf.surface.withValues(
+                  alpha: dark ? .18 : .26,
+                ),
+                blur: 9,
+                thickness: 24,
+                refractiveIndex: 1.25,
+                lightIntensity: .8,
+                saturation: 1.3,
+              ),
             ),
           ),
           Positioned(top: 0, child: _addButton(context)),
@@ -120,14 +138,11 @@ class FigmaBottomNav extends StatelessWidget {
                 HapticFeedback.lightImpact();
                 onAdd!();
               },
-        child: Container(
-          width: _add * 2,
-          height: _add * 2,
-          decoration: BoxDecoration(
-            color: TrainForgeTheme.highlight,
+        // Orange liquid glass, no border.
+        child: DecoratedBox(
+          decoration: const BoxDecoration(
             shape: BoxShape.circle,
-            border: Border.all(color: context.tf.background, width: 4),
-            boxShadow: const [
+            boxShadow: [
               BoxShadow(
                 color: Color(0x40183e32),
                 blurRadius: 12,
@@ -135,7 +150,23 @@ class FigmaBottomNav extends StatelessWidget {
               ),
             ],
           ),
-          child: const Icon(Icons.add, size: 32, color: TrainForgeTheme.ink),
+          child: GlassContainer(
+            width: _add * 2,
+            height: _add * 2,
+            shape: const LiquidOval(),
+            useOwnLayer: true,
+            quality: GlassQuality.premium,
+            settings: LiquidGlassSettings(
+              glassColor: TrainForgeTheme.highlight.withValues(alpha: .88),
+              blur: 6,
+              thickness: 22,
+              refractiveIndex: 1.25,
+              lightIntensity: .9,
+            ),
+            child: const Center(
+              child: Icon(Icons.add, size: 32, color: TrainForgeTheme.ink),
+            ),
+          ),
         ),
       ),
     ),

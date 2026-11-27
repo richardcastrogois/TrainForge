@@ -253,11 +253,12 @@ class _TrainingHeroCardState extends State<TrainingHeroCard> {
                           bottom: 14,
                           height: 58,
                           // Looks like a button; the whole card is the tap target.
-                          child: DecoratedBox(
-                            decoration: BoxDecoration(
-                              color: TrainForgeTheme.highlight,
-                              borderRadius: BorderRadius.circular(18),
+                          child: GlassSurface(
+                            borderRadius: BorderRadius.circular(18),
+                            tint: TrainForgeTheme.highlight.withValues(
+                              alpha: .92,
                             ),
+                            blur: 10,
                             child: Padding(
                               padding: const EdgeInsets.symmetric(
                                 horizontal: 12,

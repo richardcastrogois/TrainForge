@@ -5,6 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:trainforge/core/theme/trainforge_theme.dart';
 import 'package:trainforge/features/nutrition/presentation/daily_summary_controller.dart';
 import 'figma_components.dart';
+import 'glass_surface.dart';
 import 'shell_labels.dart';
 import 'package:trainforge/features/activity/domain/activity_repository.dart';
 import 'package:trainforge/features/activity/presentation/activity_page.dart';
@@ -119,13 +120,12 @@ class DailyOverview extends StatelessWidget {
                 child: Text(context.l10n.updateDayRecords),
               ),
             ],
-            SizedBox(
-              height: 60,
-              child: FilledButton.icon(
-                onPressed: openNutrition,
-                icon: const Icon(Icons.add, size: 26),
-                label: Text(l('addMeal'), style: const TextStyle(fontSize: 18)),
-              ),
+            LiquidButton(
+              label: l('addMeal'),
+              icon: Icons.add,
+              color: context.tf.primary,
+              foreground: context.tf.onPrimary,
+              onPressed: openNutrition,
             ),
             if (openVoice != null || openPhoto != null)
               Row(
@@ -246,7 +246,12 @@ class EvolutionPage extends StatelessWidget {
             style: const TextStyle(fontSize: 17, height: 1.35),
           ),
           const SizedBox(height: 14),
-          FilledButton(onPressed: openWorkouts, child: Text(l('goWorkouts'))),
+          LiquidButton(
+            label: l('goWorkouts'),
+            color: context.tf.primary,
+            foreground: context.tf.onPrimary,
+            onPressed: openWorkouts,
+          ),
         ],
       ),
     );
