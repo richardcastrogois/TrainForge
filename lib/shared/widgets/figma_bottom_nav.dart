@@ -1,5 +1,3 @@
-import 'dart:ui';
-
 import 'shell_labels.dart';
 import 'package:liquid_glass_widgets/liquid_glass_widgets.dart';
 import 'package:trainforge/core/motion/app_motion.dart';
@@ -25,10 +23,11 @@ enum TrainForgeDestination {
 /// icons only (names stay for screen readers and long-press tooltips).
 ///
 /// * The "+" is bigger and stays raised in the middle.
-/// * The open page rises as a liquid-glass lens sitting in a smooth notch.
-///   Moving between pages (tap or drag) it glides; near the "+" it sinks into
-///   the bar and comes back up on the other side, so it never crosses over
-///   the "+".
+/// * The bar itself is Liquid Glass (refraction, rim light), not a plain
+///   blur: it bends what scrolls behind it.
+/// * The open page rises as a green circle over the bar. Moving between
+///   pages (tap or drag) it glides; near the "+" it sinks into the bar and
+///   comes back up on the other side, so it never crosses over the "+".
 /// * Pressing and dragging along the bar carries the lens under the finger;
 ///   releasing opens that page. Reduced motion removes the glide.
 class FigmaBottomNav extends StatefulWidget {
@@ -60,7 +59,7 @@ const _slots = <TrainForgeDestination?>[
 
 // Geometry (logical pixels). The bar starts at [_barTop].
 const _count = 5, _barTop = 30.0, _pad = 6.0;
-const _lens = 25.0, _lensY = 30.0, _notch = 34.0;
+const _lens = 25.0, _lensY = 30.0;
 const _add = 31.0, _addY = 26.0;
 
 /// 1 away from the "+", 0 right over it: the lens sinks there.
@@ -113,9 +112,7 @@ class _FigmaBottomNavState extends State<FigmaBottomNav> {
     final reduced = AppMotion.reduced(context);
     final dark = Theme.of(context).brightness == Brightness.dark;
     final highContrast = MediaQuery.maybeHighContrastOf(context) ?? false;
-    final tint = highContrast
-        ? context.tf.surface
-        : context.tf.surface.withValues(alpha: dark ? .72 : .8);
+    final tint = context.tf.surface.withValues(alpha: dark ? .3 : .38);
     final dragging = _drag != null;
     return SizedBox(
       height: FigmaBottomNav.height,
@@ -147,11 +144,7 @@ class _FigmaBottomNavState extends State<FigmaBottomNav> {
                   children: [
                     Positioned.fill(
                       top: _barTop,
-                      child: _GlassNotchBar(
-                        cx: xOf(position),
-                        notch: _notch * visible,
-                        tint: tint,
-                      ),
+                      child: _LiquidBar(tint: tint, plain: highContrast),
                     ),
                     Positioned(
                       left: _pad,
@@ -283,154 +276,81 @@ Widget navIcon(TrainForgeDestination destination, Color color, double size) {
     ),
   );
   if (destination != TrainForgeDestination.food) return svg(size);
-  // Food and drinks share the tab: cutlery with a drop.
+  // Food and drinks share the tab: a fork and a glass.
   return SizedBox.square(
     dimension: size,
-    child: Stack(
-      clipBehavior: Clip.none,
-      children: [
-        Positioned(left: -2, top: 0, child: svg(size * .9)),
-        Positioned(
-          right: -4,
-          bottom: -2,
-          child: Icon(Icons.water_drop, size: size * .5, color: color),
-        ),
-      ],
+    child: SvgPicture.asset(
+      'assets/figma/food-drink.svg',
+      excludeFromSemantics: true,
+      colorFilter: ColorFilter.mode(color, BlendMode.srcIn),
     ),
   );
 }
 
-/// Liquid-glass lens tinted with the brand green, the open page's icon on it.
+/// The open page: solid brand-green circle with its icon in white.
 class _Lens extends StatelessWidget {
   final TrainForgeDestination destination;
   const _Lens({required this.destination});
   @override
-  Widget build(BuildContext context) => DecoratedBox(
+  Widget build(BuildContext context) => Container(
+    width: _lens * 2,
+    height: _lens * 2,
     decoration: BoxDecoration(
+      color: context.tf.primary,
       shape: BoxShape.circle,
       boxShadow: [
         BoxShadow(
-          color: context.tf.primary.withValues(alpha: .3),
+          color: context.tf.primary.withValues(alpha: .35),
           blurRadius: 10,
           offset: const Offset(0, 4),
         ),
       ],
     ),
-    child: GlassContainer(
-      width: _lens * 2,
-      height: _lens * 2,
-      shape: const LiquidOval(),
-      useOwnLayer: true,
-      quality: GlassQuality.premium,
-      // Brand green glass: refracts what is behind, keeps the icon readable.
-      settings: LiquidGlassSettings(
-        glassColor: context.tf.primary.withValues(alpha: .8),
-        thickness: 22,
-        blur: 4,
-        refractiveIndex: 1.3,
-        lightIntensity: .7,
-      ),
-      child: Center(child: navIcon(destination, Colors.white, 26)),
-    ),
+    child: Center(child: navIcon(destination, Colors.white, 26)),
   );
 }
 
-/// Rounded glass bar with a smooth notch at [cx] ([notch] 0 = no notch).
-class _GlassNotchBar extends StatelessWidget {
-  final double cx, notch;
+/// Liquid Glass capsule (refraction, light rim). With high contrast it is
+/// an opaque surface instead.
+class _LiquidBar extends StatelessWidget {
   final Color tint;
-  const _GlassNotchBar({
-    required this.cx,
-    required this.notch,
-    required this.tint,
-  });
-
+  final bool plain;
+  const _LiquidBar({required this.tint, required this.plain});
   @override
   Widget build(BuildContext context) {
-    final clipper = _NotchClipper(cx, notch);
-    return CustomPaint(
-      painter: _ShadowPainter(clipper),
-      child: ClipPath(
-        clipper: clipper,
-        child: BackdropFilter(
-          filter: ImageFilter.blur(sigmaX: 18, sigmaY: 18),
-          child: CustomPaint(
-            painter: _GlassPainter(clipper, tint),
-            child: const SizedBox.expand(),
-          ),
+    const radius = 34.0;
+    final shadow = BoxDecoration(
+      borderRadius: BorderRadius.circular(radius),
+      boxShadow: const [
+        BoxShadow(
+          color: Color(0x2b183e32),
+          blurRadius: 18,
+          offset: Offset(0, 6),
         ),
+      ],
+    );
+    if (plain) {
+      return DecoratedBox(
+        decoration: shadow.copyWith(color: context.tf.surface),
+      );
+    }
+    return DecoratedBox(
+      decoration: shadow,
+      child: GlassContainer(
+        shape: const LiquidRoundedSuperellipse(borderRadius: radius),
+        useOwnLayer: true,
+        quality: GlassQuality.premium,
+        settings: LiquidGlassSettings(
+          glassColor: tint,
+          thickness: 26,
+          blur: 2.5,
+          refractiveIndex: 1.28,
+          lightIntensity: .9,
+          saturation: 1.4,
+          chromaticAberration: .02,
+        ),
+        child: const SizedBox.expand(),
       ),
     );
   }
-}
-
-class _NotchClipper extends CustomClipper<Path> {
-  final double cx, notch;
-  _NotchClipper(this.cx, this.notch);
-
-  @override
-  Path getClip(Size size) {
-    final host = Offset.zero & size;
-    final rounded = Path()
-      ..addRRect(RRect.fromRectAndRadius(host, const Radius.circular(32)));
-    if (notch < 2) return rounded;
-    // Flutter's notch draws smooth shoulders into the top edge.
-    final notched = const CircularNotchedRectangle().getOuterPath(
-      host,
-      Rect.fromCircle(center: Offset(cx, _lensY - _barTop), radius: notch),
-    );
-    return Path.combine(PathOperation.intersect, rounded, notched);
-  }
-
-  @override
-  bool shouldReclip(_NotchClipper oldClipper) =>
-      oldClipper.cx != cx || oldClipper.notch != notch;
-}
-
-class _ShadowPainter extends CustomPainter {
-  final _NotchClipper clipper;
-  _ShadowPainter(this.clipper);
-  @override
-  void paint(Canvas canvas, Size size) => canvas.drawShadow(
-    clipper.getClip(size),
-    const Color(0xff183e32),
-    6,
-    false,
-  );
-  @override
-  bool shouldRepaint(_ShadowPainter oldDelegate) =>
-      oldDelegate.clipper.shouldReclip(clipper);
-}
-
-class _GlassPainter extends CustomPainter {
-  final _NotchClipper clipper;
-  final Color tint;
-  _GlassPainter(this.clipper, this.tint);
-  @override
-  void paint(Canvas canvas, Size size) {
-    final path = clipper.getClip(size);
-    canvas.drawPath(
-      path,
-      Paint()
-        ..shader = LinearGradient(
-          begin: Alignment.topCenter,
-          end: Alignment.bottomCenter,
-          colors: [
-            Color.alphaBlend(Colors.white.withValues(alpha: .25), tint),
-            tint,
-          ],
-        ).createShader(Offset.zero & size),
-    );
-    canvas.drawPath(
-      path,
-      Paint()
-        ..style = PaintingStyle.stroke
-        ..strokeWidth = 1.2
-        ..color = Colors.white.withValues(alpha: .6),
-    );
-  }
-
-  @override
-  bool shouldRepaint(_GlassPainter oldDelegate) =>
-      oldDelegate.clipper.shouldReclip(clipper) || oldDelegate.tint != tint;
 }
