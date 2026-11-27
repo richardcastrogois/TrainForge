@@ -150,3 +150,12 @@ Problemas vistos pelo autor e correções:
   - O círculo da página aberta voltou a ser verde sólido.
   - O pacote não recorta o vidro, então o entalhe saiu. Alto contraste usa barra opaca.
 - **Novo ícone de Alimentação:** garfo e copo com linha de água (`assets/figma/food-drink.svg`).
+
+### Quarta revisão do autor (27/11/2026, referência: barra do Telegram no iOS 26)
+
+- A barra passou a ser o `GlassTabBar.bottom` do `liquid_glass_widgets`, o padrão do iOS 26:
+  - parada, a aba aberta fica numa pílula de vidro;
+  - ao pressionar e arrastar, uma lente de vidro líquido cresce, segue o dedo e amplia o que está embaixo;
+  - ao soltar, abre a aba e a lente volta a ser pílula.
+- **Só o "+" fica saltado.** O espaço dele na barra abre o painel do "+" e nunca vira página. O círculo verde que subia na aba aberta saiu.
+- Cada ícone é desenhado duas vezes pelo pacote (a lente usa uma cópia própria). Por isso os testes usam o primeiro ícone encontrado.

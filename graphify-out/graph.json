@@ -44190,6 +44190,94 @@
       "_origin": "ast"
     },
     {
+      "id": "main",
+      "label": "main.dart",
+      "file_type": "code",
+      "source_file": "main.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "main_main",
+      "label": "main",
+      "file_type": "code",
+      "source_file": "main.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "shared_widgets_food_catalog_credits_page",
+      "label": "food_catalog_credits_page.dart",
+      "file_type": "code",
+      "source_file": "shared/widgets/food_catalog_credits_page.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "shared_widgets_food_catalog_credits_page_foodcatalogcreditspage",
+      "label": "FoodCatalogCreditsPage",
+      "file_type": "code",
+      "source_file": "shared/widgets/food_catalog_credits_page.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "shared_widgets_food_catalog_credits_page_foodcatalogcreditspagestate",
+      "label": "_FoodCatalogCreditsPageState",
+      "file_type": "code",
+      "source_file": "shared/widgets/food_catalog_credits_page.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "shared_widgets_food_catalog_credits_page_manifest",
+      "label": "manifest",
+      "file_type": "code",
+      "source_file": "shared/widgets/food_catalog_credits_page.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "shared_widgets_food_catalog_credits_page_createstate",
+      "label": "createState",
+      "file_type": "code",
+      "source_file": "shared/widgets/food_catalog_credits_page.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "shared_widgets_food_catalog_credits_page_load",
+      "label": "_load",
+      "file_type": "code",
+      "source_file": "shared/widgets/food_catalog_credits_page.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "shared_widgets_food_catalog_credits_page_label",
+      "label": "label",
+      "file_type": "code",
+      "source_file": "shared/widgets/food_catalog_credits_page.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "shared_widgets_food_catalog_credits_page_download",
+      "label": "download",
+      "file_type": "code",
+      "source_file": "shared/widgets/food_catalog_credits_page.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "shared_widgets_food_catalog_credits_page_build",
+      "label": "build",
+      "file_type": "code",
+      "source_file": "shared/widgets/food_catalog_credits_page.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
       "id": "features_legal_legal_documents",
       "label": "legal_documents.dart",
       "file_type": "code",
@@ -44326,22 +44414,6 @@
       "_origin": "ast"
     },
     {
-      "id": "main",
-      "label": "main.dart",
-      "file_type": "code",
-      "source_file": "main.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "main_main",
-      "label": "main",
-      "file_type": "code",
-      "source_file": "main.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
       "id": "shared_widgets_figma_bottom_nav",
       "label": "figma_bottom_nav.dart",
       "file_type": "code",
@@ -44366,24 +44438,8 @@
       "_origin": "ast"
     },
     {
-      "id": "shared_widgets_figma_bottom_nav_figmabottomnavstate",
-      "label": "_FigmaBottomNavState",
-      "file_type": "code",
-      "source_file": "shared/widgets/figma_bottom_nav.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "shared_widgets_figma_bottom_nav_lens",
-      "label": "_Lens",
-      "file_type": "code",
-      "source_file": "shared/widgets/figma_bottom_nav.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "shared_widgets_figma_bottom_nav_liquidbar",
-      "label": "_LiquidBar",
+      "id": "shared_widgets_figma_bottom_nav_tabicon",
+      "label": "_TabIcon",
       "file_type": "code",
       "source_file": "shared/widgets/figma_bottom_nav.dart",
       "source_location": null,
@@ -44430,48 +44486,16 @@
       "_origin": "ast"
     },
     {
+      "id": "shared_widgets_figma_bottom_nav_bar",
+      "label": "_bar",
+      "file_type": "code",
+      "source_file": "shared/widgets/figma_bottom_nav.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
       "id": "shared_widgets_figma_bottom_nav_slots",
-      "label": "_slots",
-      "file_type": "code",
-      "source_file": "shared/widgets/figma_bottom_nav.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "shared_widgets_figma_bottom_nav_count",
-      "label": "_count",
-      "file_type": "code",
-      "source_file": "shared/widgets/figma_bottom_nav.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "shared_widgets_figma_bottom_nav_add",
-      "label": "_add",
-      "file_type": "code",
-      "source_file": "shared/widgets/figma_bottom_nav.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "shared_widgets_figma_bottom_nav_drag",
-      "label": "_drag",
-      "file_type": "code",
-      "source_file": "shared/widgets/figma_bottom_nav.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "shared_widgets_figma_bottom_nav_lasthaptic",
-      "label": "_lastHaptic",
-      "file_type": "code",
-      "source_file": "shared/widgets/figma_bottom_nav.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "shared_widgets_figma_bottom_nav_rest",
-      "label": "_rest",
+      "label": "slots",
       "file_type": "code",
       "source_file": "shared/widgets/figma_bottom_nav.dart",
       "source_location": null,
@@ -44486,80 +44510,8 @@
       "_origin": "ast"
     },
     {
-      "id": "shared_widgets_figma_bottom_nav_tint",
-      "label": "tint",
-      "file_type": "code",
-      "source_file": "shared/widgets/figma_bottom_nav.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "shared_widgets_figma_bottom_nav_plain",
-      "label": "plain",
-      "file_type": "code",
-      "source_file": "shared/widgets/figma_bottom_nav.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
       "id": "shared_widgets_figma_bottom_nav_localizedlabel",
       "label": "localizedLabel",
-      "file_type": "code",
-      "source_file": "shared/widgets/figma_bottom_nav.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "shared_widgets_figma_bottom_nav_createstate",
-      "label": "createState",
-      "file_type": "code",
-      "source_file": "shared/widgets/figma_bottom_nav.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "shared_widgets_figma_bottom_nav_visibility",
-      "label": "_visibility",
-      "file_type": "code",
-      "source_file": "shared/widgets/figma_bottom_nav.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "shared_widgets_figma_bottom_nav_pagenear",
-      "label": "_pageNear",
-      "file_type": "code",
-      "source_file": "shared/widgets/figma_bottom_nav.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "shared_widgets_figma_bottom_nav_positionfor",
-      "label": "_positionFor",
-      "file_type": "code",
-      "source_file": "shared/widgets/figma_bottom_nav.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "shared_widgets_figma_bottom_nav_move",
-      "label": "_move",
-      "file_type": "code",
-      "source_file": "shared/widgets/figma_bottom_nav.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "shared_widgets_figma_bottom_nav_end",
-      "label": "_end",
-      "file_type": "code",
-      "source_file": "shared/widgets/figma_bottom_nav.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "shared_widgets_figma_bottom_nav_cancel",
-      "label": "_cancel",
       "file_type": "code",
       "source_file": "shared/widgets/figma_bottom_nav.dart",
       "source_location": null,
@@ -44582,106 +44534,10 @@
       "_origin": "ast"
     },
     {
-      "id": "shared_widgets_figma_bottom_nav_item",
-      "label": "_item",
-      "file_type": "code",
-      "source_file": "shared/widgets/figma_bottom_nav.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
       "id": "shared_widgets_figma_bottom_nav_navicon",
       "label": "navIcon",
       "file_type": "code",
       "source_file": "shared/widgets/figma_bottom_nav.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "shared_widgets_figma_bottom_nav_svg",
-      "label": "svg",
-      "file_type": "code",
-      "source_file": "shared/widgets/figma_bottom_nav.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "shared_widgets_figma_bottom_nav_square",
-      "label": "square",
-      "file_type": "code",
-      "source_file": "shared/widgets/figma_bottom_nav.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "shared_widgets_food_catalog_credits_page",
-      "label": "food_catalog_credits_page.dart",
-      "file_type": "code",
-      "source_file": "shared/widgets/food_catalog_credits_page.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "shared_widgets_food_catalog_credits_page_foodcatalogcreditspage",
-      "label": "FoodCatalogCreditsPage",
-      "file_type": "code",
-      "source_file": "shared/widgets/food_catalog_credits_page.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "shared_widgets_food_catalog_credits_page_foodcatalogcreditspagestate",
-      "label": "_FoodCatalogCreditsPageState",
-      "file_type": "code",
-      "source_file": "shared/widgets/food_catalog_credits_page.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "shared_widgets_food_catalog_credits_page_manifest",
-      "label": "manifest",
-      "file_type": "code",
-      "source_file": "shared/widgets/food_catalog_credits_page.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "shared_widgets_food_catalog_credits_page_createstate",
-      "label": "createState",
-      "file_type": "code",
-      "source_file": "shared/widgets/food_catalog_credits_page.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "shared_widgets_food_catalog_credits_page_load",
-      "label": "_load",
-      "file_type": "code",
-      "source_file": "shared/widgets/food_catalog_credits_page.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "shared_widgets_food_catalog_credits_page_label",
-      "label": "label",
-      "file_type": "code",
-      "source_file": "shared/widgets/food_catalog_credits_page.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "shared_widgets_food_catalog_credits_page_download",
-      "label": "download",
-      "file_type": "code",
-      "source_file": "shared/widgets/food_catalog_credits_page.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "shared_widgets_food_catalog_credits_page_build",
-      "label": "build",
-      "file_type": "code",
-      "source_file": "shared/widgets/food_catalog_credits_page.dart",
       "source_location": null,
       "_origin": "ast"
     }
@@ -45604,17 +45460,6 @@
       "relation": "inherits",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
-      "source_file": "shared/widgets/figma_bottom_nav.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "shared_widgets_figma_bottom_nav_figmabottomnavstate",
-      "target": "state"
-    },
-    {
-      "relation": "inherits",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
       "source_file": "shared/widgets/food_catalog_credits_page.dart",
       "source_location": null,
       "weight": 1.0,
@@ -46049,17 +45894,6 @@
       "weight": 1.0,
       "_origin": "ast",
       "source": "shared_widgets_draft_guard_draftguard",
-      "target": "statefulwidget"
-    },
-    {
-      "relation": "inherits",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "shared/widgets/figma_bottom_nav.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "shared_widgets_figma_bottom_nav_figmabottomnav",
       "target": "statefulwidget"
     },
     {
@@ -48104,7 +47938,7 @@
       "source_location": null,
       "weight": 1.0,
       "_origin": "ast",
-      "source": "shared_widgets_figma_bottom_nav_lens",
+      "source": "shared_widgets_figma_bottom_nav_figmabottomnav",
       "target": "statelesswidget"
     },
     {
@@ -48115,7 +47949,7 @@
       "source_location": null,
       "weight": 1.0,
       "_origin": "ast",
-      "source": "shared_widgets_figma_bottom_nav_liquidbar",
+      "source": "shared_widgets_figma_bottom_nav_tabicon",
       "target": "statelesswidget"
     },
     {
@@ -55145,18 +54979,6 @@
       "relation": "references",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
-      "source_file": "shared/widgets/figma_bottom_nav.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "context": "variable_type",
-      "_origin": "ast",
-      "source": "shared_widgets_figma_bottom_nav",
-      "target": "color"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
       "source_file": "shared/widgets/figma_components.dart",
       "source_location": null,
       "weight": 1.0,
@@ -56375,17 +56197,6 @@
       "weight": 1.0,
       "_origin": "ast",
       "source": "shared_widgets_draft_guard",
-      "target": "package_trainforge_core_motion_app_motion_dart"
-    },
-    {
-      "relation": "imports",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "shared/widgets/figma_bottom_nav.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "shared_widgets_figma_bottom_nav",
       "target": "package_trainforge_core_motion_app_motion_dart"
     },
     {
@@ -60640,18 +60451,6 @@
       "context": "variable_type",
       "_origin": "ast",
       "source": "features_training_library_data_training_library",
-      "target": "int"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "shared/widgets/figma_bottom_nav.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "context": "variable_type",
-      "_origin": "ast",
-      "source": "shared_widgets_figma_bottom_nav",
       "target": "int"
     },
     {
@@ -66790,18 +66589,6 @@
       "_origin": "ast",
       "source": "features_activity_domain_activity_session",
       "target": "string_ownerid"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "shared/widgets/figma_bottom_nav.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "context": "variable_type",
-      "_origin": "ast",
-      "source": "shared_widgets_figma_bottom_nav",
-      "target": "int_get"
     },
     {
       "relation": "imports",
@@ -74210,18 +73997,6 @@
       "context": "variable_type",
       "_origin": "ast",
       "source": "features_food_reference_presentation_catalog_tools_page",
-      "target": "double"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "shared/widgets/figma_bottom_nav.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "context": "variable_type",
-      "_origin": "ast",
-      "source": "shared_widgets_figma_bottom_nav",
       "target": "double"
     },
     {
@@ -116475,6 +116250,116 @@
       "relation": "defines",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
+      "source_file": "main.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "main",
+      "target": "main_main"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "shared/widgets/food_catalog_credits_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "shared_widgets_food_catalog_credits_page",
+      "target": "shared_widgets_food_catalog_credits_page_build"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "shared/widgets/food_catalog_credits_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "shared_widgets_food_catalog_credits_page",
+      "target": "shared_widgets_food_catalog_credits_page_createstate"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "shared/widgets/food_catalog_credits_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "shared_widgets_food_catalog_credits_page",
+      "target": "shared_widgets_food_catalog_credits_page_download"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "shared/widgets/food_catalog_credits_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "shared_widgets_food_catalog_credits_page",
+      "target": "shared_widgets_food_catalog_credits_page_foodcatalogcreditspage"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "shared/widgets/food_catalog_credits_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "shared_widgets_food_catalog_credits_page",
+      "target": "shared_widgets_food_catalog_credits_page_foodcatalogcreditspagestate"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "shared/widgets/food_catalog_credits_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "shared_widgets_food_catalog_credits_page",
+      "target": "shared_widgets_food_catalog_credits_page_label"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "shared/widgets/food_catalog_credits_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "shared_widgets_food_catalog_credits_page",
+      "target": "shared_widgets_food_catalog_credits_page_load"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "shared/widgets/food_catalog_credits_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "shared_widgets_food_catalog_credits_page",
+      "target": "shared_widgets_food_catalog_credits_page_manifest"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "shared/widgets/food_catalog_credits_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "shared_widgets_food_catalog_credits_page_foodcatalogcreditspagestate",
+      "target": "shared_widgets_food_catalog_credits_page_foodcatalogcreditspage"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
       "source_file": "features/legal/legal_documents.dart",
       "source_location": null,
       "weight": 1.0,
@@ -116651,28 +116536,6 @@
       "relation": "defines",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
-      "source_file": "main.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "main",
-      "target": "main_main"
-    },
-    {
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "shared/widgets/figma_bottom_nav.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "shared_widgets_figma_bottom_nav",
-      "target": "shared_widgets_figma_bottom_nav_add"
-    },
-    {
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
       "source_file": "shared/widgets/figma_bottom_nav.dart",
       "source_location": null,
       "weight": 1.0,
@@ -116700,40 +116563,18 @@
       "weight": 1.0,
       "_origin": "ast",
       "source": "shared_widgets_figma_bottom_nav",
+      "target": "shared_widgets_figma_bottom_nav_bar"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "shared/widgets/figma_bottom_nav.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "shared_widgets_figma_bottom_nav",
       "target": "shared_widgets_figma_bottom_nav_build"
-    },
-    {
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "shared/widgets/figma_bottom_nav.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "shared_widgets_figma_bottom_nav",
-      "target": "shared_widgets_figma_bottom_nav_cancel"
-    },
-    {
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "shared/widgets/figma_bottom_nav.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "shared_widgets_figma_bottom_nav",
-      "target": "shared_widgets_figma_bottom_nav_count"
-    },
-    {
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "shared/widgets/figma_bottom_nav.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "shared_widgets_figma_bottom_nav",
-      "target": "shared_widgets_figma_bottom_nav_createstate"
     },
     {
       "relation": "defines",
@@ -116755,40 +116596,7 @@
       "weight": 1.0,
       "_origin": "ast",
       "source": "shared_widgets_figma_bottom_nav",
-      "target": "shared_widgets_figma_bottom_nav_drag"
-    },
-    {
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "shared/widgets/figma_bottom_nav.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "shared_widgets_figma_bottom_nav",
-      "target": "shared_widgets_figma_bottom_nav_end"
-    },
-    {
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "shared/widgets/figma_bottom_nav.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "shared_widgets_figma_bottom_nav",
       "target": "shared_widgets_figma_bottom_nav_figmabottomnav"
-    },
-    {
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "shared/widgets/figma_bottom_nav.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "shared_widgets_figma_bottom_nav",
-      "target": "shared_widgets_figma_bottom_nav_figmabottomnavstate"
     },
     {
       "relation": "defines",
@@ -116810,62 +116618,7 @@
       "weight": 1.0,
       "_origin": "ast",
       "source": "shared_widgets_figma_bottom_nav",
-      "target": "shared_widgets_figma_bottom_nav_item"
-    },
-    {
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "shared/widgets/figma_bottom_nav.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "shared_widgets_figma_bottom_nav",
-      "target": "shared_widgets_figma_bottom_nav_lasthaptic"
-    },
-    {
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "shared/widgets/figma_bottom_nav.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "shared_widgets_figma_bottom_nav",
-      "target": "shared_widgets_figma_bottom_nav_lens"
-    },
-    {
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "shared/widgets/figma_bottom_nav.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "shared_widgets_figma_bottom_nav",
-      "target": "shared_widgets_figma_bottom_nav_liquidbar"
-    },
-    {
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "shared/widgets/figma_bottom_nav.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "shared_widgets_figma_bottom_nav",
       "target": "shared_widgets_figma_bottom_nav_localizedlabel"
-    },
-    {
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "shared/widgets/figma_bottom_nav.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "shared_widgets_figma_bottom_nav",
-      "target": "shared_widgets_figma_bottom_nav_move"
     },
     {
       "relation": "defines",
@@ -116909,50 +116662,6 @@
       "weight": 1.0,
       "_origin": "ast",
       "source": "shared_widgets_figma_bottom_nav",
-      "target": "shared_widgets_figma_bottom_nav_pagenear"
-    },
-    {
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "shared/widgets/figma_bottom_nav.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "shared_widgets_figma_bottom_nav",
-      "target": "shared_widgets_figma_bottom_nav_plain"
-    },
-    {
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "shared/widgets/figma_bottom_nav.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "shared_widgets_figma_bottom_nav",
-      "target": "shared_widgets_figma_bottom_nav_positionfor"
-    },
-    {
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "shared/widgets/figma_bottom_nav.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "shared_widgets_figma_bottom_nav",
-      "target": "shared_widgets_figma_bottom_nav_rest"
-    },
-    {
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "shared/widgets/figma_bottom_nav.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "shared_widgets_figma_bottom_nav",
       "target": "shared_widgets_figma_bottom_nav_selected"
     },
     {
@@ -116975,29 +116684,7 @@
       "weight": 1.0,
       "_origin": "ast",
       "source": "shared_widgets_figma_bottom_nav",
-      "target": "shared_widgets_figma_bottom_nav_square"
-    },
-    {
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "shared/widgets/figma_bottom_nav.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "shared_widgets_figma_bottom_nav",
-      "target": "shared_widgets_figma_bottom_nav_svg"
-    },
-    {
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "shared/widgets/figma_bottom_nav.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "shared_widgets_figma_bottom_nav",
-      "target": "shared_widgets_figma_bottom_nav_tint"
+      "target": "shared_widgets_figma_bottom_nav_tabicon"
     },
     {
       "relation": "defines",
@@ -117009,127 +116696,6 @@
       "_origin": "ast",
       "source": "shared_widgets_figma_bottom_nav",
       "target": "shared_widgets_figma_bottom_nav_trainforgedestination"
-    },
-    {
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "shared/widgets/figma_bottom_nav.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "shared_widgets_figma_bottom_nav",
-      "target": "shared_widgets_figma_bottom_nav_visibility"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "shared/widgets/figma_bottom_nav.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "shared_widgets_figma_bottom_nav_figmabottomnavstate",
-      "target": "shared_widgets_figma_bottom_nav_figmabottomnav"
-    },
-    {
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "shared/widgets/food_catalog_credits_page.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "shared_widgets_food_catalog_credits_page",
-      "target": "shared_widgets_food_catalog_credits_page_build"
-    },
-    {
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "shared/widgets/food_catalog_credits_page.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "shared_widgets_food_catalog_credits_page",
-      "target": "shared_widgets_food_catalog_credits_page_createstate"
-    },
-    {
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "shared/widgets/food_catalog_credits_page.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "shared_widgets_food_catalog_credits_page",
-      "target": "shared_widgets_food_catalog_credits_page_download"
-    },
-    {
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "shared/widgets/food_catalog_credits_page.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "shared_widgets_food_catalog_credits_page",
-      "target": "shared_widgets_food_catalog_credits_page_foodcatalogcreditspage"
-    },
-    {
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "shared/widgets/food_catalog_credits_page.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "shared_widgets_food_catalog_credits_page",
-      "target": "shared_widgets_food_catalog_credits_page_foodcatalogcreditspagestate"
-    },
-    {
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "shared/widgets/food_catalog_credits_page.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "shared_widgets_food_catalog_credits_page",
-      "target": "shared_widgets_food_catalog_credits_page_label"
-    },
-    {
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "shared/widgets/food_catalog_credits_page.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "shared_widgets_food_catalog_credits_page",
-      "target": "shared_widgets_food_catalog_credits_page_load"
-    },
-    {
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "shared/widgets/food_catalog_credits_page.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "shared_widgets_food_catalog_credits_page",
-      "target": "shared_widgets_food_catalog_credits_page_manifest"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "shared/widgets/food_catalog_credits_page.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "shared_widgets_food_catalog_credits_page_foodcatalogcreditspagestate",
-      "target": "shared_widgets_food_catalog_credits_page_foodcatalogcreditspage"
     }
   ],
   "hyperedges": [],

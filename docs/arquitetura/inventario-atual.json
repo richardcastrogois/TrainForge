@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "inputRevision": "a3a7bc1c22aad9078167f7da1b084d50cd14d00eff9070ab40ab1a393c7ad9d4",
+  "inputRevision": "d23d64a9158ab55f0187088425e23e316c056f049c89b2f20ad5e93506f45081",
   "inputs": {
     "contracts/generated/catalog-m1.swagger.json": "7f59b699f1c4c032e0652c31f44fac9a8d3a77115639a24408725427e97b0339",
     "contracts/generated/swagger-v1.json": "437504d14c4210b1a385fc87132aaea0f0970e67545e077b6bca6866cda530fa",
@@ -68,7 +68,7 @@
     "lib/features/home/presentation/widgets/home_cards.dart": "bbfcea044f7a9f2e187db111ae51293fe7f68b6eb0faf1ff2fcb6cd22e683aea",
     "lib/features/legal/legal_consent_store.dart": "33ea7c1eca83e0994cb3536f1d863c26ef38445b38b74ee7c3e4ee25aebcf361",
     "lib/features/legal/legal_controller.dart": "0103cbd52a19b51b803baee13cfb6648811c3df6e7ddcc0c2da919b3d60dde73",
-    "lib/features/legal/legal_documents.dart": "42ab13c51c220b4227cb09e4de8ac976ce2d62ce555f408788854a4aa866bbdf",
+    "lib/features/legal/legal_documents.dart": "e29365a70e69adbeb698345f687858704f8cdea3d7319b6f8b5d0cbcf55ae28c",
     "lib/features/legal/presentation/legal_labels.dart": "f7651123b89623d4da47b895b0d07e7e0d970583f32316233de784544fb03d52",
     "lib/features/legal/presentation/legal_pages.dart": "231cd9263852687c820524e5f7202ef42571793a86a083f80fba5067c8bd19db",
     "lib/features/legal/presentation/staggered_entrance.dart": "a2877f7614af7d3613c6e75d6508f0f97604ca4973ddf1b7ceb8f2a142ead1e7",
@@ -131,7 +131,7 @@
     "lib/shared/widgets/content_sources_page.dart": "a16105129b7752cc229a221c2b06dd4c8c66624505b59b2a4456aca0d22ca101",
     "lib/shared/widgets/draft_guard.dart": "e07551083f2f42de6b6787ab3c354a9f9d8c75b65f71e25a076f8bcbd596f28b",
     "lib/shared/widgets/evaluation_guide_page.dart": "302e04793b0e634b756d7a8785f9f64d74a03653a27f85f7ec7285249fd24900",
-    "lib/shared/widgets/figma_bottom_nav.dart": "b789ba6f5739e490377bc4d22571cef1f9fcfccef6169f54ecb03d25d1f5e498",
+    "lib/shared/widgets/figma_bottom_nav.dart": "756e0e18c03c52277ea422d77016a96e4227257367270bebd30c3d91fa52c91a",
     "lib/shared/widgets/figma_components.dart": "355c0706133fef7da888e49808ada8ef2a311b1c65e1f52ccdeed258c20e8361",
     "lib/shared/widgets/flow_components.dart": "1d3cf303b115d8136388cd5ea8fb3508a4f95cc721d7b5a11e9f97cba10e3238",
     "lib/shared/widgets/food_catalog_credits_page.dart": "3e2b980601c7f976fa7e897eca951602f8de08bbe9d135ee5bccd5d92123a4b6",
