@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "inputRevision": "14a458000eb5c1326e86808b121f6f64c36f61a397ebf8dc5bb09ba3ec4e4771",
+  "inputRevision": "0c21d0717475c75a538ff93298687982ae4311a99bba8f0f7f942f729d52c4a2",
   "inputs": {
     "contracts/generated/catalog-m1.swagger.json": "7f59b699f1c4c032e0652c31f44fac9a8d3a77115639a24408725427e97b0339",
     "contracts/generated/swagger-v1.json": "437504d14c4210b1a385fc87132aaea0f0970e67545e077b6bca6866cda530fa",
@@ -68,7 +68,7 @@
     "lib/features/home/presentation/widgets/home_cards.dart": "bbfcea044f7a9f2e187db111ae51293fe7f68b6eb0faf1ff2fcb6cd22e683aea",
     "lib/features/legal/legal_consent_store.dart": "33ea7c1eca83e0994cb3536f1d863c26ef38445b38b74ee7c3e4ee25aebcf361",
     "lib/features/legal/legal_controller.dart": "0103cbd52a19b51b803baee13cfb6648811c3df6e7ddcc0c2da919b3d60dde73",
-    "lib/features/legal/legal_documents.dart": "b343f380825503c5083613cce9245a103d5940644ed619d375c6577b0f97b087",
+    "lib/features/legal/legal_documents.dart": "42ab13c51c220b4227cb09e4de8ac976ce2d62ce555f408788854a4aa866bbdf",
     "lib/features/legal/presentation/legal_labels.dart": "f7651123b89623d4da47b895b0d07e7e0d970583f32316233de784544fb03d52",
     "lib/features/legal/presentation/legal_pages.dart": "231cd9263852687c820524e5f7202ef42571793a86a083f80fba5067c8bd19db",
     "lib/features/legal/presentation/staggered_entrance.dart": "a2877f7614af7d3613c6e75d6508f0f97604ca4973ddf1b7ceb8f2a142ead1e7",
@@ -134,7 +134,7 @@
     "lib/shared/widgets/figma_bottom_nav.dart": "a6dc0d67c9fdbfb3cb6a7650930664e5c9fc23e5a4e5b5ae0c5a9665d36aaf93",
     "lib/shared/widgets/figma_components.dart": "355c0706133fef7da888e49808ada8ef2a311b1c65e1f52ccdeed258c20e8361",
     "lib/shared/widgets/flow_components.dart": "1d3cf303b115d8136388cd5ea8fb3508a4f95cc721d7b5a11e9f97cba10e3238",
-    "lib/shared/widgets/food_catalog_credits_page.dart": "1b87cf02d5497aab1050670750782609dc90c4cecc39cdd0ed1feabe1194e27c",
+    "lib/shared/widgets/food_catalog_credits_page.dart": "3e2b980601c7f976fa7e897eca951602f8de08bbe9d135ee5bccd5d92123a4b6",
     "lib/shared/widgets/glass_sheet.dart": "67bafbe1317e4d2a91df0ecb11540b3d8bafa9652ed8ecb916908882d5336e5d",
     "lib/shared/widgets/glass_surface.dart": "d5a2c41e258515c0eb54cf88ef56ca2330ead958ac6aa9aac7d6cda32e769f7a",
     "lib/shared/widgets/product_overviews.dart": "97eb0fa23526148bfc59206016cb9e2f963dad28dc7ea55f4d047a060dc693aa",
