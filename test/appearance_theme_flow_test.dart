@@ -96,7 +96,7 @@ void main() {
         Theme.of(t.element(find.byType(ProductShell))).brightness,
         Brightness.light,
       );
-      await t.tap(find.byTooltip('Diário'));
+      await t.tap(find.byTooltip('Alimentação'));
       await t.pumpAndSettle();
       t.platformDispatcher.platformBrightnessTestValue = Brightness.dark;
       await t.pumpAndSettle();

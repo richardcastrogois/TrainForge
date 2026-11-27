@@ -53,11 +53,13 @@ void main() {
       await t.pump();
       // An empty first load does not flash the day section.
       expect(find.byType(AppMetricSkeleton), findsNothing);
-      expect(find.text('Bora mexer!'), findsOneWidget);
+      expect(find.text('Bom te ver!'), findsOneWidget);
       repo.pending!.complete({'entries': 0, 'complete': true, 'nutrients': []});
       await task;
       await t.pumpAndSettle();
-      expect(find.text('Nenhum consumo confirmado neste dia'), findsOneWidget);
+      // A quiet, empty day shows only the start cards.
+      expect(find.text('Nenhum consumo confirmado neste dia'), findsNothing);
+      expect(find.text('Atualizar o dia'), findsNothing);
       repo.pending = null;
       repo.failure = StateError('private error');
       await c.load();

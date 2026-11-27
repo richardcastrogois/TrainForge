@@ -184,62 +184,91 @@ Future<void> showAvailability(
 
 class FigmaHeader extends StatelessWidget {
   final String? name;
+
+  /// Picture from the account (Google); initials while it is missing.
+  final String? image;
   final VoidCallback? onProfile;
-  const FigmaHeader({super.key, this.name, this.onProfile});
+  const FigmaHeader({super.key, this.name, this.image, this.onProfile});
   @override
-  Widget build(BuildContext context) {
-    final parts = (name ?? '')
+  Widget build(BuildContext context) => Padding(
+    padding: const EdgeInsets.fromLTRB(24, 22, 24, 10),
+    child: Row(
+      children: [
+        Expanded(child: TrainForgeBrand()),
+        SizedBox(width: 10),
+        if (name != null)
+          Semantics(
+            label: context.l10n.openProfile,
+            button: true,
+            onTap: onProfile,
+            excludeSemantics: true,
+            child: Tooltip(
+              message: context.l10n.openProfile,
+              child: GestureDetector(
+                key: const ValueKey('profile-avatar'),
+                onTap: onProfile,
+                child: ProfileAvatar(name: name!, image: image, size: 48),
+              ),
+            ),
+          )
+        else
+          SizedBox(height: 48),
+      ],
+    ),
+  );
+}
+
+/// Round picture with nothing around it; initials when there is no photo.
+class ProfileAvatar extends StatelessWidget {
+  final String name;
+  final String? image;
+  final double size;
+  const ProfileAvatar({
+    super.key,
+    required this.name,
+    this.image,
+    this.size = 48,
+  });
+
+  String get initials {
+    final parts = name
         .trim()
         .split(RegExp(r'\s+'))
         .where((p) => p.isNotEmpty)
         .toList();
-    final initials = parts.isEmpty
-        ? '?'
-        : (parts.first.characters.first +
-                  (parts.length > 1 ? parts.last.characters.first : ''))
-              .toUpperCase();
-    return Padding(
-      padding: const EdgeInsets.fromLTRB(24, 22, 24, 10),
-      child: Row(
-        children: [
-          Expanded(child: TrainForgeBrand()),
-          SizedBox(width: 10),
-          if (name != null)
-            SizedBox.square(
-              dimension: 48,
-              child: Semantics(
-                label: context.l10n.openProfile,
-                button: true,
-                onTap: onProfile,
-                excludeSemantics: true,
-                child: IconButton(
-                  tooltip: context.l10n.openProfile,
-                  onPressed: onProfile,
-                  padding: const EdgeInsets.all(4),
-                  icon: Container(
-                    width: 40,
-                    height: 40,
-                    alignment: Alignment.center,
-                    decoration: BoxDecoration(
-                      color: context.tf.soft,
-                      borderRadius: BorderRadius.circular(20),
-                    ),
-                    child: Text(
-                      initials,
-                      textScaler: TextScaler.noScaling,
-                      style: TextStyle(
-                        fontSize: 11,
-                        fontWeight: FontWeight.w700,
-                        color: context.tf.primary,
-                      ),
-                    ),
-                  ),
-                ),
+    if (parts.isEmpty) return '?';
+    return (parts.first.characters.first +
+            (parts.length > 1 ? parts.last.characters.first : ''))
+        .toUpperCase();
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    final fallback = Container(
+      color: context.tf.primary,
+      alignment: Alignment.center,
+      child: Text(
+        initials,
+        textScaler: TextScaler.noScaling,
+        style: TextStyle(
+          fontSize: size * .36,
+          fontWeight: FontWeight.w700,
+          color: context.tf.onPrimary,
+        ),
+      ),
+    );
+    final url = image;
+    return ClipOval(
+      child: SizedBox.square(
+        dimension: size,
+        child: url == null || url.isEmpty
+            ? fallback
+            : Image.network(
+                url,
+                fit: BoxFit.cover,
+                excludeFromSemantics: true,
+                errorBuilder: (_, _, _) => fallback,
               ),
-            )
-          else
-            SizedBox(height: 48),
-        ],
       ),
     );
   }

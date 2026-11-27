@@ -157,9 +157,11 @@ void main() {
                   ),
                   library: () async => TrainingLibrary.parse(text),
                 ),
-                BuildWorkoutCard(
+                TrainingHeroCard(
                   profile: const OnboardingProfile(),
+                  first: true,
                   completeAnswers: () => asked++,
+                  library: () async => TrainingLibrary.parse(text),
                 ),
               ],
             ),
@@ -167,15 +169,12 @@ void main() {
         ),
       );
       await t.pumpAndSettle();
-      expect(
-        find.text('UM POUCO MAIS FORTE E SAUDÁVEL, TODOS OS DIAS'),
-        findsOneWidget,
-      );
+      expect(find.text('MAIS FORTE E SAUDÁVEL, TODO DIA'), findsNWidgets(2));
       expect(find.text('Treino em casa'), findsOneWidget);
       expect(find.textContaining('Iniciante ·'), findsOneWidget);
       expect(find.textContaining(RegExp(r'\d+ treinos')), findsOneWidget);
       expect(find.text('Ver treinos'), findsOneWidget);
-      await t.tap(find.text('Montar meu treino'));
+      await t.tap(find.text('Responder 2 perguntas'));
       expect(asked, 1);
     },
   );

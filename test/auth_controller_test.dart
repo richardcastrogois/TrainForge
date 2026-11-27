@@ -92,6 +92,9 @@ void main() {
       expect(repo.restores, 1);
       await tester.tap(find.byTooltip('Abrir perfil'));
       await tester.pumpAndSettle();
+      // The picture opens the profile panel; settings are one tap more.
+      await tester.tap(find.text('Perfil e ajustes'));
+      await tester.pumpAndSettle();
       expect(find.text('Conta conectada'), findsOneWidget);
       repo.logoutError = outage();
       await tester.scrollUntilVisible(

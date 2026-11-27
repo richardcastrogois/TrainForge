@@ -15,6 +15,16 @@ class ActivityPage extends StatefulWidget {
   final String? Function() currentAccountId;
   final Listenable? sessionChanges;
   final VoidCallback? configure, openCatalog;
+
+  /// Page title and intro; the Evolução tab uses its own.
+  final String? title, intro;
+
+  /// Shown instead of the empty sections when there is no session at all
+  /// (then "upcoming" is also hidden while empty).
+  final Widget? empty;
+
+  /// Extra cards after the history (e.g. the food diary).
+  final List<Widget> extra;
   const ActivityPage({
     super.key,
     required this.repository,
@@ -23,6 +33,10 @@ class ActivityPage extends StatefulWidget {
     this.sessionChanges,
     this.configure,
     this.openCatalog,
+    this.title,
+    this.intro,
+    this.empty,
+    this.extra = const [],
   });
 
   @override
@@ -198,15 +212,22 @@ class _ActivityPageState extends State<ActivityPage>
     final value = controller.feed;
     return [
       Text(
-        context.l10n.activity,
+        widget.title ?? context.l10n.activity,
         style: Theme.of(context).textTheme.headlineLarge,
       ),
-      Text(context.l10n.activitySessionIntro),
+      Text(widget.intro ?? context.l10n.activitySessionIntro),
       if (controller.loading) AppProgress(label: context.l10n.loadingRecords),
       if (controller.feedback != null) feedback(),
-      if (value != null) ...[
-        heading(context.l10n.activityUpcoming),
-        if (value.upcoming.isEmpty)
+      if (value != null &&
+          widget.empty != null &&
+          value.upcoming.isEmpty &&
+          value.sessions.isEmpty) ...[
+        widget.empty!,
+        ...widget.extra,
+      ] else if (value != null) ...[
+        if (widget.empty == null || value.upcoming.isNotEmpty)
+          heading(context.l10n.activityUpcoming),
+        if (value.upcoming.isEmpty && widget.empty == null)
           FigmaSection(child: Text(context.l10n.activityEmptyUpcoming)),
         for (final occurrence in value.upcoming)
           FigmaSection(
@@ -272,6 +293,7 @@ class _ActivityPageState extends State<ActivityPage>
             onPressed: controller.locked ? null : widget.openCatalog,
             child: Text(context.l10n.publicCatalog),
           ),
+        ...widget.extra,
       ],
     ];
   }

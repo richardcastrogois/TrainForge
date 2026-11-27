@@ -95,11 +95,18 @@ class CompositionFixture {
 }
 
 class ObservedNutrition extends FakeNutrition {
+  /// Whether today has a confirmed record (Hoje then shows the nutrition card).
+  static bool hasRecord = true;
   int summaries = 0, entryLists = 0;
   @override
-  Future<Json> summary(String day, String zone) {
+  Future<Json> summary(String day, String zone) async {
     summaries++;
-    return super.summary(day, zone);
+    // A day with a record, so Hoje shows the nutrition card.
+    return {
+      ...await super.summary(day, zone),
+      'entries': hasRecord ? 1 : 0,
+      'complete': true,
+    };
   }
 
   @override
@@ -163,7 +170,7 @@ void main() {
       );
       await t.pumpAndSettle();
       expect(services.activities, isEmpty);
-      await t.tap(find.byTooltip('Atividade'));
+      await t.tap(find.byTooltip('Evolução'));
       await t.pumpAndSettle();
       expect(find.byType(ActivityPage), findsOneWidget);
       final original = services.activities.single;
@@ -171,7 +178,7 @@ void main() {
       expect(original.reads, 1);
       await t.tap(find.byTooltip('Hoje'));
       await t.pumpAndSettle();
-      await t.tap(find.byTooltip('Atividade'));
+      await t.tap(find.byTooltip('Evolução'));
       await t.pumpAndSettle();
       expect(services.activities, hasLength(1));
       expect(original.reads, 1);
@@ -186,7 +193,7 @@ void main() {
       await t.pumpAndSettle();
       expect(find.byType(ActivityPage), findsNothing);
       expect(original.currentAccountId(), other.id);
-      await t.tap(find.byTooltip('Atividade'));
+      await t.tap(find.byTooltip('Evolução'));
       await t.pumpAndSettle();
       expect(services.activities, hasLength(2));
       expect(services.activities.last.accountId, other.id);
@@ -355,6 +362,8 @@ void main() {
       expect(account.repository.reads, 0);
       await t.tap(find.byTooltip('Abrir perfil'));
       await t.pumpAndSettle();
+      await t.tap(find.text('Perfil e ajustes'));
+      await t.pumpAndSettle();
       await t.scrollUntilVisible(
         find.text('Configuração de treino'),
         200,
@@ -383,10 +392,10 @@ void main() {
       await t.pumpAndSettle();
       await t.binding.handlePopRoute();
       await t.pumpAndSettle();
-      await t.tap(find.byTooltip('Planos'));
+      await t.tap(find.byTooltip('Treinos'));
       await t.pumpAndSettle();
       await t.scrollUntilVisible(
-        find.text('Criar o meu plano'),
+        find.text('Montar meu plano da semana'),
         200,
         scrollable: find
             .byWidgetPredicate(
@@ -394,7 +403,7 @@ void main() {
             )
             .first,
       );
-      await t.tap(find.text('Criar o meu plano'));
+      await t.tap(find.text('Montar meu plano da semana'));
       await t.pumpAndSettle();
       expect(find.byType(TrainingConfigurationPage), findsOneWidget);
       expect(account.repository.reads, 2);

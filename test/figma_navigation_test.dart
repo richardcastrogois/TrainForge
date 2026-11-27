@@ -28,8 +28,13 @@ void main() {
         );
         await t.pumpAndSettle();
         for (final target in TrainForgeDestination.values) {
-          expect(find.bySemanticsLabel(target.label), findsWidgets);
-          await t.tap(find.byTooltip(target.label));
+          expect(
+            find.bySemanticsLabel(
+              target.localizedLabel(t.element(find.byType(FigmaBottomNav))),
+            ),
+            findsOneWidget,
+          );
+          await t.tap(find.byKey(ValueKey('nav-${target.name}')));
           await t.pump();
           expect(tapped, target);
         }
@@ -37,7 +42,9 @@ void main() {
       }
     },
   );
-  testWidgets('320px and large text keep all five targets usable', (t) async {
+  testWidgets('320px and large text keep all targets usable, "+" included', (
+    t,
+  ) async {
     t.view.physicalSize = const Size(320, 568);
     t.view.devicePixelRatio = 1;
     addTearDown(t.view.resetPhysicalSize);
@@ -60,15 +67,14 @@ void main() {
     );
     await t.pumpAndSettle();
     for (final target in TrainForgeDestination.values) {
-      final size = t.getSize(
-        find.descendant(
-          of: find.byTooltip(target.label),
-          matching: find.byType(InkWell),
-        ),
-      );
+      final size = t.getSize(find.byKey(ValueKey('nav-${target.name}')));
       expect(size.width, greaterThanOrEqualTo(48));
       expect(size.height, greaterThanOrEqualTo(48));
     }
+    expect(
+      t.getSize(find.byKey(const ValueKey('nav-add'))).width,
+      greaterThanOrEqualTo(48),
+    );
     expect(t.takeException(), isNull);
   });
   testWidgets('navigation visual artifact for direct Figma comparison', (
@@ -90,7 +96,7 @@ void main() {
             body: Padding(
               padding: const EdgeInsets.all(10),
               child: FigmaBottomNav(
-                selected: TrainForgeDestination.plans,
+                selected: TrainForgeDestination.workouts,
                 onSelected: (_) {},
               ),
             ),
@@ -132,10 +138,8 @@ void main() {
         ),
       );
       await t.pumpAndSettle();
-      final start = t.getCenter(
-        find.byTooltip(TrainForgeDestination.today.label),
-      );
-      final end = t.getCenter(find.byTooltip(TrainForgeDestination.food.label));
+      final start = t.getCenter(find.byKey(const ValueKey('nav-today')));
+      final end = t.getCenter(find.byKey(const ValueKey('nav-food')));
       final gesture = await t.startGesture(start);
       await t.pump(const Duration(milliseconds: 600));
       await gesture.moveTo(Offset.lerp(start, end, .5)!);
@@ -149,4 +153,29 @@ void main() {
       expect(t.takeException(), isNull);
     },
   );
+  testWidgets('the "+" calls its action and never selects a page', (t) async {
+    final opened = <TrainForgeDestination>[];
+    var added = 0;
+    await t.pumpWidget(
+      MaterialApp(
+        home: Scaffold(
+          body: Center(
+            child: SizedBox(
+              width: 342,
+              child: FigmaBottomNav(
+                selected: TrainForgeDestination.today,
+                onSelected: opened.add,
+                onAdd: () => added++,
+              ),
+            ),
+          ),
+        ),
+      ),
+    );
+    await t.tap(find.byKey(const ValueKey('nav-add')));
+    await t.pump();
+    expect(added, 1);
+    expect(opened, isEmpty);
+    expect(find.bySemanticsLabel('Adicionar'), findsOneWidget);
+  });
 }

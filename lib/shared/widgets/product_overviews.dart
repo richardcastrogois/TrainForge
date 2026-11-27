@@ -1,11 +1,13 @@
 import 'package:trainforge/core/l10n/localized_context.dart';
-import 'evaluation_guide_page.dart';
 import 'package:trainforge/shared/widgets/app_loading.dart';
 import 'package:trainforge/features/home/presentation/pages/today_page.dart';
 import 'package:flutter/material.dart';
 import 'package:trainforge/core/theme/trainforge_theme.dart';
 import 'package:trainforge/features/nutrition/presentation/daily_summary_controller.dart';
 import 'figma_components.dart';
+import 'shell_labels.dart';
+import 'package:trainforge/features/activity/domain/activity_repository.dart';
+import 'package:trainforge/features/activity/presentation/activity_page.dart';
 
 const tfBlue = Color(0xffc9eaf7), tfYellow = Color(0xfff8eba5);
 
@@ -15,6 +17,9 @@ class DailyOverview extends StatelessWidget {
   final bool food;
   final ValueChanged<DateTime>? openDay;
   final VoidCallback openNutrition, openCatalog, openActivity;
+
+  /// Voice and photo entry, only when this build can do them.
+  final VoidCallback? openVoice, openPhoto;
   const DailyOverview({
     super.key,
     required this.controller,
@@ -24,6 +29,8 @@ class DailyOverview extends StatelessWidget {
     required this.openNutrition,
     required this.openCatalog,
     required this.openActivity,
+    this.openVoice,
+    this.openPhoto,
   });
   @override
   Widget build(BuildContext context) => ListenableBuilder(
@@ -49,102 +56,108 @@ class DailyOverview extends StatelessWidget {
           : controller.failed
           ? context.l10n.queryUnavailable
           : context.l10n.sourceSubtotals;
+      String l(String k) => shellLabel(context, k);
       return RefreshIndicator(
         onRefresh: controller.load,
         child: FigmaContent(
           title: context.l10n.eatSimply,
-          subtitle:
-              '${context.displayLongDate(controller.now())} · ${food ? context.l10n.foodDiaryUpper : context.l10n.dailyRhythm}',
+          subtitle: context.displayLongDate(controller.now()),
           children: [
             if (controller.loading)
               AppProgress(label: context.l10n.loadingDayRecords),
-            Container(
-              padding: const EdgeInsets.all(18),
-              decoration: BoxDecoration(
-                color: context.tf.nutrition,
-                borderRadius: BorderRadius.circular(24),
-              ),
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Text(
-                    context.l10n.recordedEnergy,
-                    style: TextStyle(fontSize: 10, fontWeight: FontWeight.w700),
-                  ),
-                  SizedBox(height: 4),
-                  Text(
-                    energy ?? '—',
-                    style: TextStyle(
-                      fontSize: 36,
-                      fontWeight: FontWeight.w700,
-                      height: 1.35,
-                    ),
-                  ),
-                  Text(
-                    energy == null ? state : context.l10n.energyMethodSubtotal,
-                    style: TextStyle(fontSize: 12, height: 1.35),
-                  ),
-                  if (energy != null &&
-                      snapshot?['measuredEntries'] is int &&
-                      snapshot?['estimatedEntries'] is int)
+            // The energy total only once there is something to add up.
+            if (energy != null)
+              Container(
+                padding: const EdgeInsets.all(18),
+                decoration: BoxDecoration(
+                  color: context.tf.nutrition,
+                  borderRadius: BorderRadius.circular(24),
+                ),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
                     Text(
-                      context.l10n.quantityEvidenceCounts(
-                        snapshot!["measuredEntries"] as int,
-                        snapshot["estimatedEntries"] as int,
+                      context.l10n.recordedEnergy,
+                      style: TextStyle(
+                        fontSize: 12,
+                        fontWeight: FontWeight.w700,
                       ),
-                      style: TextStyle(fontSize: 12),
                     ),
-                ],
+                    SizedBox(height: 4),
+                    Text(
+                      energy,
+                      style: TextStyle(
+                        fontSize: 36,
+                        fontWeight: FontWeight.w700,
+                        height: 1.35,
+                      ),
+                    ),
+                    Text(
+                      context.l10n.energyMethodSubtotal,
+                      style: TextStyle(fontSize: 13, height: 1.35),
+                    ),
+                    if (snapshot?['measuredEntries'] is int &&
+                        snapshot?['estimatedEntries'] is int)
+                      Text(
+                        context.l10n.quantityEvidenceCounts(
+                          snapshot!["measuredEntries"] as int,
+                          snapshot["estimatedEntries"] as int,
+                        ),
+                        style: TextStyle(fontSize: 13),
+                      ),
+                  ],
+                ),
               ),
-            ),
-            if (controller.failed)
+            if (controller.failed) ...[
+              Text(state),
               OutlinedButton(
                 onPressed: controller.load,
                 child: Text(context.l10n.updateDayRecords),
               ),
+            ],
+            SizedBox(
+              height: 60,
+              child: FilledButton.icon(
+                onPressed: openNutrition,
+                icon: const Icon(Icons.add, size: 26),
+                label: Text(l('addMeal'), style: const TextStyle(fontSize: 18)),
+              ),
+            ),
+            if (openVoice != null || openPhoto != null)
+              Row(
+                children: [
+                  if (openVoice != null)
+                    Expanded(
+                      child: _QuickButton(
+                        icon: Icons.mic_none,
+                        label: l('addVoice'),
+                        color: context.tf.blue,
+                        onTap: openVoice!,
+                      ),
+                    ),
+                  if (openVoice != null && openPhoto != null)
+                    const SizedBox(width: 10),
+                  if (openPhoto != null)
+                    Expanded(
+                      child: _QuickButton(
+                        icon: Icons.photo_camera_outlined,
+                        label: l('addPhoto'),
+                        color: context.tf.yellow,
+                        onTap: openPhoto!,
+                      ),
+                    ),
+                ],
+              ),
             FigmaActionCard(
-              title: food ? context.l10n.myRecords : context.l10n.myNutrition,
+              title: context.l10n.myRecords,
               subtitle: count == null
                   ? state
+                  : count == 0
+                  ? l('foodEmpty')
                   : context.l10n.confirmedDayCount(count),
               asset: 'food',
-              color: food ? context.tf.surface : context.tf.nutrition,
               onTap: openNutrition,
             ),
-            if (food) ...[
-              FilledButton(
-                onPressed: openNutrition,
-                child: Text(context.l10n.addFood),
-              ),
-              FigmaActionCard(
-                title: context.l10n.hydration,
-                subtitle: context.l10n.waterUnavailable,
-                asset: 'water',
-                color: context.tf.blue,
-                onTap: () => showAvailability(
-                  context,
-                  context.l10n.hydration,
-                  context.l10n.waterNotImplemented,
-                ),
-              ),
-              FigmaActionCard(
-                title: context.l10n.planLearn,
-                subtitle: context.l10n.foodGuidanceUnavailable,
-                asset: 'plan',
-                onTap: () => showAvailability(
-                  context,
-                  context.l10n.planningLearning,
-                  context.l10n.foodPlansUnavailable,
-                ),
-              ),
-            ] else
-              FigmaActionCard(
-                title: context.l10n.whatToday,
-                subtitle: context.l10n.exploreActivities,
-                asset: 'activity',
-                color: context.tf.yellow,
-                onTap: openActivity,
-              ),
           ],
         ),
       );
@@ -152,126 +165,110 @@ class DailyOverview extends StatelessWidget {
   );
 }
 
-class ActivityOverview extends StatelessWidget {
-  const ActivityOverview({super.key});
+class _QuickButton extends StatelessWidget {
+  final IconData icon;
+  final String label;
+  final Color color;
+  final VoidCallback onTap;
+  const _QuickButton({
+    required this.icon,
+    required this.label,
+    required this.color,
+    required this.onTap,
+  });
   @override
-  Widget build(BuildContext context) => FigmaContent(
-    title: context.l10n.outdoorsCounts,
-    subtitle: context.l10n.activityIntro,
-    children: [
-      Container(
-        padding: const EdgeInsets.all(24),
-        decoration: BoxDecoration(
-          color: context.tf.blue,
-          borderRadius: BorderRadius.circular(22),
-        ),
-        child: Text(
-          context.l10n.routeUnavailable,
-          style: TextStyle(fontSize: 15, height: 1.35),
-        ),
-      ),
-      Row(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          Expanded(
-            child: FigmaMetric(
-              value: '—',
-              label: context.l10n.noWalkKm,
-              color: context.tf.blue,
-            ),
+  Widget build(BuildContext context) => Material(
+    color: color,
+    borderRadius: BorderRadius.circular(20),
+    child: InkWell(
+      borderRadius: BorderRadius.circular(20),
+      onTap: onTap,
+      child: ConstrainedBox(
+        constraints: const BoxConstraints(minHeight: 84),
+        child: Padding(
+          padding: const EdgeInsets.all(12),
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Icon(icon, size: 30, color: TrainForgeTheme.ink),
+              const SizedBox(height: 6),
+              Text(
+                label,
+                textAlign: TextAlign.center,
+                style: const TextStyle(
+                  fontSize: 15,
+                  fontWeight: FontWeight.w700,
+                  color: TrainForgeTheme.ink,
+                ),
+              ),
+            ],
           ),
-          SizedBox(width: 10),
-          Expanded(
-            child: FigmaMetric(
-              value: '—',
-              label: context.l10n.noActivityMinutes,
-              color: context.tf.yellow,
-            ),
-          ),
-        ],
+        ),
       ),
-      FilledButton(
-        onPressed: () => openEvaluationGuide(context, EvaluationTopic.activity),
-        child: Text(context.l10n.startActivity),
-      ),
-      FigmaActionCard(
-        title: context.l10n.quickRecord,
-        subtitle: context.l10n.quickUnavailable,
-        asset: 'plus',
-        onTap: () => openEvaluationGuide(context, EvaluationTopic.activity),
-      ),
-      FigmaActionCard(
-        title: context.l10n.myDevices,
-        subtitle: context.l10n.permissionsSync,
-        asset: 'activity',
-        color: context.tf.soft,
-        onTap: () => openEvaluationGuide(context, EvaluationTopic.devices),
-      ),
-    ],
+    ),
   );
 }
 
-class EvolutionOverview extends StatelessWidget {
-  final VoidCallback openNutrition;
-  const EvolutionOverview({super.key, required this.openNutrition});
+/// Evolução tab: workout sessions history (the former Atividade tab) plus
+/// the food diary. With nothing recorded, one friendly line and one button.
+class EvolutionPage extends StatelessWidget {
+  final ActivityRepository? activity;
+  final String accountId;
+  final String? Function() currentAccountId;
+  final Listenable sessionChanges;
+  final VoidCallback openNutrition, openWorkouts;
+  const EvolutionPage({
+    super.key,
+    required this.activity,
+    required this.accountId,
+    required this.currentAccountId,
+    required this.sessionChanges,
+    required this.openNutrition,
+    required this.openWorkouts,
+  });
+
   @override
-  Widget build(BuildContext context) => FigmaContent(
-    title: context.l10n.yourProgress,
-    subtitle: context.l10n.historyWithSource,
-    children: [
-      Container(
-        padding: const EdgeInsets.all(18),
-        decoration: BoxDecoration(
-          color: context.tf.surface,
-          borderRadius: BorderRadius.circular(24),
-        ),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            Text(
-              '—',
-              style: TextStyle(fontSize: 36, fontWeight: FontWeight.w700),
-            ),
-            Text(
-              context.l10n.chartUnavailable,
-              style: TextStyle(fontSize: 12, height: 1.35),
-            ),
-          ],
-        ),
-      ),
-      Row(
-        crossAxisAlignment: CrossAxisAlignment.start,
+  Widget build(BuildContext context) {
+    String l(String k) => shellLabel(context, k);
+    final empty = FigmaSection(
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
-          Expanded(
-            child: FigmaMetric(
-              value: '—',
-              label: context.l10n.workoutsUnavailable,
-              color: context.tf.soft,
-            ),
+          Icon(Icons.insights, size: 40, color: context.tf.primary),
+          const SizedBox(height: 10),
+          Text(
+            l('evolutionEmpty'),
+            style: const TextStyle(fontSize: 17, height: 1.35),
           ),
-          SizedBox(width: 10),
-          Expanded(
-            child: FigmaMetric(
-              value: '—',
-              label: context.l10n.walkingKmUnavailable,
-              color: context.tf.blue,
-            ),
-          ),
+          const SizedBox(height: 14),
+          FilledButton(onPressed: openWorkouts, child: Text(l('goWorkouts'))),
         ],
       ),
-      FigmaActionCard(
-        title: context.l10n.eachRecordCounts,
-        subtitle: context.l10n.historyCorrect,
-        asset: 'chart',
-        color: context.tf.yellow,
-        onTap: openNutrition,
-      ),
-      FigmaActionCard(
-        title: context.l10n.measurementsGoals,
-        subtitle: context.l10n.configurationUnavailable,
-        asset: 'heart',
-        onTap: () => openEvaluationGuide(context, EvaluationTopic.firstAccess),
-      ),
-    ],
-  );
+    );
+    final diary = FigmaActionCard(
+      title: l('foodDiary'),
+      subtitle: l('foodDiaryHint'),
+      asset: 'food',
+      color: context.tf.nutrition,
+      onTap: openNutrition,
+    );
+    final repository = activity;
+    if (repository == null) {
+      return FigmaContent(
+        title: l('evolutionTitle'),
+        subtitle: l('evolutionIntro'),
+        children: [empty, diary],
+      );
+    }
+    return ActivityPage(
+      repository: repository,
+      accountId: accountId,
+      currentAccountId: currentAccountId,
+      sessionChanges: sessionChanges,
+      title: l('evolutionTitle'),
+      intro: l('evolutionIntro'),
+      empty: empty,
+      extra: [diary],
+    );
+  }
 }

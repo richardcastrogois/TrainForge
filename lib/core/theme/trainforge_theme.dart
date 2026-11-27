@@ -10,6 +10,9 @@ abstract final class TrainForgeTheme {
   static const primary = Color(0xff215e52), accent = Color(0xffd8eb90);
   static const nutrition = Color(0xfff5e3d5), soft = Color(0xffe8eee3);
 
+  /// Call-to-action that must stand out from the greens (ink text on it).
+  static const highlight = Color(0xffff8a3d);
+
   /// Deep green used for the mark tile on the brand-green canvas.
   static const deep = Color(0xff174639);
 

@@ -269,11 +269,11 @@ class AppLocalizationsEn extends AppLocalizations {
       'The appearance could not be saved. Try again.';
 
   @override
-  String get moveNow => 'Let\'s move!';
+  String get moveNow => 'Good to see you!';
 
   @override
   String moveWithName(String name) {
-    return 'Let\'s move, $name!';
+    return 'Good to see you, $name!';
   }
 
   @override

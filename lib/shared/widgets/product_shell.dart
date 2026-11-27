@@ -6,6 +6,7 @@ import 'package:trainforge/shared/widgets/app_loading.dart';
 import 'package:trainforge/features/catalog/presentation/catalog_controller.dart';
 import 'package:flutter/material.dart';
 import 'figma_components.dart';
+import 'package:trainforge/core/theme/trainforge_theme.dart';
 import 'package:trainforge/features/auth/presentation/auth_controller.dart';
 import 'package:trainforge/composition/app_dependency_scope.dart';
 import 'package:trainforge/features/nutrition/domain/nutrition.dart';
@@ -16,10 +17,12 @@ import 'account_page.dart';
 import 'package:trainforge/features/onboarding/onboarding_profile.dart';
 import 'package:trainforge/features/training_configuration/presentation/training_configuration_page.dart';
 import 'figma_bottom_nav.dart';
-import 'plans_overview.dart';
+import 'glass_sheet.dart';
 import 'product_overviews.dart';
+import 'shell_labels.dart';
+import 'workouts_overview.dart';
+import 'package:trainforge/features/nutrition/data/offline_nutrition_repository.dart';
 import 'package:trainforge/features/activity/domain/activity_repository.dart';
-import 'package:trainforge/features/activity/presentation/activity_page.dart';
 
 class ProductShell extends StatefulWidget {
   final AuthController controller;
@@ -42,7 +45,7 @@ class ProductShell extends StatefulWidget {
 class _ProductShellState extends State<ProductShell>
     with WidgetsBindingObserver, SingleTickerProviderStateMixin {
   /// Floating bar height plus its margins.
-  static const _navSpace = 82.0;
+  static const _navSpace = FigmaBottomNav.height + 16;
 
   TrainForgeDestination selected = TrainForgeDestination.today;
   final visited = {TrainForgeDestination.today};
@@ -111,13 +114,14 @@ class _ProductShellState extends State<ProductShell>
     super.dispose();
   }
 
-  Future<void> openNutrition({DateTime? day}) async {
+  Future<void> openNutrition({DateTime? day, NutritionStart? start}) async {
     await Navigator.push<void>(
       context,
       MaterialPageRoute(
         builder: (_) => NutritionPage(
           accountId: accountId,
           initialDate: day,
+          start: start,
           currentAccountId: () => widget.controller.profile?.id,
           sessionChanges: widget.controller,
           repository: nutrition,
@@ -157,6 +161,121 @@ class _ProductShellState extends State<ProductShell>
     });
   }
 
+  VoidCallback? get configure => configuration == null
+      ? null
+      : () => openTrainingConfiguration(
+          context,
+          widget.controller,
+          configuration!,
+        );
+
+  /// "+" panel: only what already works in this build.
+  void openAdd() {
+    String l(String k) => shellLabel(context, k);
+    final offline = nutrition is OfflineNutritionRepository;
+    void then(VoidCallback action) {
+      Navigator.pop(context);
+      action();
+    }
+
+    showGlassSheet<void>(
+      context,
+      title: l('addTitle'),
+      children: [
+        GlassSheetOption(
+          icon: Icons.fitness_center,
+          title: l('addWorkout'),
+          hint: l('addWorkoutHint'),
+          color: context.tf.accent,
+          onTap: () => then(() => select(TrainForgeDestination.workouts)),
+        ),
+        GlassSheetOption(
+          icon: Icons.restaurant,
+          title: l('addMeal'),
+          hint: l('addMealHint'),
+          color: context.tf.nutrition,
+          onTap: () => then(openNutrition),
+        ),
+        if (offline) ...[
+          GlassSheetOption(
+            icon: Icons.mic_none,
+            title: l('addVoice'),
+            hint: l('addVoiceHint'),
+            color: context.tf.blue,
+            onTap: () => then(() => openNutrition(start: NutritionStart.voice)),
+          ),
+          GlassSheetOption(
+            icon: Icons.photo_camera_outlined,
+            title: l('addPhoto'),
+            hint: l('addPhotoHint'),
+            color: context.tf.yellow,
+            onTap: () => then(() => openNutrition(start: NutritionStart.photo)),
+          ),
+        ],
+      ],
+    );
+  }
+
+  AccountPage account(BuildContext context) => AccountPage(
+    controller: widget.controller,
+    redoFirstQuestions: redoFirstQuestions(context),
+    configure: configure,
+  );
+
+  /// Small card under the round picture: who is signed in and where to go.
+  void openProfile() {
+    String l(String k) => shellLabel(context, k);
+    final profile = widget.controller.profile!;
+    void openAccount() => Navigator.push<void>(
+      context,
+      MaterialPageRoute(builder: (route) => account(route)),
+    );
+    showTopMenu(
+      context,
+      header: InkWell(
+        onTap: () {
+          Navigator.pop(context);
+          openAccount();
+        },
+        child: Padding(
+          padding: const EdgeInsets.fromLTRB(16, 8, 16, 12),
+          child: Row(
+            children: [
+              ProfileAvatar(name: profile.name, image: profile.image, size: 40),
+              const SizedBox(width: 12),
+              Expanded(
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(
+                      profile.name,
+                      maxLines: 1,
+                      overflow: TextOverflow.ellipsis,
+                      style: const TextStyle(
+                        fontSize: 16,
+                        fontWeight: FontWeight.w700,
+                      ),
+                    ),
+                    Text(
+                      profile.email,
+                      maxLines: 1,
+                      overflow: TextOverflow.ellipsis,
+                      style: TextStyle(fontSize: 13, color: context.tf.muted),
+                    ),
+                  ],
+                ),
+              ),
+            ],
+          ),
+        ),
+      ),
+      items: [
+        TopMenuItem(Icons.tune, l('profileSettings'), openAccount),
+        TopMenuItem(Icons.logout, l('signOut'), widget.controller.logout),
+      ],
+    );
+  }
+
   Widget page(TrainForgeDestination value) {
     if (!visited.contains(value)) return const SizedBox.shrink();
     if (widget.pageBuilder != null) return widget.pageBuilder!(value);
@@ -168,45 +287,33 @@ class _ProductShellState extends State<ProductShell>
         openDay: (day) => openNutrition(day: day),
         openNutrition: openNutrition,
         openCatalog: openCatalog,
-        openActivity: () => select(TrainForgeDestination.activity),
+        openActivity: () => select(TrainForgeDestination.evolution),
       ),
-      TrainForgeDestination.plans => PlansOverview(
-        controller: widget.plansController,
-        configure: configuration == null
-            ? null
-            : () => openTrainingConfiguration(
-                context,
-                widget.controller,
-                configuration!,
-              ),
+      TrainForgeDestination.workouts => WorkoutsOverview(
+        openCatalog: openCatalog,
+        configure: configure,
       ),
-      TrainForgeDestination.activity =>
-        activity == null
-            ? const ActivityOverview()
-            : ActivityPage(
-                repository: activity!,
-                accountId: accountId,
-                currentAccountId: () => widget.controller.profile?.id,
-                sessionChanges: widget.controller,
-                openCatalog: openCatalog,
-                configure: configuration == null
-                    ? null
-                    : () => openTrainingConfiguration(
-                        context,
-                        widget.controller,
-                        configuration!,
-                      ),
-              ),
       TrainForgeDestination.food => DailyOverview(
         controller: daily,
         name: widget.controller.profile!.name,
         food: true,
+        openVoice: nutrition is OfflineNutritionRepository
+            ? () => openNutrition(start: NutritionStart.voice)
+            : null,
+        openPhoto: nutrition is OfflineNutritionRepository
+            ? () => openNutrition(start: NutritionStart.photo)
+            : null,
         openNutrition: openNutrition,
         openCatalog: openCatalog,
-        openActivity: () => select(TrainForgeDestination.activity),
+        openActivity: () => select(TrainForgeDestination.evolution),
       ),
-      TrainForgeDestination.evolution => EvolutionOverview(
+      TrainForgeDestination.evolution => EvolutionPage(
+        activity: activity,
+        accountId: accountId,
+        currentAccountId: () => widget.controller.profile?.id,
+        sessionChanges: widget.controller,
         openNutrition: openNutrition,
+        openWorkouts: () => select(TrainForgeDestination.workouts),
       ),
     };
   }
@@ -232,22 +339,8 @@ class _ProductShellState extends State<ProductShell>
                 children: [
                   FigmaHeader(
                     name: profile.name,
-                    onProfile: () => Navigator.push<void>(
-                      context,
-                      MaterialPageRoute(
-                        builder: (_) => AccountPage(
-                          controller: widget.controller,
-                          redoFirstQuestions: redoFirstQuestions(context),
-                          configure: configuration == null
-                              ? null
-                              : () => openTrainingConfiguration(
-                                  context,
-                                  widget.controller,
-                                  configuration!,
-                                ),
-                        ),
-                      ),
-                    ),
+                    image: profile.image,
+                    onProfile: openProfile,
                   ),
                   if (widget.controller.busy)
                     AppProgress(label: context.l10n.confirmingSession),
@@ -296,12 +389,13 @@ class _ProductShellState extends State<ProductShell>
                           ),
                         ),
                         Positioned(
-                          left: 24,
-                          right: 24,
+                          left: 16,
+                          right: 16,
                           bottom: 8,
                           child: FigmaBottomNav(
                             selected: selected,
                             onSelected: select,
+                            onAdd: openAdd,
                           ),
                         ),
                       ],

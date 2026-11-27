@@ -9,6 +9,7 @@ import 'package:trainforge/features/onboarding/place_photos.dart';
 import 'package:trainforge/features/training_library/data/training_library.dart';
 import 'package:trainforge/features/training_library/presentation/training_library_page.dart';
 import 'package:trainforge/shared/widgets/glass_surface.dart';
+import 'package:trainforge/shared/widgets/shell_labels.dart';
 
 String homeLabel(BuildContext context, String key) {
   final language = Localizations.localeOf(context).languageCode;
@@ -17,7 +18,7 @@ String homeLabel(BuildContext context, String key) {
 
 const _labels = <String, Map<String, String>>{
   'pt': {
-    'tagline': 'Um pouco mais forte e saudável, todos os dias',
+    'tagline': 'Mais forte e saudável, todo dia',
     'casa': 'Treino em casa',
     'praca': 'Treino na praça',
     'academia': 'Treino na academia',
@@ -30,15 +31,11 @@ const _labels = <String, Map<String, String>>{
     'intermediario': 'Intermediário',
     'avancado': 'Avançado',
     'chooseLevel': 'Escolha como começar',
-    'buildTitle': 'Montar meu treino',
-    'buildHint': 'Toque aqui e escolha o treino de hoje.',
-    'buildMissing':
-        'Responda duas perguntas rápidas para sugerirmos o treino certo.',
     'nextPlace': 'Mostrar o próximo lugar',
     'seeWorkouts': 'Ver treinos',
   },
   'en': {
-    'tagline': 'A little stronger and healthier, every day',
+    'tagline': 'Stronger and healthier, every day',
     'casa': 'Workout at home',
     'praca': 'Workout in the park',
     'academia': 'Workout at the gym',
@@ -51,15 +48,11 @@ const _labels = <String, Map<String, String>>{
     'intermediario': 'Intermediate',
     'avancado': 'Advanced',
     'chooseLevel': 'Choose how to start',
-    'buildTitle': 'Build my workout',
-    'buildHint': 'Tap here and choose today’s workout.',
-    'buildMissing':
-        'Answer two quick questions so we can suggest the right workout.',
     'nextPlace': 'Show the next place',
     'seeWorkouts': 'See workouts',
   },
   'es': {
-    'tagline': 'Un poco más fuerte y saludable, todos los días',
+    'tagline': 'Más fuerte y saludable, cada día',
     'casa': 'Entreno en casa',
     'praca': 'Entreno en el parque',
     'academia': 'Entreno en el gimnasio',
@@ -72,10 +65,6 @@ const _labels = <String, Map<String, String>>{
     'intermediario': 'Intermedio',
     'avancado': 'Avanzado',
     'chooseLevel': 'Elige cómo empezar',
-    'buildTitle': 'Armar mi entreno',
-    'buildHint': 'Toca aquí y elige el entreno de hoy.',
-    'buildMissing':
-        'Responde dos preguntas rápidas para sugerirte el entreno adecuado.',
     'nextPlace': 'Mostrar el siguiente lugar',
     'seeWorkouts': 'Ver entrenos',
   },
@@ -86,10 +75,17 @@ const _labels = <String, Map<String, String>>{
 class TrainingHeroCard extends StatefulWidget {
   final OnboardingProfile? profile;
   final Future<TrainingLibrary> Function() library;
+
+  /// First use: a taller card with one big "Começar" (or "Responder 2
+  /// perguntas" while answers are missing) instead of the small pill.
+  final bool first;
+  final VoidCallback? completeAnswers;
   const TrainingHeroCard({
     super.key,
     required this.profile,
     this.library = TrainingLibrary.load,
+    this.first = false,
+    this.completeAnswers,
   });
   @override
   State<TrainingHeroCard> createState() => _TrainingHeroCardState();
@@ -204,129 +200,202 @@ class _TrainingHeroCardState extends State<TrainingHeroCard> {
           ].join(' · ');
         }
         final title = place == null ? l('any') : l(place);
+        const shadow = [Shadow(color: Colors.black54, blurRadius: 8)];
+        final missing =
+            widget.completeAnswers != null &&
+            (profile == null ||
+                profile.places.isEmpty ||
+                profile.confidence == null);
+        final first = widget.first;
+        final action = shellLabel(context, missing ? 'answerFirst' : 'start');
         return Semantics(
           button: true,
-          label: '${l('tagline')}. $title. $detail',
+          label: first
+              ? '$action. $title. $detail'
+              : '${l('tagline')}. $title. $detail',
           onLongPressHint: list.length > 1 ? l('nextPlace') : null,
           child: Material(
             color: TrainForgeTheme.primary,
             borderRadius: BorderRadius.circular(24),
             clipBehavior: Clip.antiAlias,
             child: InkWell(
-              onTap: () => open(place),
+              onTap: missing ? widget.completeAnswers : () => open(place),
               onLongPress: list.length > 1 ? nextPlace : null,
               child: ExcludeSemantics(
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.stretch,
-                  children: [
-                    SizedBox(
-                      height: 200,
-                      child: Stack(
-                        fit: StackFit.expand,
-                        children: [
-                          AnimatedSwitcher(
-                            duration: Duration(milliseconds: reduced ? 0 : 900),
-                            child: _PlaceArt(
-                              key: ValueKey('$place/$photo'),
-                              place: place,
-                              photo: photo,
-                            ),
+                child: SizedBox(
+                  height: first ? 300 : 172,
+                  child: Stack(
+                    fit: StackFit.expand,
+                    children: [
+                      AnimatedSwitcher(
+                        duration: Duration(milliseconds: reduced ? 0 : 900),
+                        child: _PlaceArt(
+                          key: ValueKey('$place/$photo'),
+                          place: place,
+                          photo: photo,
+                        ),
+                      ),
+                      // Dark at the bottom so the text stays readable.
+                      const DecoratedBox(
+                        decoration: BoxDecoration(
+                          gradient: LinearGradient(
+                            begin: Alignment.topCenter,
+                            end: Alignment.bottomCenter,
+                            stops: [.25, 1],
+                            colors: [Colors.transparent, Color(0xd0102a25)],
                           ),
-                          Positioned(
-                            left: 14,
-                            bottom: 14,
-                            child: GlassSurface(
-                              borderRadius: BorderRadius.circular(24),
-                              tint: Colors.black.withValues(alpha: .28),
-                              child: Padding(
-                                padding: const EdgeInsets.symmetric(
-                                  horizontal: 14,
-                                  vertical: 9,
-                                ),
+                        ),
+                      ),
+                      if (first)
+                        Positioned(
+                          left: 14,
+                          right: 14,
+                          bottom: 14,
+                          height: 58,
+                          // Looks like a button; the whole card is the tap target.
+                          child: DecoratedBox(
+                            decoration: BoxDecoration(
+                              color: TrainForgeTheme.highlight,
+                              borderRadius: BorderRadius.circular(18),
+                            ),
+                            child: Padding(
+                              padding: const EdgeInsets.symmetric(
+                                horizontal: 12,
+                              ),
+                              // Large text sizes shrink to fit one line.
+                              child: FittedBox(
+                                fit: BoxFit.scaleDown,
                                 child: Row(
                                   mainAxisSize: MainAxisSize.min,
                                   children: [
                                     Text(
-                                      l('seeWorkouts'),
+                                      action,
                                       style: const TextStyle(
-                                        fontSize: 15,
-                                        fontWeight: FontWeight.w700,
-                                        color: Colors.white,
+                                        fontSize: 20,
+                                        fontWeight: FontWeight.w800,
+                                        color: TrainForgeTheme.ink,
                                       ),
                                     ),
-                                    const SizedBox(width: 6),
+                                    const SizedBox(width: 8),
                                     const Icon(
                                       Icons.arrow_forward,
-                                      size: 18,
-                                      color: Colors.white,
+                                      size: 24,
+                                      color: TrainForgeTheme.ink,
                                     ),
                                   ],
                                 ),
                               ),
                             ),
                           ),
-                        ],
-                      ),
-                    ),
-                    Padding(
-                      padding: const EdgeInsets.fromLTRB(18, 14, 18, 18),
-                      child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          Text(
-                            l('tagline').toUpperCase(),
-                            style: const TextStyle(
-                              fontSize: 12,
-                              fontWeight: FontWeight.w700,
-                              letterSpacing: .3,
-                              color: TrainForgeTheme.accent,
-                            ),
-                          ),
-                          const SizedBox(height: 6),
-                          AnimatedSwitcher(
-                            duration: Duration(milliseconds: reduced ? 0 : 400),
-                            child: Text(
-                              title,
-                              key: ValueKey(title),
-                              style: const TextStyle(
-                                fontSize: 26,
-                                fontWeight: FontWeight.w700,
-                                color: Colors.white,
+                        ),
+                      if (!first)
+                        Positioned(
+                          top: 12,
+                          right: 12,
+                          child: GlassSurface(
+                            borderRadius: BorderRadius.circular(20),
+                            tint: Colors.black.withValues(alpha: .28),
+                            child: Padding(
+                              padding: const EdgeInsets.symmetric(
+                                horizontal: 12,
+                                vertical: 7,
+                              ),
+                              child: Row(
+                                mainAxisSize: MainAxisSize.min,
+                                children: [
+                                  Text(
+                                    l('seeWorkouts'),
+                                    style: const TextStyle(
+                                      fontSize: 13,
+                                      fontWeight: FontWeight.w700,
+                                      color: Colors.white,
+                                    ),
+                                  ),
+                                  const SizedBox(width: 4),
+                                  const Icon(
+                                    Icons.arrow_forward,
+                                    size: 16,
+                                    color: Colors.white,
+                                  ),
+                                ],
                               ),
                             ),
                           ),
-                          const SizedBox(height: 4),
-                          Text(
-                            detail,
-                            style: const TextStyle(
-                              fontSize: 16,
-                              color: Colors.white,
+                        ),
+                      Positioned(
+                        left: 16,
+                        right: 16,
+                        bottom: first ? 86 : 14,
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Text(
+                              l('tagline').toUpperCase(),
+                              maxLines: 1,
+                              overflow: TextOverflow.ellipsis,
+                              style: const TextStyle(
+                                fontSize: 10.5,
+                                fontWeight: FontWeight.w700,
+                                letterSpacing: .4,
+                                color: TrainForgeTheme.accent,
+                                shadows: shadow,
+                              ),
                             ),
-                          ),
-                          if (list.length > 1) ...[
-                            const SizedBox(height: 10),
+                            const SizedBox(height: 2),
+                            AnimatedSwitcher(
+                              duration: Duration(
+                                milliseconds: reduced ? 0 : 400,
+                              ),
+                              child: Text(
+                                title,
+                                key: ValueKey(title),
+                                maxLines: 1,
+                                overflow: TextOverflow.ellipsis,
+                                style: const TextStyle(
+                                  fontSize: 22,
+                                  fontWeight: FontWeight.w800,
+                                  color: Colors.white,
+                                  shadows: shadow,
+                                ),
+                              ),
+                            ),
                             Row(
                               children: [
-                                for (var i = 0; i < list.length; i++)
-                                  AnimatedContainer(
-                                    duration: const Duration(milliseconds: 300),
-                                    width: list[i] == place ? 18 : 8,
-                                    height: 8,
-                                    margin: const EdgeInsets.only(right: 6),
-                                    decoration: BoxDecoration(
-                                      color: list[i] == place
-                                          ? TrainForgeTheme.accent
-                                          : Colors.white54,
-                                      borderRadius: BorderRadius.circular(4),
+                                Expanded(
+                                  child: Text(
+                                    detail,
+                                    maxLines: 1,
+                                    overflow: TextOverflow.ellipsis,
+                                    style: const TextStyle(
+                                      fontSize: 14,
+                                      color: Colors.white,
+                                      shadows: shadow,
                                     ),
                                   ),
+                                ),
+                                for (var i = 0; i < list.length; i++)
+                                  if (list.length > 1)
+                                    AnimatedContainer(
+                                      duration: const Duration(
+                                        milliseconds: 300,
+                                      ),
+                                      width: list[i] == place ? 16 : 7,
+                                      height: 7,
+                                      margin: const EdgeInsets.only(left: 5),
+                                      decoration: BoxDecoration(
+                                        color: list[i] == place
+                                            ? TrainForgeTheme.accent
+                                            : Colors.white54,
+                                        borderRadius: BorderRadius.circular(4),
+                                      ),
+                                    ),
                               ],
                             ),
                           ],
-                        ],
+                        ),
                       ),
-                    ),
-                  ],
+                    ],
+                  ),
                 ),
               ),
             ),
@@ -385,98 +454,6 @@ class _PlaceArt extends StatelessWidget {
                     Transform.scale(scale: scale, child: child),
                 child: image,
               ),
-      ),
-    );
-  }
-}
-
-/// Empty state: one big "+" that leads to the workout, or to the missing answers.
-class BuildWorkoutCard extends StatelessWidget {
-  final OnboardingProfile? profile;
-  final VoidCallback completeAnswers;
-  const BuildWorkoutCard({
-    super.key,
-    required this.profile,
-    required this.completeAnswers,
-  });
-
-  bool get missing =>
-      profile == null || profile!.places.isEmpty || profile!.confidence == null;
-
-  @override
-  Widget build(BuildContext context) {
-    String l(String k) => homeLabel(context, k);
-    final place = profile?.places.isEmpty ?? true
-        ? null
-        : OnboardingProfile.placeIds.firstWhere(
-            (p) => profile!.places.contains(p),
-          );
-    return Semantics(
-      button: true,
-      label:
-          '${l('buildTitle')}. ${missing ? l('buildMissing') : l('buildHint')}',
-      child: Material(
-        color: TrainForgeTheme.accent,
-        borderRadius: BorderRadius.circular(24),
-        child: InkWell(
-          borderRadius: BorderRadius.circular(24),
-          onTap: missing
-              ? completeAnswers
-              : () => Navigator.push<void>(
-                  context,
-                  MaterialPageRoute(
-                    builder: (_) => TrainingLibraryPage(
-                      initialPlace: place,
-                      initialCell: place == null
-                          ? null
-                          : profile!.cellFor(place),
-                    ),
-                  ),
-                ),
-          child: ExcludeSemantics(
-            child: Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 18, vertical: 22),
-              child: Row(
-                children: [
-                  Container(
-                    width: 72,
-                    height: 72,
-                    decoration: const BoxDecoration(
-                      color: TrainForgeTheme.primary,
-                      shape: BoxShape.circle,
-                    ),
-                    child: const Icon(Icons.add, size: 44, color: Colors.white),
-                  ),
-                  const SizedBox(width: 16),
-                  Expanded(
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        Text(
-                          l('buildTitle'),
-                          style: const TextStyle(
-                            fontSize: 22,
-                            fontWeight: FontWeight.w700,
-                            color: TrainForgeTheme.ink,
-                          ),
-                        ),
-                        const SizedBox(height: 4),
-                        Text(
-                          missing ? l('buildMissing') : l('buildHint'),
-                          style: const TextStyle(
-                            fontSize: 16,
-                            height: 1.35,
-                            color: TrainForgeTheme.ink,
-                          ),
-                        ),
-                      ],
-                    ),
-                  ),
-                ],
-              ),
-            ),
-          ),
-        ),
       ),
     );
   }

@@ -76,7 +76,7 @@ const _labels = <String, Map<String, String>>{
 };
 
 /// Place → level → sessions; everything offline from the bundled research asset.
-class TrainingLibraryPage extends StatefulWidget {
+class TrainingLibraryPage extends StatelessWidget {
   final Future<String> Function()? read;
 
   /// Preselected from the first answers; the person can still change both.
@@ -88,108 +88,149 @@ class TrainingLibraryPage extends StatefulWidget {
     this.initialCell,
   });
   @override
-  State<TrainingLibraryPage> createState() => _TrainingLibraryPageState();
+  Widget build(BuildContext context) => Scaffold(
+    appBar: AppBar(title: Text(trainingLabel(context, 'title'))),
+    body: ListView(
+      padding: const EdgeInsets.fromLTRB(24, 8, 24, 24),
+      children: [
+        Text(trainingLabel(context, 'subtitle')),
+        const SizedBox(height: 16),
+        TrainingLibraryView(
+          read: read,
+          initialPlace: initialPlace,
+          initialCell: initialCell,
+        ),
+      ],
+    ),
+  );
 }
 
-class _TrainingLibraryPageState extends State<TrainingLibraryPage> {
+/// The place and level chips and the session list, without a page around it,
+/// so the Treinos tab can show it directly.
+class TrainingLibraryView extends StatefulWidget {
+  final Future<String> Function()? read;
+  final String? initialPlace, initialCell;
+  const TrainingLibraryView({
+    super.key,
+    this.read,
+    this.initialPlace,
+    this.initialCell,
+  });
+  @override
+  State<TrainingLibraryView> createState() => _TrainingLibraryViewState();
+}
+
+class _TrainingLibraryViewState extends State<TrainingLibraryView> {
   late final Future<TrainingLibrary> library = TrainingLibrary.load(
     widget.read,
   );
   late String? place = widget.initialPlace, cell = widget.initialCell;
 
   @override
-  Widget build(BuildContext context) => Scaffold(
-    appBar: AppBar(title: Text(trainingLabel(context, 'title'))),
-    body: FutureBuilder<TrainingLibrary>(
-      future: library,
-      builder: (context, snapshot) {
-        if (snapshot.hasError) {
-          return Center(child: Text(trainingLabel(context, 'loadFailed')));
-        }
-        final lib = snapshot.data;
-        if (lib == null) {
-          return const Center(child: CircularProgressIndicator());
-        }
-        final selected = lib.places.firstWhere(
-          (p) => p.id == place,
-          orElse: () => lib.places.first,
-        );
-        final level = selected.cells.firstWhere(
-          (c) => c.id == cell,
-          orElse: () => selected.cells.first,
-        );
-        final sessions = lib.forCell(level.id);
-        return ListView(
-          padding: const EdgeInsets.fromLTRB(24, 8, 24, 24),
-          children: [
-            Text(trainingLabel(context, 'subtitle')),
-            const SizedBox(height: 16),
-            Text(
-              trainingLabel(context, 'place'),
-              style: Theme.of(context).textTheme.titleSmall,
-            ),
-            const SizedBox(height: 8),
-            Wrap(
-              spacing: 8,
-              runSpacing: 8,
-              children: [
-                for (final p in lib.places)
-                  ChoiceChip(
-                    label: Text(p.name),
-                    selected: p.id == selected.id,
-                    onSelected: (_) => setState(() {
-                      place = p.id;
-                      cell = null;
-                    }),
+  void didUpdateWidget(TrainingLibraryView old) {
+    super.didUpdateWidget(old);
+    // A new choice from the first answers moves the selection.
+    if (old.initialPlace != widget.initialPlace ||
+        old.initialCell != widget.initialCell) {
+      place = widget.initialPlace;
+      cell = widget.initialCell;
+    }
+  }
+
+  @override
+  Widget build(BuildContext context) => FutureBuilder<TrainingLibrary>(
+    future: library,
+    builder: (context, snapshot) {
+      if (snapshot.hasError) {
+        return Text(trainingLabel(context, 'loadFailed'));
+      }
+      final lib = snapshot.data;
+      // The bundled file opens in a moment; no spinner that never settles.
+      if (lib == null) return const SizedBox(height: 120);
+      final selected = lib.places.firstWhere(
+        (p) => p.id == place,
+        orElse: () => lib.places.first,
+      );
+      final level = selected.cells.firstWhere(
+        (c) => c.id == cell,
+        orElse: () => selected.cells.first,
+      );
+      final sessions = lib.forCell(level.id);
+      return Column(
+        crossAxisAlignment: CrossAxisAlignment.stretch,
+        children: [
+          Text(
+            trainingLabel(context, 'place'),
+            style: Theme.of(context).textTheme.titleSmall,
+          ),
+          const SizedBox(height: 8),
+          Wrap(
+            spacing: 8,
+            runSpacing: 8,
+            children: [
+              for (final p in lib.places)
+                ChoiceChip(
+                  label: Text(p.name),
+                  selected: p.id == selected.id,
+                  onSelected: (_) => setState(() {
+                    place = p.id;
+                    cell = null;
+                  }),
+                ),
+            ],
+          ),
+          const SizedBox(height: 16),
+          Text(
+            trainingLabel(context, 'level'),
+            style: Theme.of(context).textTheme.titleSmall,
+          ),
+          const SizedBox(height: 8),
+          Wrap(
+            spacing: 8,
+            runSpacing: 8,
+            children: [
+              for (final c in selected.cells)
+                ChoiceChip(
+                  label: Text(_levelName(c)),
+                  selected: c.id == level.id,
+                  onSelected: (_) => setState(() => cell = c.id),
+                ),
+            ],
+          ),
+          const SizedBox(height: 16),
+          if (sessions.isEmpty) Text(trainingLabel(context, 'empty')),
+          for (final s in sessions)
+            Card(
+              margin: const EdgeInsets.only(bottom: 10),
+              child: ListTile(
+                minVerticalPadding: 12,
+                title: Text(
+                  s.name,
+                  style: const TextStyle(
+                    fontSize: 17,
+                    fontWeight: FontWeight.w700,
                   ),
-              ],
-            ),
-            const SizedBox(height: 16),
-            Text(
-              trainingLabel(context, 'level'),
-              style: Theme.of(context).textTheme.titleSmall,
-            ),
-            const SizedBox(height: 8),
-            Wrap(
-              spacing: 8,
-              runSpacing: 8,
-              children: [
-                for (final c in selected.cells)
-                  ChoiceChip(
-                    label: Text(_levelName(c)),
-                    selected: c.id == level.id,
-                    onSelected: (_) => setState(() => cell = c.id),
-                  ),
-              ],
-            ),
-            const SizedBox(height: 16),
-            if (sessions.isEmpty) Text(trainingLabel(context, 'empty')),
-            for (final s in sessions)
-              Card(
-                margin: const EdgeInsets.only(bottom: 10),
-                child: ListTile(
-                  title: Text(s.name),
-                  subtitle: Text(
-                    [
-                      if (s.minutes != null)
-                        '${s.minutes} ${trainingLabel(context, 'minutes')}',
-                      if (s.equipment != null && s.equipment!.isNotEmpty)
-                        s.equipment!,
-                    ].join(' · '),
-                  ),
-                  trailing: const Icon(Icons.chevron_right),
-                  onTap: () => Navigator.push<void>(
-                    context,
-                    MaterialPageRoute(
-                      builder: (_) => TrainingSessionPage(session: s),
-                    ),
+                ),
+                subtitle: Text(
+                  [
+                    if (s.minutes != null)
+                      '${s.minutes} ${trainingLabel(context, 'minutes')}',
+                    if (s.equipment != null && s.equipment!.isNotEmpty)
+                      s.equipment!,
+                  ].join(' · '),
+                ),
+                trailing: const Icon(Icons.chevron_right),
+                onTap: () => Navigator.push<void>(
+                  context,
+                  MaterialPageRoute(
+                    builder: (_) => TrainingSessionPage(session: s),
                   ),
                 ),
               ),
-          ],
-        );
-      },
-    ),
+            ),
+        ],
+      );
+    },
   );
 
   /// "Casa — iniciante" → "iniciante" (the place is already chosen above).

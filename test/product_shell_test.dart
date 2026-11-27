@@ -1,5 +1,5 @@
 import 'package:trainforge/features/catalog/presentation/catalog_controller.dart';
-import 'package:trainforge/shared/widgets/plans_overview.dart';
+import 'package:trainforge/shared/widgets/workouts_overview.dart';
 import 'package:trainforge/shared/widgets/account_page.dart';
 import 'catalog_test.dart' show FixtureCatalog;
 import 'dart:async';
@@ -161,7 +161,7 @@ void main() {
             nutritionRepository: FakeNutrition(),
             pageBuilder: (destination) {
               built.add(destination);
-              return destination == TrainForgeDestination.plans
+              return destination == TrainForgeDestination.workouts
                   ? const DraftTab()
                   : Text(destination.label);
             },
@@ -170,18 +170,21 @@ void main() {
       );
       await t.pumpAndSettle();
       expect(built, {TrainForgeDestination.today});
-      await t.tap(find.byTooltip('Planos'));
+      await t.tap(find.byTooltip('Treinos'));
       await t.pumpAndSettle();
       await t.enterText(find.byType(TextField), 'rascunho preservado');
-      await t.tap(find.byTooltip('Diário'));
+      await t.tap(find.byTooltip('Alimentação'));
       await t.pumpAndSettle();
       expect(find.byType(TextField), findsNothing);
-      await t.tap(find.byTooltip('Planos'));
+      await t.tap(find.byTooltip('Treinos'));
       await t.pumpAndSettle();
       expect(find.text('rascunho preservado'), findsOneWidget);
       await t.binding.handlePopRoute();
       await t.pumpAndSettle();
-      expect(find.text('Hoje'), findsOneWidget);
+      expect(
+        t.widget<FigmaBottomNav>(find.byType(FigmaBottomNav)).selected,
+        TrainForgeDestination.today,
+      );
       expect(find.text('rascunho preservado'), findsNothing);
       expect(t.takeException(), isNull);
     },
@@ -202,7 +205,7 @@ void main() {
         ),
       );
       await t.pumpAndSettle();
-      await t.tap(find.byTooltip('Diário'));
+      await t.tap(find.byTooltip('Alimentação'));
       await t.pumpAndSettle();
       repo.restoreError = outage();
       await auth.restore();
@@ -239,7 +242,7 @@ void main() {
       addTearDown(plans.dispose);
       addTearDown(auth.dispose);
       for (final page in <Widget>[
-        PlansOverview(controller: plans),
+        WorkoutsOverview(openCatalog: () {}, configure: () {}),
         AccountPage(controller: auth),
         DailyOverview(
           controller: daily,
@@ -257,8 +260,14 @@ void main() {
           openCatalog: () {},
           openActivity: () {},
         ),
-        const ActivityOverview(),
-        EvolutionOverview(openNutrition: () {}),
+        EvolutionPage(
+          activity: null,
+          accountId: 'fixture',
+          currentAccountId: () => 'fixture',
+          sessionChanges: auth,
+          openNutrition: () {},
+          openWorkouts: () {},
+        ),
       ]) {
         await t.pumpWidget(
           MaterialApp(

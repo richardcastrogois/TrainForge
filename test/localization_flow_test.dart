@@ -35,7 +35,7 @@ void main() {
         ),
       );
       await t.pumpAndSettle();
-      await t.tap(find.byTooltip('Planos'));
+      await t.tap(find.byTooltip('Treinos'));
       await t.pumpAndSettle();
       final auth = t.widget<ProductShell>(find.byType(ProductShell)).controller;
       await language.select(LanguageChoice.english);
@@ -49,10 +49,13 @@ void main() {
       expect(services.session.restores, 1);
       expect(
         t.widget<FigmaBottomNav>(find.byType(FigmaBottomNav)).selected,
-        TrainForgeDestination.plans,
+        TrainForgeDestination.workouts,
       );
-      expect(find.byTooltip('Plans'), findsOneWidget);
+      expect(find.byTooltip('Workouts'), findsOneWidget);
       await t.tap(find.byTooltip('Open profile'));
+      await t.pumpAndSettle();
+      // The picture opens the profile panel; settings are one tap more.
+      await t.tap(find.text('Profile and settings'));
       await t.pumpAndSettle();
       await t.scrollUntilVisible(
         find.text('Language'),

@@ -272,11 +272,11 @@ class AppLocalizationsPt extends AppLocalizations {
       'Não foi possível salvar a aparência. Tente novamente.';
 
   @override
-  String get moveNow => 'Bora mexer!';
+  String get moveNow => 'Bom te ver!';
 
   @override
   String moveWithName(String name) {
-    return 'Bora mexer, $name!';
+    return 'Bom te ver, $name!';
   }
 
   @override
@@ -2620,11 +2620,11 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
       'Não foi possível salvar a aparência. Tente novamente.';
 
   @override
-  String get moveNow => 'Bora mexer!';
+  String get moveNow => 'Bom te ver!';
 
   @override
   String moveWithName(String name) {
-    return 'Bora mexer, $name!';
+    return 'Bom te ver, $name!';
   }
 
   @override
@@ -2634,20 +2634,20 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   String get strongerDaily => 'UM POUCO MAIS FORTE, TODOS OS DIAS';
 
   @override
-  String get nextMovement => 'O seu próximo movimento';
+  String get nextMovement => 'Seu próximo movimento';
 
   @override
   String get libraryReadOnly =>
       'Biblioteca para consulta. Prática guiada ainda indisponível.';
 
   @override
-  String get yourWeek => 'A sua semana';
+  String get yourWeek => 'Sua semana';
 
   @override
   String get diaryByDate => 'Consultar o diário alimentar por data.';
 
   @override
-  String get yourDay => 'O seu dia';
+  String get yourDay => 'Seu dia';
 
   @override
   String get loadingDayData => 'Consultando os dados reais do dia';
@@ -2740,7 +2740,7 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   }
 
   @override
-  String get findMovement => 'Encontre o seu movimento.';
+  String get findMovement => 'Encontre seu movimento.';
 
   @override
   String get atYourPace => 'Com orientação, no seu ritmo.';
@@ -2778,7 +2778,7 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   String get referenceLibrary => 'Biblioteca de referência · somente consulta';
 
   @override
-  String get createMyPlan => 'Criar o meu plano';
+  String get createMyPlan => 'Criar meu plano';
 
   @override
   String get organizeWeek => 'Escolher exercícios e organizar a semana';
@@ -2787,7 +2787,7 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   String get compositionUnavailable => 'Composição indisponível';
 
   @override
-  String get helpStart => 'Ajuda-me a começar';
+  String get helpStart => 'Me ajude a começar';
 
   @override
   String get audiencesEnvironments =>
@@ -2834,7 +2834,7 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
       'O registro de água ainda não foi implementado. Nenhuma quantidade foi preenchida automaticamente.';
 
   @override
-  String get planLearn => 'Planear e aprender';
+  String get planLearn => 'Planejar e aprender';
 
   @override
   String get foodGuidanceUnavailable => 'Conteúdo alimentar ainda não liberado';
@@ -2850,7 +2850,7 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   String get outdoorsCounts => 'Lá fora também conta.';
 
   @override
-  String get activityIntro => 'Caminhe, corra ou registre a sua atividade.';
+  String get activityIntro => 'Caminhe, corra ou registre sua atividade.';
 
   @override
   String get routeUnavailable =>
@@ -2879,7 +2879,7 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   String get permissionsSync => 'Permissões, origem e sincronização';
 
   @override
-  String get yourProgress => 'Olha o que já construíste.';
+  String get yourProgress => 'Veja o que você já construiu.';
 
   @override
   String get historyWithSource => 'O SEU HISTÓRICO, COM ORIGEM';
@@ -2895,7 +2895,7 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   String get walkingKmUnavailable => 'km de caminhada indisponíveis';
 
   @override
-  String get eachRecordCounts => 'Cada registo conta';
+  String get eachRecordCounts => 'Cada registro conta';
 
   @override
   String get historyCorrect => 'Ver histórico e corrigir um consumo';
@@ -3888,7 +3888,7 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   String get understood => 'Entendi';
 
   @override
-  String get startingPoint => 'O seu ponto de partida';
+  String get startingPoint => 'Seu ponto de partida';
 
   @override
   String get activityProgress => 'Atividade e evolução';
@@ -4969,11 +4969,11 @@ class AppLocalizationsPtPt extends AppLocalizationsPt {
       'Não foi possível guardar a aparência. Tenta novamente.';
 
   @override
-  String get moveNow => 'Vamos mexer!';
+  String get moveNow => 'Bom ver-te!';
 
   @override
   String moveWithName(String name) {
-    return 'Vamos mexer, $name!';
+    return 'Bom ver-te, $name!';
   }
 
   @override

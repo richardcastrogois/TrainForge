@@ -10,6 +10,7 @@ import 'package:trainforge/features/legal/legal_controller.dart';
 import 'package:trainforge/features/onboarding/onboarding_page.dart';
 import 'package:trainforge/features/onboarding/onboarding_profile.dart';
 import '../widgets/home_cards.dart';
+import 'package:trainforge/shared/widgets/shell_labels.dart';
 
 class TodayPage extends StatefulWidget {
   final DailySummaryController controller;
@@ -87,6 +88,10 @@ class _TodayPageState extends State<TodayPage> with WidgetsBindingObserver {
 
   bool _showDay = false;
 
+  /// Whether one load has finished, so a first-use screen never flashes for
+  /// someone who already has records.
+  bool _known = false;
+
   @override
   Widget build(BuildContext context) => ListenableBuilder(
     listenable: widget.controller,
@@ -101,6 +106,7 @@ class _TodayPageState extends State<TodayPage> with WidgetsBindingObserver {
       // Failures and partial summaries stay visible; only a quiet, empty day is
       // hidden. While reloading, keep whatever the last answer showed.
       if (!controller.loading) {
+        _known = _known || snapshot != null || controller.failed;
         _showDay =
             (count ?? 0) > 0 ||
             energy != null ||
@@ -108,6 +114,8 @@ class _TodayPageState extends State<TodayPage> with WidgetsBindingObserver {
             (snapshot != null && !complete);
       }
       final hasRecords = _showDay;
+      // First use: one card and one action, nothing else.
+      final first = _known && !hasRecords;
       final name = widget.name
           .trim()
           .split(RegExp(r'\s+'))
@@ -118,12 +126,13 @@ class _TodayPageState extends State<TodayPage> with WidgetsBindingObserver {
           title: name.isEmpty
               ? context.l10n.moveNow
               : context.l10n.moveWithName(name.first),
-          subtitle:
-              '${context.displayLongDate(now)} · ${context.l10n.dailyRhythm}',
+          subtitle: first
+              ? shellLabel(context, 'firstQuestion')
+              : context.displayLongDate(now),
           children: [
-            TrainingHeroCard(profile: answers),
-            BuildWorkoutCard(
+            TrainingHeroCard(
               profile: answers,
+              first: first,
               completeAnswers: () => completeAnswers(context, scope),
             ),
             // Week strip and day numbers only once there is something recorded.
@@ -150,10 +159,14 @@ class _TodayPageState extends State<TodayPage> with WidgetsBindingObserver {
                   }
                 },
               ),
-              Text(
-                context.l10n.yourDay,
-                style: TextStyle(fontSize: 17, fontWeight: FontWeight.w700),
-              ),
+              if (controller.loading ||
+                  controller.failed ||
+                  energy != null ||
+                  (snapshot != null && !complete))
+                Text(
+                  context.l10n.yourDay,
+                  style: TextStyle(fontSize: 17, fontWeight: FontWeight.w700),
+                ),
               if (controller.loading) ...[
                 AppMetricSkeleton(label: context.l10n.loadingDayData),
                 AppProgress(label: context.l10n.loadingDayRecords),
@@ -183,32 +196,14 @@ class _TodayPageState extends State<TodayPage> with WidgetsBindingObserver {
                   ),
                 )
               else ...[
-                IntrinsicHeight(
-                  child: Row(
-                    crossAxisAlignment: CrossAxisAlignment.stretch,
-                    children: [
-                      Expanded(
-                        child: _Metric(
-                          value: energy ?? '—',
-                          label: energy == null
-                              ? context.l10n.energyNoSubtotal
-                              : context.l10n.energySourceMethod,
-                          color: context.tf.nutrition,
-                          onTap: widget.openNutrition,
-                        ),
-                      ),
-                      SizedBox(width: 10),
-                      Expanded(
-                        child: _Metric(
-                          value: '—',
-                          label: context.l10n.activityUnavailable,
-                          color: context.tf.blue,
-                          onTap: widget.openActivity,
-                        ),
-                      ),
-                    ],
+                // Only numbers that exist; no "—" or "unavailable" boxes.
+                if (energy != null)
+                  _Metric(
+                    value: energy,
+                    label: context.l10n.energySourceMethod,
+                    color: context.tf.nutrition,
+                    onTap: widget.openNutrition,
                   ),
-                ),
                 if (snapshot != null && !complete)
                   Text(
                     context.l10n.summaryLimit,
@@ -223,33 +218,28 @@ class _TodayPageState extends State<TodayPage> with WidgetsBindingObserver {
                   ),
               ],
             ],
-            FigmaActionCard(
-              title: context.l10n.myNutrition,
-              asset: 'food',
-              color: context.tf.nutrition,
-              subtitle: controller.loading
-                  ? context.l10n.loadingRecords
-                  : controller.failed
-                  ? context.l10n.openHistoryRetry
-                  : count == 0
-                  ? context.l10n.noConfirmedToday
-                  : count == null
-                  ? context.l10n.viewRecordsOrigin
-                  : context.l10n.confirmedDayCount(count),
-              onTap: widget.openNutrition,
-            ),
             if (hasRecords)
               FigmaActionCard(
-                title: context.l10n.whatToday,
-                subtitle: context.l10n.exploreActivities,
-                asset: 'activity',
-                color: context.tf.yellow,
-                onTap: widget.openActivity,
+                title: context.l10n.myNutrition,
+                asset: 'food',
+                color: context.tf.nutrition,
+                subtitle: controller.loading
+                    ? context.l10n.loadingRecords
+                    : controller.failed
+                    ? context.l10n.openHistoryRetry
+                    : count == 0
+                    ? context.l10n.noConfirmedToday
+                    : count == null
+                    ? context.l10n.viewRecordsOrigin
+                    : context.l10n.confirmedDayCount(count),
+                onTap: widget.openNutrition,
               ),
-            TextButton(
-              onPressed: controller.loading ? null : controller.load,
-              child: Text(context.l10n.updateDay),
-            ),
+            if (hasRecords) ...[
+              TextButton(
+                onPressed: controller.loading ? null : controller.load,
+                child: Text(context.l10n.updateDay),
+              ),
+            ],
           ],
         ),
       );

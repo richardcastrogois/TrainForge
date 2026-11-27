@@ -273,11 +273,11 @@ class AppLocalizationsEs extends AppLocalizations {
       'No se pudo guardar la apariencia. Inténtalo de nuevo.';
 
   @override
-  String get moveNow => '¡Vamos a movernos!';
+  String get moveNow => '¡Qué bueno verte!';
 
   @override
   String moveWithName(String name) {
-    return '¡Vamos a movernos, $name!';
+    return '¡Qué bueno verte, $name!';
   }
 
   @override

@@ -579,13 +579,13 @@ abstract class AppLocalizations {
   /// No description provided for @moveNow.
   ///
   /// In en, this message translates to:
-  /// **'Let\'s move!'**
+  /// **'Good to see you!'**
   String get moveNow;
 
   /// No description provided for @moveWithName.
   ///
   /// In en, this message translates to:
-  /// **'Let\'s move, {name}!'**
+  /// **'Good to see you, {name}!'**
   String moveWithName(String name);
 
   /// No description provided for @dailyRhythm.

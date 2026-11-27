@@ -28,8 +28,12 @@ import 'food_offline_labels.dart';
 import 'food_contribution_page.dart';
 import 'offline_sync_panel.dart';
 
+/// Action started as soon as the page opens (from the "+" panel).
+enum NutritionStart { voice, photo }
+
 class NutritionPage extends StatefulWidget {
   final bool evidenceMode;
+  final NutritionStart? start;
   final String accountId;
   final String? Function() currentAccountId;
   final Listenable sessionChanges;
@@ -56,6 +60,7 @@ class NutritionPage extends StatefulWidget {
     this.photoClassifier,
     this.pickPhoto,
     this.listenVoice,
+    this.start,
   });
   @override
   State<NutritionPage> createState() => _NutritionPageState();
@@ -89,6 +94,17 @@ class _NutritionPageState extends State<NutritionPage>
     WidgetsBinding.instance.addObserver(this);
     controller.searchOwn();
     photoClassifier = widget.photoClassifier ?? FoodPhotoClassifier();
+    if (widget.start != null) {
+      WidgetsBinding.instance.addPostFrameCallback((_) {
+        if (!mounted) return;
+        switch (widget.start!) {
+          case NutritionStart.voice:
+            voice();
+          case NutritionStart.photo:
+            photo();
+        }
+      });
+    }
     final offline = repository;
     if (offline is OfflineNutritionRepository) {
       unawaited(
