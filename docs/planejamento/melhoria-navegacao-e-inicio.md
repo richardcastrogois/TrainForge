@@ -159,3 +159,12 @@ Problemas vistos pelo autor e correções:
   - ao soltar, abre a aba e a lente volta a ser pílula.
 - **Só o "+" fica saltado.** O espaço dele na barra abre o painel do "+" e nunca vira página. O círculo verde que subia na aba aberta saiu.
 - Cada ícone é desenhado duas vezes pelo pacote (a lente usa uma cópia própria). Por isso os testes usam o primeiro ícone encontrado.
+
+### Quinta revisão do autor (27/11/2026)
+
+- **Fundo da barra:** vidro líquido com um pouco de fosco (`blur` 9 e tinta clara 26%), como no iOS, para os ícones continuarem legíveis sobre conteúdo cheio.
+- **Lente sobre o ícone:** o ícone da aba fica laranja e a pílula ganha um tom laranja leve.
+  - O laranja do ícone é mais escuro (`#D95C0B`) para manter contraste de 3:1 sobre o vidro claro; no tema escuro fica o laranja do destaque.
+- **"+":** mais baixo, de vidro líquido laranja e sem a borda branca.
+- **Vidro líquido no app:** `GlassSurface` agora é vidro líquido com fosco (painel do "+", menu do perfil e pílula "Ver treinos"). O novo `LiquidButton` é usado em "Registrar refeição" e "Ver treinos" (Evolução), e o "Começar" da Hoje também é de vidro. Alto contraste continua opaco.
+- **Ainda sem vidro:** formulários, chips e cartões de lista, para manter a leitura.
