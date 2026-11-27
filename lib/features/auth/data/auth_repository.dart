@@ -6,6 +6,7 @@ import '../domain/auth_user.dart';
 import '../domain/auth_profile.dart';
 import 'auth_api.dart';
 import 'auth_storage.dart';
+import 'profile_photos.dart';
 import '../../nutrition/data/nutrition_local_store.dart';
 
 class AuthRepository implements SessionRepository {
@@ -71,6 +72,7 @@ class AuthRepository implements SessionRepository {
     }
     final session = await _api.loginWithGoogleIdToken(idToken);
     await _storage.saveSession(session);
+    await ProfilePhotos.instance.setGoogle(session.id, account.photoUrl);
     await _unlockAccount(session.id);
     return session;
   }
@@ -84,6 +86,18 @@ class AuthRepository implements SessionRepository {
       email: session.email,
       image: session.image,
     );
+  }
+
+  /// Google account picture without showing anything (null when the
+  /// account is not available silently).
+  Future<String?> googlePhotoUrl() async {
+    try {
+      await _ensureInitialized();
+      final account = await _googleSignIn.attemptLightweightAuthentication();
+      return account?.photoUrl;
+    } catch (_) {
+      return null;
+    }
   }
 
   Future<bool> isAuthenticated() async => await restoreSession() != null;

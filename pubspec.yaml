@@ -28,6 +28,7 @@ dependencies:
   cryptography: 2.9.0
   image_picker: 1.2.4
   speech_to_text: 7.4.0
+  liquid_glass_widgets: ^1.22.0
 
 dev_dependencies:
   integration_test:

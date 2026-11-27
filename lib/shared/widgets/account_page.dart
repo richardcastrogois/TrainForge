@@ -1,3 +1,5 @@
+import 'profile_photo_sheet.dart';
+import 'shell_labels.dart';
 import 'package:trainforge/features/legal/legal_controller.dart';
 import 'package:trainforge/features/legal/presentation/legal_labels.dart';
 import 'package:trainforge/features/legal/presentation/legal_pages.dart';
@@ -134,6 +136,14 @@ class AccountPage extends StatelessWidget {
                               ),
                             ],
                           ),
+                        ),
+                        SizedBox(height: 12),
+                        FigmaActionCard(
+                          title: shellLabel(context, 'photoTitle'),
+                          subtitle: shellLabel(context, 'photoHint'),
+                          asset: 'user',
+                          color: context.tf.soft,
+                          onTap: () => chooseProfilePhoto(context, controller),
                         ),
                         SizedBox(height: 12),
                         FigmaActionCard(

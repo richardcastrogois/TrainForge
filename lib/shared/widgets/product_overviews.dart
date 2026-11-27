@@ -20,6 +20,9 @@ class DailyOverview extends StatelessWidget {
 
   /// Voice and photo entry, only when this build can do them.
   final VoidCallback? openVoice, openPhoto;
+
+  /// One-tap water, when the offline diary is available.
+  final Widget? hydration;
   const DailyOverview({
     super.key,
     required this.controller,
@@ -31,6 +34,7 @@ class DailyOverview extends StatelessWidget {
     required this.openActivity,
     this.openVoice,
     this.openPhoto,
+    this.hydration,
   });
   @override
   Widget build(BuildContext context) => ListenableBuilder(
@@ -148,6 +152,7 @@ class DailyOverview extends StatelessWidget {
                     ),
                 ],
               ),
+            ?hydration,
             FigmaActionCard(
               title: context.l10n.myRecords,
               subtitle: count == null

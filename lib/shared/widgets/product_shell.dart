@@ -1,3 +1,5 @@
+import 'package:trainforge/features/auth/data/auth_repository.dart';
+import 'package:trainforge/features/auth/data/profile_photos.dart';
 import 'package:trainforge/features/training_configuration/domain/training_configuration.dart';
 import 'package:trainforge/core/l10n/feedback_localization.dart';
 import 'package:trainforge/core/l10n/localized_context.dart';
@@ -22,6 +24,7 @@ import 'product_overviews.dart';
 import 'shell_labels.dart';
 import 'workouts_overview.dart';
 import 'package:trainforge/features/nutrition/data/offline_nutrition_repository.dart';
+import 'package:trainforge/features/nutrition/presentation/hydration_card.dart';
 import 'package:trainforge/features/activity/domain/activity_repository.dart';
 
 class ProductShell extends StatefulWidget {
@@ -97,6 +100,19 @@ class _ProductShellState extends State<ProductShell>
     );
     WidgetsBinding.instance.addObserver(this);
     if (widget.pageBuilder == null) daily.load();
+    _googlePhoto();
+  }
+
+  /// Accounts that signed in before pictures were kept get the Google one
+  /// once, silently; nothing happens when it is not available.
+  Future<void> _googlePhoto() async {
+    final repository = widget.controller.repository;
+    if (repository is! AuthRepository) return;
+    final photos = ProfilePhotos.instance;
+    await photos.load(accountId);
+    if (photos.googleUrl(accountId) != null) return;
+    final url = await repository.googlePhotoUrl();
+    if (mounted) await photos.setGoogle(accountId, url);
   }
 
   @override
@@ -198,6 +214,13 @@ class _ProductShellState extends State<ProductShell>
         ),
         if (offline) ...[
           GlassSheetOption(
+            icon: Icons.water_drop_outlined,
+            title: l('addWater'),
+            hint: l('addWaterHint'),
+            color: context.tf.blue,
+            onTap: () => then(() => select(TrainForgeDestination.food)),
+          ),
+          GlassSheetOption(
             icon: Icons.mic_none,
             title: l('addVoice'),
             hint: l('addVoiceHint'),
@@ -241,7 +264,12 @@ class _ProductShellState extends State<ProductShell>
           padding: const EdgeInsets.fromLTRB(16, 8, 16, 12),
           child: Row(
             children: [
-              ProfileAvatar(name: profile.name, image: profile.image, size: 40),
+              ProfileAvatar(
+                name: profile.name,
+                image: profile.image,
+                accountId: profile.id,
+                size: 40,
+              ),
               const SizedBox(width: 12),
               Expanded(
                 child: Column(
@@ -303,6 +331,9 @@ class _ProductShellState extends State<ProductShell>
         openPhoto: nutrition is OfflineNutritionRepository
             ? () => openNutrition(start: NutritionStart.photo)
             : null,
+        hydration: nutrition is OfflineNutritionRepository
+            ? HydrationCard(repository: nutrition, changed: daily.load)
+            : null,
         openNutrition: openNutrition,
         openCatalog: openCatalog,
         openActivity: () => select(TrainForgeDestination.evolution),
@@ -340,6 +371,7 @@ class _ProductShellState extends State<ProductShell>
                   FigmaHeader(
                     name: profile.name,
                     image: profile.image,
+                    accountId: profile.id,
                     onProfile: openProfile,
                   ),
                   if (widget.controller.busy)

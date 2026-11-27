@@ -1,3 +1,4 @@
+import 'package:trainforge/features/auth/data/profile_photos.dart';
 import 'dart:async';
 import 'package:dio/dio.dart';
 import 'package:flutter/foundation.dart';
@@ -66,6 +67,7 @@ class AuthController extends ChangeNotifier {
   void accountErased(String expectedId) {
     if (_disposed) return;
     _erasedAccountId = expectedId;
+    ProfilePhotos.instance.forget(expectedId);
     if (profile?.id == expectedId) {
       profile = null;
       feedback = null;

@@ -1,6 +1,7 @@
 import 'dart:ui';
 
 import 'shell_labels.dart';
+import 'package:liquid_glass_widgets/liquid_glass_widgets.dart';
 import 'package:trainforge/core/motion/app_motion.dart';
 import 'package:trainforge/core/theme/trainforge_theme.dart';
 import 'package:flutter/material.dart';
@@ -23,11 +24,13 @@ enum TrainForgeDestination {
 /// Floating frosted-glass bar: Hoje · Treinos · (+) · Alimentação · Evolução,
 /// icons only (names stay for screen readers and long-press tooltips).
 ///
-/// The open page rises as a circle above the bar, sitting in a notch cut
-/// into the glass. Pressing and dragging along the bar carries the circle and
-/// the notch under the finger with a liquid stretch; releasing opens that
-/// page (the "+" slot is skipped). Reduced motion keeps the gesture without
-/// the glide and the stretch.
+/// * The "+" is bigger and stays raised in the middle.
+/// * The open page rises as a liquid-glass lens sitting in a smooth notch.
+///   Moving between pages (tap or drag) it glides; near the "+" it sinks into
+///   the bar and comes back up on the other side, so it never crosses over
+///   the "+".
+/// * Pressing and dragging along the bar carries the lens under the finger;
+///   releasing opens that page. Reduced motion removes the glide.
 class FigmaBottomNav extends StatefulWidget {
   final TrainForgeDestination selected;
   final ValueChanged<TrainForgeDestination> onSelected;
@@ -39,8 +42,8 @@ class FigmaBottomNav extends StatefulWidget {
     this.onAdd,
   });
 
-  /// Bar height plus the part of the circle above it.
-  static const height = 92.0;
+  /// Bar height plus the part of the circles above it.
+  static const height = 96.0;
 
   @override
   State<FigmaBottomNav> createState() => _FigmaBottomNavState();
@@ -55,53 +58,54 @@ const _slots = <TrainForgeDestination?>[
   TrainForgeDestination.evolution,
 ];
 
-// Geometry: the bar starts at [_barTop]; the circle centre sits on its top
-// edge and the notch is a slightly larger circle cut from the glass.
-const _count = 5, _barTop = 30.0, _pad = 8.0;
-const _circle = 28.0, _notch = 35.0, _centerY = 30.0;
+// Geometry (logical pixels). The bar starts at [_barTop].
+const _count = 5, _barTop = 30.0, _pad = 6.0;
+const _lens = 25.0, _lensY = 30.0, _notch = 34.0;
+const _add = 31.0, _addY = 26.0;
+
+/// 1 away from the "+", 0 right over it: the lens sinks there.
+double _visibility(double position) =>
+    (((position - 2).abs() - .3) / .5).clamp(0.0, 1.0);
 
 class _FigmaBottomNavState extends State<FigmaBottomNav> {
   /// Continuous position (0..4) while dragging; null when at rest.
   double? _drag;
   int? _lastHaptic;
 
-  /// Last finger movement, used for the liquid stretch.
-  double _speed = 0;
-
   int get _rest => _slots.indexOf(widget.selected);
-  int get _highlight => (_drag ?? _rest.toDouble()).round().clamp(0, 4);
+
+  /// Nearest page to [position], never the "+".
+  int _pageNear(double position) {
+    final index = position.round().clamp(0, 4);
+    if (_slots[index] != null) return index;
+    return position < 2 ? 1 : 3;
+  }
 
   double _positionFor(double dx, double slot) =>
       ((dx - _pad - slot / 2) / slot).clamp(0.0, (_count - 1).toDouble());
 
-  void _move(double dx, double slot, [double velocity = 0]) {
+  void _move(double dx, double slot) {
     final next = _positionFor(dx, slot);
-    final index = next.round();
+    final index = _pageNear(next);
     if (index != _lastHaptic) {
       _lastHaptic = index;
       HapticFeedback.selectionClick();
     }
-    setState(() {
-      _drag = next;
-      _speed = velocity;
-    });
+    setState(() => _drag = next);
   }
 
   void _end() {
-    final index = _highlight;
+    final index = _pageNear(_drag ?? _rest.toDouble());
     setState(() {
       _drag = null;
       _lastHaptic = null;
-      _speed = 0;
     });
-    final target = _slots[index];
-    if (target != null && index != _rest) widget.onSelected(target);
+    if (index != _rest) widget.onSelected(_slots[index]!);
   }
 
   void _cancel() => setState(() {
     _drag = null;
     _lastHaptic = null;
-    _speed = 0;
   });
 
   @override
@@ -111,14 +115,14 @@ class _FigmaBottomNavState extends State<FigmaBottomNav> {
     final highContrast = MediaQuery.maybeHighContrastOf(context) ?? false;
     final tint = highContrast
         ? context.tf.surface
-        : context.tf.surface.withValues(alpha: dark ? .72 : .78);
+        : context.tf.surface.withValues(alpha: dark ? .72 : .8);
     final dragging = _drag != null;
-    final target = _drag ?? _rest.toDouble();
     return SizedBox(
       height: FigmaBottomNav.height,
       child: LayoutBuilder(
         builder: (context, constraints) {
           final slot = (constraints.maxWidth - _pad * 2) / _count;
+          double xOf(double position) => _pad + (position + .5) * slot;
           return GestureDetector(
             behavior: HitTestBehavior.translucent,
             onLongPressStart: (d) => _move(d.localPosition.dx, slot),
@@ -126,28 +130,28 @@ class _FigmaBottomNavState extends State<FigmaBottomNav> {
             onLongPressEnd: (_) => _end(),
             onLongPressCancel: _cancel,
             onHorizontalDragStart: (d) => _move(d.localPosition.dx, slot),
-            onHorizontalDragUpdate: (d) =>
-                _move(d.localPosition.dx, slot, d.delta.dx),
+            onHorizontalDragUpdate: (d) => _move(d.localPosition.dx, slot),
             onHorizontalDragEnd: (_) => _end(),
             onHorizontalDragCancel: _cancel,
             child: TweenAnimationBuilder<double>(
-              tween: Tween(end: target),
-              // Follows the finger 1:1; glides with a soft overshoot at rest.
+              tween: Tween(end: _drag ?? _rest.toDouble()),
               duration: dragging || reduced
                   ? Duration.zero
-                  : const Duration(milliseconds: 420),
-              curve: Curves.easeOutBack,
+                  : const Duration(milliseconds: 380),
+              curve: Curves.easeInOutCubic,
               builder: (context, position, _) {
-                final cx = _pad + (position + .5) * slot;
-                final stretch = reduced || !dragging
-                    ? 0.0
-                    : (.06 + _speed.abs() / 40).clamp(0.0, .22);
+                final visible = reduced ? 1.0 : _visibility(position);
+                final shown = _slots[_pageNear(position)]!;
                 return Stack(
                   clipBehavior: Clip.none,
                   children: [
                     Positioned.fill(
                       top: _barTop,
-                      child: _GlassNotchBar(cx: cx, tint: tint),
+                      child: _GlassNotchBar(
+                        cx: xOf(position),
+                        notch: _notch * visible,
+                        tint: tint,
+                      ),
                     ),
                     Positioned(
                       left: _pad,
@@ -160,36 +164,38 @@ class _FigmaBottomNavState extends State<FigmaBottomNav> {
                             SizedBox(
                               width: slot,
                               child: _slots[i] == null
-                                  ? _addButton(context)
+                                  ? const SizedBox.shrink()
                                   : _item(
                                       context,
                                       _slots[i]!,
-                                      // The open page shows in the circle.
-                                      hidden: i == _highlight,
+                                      // The page under the lens shows in it.
+                                      opacity:
+                                          ((position - i).abs() * 1.6 +
+                                                  (1 - visible))
+                                              .clamp(0.0, 1.0),
                                     ),
                             ),
                         ],
                       ),
                     ),
+                    // Lens of the open page; sinks near the "+".
                     Positioned(
-                      left: cx - _circle,
-                      top: _centerY - _circle,
+                      left: xOf(position) - _lens,
+                      top: _lensY - _lens + (1 - visible) * 30,
                       child: IgnorePointer(
-                        child: Transform(
-                          alignment: Alignment.center,
-                          transform: Matrix4.diagonal3Values(
-                            1 + stretch,
-                            1 - stretch * .6,
-                            1,
-                          ),
-                          // Over the "+" the circle keeps the open page.
-                          child: _circleFor(
-                            context,
-                            _slots[_highlight] ?? widget.selected,
-                            dragging: dragging,
+                        child: Opacity(
+                          opacity: visible,
+                          child: Transform.scale(
+                            scale: (.6 + .4 * visible) * (dragging ? 1.06 : 1),
+                            child: _Lens(destination: shown),
                           ),
                         ),
                       ),
+                    ),
+                    Positioned(
+                      left: xOf(2) - _add,
+                      top: _addY - _add,
+                      child: _addButton(context),
                     ),
                   ],
                 );
@@ -201,47 +207,7 @@ class _FigmaBottomNavState extends State<FigmaBottomNav> {
     );
   }
 
-  Widget _circleFor(
-    BuildContext context,
-    TrainForgeDestination destination, {
-    required bool dragging,
-  }) {
-    final color = context.tf.primary;
-    return AnimatedScale(
-      scale: dragging ? 1.08 : 1,
-      duration: AppMotion.reduced(context)
-          ? Duration.zero
-          : const Duration(milliseconds: 160),
-      child: Container(
-        width: _circle * 2,
-        height: _circle * 2,
-        decoration: BoxDecoration(
-          color: color,
-          shape: BoxShape.circle,
-          boxShadow: [
-            BoxShadow(
-              color: color.withValues(alpha: dragging ? .5 : .35),
-              blurRadius: dragging ? 18 : 12,
-              offset: const Offset(0, 5),
-            ),
-          ],
-        ),
-        child: Center(child: _icon(destination, Colors.white, 28)),
-      ),
-    );
-  }
-
-  Widget _icon(TrainForgeDestination destination, Color color, double size) =>
-      SizedBox.square(
-        dimension: size,
-        child: SvgPicture.asset(
-          'assets/figma/${destination.asset}-inactive.svg',
-          excludeFromSemantics: true,
-          colorFilter: ColorFilter.mode(color, BlendMode.srcIn),
-        ),
-      );
-
-  /// The "+" lives in the middle of the bar, always visible.
+  /// Bigger raised "+" in the middle, always above the bar.
   Widget _addButton(BuildContext context) => Semantics(
     label: shellLabel(context, 'add'),
     button: true,
@@ -249,24 +215,30 @@ class _FigmaBottomNavState extends State<FigmaBottomNav> {
     child: Tooltip(
       message: shellLabel(context, 'add'),
       triggerMode: TooltipTriggerMode.manual,
-      child: Center(
-        child: Material(
-          color: TrainForgeTheme.highlight,
-          shape: const CircleBorder(),
-          child: InkWell(
-            key: const ValueKey('nav-add'),
-            customBorder: const CircleBorder(),
-            onTap: widget.onAdd == null
-                ? null
-                : () {
-                    HapticFeedback.lightImpact();
-                    widget.onAdd!();
-                  },
-            child: const SizedBox.square(
-              dimension: 50,
-              child: Icon(Icons.add, size: 30, color: TrainForgeTheme.ink),
-            ),
+      child: GestureDetector(
+        key: const ValueKey('nav-add'),
+        onTap: widget.onAdd == null
+            ? null
+            : () {
+                HapticFeedback.lightImpact();
+                widget.onAdd!();
+              },
+        child: Container(
+          width: _add * 2,
+          height: _add * 2,
+          decoration: BoxDecoration(
+            color: TrainForgeTheme.highlight,
+            shape: BoxShape.circle,
+            border: Border.all(color: context.tf.background, width: 4),
+            boxShadow: const [
+              BoxShadow(
+                color: Color(0x40183e32),
+                blurRadius: 12,
+                offset: Offset(0, 5),
+              ),
+            ],
           ),
+          child: const Icon(Icons.add, size: 32, color: TrainForgeTheme.ink),
         ),
       ),
     ),
@@ -275,7 +247,7 @@ class _FigmaBottomNavState extends State<FigmaBottomNav> {
   Widget _item(
     BuildContext context,
     TrainForgeDestination destination, {
-    required bool hidden,
+    required double opacity,
   }) => Semantics(
     label: destination.localizedLabel(context),
     button: true,
@@ -285,18 +257,15 @@ class _FigmaBottomNavState extends State<FigmaBottomNav> {
       message: destination.localizedLabel(context),
       // Long press belongs to the drag-to-switch gesture, not the tooltip.
       triggerMode: TooltipTriggerMode.manual,
-      child: Material(
-        color: Colors.transparent,
-        child: InkWell(
-          key: ValueKey('nav-${destination.name}'),
-          customBorder: const CircleBorder(),
-          onTap: () => widget.onSelected(destination),
-          child: Center(
-            child: AnimatedOpacity(
-              opacity: hidden ? 0 : 1,
-              duration: const Duration(milliseconds: 150),
-              child: _icon(destination, context.tf.ink, 26),
-            ),
+      // No ripple: the lens is the only feedback.
+      child: GestureDetector(
+        key: ValueKey('nav-${destination.name}'),
+        behavior: HitTestBehavior.opaque,
+        onTap: () => widget.onSelected(destination),
+        child: Center(
+          child: Opacity(
+            opacity: opacity,
+            child: navIcon(destination, context.tf.ink, 26),
           ),
         ),
       ),
@@ -304,15 +273,81 @@ class _FigmaBottomNavState extends State<FigmaBottomNav> {
   );
 }
 
-/// Rounded glass bar with a circular notch at [cx].
+Widget navIcon(TrainForgeDestination destination, Color color, double size) {
+  Widget svg(double side) => SizedBox.square(
+    dimension: side,
+    child: SvgPicture.asset(
+      'assets/figma/${destination.asset}-inactive.svg',
+      excludeFromSemantics: true,
+      colorFilter: ColorFilter.mode(color, BlendMode.srcIn),
+    ),
+  );
+  if (destination != TrainForgeDestination.food) return svg(size);
+  // Food and drinks share the tab: cutlery with a drop.
+  return SizedBox.square(
+    dimension: size,
+    child: Stack(
+      clipBehavior: Clip.none,
+      children: [
+        Positioned(left: -2, top: 0, child: svg(size * .9)),
+        Positioned(
+          right: -4,
+          bottom: -2,
+          child: Icon(Icons.water_drop, size: size * .5, color: color),
+        ),
+      ],
+    ),
+  );
+}
+
+/// Liquid-glass lens tinted with the brand green, the open page's icon on it.
+class _Lens extends StatelessWidget {
+  final TrainForgeDestination destination;
+  const _Lens({required this.destination});
+  @override
+  Widget build(BuildContext context) => DecoratedBox(
+    decoration: BoxDecoration(
+      shape: BoxShape.circle,
+      boxShadow: [
+        BoxShadow(
+          color: context.tf.primary.withValues(alpha: .3),
+          blurRadius: 10,
+          offset: const Offset(0, 4),
+        ),
+      ],
+    ),
+    child: GlassContainer(
+      width: _lens * 2,
+      height: _lens * 2,
+      shape: const LiquidOval(),
+      useOwnLayer: true,
+      quality: GlassQuality.premium,
+      // Brand green glass: refracts what is behind, keeps the icon readable.
+      settings: LiquidGlassSettings(
+        glassColor: context.tf.primary.withValues(alpha: .8),
+        thickness: 22,
+        blur: 4,
+        refractiveIndex: 1.3,
+        lightIntensity: .7,
+      ),
+      child: Center(child: navIcon(destination, Colors.white, 26)),
+    ),
+  );
+}
+
+/// Rounded glass bar with a smooth notch at [cx] ([notch] 0 = no notch).
 class _GlassNotchBar extends StatelessWidget {
-  final double cx;
+  final double cx, notch;
   final Color tint;
-  const _GlassNotchBar({required this.cx, required this.tint});
+  const _GlassNotchBar({
+    required this.cx,
+    required this.notch,
+    required this.tint,
+  });
 
   @override
   Widget build(BuildContext context) {
-    final clipper = _NotchClipper(cx);
+    final clipper = _NotchClipper(cx, notch);
     return CustomPaint(
       painter: _ShadowPainter(clipper),
       child: ClipPath(
@@ -330,24 +365,26 @@ class _GlassNotchBar extends StatelessWidget {
 }
 
 class _NotchClipper extends CustomClipper<Path> {
-  final double cx;
-  _NotchClipper(this.cx);
+  final double cx, notch;
+  _NotchClipper(this.cx, this.notch);
 
   @override
   Path getClip(Size size) {
-    final bar = Path()
-      ..addRRect(
-        RRect.fromRectAndRadius(Offset.zero & size, const Radius.circular(30)),
-      );
-    final notch = Path()
-      ..addOval(
-        Rect.fromCircle(center: Offset(cx, _centerY - _barTop), radius: _notch),
-      );
-    return Path.combine(PathOperation.difference, bar, notch);
+    final host = Offset.zero & size;
+    final rounded = Path()
+      ..addRRect(RRect.fromRectAndRadius(host, const Radius.circular(32)));
+    if (notch < 2) return rounded;
+    // Flutter's notch draws smooth shoulders into the top edge.
+    final notched = const CircularNotchedRectangle().getOuterPath(
+      host,
+      Rect.fromCircle(center: Offset(cx, _lensY - _barTop), radius: notch),
+    );
+    return Path.combine(PathOperation.intersect, rounded, notched);
   }
 
   @override
-  bool shouldReclip(_NotchClipper oldClipper) => oldClipper.cx != cx;
+  bool shouldReclip(_NotchClipper oldClipper) =>
+      oldClipper.cx != cx || oldClipper.notch != notch;
 }
 
 class _ShadowPainter extends CustomPainter {
@@ -357,12 +394,12 @@ class _ShadowPainter extends CustomPainter {
   void paint(Canvas canvas, Size size) => canvas.drawShadow(
     clipper.getClip(size),
     const Color(0xff183e32),
-    8,
+    6,
     false,
   );
   @override
   bool shouldRepaint(_ShadowPainter oldDelegate) =>
-      oldDelegate.clipper.cx != clipper.cx;
+      oldDelegate.clipper.shouldReclip(clipper);
 }
 
 class _GlassPainter extends CustomPainter {
@@ -379,7 +416,7 @@ class _GlassPainter extends CustomPainter {
           begin: Alignment.topCenter,
           end: Alignment.bottomCenter,
           colors: [
-            Color.alphaBlend(Colors.white.withValues(alpha: .2), tint),
+            Color.alphaBlend(Colors.white.withValues(alpha: .25), tint),
             tint,
           ],
         ).createShader(Offset.zero & size),
@@ -389,11 +426,11 @@ class _GlassPainter extends CustomPainter {
       Paint()
         ..style = PaintingStyle.stroke
         ..strokeWidth = 1.2
-        ..color = Colors.white.withValues(alpha: .55),
+        ..color = Colors.white.withValues(alpha: .6),
     );
   }
 
   @override
   bool shouldRepaint(_GlassPainter oldDelegate) =>
-      oldDelegate.clipper.cx != clipper.cx || oldDelegate.tint != tint;
+      oldDelegate.clipper.shouldReclip(clipper) || oldDelegate.tint != tint;
 }

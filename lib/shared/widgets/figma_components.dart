@@ -1,3 +1,5 @@
+import 'dart:io';
+import 'package:trainforge/features/auth/data/profile_photos.dart';
 import 'package:trainforge/core/l10n/localized_context.dart';
 import 'package:trainforge/core/motion/app_motion.dart';
 import 'package:flutter/material.dart';
@@ -186,9 +188,15 @@ class FigmaHeader extends StatelessWidget {
   final String? name;
 
   /// Picture from the account (Google); initials while it is missing.
-  final String? image;
+  final String? image, accountId;
   final VoidCallback? onProfile;
-  const FigmaHeader({super.key, this.name, this.image, this.onProfile});
+  const FigmaHeader({
+    super.key,
+    this.name,
+    this.image,
+    this.accountId,
+    this.onProfile,
+  });
   @override
   Widget build(BuildContext context) => Padding(
     padding: const EdgeInsets.fromLTRB(24, 22, 24, 10),
@@ -207,7 +215,12 @@ class FigmaHeader extends StatelessWidget {
               child: GestureDetector(
                 key: const ValueKey('profile-avatar'),
                 onTap: onProfile,
-                child: ProfileAvatar(name: name!, image: image, size: 48),
+                child: ProfileAvatar(
+                  name: name!,
+                  image: image,
+                  accountId: accountId,
+                  size: 48,
+                ),
               ),
             ),
           )
@@ -223,11 +236,15 @@ class ProfileAvatar extends StatelessWidget {
   final String name;
   final String? image;
   final double size;
+
+  /// When given, the picture kept on this device for the account wins.
+  final String? accountId;
   const ProfileAvatar({
     super.key,
     required this.name,
     this.image,
     this.size = 48,
+    this.accountId,
   });
 
   String get initials {
@@ -257,19 +274,37 @@ class ProfileAvatar extends StatelessWidget {
         ),
       ),
     );
-    final url = image;
-    return ClipOval(
-      child: SizedBox.square(
-        dimension: size,
-        child: url == null || url.isEmpty
-            ? fallback
-            : Image.network(
-                url,
-                fit: BoxFit.cover,
-                excludeFromSemantics: true,
-                errorBuilder: (_, _, _) => fallback,
-              ),
-      ),
+    final photos = ProfilePhotos.instance, id = accountId;
+    if (id != null) photos.load(id);
+    return ListenableBuilder(
+      listenable: photos,
+      builder: (context, _) {
+        final custom = id == null ? null : photos.customPath(id);
+        final url = (id == null ? null : photos.googleUrl(id)) ?? image;
+        final cache = (size * MediaQuery.devicePixelRatioOf(context)).round();
+        return ClipOval(
+          child: SizedBox.square(
+            dimension: size,
+            child: custom != null
+                ? Image.file(
+                    File(custom),
+                    fit: BoxFit.cover,
+                    cacheWidth: cache,
+                    excludeFromSemantics: true,
+                    errorBuilder: (_, _, _) => fallback,
+                  )
+                : url == null || url.isEmpty
+                ? fallback
+                : Image.network(
+                    url,
+                    fit: BoxFit.cover,
+                    cacheWidth: cache,
+                    excludeFromSemantics: true,
+                    errorBuilder: (_, _, _) => fallback,
+                  ),
+          ),
+        );
+      },
     );
   }
 }
