@@ -126,3 +126,19 @@ A troca de cenário acontece no **primeiro registro de qualquer tipo** (treino, 
   - O "+" laranja fica fixo no centro.
 - **Perfil:** só a foto da conta Google em círculo, sem borda; sem foto aparecem as iniciais. O toque abre um cartão pequeno no topo (nome, e-mail, Perfil e ajustes, Sair) em vez do painel de baixo.
 - **shadcn:** `shadcn/ui` é React/web. Para Flutter existem ports (`shad`, `shadcn_flutter`, `shadcn_ui`), não adotados; trocar a base de componentes é decisão à parte.
+
+### Segunda revisão do autor (27/11/2026, testada no celular na 0.5.8)
+
+Problemas vistos pelo autor e correções:
+
+- **O círculo passava por cima do "+".** Agora ele afunda na barra perto do "+" e reaparece do outro lado, tanto no toque quanto no arraste. Soltar o dedo sobre o "+" leva à página mais próxima.
+- **O círculo esticava e havia uma sombra que piscava.** O esticão foi removido. A "sombra" era o efeito de toque (ripple) do ícone, que saiu: a lente é o único retorno visual.
+- **O entalhe tinha um corte reto.** Ele agora usa `CircularNotchedRectangle`, com ombros curvos, recortado nos cantos arredondados.
+- **O "+" ficou maior (62) e saltado**, como os "+" centrais do MyFitnessPal e o Gravar do Strava, e fica fixo acima da barra.
+- **Liquid Glass:** a lente do círculo ativo usa `liquid_glass_widgets` 1.22.0 (MIT, sem dependências de terceiros, Flutter ≥ 3.41), com qualidade premium e refração. Em Skia ou GLES o pacote cai para o modo leve. O `liquid_glass_renderer` 1.0 foi descartado: ainda é pré-lançamento e exige Flutter 3.47 com Flutter GPU.
+- **Alimentação:** o ícone da aba agora é talheres com uma gota (comida e bebida).
+- **Hidratação (C43, parcial):** o cartão "Água de hoje" na Alimentação e "Beber água" no "+".
+  - Copo de 200 ml e garrafa de 500 ml, gravados como consumo de "Água" do catálogo (g = ml), com "Desfazer".
+  - Decisões assumidas sem o autor: só água, volumes 200/500, sem meta nem referência EFSA e sem lembretes. Ver [hidratação](melhoria-hidratacao.md).
+- **Foto do perfil:** a foto do Google é salva no login e buscada em silêncio uma vez para quem já estava logado. Em "Perfil e ajustes → Foto do perfil" dá para escolher da galeria, tirar uma foto, voltar à do Google ou remover.
+  - A foto fica só no aparelho, em pasta privada, e é apagada junto com a conta. A API não guarda foto.

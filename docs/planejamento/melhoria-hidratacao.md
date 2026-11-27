@@ -1,6 +1,6 @@
 # Melhoria: registro de hidratação
 
-Estado em 23/11/2026: **não implementado**. Hoje o app só mostra o cartão "Hidratação — registro de água ainda não disponível" (`lib/shared/widgets/product_overviews.dart`). O visual final entra no redesenho geral; este documento define o funcionamento.
+Estado em 27/11/2026: **parcial** — cartão com 200 ml/500 ml, total do dia e desfazer, na Alimentação e no "+" (`hydration_card.dart`); meta, referência, outras bebidas e lembretes continuam pendentes das decisões abaixo. Antes, em 23/11: não implementado. Hoje o app só mostra o cartão "Hidratação — registro de água ainda não disponível" (`lib/shared/widgets/product_overviews.dart`). O visual final entra no redesenho geral; este documento define o funcionamento.
 
 ## Objetivo
 

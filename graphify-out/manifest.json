@@ -30,9 +30,9 @@
     "semantic_hash": "abb1769549138e61ba158897c5f7b851"
   },
   "features/auth/data/auth_repository.dart": {
-    "mtime": 1795009672.5208127,
-    "seen": 1795025834.3103662,
-    "ast_hash": "a3c70756c32936675a1abb5c0c73536d",
+    "mtime": 1795788203.6520536,
+    "seen": 1795788506.0315573,
+    "ast_hash": "bbe5ffac8b3033a4a0a77ad488f1c049",
     "semantic_hash": ""
   },
   "features/auth/data/auth_storage.dart": {
@@ -78,9 +78,9 @@
     "semantic_hash": "8398c918db32403c39b58762d05f9852"
   },
   "features/auth/presentation/auth_controller.dart": {
-    "mtime": 1795124865.8886876,
-    "seen": 1795125563.6844826,
-    "ast_hash": "3ed5f59aa1bad75782acea06bb25184d",
+    "mtime": 1795788203.655098,
+    "seen": 1795788506.0315573,
+    "ast_hash": "3297255e854ac823e2921c9e17e3630d",
     "semantic_hash": ""
   },
   "features/catalog/data/catalog_repository.dart": {
@@ -210,33 +210,33 @@
     "semantic_hash": "bfbbf42da82bca60812e95a0649ac071"
   },
   "shared/widgets/account_page.dart": {
-    "mtime": 1795660519.8714435,
-    "seen": 1795730805.2588377,
-    "ast_hash": "4fe9142bf9dab41bceaff8ebf08cbd2f",
+    "mtime": 1795788224.4664133,
+    "seen": 1795788506.0315573,
+    "ast_hash": "cf7996ea015fb073f0a1e172c099f056",
     "semantic_hash": ""
   },
   "shared/widgets/figma_bottom_nav.dart": {
-    "mtime": 1795785044.903492,
-    "seen": 1795785119.773904,
-    "ast_hash": "5dd317222e8b6bb96f7f3acb8ed1f7d5",
+    "mtime": 1795788387.4570634,
+    "seen": 1795788506.0315573,
+    "ast_hash": "9afe257134f3223f222f237cff11078d",
     "semantic_hash": ""
   },
   "shared/widgets/figma_components.dart": {
-    "mtime": 1795784862.231925,
-    "seen": 1795785119.773904,
-    "ast_hash": "a96ab49b14dd0edb2acab775d63c2734",
+    "mtime": 1795788203.6572094,
+    "seen": 1795788506.0315573,
+    "ast_hash": "918bc286449be87e748f3637ed45421b",
     "semantic_hash": ""
   },
   "shared/widgets/product_overviews.dart": {
-    "mtime": 1795783791.529175,
-    "seen": 1795784144.9090028,
-    "ast_hash": "12e257883613425dd0d37646ed7b2b4b",
+    "mtime": 1795788007.1015706,
+    "seen": 1795788506.0315573,
+    "ast_hash": "d295d8704edcfb49e4437b4f234089ab",
     "semantic_hash": ""
   },
   "shared/widgets/product_shell.dart": {
-    "mtime": 1795784911.5063028,
-    "seen": 1795785119.773904,
-    "ast_hash": "359517a45be37d0a444542613405c32f",
+    "mtime": 1795788249.308883,
+    "seen": 1795788506.0315573,
+    "ast_hash": "b63469014cb1bab968017bd3ff8f5969",
     "semantic_hash": ""
   },
   "core/motion/app_motion.dart": {
@@ -360,26 +360,26 @@
     "semantic_hash": "86f580c2e7459f20bd5462171429437e"
   },
   "l10n/generated/app_localizations.dart": {
-    "mtime": 1795783316.6215198,
-    "seen": 1795784144.9090028,
+    "mtime": 1795787798.2415175,
+    "seen": 1795788506.0315573,
     "ast_hash": "8b7fa5cd191e591ecf62eeb2c940056f",
     "semantic_hash": ""
   },
   "l10n/generated/app_localizations_en.dart": {
-    "mtime": 1795783316.57091,
-    "seen": 1795784144.9090028,
+    "mtime": 1795787798.1862855,
+    "seen": 1795788506.0315573,
     "ast_hash": "791e119a6d7dc764cef82126c8b29871",
     "semantic_hash": ""
   },
   "l10n/generated/app_localizations_es.dart": {
-    "mtime": 1795783316.581252,
-    "seen": 1795784144.9090028,
+    "mtime": 1795787798.1957657,
+    "seen": 1795788506.0315573,
     "ast_hash": "8841a9514b0a20c447c9268f7d346e0d",
     "semantic_hash": ""
   },
   "l10n/generated/app_localizations_pt.dart": {
-    "mtime": 1795783316.6109571,
-    "seen": 1795784144.9090028,
+    "mtime": 1795787798.2274084,
+    "seen": 1795788506.0315573,
     "ast_hash": "7750257326aa291a2751171ca3d9749f",
     "semantic_hash": ""
   },
@@ -642,9 +642,9 @@
     "semantic_hash": ""
   },
   "shared/widgets/food_catalog_credits_page.dart": {
-    "mtime": 1795785128.0337212,
-    "seen": 1795785442.9162552,
-    "ast_hash": "5b7bb86d1192d3c32e752067e70238d9",
+    "mtime": 1795788047.7119205,
+    "seen": 1795788506.0315573,
+    "ast_hash": "c5dada41a311938cc5dece2ea9b0a32b",
     "semantic_hash": ""
   },
   "core/theme/brand_mark.dart": {
@@ -786,15 +786,33 @@
     "semantic_hash": ""
   },
   "shared/widgets/shell_labels.dart": {
-    "mtime": 1795783696.3256056,
-    "seen": 1795784144.9090028,
-    "ast_hash": "5b5494cd3dabddccffa4091c007e8cdc",
+    "mtime": 1795788224.467303,
+    "seen": 1795788506.0315573,
+    "ast_hash": "152cc051d505585a464225075c944536",
     "semantic_hash": ""
   },
   "shared/widgets/workouts_overview.dart": {
     "mtime": 1795783109.336558,
     "seen": 1795784144.9090028,
     "ast_hash": "cac778f349a725828c7b303889a69cd5",
+    "semantic_hash": ""
+  },
+  "features/auth/data/profile_photos.dart": {
+    "mtime": 1795788177.5458932,
+    "seen": 1795788506.0315573,
+    "ast_hash": "878be9571d07506941075efac2b691dc",
+    "semantic_hash": ""
+  },
+  "features/nutrition/presentation/hydration_card.dart": {
+    "mtime": 1795788387.4580758,
+    "seen": 1795788506.0315573,
+    "ast_hash": "d3e92cbf55a25eda81d7f4ca99ae1e70",
+    "semantic_hash": ""
+  },
+  "shared/widgets/profile_photo_sheet.dart": {
+    "mtime": 1795788223.3118856,
+    "seen": 1795788506.0315573,
+    "ast_hash": "2da39ff2a90c942bdfe11cf6dbdcdf54",
     "semantic_hash": ""
   }
 }

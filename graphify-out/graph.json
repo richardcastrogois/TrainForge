@@ -9646,118 +9646,6 @@
       "_origin": "ast"
     },
     {
-      "id": "features_auth_data_auth_repository",
-      "label": "auth_repository.dart",
-      "file_type": "code",
-      "source_file": "features/auth/data/auth_repository.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "features_auth_data_auth_repository_authrepository",
-      "label": "AuthRepository",
-      "file_type": "code",
-      "source_file": "features/auth/data/auth_repository.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "features_auth_data_auth_repository_googlesignin",
-      "label": "_googleSignIn",
-      "file_type": "code",
-      "source_file": "features/auth/data/auth_repository.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "features_auth_data_auth_repository_api",
-      "label": "_api",
-      "file_type": "code",
-      "source_file": "features/auth/data/auth_repository.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "features_auth_data_auth_repository_storage",
-      "label": "_storage",
-      "file_type": "code",
-      "source_file": "features/auth/data/auth_repository.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "features_auth_data_auth_repository_initialization",
-      "label": "_initialization",
-      "file_type": "code",
-      "source_file": "features/auth/data/auth_repository.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "features_auth_data_auth_repository_ensureinitialized",
-      "label": "_ensureInitialized",
-      "file_type": "code",
-      "source_file": "features/auth/data/auth_repository.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "features_auth_data_auth_repository_signinwithgoogle",
-      "label": "signInWithGoogle",
-      "file_type": "code",
-      "source_file": "features/auth/data/auth_repository.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "features_auth_data_auth_repository_signin",
-      "label": "signIn",
-      "file_type": "code",
-      "source_file": "features/auth/data/auth_repository.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "features_auth_data_auth_repository_isauthenticated",
-      "label": "isAuthenticated",
-      "file_type": "code",
-      "source_file": "features/auth/data/auth_repository.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "features_auth_data_auth_repository_restoresession",
-      "label": "restoreSession",
-      "file_type": "code",
-      "source_file": "features/auth/data/auth_repository.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "features_auth_data_auth_repository_getme",
-      "label": "getMe",
-      "file_type": "code",
-      "source_file": "features/auth/data/auth_repository.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "features_auth_data_auth_repository_logout",
-      "label": "logout",
-      "file_type": "code",
-      "source_file": "features/auth/data/auth_repository.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "features_auth_data_auth_repository_getsavedtoken",
-      "label": "getSavedToken",
-      "file_type": "code",
-      "source_file": "features/auth/data/auth_repository.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
       "id": "nutrition_data_nutrition_local_store_dart",
       "label": "../../nutrition/data/nutrition_local_store.dart",
       "file_type": "code",
@@ -15446,190 +15334,6 @@
       "_origin": "ast"
     },
     {
-      "id": "features_auth_presentation_auth_controller",
-      "label": "auth_controller.dart",
-      "file_type": "code",
-      "source_file": "features/auth/presentation/auth_controller.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "features_auth_presentation_auth_controller_authaction",
-      "label": "AuthAction",
-      "file_type": "code",
-      "source_file": "features/auth/presentation/auth_controller.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "features_auth_presentation_auth_controller_authfeedback",
-      "label": "AuthFeedback",
-      "file_type": "code",
-      "source_file": "features/auth/presentation/auth_controller.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "features_auth_presentation_auth_controller_authcontroller",
-      "label": "AuthController",
-      "file_type": "code",
-      "source_file": "features/auth/presentation/auth_controller.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "features_auth_presentation_auth_controller_fallback",
-      "label": "fallback",
-      "file_type": "code",
-      "source_file": "features/auth/presentation/auth_controller.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "features_auth_presentation_auth_controller_repository",
-      "label": "repository",
-      "file_type": "code",
-      "source_file": "features/auth/presentation/auth_controller.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "features_auth_presentation_auth_controller_restoretimeout",
-      "label": "restoreTimeout",
-      "file_type": "code",
-      "source_file": "features/auth/presentation/auth_controller.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "features_auth_presentation_auth_controller_profile",
-      "label": "profile",
-      "file_type": "code",
-      "source_file": "features/auth/presentation/auth_controller.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "features_auth_presentation_auth_controller_busy",
-      "label": "busy",
-      "file_type": "code",
-      "source_file": "features/auth/presentation/auth_controller.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "features_auth_presentation_auth_controller_running",
-      "label": "running",
-      "file_type": "code",
-      "source_file": "features/auth/presentation/auth_controller.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "features_auth_presentation_auth_controller_restoring",
-      "label": "restoring",
-      "file_type": "code",
-      "source_file": "features/auth/presentation/auth_controller.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "features_auth_presentation_auth_controller_feedback",
-      "label": "feedback",
-      "file_type": "code",
-      "source_file": "features/auth/presentation/auth_controller.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "features_auth_presentation_auth_controller_message",
-      "label": "message",
-      "file_type": "code",
-      "source_file": "features/auth/presentation/auth_controller.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "features_auth_presentation_auth_controller_failedaction",
-      "label": "failedAction",
-      "file_type": "code",
-      "source_file": "features/auth/presentation/auth_controller.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "features_auth_presentation_auth_controller_disposed",
-      "label": "_disposed",
-      "file_type": "code",
-      "source_file": "features/auth/presentation/auth_controller.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "features_auth_presentation_auth_controller_erasedaccountid",
-      "label": "_erasedAccountId",
-      "file_type": "code",
-      "source_file": "features/auth/presentation/auth_controller.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "features_auth_presentation_auth_controller_accounterased",
-      "label": "accountErased",
-      "file_type": "code",
-      "source_file": "features/auth/presentation/auth_controller.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "features_auth_presentation_auth_controller_restore",
-      "label": "restore",
-      "file_type": "code",
-      "source_file": "features/auth/presentation/auth_controller.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "features_auth_presentation_auth_controller_login",
-      "label": "login",
-      "file_type": "code",
-      "source_file": "features/auth/presentation/auth_controller.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "features_auth_presentation_auth_controller_logout",
-      "label": "logout",
-      "file_type": "code",
-      "source_file": "features/auth/presentation/auth_controller.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "features_auth_presentation_auth_controller_retry",
-      "label": "retry",
-      "file_type": "code",
-      "source_file": "features/auth/presentation/auth_controller.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "features_auth_presentation_auth_controller_run",
-      "label": "_run",
-      "file_type": "code",
-      "source_file": "features/auth/presentation/auth_controller.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "features_auth_presentation_auth_controller_dispose",
-      "label": "dispose",
-      "file_type": "code",
-      "source_file": "features/auth/presentation/auth_controller.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
       "id": "features_food_reference_data_catalog_installer",
       "label": "catalog_installer.dart",
       "file_type": "code",
@@ -19130,62 +18834,6 @@
       "label": "AppLocalizations",
       "file_type": "code",
       "source_file": null,
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "shared_widgets_account_page",
-      "label": "account_page.dart",
-      "file_type": "code",
-      "source_file": "shared/widgets/account_page.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "shared_widgets_account_page_accountpage",
-      "label": "AccountPage",
-      "file_type": "code",
-      "source_file": "shared/widgets/account_page.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "shared_widgets_account_page_controller",
-      "label": "controller",
-      "file_type": "code",
-      "source_file": "shared/widgets/account_page.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "shared_widgets_account_page_configure",
-      "label": "configure",
-      "file_type": "code",
-      "source_file": "shared/widgets/account_page.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "shared_widgets_account_page_redofirstquestions",
-      "label": "redoFirstQuestions",
-      "file_type": "code",
-      "source_file": "shared/widgets/account_page.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "shared_widgets_account_page_privacy",
-      "label": "privacy",
-      "file_type": "code",
-      "source_file": "shared/widgets/account_page.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "shared_widgets_account_page_build",
-      "label": "build",
-      "file_type": "code",
-      "source_file": "shared/widgets/account_page.dart",
       "source_location": null,
       "_origin": "ast"
     },
@@ -42966,94 +42614,6 @@
       "_origin": "ast"
     },
     {
-      "id": "shared_widgets_product_overviews",
-      "label": "product_overviews.dart",
-      "file_type": "code",
-      "source_file": "shared/widgets/product_overviews.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "shared_widgets_product_overviews_dailyoverview",
-      "label": "DailyOverview",
-      "file_type": "code",
-      "source_file": "shared/widgets/product_overviews.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "shared_widgets_product_overviews_quickbutton",
-      "label": "_QuickButton",
-      "file_type": "code",
-      "source_file": "shared/widgets/product_overviews.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "shared_widgets_product_overviews_evolutionpage",
-      "label": "EvolutionPage",
-      "file_type": "code",
-      "source_file": "shared/widgets/product_overviews.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "shared_widgets_product_overviews_tfblue",
-      "label": "tfBlue",
-      "file_type": "code",
-      "source_file": "shared/widgets/product_overviews.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "shared_widgets_product_overviews_controller",
-      "label": "controller",
-      "file_type": "code",
-      "source_file": "shared/widgets/product_overviews.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "shared_widgets_product_overviews_name",
-      "label": "name",
-      "file_type": "code",
-      "source_file": "shared/widgets/product_overviews.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "shared_widgets_product_overviews_food",
-      "label": "food",
-      "file_type": "code",
-      "source_file": "shared/widgets/product_overviews.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "shared_widgets_product_overviews_openday",
-      "label": "openDay",
-      "file_type": "code",
-      "source_file": "shared/widgets/product_overviews.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "shared_widgets_product_overviews_openactivity",
-      "label": "openActivity",
-      "file_type": "code",
-      "source_file": "shared/widgets/product_overviews.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "shared_widgets_product_overviews_openphoto",
-      "label": "openPhoto",
-      "file_type": "code",
-      "source_file": "shared/widgets/product_overviews.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
       "id": "voidcallback_openvoice",
       "label": "VoidCallback? openVoice,",
       "file_type": "code",
@@ -43062,82 +42622,10 @@
       "_origin": "ast"
     },
     {
-      "id": "shared_widgets_product_overviews_icon",
-      "label": "icon",
-      "file_type": "code",
-      "source_file": "shared/widgets/product_overviews.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "shared_widgets_product_overviews_label",
-      "label": "label",
-      "file_type": "code",
-      "source_file": "shared/widgets/product_overviews.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "shared_widgets_product_overviews_color",
-      "label": "color",
-      "file_type": "code",
-      "source_file": "shared/widgets/product_overviews.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "shared_widgets_product_overviews_ontap",
-      "label": "onTap",
-      "file_type": "code",
-      "source_file": "shared/widgets/product_overviews.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "shared_widgets_product_overviews_activity",
-      "label": "activity",
-      "file_type": "code",
-      "source_file": "shared/widgets/product_overviews.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "shared_widgets_product_overviews_accountid",
-      "label": "accountId",
-      "file_type": "code",
-      "source_file": "shared/widgets/product_overviews.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "shared_widgets_product_overviews_sessionchanges",
-      "label": "sessionChanges",
-      "file_type": "code",
-      "source_file": "shared/widgets/product_overviews.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "shared_widgets_product_overviews_openworkouts",
-      "label": "openWorkouts",
-      "file_type": "code",
-      "source_file": "shared/widgets/product_overviews.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
       "id": "voidcallback_opennutrition",
       "label": "VoidCallback openNutrition,",
       "file_type": "code",
       "source_file": null,
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "shared_widgets_product_overviews_build",
-      "label": "build",
-      "file_type": "code",
-      "source_file": "shared/widgets/product_overviews.dart",
       "source_location": null,
       "_origin": "ast"
     },
@@ -43170,38 +42658,6 @@
       "label": "package:trainforge/features/nutrition/data/offline_nutrition_repository.dart",
       "file_type": "code",
       "source_file": null,
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "shared_widgets_shell_labels",
-      "label": "shell_labels.dart",
-      "file_type": "code",
-      "source_file": "shared/widgets/shell_labels.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "shared_widgets_shell_labels_language",
-      "label": "language",
-      "file_type": "code",
-      "source_file": "shared/widgets/shell_labels.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "shared_widgets_shell_labels_labels",
-      "label": "_labels",
-      "file_type": "code",
-      "source_file": "shared/widgets/shell_labels.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "shared_widgets_shell_labels_shelllabel",
-      "label": "shellLabel",
-      "file_type": "code",
-      "source_file": "shared/widgets/shell_labels.dart",
       "source_location": null,
       "_origin": "ast"
     },
@@ -43246,6 +42702,902 @@
       "_origin": "ast"
     },
     {
+      "id": "customclipper",
+      "label": "CustomClipper",
+      "file_type": "code",
+      "source_file": null,
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "path",
+      "label": "Path",
+      "file_type": "code",
+      "source_file": null,
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "shared_widgets_glass_sheet",
+      "label": "glass_sheet.dart",
+      "file_type": "code",
+      "source_file": "shared/widgets/glass_sheet.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "shared_widgets_glass_sheet_glasssheetoption",
+      "label": "GlassSheetOption",
+      "file_type": "code",
+      "source_file": "shared/widgets/glass_sheet.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "shared_widgets_glass_sheet_topmenuitem",
+      "label": "TopMenuItem",
+      "file_type": "code",
+      "source_file": "shared/widgets/glass_sheet.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "shared_widgets_glass_sheet_icon",
+      "label": "icon",
+      "file_type": "code",
+      "source_file": "shared/widgets/glass_sheet.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "shared_widgets_glass_sheet_title",
+      "label": "title",
+      "file_type": "code",
+      "source_file": "shared/widgets/glass_sheet.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "shared_widgets_glass_sheet_hint",
+      "label": "hint",
+      "file_type": "code",
+      "source_file": "shared/widgets/glass_sheet.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "shared_widgets_glass_sheet_color",
+      "label": "color",
+      "file_type": "code",
+      "source_file": "shared/widgets/glass_sheet.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "shared_widgets_glass_sheet_ontap",
+      "label": "onTap",
+      "file_type": "code",
+      "source_file": "shared/widgets/glass_sheet.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "shared_widgets_glass_sheet_reduced",
+      "label": "reduced",
+      "file_type": "code",
+      "source_file": "shared/widgets/glass_sheet.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "shared_widgets_glass_sheet_build",
+      "label": "build",
+      "file_type": "code",
+      "source_file": "shared/widgets/glass_sheet.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "shared_widgets_glass_sheet_showtopmenu",
+      "label": "showTopMenu",
+      "file_type": "code",
+      "source_file": "shared/widgets/glass_sheet.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_legal_legal_documents",
+      "label": "legal_documents.dart",
+      "file_type": "code",
+      "source_file": "features/legal/legal_documents.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_legal_legal_documents_legaldocument",
+      "label": "LegalDocument",
+      "file_type": "code",
+      "source_file": "features/legal/legal_documents.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_legal_legal_documents_legaltexts",
+      "label": "LegalTexts",
+      "file_type": "code",
+      "source_file": "features/legal/legal_documents.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_legal_legal_documents_legalappversion",
+      "label": "legalAppVersion",
+      "file_type": "code",
+      "source_file": "features/legal/legal_documents.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_legal_legal_documents_legalpublicbase",
+      "label": "legalPublicBase",
+      "file_type": "code",
+      "source_file": "features/legal/legal_documents.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_legal_legal_documents_id",
+      "label": "id",
+      "file_type": "code",
+      "source_file": "features/legal/legal_documents.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_legal_legal_documents_version",
+      "label": "version",
+      "file_type": "code",
+      "source_file": "features/legal/legal_documents.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_legal_legal_documents_asset",
+      "label": "asset",
+      "file_type": "code",
+      "source_file": "features/legal/legal_documents.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_legal_legal_documents_titlekey",
+      "label": "titleKey",
+      "file_type": "code",
+      "source_file": "features/legal/legal_documents.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_legal_legal_documents_changeskey",
+      "label": "changesKey",
+      "file_type": "code",
+      "source_file": "features/legal/legal_documents.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_legal_legal_documents_publicurl",
+      "label": "publicUrl",
+      "file_type": "code",
+      "source_file": "features/legal/legal_documents.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_legal_legal_documents_termsdocument",
+      "label": "termsDocument",
+      "file_type": "code",
+      "source_file": "features/legal/legal_documents.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_legal_legal_documents_privacydocument",
+      "label": "privacyDocument",
+      "file_type": "code",
+      "source_file": "features/legal/legal_documents.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_legal_legal_documents_legaldocuments",
+      "label": "legalDocuments",
+      "file_type": "code",
+      "source_file": "features/legal/legal_documents.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_legal_legal_documents_healthconsentversion",
+      "label": "healthConsentVersion",
+      "file_type": "code",
+      "source_file": "features/legal/legal_documents.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_legal_legal_documents_sha",
+      "label": "_sha",
+      "file_type": "code",
+      "source_file": "features/legal/legal_documents.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_legal_legal_documents_text",
+      "label": "text",
+      "file_type": "code",
+      "source_file": "features/legal/legal_documents.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_auth_data_auth_repository",
+      "label": "auth_repository.dart",
+      "file_type": "code",
+      "source_file": "features/auth/data/auth_repository.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_auth_data_auth_repository_authrepository",
+      "label": "AuthRepository",
+      "file_type": "code",
+      "source_file": "features/auth/data/auth_repository.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_auth_data_auth_repository_googlesignin",
+      "label": "_googleSignIn",
+      "file_type": "code",
+      "source_file": "features/auth/data/auth_repository.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_auth_data_auth_repository_api",
+      "label": "_api",
+      "file_type": "code",
+      "source_file": "features/auth/data/auth_repository.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_auth_data_auth_repository_storage",
+      "label": "_storage",
+      "file_type": "code",
+      "source_file": "features/auth/data/auth_repository.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_auth_data_auth_repository_initialization",
+      "label": "_initialization",
+      "file_type": "code",
+      "source_file": "features/auth/data/auth_repository.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_auth_data_auth_repository_ensureinitialized",
+      "label": "_ensureInitialized",
+      "file_type": "code",
+      "source_file": "features/auth/data/auth_repository.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_auth_data_auth_repository_signinwithgoogle",
+      "label": "signInWithGoogle",
+      "file_type": "code",
+      "source_file": "features/auth/data/auth_repository.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_auth_data_auth_repository_signin",
+      "label": "signIn",
+      "file_type": "code",
+      "source_file": "features/auth/data/auth_repository.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_auth_data_auth_repository_googlephotourl",
+      "label": "googlePhotoUrl",
+      "file_type": "code",
+      "source_file": "features/auth/data/auth_repository.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_auth_data_auth_repository_isauthenticated",
+      "label": "isAuthenticated",
+      "file_type": "code",
+      "source_file": "features/auth/data/auth_repository.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_auth_data_auth_repository_restoresession",
+      "label": "restoreSession",
+      "file_type": "code",
+      "source_file": "features/auth/data/auth_repository.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_auth_data_auth_repository_getme",
+      "label": "getMe",
+      "file_type": "code",
+      "source_file": "features/auth/data/auth_repository.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_auth_data_auth_repository_logout",
+      "label": "logout",
+      "file_type": "code",
+      "source_file": "features/auth/data/auth_repository.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_auth_data_auth_repository_getsavedtoken",
+      "label": "getSavedToken",
+      "file_type": "code",
+      "source_file": "features/auth/data/auth_repository.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "profile_photos_dart",
+      "label": "profile_photos.dart",
+      "file_type": "code",
+      "source_file": null,
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_auth_data_profile_photos",
+      "label": "profile_photos.dart",
+      "file_type": "code",
+      "source_file": "features/auth/data/profile_photos.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_auth_data_profile_photos_profilephotos",
+      "label": "ProfilePhotos",
+      "file_type": "code",
+      "source_file": "features/auth/data/profile_photos.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_auth_data_profile_photos_instance",
+      "label": "instance",
+      "file_type": "code",
+      "source_file": "features/auth/data/profile_photos.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_auth_data_profile_photos_storage",
+      "label": "_storage",
+      "file_type": "code",
+      "source_file": "features/auth/data/profile_photos.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_auth_data_profile_photos_google",
+      "label": "_google",
+      "file_type": "code",
+      "source_file": "features/auth/data/profile_photos.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_auth_data_profile_photos_custom",
+      "label": "_custom",
+      "file_type": "code",
+      "source_file": "features/auth/data/profile_photos.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_auth_data_profile_photos_googleurls",
+      "label": "_googleUrls",
+      "file_type": "code",
+      "source_file": "features/auth/data/profile_photos.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_auth_data_profile_photos_custompaths",
+      "label": "_customPaths",
+      "file_type": "code",
+      "source_file": "features/auth/data/profile_photos.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_auth_data_profile_photos_loaded",
+      "label": "_loaded",
+      "file_type": "code",
+      "source_file": "features/auth/data/profile_photos.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_auth_data_profile_photos_googleurl",
+      "label": "googleUrl",
+      "file_type": "code",
+      "source_file": "features/auth/data/profile_photos.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_auth_data_profile_photos_custompath",
+      "label": "customPath",
+      "file_type": "code",
+      "source_file": "features/auth/data/profile_photos.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_auth_data_profile_photos_load",
+      "label": "load",
+      "file_type": "code",
+      "source_file": "features/auth/data/profile_photos.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_auth_data_profile_photos_setgoogle",
+      "label": "setGoogle",
+      "file_type": "code",
+      "source_file": "features/auth/data/profile_photos.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_auth_data_profile_photos_setcustom",
+      "label": "setCustom",
+      "file_type": "code",
+      "source_file": "features/auth/data/profile_photos.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_auth_data_profile_photos_removecustom",
+      "label": "removeCustom",
+      "file_type": "code",
+      "source_file": "features/auth/data/profile_photos.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_auth_data_profile_photos_forget",
+      "label": "forget",
+      "file_type": "code",
+      "source_file": "features/auth/data/profile_photos.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_auth_presentation_auth_controller",
+      "label": "auth_controller.dart",
+      "file_type": "code",
+      "source_file": "features/auth/presentation/auth_controller.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_auth_presentation_auth_controller_authaction",
+      "label": "AuthAction",
+      "file_type": "code",
+      "source_file": "features/auth/presentation/auth_controller.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_auth_presentation_auth_controller_authfeedback",
+      "label": "AuthFeedback",
+      "file_type": "code",
+      "source_file": "features/auth/presentation/auth_controller.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_auth_presentation_auth_controller_authcontroller",
+      "label": "AuthController",
+      "file_type": "code",
+      "source_file": "features/auth/presentation/auth_controller.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_auth_presentation_auth_controller_fallback",
+      "label": "fallback",
+      "file_type": "code",
+      "source_file": "features/auth/presentation/auth_controller.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_auth_presentation_auth_controller_repository",
+      "label": "repository",
+      "file_type": "code",
+      "source_file": "features/auth/presentation/auth_controller.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_auth_presentation_auth_controller_restoretimeout",
+      "label": "restoreTimeout",
+      "file_type": "code",
+      "source_file": "features/auth/presentation/auth_controller.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_auth_presentation_auth_controller_profile",
+      "label": "profile",
+      "file_type": "code",
+      "source_file": "features/auth/presentation/auth_controller.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_auth_presentation_auth_controller_busy",
+      "label": "busy",
+      "file_type": "code",
+      "source_file": "features/auth/presentation/auth_controller.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_auth_presentation_auth_controller_running",
+      "label": "running",
+      "file_type": "code",
+      "source_file": "features/auth/presentation/auth_controller.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_auth_presentation_auth_controller_restoring",
+      "label": "restoring",
+      "file_type": "code",
+      "source_file": "features/auth/presentation/auth_controller.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_auth_presentation_auth_controller_feedback",
+      "label": "feedback",
+      "file_type": "code",
+      "source_file": "features/auth/presentation/auth_controller.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_auth_presentation_auth_controller_message",
+      "label": "message",
+      "file_type": "code",
+      "source_file": "features/auth/presentation/auth_controller.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_auth_presentation_auth_controller_failedaction",
+      "label": "failedAction",
+      "file_type": "code",
+      "source_file": "features/auth/presentation/auth_controller.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_auth_presentation_auth_controller_disposed",
+      "label": "_disposed",
+      "file_type": "code",
+      "source_file": "features/auth/presentation/auth_controller.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_auth_presentation_auth_controller_erasedaccountid",
+      "label": "_erasedAccountId",
+      "file_type": "code",
+      "source_file": "features/auth/presentation/auth_controller.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_auth_presentation_auth_controller_accounterased",
+      "label": "accountErased",
+      "file_type": "code",
+      "source_file": "features/auth/presentation/auth_controller.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_auth_presentation_auth_controller_restore",
+      "label": "restore",
+      "file_type": "code",
+      "source_file": "features/auth/presentation/auth_controller.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_auth_presentation_auth_controller_login",
+      "label": "login",
+      "file_type": "code",
+      "source_file": "features/auth/presentation/auth_controller.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_auth_presentation_auth_controller_logout",
+      "label": "logout",
+      "file_type": "code",
+      "source_file": "features/auth/presentation/auth_controller.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_auth_presentation_auth_controller_retry",
+      "label": "retry",
+      "file_type": "code",
+      "source_file": "features/auth/presentation/auth_controller.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_auth_presentation_auth_controller_run",
+      "label": "_run",
+      "file_type": "code",
+      "source_file": "features/auth/presentation/auth_controller.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_auth_presentation_auth_controller_dispose",
+      "label": "dispose",
+      "file_type": "code",
+      "source_file": "features/auth/presentation/auth_controller.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "package_trainforge_features_auth_data_profile_photos_dart",
+      "label": "package:trainforge/features/auth/data/profile_photos.dart",
+      "file_type": "code",
+      "source_file": null,
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_nutrition_presentation_hydration_card",
+      "label": "hydration_card.dart",
+      "file_type": "code",
+      "source_file": "features/nutrition/presentation/hydration_card.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_nutrition_presentation_hydration_card_hydrationcard",
+      "label": "HydrationCard",
+      "file_type": "code",
+      "source_file": "features/nutrition/presentation/hydration_card.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_nutrition_presentation_hydration_card_hydrationcardstate",
+      "label": "_HydrationCardState",
+      "file_type": "code",
+      "source_file": "features/nutrition/presentation/hydration_card.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_nutrition_presentation_hydration_card_waterfoodid",
+      "label": "waterFoodId",
+      "file_type": "code",
+      "source_file": "features/nutrition/presentation/hydration_card.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_nutrition_presentation_hydration_card_waterfoodversion",
+      "label": "waterFoodVersion",
+      "file_type": "code",
+      "source_file": "features/nutrition/presentation/hydration_card.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_nutrition_presentation_hydration_card_language",
+      "label": "language",
+      "file_type": "code",
+      "source_file": "features/nutrition/presentation/hydration_card.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_nutrition_presentation_hydration_card_labels",
+      "label": "_labels",
+      "file_type": "code",
+      "source_file": "features/nutrition/presentation/hydration_card.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_nutrition_presentation_hydration_card_repository",
+      "label": "repository",
+      "file_type": "code",
+      "source_file": "features/nutrition/presentation/hydration_card.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_nutrition_presentation_hydration_card_changed",
+      "label": "changed",
+      "file_type": "code",
+      "source_file": "features/nutrition/presentation/hydration_card.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_nutrition_presentation_hydration_card_total",
+      "label": "total",
+      "file_type": "code",
+      "source_file": "features/nutrition/presentation/hydration_card.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_nutrition_presentation_hydration_card_busy",
+      "label": "busy",
+      "file_type": "code",
+      "source_file": "features/nutrition/presentation/hydration_card.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_nutrition_presentation_hydration_card_label",
+      "label": "_label",
+      "file_type": "code",
+      "source_file": "features/nutrition/presentation/hydration_card.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_nutrition_presentation_hydration_card_createstate",
+      "label": "createState",
+      "file_type": "code",
+      "source_file": "features/nutrition/presentation/hydration_card.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_nutrition_presentation_hydration_card_initstate",
+      "label": "initState",
+      "file_type": "code",
+      "source_file": "features/nutrition/presentation/hydration_card.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_nutrition_presentation_hydration_card_load",
+      "label": "load",
+      "file_type": "code",
+      "source_file": "features/nutrition/presentation/hydration_card.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_nutrition_presentation_hydration_card_add",
+      "label": "add",
+      "file_type": "code",
+      "source_file": "features/nutrition/presentation/hydration_card.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_nutrition_presentation_hydration_card_build",
+      "label": "build",
+      "file_type": "code",
+      "source_file": "features/nutrition/presentation/hydration_card.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_nutrition_presentation_hydration_card_button",
+      "label": "_button",
+      "file_type": "code",
+      "source_file": "features/nutrition/presentation/hydration_card.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "shared_widgets_account_page",
+      "label": "account_page.dart",
+      "file_type": "code",
+      "source_file": "shared/widgets/account_page.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "shared_widgets_account_page_accountpage",
+      "label": "AccountPage",
+      "file_type": "code",
+      "source_file": "shared/widgets/account_page.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "shared_widgets_account_page_controller",
+      "label": "controller",
+      "file_type": "code",
+      "source_file": "shared/widgets/account_page.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "shared_widgets_account_page_configure",
+      "label": "configure",
+      "file_type": "code",
+      "source_file": "shared/widgets/account_page.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "shared_widgets_account_page_redofirstquestions",
+      "label": "redoFirstQuestions",
+      "file_type": "code",
+      "source_file": "shared/widgets/account_page.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "shared_widgets_account_page_privacy",
+      "label": "privacy",
+      "file_type": "code",
+      "source_file": "shared/widgets/account_page.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "shared_widgets_account_page_build",
+      "label": "build",
+      "file_type": "code",
+      "source_file": "shared/widgets/account_page.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "profile_photo_sheet_dart",
+      "label": "profile_photo_sheet.dart",
+      "file_type": "code",
+      "source_file": null,
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
       "id": "shared_widgets_figma_bottom_nav",
       "label": "figma_bottom_nav.dart",
       "file_type": "code",
@@ -43278,6 +43630,14 @@
       "_origin": "ast"
     },
     {
+      "id": "shared_widgets_figma_bottom_nav_lens",
+      "label": "_Lens",
+      "file_type": "code",
+      "source_file": "shared/widgets/figma_bottom_nav.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
       "id": "shared_widgets_figma_bottom_nav_glassnotchbar",
       "label": "_GlassNotchBar",
       "file_type": "code",
@@ -43290,22 +43650,6 @@
       "label": "_NotchClipper",
       "file_type": "code",
       "source_file": "shared/widgets/figma_bottom_nav.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "customclipper",
-      "label": "CustomClipper",
-      "file_type": "code",
-      "source_file": null,
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "path",
-      "label": "Path",
-      "file_type": "code",
-      "source_file": null,
       "source_location": null,
       "_origin": "ast"
     },
@@ -43382,8 +43726,8 @@
       "_origin": "ast"
     },
     {
-      "id": "shared_widgets_figma_bottom_nav_circle",
-      "label": "_circle",
+      "id": "shared_widgets_figma_bottom_nav_add",
+      "label": "_add",
       "file_type": "code",
       "source_file": "shared/widgets/figma_bottom_nav.dart",
       "source_location": null,
@@ -43406,14 +43750,6 @@
       "_origin": "ast"
     },
     {
-      "id": "shared_widgets_figma_bottom_nav_speed",
-      "label": "_speed",
-      "file_type": "code",
-      "source_file": "shared/widgets/figma_bottom_nav.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
       "id": "shared_widgets_figma_bottom_nav_rest",
       "label": "_rest",
       "file_type": "code",
@@ -43422,18 +43758,26 @@
       "_origin": "ast"
     },
     {
-      "id": "shared_widgets_figma_bottom_nav_highlight",
-      "label": "_highlight",
+      "id": "shared_widgets_figma_bottom_nav_destination",
+      "label": "destination",
       "file_type": "code",
       "source_file": "shared/widgets/figma_bottom_nav.dart",
       "source_location": null,
       "_origin": "ast"
     },
     {
-      "id": "shared_widgets_figma_bottom_nav_cx",
-      "label": "cx",
+      "id": "shared_widgets_figma_bottom_nav_notch",
+      "label": "notch",
       "file_type": "code",
       "source_file": "shared/widgets/figma_bottom_nav.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "double_cx",
+      "label": "double cx,",
+      "file_type": "code",
+      "source_file": null,
       "source_location": null,
       "_origin": "ast"
     },
@@ -43464,6 +43808,22 @@
     {
       "id": "shared_widgets_figma_bottom_nav_createstate",
       "label": "createState",
+      "file_type": "code",
+      "source_file": "shared/widgets/figma_bottom_nav.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "shared_widgets_figma_bottom_nav_visibility",
+      "label": "_visibility",
+      "file_type": "code",
+      "source_file": "shared/widgets/figma_bottom_nav.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "shared_widgets_figma_bottom_nav_pagenear",
+      "label": "_pageNear",
       "file_type": "code",
       "source_file": "shared/widgets/figma_bottom_nav.dart",
       "source_location": null,
@@ -43510,22 +43870,6 @@
       "_origin": "ast"
     },
     {
-      "id": "shared_widgets_figma_bottom_nav_circlefor",
-      "label": "_circleFor",
-      "file_type": "code",
-      "source_file": "shared/widgets/figma_bottom_nav.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "shared_widgets_figma_bottom_nav_icon",
-      "label": "_icon",
-      "file_type": "code",
-      "source_file": "shared/widgets/figma_bottom_nav.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
       "id": "shared_widgets_figma_bottom_nav_addbutton",
       "label": "_addButton",
       "file_type": "code",
@@ -43536,6 +43880,30 @@
     {
       "id": "shared_widgets_figma_bottom_nav_item",
       "label": "_item",
+      "file_type": "code",
+      "source_file": "shared/widgets/figma_bottom_nav.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "shared_widgets_figma_bottom_nav_navicon",
+      "label": "navIcon",
+      "file_type": "code",
+      "source_file": "shared/widgets/figma_bottom_nav.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "shared_widgets_figma_bottom_nav_svg",
+      "label": "svg",
+      "file_type": "code",
+      "source_file": "shared/widgets/figma_bottom_nav.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "shared_widgets_figma_bottom_nav_square",
+      "label": "square",
       "file_type": "code",
       "source_file": "shared/widgets/figma_bottom_nav.dart",
       "source_location": null,
@@ -43570,6 +43938,14 @@
       "label": "shouldRepaint",
       "file_type": "code",
       "source_file": "shared/widgets/figma_bottom_nav.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "package_liquid_glass_widgets_liquid_glass_widgets_dart",
+      "label": "package:liquid_glass_widgets/liquid_glass_widgets.dart",
+      "file_type": "code",
+      "source_file": null,
       "source_location": null,
       "_origin": "ast"
     },
@@ -43710,16 +44086,32 @@
       "_origin": "ast"
     },
     {
-      "id": "shared_widgets_figma_components_image",
-      "label": "image",
+      "id": "shared_widgets_figma_components_accountid",
+      "label": "accountId",
       "file_type": "code",
       "source_file": "shared/widgets/figma_components.dart",
       "source_location": null,
       "_origin": "ast"
     },
     {
+      "id": "string_image",
+      "label": "String? image,",
+      "file_type": "code",
+      "source_file": null,
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
       "id": "shared_widgets_figma_components_onprofile",
       "label": "onProfile",
+      "file_type": "code",
+      "source_file": "shared/widgets/figma_components.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "shared_widgets_figma_components_image",
+      "label": "image",
       "file_type": "code",
       "source_file": "shared/widgets/figma_components.dart",
       "source_location": null,
@@ -43766,90 +44158,242 @@
       "_origin": "ast"
     },
     {
-      "id": "shared_widgets_glass_sheet",
-      "label": "glass_sheet.dart",
+      "id": "shared_widgets_food_catalog_credits_page",
+      "label": "food_catalog_credits_page.dart",
       "file_type": "code",
-      "source_file": "shared/widgets/glass_sheet.dart",
+      "source_file": "shared/widgets/food_catalog_credits_page.dart",
       "source_location": null,
       "_origin": "ast"
     },
     {
-      "id": "shared_widgets_glass_sheet_glasssheetoption",
-      "label": "GlassSheetOption",
+      "id": "shared_widgets_food_catalog_credits_page_foodcatalogcreditspage",
+      "label": "FoodCatalogCreditsPage",
       "file_type": "code",
-      "source_file": "shared/widgets/glass_sheet.dart",
+      "source_file": "shared/widgets/food_catalog_credits_page.dart",
       "source_location": null,
       "_origin": "ast"
     },
     {
-      "id": "shared_widgets_glass_sheet_topmenuitem",
-      "label": "TopMenuItem",
+      "id": "shared_widgets_food_catalog_credits_page_foodcatalogcreditspagestate",
+      "label": "_FoodCatalogCreditsPageState",
       "file_type": "code",
-      "source_file": "shared/widgets/glass_sheet.dart",
+      "source_file": "shared/widgets/food_catalog_credits_page.dart",
       "source_location": null,
       "_origin": "ast"
     },
     {
-      "id": "shared_widgets_glass_sheet_icon",
-      "label": "icon",
+      "id": "shared_widgets_food_catalog_credits_page_manifest",
+      "label": "manifest",
       "file_type": "code",
-      "source_file": "shared/widgets/glass_sheet.dart",
+      "source_file": "shared/widgets/food_catalog_credits_page.dart",
       "source_location": null,
       "_origin": "ast"
     },
     {
-      "id": "shared_widgets_glass_sheet_title",
-      "label": "title",
+      "id": "shared_widgets_food_catalog_credits_page_createstate",
+      "label": "createState",
       "file_type": "code",
-      "source_file": "shared/widgets/glass_sheet.dart",
+      "source_file": "shared/widgets/food_catalog_credits_page.dart",
       "source_location": null,
       "_origin": "ast"
     },
     {
-      "id": "shared_widgets_glass_sheet_hint",
-      "label": "hint",
+      "id": "shared_widgets_food_catalog_credits_page_load",
+      "label": "_load",
       "file_type": "code",
-      "source_file": "shared/widgets/glass_sheet.dart",
+      "source_file": "shared/widgets/food_catalog_credits_page.dart",
       "source_location": null,
       "_origin": "ast"
     },
     {
-      "id": "shared_widgets_glass_sheet_color",
-      "label": "color",
+      "id": "shared_widgets_food_catalog_credits_page_label",
+      "label": "label",
       "file_type": "code",
-      "source_file": "shared/widgets/glass_sheet.dart",
+      "source_file": "shared/widgets/food_catalog_credits_page.dart",
       "source_location": null,
       "_origin": "ast"
     },
     {
-      "id": "shared_widgets_glass_sheet_ontap",
-      "label": "onTap",
+      "id": "shared_widgets_food_catalog_credits_page_download",
+      "label": "download",
       "file_type": "code",
-      "source_file": "shared/widgets/glass_sheet.dart",
+      "source_file": "shared/widgets/food_catalog_credits_page.dart",
       "source_location": null,
       "_origin": "ast"
     },
     {
-      "id": "shared_widgets_glass_sheet_reduced",
-      "label": "reduced",
-      "file_type": "code",
-      "source_file": "shared/widgets/glass_sheet.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "shared_widgets_glass_sheet_build",
+      "id": "shared_widgets_food_catalog_credits_page_build",
       "label": "build",
       "file_type": "code",
-      "source_file": "shared/widgets/glass_sheet.dart",
+      "source_file": "shared/widgets/food_catalog_credits_page.dart",
       "source_location": null,
       "_origin": "ast"
     },
     {
-      "id": "shared_widgets_glass_sheet_showtopmenu",
-      "label": "showTopMenu",
+      "id": "shared_widgets_product_overviews",
+      "label": "product_overviews.dart",
       "file_type": "code",
-      "source_file": "shared/widgets/glass_sheet.dart",
+      "source_file": "shared/widgets/product_overviews.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "shared_widgets_product_overviews_dailyoverview",
+      "label": "DailyOverview",
+      "file_type": "code",
+      "source_file": "shared/widgets/product_overviews.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "shared_widgets_product_overviews_quickbutton",
+      "label": "_QuickButton",
+      "file_type": "code",
+      "source_file": "shared/widgets/product_overviews.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "shared_widgets_product_overviews_evolutionpage",
+      "label": "EvolutionPage",
+      "file_type": "code",
+      "source_file": "shared/widgets/product_overviews.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "shared_widgets_product_overviews_tfblue",
+      "label": "tfBlue",
+      "file_type": "code",
+      "source_file": "shared/widgets/product_overviews.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "shared_widgets_product_overviews_controller",
+      "label": "controller",
+      "file_type": "code",
+      "source_file": "shared/widgets/product_overviews.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "shared_widgets_product_overviews_name",
+      "label": "name",
+      "file_type": "code",
+      "source_file": "shared/widgets/product_overviews.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "shared_widgets_product_overviews_food",
+      "label": "food",
+      "file_type": "code",
+      "source_file": "shared/widgets/product_overviews.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "shared_widgets_product_overviews_openday",
+      "label": "openDay",
+      "file_type": "code",
+      "source_file": "shared/widgets/product_overviews.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "shared_widgets_product_overviews_openactivity",
+      "label": "openActivity",
+      "file_type": "code",
+      "source_file": "shared/widgets/product_overviews.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "shared_widgets_product_overviews_openphoto",
+      "label": "openPhoto",
+      "file_type": "code",
+      "source_file": "shared/widgets/product_overviews.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "shared_widgets_product_overviews_hydration",
+      "label": "hydration",
+      "file_type": "code",
+      "source_file": "shared/widgets/product_overviews.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "shared_widgets_product_overviews_icon",
+      "label": "icon",
+      "file_type": "code",
+      "source_file": "shared/widgets/product_overviews.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "shared_widgets_product_overviews_label",
+      "label": "label",
+      "file_type": "code",
+      "source_file": "shared/widgets/product_overviews.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "shared_widgets_product_overviews_color",
+      "label": "color",
+      "file_type": "code",
+      "source_file": "shared/widgets/product_overviews.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "shared_widgets_product_overviews_ontap",
+      "label": "onTap",
+      "file_type": "code",
+      "source_file": "shared/widgets/product_overviews.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "shared_widgets_product_overviews_activity",
+      "label": "activity",
+      "file_type": "code",
+      "source_file": "shared/widgets/product_overviews.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "shared_widgets_product_overviews_accountid",
+      "label": "accountId",
+      "file_type": "code",
+      "source_file": "shared/widgets/product_overviews.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "shared_widgets_product_overviews_sessionchanges",
+      "label": "sessionChanges",
+      "file_type": "code",
+      "source_file": "shared/widgets/product_overviews.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "shared_widgets_product_overviews_openworkouts",
+      "label": "openWorkouts",
+      "file_type": "code",
+      "source_file": "shared/widgets/product_overviews.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "shared_widgets_product_overviews_build",
+      "label": "build",
+      "file_type": "code",
+      "source_file": "shared/widgets/product_overviews.dart",
       "source_location": null,
       "_origin": "ast"
     },
@@ -44006,6 +44550,14 @@
       "_origin": "ast"
     },
     {
+      "id": "shared_widgets_product_shell_googlephoto",
+      "label": "_googlePhoto",
+      "file_type": "code",
+      "source_file": "shared/widgets/product_shell.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
       "id": "shared_widgets_product_shell_didchangeapplifecyclestate",
       "label": "didChangeAppLifecycleState",
       "file_type": "code",
@@ -44094,210 +44646,106 @@
       "_origin": "ast"
     },
     {
-      "id": "features_legal_legal_documents",
-      "label": "legal_documents.dart",
+      "id": "package_trainforge_features_nutrition_presentation_hydration_card_dart",
+      "label": "package:trainforge/features/nutrition/presentation/hydration_card.dart",
       "file_type": "code",
-      "source_file": "features/legal/legal_documents.dart",
+      "source_file": null,
       "source_location": null,
       "_origin": "ast"
     },
     {
-      "id": "features_legal_legal_documents_legaldocument",
-      "label": "LegalDocument",
+      "id": "shared_widgets_profile_photo_sheet",
+      "label": "profile_photo_sheet.dart",
       "file_type": "code",
-      "source_file": "features/legal/legal_documents.dart",
+      "source_file": "shared/widgets/profile_photo_sheet.dart",
       "source_location": null,
       "_origin": "ast"
     },
     {
-      "id": "features_legal_legal_documents_legaltexts",
-      "label": "LegalTexts",
-      "file_type": "code",
-      "source_file": "features/legal/legal_documents.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "features_legal_legal_documents_legalappversion",
-      "label": "legalAppVersion",
-      "file_type": "code",
-      "source_file": "features/legal/legal_documents.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "features_legal_legal_documents_legalpublicbase",
-      "label": "legalPublicBase",
-      "file_type": "code",
-      "source_file": "features/legal/legal_documents.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "features_legal_legal_documents_id",
+      "id": "shared_widgets_profile_photo_sheet_id",
       "label": "id",
       "file_type": "code",
-      "source_file": "features/legal/legal_documents.dart",
+      "source_file": "shared/widgets/profile_photo_sheet.dart",
       "source_location": null,
       "_origin": "ast"
     },
     {
-      "id": "features_legal_legal_documents_version",
-      "label": "version",
+      "id": "shared_widgets_profile_photo_sheet_photos",
+      "label": "photos",
       "file_type": "code",
-      "source_file": "features/legal/legal_documents.dart",
+      "source_file": "shared/widgets/profile_photo_sheet.dart",
       "source_location": null,
       "_origin": "ast"
     },
     {
-      "id": "features_legal_legal_documents_asset",
-      "label": "asset",
+      "id": "shared_widgets_profile_photo_sheet_repository",
+      "label": "repository",
       "file_type": "code",
-      "source_file": "features/legal/legal_documents.dart",
+      "source_file": "shared/widgets/profile_photo_sheet.dart",
       "source_location": null,
       "_origin": "ast"
     },
     {
-      "id": "features_legal_legal_documents_titlekey",
-      "label": "titleKey",
+      "id": "shared_widgets_profile_photo_sheet_messenger",
+      "label": "messenger",
       "file_type": "code",
-      "source_file": "features/legal/legal_documents.dart",
+      "source_file": "shared/widgets/profile_photo_sheet.dart",
       "source_location": null,
       "_origin": "ast"
     },
     {
-      "id": "features_legal_legal_documents_changeskey",
-      "label": "changesKey",
+      "id": "shared_widgets_profile_photo_sheet_chooseprofilephoto",
+      "label": "chooseProfilePhoto",
       "file_type": "code",
-      "source_file": "features/legal/legal_documents.dart",
+      "source_file": "shared/widgets/profile_photo_sheet.dart",
       "source_location": null,
       "_origin": "ast"
     },
     {
-      "id": "features_legal_legal_documents_publicurl",
-      "label": "publicUrl",
+      "id": "shared_widgets_profile_photo_sheet_l",
+      "label": "l",
       "file_type": "code",
-      "source_file": "features/legal/legal_documents.dart",
+      "source_file": "shared/widgets/profile_photo_sheet.dart",
       "source_location": null,
       "_origin": "ast"
     },
     {
-      "id": "features_legal_legal_documents_termsdocument",
-      "label": "termsDocument",
+      "id": "shared_widgets_profile_photo_sheet_pick",
+      "label": "pick",
       "file_type": "code",
-      "source_file": "features/legal/legal_documents.dart",
+      "source_file": "shared/widgets/profile_photo_sheet.dart",
       "source_location": null,
       "_origin": "ast"
     },
     {
-      "id": "features_legal_legal_documents_privacydocument",
-      "label": "privacyDocument",
+      "id": "shared_widgets_shell_labels",
+      "label": "shell_labels.dart",
       "file_type": "code",
-      "source_file": "features/legal/legal_documents.dart",
+      "source_file": "shared/widgets/shell_labels.dart",
       "source_location": null,
       "_origin": "ast"
     },
     {
-      "id": "features_legal_legal_documents_legaldocuments",
-      "label": "legalDocuments",
+      "id": "shared_widgets_shell_labels_language",
+      "label": "language",
       "file_type": "code",
-      "source_file": "features/legal/legal_documents.dart",
+      "source_file": "shared/widgets/shell_labels.dart",
       "source_location": null,
       "_origin": "ast"
     },
     {
-      "id": "features_legal_legal_documents_healthconsentversion",
-      "label": "healthConsentVersion",
+      "id": "shared_widgets_shell_labels_labels",
+      "label": "_labels",
       "file_type": "code",
-      "source_file": "features/legal/legal_documents.dart",
+      "source_file": "shared/widgets/shell_labels.dart",
       "source_location": null,
       "_origin": "ast"
     },
     {
-      "id": "features_legal_legal_documents_sha",
-      "label": "_sha",
+      "id": "shared_widgets_shell_labels_shelllabel",
+      "label": "shellLabel",
       "file_type": "code",
-      "source_file": "features/legal/legal_documents.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "features_legal_legal_documents_text",
-      "label": "text",
-      "file_type": "code",
-      "source_file": "features/legal/legal_documents.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "shared_widgets_food_catalog_credits_page",
-      "label": "food_catalog_credits_page.dart",
-      "file_type": "code",
-      "source_file": "shared/widgets/food_catalog_credits_page.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "shared_widgets_food_catalog_credits_page_foodcatalogcreditspage",
-      "label": "FoodCatalogCreditsPage",
-      "file_type": "code",
-      "source_file": "shared/widgets/food_catalog_credits_page.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "shared_widgets_food_catalog_credits_page_foodcatalogcreditspagestate",
-      "label": "_FoodCatalogCreditsPageState",
-      "file_type": "code",
-      "source_file": "shared/widgets/food_catalog_credits_page.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "shared_widgets_food_catalog_credits_page_manifest",
-      "label": "manifest",
-      "file_type": "code",
-      "source_file": "shared/widgets/food_catalog_credits_page.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "shared_widgets_food_catalog_credits_page_createstate",
-      "label": "createState",
-      "file_type": "code",
-      "source_file": "shared/widgets/food_catalog_credits_page.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "shared_widgets_food_catalog_credits_page_load",
-      "label": "_load",
-      "file_type": "code",
-      "source_file": "shared/widgets/food_catalog_credits_page.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "shared_widgets_food_catalog_credits_page_label",
-      "label": "label",
-      "file_type": "code",
-      "source_file": "shared/widgets/food_catalog_credits_page.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "shared_widgets_food_catalog_credits_page_download",
-      "label": "download",
-      "file_type": "code",
-      "source_file": "shared/widgets/food_catalog_credits_page.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "shared_widgets_food_catalog_credits_page_build",
-      "label": "build",
-      "file_type": "code",
-      "source_file": "shared/widgets/food_catalog_credits_page.dart",
+      "source_file": "shared/widgets/shell_labels.dart",
       "source_location": null,
       "_origin": "ast"
     }
@@ -45011,6 +45459,17 @@
       "relation": "inherits",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
+      "source_file": "features/nutrition/presentation/hydration_card.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "features_nutrition_presentation_hydration_card_hydrationcardstate",
+      "target": "state"
+    },
+    {
+      "relation": "inherits",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
       "source_file": "features/nutrition/presentation/meal_detail_page.dart",
       "source_location": null,
       "weight": 1.0,
@@ -45451,6 +45910,17 @@
       "relation": "inherits",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
+      "source_file": "features/nutrition/presentation/hydration_card.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "features_nutrition_presentation_hydration_card_hydrationcard",
+      "target": "statefulwidget"
+    },
+    {
+      "relation": "inherits",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
       "source_file": "features/nutrition/presentation/meal_detail_page.dart",
       "source_location": null,
       "weight": 1.0,
@@ -45736,6 +46206,18 @@
       "context": "variable_type",
       "_origin": "ast",
       "source": "shared_widgets_glass_surface",
+      "target": "widget"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "shared/widgets/product_overviews.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "context": "variable_type",
+      "_origin": "ast",
+      "source": "shared_widgets_product_overviews",
       "target": "widget"
     },
     {
@@ -46185,6 +46667,17 @@
       "relation": "imports",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
+      "source_file": "features/auth/data/profile_photos.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "features_auth_data_profile_photos",
+      "target": "package_flutter_secure_storage_flutter_secure_storage_dart"
+    },
+    {
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
       "source_file": "features/legal/legal_consent_store.dart",
       "source_location": null,
       "weight": 1.0,
@@ -46296,6 +46789,18 @@
       "context": "variable_type",
       "_origin": "ast",
       "source": "features_auth_data_auth_storage",
+      "target": "static_const"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/auth/data/profile_photos.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "context": "variable_type",
+      "_origin": "ast",
+      "source": "features_auth_data_profile_photos",
       "target": "static_const"
     },
     {
@@ -46834,6 +47339,17 @@
       "relation": "imports",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
+      "source_file": "features/nutrition/presentation/hydration_card.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "features_nutrition_presentation_hydration_card",
+      "target": "package_flutter_material_dart"
+    },
+    {
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
       "source_file": "features/nutrition/presentation/meal_detail_page.dart",
       "source_location": null,
       "weight": 1.0,
@@ -47197,6 +47713,17 @@
       "relation": "imports",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
+      "source_file": "shared/widgets/profile_photo_sheet.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "shared_widgets_profile_photo_sheet",
+      "target": "package_flutter_material_dart"
+    },
+    {
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
       "source_file": "shared/widgets/startup_page.dart",
       "source_location": null,
       "weight": 1.0,
@@ -47214,6 +47741,28 @@
       "_origin": "ast",
       "source": "shared_widgets_workouts_overview",
       "target": "package_flutter_material_dart"
+    },
+    {
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "shared/widgets/product_shell.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "shared_widgets_product_shell",
+      "target": "package_trainforge_features_auth_data_auth_repository_dart"
+    },
+    {
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "shared/widgets/profile_photo_sheet.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "shared_widgets_profile_photo_sheet",
+      "target": "package_trainforge_features_auth_data_auth_repository_dart"
     },
     {
       "relation": "imports",
@@ -47620,6 +48169,17 @@
       "weight": 1.0,
       "_origin": "ast",
       "source": "shared_widgets_figma_bottom_nav_glassnotchbar",
+      "target": "statelesswidget"
+    },
+    {
+      "relation": "inherits",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "shared/widgets/figma_bottom_nav.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "shared_widgets_figma_bottom_nav_lens",
       "target": "statelesswidget"
     },
     {
@@ -48380,6 +48940,17 @@
       "weight": 1.0,
       "_origin": "ast",
       "source": "features_auth_data_auth_repository",
+      "target": "package_flutter_foundation_dart"
+    },
+    {
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/auth/data/profile_photos.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "features_auth_data_profile_photos",
       "target": "package_flutter_foundation_dart"
     },
     {
@@ -49441,6 +50012,18 @@
       "target": "authapi"
     },
     {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/auth/data/auth_repository.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "context": "variable_type",
+      "_origin": "ast",
+      "source": "features_auth_data_auth_repository",
+      "target": "authstorage"
+    },
+    {
       "relation": "imports",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
@@ -49691,6 +50274,17 @@
       "weight": 1.0,
       "_origin": "ast",
       "source": "features_activity_presentation_activity_controller_activitycontroller",
+      "target": "changenotifier"
+    },
+    {
+      "relation": "inherits",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/auth/data/profile_photos.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "features_auth_data_profile_photos_profilephotos",
       "target": "changenotifier"
     },
     {
@@ -50658,6 +51252,17 @@
       "target": "package_trainforge_features_auth_presentation_auth_controller_dart"
     },
     {
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "shared/widgets/profile_photo_sheet.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "shared_widgets_profile_photo_sheet",
+      "target": "package_trainforge_features_auth_presentation_auth_controller_dart"
+    },
+    {
       "relation": "references",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
@@ -50667,18 +51272,6 @@
       "context": "variable_type",
       "_origin": "ast",
       "source": "features_auth_presentation_pages_auth_page",
-      "target": "authcontroller"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "shared/widgets/account_page.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "context": "variable_type",
-      "_origin": "ast",
-      "source": "shared_widgets_account_page",
       "target": "authcontroller"
     },
     {
@@ -50703,18 +51296,6 @@
       "context": "variable_type",
       "_origin": "ast",
       "source": "shared_widgets_content_sources_page",
-      "target": "authcontroller"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "shared/widgets/product_shell.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "context": "variable_type",
-      "_origin": "ast",
-      "source": "shared_widgets_product_shell",
       "target": "authcontroller"
     },
     {
@@ -53425,6 +54006,17 @@
       "relation": "imports",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
+      "source_file": "features/nutrition/presentation/hydration_card.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "features_nutrition_presentation_hydration_card",
+      "target": "package_trainforge_core_theme_trainforge_theme_dart"
+    },
+    {
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
       "source_file": "features/nutrition/presentation/nutrition_forms.dart",
       "source_location": null,
       "weight": 1.0,
@@ -53540,6 +54132,17 @@
       "weight": 1.0,
       "_origin": "ast",
       "source": "shared_widgets_product_shell",
+      "target": "package_trainforge_core_theme_trainforge_theme_dart"
+    },
+    {
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "shared/widgets/profile_photo_sheet.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "shared_widgets_profile_photo_sheet",
       "target": "package_trainforge_core_theme_trainforge_theme_dart"
     },
     {
@@ -54050,6 +54653,18 @@
       "relation": "references",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
+      "source_file": "features/nutrition/presentation/hydration_card.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "context": "variable_type",
+      "_origin": "ast",
+      "source": "features_nutrition_presentation_hydration_card",
+      "target": "nutritionrepository"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
       "source_file": "features/nutrition/presentation/meal_draft_page.dart",
       "source_location": null,
       "weight": 1.0,
@@ -54408,6 +55023,17 @@
       "relation": "imports",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
+      "source_file": "features/nutrition/presentation/hydration_card.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "features_nutrition_presentation_hydration_card",
+      "target": "package_trainforge_features_nutrition_domain_nutrition_dart"
+    },
+    {
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
       "source_file": "features/training_configuration/presentation/training_configuration_controller.dart",
       "source_location": null,
       "weight": 1.0,
@@ -54697,6 +55323,18 @@
       "context": "variable_type",
       "_origin": "ast",
       "source": "features_legal_presentation_staggered_entrance",
+      "target": "voidcallback"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/nutrition/presentation/hydration_card.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "context": "variable_type",
+      "_origin": "ast",
+      "source": "features_nutrition_presentation_hydration_card",
       "target": "voidcallback"
     },
     {
@@ -57989,6 +58627,17 @@
       "relation": "imports",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
+      "source_file": "features/nutrition/presentation/hydration_card.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "features_nutrition_presentation_hydration_card",
+      "target": "package_trainforge_core_l10n_localized_context_dart"
+    },
+    {
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
       "source_file": "features/nutrition/presentation/meal_detail_page.dart",
       "source_location": null,
       "weight": 1.0,
@@ -60007,6 +60656,18 @@
       "context": "variable_type",
       "_origin": "ast",
       "source": "features_activity_presentation_activity_controller",
+      "target": "int"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/nutrition/presentation/hydration_card.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "context": "variable_type",
+      "_origin": "ast",
+      "source": "features_nutrition_presentation_hydration_card",
       "target": "int"
     },
     {
@@ -67525,161 +68186,6 @@
       "target": "features_nutrition_data_nutrition_local_store_dart"
     },
     {
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/auth/data/auth_repository.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "features_auth_data_auth_repository",
-      "target": "features_auth_data_auth_repository_api"
-    },
-    {
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/auth/data/auth_repository.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "features_auth_data_auth_repository",
-      "target": "features_auth_data_auth_repository_authrepository"
-    },
-    {
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/auth/data/auth_repository.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "features_auth_data_auth_repository",
-      "target": "features_auth_data_auth_repository_ensureinitialized"
-    },
-    {
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/auth/data/auth_repository.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "features_auth_data_auth_repository",
-      "target": "features_auth_data_auth_repository_getme"
-    },
-    {
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/auth/data/auth_repository.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "features_auth_data_auth_repository",
-      "target": "features_auth_data_auth_repository_getsavedtoken"
-    },
-    {
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/auth/data/auth_repository.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "features_auth_data_auth_repository",
-      "target": "features_auth_data_auth_repository_googlesignin"
-    },
-    {
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/auth/data/auth_repository.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "features_auth_data_auth_repository",
-      "target": "features_auth_data_auth_repository_initialization"
-    },
-    {
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/auth/data/auth_repository.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "features_auth_data_auth_repository",
-      "target": "features_auth_data_auth_repository_isauthenticated"
-    },
-    {
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/auth/data/auth_repository.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "features_auth_data_auth_repository",
-      "target": "features_auth_data_auth_repository_logout"
-    },
-    {
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/auth/data/auth_repository.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "features_auth_data_auth_repository",
-      "target": "features_auth_data_auth_repository_restoresession"
-    },
-    {
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/auth/data/auth_repository.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "features_auth_data_auth_repository",
-      "target": "features_auth_data_auth_repository_signin"
-    },
-    {
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/auth/data/auth_repository.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "features_auth_data_auth_repository",
-      "target": "features_auth_data_auth_repository_signinwithgoogle"
-    },
-    {
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/auth/data/auth_repository.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "features_auth_data_auth_repository",
-      "target": "features_auth_data_auth_repository_storage"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/auth/data/auth_repository.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "context": "variable_type",
-      "_origin": "ast",
-      "source": "features_auth_data_auth_repository",
-      "target": "features_auth_data_auth_storage_authstorage"
-    },
-    {
       "relation": "imports",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
@@ -67883,6 +68389,17 @@
       "relation": "imports",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
+      "source_file": "features/auth/data/profile_photos.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "features_auth_data_profile_photos",
+      "target": "dart_io"
+    },
+    {
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
       "source_file": "features/food_reference/data/catalog_installer.dart",
       "source_location": null,
       "weight": 1.0,
@@ -67954,6 +68471,17 @@
       "weight": 1.0,
       "_origin": "ast",
       "source": "features_nutrition_presentation_nutrition_page",
+      "target": "dart_io"
+    },
+    {
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "shared/widgets/figma_components.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "shared_widgets_figma_components",
       "target": "dart_io"
     },
     {
@@ -68043,6 +68571,17 @@
       "_origin": "ast",
       "source": "features_nutrition_data_nutrition_local_store",
       "target": "package_path_path_dart"
+    },
+    {
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/auth/data/profile_photos.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "features_auth_data_profile_photos",
+      "target": "package_path_provider_path_provider_dart"
     },
     {
       "relation": "imports",
@@ -69670,6 +70209,18 @@
       "relation": "references",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
+      "source_file": "features/auth/data/profile_photos.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "context": "variable_type",
+      "_origin": "ast",
+      "source": "features_auth_data_profile_photos",
+      "target": "static_final"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
       "source_file": "features/food_reference/data/food_voice_matcher.dart",
       "source_location": null,
       "weight": 1.0,
@@ -70527,6 +71078,17 @@
       "weight": 1.0,
       "_origin": "ast",
       "source": "features_nutrition_presentation_nutrition_page",
+      "target": "package_image_picker_image_picker_dart"
+    },
+    {
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "shared/widgets/profile_photo_sheet.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "shared_widgets_profile_photo_sheet",
       "target": "package_image_picker_image_picker_dart"
     },
     {
@@ -76115,248 +76677,6 @@
       "relation": "defines",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
-      "source_file": "features/auth/presentation/auth_controller.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "features_auth_presentation_auth_controller",
-      "target": "features_auth_presentation_auth_controller_accounterased"
-    },
-    {
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/auth/presentation/auth_controller.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "features_auth_presentation_auth_controller",
-      "target": "features_auth_presentation_auth_controller_authaction"
-    },
-    {
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/auth/presentation/auth_controller.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "features_auth_presentation_auth_controller",
-      "target": "features_auth_presentation_auth_controller_authcontroller"
-    },
-    {
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/auth/presentation/auth_controller.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "features_auth_presentation_auth_controller",
-      "target": "features_auth_presentation_auth_controller_authfeedback"
-    },
-    {
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/auth/presentation/auth_controller.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "features_auth_presentation_auth_controller",
-      "target": "features_auth_presentation_auth_controller_busy"
-    },
-    {
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/auth/presentation/auth_controller.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "features_auth_presentation_auth_controller",
-      "target": "features_auth_presentation_auth_controller_dispose"
-    },
-    {
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/auth/presentation/auth_controller.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "features_auth_presentation_auth_controller",
-      "target": "features_auth_presentation_auth_controller_disposed"
-    },
-    {
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/auth/presentation/auth_controller.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "features_auth_presentation_auth_controller",
-      "target": "features_auth_presentation_auth_controller_erasedaccountid"
-    },
-    {
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/auth/presentation/auth_controller.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "features_auth_presentation_auth_controller",
-      "target": "features_auth_presentation_auth_controller_failedaction"
-    },
-    {
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/auth/presentation/auth_controller.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "features_auth_presentation_auth_controller",
-      "target": "features_auth_presentation_auth_controller_fallback"
-    },
-    {
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/auth/presentation/auth_controller.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "features_auth_presentation_auth_controller",
-      "target": "features_auth_presentation_auth_controller_feedback"
-    },
-    {
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/auth/presentation/auth_controller.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "features_auth_presentation_auth_controller",
-      "target": "features_auth_presentation_auth_controller_login"
-    },
-    {
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/auth/presentation/auth_controller.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "features_auth_presentation_auth_controller",
-      "target": "features_auth_presentation_auth_controller_logout"
-    },
-    {
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/auth/presentation/auth_controller.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "features_auth_presentation_auth_controller",
-      "target": "features_auth_presentation_auth_controller_message"
-    },
-    {
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/auth/presentation/auth_controller.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "features_auth_presentation_auth_controller",
-      "target": "features_auth_presentation_auth_controller_profile"
-    },
-    {
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/auth/presentation/auth_controller.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "features_auth_presentation_auth_controller",
-      "target": "features_auth_presentation_auth_controller_repository"
-    },
-    {
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/auth/presentation/auth_controller.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "features_auth_presentation_auth_controller",
-      "target": "features_auth_presentation_auth_controller_restore"
-    },
-    {
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/auth/presentation/auth_controller.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "features_auth_presentation_auth_controller",
-      "target": "features_auth_presentation_auth_controller_restoretimeout"
-    },
-    {
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/auth/presentation/auth_controller.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "features_auth_presentation_auth_controller",
-      "target": "features_auth_presentation_auth_controller_restoring"
-    },
-    {
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/auth/presentation/auth_controller.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "features_auth_presentation_auth_controller",
-      "target": "features_auth_presentation_auth_controller_retry"
-    },
-    {
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/auth/presentation/auth_controller.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "features_auth_presentation_auth_controller",
-      "target": "features_auth_presentation_auth_controller_run"
-    },
-    {
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/auth/presentation/auth_controller.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "features_auth_presentation_auth_controller",
-      "target": "features_auth_presentation_auth_controller_running"
-    },
-    {
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
       "source_file": "features/food_reference/data/catalog_installer.dart",
       "source_location": null,
       "weight": 1.0,
@@ -81299,72 +81619,6 @@
       "_origin": "ast",
       "source": "features_training_library_presentation_training_library_page",
       "target": "trainingsession"
-    },
-    {
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "shared/widgets/account_page.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "shared_widgets_account_page",
-      "target": "shared_widgets_account_page_accountpage"
-    },
-    {
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "shared/widgets/account_page.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "shared_widgets_account_page",
-      "target": "shared_widgets_account_page_build"
-    },
-    {
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "shared/widgets/account_page.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "shared_widgets_account_page",
-      "target": "shared_widgets_account_page_configure"
-    },
-    {
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "shared/widgets/account_page.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "shared_widgets_account_page",
-      "target": "shared_widgets_account_page_controller"
-    },
-    {
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "shared/widgets/account_page.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "shared_widgets_account_page",
-      "target": "shared_widgets_account_page_privacy"
-    },
-    {
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "shared/widgets/account_page.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "shared_widgets_account_page",
-      "target": "shared_widgets_account_page_redofirstquestions"
     },
     {
       "relation": "references",
@@ -114100,6 +114354,17 @@
       "relation": "imports",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
+      "source_file": "shared/widgets/account_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "shared_widgets_account_page",
+      "target": "shell_labels_dart"
+    },
+    {
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
       "source_file": "shared/widgets/figma_bottom_nav.dart",
       "source_location": null,
       "weight": 1.0,
@@ -114144,233 +114409,23 @@
       "relation": "imports",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
+      "source_file": "shared/widgets/profile_photo_sheet.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "shared_widgets_profile_photo_sheet",
+      "target": "shell_labels_dart"
+    },
+    {
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
       "source_file": "shared/widgets/workouts_overview.dart",
       "source_location": null,
       "weight": 1.0,
       "_origin": "ast",
       "source": "shared_widgets_workouts_overview",
       "target": "shell_labels_dart"
-    },
-    {
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "shared/widgets/product_overviews.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "shared_widgets_product_overviews",
-      "target": "shared_widgets_product_overviews_accountid"
-    },
-    {
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "shared/widgets/product_overviews.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "shared_widgets_product_overviews",
-      "target": "shared_widgets_product_overviews_activity"
-    },
-    {
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "shared/widgets/product_overviews.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "shared_widgets_product_overviews",
-      "target": "shared_widgets_product_overviews_build"
-    },
-    {
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "shared/widgets/product_overviews.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "shared_widgets_product_overviews",
-      "target": "shared_widgets_product_overviews_color"
-    },
-    {
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "shared/widgets/product_overviews.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "shared_widgets_product_overviews",
-      "target": "shared_widgets_product_overviews_controller"
-    },
-    {
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "shared/widgets/product_overviews.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "shared_widgets_product_overviews",
-      "target": "shared_widgets_product_overviews_dailyoverview"
-    },
-    {
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "shared/widgets/product_overviews.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "shared_widgets_product_overviews",
-      "target": "shared_widgets_product_overviews_evolutionpage"
-    },
-    {
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "shared/widgets/product_overviews.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "shared_widgets_product_overviews",
-      "target": "shared_widgets_product_overviews_food"
-    },
-    {
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "shared/widgets/product_overviews.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "shared_widgets_product_overviews",
-      "target": "shared_widgets_product_overviews_icon"
-    },
-    {
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "shared/widgets/product_overviews.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "shared_widgets_product_overviews",
-      "target": "shared_widgets_product_overviews_label"
-    },
-    {
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "shared/widgets/product_overviews.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "shared_widgets_product_overviews",
-      "target": "shared_widgets_product_overviews_name"
-    },
-    {
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "shared/widgets/product_overviews.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "shared_widgets_product_overviews",
-      "target": "shared_widgets_product_overviews_ontap"
-    },
-    {
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "shared/widgets/product_overviews.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "shared_widgets_product_overviews",
-      "target": "shared_widgets_product_overviews_openactivity"
-    },
-    {
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "shared/widgets/product_overviews.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "shared_widgets_product_overviews",
-      "target": "shared_widgets_product_overviews_openday"
-    },
-    {
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "shared/widgets/product_overviews.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "shared_widgets_product_overviews",
-      "target": "shared_widgets_product_overviews_openphoto"
-    },
-    {
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "shared/widgets/product_overviews.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "shared_widgets_product_overviews",
-      "target": "shared_widgets_product_overviews_openworkouts"
-    },
-    {
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "shared/widgets/product_overviews.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "shared_widgets_product_overviews",
-      "target": "shared_widgets_product_overviews_quickbutton"
-    },
-    {
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "shared/widgets/product_overviews.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "shared_widgets_product_overviews",
-      "target": "shared_widgets_product_overviews_sessionchanges"
-    },
-    {
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "shared/widgets/product_overviews.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "shared_widgets_product_overviews",
-      "target": "shared_widgets_product_overviews_tfblue"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "shared/widgets/product_overviews.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "context": "variable_type",
-      "_origin": "ast",
-      "source": "shared_widgets_product_overviews",
-      "target": "voidcallback_opennutrition"
     },
     {
       "relation": "references",
@@ -114383,6 +114438,18 @@
       "_origin": "ast",
       "source": "shared_widgets_product_overviews",
       "target": "voidcallback_openvoice"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "shared/widgets/product_overviews.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "context": "variable_type",
+      "_origin": "ast",
+      "source": "shared_widgets_product_overviews",
+      "target": "voidcallback_opennutrition"
     },
     {
       "relation": "references",
@@ -114411,6 +114478,17 @@
       "relation": "imports",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
+      "source_file": "shared/widgets/profile_photo_sheet.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "shared_widgets_profile_photo_sheet",
+      "target": "glass_sheet_dart"
+    },
+    {
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
       "source_file": "shared/widgets/product_shell.dart",
       "source_location": null,
       "weight": 1.0,
@@ -114428,39 +114506,6 @@
       "_origin": "ast",
       "source": "shared_widgets_product_shell",
       "target": "package_trainforge_features_nutrition_data_offline_nutrition_repository_dart"
-    },
-    {
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "shared/widgets/shell_labels.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "shared_widgets_shell_labels",
-      "target": "shared_widgets_shell_labels_labels"
-    },
-    {
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "shared/widgets/shell_labels.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "shared_widgets_shell_labels",
-      "target": "shared_widgets_shell_labels_language"
-    },
-    {
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "shared/widgets/shell_labels.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "shared_widgets_shell_labels",
-      "target": "shared_widgets_shell_labels_shelllabel"
     },
     {
       "relation": "defines",
@@ -114505,6 +114550,1263 @@
       "_origin": "ast",
       "source": "shared_widgets_workouts_overview",
       "target": "shared_widgets_workouts_overview_workoutsoverview"
+    },
+    {
+      "relation": "inherits",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "shared/widgets/figma_bottom_nav.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "shared_widgets_figma_bottom_nav_notchclipper",
+      "target": "customclipper"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "shared/widgets/figma_bottom_nav.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "shared_widgets_figma_bottom_nav_notchclipper",
+      "target": "path"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "shared/widgets/glass_sheet.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "shared_widgets_glass_sheet",
+      "target": "shared_widgets_glass_sheet_build"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "shared/widgets/glass_sheet.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "shared_widgets_glass_sheet",
+      "target": "shared_widgets_glass_sheet_color"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "shared/widgets/glass_sheet.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "shared_widgets_glass_sheet",
+      "target": "shared_widgets_glass_sheet_glasssheetoption"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "shared/widgets/glass_sheet.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "shared_widgets_glass_sheet",
+      "target": "shared_widgets_glass_sheet_hint"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "shared/widgets/glass_sheet.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "shared_widgets_glass_sheet",
+      "target": "shared_widgets_glass_sheet_icon"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "shared/widgets/glass_sheet.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "shared_widgets_glass_sheet",
+      "target": "shared_widgets_glass_sheet_ontap"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "shared/widgets/glass_sheet.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "shared_widgets_glass_sheet",
+      "target": "shared_widgets_glass_sheet_reduced"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "shared/widgets/glass_sheet.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "shared_widgets_glass_sheet",
+      "target": "shared_widgets_glass_sheet_showtopmenu"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "shared/widgets/glass_sheet.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "shared_widgets_glass_sheet",
+      "target": "shared_widgets_glass_sheet_title"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "shared/widgets/glass_sheet.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "shared_widgets_glass_sheet",
+      "target": "shared_widgets_glass_sheet_topmenuitem"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/legal/legal_documents.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "features_legal_legal_documents",
+      "target": "features_legal_legal_documents_asset"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/legal/legal_documents.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "features_legal_legal_documents",
+      "target": "features_legal_legal_documents_changeskey"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/legal/legal_documents.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "features_legal_legal_documents",
+      "target": "features_legal_legal_documents_healthconsentversion"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/legal/legal_documents.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "features_legal_legal_documents",
+      "target": "features_legal_legal_documents_id"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/legal/legal_documents.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "features_legal_legal_documents",
+      "target": "features_legal_legal_documents_legalappversion"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/legal/legal_documents.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "features_legal_legal_documents",
+      "target": "features_legal_legal_documents_legaldocument"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/legal/legal_documents.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "features_legal_legal_documents",
+      "target": "features_legal_legal_documents_legaldocuments"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/legal/legal_documents.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "features_legal_legal_documents",
+      "target": "features_legal_legal_documents_legalpublicbase"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/legal/legal_documents.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "features_legal_legal_documents",
+      "target": "features_legal_legal_documents_legaltexts"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/legal/legal_documents.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "features_legal_legal_documents",
+      "target": "features_legal_legal_documents_privacydocument"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/legal/legal_documents.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "features_legal_legal_documents",
+      "target": "features_legal_legal_documents_publicurl"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/legal/legal_documents.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "features_legal_legal_documents",
+      "target": "features_legal_legal_documents_sha"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/legal/legal_documents.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "features_legal_legal_documents",
+      "target": "features_legal_legal_documents_termsdocument"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/legal/legal_documents.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "features_legal_legal_documents",
+      "target": "features_legal_legal_documents_text"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/legal/legal_documents.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "features_legal_legal_documents",
+      "target": "features_legal_legal_documents_titlekey"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/legal/legal_documents.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "features_legal_legal_documents",
+      "target": "features_legal_legal_documents_version"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/auth/data/auth_repository.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "features_auth_data_auth_repository",
+      "target": "features_auth_data_auth_repository_api"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/auth/data/auth_repository.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "features_auth_data_auth_repository",
+      "target": "features_auth_data_auth_repository_authrepository"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/auth/data/auth_repository.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "features_auth_data_auth_repository",
+      "target": "features_auth_data_auth_repository_ensureinitialized"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/auth/data/auth_repository.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "features_auth_data_auth_repository",
+      "target": "features_auth_data_auth_repository_getme"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/auth/data/auth_repository.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "features_auth_data_auth_repository",
+      "target": "features_auth_data_auth_repository_getsavedtoken"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/auth/data/auth_repository.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "features_auth_data_auth_repository",
+      "target": "features_auth_data_auth_repository_googlephotourl"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/auth/data/auth_repository.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "features_auth_data_auth_repository",
+      "target": "features_auth_data_auth_repository_googlesignin"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/auth/data/auth_repository.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "features_auth_data_auth_repository",
+      "target": "features_auth_data_auth_repository_initialization"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/auth/data/auth_repository.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "features_auth_data_auth_repository",
+      "target": "features_auth_data_auth_repository_isauthenticated"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/auth/data/auth_repository.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "features_auth_data_auth_repository",
+      "target": "features_auth_data_auth_repository_logout"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/auth/data/auth_repository.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "features_auth_data_auth_repository",
+      "target": "features_auth_data_auth_repository_restoresession"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/auth/data/auth_repository.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "features_auth_data_auth_repository",
+      "target": "features_auth_data_auth_repository_signin"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/auth/data/auth_repository.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "features_auth_data_auth_repository",
+      "target": "features_auth_data_auth_repository_signinwithgoogle"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/auth/data/auth_repository.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "features_auth_data_auth_repository",
+      "target": "features_auth_data_auth_repository_storage"
+    },
+    {
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/auth/data/auth_repository.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "features_auth_data_auth_repository",
+      "target": "profile_photos_dart"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/auth/data/profile_photos.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "features_auth_data_profile_photos",
+      "target": "features_auth_data_profile_photos_custom"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/auth/data/profile_photos.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "features_auth_data_profile_photos",
+      "target": "features_auth_data_profile_photos_custompath"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/auth/data/profile_photos.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "features_auth_data_profile_photos",
+      "target": "features_auth_data_profile_photos_custompaths"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/auth/data/profile_photos.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "features_auth_data_profile_photos",
+      "target": "features_auth_data_profile_photos_forget"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/auth/data/profile_photos.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "features_auth_data_profile_photos",
+      "target": "features_auth_data_profile_photos_google"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/auth/data/profile_photos.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "features_auth_data_profile_photos",
+      "target": "features_auth_data_profile_photos_googleurl"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/auth/data/profile_photos.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "features_auth_data_profile_photos",
+      "target": "features_auth_data_profile_photos_googleurls"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/auth/data/profile_photos.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "features_auth_data_profile_photos",
+      "target": "features_auth_data_profile_photos_instance"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/auth/data/profile_photos.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "features_auth_data_profile_photos",
+      "target": "features_auth_data_profile_photos_load"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/auth/data/profile_photos.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "features_auth_data_profile_photos",
+      "target": "features_auth_data_profile_photos_loaded"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/auth/data/profile_photos.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "features_auth_data_profile_photos",
+      "target": "features_auth_data_profile_photos_profilephotos"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/auth/data/profile_photos.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "features_auth_data_profile_photos",
+      "target": "features_auth_data_profile_photos_removecustom"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/auth/data/profile_photos.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "features_auth_data_profile_photos",
+      "target": "features_auth_data_profile_photos_setcustom"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/auth/data/profile_photos.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "features_auth_data_profile_photos",
+      "target": "features_auth_data_profile_photos_setgoogle"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/auth/data/profile_photos.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "features_auth_data_profile_photos",
+      "target": "features_auth_data_profile_photos_storage"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/auth/presentation/auth_controller.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "features_auth_presentation_auth_controller",
+      "target": "features_auth_presentation_auth_controller_accounterased"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/auth/presentation/auth_controller.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "features_auth_presentation_auth_controller",
+      "target": "features_auth_presentation_auth_controller_authaction"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/auth/presentation/auth_controller.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "features_auth_presentation_auth_controller",
+      "target": "features_auth_presentation_auth_controller_authcontroller"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/auth/presentation/auth_controller.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "features_auth_presentation_auth_controller",
+      "target": "features_auth_presentation_auth_controller_authfeedback"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/auth/presentation/auth_controller.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "features_auth_presentation_auth_controller",
+      "target": "features_auth_presentation_auth_controller_busy"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/auth/presentation/auth_controller.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "features_auth_presentation_auth_controller",
+      "target": "features_auth_presentation_auth_controller_dispose"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/auth/presentation/auth_controller.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "features_auth_presentation_auth_controller",
+      "target": "features_auth_presentation_auth_controller_disposed"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/auth/presentation/auth_controller.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "features_auth_presentation_auth_controller",
+      "target": "features_auth_presentation_auth_controller_erasedaccountid"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/auth/presentation/auth_controller.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "features_auth_presentation_auth_controller",
+      "target": "features_auth_presentation_auth_controller_failedaction"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/auth/presentation/auth_controller.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "features_auth_presentation_auth_controller",
+      "target": "features_auth_presentation_auth_controller_fallback"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/auth/presentation/auth_controller.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "features_auth_presentation_auth_controller",
+      "target": "features_auth_presentation_auth_controller_feedback"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/auth/presentation/auth_controller.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "features_auth_presentation_auth_controller",
+      "target": "features_auth_presentation_auth_controller_login"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/auth/presentation/auth_controller.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "features_auth_presentation_auth_controller",
+      "target": "features_auth_presentation_auth_controller_logout"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/auth/presentation/auth_controller.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "features_auth_presentation_auth_controller",
+      "target": "features_auth_presentation_auth_controller_message"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/auth/presentation/auth_controller.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "features_auth_presentation_auth_controller",
+      "target": "features_auth_presentation_auth_controller_profile"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/auth/presentation/auth_controller.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "features_auth_presentation_auth_controller",
+      "target": "features_auth_presentation_auth_controller_repository"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/auth/presentation/auth_controller.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "features_auth_presentation_auth_controller",
+      "target": "features_auth_presentation_auth_controller_restore"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/auth/presentation/auth_controller.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "features_auth_presentation_auth_controller",
+      "target": "features_auth_presentation_auth_controller_restoretimeout"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/auth/presentation/auth_controller.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "features_auth_presentation_auth_controller",
+      "target": "features_auth_presentation_auth_controller_restoring"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/auth/presentation/auth_controller.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "features_auth_presentation_auth_controller",
+      "target": "features_auth_presentation_auth_controller_retry"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/auth/presentation/auth_controller.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "features_auth_presentation_auth_controller",
+      "target": "features_auth_presentation_auth_controller_run"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/auth/presentation/auth_controller.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "features_auth_presentation_auth_controller",
+      "target": "features_auth_presentation_auth_controller_running"
+    },
+    {
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/auth/presentation/auth_controller.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "features_auth_presentation_auth_controller",
+      "target": "package_trainforge_features_auth_data_profile_photos_dart"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "shared/widgets/account_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "context": "variable_type",
+      "_origin": "ast",
+      "source": "shared_widgets_account_page",
+      "target": "features_auth_presentation_auth_controller_authcontroller"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "shared/widgets/product_shell.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "context": "variable_type",
+      "_origin": "ast",
+      "source": "shared_widgets_product_shell",
+      "target": "features_auth_presentation_auth_controller_authcontroller"
+    },
+    {
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "shared/widgets/figma_components.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "shared_widgets_figma_components",
+      "target": "package_trainforge_features_auth_data_profile_photos_dart"
+    },
+    {
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "shared/widgets/product_shell.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "shared_widgets_product_shell",
+      "target": "package_trainforge_features_auth_data_profile_photos_dart"
+    },
+    {
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "shared/widgets/profile_photo_sheet.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "shared_widgets_profile_photo_sheet",
+      "target": "package_trainforge_features_auth_data_profile_photos_dart"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/nutrition/presentation/hydration_card.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "features_nutrition_presentation_hydration_card",
+      "target": "features_nutrition_presentation_hydration_card_add"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/nutrition/presentation/hydration_card.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "features_nutrition_presentation_hydration_card",
+      "target": "features_nutrition_presentation_hydration_card_build"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/nutrition/presentation/hydration_card.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "features_nutrition_presentation_hydration_card",
+      "target": "features_nutrition_presentation_hydration_card_busy"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/nutrition/presentation/hydration_card.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "features_nutrition_presentation_hydration_card",
+      "target": "features_nutrition_presentation_hydration_card_button"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/nutrition/presentation/hydration_card.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "features_nutrition_presentation_hydration_card",
+      "target": "features_nutrition_presentation_hydration_card_changed"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/nutrition/presentation/hydration_card.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "features_nutrition_presentation_hydration_card",
+      "target": "features_nutrition_presentation_hydration_card_createstate"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/nutrition/presentation/hydration_card.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "features_nutrition_presentation_hydration_card",
+      "target": "features_nutrition_presentation_hydration_card_hydrationcard"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/nutrition/presentation/hydration_card.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "features_nutrition_presentation_hydration_card",
+      "target": "features_nutrition_presentation_hydration_card_hydrationcardstate"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/nutrition/presentation/hydration_card.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "features_nutrition_presentation_hydration_card",
+      "target": "features_nutrition_presentation_hydration_card_initstate"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/nutrition/presentation/hydration_card.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "features_nutrition_presentation_hydration_card",
+      "target": "features_nutrition_presentation_hydration_card_label"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/nutrition/presentation/hydration_card.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "features_nutrition_presentation_hydration_card",
+      "target": "features_nutrition_presentation_hydration_card_labels"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/nutrition/presentation/hydration_card.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "features_nutrition_presentation_hydration_card",
+      "target": "features_nutrition_presentation_hydration_card_language"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/nutrition/presentation/hydration_card.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "features_nutrition_presentation_hydration_card",
+      "target": "features_nutrition_presentation_hydration_card_load"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/nutrition/presentation/hydration_card.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "features_nutrition_presentation_hydration_card",
+      "target": "features_nutrition_presentation_hydration_card_repository"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/nutrition/presentation/hydration_card.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "features_nutrition_presentation_hydration_card",
+      "target": "features_nutrition_presentation_hydration_card_total"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/nutrition/presentation/hydration_card.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "features_nutrition_presentation_hydration_card",
+      "target": "features_nutrition_presentation_hydration_card_waterfoodid"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/nutrition/presentation/hydration_card.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "features_nutrition_presentation_hydration_card",
+      "target": "features_nutrition_presentation_hydration_card_waterfoodversion"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/nutrition/presentation/hydration_card.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "features_nutrition_presentation_hydration_card_hydrationcardstate",
+      "target": "features_nutrition_presentation_hydration_card_hydrationcard"
+    },
+    {
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "shared/widgets/account_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "shared_widgets_account_page",
+      "target": "profile_photo_sheet_dart"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "shared/widgets/account_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "shared_widgets_account_page",
+      "target": "shared_widgets_account_page_accountpage"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "shared/widgets/account_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "shared_widgets_account_page",
+      "target": "shared_widgets_account_page_build"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "shared/widgets/account_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "shared_widgets_account_page",
+      "target": "shared_widgets_account_page_configure"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "shared/widgets/account_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "shared_widgets_account_page",
+      "target": "shared_widgets_account_page_controller"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "shared/widgets/account_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "shared_widgets_account_page",
+      "target": "shared_widgets_account_page_privacy"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "shared/widgets/account_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "shared_widgets_account_page",
+      "target": "shared_widgets_account_page_redofirstquestions"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "shared/widgets/figma_bottom_nav.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "context": "variable_type",
+      "_origin": "ast",
+      "source": "shared_widgets_figma_bottom_nav",
+      "target": "double_cx"
+    },
+    {
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "shared/widgets/figma_bottom_nav.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "shared_widgets_figma_bottom_nav",
+      "target": "package_liquid_glass_widgets_liquid_glass_widgets_dart"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "shared/widgets/figma_bottom_nav.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "shared_widgets_figma_bottom_nav",
+      "target": "shared_widgets_figma_bottom_nav_add"
     },
     {
       "relation": "defines",
@@ -114559,28 +115861,6 @@
       "weight": 1.0,
       "_origin": "ast",
       "source": "shared_widgets_figma_bottom_nav",
-      "target": "shared_widgets_figma_bottom_nav_circle"
-    },
-    {
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "shared/widgets/figma_bottom_nav.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "shared_widgets_figma_bottom_nav",
-      "target": "shared_widgets_figma_bottom_nav_circlefor"
-    },
-    {
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "shared/widgets/figma_bottom_nav.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "shared_widgets_figma_bottom_nav",
       "target": "shared_widgets_figma_bottom_nav_clipper"
     },
     {
@@ -114614,7 +115894,7 @@
       "weight": 1.0,
       "_origin": "ast",
       "source": "shared_widgets_figma_bottom_nav",
-      "target": "shared_widgets_figma_bottom_nav_cx"
+      "target": "shared_widgets_figma_bottom_nav_destination"
     },
     {
       "relation": "defines",
@@ -114713,28 +115993,6 @@
       "weight": 1.0,
       "_origin": "ast",
       "source": "shared_widgets_figma_bottom_nav",
-      "target": "shared_widgets_figma_bottom_nav_highlight"
-    },
-    {
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "shared/widgets/figma_bottom_nav.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "shared_widgets_figma_bottom_nav",
-      "target": "shared_widgets_figma_bottom_nav_icon"
-    },
-    {
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "shared/widgets/figma_bottom_nav.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "shared_widgets_figma_bottom_nav",
       "target": "shared_widgets_figma_bottom_nav_item"
     },
     {
@@ -114757,6 +116015,17 @@
       "weight": 1.0,
       "_origin": "ast",
       "source": "shared_widgets_figma_bottom_nav",
+      "target": "shared_widgets_figma_bottom_nav_lens"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "shared/widgets/figma_bottom_nav.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "shared_widgets_figma_bottom_nav",
       "target": "shared_widgets_figma_bottom_nav_localizedlabel"
     },
     {
@@ -114769,6 +116038,28 @@
       "_origin": "ast",
       "source": "shared_widgets_figma_bottom_nav",
       "target": "shared_widgets_figma_bottom_nav_move"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "shared/widgets/figma_bottom_nav.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "shared_widgets_figma_bottom_nav",
+      "target": "shared_widgets_figma_bottom_nav_navicon"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "shared/widgets/figma_bottom_nav.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "shared_widgets_figma_bottom_nav",
+      "target": "shared_widgets_figma_bottom_nav_notch"
     },
     {
       "relation": "defines",
@@ -114802,6 +116093,17 @@
       "_origin": "ast",
       "source": "shared_widgets_figma_bottom_nav",
       "target": "shared_widgets_figma_bottom_nav_onselected"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "shared/widgets/figma_bottom_nav.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "shared_widgets_figma_bottom_nav",
+      "target": "shared_widgets_figma_bottom_nav_pagenear"
     },
     {
       "relation": "defines",
@@ -114900,7 +116202,18 @@
       "weight": 1.0,
       "_origin": "ast",
       "source": "shared_widgets_figma_bottom_nav",
-      "target": "shared_widgets_figma_bottom_nav_speed"
+      "target": "shared_widgets_figma_bottom_nav_square"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "shared/widgets/figma_bottom_nav.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "shared_widgets_figma_bottom_nav",
+      "target": "shared_widgets_figma_bottom_nav_svg"
     },
     {
       "relation": "defines",
@@ -114923,6 +116236,17 @@
       "_origin": "ast",
       "source": "shared_widgets_figma_bottom_nav",
       "target": "shared_widgets_figma_bottom_nav_trainforgedestination"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "shared/widgets/figma_bottom_nav.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "shared_widgets_figma_bottom_nav",
+      "target": "shared_widgets_figma_bottom_nav_visibility"
     },
     {
       "relation": "references",
@@ -114948,26 +116272,15 @@
       "target": "shared_widgets_figma_bottom_nav_figmabottomnav"
     },
     {
-      "relation": "inherits",
+      "relation": "defines",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
-      "source_file": "shared/widgets/figma_bottom_nav.dart",
+      "source_file": "shared/widgets/figma_components.dart",
       "source_location": null,
       "weight": 1.0,
       "_origin": "ast",
-      "source": "shared_widgets_figma_bottom_nav_notchclipper",
-      "target": "customclipper"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "shared/widgets/figma_bottom_nav.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "shared_widgets_figma_bottom_nav_notchclipper",
-      "target": "path"
+      "source": "shared_widgets_figma_components",
+      "target": "shared_widgets_figma_components_accountid"
     },
     {
       "relation": "defines",
@@ -115223,114 +116536,346 @@
       "target": "shared_widgets_figma_components_subtitle"
     },
     {
-      "relation": "defines",
+      "relation": "references",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
-      "source_file": "shared/widgets/glass_sheet.dart",
+      "source_file": "shared/widgets/figma_components.dart",
       "source_location": null,
       "weight": 1.0,
+      "context": "variable_type",
       "_origin": "ast",
-      "source": "shared_widgets_glass_sheet",
-      "target": "shared_widgets_glass_sheet_build"
+      "source": "shared_widgets_figma_components",
+      "target": "string_image"
     },
     {
       "relation": "defines",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
-      "source_file": "shared/widgets/glass_sheet.dart",
+      "source_file": "shared/widgets/food_catalog_credits_page.dart",
       "source_location": null,
       "weight": 1.0,
       "_origin": "ast",
-      "source": "shared_widgets_glass_sheet",
-      "target": "shared_widgets_glass_sheet_color"
+      "source": "shared_widgets_food_catalog_credits_page",
+      "target": "shared_widgets_food_catalog_credits_page_build"
     },
     {
       "relation": "defines",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
-      "source_file": "shared/widgets/glass_sheet.dart",
+      "source_file": "shared/widgets/food_catalog_credits_page.dart",
       "source_location": null,
       "weight": 1.0,
       "_origin": "ast",
-      "source": "shared_widgets_glass_sheet",
-      "target": "shared_widgets_glass_sheet_glasssheetoption"
+      "source": "shared_widgets_food_catalog_credits_page",
+      "target": "shared_widgets_food_catalog_credits_page_createstate"
     },
     {
       "relation": "defines",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
-      "source_file": "shared/widgets/glass_sheet.dart",
+      "source_file": "shared/widgets/food_catalog_credits_page.dart",
       "source_location": null,
       "weight": 1.0,
       "_origin": "ast",
-      "source": "shared_widgets_glass_sheet",
-      "target": "shared_widgets_glass_sheet_hint"
+      "source": "shared_widgets_food_catalog_credits_page",
+      "target": "shared_widgets_food_catalog_credits_page_download"
     },
     {
       "relation": "defines",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
-      "source_file": "shared/widgets/glass_sheet.dart",
+      "source_file": "shared/widgets/food_catalog_credits_page.dart",
       "source_location": null,
       "weight": 1.0,
       "_origin": "ast",
-      "source": "shared_widgets_glass_sheet",
-      "target": "shared_widgets_glass_sheet_icon"
+      "source": "shared_widgets_food_catalog_credits_page",
+      "target": "shared_widgets_food_catalog_credits_page_foodcatalogcreditspage"
     },
     {
       "relation": "defines",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
-      "source_file": "shared/widgets/glass_sheet.dart",
+      "source_file": "shared/widgets/food_catalog_credits_page.dart",
       "source_location": null,
       "weight": 1.0,
       "_origin": "ast",
-      "source": "shared_widgets_glass_sheet",
-      "target": "shared_widgets_glass_sheet_ontap"
+      "source": "shared_widgets_food_catalog_credits_page",
+      "target": "shared_widgets_food_catalog_credits_page_foodcatalogcreditspagestate"
     },
     {
       "relation": "defines",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
-      "source_file": "shared/widgets/glass_sheet.dart",
+      "source_file": "shared/widgets/food_catalog_credits_page.dart",
       "source_location": null,
       "weight": 1.0,
       "_origin": "ast",
-      "source": "shared_widgets_glass_sheet",
-      "target": "shared_widgets_glass_sheet_reduced"
+      "source": "shared_widgets_food_catalog_credits_page",
+      "target": "shared_widgets_food_catalog_credits_page_label"
     },
     {
       "relation": "defines",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
-      "source_file": "shared/widgets/glass_sheet.dart",
+      "source_file": "shared/widgets/food_catalog_credits_page.dart",
       "source_location": null,
       "weight": 1.0,
       "_origin": "ast",
-      "source": "shared_widgets_glass_sheet",
-      "target": "shared_widgets_glass_sheet_showtopmenu"
+      "source": "shared_widgets_food_catalog_credits_page",
+      "target": "shared_widgets_food_catalog_credits_page_load"
     },
     {
       "relation": "defines",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
-      "source_file": "shared/widgets/glass_sheet.dart",
+      "source_file": "shared/widgets/food_catalog_credits_page.dart",
       "source_location": null,
       "weight": 1.0,
       "_origin": "ast",
-      "source": "shared_widgets_glass_sheet",
-      "target": "shared_widgets_glass_sheet_title"
+      "source": "shared_widgets_food_catalog_credits_page",
+      "target": "shared_widgets_food_catalog_credits_page_manifest"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "shared/widgets/food_catalog_credits_page.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "shared_widgets_food_catalog_credits_page_foodcatalogcreditspagestate",
+      "target": "shared_widgets_food_catalog_credits_page_foodcatalogcreditspage"
     },
     {
       "relation": "defines",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
-      "source_file": "shared/widgets/glass_sheet.dart",
+      "source_file": "shared/widgets/product_overviews.dart",
       "source_location": null,
       "weight": 1.0,
       "_origin": "ast",
-      "source": "shared_widgets_glass_sheet",
-      "target": "shared_widgets_glass_sheet_topmenuitem"
+      "source": "shared_widgets_product_overviews",
+      "target": "shared_widgets_product_overviews_accountid"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "shared/widgets/product_overviews.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "shared_widgets_product_overviews",
+      "target": "shared_widgets_product_overviews_activity"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "shared/widgets/product_overviews.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "shared_widgets_product_overviews",
+      "target": "shared_widgets_product_overviews_build"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "shared/widgets/product_overviews.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "shared_widgets_product_overviews",
+      "target": "shared_widgets_product_overviews_color"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "shared/widgets/product_overviews.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "shared_widgets_product_overviews",
+      "target": "shared_widgets_product_overviews_controller"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "shared/widgets/product_overviews.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "shared_widgets_product_overviews",
+      "target": "shared_widgets_product_overviews_dailyoverview"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "shared/widgets/product_overviews.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "shared_widgets_product_overviews",
+      "target": "shared_widgets_product_overviews_evolutionpage"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "shared/widgets/product_overviews.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "shared_widgets_product_overviews",
+      "target": "shared_widgets_product_overviews_food"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "shared/widgets/product_overviews.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "shared_widgets_product_overviews",
+      "target": "shared_widgets_product_overviews_hydration"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "shared/widgets/product_overviews.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "shared_widgets_product_overviews",
+      "target": "shared_widgets_product_overviews_icon"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "shared/widgets/product_overviews.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "shared_widgets_product_overviews",
+      "target": "shared_widgets_product_overviews_label"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "shared/widgets/product_overviews.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "shared_widgets_product_overviews",
+      "target": "shared_widgets_product_overviews_name"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "shared/widgets/product_overviews.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "shared_widgets_product_overviews",
+      "target": "shared_widgets_product_overviews_ontap"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "shared/widgets/product_overviews.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "shared_widgets_product_overviews",
+      "target": "shared_widgets_product_overviews_openactivity"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "shared/widgets/product_overviews.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "shared_widgets_product_overviews",
+      "target": "shared_widgets_product_overviews_openday"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "shared/widgets/product_overviews.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "shared_widgets_product_overviews",
+      "target": "shared_widgets_product_overviews_openphoto"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "shared/widgets/product_overviews.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "shared_widgets_product_overviews",
+      "target": "shared_widgets_product_overviews_openworkouts"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "shared/widgets/product_overviews.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "shared_widgets_product_overviews",
+      "target": "shared_widgets_product_overviews_quickbutton"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "shared/widgets/product_overviews.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "shared_widgets_product_overviews",
+      "target": "shared_widgets_product_overviews_sessionchanges"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "shared/widgets/product_overviews.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "shared_widgets_product_overviews",
+      "target": "shared_widgets_product_overviews_tfblue"
+    },
+    {
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "shared/widgets/product_shell.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "shared_widgets_product_shell",
+      "target": "package_trainforge_features_nutrition_presentation_hydration_card_dart"
     },
     {
       "relation": "defines",
@@ -115463,6 +117008,17 @@
       "_origin": "ast",
       "source": "shared_widgets_product_shell",
       "target": "shared_widgets_product_shell_dispose"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "shared/widgets/product_shell.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "shared_widgets_product_shell",
+      "target": "shared_widgets_product_shell_googlephoto"
     },
     {
       "relation": "defines",
@@ -115666,276 +117222,111 @@
       "relation": "defines",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
-      "source_file": "features/legal/legal_documents.dart",
+      "source_file": "shared/widgets/profile_photo_sheet.dart",
       "source_location": null,
       "weight": 1.0,
       "_origin": "ast",
-      "source": "features_legal_legal_documents",
-      "target": "features_legal_legal_documents_asset"
+      "source": "shared_widgets_profile_photo_sheet",
+      "target": "shared_widgets_profile_photo_sheet_chooseprofilephoto"
     },
     {
       "relation": "defines",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
-      "source_file": "features/legal/legal_documents.dart",
+      "source_file": "shared/widgets/profile_photo_sheet.dart",
       "source_location": null,
       "weight": 1.0,
       "_origin": "ast",
-      "source": "features_legal_legal_documents",
-      "target": "features_legal_legal_documents_changeskey"
+      "source": "shared_widgets_profile_photo_sheet",
+      "target": "shared_widgets_profile_photo_sheet_id"
     },
     {
       "relation": "defines",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
-      "source_file": "features/legal/legal_documents.dart",
+      "source_file": "shared/widgets/profile_photo_sheet.dart",
       "source_location": null,
       "weight": 1.0,
       "_origin": "ast",
-      "source": "features_legal_legal_documents",
-      "target": "features_legal_legal_documents_healthconsentversion"
+      "source": "shared_widgets_profile_photo_sheet",
+      "target": "shared_widgets_profile_photo_sheet_l"
     },
     {
       "relation": "defines",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
-      "source_file": "features/legal/legal_documents.dart",
+      "source_file": "shared/widgets/profile_photo_sheet.dart",
       "source_location": null,
       "weight": 1.0,
       "_origin": "ast",
-      "source": "features_legal_legal_documents",
-      "target": "features_legal_legal_documents_id"
+      "source": "shared_widgets_profile_photo_sheet",
+      "target": "shared_widgets_profile_photo_sheet_messenger"
     },
     {
       "relation": "defines",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
-      "source_file": "features/legal/legal_documents.dart",
+      "source_file": "shared/widgets/profile_photo_sheet.dart",
       "source_location": null,
       "weight": 1.0,
       "_origin": "ast",
-      "source": "features_legal_legal_documents",
-      "target": "features_legal_legal_documents_legalappversion"
+      "source": "shared_widgets_profile_photo_sheet",
+      "target": "shared_widgets_profile_photo_sheet_photos"
     },
     {
       "relation": "defines",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
-      "source_file": "features/legal/legal_documents.dart",
+      "source_file": "shared/widgets/profile_photo_sheet.dart",
       "source_location": null,
       "weight": 1.0,
       "_origin": "ast",
-      "source": "features_legal_legal_documents",
-      "target": "features_legal_legal_documents_legaldocument"
+      "source": "shared_widgets_profile_photo_sheet",
+      "target": "shared_widgets_profile_photo_sheet_pick"
     },
     {
       "relation": "defines",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
-      "source_file": "features/legal/legal_documents.dart",
+      "source_file": "shared/widgets/profile_photo_sheet.dart",
       "source_location": null,
       "weight": 1.0,
       "_origin": "ast",
-      "source": "features_legal_legal_documents",
-      "target": "features_legal_legal_documents_legaldocuments"
+      "source": "shared_widgets_profile_photo_sheet",
+      "target": "shared_widgets_profile_photo_sheet_repository"
     },
     {
       "relation": "defines",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
-      "source_file": "features/legal/legal_documents.dart",
+      "source_file": "shared/widgets/shell_labels.dart",
       "source_location": null,
       "weight": 1.0,
       "_origin": "ast",
-      "source": "features_legal_legal_documents",
-      "target": "features_legal_legal_documents_legalpublicbase"
+      "source": "shared_widgets_shell_labels",
+      "target": "shared_widgets_shell_labels_labels"
     },
     {
       "relation": "defines",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
-      "source_file": "features/legal/legal_documents.dart",
+      "source_file": "shared/widgets/shell_labels.dart",
       "source_location": null,
       "weight": 1.0,
       "_origin": "ast",
-      "source": "features_legal_legal_documents",
-      "target": "features_legal_legal_documents_legaltexts"
+      "source": "shared_widgets_shell_labels",
+      "target": "shared_widgets_shell_labels_language"
     },
     {
       "relation": "defines",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
-      "source_file": "features/legal/legal_documents.dart",
+      "source_file": "shared/widgets/shell_labels.dart",
       "source_location": null,
       "weight": 1.0,
       "_origin": "ast",
-      "source": "features_legal_legal_documents",
-      "target": "features_legal_legal_documents_privacydocument"
-    },
-    {
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/legal/legal_documents.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "features_legal_legal_documents",
-      "target": "features_legal_legal_documents_publicurl"
-    },
-    {
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/legal/legal_documents.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "features_legal_legal_documents",
-      "target": "features_legal_legal_documents_sha"
-    },
-    {
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/legal/legal_documents.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "features_legal_legal_documents",
-      "target": "features_legal_legal_documents_termsdocument"
-    },
-    {
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/legal/legal_documents.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "features_legal_legal_documents",
-      "target": "features_legal_legal_documents_text"
-    },
-    {
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/legal/legal_documents.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "features_legal_legal_documents",
-      "target": "features_legal_legal_documents_titlekey"
-    },
-    {
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/legal/legal_documents.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "features_legal_legal_documents",
-      "target": "features_legal_legal_documents_version"
-    },
-    {
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "shared/widgets/food_catalog_credits_page.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "shared_widgets_food_catalog_credits_page",
-      "target": "shared_widgets_food_catalog_credits_page_build"
-    },
-    {
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "shared/widgets/food_catalog_credits_page.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "shared_widgets_food_catalog_credits_page",
-      "target": "shared_widgets_food_catalog_credits_page_createstate"
-    },
-    {
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "shared/widgets/food_catalog_credits_page.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "shared_widgets_food_catalog_credits_page",
-      "target": "shared_widgets_food_catalog_credits_page_download"
-    },
-    {
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "shared/widgets/food_catalog_credits_page.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "shared_widgets_food_catalog_credits_page",
-      "target": "shared_widgets_food_catalog_credits_page_foodcatalogcreditspage"
-    },
-    {
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "shared/widgets/food_catalog_credits_page.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "shared_widgets_food_catalog_credits_page",
-      "target": "shared_widgets_food_catalog_credits_page_foodcatalogcreditspagestate"
-    },
-    {
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "shared/widgets/food_catalog_credits_page.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "shared_widgets_food_catalog_credits_page",
-      "target": "shared_widgets_food_catalog_credits_page_label"
-    },
-    {
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "shared/widgets/food_catalog_credits_page.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "shared_widgets_food_catalog_credits_page",
-      "target": "shared_widgets_food_catalog_credits_page_load"
-    },
-    {
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "shared/widgets/food_catalog_credits_page.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "shared_widgets_food_catalog_credits_page",
-      "target": "shared_widgets_food_catalog_credits_page_manifest"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "shared/widgets/food_catalog_credits_page.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "shared_widgets_food_catalog_credits_page_foodcatalogcreditspagestate",
-      "target": "shared_widgets_food_catalog_credits_page_foodcatalogcreditspage"
+      "source": "shared_widgets_shell_labels",
+      "target": "shared_widgets_shell_labels_shelllabel"
     }
   ],
   "hyperedges": [],
