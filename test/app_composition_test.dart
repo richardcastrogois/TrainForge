@@ -170,15 +170,15 @@ void main() {
       );
       await t.pumpAndSettle();
       expect(services.activities, isEmpty);
-      await t.tap(find.byTooltip('Evolução'));
+      await t.tap(find.byTooltip('Evolução').first);
       await t.pumpAndSettle();
       expect(find.byType(ActivityPage), findsOneWidget);
       final original = services.activities.single;
       expect(original.accountId, fixtureProfile.id);
       expect(original.reads, 1);
-      await t.tap(find.byTooltip('Hoje'));
+      await t.tap(find.byTooltip('Hoje').first);
       await t.pumpAndSettle();
-      await t.tap(find.byTooltip('Evolução'));
+      await t.tap(find.byTooltip('Evolução').first);
       await t.pumpAndSettle();
       expect(services.activities, hasLength(1));
       expect(original.reads, 1);
@@ -193,7 +193,7 @@ void main() {
       await t.pumpAndSettle();
       expect(find.byType(ActivityPage), findsNothing);
       expect(original.currentAccountId(), other.id);
-      await t.tap(find.byTooltip('Evolução'));
+      await t.tap(find.byTooltip('Evolução').first);
       await t.pumpAndSettle();
       expect(services.activities, hasLength(2));
       expect(services.activities.last.accountId, other.id);
@@ -392,7 +392,7 @@ void main() {
       await t.pumpAndSettle();
       await t.binding.handlePopRoute();
       await t.pumpAndSettle();
-      await t.tap(find.byTooltip('Treinos'));
+      await t.tap(find.byTooltip('Treinos').first);
       await t.pumpAndSettle();
       await t.scrollUntilVisible(
         find.text('Montar meu plano da semana'),

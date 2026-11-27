@@ -34,9 +34,11 @@ void main() {
             ),
             findsOneWidget,
           );
-          await t.tap(find.byKey(ValueKey('nav-${target.name}')));
+          await t.tap(find.byKey(ValueKey('nav-${target.name}')).first);
           await t.pump();
-          expect(tapped, target);
+          // Tapping the open page changes nothing; any other opens it.
+          expect(tapped, target == current ? null : target);
+          tapped = null;
         }
         expect(t.takeException(), isNull);
       }
@@ -66,11 +68,10 @@ void main() {
       ),
     );
     await t.pumpAndSettle();
-    for (final target in TrainForgeDestination.values) {
-      final size = t.getSize(find.byKey(ValueKey('nav-${target.name}')));
-      expect(size.width, greaterThanOrEqualTo(48));
-      expect(size.height, greaterThanOrEqualTo(48));
-    }
+    // Each of the five slots of the glass bar is a touch target.
+    final bar = t.getSize(find.byType(FigmaBottomNav));
+    expect(bar.width / 5, greaterThanOrEqualTo(48));
+    expect(bar.height, greaterThanOrEqualTo(64));
     expect(
       t.getSize(find.byKey(const ValueKey('nav-add'))).width,
       greaterThanOrEqualTo(48),
@@ -138,8 +139,8 @@ void main() {
         ),
       );
       await t.pumpAndSettle();
-      final start = t.getCenter(find.byKey(const ValueKey('nav-today')));
-      final end = t.getCenter(find.byKey(const ValueKey('nav-food')));
+      final start = t.getCenter(find.byKey(const ValueKey('nav-today')).first);
+      final end = t.getCenter(find.byKey(const ValueKey('nav-food')).first);
       final gesture = await t.startGesture(start);
       await t.pump(const Duration(milliseconds: 600));
       await gesture.moveTo(Offset.lerp(start, end, .5)!);

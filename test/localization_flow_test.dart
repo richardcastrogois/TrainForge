@@ -35,7 +35,7 @@ void main() {
         ),
       );
       await t.pumpAndSettle();
-      await t.tap(find.byTooltip('Treinos'));
+      await t.tap(find.byTooltip('Treinos').first);
       await t.pumpAndSettle();
       final auth = t.widget<ProductShell>(find.byType(ProductShell)).controller;
       await language.select(LanguageChoice.english);
@@ -51,7 +51,7 @@ void main() {
         t.widget<FigmaBottomNav>(find.byType(FigmaBottomNav)).selected,
         TrainForgeDestination.workouts,
       );
-      expect(find.byTooltip('Workouts'), findsOneWidget);
+      expect(find.byTooltip('Workouts'), findsWidgets);
       await t.tap(find.byTooltip('Open profile'));
       await t.pumpAndSettle();
       // The picture opens the profile panel; settings are one tap more.

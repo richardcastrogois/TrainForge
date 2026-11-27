@@ -170,13 +170,13 @@ void main() {
       );
       await t.pumpAndSettle();
       expect(built, {TrainForgeDestination.today});
-      await t.tap(find.byTooltip('Treinos'));
+      await t.tap(find.byTooltip('Treinos').first);
       await t.pumpAndSettle();
       await t.enterText(find.byType(TextField), 'rascunho preservado');
-      await t.tap(find.byTooltip('Alimentação'));
+      await t.tap(find.byTooltip('Alimentação').first);
       await t.pumpAndSettle();
       expect(find.byType(TextField), findsNothing);
-      await t.tap(find.byTooltip('Treinos'));
+      await t.tap(find.byTooltip('Treinos').first);
       await t.pumpAndSettle();
       expect(find.text('rascunho preservado'), findsOneWidget);
       await t.binding.handlePopRoute();
@@ -205,7 +205,7 @@ void main() {
         ),
       );
       await t.pumpAndSettle();
-      await t.tap(find.byTooltip('Alimentação'));
+      await t.tap(find.byTooltip('Alimentação').first);
       await t.pumpAndSettle();
       repo.restoreError = outage();
       await auth.restore();
@@ -349,7 +349,7 @@ void main() {
 
       await capture('today');
       for (final destination in TrainForgeDestination.values.skip(1)) {
-        await t.tap(find.byTooltip(destination.label));
+        await t.tap(find.byTooltip(destination.label).first);
         await t.pumpAndSettle();
         await capture(destination.name);
       }

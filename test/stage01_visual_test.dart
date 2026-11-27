@@ -48,7 +48,7 @@ void main() {
     );
     await t.pumpAndSettle();
     for (final destination in TrainForgeDestination.values) {
-      await t.tap(find.byTooltip(destination.label));
+      await t.tap(find.byTooltip(destination.label).first);
       await t.pumpAndSettle();
       expect(t.takeException(), isNull);
     }
@@ -150,7 +150,7 @@ void main() {
 
         await capture('today-${brightness.name}');
         for (final destination in TrainForgeDestination.values.skip(1)) {
-          await t.tap(find.byTooltip(destination.label));
+          await t.tap(find.byTooltip(destination.label).first);
           await t.pumpAndSettle();
           await capture('${destination.name}-${brightness.name}');
         }
