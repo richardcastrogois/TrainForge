@@ -2,6 +2,8 @@ import 'dart:math' as math;
 
 import 'package:flutter/material.dart';
 import 'package:trainforge/core/theme/trainforge_theme.dart';
+import 'package:trainforge/features/food_reference/presentation/food_labels.dart';
+import 'package:trainforge/features/nutrition/domain/day_meals.dart';
 import 'package:trainforge/features/nutrition/domain/food_goals.dart';
 import 'package:trainforge/features/nutrition/domain/nutrition.dart';
 import 'package:trainforge/features/nutrition/presentation/daily_summary_controller.dart';
@@ -41,6 +43,7 @@ class _FoodBoardState extends State<FoodBoard>
   );
   bool _started = false, choosing = false;
   int? meals, water;
+  List<DayMeal> dayMeals = const [];
   Json? _seenSummary;
 
   @override
@@ -79,7 +82,7 @@ class _FoodBoardState extends State<FoodBoard>
     final repository = widget.diary;
     if (repository == null) return;
     final now = widget.controller.now();
-    final times = <DateTime>[];
+    final items = <Json>[];
     String? cursor;
     try {
       do {
@@ -88,26 +91,19 @@ class _FoodBoardState extends State<FoodBoard>
           offsetZone(now),
           cursor: cursor,
         );
-        for (final item in page.items) {
-          if (item['deletedAt'] != null || item['foodId'] == waterFoodId) {
-            continue;
-          }
-          final at = DateTime.tryParse('${item['occurredAt']}');
-          if (at != null) times.add(at);
-        }
+        items.addAll(page.items);
         cursor = page.cursor;
       } while (cursor != null);
     } catch (_) {
       return;
     }
-    times.sort();
-    var count = 0;
-    DateTime? last;
-    for (final t in times) {
-      if (last == null || t.difference(last).inMinutes > 60) count++;
-      last = t;
+    final grouped = groupMeals(items, waterId: waterFoodId);
+    if (mounted) {
+      setState(() {
+        dayMeals = grouped;
+        meals = grouped.length;
+      });
     }
-    if (mounted) setState(() => meals = count);
   }
 
   /// 0 → 1 → 0 over one loop (still when motion is reduced).
@@ -370,6 +366,15 @@ class _FoodBoardState extends State<FoodBoard>
             ),
           ],
         ),
+        if (widget.diary != null) ...[
+          SizedBox(height: space),
+          _MealsToday(
+            meals: dayMeals,
+            target: mealTarget,
+            now: widget.controller.now(),
+            open: widget.openNutrition,
+          ),
+        ],
       ],
     );
   }
@@ -719,4 +724,201 @@ class _Rings extends CustomPainter {
 
   @override
   bool shouldRepaint(_Rings old) => true;
+}
+
+/// "Refeições de hoje": one row per meal (name by the time of day, time,
+/// what was eaten, kcal) and, while meals are missing, when the next fits.
+class _MealsToday extends StatelessWidget {
+  final List<DayMeal> meals;
+  final int target;
+  final DateTime now;
+  final VoidCallback open;
+  const _MealsToday({
+    required this.meals,
+    required this.target,
+    required this.now,
+    required this.open,
+  });
+
+  static const _icons = {
+    'breakfast': Icons.free_breakfast_outlined,
+    'morningSnack': Icons.apple,
+    'lunch': Icons.restaurant,
+    'afternoonSnack': Icons.cookie_outlined,
+    'dinner': Icons.dinner_dining_outlined,
+    'supper': Icons.nightlight_outlined,
+  };
+
+  @override
+  Widget build(BuildContext context) {
+    String l(String k) => shellLabel(context, k);
+    final locale = foodContentLocale(context);
+    String time(DateTime at) =>
+        MaterialLocalizations.of(context).formatTimeOfDay(
+          TimeOfDay.fromDateTime(at.toLocal()),
+          alwaysUse24HourFormat: MediaQuery.alwaysUse24HourFormatOf(context),
+        );
+    final energy = [for (final m in meals) m.kcal];
+    final total = meals.isEmpty || energy.contains(null)
+        ? null
+        : energy.fold<double>(0, (a, b) => a + b!).round();
+    final next = nextMeal(meals, target);
+    final muted = TextStyle(fontSize: 11.5, color: context.tf.muted);
+    return _Card(
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.stretch,
+        children: [
+          Row(
+            children: [
+              Expanded(
+                child: Text(
+                  l('mealsToday'),
+                  style: const TextStyle(
+                    fontSize: 14,
+                    fontWeight: FontWeight.w700,
+                  ),
+                ),
+              ),
+              Text(
+                '${meals.length} ${l('mealsOf')} $target'
+                '${total == null ? '' : ' · $total kcal'}',
+                style: muted,
+              ),
+            ],
+          ),
+          if (meals.isEmpty) ...[
+            const SizedBox(height: 12),
+            Row(
+              spacing: 6,
+              children: [
+                for (var i = 0; i < target; i++)
+                  Expanded(
+                    child: Container(
+                      height: 8,
+                      decoration: BoxDecoration(
+                        color: context.tf.soft,
+                        borderRadius: BorderRadius.circular(4),
+                      ),
+                    ),
+                  ),
+              ],
+            ),
+            const SizedBox(height: 8),
+            Text(l('mealsEmpty'), textAlign: TextAlign.center, style: muted),
+          ],
+          for (final (i, meal) in meals.indexed) ...[
+            if (i > 0) Divider(height: 1, color: context.tf.soft),
+            InkWell(
+              onTap: open,
+              borderRadius: BorderRadius.circular(12),
+              child: Padding(
+                padding: const EdgeInsets.symmetric(vertical: 8),
+                child: Row(
+                  children: [
+                    _Round(
+                      icon: _icons[meal.slot]!,
+                      fill: context.tf.soft,
+                      color: context.tf.primary,
+                    ),
+                    const SizedBox(width: 10),
+                    Expanded(
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Text(
+                            l('meal_${meal.slot}'),
+                            style: const TextStyle(
+                              fontSize: 13,
+                              fontWeight: FontWeight.w700,
+                            ),
+                          ),
+                          Text(
+                            '${time(meal.start)} · '
+                            '${meal.entries.map((e) => entryDisplayName(e, locale)).join(', ')}',
+                            maxLines: 1,
+                            overflow: TextOverflow.ellipsis,
+                            style: muted,
+                          ),
+                        ],
+                      ),
+                    ),
+                    if (meal.kcal != null)
+                      Padding(
+                        padding: const EdgeInsets.only(left: 8),
+                        child: Text(
+                          '${meal.kcal!.round()} kcal',
+                          style: TextStyle(
+                            fontSize: 13,
+                            fontWeight: FontWeight.w700,
+                            color: context.tf.primary,
+                          ),
+                        ),
+                      ),
+                  ],
+                ),
+              ),
+            ),
+          ],
+          if (next != null) ...[
+            Divider(height: 1, color: context.tf.soft),
+            Padding(
+              padding: const EdgeInsets.symmetric(vertical: 8),
+              child: Row(
+                children: [
+                  _Round(
+                    icon: Icons.schedule,
+                    fill: Colors.transparent,
+                    color: context.tf.muted,
+                    outlined: true,
+                  ),
+                  const SizedBox(width: 10),
+                  Expanded(
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text(
+                          next.isAfter(now)
+                              ? '${l('mealsNext')} ${time(next)}'
+                              : l('mealsNow'),
+                          style: TextStyle(
+                            fontSize: 13,
+                            fontWeight: FontWeight.w700,
+                            color: context.tf.muted,
+                          ),
+                        ),
+                        Text(l('mealsEvery'), style: muted),
+                      ],
+                    ),
+                  ),
+                ],
+              ),
+            ),
+          ],
+        ],
+      ),
+    );
+  }
+}
+
+class _Round extends StatelessWidget {
+  final IconData icon;
+  final Color fill, color;
+  final bool outlined;
+  const _Round({
+    required this.icon,
+    required this.fill,
+    required this.color,
+    this.outlined = false,
+  });
+  @override
+  Widget build(BuildContext context) => Container(
+    width: 32,
+    height: 32,
+    decoration: BoxDecoration(
+      color: fill,
+      shape: BoxShape.circle,
+      border: outlined ? Border.all(color: color.withValues(alpha: .5)) : null,
+    ),
+    child: Icon(icon, size: 17, color: color),
+  );
 }

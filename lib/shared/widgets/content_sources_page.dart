@@ -6,6 +6,8 @@ import 'package:trainforge/features/food_reference/presentation/food_page.dart';
 import 'package:trainforge/features/nutrition/presentation/nutrition_page.dart';
 import 'figma_components.dart';
 import 'food_catalog_credits_page.dart';
+import 'food_goal_sources_page.dart';
+import 'shell_labels.dart';
 
 class ContentSourcesPage extends StatelessWidget {
   final AuthController? controller;
@@ -40,6 +42,13 @@ class ContentSourcesPage extends StatelessWidget {
           subtitle: context.l10n.foodReferences,
           asset: 'plan',
           onTap: () => open(context, const FoodCatalogCreditsPage()),
+        ),
+        const SizedBox(height: 12),
+        FigmaActionCard(
+          title: shellLabel(context, 'sourcesFoodTitle'),
+          subtitle: 'ISSN · IOM · EFSA',
+          asset: 'plan',
+          onTap: () => open(context, const FoodGoalSourcesPage()),
         ),
         const SizedBox(height: 12),
         if (controller?.profile != null)

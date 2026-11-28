@@ -60,3 +60,47 @@ enum FoodGoal {
     _ => 1800,
   };
 }
+
+/// A published reference behind a number the food page suggests. Shown in
+/// "Fontes e transparência" so every value can be traced to its source.
+class FoodReferenceSource {
+  /// Citation as published (kept in its original language).
+  final String citation;
+  final String doi;
+
+  /// Key of the label that says what the app takes from it.
+  final String use;
+  const FoodReferenceSource(this.citation, this.doi, this.use);
+  String get url => 'https://doi.org/$doi';
+}
+
+const foodGoalSources = [
+  FoodReferenceSource(
+    'Jäger R, Kerksick CM, Campbell BI, et al. International Society of '
+        'Sports Nutrition Position Stand: protein and exercise. Journal of '
+        'the International Society of Sports Nutrition. 2017;14:20.',
+    '10.1186/s12970-017-0177-8',
+    'source_protein',
+  ),
+  FoodReferenceSource(
+    'Institute of Medicine. Dietary Reference Intakes for Energy, '
+        'Carbohydrate, Fiber, Fat, Fatty Acids, Cholesterol, Protein, and '
+        'Amino Acids. Washington, DC: The National Academies Press; 2005.',
+    '10.17226/10490',
+    'source_rda',
+  ),
+  FoodReferenceSource(
+    'Kerksick CM, Arent S, Schoenfeld BJ, et al. International Society of '
+        'Sports Nutrition position stand: nutrient timing. Journal of the '
+        'International Society of Sports Nutrition. 2017;14:33.',
+    '10.1186/s12970-017-0189-4',
+    'source_timing',
+  ),
+  FoodReferenceSource(
+    'EFSA Panel on Dietetic Products, Nutrition, and Allergies (NDA). '
+        'Scientific Opinion on Dietary Reference Values for water. EFSA '
+        'Journal. 2010;8(3):1459.',
+    '10.2903/j.efsa.2010.1459',
+    'source_water',
+  ),
+];
