@@ -228,15 +228,15 @@
     "semantic_hash": ""
   },
   "shared/widgets/product_overviews.dart": {
-    "mtime": 1795833491.880661,
-    "seen": 1795835083.365678,
-    "ast_hash": "f857370cb7e36973514447d867f2fbee",
+    "mtime": 1795839801.0291893,
+    "seen": 1795840311.433935,
+    "ast_hash": "d3ad835a0e4ca91f37aad981276f5aab",
     "semantic_hash": ""
   },
   "shared/widgets/product_shell.dart": {
-    "mtime": 1795833491.8812232,
-    "seen": 1795835083.365678,
-    "ast_hash": "aae5f2b8ae8260da771fb7790a72760c",
+    "mtime": 1795839606.775006,
+    "seen": 1795840311.433935,
+    "ast_hash": "d60f75c69c40de76bacbe1cefd779c78",
     "semantic_hash": ""
   },
   "core/motion/app_motion.dart": {
@@ -690,9 +690,9 @@
     "semantic_hash": ""
   },
   "features/legal/legal_documents.dart": {
-    "mtime": 1795835078.0161214,
-    "seen": 1795835083.365678,
-    "ast_hash": "68ca561e200c807f3d23828480b2c163",
+    "mtime": 1795840306.3569853,
+    "seen": 1795840311.433935,
+    "ast_hash": "3fdc217e15911a299bd2736738e90c58",
     "semantic_hash": ""
   },
   "features/legal/presentation/legal_labels.dart": {
@@ -756,9 +756,9 @@
     "semantic_hash": ""
   },
   "features/onboarding/onboarding_profile.dart": {
-    "mtime": 1795660159.1869364,
-    "seen": 1795730805.2588377,
-    "ast_hash": "0bf7ee6d04b65b3a539f42ef939dcc16",
+    "mtime": 1795839638.0146067,
+    "seen": 1795840311.433935,
+    "ast_hash": "f06e163942fe8bbd4debef0ce5cee68a",
     "semantic_hash": ""
   },
   "features/onboarding/place_photos.dart": {
@@ -786,9 +786,9 @@
     "semantic_hash": ""
   },
   "shared/widgets/shell_labels.dart": {
-    "mtime": 1795831314.4340086,
-    "seen": 1795835083.365678,
-    "ast_hash": "86194f4b9226a06a0d3ea5fa0a8a97a6",
+    "mtime": 1795839986.4822736,
+    "seen": 1795840311.433935,
+    "ast_hash": "031fbd439b996bd0b86228a572a4288f",
     "semantic_hash": ""
   },
   "shared/widgets/workouts_overview.dart": {
@@ -804,9 +804,9 @@
     "semantic_hash": ""
   },
   "features/nutrition/presentation/hydration_card.dart": {
-    "mtime": 1795788387.4580758,
-    "seen": 1795788506.0315573,
-    "ast_hash": "d3e92cbf55a25eda81d7f4ca99ae1e70",
+    "mtime": 1795839637.9019425,
+    "seen": 1795840311.433935,
+    "ast_hash": "b13920451964333ca58d1f957c38a318",
     "semantic_hash": ""
   },
   "shared/widgets/profile_photo_sheet.dart": {
@@ -825,6 +825,18 @@
     "mtime": 1795833810.6782625,
     "seen": 1795835083.365678,
     "ast_hash": "d8eacc52fcb909787e7bdb08b973eadf",
+    "semantic_hash": ""
+  },
+  "features/nutrition/domain/food_goals.dart": {
+    "mtime": 1795839479.8407066,
+    "seen": 1795840311.433935,
+    "ast_hash": "a589cf880fc562e16699bfc02a164a65",
+    "semantic_hash": ""
+  },
+  "features/nutrition/presentation/food_board.dart": {
+    "mtime": 1795840207.9612708,
+    "seen": 1795840311.433935,
+    "ast_hash": "c60957a86d4daf08109c991923652164",
     "semantic_hash": ""
   }
 }

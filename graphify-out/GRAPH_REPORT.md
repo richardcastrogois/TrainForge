@@ -1,6 +1,6 @@
 # Mapa atual do TrainForge
 
-Verificado em 2026-11-28 UTC: **138 arquivos Dart, 5668 nós e 6679 arestas**.
+Verificado em 2026-11-28 UTC: **140 arquivos Dart, 5729 nós e 6763 arestas**.
 
 Extração AST incremental de `lib/`, sem rede, sem LLM e sem clustering novo. A limpeza documental não altera o código Dart, por isso pode produzir zero arquivos alterados.
 

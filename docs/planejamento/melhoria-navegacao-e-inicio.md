@@ -183,3 +183,29 @@ Cores: **verde é a principal e laranja a secundária** (60% neutro, 30% verde, 
   - Antes de qualquer registro, os cards mostram uma prévia animada e o botão "Começar primeiro treino". O card "Meu diário alimentar" saiu (a aba Alimentação já cumpre esse papel).
   - Dados: `evolution_source.dart` lê as sessões já carregadas pela página e o diário do mês. Ainda **sem metas**: a sequência conta qualquer registro e a água não tem nível de meta.
 - **Responsividade:** Evolução sem rolagem de 360x740 até tablet (inclusive texto 1,3×), com modo compacto abaixo de 800 de altura; em 360x640 e 320x568 a página rola.
+
+### Alimentação (28/11/2026)
+
+Mesma linguagem da Evolução: verde principal, um único botão laranja, cards brancos com cantos contínuos, sem rolagem a partir de 390x844 (e 411x891 do A34).
+
+- **Primeiro acesso:** "Qual é o seu objetivo?" em 6 cards (ícone no canto, nome embaixo): Perder gordura, Manter o peso, Ganhar massa, Recompor o corpo, Render mais no treino e Comer melhor. "Definir eu mesmo" saiu. Em telas com menos de 860 de altura os cards ficam em 3 colunas.
+- **Com objetivo:** o bloco vira "Sua meta do dia · objetivo" com proteína (alvo pelo peso) e energia de hoje; "Ajustar" volta à escolha. O objetivo fica salvo no aparelho junto das primeiras respostas (`foodGoal`).
+- **Anéis do dia:** por fora uma fatia por refeição planejada (4 ou 5 conforme o objetivo; entradas de comida com até 1 h de distância contam como uma refeição); por dentro a água em relação à meta. Tocar abre o diário.
+- **Água em gotas:** 8 gotas, cada uma 1/8 da meta (sem meta, 200 ml), com "+ copo" e "+ garrafa" (mesmo registro e desfazer de antes).
+- **Registrar refeição** (laranja) e as formas: Falar, Foto, Buscar. Saíram o card de energia, os botões azul/amarelo e "Meus registros".
+
+Metas sugeridas, todas como ponto de partida editável (`food_goals.dart`), com aviso para gestantes, menores de 18 e quem tem alguma doença:
+
+| Objetivo | Refeições | Proteína (g/kg/dia) |
+|---|---|---|
+| Perder gordura | 4 | 2,0 |
+| Manter o peso | 4 | 1,4 |
+| Ganhar massa | 5 | 1,6 |
+| Recompor o corpo | 4 | 2,0 |
+| Render mais no treino | 5 | 1,6 |
+| Comer melhor | 4 | 0,8 |
+
+- Proteína: ISSN, posicionamento "Protein and exercise" (Jäger et al., 2017): 1,4–2,0 g/kg/dia para quem treina, mais em déficit para manter massa magra; 0,8 g/kg é a RDA geral (IOM).
+- Refeições: ISSN "Nutrient timing" (Kerksick et al., 2017): proteína a cada 3–4 h ao longo do dia; mais refeições ajudam sobretudo o apetite.
+- Água para beber: EFSA (2010), água total 2,0 L/dia mulheres e 2,5 L/dia homens, cerca de 20% vinda dos alimentos, logo 1,6 L e 2,0 L para beber; outro gênero ou não informado: 1,8 L.
+- **Ainda sem meta de energia:** exige idade e nível de atividade (Mifflin-St Jeor × fator de atividade), que as primeiras perguntas ainda não coletam.

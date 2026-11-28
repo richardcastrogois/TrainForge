@@ -18318,78 +18318,6 @@
       "_origin": "ast"
     },
     {
-      "id": "features_onboarding_onboarding_profile",
-      "label": "onboarding_profile.dart",
-      "file_type": "code",
-      "source_file": "features/onboarding/onboarding_profile.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "features_onboarding_onboarding_profile_onboardingprofile",
-      "label": "OnboardingProfile",
-      "file_type": "code",
-      "source_file": "features/onboarding/onboarding_profile.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "features_onboarding_onboarding_profile_onboardingstore",
-      "label": "OnboardingStore",
-      "file_type": "code",
-      "source_file": "features/onboarding/onboarding_profile.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "features_onboarding_onboarding_profile_secureonboardingstore",
-      "label": "SecureOnboardingStore",
-      "file_type": "code",
-      "source_file": "features/onboarding/onboarding_profile.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "features_onboarding_onboarding_profile_memoryonboardingstore",
-      "label": "MemoryOnboardingStore",
-      "file_type": "code",
-      "source_file": "features/onboarding/onboarding_profile.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "features_onboarding_onboarding_profile_onboardingcontroller",
-      "label": "OnboardingController",
-      "file_type": "code",
-      "source_file": "features/onboarding/onboarding_profile.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "features_onboarding_onboarding_profile_onboardingscope",
-      "label": "OnboardingScope",
-      "file_type": "code",
-      "source_file": "features/onboarding/onboarding_profile.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "features_onboarding_onboarding_profile_gender",
-      "label": "gender",
-      "file_type": "code",
-      "source_file": "features/onboarding/onboarding_profile.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "features_onboarding_onboarding_profile_weightkg",
-      "label": "weightKg",
-      "file_type": "code",
-      "source_file": "features/onboarding/onboarding_profile.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
       "id": "int_heightcm",
       "label": "int? heightCm,",
       "file_type": "code",
@@ -18398,218 +18326,10 @@
       "_origin": "ast"
     },
     {
-      "id": "features_onboarding_onboarding_profile_places",
-      "label": "places",
-      "file_type": "code",
-      "source_file": "features/onboarding/onboarding_profile.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "features_onboarding_onboarding_profile_confidence",
-      "label": "confidence",
-      "file_type": "code",
-      "source_file": "features/onboarding/onboarding_profile.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "features_onboarding_onboarding_profile_completedat",
-      "label": "completedAt",
-      "file_type": "code",
-      "source_file": "features/onboarding/onboarding_profile.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "features_onboarding_onboarding_profile_genders",
-      "label": "genders",
-      "file_type": "code",
-      "source_file": "features/onboarding/onboarding_profile.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "features_onboarding_onboarding_profile_placeids",
-      "label": "placeIds",
-      "file_type": "code",
-      "source_file": "features/onboarding/onboarding_profile.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "features_onboarding_onboarding_profile_confidences",
-      "label": "confidences",
-      "file_type": "code",
-      "source_file": "features/onboarding/onboarding_profile.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "features_onboarding_onboarding_profile_completed",
-      "label": "completed",
-      "file_type": "code",
-      "source_file": "features/onboarding/onboarding_profile.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "features_onboarding_onboarding_profile_storage",
-      "label": "_storage",
-      "file_type": "code",
-      "source_file": "features/onboarding/onboarding_profile.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "features_onboarding_onboarding_profile_prefix",
-      "label": "_prefix",
-      "file_type": "code",
-      "source_file": "features/onboarding/onboarding_profile.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "features_onboarding_onboarding_profile_values",
-      "label": "values",
-      "file_type": "code",
-      "source_file": "features/onboarding/onboarding_profile.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "features_onboarding_onboarding_profile_store",
-      "label": "store",
-      "file_type": "code",
-      "source_file": "features/onboarding/onboarding_profile.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "features_onboarding_onboarding_profile_profiles",
-      "label": "_profiles",
-      "file_type": "code",
-      "source_file": "features/onboarding/onboarding_profile.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "features_onboarding_onboarding_profile_loading",
-      "label": "_loading",
-      "file_type": "code",
-      "source_file": "features/onboarding/onboarding_profile.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "features_onboarding_onboarding_profile_accountid",
-      "label": "accountId",
-      "file_type": "code",
-      "source_file": "features/onboarding/onboarding_profile.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "features_onboarding_onboarding_profile_profile",
-      "label": "profile",
-      "file_type": "code",
-      "source_file": "features/onboarding/onboarding_profile.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
       "id": "onboardingprofile_get",
       "label": "OnboardingProfile? get",
       "file_type": "code",
       "source_file": null,
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "features_onboarding_onboarding_profile_cellfor",
-      "label": "cellFor",
-      "file_type": "code",
-      "source_file": "features/onboarding/onboarding_profile.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "features_onboarding_onboarding_profile_copywith",
-      "label": "copyWith",
-      "file_type": "code",
-      "source_file": "features/onboarding/onboarding_profile.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "features_onboarding_onboarding_profile_tojson",
-      "label": "toJson",
-      "file_type": "code",
-      "source_file": "features/onboarding/onboarding_profile.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "features_onboarding_onboarding_profile_fromjson",
-      "label": "fromJson",
-      "file_type": "code",
-      "source_file": "features/onboarding/onboarding_profile.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "features_onboarding_onboarding_profile_read",
-      "label": "read",
-      "file_type": "code",
-      "source_file": "features/onboarding/onboarding_profile.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "features_onboarding_onboarding_profile_write",
-      "label": "write",
-      "file_type": "code",
-      "source_file": "features/onboarding/onboarding_profile.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "features_onboarding_onboarding_profile_loaded",
-      "label": "loaded",
-      "file_type": "code",
-      "source_file": "features/onboarding/onboarding_profile.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "features_onboarding_onboarding_profile_load",
-      "label": "load",
-      "file_type": "code",
-      "source_file": "features/onboarding/onboarding_profile.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "features_onboarding_onboarding_profile_save",
-      "label": "save",
-      "file_type": "code",
-      "source_file": "features/onboarding/onboarding_profile.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "features_onboarding_onboarding_profile_reset",
-      "label": "reset",
-      "file_type": "code",
-      "source_file": "features/onboarding/onboarding_profile.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "features_onboarding_onboarding_profile_maybeof",
-      "label": "maybeOf",
-      "file_type": "code",
-      "source_file": "features/onboarding/onboarding_profile.dart",
       "source_location": null,
       "_origin": "ast"
     },
@@ -42374,150 +42094,6 @@
       "_origin": "ast"
     },
     {
-      "id": "features_nutrition_presentation_hydration_card",
-      "label": "hydration_card.dart",
-      "file_type": "code",
-      "source_file": "features/nutrition/presentation/hydration_card.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "features_nutrition_presentation_hydration_card_hydrationcard",
-      "label": "HydrationCard",
-      "file_type": "code",
-      "source_file": "features/nutrition/presentation/hydration_card.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "features_nutrition_presentation_hydration_card_hydrationcardstate",
-      "label": "_HydrationCardState",
-      "file_type": "code",
-      "source_file": "features/nutrition/presentation/hydration_card.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "features_nutrition_presentation_hydration_card_waterfoodid",
-      "label": "waterFoodId",
-      "file_type": "code",
-      "source_file": "features/nutrition/presentation/hydration_card.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "features_nutrition_presentation_hydration_card_waterfoodversion",
-      "label": "waterFoodVersion",
-      "file_type": "code",
-      "source_file": "features/nutrition/presentation/hydration_card.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "features_nutrition_presentation_hydration_card_language",
-      "label": "language",
-      "file_type": "code",
-      "source_file": "features/nutrition/presentation/hydration_card.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "features_nutrition_presentation_hydration_card_labels",
-      "label": "_labels",
-      "file_type": "code",
-      "source_file": "features/nutrition/presentation/hydration_card.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "features_nutrition_presentation_hydration_card_repository",
-      "label": "repository",
-      "file_type": "code",
-      "source_file": "features/nutrition/presentation/hydration_card.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "features_nutrition_presentation_hydration_card_changed",
-      "label": "changed",
-      "file_type": "code",
-      "source_file": "features/nutrition/presentation/hydration_card.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "features_nutrition_presentation_hydration_card_total",
-      "label": "total",
-      "file_type": "code",
-      "source_file": "features/nutrition/presentation/hydration_card.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "features_nutrition_presentation_hydration_card_busy",
-      "label": "busy",
-      "file_type": "code",
-      "source_file": "features/nutrition/presentation/hydration_card.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "features_nutrition_presentation_hydration_card_label",
-      "label": "_label",
-      "file_type": "code",
-      "source_file": "features/nutrition/presentation/hydration_card.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "features_nutrition_presentation_hydration_card_createstate",
-      "label": "createState",
-      "file_type": "code",
-      "source_file": "features/nutrition/presentation/hydration_card.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "features_nutrition_presentation_hydration_card_initstate",
-      "label": "initState",
-      "file_type": "code",
-      "source_file": "features/nutrition/presentation/hydration_card.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "features_nutrition_presentation_hydration_card_load",
-      "label": "load",
-      "file_type": "code",
-      "source_file": "features/nutrition/presentation/hydration_card.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "features_nutrition_presentation_hydration_card_add",
-      "label": "add",
-      "file_type": "code",
-      "source_file": "features/nutrition/presentation/hydration_card.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "features_nutrition_presentation_hydration_card_build",
-      "label": "build",
-      "file_type": "code",
-      "source_file": "features/nutrition/presentation/hydration_card.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "features_nutrition_presentation_hydration_card_button",
-      "label": "_button",
-      "file_type": "code",
-      "source_file": "features/nutrition/presentation/hydration_card.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
       "id": "shared_widgets_account_page",
       "label": "account_page.dart",
       "file_type": "code",
@@ -43854,142 +43430,6 @@
       "_origin": "ast"
     },
     {
-      "id": "features_legal_legal_documents",
-      "label": "legal_documents.dart",
-      "file_type": "code",
-      "source_file": "features/legal/legal_documents.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "features_legal_legal_documents_legaldocument",
-      "label": "LegalDocument",
-      "file_type": "code",
-      "source_file": "features/legal/legal_documents.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "features_legal_legal_documents_legaltexts",
-      "label": "LegalTexts",
-      "file_type": "code",
-      "source_file": "features/legal/legal_documents.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "features_legal_legal_documents_legalappversion",
-      "label": "legalAppVersion",
-      "file_type": "code",
-      "source_file": "features/legal/legal_documents.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "features_legal_legal_documents_legalpublicbase",
-      "label": "legalPublicBase",
-      "file_type": "code",
-      "source_file": "features/legal/legal_documents.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "features_legal_legal_documents_id",
-      "label": "id",
-      "file_type": "code",
-      "source_file": "features/legal/legal_documents.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "features_legal_legal_documents_version",
-      "label": "version",
-      "file_type": "code",
-      "source_file": "features/legal/legal_documents.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "features_legal_legal_documents_asset",
-      "label": "asset",
-      "file_type": "code",
-      "source_file": "features/legal/legal_documents.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "features_legal_legal_documents_titlekey",
-      "label": "titleKey",
-      "file_type": "code",
-      "source_file": "features/legal/legal_documents.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "features_legal_legal_documents_changeskey",
-      "label": "changesKey",
-      "file_type": "code",
-      "source_file": "features/legal/legal_documents.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "features_legal_legal_documents_publicurl",
-      "label": "publicUrl",
-      "file_type": "code",
-      "source_file": "features/legal/legal_documents.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "features_legal_legal_documents_termsdocument",
-      "label": "termsDocument",
-      "file_type": "code",
-      "source_file": "features/legal/legal_documents.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "features_legal_legal_documents_privacydocument",
-      "label": "privacyDocument",
-      "file_type": "code",
-      "source_file": "features/legal/legal_documents.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "features_legal_legal_documents_legaldocuments",
-      "label": "legalDocuments",
-      "file_type": "code",
-      "source_file": "features/legal/legal_documents.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "features_legal_legal_documents_healthconsentversion",
-      "label": "healthConsentVersion",
-      "file_type": "code",
-      "source_file": "features/legal/legal_documents.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "features_legal_legal_documents_sha",
-      "label": "_sha",
-      "file_type": "code",
-      "source_file": "features/legal/legal_documents.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "features_legal_legal_documents_text",
-      "label": "text",
-      "file_type": "code",
-      "source_file": "features/legal/legal_documents.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
       "id": "shared_widgets_evolution_preview",
       "label": "evolution_preview.dart",
       "file_type": "code",
@@ -44974,6 +44414,1094 @@
       "_origin": "ast"
     },
     {
+      "id": "package_trainforge_features_activity_presentation_evolution_source_dart",
+      "label": "package:trainforge/features/activity/presentation/evolution_source.dart",
+      "file_type": "code",
+      "source_file": null,
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_legal_legal_documents",
+      "label": "legal_documents.dart",
+      "file_type": "code",
+      "source_file": "features/legal/legal_documents.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_legal_legal_documents_legaldocument",
+      "label": "LegalDocument",
+      "file_type": "code",
+      "source_file": "features/legal/legal_documents.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_legal_legal_documents_legaltexts",
+      "label": "LegalTexts",
+      "file_type": "code",
+      "source_file": "features/legal/legal_documents.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_legal_legal_documents_legalappversion",
+      "label": "legalAppVersion",
+      "file_type": "code",
+      "source_file": "features/legal/legal_documents.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_legal_legal_documents_legalpublicbase",
+      "label": "legalPublicBase",
+      "file_type": "code",
+      "source_file": "features/legal/legal_documents.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_legal_legal_documents_id",
+      "label": "id",
+      "file_type": "code",
+      "source_file": "features/legal/legal_documents.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_legal_legal_documents_version",
+      "label": "version",
+      "file_type": "code",
+      "source_file": "features/legal/legal_documents.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_legal_legal_documents_asset",
+      "label": "asset",
+      "file_type": "code",
+      "source_file": "features/legal/legal_documents.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_legal_legal_documents_titlekey",
+      "label": "titleKey",
+      "file_type": "code",
+      "source_file": "features/legal/legal_documents.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_legal_legal_documents_changeskey",
+      "label": "changesKey",
+      "file_type": "code",
+      "source_file": "features/legal/legal_documents.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_legal_legal_documents_publicurl",
+      "label": "publicUrl",
+      "file_type": "code",
+      "source_file": "features/legal/legal_documents.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_legal_legal_documents_termsdocument",
+      "label": "termsDocument",
+      "file_type": "code",
+      "source_file": "features/legal/legal_documents.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_legal_legal_documents_privacydocument",
+      "label": "privacyDocument",
+      "file_type": "code",
+      "source_file": "features/legal/legal_documents.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_legal_legal_documents_legaldocuments",
+      "label": "legalDocuments",
+      "file_type": "code",
+      "source_file": "features/legal/legal_documents.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_legal_legal_documents_healthconsentversion",
+      "label": "healthConsentVersion",
+      "file_type": "code",
+      "source_file": "features/legal/legal_documents.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_legal_legal_documents_sha",
+      "label": "_sha",
+      "file_type": "code",
+      "source_file": "features/legal/legal_documents.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_legal_legal_documents_text",
+      "label": "text",
+      "file_type": "code",
+      "source_file": "features/legal/legal_documents.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_nutrition_domain_food_goals",
+      "label": "food_goals.dart",
+      "file_type": "code",
+      "source_file": "features/nutrition/domain/food_goals.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_nutrition_domain_food_goals_foodgoal",
+      "label": "FoodGoal",
+      "file_type": "code",
+      "source_file": "features/nutrition/domain/food_goals.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_nutrition_domain_food_goals_id",
+      "label": "id",
+      "file_type": "code",
+      "source_file": "features/nutrition/domain/food_goals.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_nutrition_domain_food_goals_meals",
+      "label": "meals",
+      "file_type": "code",
+      "source_file": "features/nutrition/domain/food_goals.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_nutrition_domain_food_goals_proteinperkg",
+      "label": "proteinPerKg",
+      "file_type": "code",
+      "source_file": "features/nutrition/domain/food_goals.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_nutrition_domain_food_goals_fromid",
+      "label": "fromId",
+      "file_type": "code",
+      "source_file": "features/nutrition/domain/food_goals.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_nutrition_domain_food_goals_proteingrams",
+      "label": "proteinGrams",
+      "file_type": "code",
+      "source_file": "features/nutrition/domain/food_goals.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_nutrition_domain_food_goals_waterml",
+      "label": "waterMl",
+      "file_type": "code",
+      "source_file": "features/nutrition/domain/food_goals.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_nutrition_presentation_food_board",
+      "label": "food_board.dart",
+      "file_type": "code",
+      "source_file": "features/nutrition/presentation/food_board.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_nutrition_presentation_food_board_foodboard",
+      "label": "FoodBoard",
+      "file_type": "code",
+      "source_file": "features/nutrition/presentation/food_board.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_nutrition_presentation_food_board_foodboardstate",
+      "label": "_FoodBoardState",
+      "file_type": "code",
+      "source_file": "features/nutrition/presentation/food_board.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_nutrition_presentation_food_board_card",
+      "label": "_Card",
+      "file_type": "code",
+      "source_file": "features/nutrition/presentation/food_board.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_nutrition_presentation_food_board_goalcard",
+      "label": "_GoalCard",
+      "file_type": "code",
+      "source_file": "features/nutrition/presentation/food_board.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_nutrition_presentation_food_board_progress",
+      "label": "_Progress",
+      "file_type": "code",
+      "source_file": "features/nutrition/presentation/food_board.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_nutrition_presentation_food_board_way",
+      "label": "_Way",
+      "file_type": "code",
+      "source_file": "features/nutrition/presentation/food_board.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_nutrition_presentation_food_board_dot",
+      "label": "_Dot",
+      "file_type": "code",
+      "source_file": "features/nutrition/presentation/food_board.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_nutrition_presentation_food_board_rings",
+      "label": "_Rings",
+      "file_type": "code",
+      "source_file": "features/nutrition/presentation/food_board.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_nutrition_presentation_food_board_controller",
+      "label": "controller",
+      "file_type": "code",
+      "source_file": "features/nutrition/presentation/food_board.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_nutrition_presentation_food_board_diary",
+      "label": "diary",
+      "file_type": "code",
+      "source_file": "features/nutrition/presentation/food_board.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_nutrition_presentation_food_board_opennutrition",
+      "label": "openNutrition",
+      "file_type": "code",
+      "source_file": "features/nutrition/presentation/food_board.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_nutrition_presentation_food_board_openphoto",
+      "label": "openPhoto",
+      "file_type": "code",
+      "source_file": "features/nutrition/presentation/food_board.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_nutrition_presentation_food_board_loop",
+      "label": "loop",
+      "file_type": "code",
+      "source_file": "features/nutrition/presentation/food_board.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_nutrition_presentation_food_board_started",
+      "label": "_started",
+      "file_type": "code",
+      "source_file": "features/nutrition/presentation/food_board.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_nutrition_presentation_food_board_water",
+      "label": "water",
+      "file_type": "code",
+      "source_file": "features/nutrition/presentation/food_board.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "int_meals",
+      "label": "int? meals,",
+      "file_type": "code",
+      "source_file": null,
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_nutrition_presentation_food_board_seensummary",
+      "label": "_seenSummary",
+      "file_type": "code",
+      "source_file": "features/nutrition/presentation/food_board.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_nutrition_presentation_food_board_null",
+      "label": "null",
+      "file_type": "code",
+      "source_file": "features/nutrition/presentation/food_board.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_nutrition_presentation_food_board_waterblue",
+      "label": "_waterBlue",
+      "file_type": "code",
+      "source_file": "features/nutrition/presentation/food_board.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_nutrition_presentation_food_board_child",
+      "label": "child",
+      "file_type": "code",
+      "source_file": "features/nutrition/presentation/food_board.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_nutrition_presentation_food_board_border",
+      "label": "border",
+      "file_type": "code",
+      "source_file": "features/nutrition/presentation/food_board.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_nutrition_presentation_food_board_icon",
+      "label": "icon",
+      "file_type": "code",
+      "source_file": "features/nutrition/presentation/food_board.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_nutrition_presentation_food_board_label",
+      "label": "label",
+      "file_type": "code",
+      "source_file": "features/nutrition/presentation/food_board.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_nutrition_presentation_food_board_selected",
+      "label": "selected",
+      "file_type": "code",
+      "source_file": "features/nutrition/presentation/food_board.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_nutrition_presentation_food_board_ontap",
+      "label": "onTap",
+      "file_type": "code",
+      "source_file": "features/nutrition/presentation/food_board.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_nutrition_presentation_food_board_tall",
+      "label": "tall",
+      "file_type": "code",
+      "source_file": "features/nutrition/presentation/food_board.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_nutrition_presentation_food_board_value",
+      "label": "value",
+      "file_type": "code",
+      "source_file": "features/nutrition/presentation/food_board.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_nutrition_presentation_food_board_unit",
+      "label": "unit",
+      "file_type": "code",
+      "source_file": "features/nutrition/presentation/food_board.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "string_target",
+      "label": "String? target,",
+      "file_type": "code",
+      "source_file": null,
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_nutrition_presentation_food_board_share",
+      "label": "share",
+      "file_type": "code",
+      "source_file": "features/nutrition/presentation/food_board.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_nutrition_presentation_food_board_color",
+      "label": "color",
+      "file_type": "code",
+      "source_file": "features/nutrition/presentation/food_board.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_nutrition_presentation_food_board_target",
+      "label": "target",
+      "file_type": "code",
+      "source_file": "features/nutrition/presentation/food_board.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_nutrition_presentation_food_board_pulse",
+      "label": "pulse",
+      "file_type": "code",
+      "source_file": "features/nutrition/presentation/food_board.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_nutrition_presentation_food_board_waterpulse",
+      "label": "waterPulse",
+      "file_type": "code",
+      "source_file": "features/nutrition/presentation/food_board.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_nutrition_presentation_food_board_track",
+      "label": "track",
+      "file_type": "code",
+      "source_file": "features/nutrition/presentation/food_board.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "color_green",
+      "label": "Color green,",
+      "file_type": "code",
+      "source_file": null,
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_nutrition_presentation_food_board_createstate",
+      "label": "createState",
+      "file_type": "code",
+      "source_file": "features/nutrition/presentation/food_board.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_nutrition_presentation_food_board_initstate",
+      "label": "initState",
+      "file_type": "code",
+      "source_file": "features/nutrition/presentation/food_board.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_nutrition_presentation_food_board_didchangedependencies",
+      "label": "didChangeDependencies",
+      "file_type": "code",
+      "source_file": "features/nutrition/presentation/food_board.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_nutrition_presentation_food_board_dispose",
+      "label": "dispose",
+      "file_type": "code",
+      "source_file": "features/nutrition/presentation/food_board.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_nutrition_presentation_food_board_summarychanged",
+      "label": "_summaryChanged",
+      "file_type": "code",
+      "source_file": "features/nutrition/presentation/food_board.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_nutrition_presentation_food_board_loadmeals",
+      "label": "loadMeals",
+      "file_type": "code",
+      "source_file": "features/nutrition/presentation/food_board.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_nutrition_presentation_food_board_wave",
+      "label": "wave",
+      "file_type": "code",
+      "source_file": "features/nutrition/presentation/food_board.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_nutrition_presentation_food_board_build",
+      "label": "build",
+      "file_type": "code",
+      "source_file": "features/nutrition/presentation/food_board.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_nutrition_presentation_food_board_goals",
+      "label": "_goals",
+      "file_type": "code",
+      "source_file": "features/nutrition/presentation/food_board.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_nutrition_presentation_food_board_protein",
+      "label": "_protein",
+      "file_type": "code",
+      "source_file": "features/nutrition/presentation/food_board.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_nutrition_presentation_food_board_paint",
+      "label": "paint",
+      "file_type": "code",
+      "source_file": "features/nutrition/presentation/food_board.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_nutrition_presentation_food_board_shouldrepaint",
+      "label": "shouldRepaint",
+      "file_type": "code",
+      "source_file": "features/nutrition/presentation/food_board.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "package_trainforge_features_nutrition_domain_food_goals_dart",
+      "label": "package:trainforge/features/nutrition/domain/food_goals.dart",
+      "file_type": "code",
+      "source_file": null,
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_nutrition_presentation_hydration_card",
+      "label": "hydration_card.dart",
+      "file_type": "code",
+      "source_file": "features/nutrition/presentation/hydration_card.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_nutrition_presentation_hydration_card_hydrationcard",
+      "label": "HydrationCard",
+      "file_type": "code",
+      "source_file": "features/nutrition/presentation/hydration_card.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_nutrition_presentation_hydration_card_hydrationcardstate",
+      "label": "_HydrationCardState",
+      "file_type": "code",
+      "source_file": "features/nutrition/presentation/hydration_card.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_nutrition_presentation_hydration_card_waterfoodid",
+      "label": "waterFoodId",
+      "file_type": "code",
+      "source_file": "features/nutrition/presentation/hydration_card.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_nutrition_presentation_hydration_card_waterfoodversion",
+      "label": "waterFoodVersion",
+      "file_type": "code",
+      "source_file": "features/nutrition/presentation/hydration_card.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_nutrition_presentation_hydration_card_language",
+      "label": "language",
+      "file_type": "code",
+      "source_file": "features/nutrition/presentation/hydration_card.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_nutrition_presentation_hydration_card_labels",
+      "label": "_labels",
+      "file_type": "code",
+      "source_file": "features/nutrition/presentation/hydration_card.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_nutrition_presentation_hydration_card_repository",
+      "label": "repository",
+      "file_type": "code",
+      "source_file": "features/nutrition/presentation/hydration_card.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_nutrition_presentation_hydration_card_changed",
+      "label": "changed",
+      "file_type": "code",
+      "source_file": "features/nutrition/presentation/hydration_card.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_nutrition_presentation_hydration_card_compact",
+      "label": "compact",
+      "file_type": "code",
+      "source_file": "features/nutrition/presentation/hydration_card.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_nutrition_presentation_hydration_card_goalml",
+      "label": "goalMl",
+      "file_type": "code",
+      "source_file": "features/nutrition/presentation/hydration_card.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_nutrition_presentation_hydration_card_ontotal",
+      "label": "onTotal",
+      "file_type": "code",
+      "source_file": "features/nutrition/presentation/hydration_card.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_nutrition_presentation_hydration_card_total",
+      "label": "total",
+      "file_type": "code",
+      "source_file": "features/nutrition/presentation/hydration_card.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_nutrition_presentation_hydration_card_busy",
+      "label": "busy",
+      "file_type": "code",
+      "source_file": "features/nutrition/presentation/hydration_card.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_nutrition_presentation_hydration_card_drop",
+      "label": "_drop",
+      "file_type": "code",
+      "source_file": "features/nutrition/presentation/hydration_card.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_nutrition_presentation_hydration_card_label",
+      "label": "_label",
+      "file_type": "code",
+      "source_file": "features/nutrition/presentation/hydration_card.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_nutrition_presentation_hydration_card_createstate",
+      "label": "createState",
+      "file_type": "code",
+      "source_file": "features/nutrition/presentation/hydration_card.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_nutrition_presentation_hydration_card_initstate",
+      "label": "initState",
+      "file_type": "code",
+      "source_file": "features/nutrition/presentation/hydration_card.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_nutrition_presentation_hydration_card_load",
+      "label": "load",
+      "file_type": "code",
+      "source_file": "features/nutrition/presentation/hydration_card.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_nutrition_presentation_hydration_card_add",
+      "label": "add",
+      "file_type": "code",
+      "source_file": "features/nutrition/presentation/hydration_card.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_nutrition_presentation_hydration_card_build",
+      "label": "build",
+      "file_type": "code",
+      "source_file": "features/nutrition/presentation/hydration_card.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_nutrition_presentation_hydration_card_button",
+      "label": "_button",
+      "file_type": "code",
+      "source_file": "features/nutrition/presentation/hydration_card.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_onboarding_onboarding_profile",
+      "label": "onboarding_profile.dart",
+      "file_type": "code",
+      "source_file": "features/onboarding/onboarding_profile.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_onboarding_onboarding_profile_onboardingprofile",
+      "label": "OnboardingProfile",
+      "file_type": "code",
+      "source_file": "features/onboarding/onboarding_profile.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_onboarding_onboarding_profile_onboardingstore",
+      "label": "OnboardingStore",
+      "file_type": "code",
+      "source_file": "features/onboarding/onboarding_profile.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_onboarding_onboarding_profile_secureonboardingstore",
+      "label": "SecureOnboardingStore",
+      "file_type": "code",
+      "source_file": "features/onboarding/onboarding_profile.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_onboarding_onboarding_profile_memoryonboardingstore",
+      "label": "MemoryOnboardingStore",
+      "file_type": "code",
+      "source_file": "features/onboarding/onboarding_profile.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_onboarding_onboarding_profile_onboardingcontroller",
+      "label": "OnboardingController",
+      "file_type": "code",
+      "source_file": "features/onboarding/onboarding_profile.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_onboarding_onboarding_profile_onboardingscope",
+      "label": "OnboardingScope",
+      "file_type": "code",
+      "source_file": "features/onboarding/onboarding_profile.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_onboarding_onboarding_profile_gender",
+      "label": "gender",
+      "file_type": "code",
+      "source_file": "features/onboarding/onboarding_profile.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_onboarding_onboarding_profile_weightkg",
+      "label": "weightKg",
+      "file_type": "code",
+      "source_file": "features/onboarding/onboarding_profile.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_onboarding_onboarding_profile_places",
+      "label": "places",
+      "file_type": "code",
+      "source_file": "features/onboarding/onboarding_profile.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_onboarding_onboarding_profile_confidence",
+      "label": "confidence",
+      "file_type": "code",
+      "source_file": "features/onboarding/onboarding_profile.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_onboarding_onboarding_profile_completedat",
+      "label": "completedAt",
+      "file_type": "code",
+      "source_file": "features/onboarding/onboarding_profile.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_onboarding_onboarding_profile_foodgoal",
+      "label": "foodGoal",
+      "file_type": "code",
+      "source_file": "features/onboarding/onboarding_profile.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_onboarding_onboarding_profile_genders",
+      "label": "genders",
+      "file_type": "code",
+      "source_file": "features/onboarding/onboarding_profile.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_onboarding_onboarding_profile_foodgoals",
+      "label": "foodGoals",
+      "file_type": "code",
+      "source_file": "features/onboarding/onboarding_profile.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_onboarding_onboarding_profile_placeids",
+      "label": "placeIds",
+      "file_type": "code",
+      "source_file": "features/onboarding/onboarding_profile.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_onboarding_onboarding_profile_confidences",
+      "label": "confidences",
+      "file_type": "code",
+      "source_file": "features/onboarding/onboarding_profile.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_onboarding_onboarding_profile_completed",
+      "label": "completed",
+      "file_type": "code",
+      "source_file": "features/onboarding/onboarding_profile.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_onboarding_onboarding_profile_storage",
+      "label": "_storage",
+      "file_type": "code",
+      "source_file": "features/onboarding/onboarding_profile.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_onboarding_onboarding_profile_prefix",
+      "label": "_prefix",
+      "file_type": "code",
+      "source_file": "features/onboarding/onboarding_profile.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_onboarding_onboarding_profile_values",
+      "label": "values",
+      "file_type": "code",
+      "source_file": "features/onboarding/onboarding_profile.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_onboarding_onboarding_profile_store",
+      "label": "store",
+      "file_type": "code",
+      "source_file": "features/onboarding/onboarding_profile.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_onboarding_onboarding_profile_profiles",
+      "label": "_profiles",
+      "file_type": "code",
+      "source_file": "features/onboarding/onboarding_profile.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_onboarding_onboarding_profile_loading",
+      "label": "_loading",
+      "file_type": "code",
+      "source_file": "features/onboarding/onboarding_profile.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_onboarding_onboarding_profile_accountid",
+      "label": "accountId",
+      "file_type": "code",
+      "source_file": "features/onboarding/onboarding_profile.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_onboarding_onboarding_profile_profile",
+      "label": "profile",
+      "file_type": "code",
+      "source_file": "features/onboarding/onboarding_profile.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_onboarding_onboarding_profile_cellfor",
+      "label": "cellFor",
+      "file_type": "code",
+      "source_file": "features/onboarding/onboarding_profile.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_onboarding_onboarding_profile_copywith",
+      "label": "copyWith",
+      "file_type": "code",
+      "source_file": "features/onboarding/onboarding_profile.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_onboarding_onboarding_profile_tojson",
+      "label": "toJson",
+      "file_type": "code",
+      "source_file": "features/onboarding/onboarding_profile.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_onboarding_onboarding_profile_fromjson",
+      "label": "fromJson",
+      "file_type": "code",
+      "source_file": "features/onboarding/onboarding_profile.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_onboarding_onboarding_profile_read",
+      "label": "read",
+      "file_type": "code",
+      "source_file": "features/onboarding/onboarding_profile.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_onboarding_onboarding_profile_write",
+      "label": "write",
+      "file_type": "code",
+      "source_file": "features/onboarding/onboarding_profile.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_onboarding_onboarding_profile_loaded",
+      "label": "loaded",
+      "file_type": "code",
+      "source_file": "features/onboarding/onboarding_profile.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_onboarding_onboarding_profile_load",
+      "label": "load",
+      "file_type": "code",
+      "source_file": "features/onboarding/onboarding_profile.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_onboarding_onboarding_profile_save",
+      "label": "save",
+      "file_type": "code",
+      "source_file": "features/onboarding/onboarding_profile.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_onboarding_onboarding_profile_reset",
+      "label": "reset",
+      "file_type": "code",
+      "source_file": "features/onboarding/onboarding_profile.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_onboarding_onboarding_profile_maybeof",
+      "label": "maybeOf",
+      "file_type": "code",
+      "source_file": "features/onboarding/onboarding_profile.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "features_onboarding_onboarding_profile_savefoodgoal",
+      "label": "saveFoodGoal",
+      "file_type": "code",
+      "source_file": "features/onboarding/onboarding_profile.dart",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
       "id": "shared_widgets_product_overviews",
       "label": "product_overviews.dart",
       "file_type": "code",
@@ -44984,14 +45512,6 @@
     {
       "id": "shared_widgets_product_overviews_dailyoverview",
       "label": "DailyOverview",
-      "file_type": "code",
-      "source_file": "shared/widgets/product_overviews.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "shared_widgets_product_overviews_quickbutton",
-      "label": "_QuickButton",
       "file_type": "code",
       "source_file": "shared/widgets/product_overviews.dart",
       "source_location": null,
@@ -45062,40 +45582,8 @@
       "_origin": "ast"
     },
     {
-      "id": "shared_widgets_product_overviews_hydration",
-      "label": "hydration",
-      "file_type": "code",
-      "source_file": "shared/widgets/product_overviews.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "shared_widgets_product_overviews_icon",
-      "label": "icon",
-      "file_type": "code",
-      "source_file": "shared/widgets/product_overviews.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "shared_widgets_product_overviews_label",
-      "label": "label",
-      "file_type": "code",
-      "source_file": "shared/widgets/product_overviews.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "shared_widgets_product_overviews_color",
-      "label": "color",
-      "file_type": "code",
-      "source_file": "shared/widgets/product_overviews.dart",
-      "source_location": null,
-      "_origin": "ast"
-    },
-    {
-      "id": "shared_widgets_product_overviews_ontap",
-      "label": "onTap",
+      "id": "shared_widgets_product_overviews_diary",
+      "label": "diary",
       "file_type": "code",
       "source_file": "shared/widgets/product_overviews.dart",
       "source_location": null,
@@ -45150,8 +45638,8 @@
       "_origin": "ast"
     },
     {
-      "id": "package_trainforge_features_activity_presentation_evolution_source_dart",
-      "label": "package:trainforge/features/activity/presentation/evolution_source.dart",
+      "id": "package_trainforge_features_nutrition_presentation_food_board_dart",
+      "label": "package:trainforge/features/nutrition/presentation/food_board.dart",
       "file_type": "code",
       "source_file": null,
       "source_location": null,
@@ -46160,6 +46648,17 @@
       "relation": "inherits",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
+      "source_file": "features/nutrition/presentation/food_board.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "features_nutrition_presentation_food_board_foodboardstate",
+      "target": "state"
+    },
+    {
+      "relation": "inherits",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
       "source_file": "features/nutrition/presentation/food_contribution_page.dart",
       "source_location": null,
       "weight": 1.0,
@@ -46633,6 +47132,17 @@
       "relation": "inherits",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
+      "source_file": "features/nutrition/presentation/food_board.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "features_nutrition_presentation_food_board_foodboard",
+      "target": "statefulwidget"
+    },
+    {
+      "relation": "inherits",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
       "source_file": "features/nutrition/presentation/food_contribution_page.dart",
       "source_location": null,
       "weight": 1.0,
@@ -46932,6 +47442,18 @@
       "relation": "references",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
+      "source_file": "features/nutrition/presentation/food_board.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "context": "variable_type",
+      "_origin": "ast",
+      "source": "features_nutrition_presentation_food_board",
+      "target": "widget"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
       "source_file": "shared/widgets/draft_guard.dart",
       "source_location": null,
       "weight": 1.0,
@@ -46974,18 +47496,6 @@
       "context": "variable_type",
       "_origin": "ast",
       "source": "shared_widgets_glass_surface",
-      "target": "widget"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "shared/widgets/product_overviews.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "context": "variable_type",
-      "_origin": "ast",
-      "source": "shared_widgets_product_overviews",
       "target": "widget"
     },
     {
@@ -48131,6 +48641,17 @@
       "relation": "imports",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
+      "source_file": "features/nutrition/presentation/food_board.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "features_nutrition_presentation_food_board",
+      "target": "package_flutter_material_dart"
+    },
+    {
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
       "source_file": "features/nutrition/presentation/food_contribution_page.dart",
       "source_location": null,
       "weight": 1.0,
@@ -48780,6 +49301,61 @@
       "relation": "inherits",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
+      "source_file": "features/nutrition/presentation/food_board.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "features_nutrition_presentation_food_board_card",
+      "target": "statelesswidget"
+    },
+    {
+      "relation": "inherits",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/nutrition/presentation/food_board.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "features_nutrition_presentation_food_board_dot",
+      "target": "statelesswidget"
+    },
+    {
+      "relation": "inherits",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/nutrition/presentation/food_board.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "features_nutrition_presentation_food_board_goalcard",
+      "target": "statelesswidget"
+    },
+    {
+      "relation": "inherits",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/nutrition/presentation/food_board.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "features_nutrition_presentation_food_board_progress",
+      "target": "statelesswidget"
+    },
+    {
+      "relation": "inherits",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/nutrition/presentation/food_board.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "features_nutrition_presentation_food_board_way",
+      "target": "statelesswidget"
+    },
+    {
+      "relation": "inherits",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
       "source_file": "features/nutrition/presentation/nutrition_facts.dart",
       "source_location": null,
       "weight": 1.0,
@@ -49253,17 +49829,6 @@
       "relation": "inherits",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
-      "source_file": "shared/widgets/product_overviews.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "shared_widgets_product_overviews_quickbutton",
-      "target": "statelesswidget"
-    },
-    {
-      "relation": "inherits",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
       "source_file": "shared/widgets/startup_page.dart",
       "source_location": null,
       "weight": 1.0,
@@ -49304,6 +49869,18 @@
       "context": "variable_type",
       "_origin": "ast",
       "source": "features_legal_presentation_legal_pages",
+      "target": "valuechanged"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/nutrition/presentation/hydration_card.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "context": "variable_type",
+      "_origin": "ast",
+      "source": "features_nutrition_presentation_hydration_card",
       "target": "valuechanged"
     },
     {
@@ -49544,6 +50121,18 @@
       "context": "variable_type",
       "_origin": "ast",
       "source": "features_nutrition_domain_nutrition",
+      "target": "list"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/nutrition/presentation/food_board.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "context": "variable_type",
+      "_origin": "ast",
+      "source": "features_nutrition_presentation_food_board",
       "target": "list"
     },
     {
@@ -52073,6 +52662,18 @@
       "relation": "references",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
+      "source_file": "features/nutrition/presentation/food_board.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "context": "variable_type",
+      "_origin": "ast",
+      "source": "features_nutrition_presentation_food_board",
+      "target": "return"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
       "source_file": "features/nutrition/presentation/nutrition_forms.dart",
       "source_location": null,
       "weight": 1.0,
@@ -54352,6 +54953,17 @@
       "relation": "imports",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
+      "source_file": "features/nutrition/presentation/food_board.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "features_nutrition_presentation_food_board",
+      "target": "dart_math"
+    },
+    {
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
       "source_file": "features/onboarding/welcome_animation.dart",
       "source_location": null,
       "weight": 1.0,
@@ -55013,6 +55625,17 @@
       "relation": "imports",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
+      "source_file": "features/nutrition/presentation/food_board.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "features_nutrition_presentation_food_board",
+      "target": "package_trainforge_core_theme_trainforge_theme_dart"
+    },
+    {
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
       "source_file": "features/nutrition/presentation/hydration_card.dart",
       "source_location": null,
       "weight": 1.0,
@@ -55128,17 +55751,6 @@
       "weight": 1.0,
       "_origin": "ast",
       "source": "shared_widgets_glass_sheet",
-      "target": "package_trainforge_core_theme_trainforge_theme_dart"
-    },
-    {
-      "relation": "imports",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "shared/widgets/product_overviews.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "shared_widgets_product_overviews",
       "target": "package_trainforge_core_theme_trainforge_theme_dart"
     },
     {
@@ -55683,6 +56295,18 @@
       "relation": "references",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
+      "source_file": "features/nutrition/presentation/food_board.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "context": "variable_type",
+      "_origin": "ast",
+      "source": "features_nutrition_presentation_food_board",
+      "target": "nutritionrepository"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
       "source_file": "features/nutrition/presentation/hydration_card.dart",
       "source_location": null,
       "weight": 1.0,
@@ -55809,6 +56433,18 @@
       "context": "type_lookup",
       "_origin": "ast",
       "source": "features_nutrition_presentation_entry_detail_page",
+      "target": "json"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/nutrition/presentation/food_board.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "context": "variable_type",
+      "_origin": "ast",
+      "source": "features_nutrition_presentation_food_board",
       "target": "json"
     },
     {
@@ -56065,6 +56701,17 @@
       "relation": "imports",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
+      "source_file": "features/nutrition/presentation/food_board.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "features_nutrition_presentation_food_board",
+      "target": "package_trainforge_features_nutrition_domain_nutrition_dart"
+    },
+    {
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
       "source_file": "features/nutrition/presentation/hydration_card.dart",
       "source_location": null,
       "weight": 1.0,
@@ -56137,6 +56784,18 @@
       "_origin": "ast",
       "source": "shared_widgets_auth_gate",
       "target": "product_shell_dart"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/nutrition/presentation/food_board.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "context": "variable_type",
+      "_origin": "ast",
+      "source": "features_nutrition_presentation_food_board",
+      "target": "string_label"
     },
     {
       "relation": "references",
@@ -56250,6 +56909,18 @@
       "relation": "references",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
+      "source_file": "features/nutrition/presentation/food_board.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "context": "variable_type",
+      "_origin": "ast",
+      "source": "features_nutrition_presentation_food_board",
+      "target": "color"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
       "source_file": "features/onboarding/onboarding_page.dart",
       "source_location": null,
       "weight": 1.0,
@@ -56322,18 +56993,6 @@
       "relation": "references",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
-      "source_file": "shared/widgets/product_overviews.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "context": "variable_type",
-      "_origin": "ast",
-      "source": "shared_widgets_product_overviews",
-      "target": "color"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
       "source_file": "features/activity/presentation/evolution_source.dart",
       "source_location": null,
       "weight": 1.0,
@@ -56400,6 +57059,18 @@
       "context": "variable_type",
       "_origin": "ast",
       "source": "features_legal_presentation_staggered_entrance",
+      "target": "voidcallback"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/nutrition/presentation/food_board.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "context": "variable_type",
+      "_origin": "ast",
+      "source": "features_nutrition_presentation_food_board",
       "target": "voidcallback"
     },
     {
@@ -56550,18 +57221,6 @@
       "relation": "references",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
-      "source_file": "shared/widgets/product_overviews.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "context": "variable_type",
-      "_origin": "ast",
-      "source": "shared_widgets_product_overviews",
-      "target": "voidcallback"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
       "source_file": "shared/widgets/workouts_overview.dart",
       "source_location": null,
       "weight": 1.0,
@@ -56667,6 +57326,17 @@
       "relation": "imports",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
+      "source_file": "features/nutrition/presentation/food_board.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "features_nutrition_presentation_food_board",
+      "target": "package_trainforge_features_nutrition_presentation_daily_summary_controller_dart"
+    },
+    {
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
       "source_file": "shared/widgets/product_overviews.dart",
       "source_location": null,
       "weight": 1.0,
@@ -56695,6 +57365,17 @@
       "_origin": "ast",
       "source": "shared_widgets_product_shell",
       "target": "account_page_dart"
+    },
+    {
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "shared/widgets/product_overviews.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "shared_widgets_product_overviews",
+      "target": "figma_bottom_nav_dart"
     },
     {
       "relation": "imports",
@@ -56851,6 +57532,17 @@
       "weight": 1.0,
       "_origin": "ast",
       "source": "core_motion_app_motion_appappearstate",
+      "target": "singletickerproviderstatemixin"
+    },
+    {
+      "relation": "mixes_in",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/nutrition/presentation/food_board.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "features_nutrition_presentation_food_board_foodboardstate",
       "target": "singletickerproviderstatemixin"
     },
     {
@@ -57688,6 +58380,18 @@
       "context": "variable_type",
       "_origin": "ast",
       "source": "features_home_presentation_pages_today_page",
+      "target": "dailysummarycontroller"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/nutrition/presentation/food_board.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "context": "variable_type",
+      "_origin": "ast",
+      "source": "features_nutrition_presentation_food_board",
       "target": "dailysummarycontroller"
     },
     {
@@ -58928,6 +59632,18 @@
       "_origin": "ast",
       "source": "shared_widgets_product_shell",
       "target": "package_trainforge_composition_app_dependency_scope_dart"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "shared/widgets/product_shell.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "context": "variable_type",
+      "_origin": "ast",
+      "source": "shared_widgets_product_shell",
+      "target": "trainforgedestination"
     },
     {
       "relation": "imports",
@@ -73606,6 +74322,17 @@
       "relation": "inherits",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
+      "source_file": "features/nutrition/presentation/food_board.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "features_nutrition_presentation_food_board_rings",
+      "target": "custompainter"
+    },
+    {
+      "relation": "inherits",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
       "source_file": "shared/widgets/evolution_preview.dart",
       "source_location": null,
       "weight": 1.0,
@@ -75441,6 +76168,18 @@
       "context": "variable_type",
       "_origin": "ast",
       "source": "features_food_reference_presentation_catalog_tools_page",
+      "target": "double"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/nutrition/presentation/food_board.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "context": "variable_type",
+      "_origin": "ast",
+      "source": "features_nutrition_presentation_food_board",
       "target": "double"
     },
     {
@@ -81243,6 +81982,17 @@
       "relation": "imports",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
+      "source_file": "features/nutrition/presentation/food_board.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "features_nutrition_presentation_food_board",
+      "target": "package_trainforge_features_onboarding_onboarding_profile_dart"
+    },
+    {
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
       "source_file": "shared/widgets/auth_gate.dart",
       "source_location": null,
       "weight": 1.0,
@@ -81314,6 +82064,17 @@
       "weight": 1.0,
       "_origin": "ast",
       "source": "features_home_presentation_widgets_home_cards",
+      "target": "package_trainforge_shared_widgets_glass_surface_dart"
+    },
+    {
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/nutrition/presentation/food_board.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "features_nutrition_presentation_food_board",
       "target": "package_trainforge_shared_widgets_glass_surface_dart"
     },
     {
@@ -82001,6 +82762,18 @@
       "relation": "references",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
+      "source_file": "features/nutrition/presentation/food_board.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "context": "variable_type",
+      "_origin": "ast",
+      "source": "features_nutrition_presentation_food_board",
+      "target": "icondata"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
       "source_file": "shared/widgets/evolution_preview.dart",
       "source_location": null,
       "weight": 1.0,
@@ -82049,392 +82822,6 @@
       "relation": "references",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
-      "source_file": "shared/widgets/product_overviews.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "context": "variable_type",
-      "_origin": "ast",
-      "source": "shared_widgets_product_overviews",
-      "target": "icondata"
-    },
-    {
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/onboarding/onboarding_profile.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "features_onboarding_onboarding_profile",
-      "target": "features_onboarding_onboarding_profile_accountid"
-    },
-    {
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/onboarding/onboarding_profile.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "features_onboarding_onboarding_profile",
-      "target": "features_onboarding_onboarding_profile_cellfor"
-    },
-    {
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/onboarding/onboarding_profile.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "features_onboarding_onboarding_profile",
-      "target": "features_onboarding_onboarding_profile_completed"
-    },
-    {
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/onboarding/onboarding_profile.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "features_onboarding_onboarding_profile",
-      "target": "features_onboarding_onboarding_profile_completedat"
-    },
-    {
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/onboarding/onboarding_profile.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "features_onboarding_onboarding_profile",
-      "target": "features_onboarding_onboarding_profile_confidence"
-    },
-    {
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/onboarding/onboarding_profile.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "features_onboarding_onboarding_profile",
-      "target": "features_onboarding_onboarding_profile_confidences"
-    },
-    {
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/onboarding/onboarding_profile.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "features_onboarding_onboarding_profile",
-      "target": "features_onboarding_onboarding_profile_copywith"
-    },
-    {
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/onboarding/onboarding_profile.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "features_onboarding_onboarding_profile",
-      "target": "features_onboarding_onboarding_profile_fromjson"
-    },
-    {
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/onboarding/onboarding_profile.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "features_onboarding_onboarding_profile",
-      "target": "features_onboarding_onboarding_profile_gender"
-    },
-    {
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/onboarding/onboarding_profile.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "features_onboarding_onboarding_profile",
-      "target": "features_onboarding_onboarding_profile_genders"
-    },
-    {
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/onboarding/onboarding_profile.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "features_onboarding_onboarding_profile",
-      "target": "features_onboarding_onboarding_profile_load"
-    },
-    {
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/onboarding/onboarding_profile.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "features_onboarding_onboarding_profile",
-      "target": "features_onboarding_onboarding_profile_loaded"
-    },
-    {
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/onboarding/onboarding_profile.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "features_onboarding_onboarding_profile",
-      "target": "features_onboarding_onboarding_profile_loading"
-    },
-    {
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/onboarding/onboarding_profile.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "features_onboarding_onboarding_profile",
-      "target": "features_onboarding_onboarding_profile_maybeof"
-    },
-    {
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/onboarding/onboarding_profile.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "features_onboarding_onboarding_profile",
-      "target": "features_onboarding_onboarding_profile_memoryonboardingstore"
-    },
-    {
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/onboarding/onboarding_profile.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "features_onboarding_onboarding_profile",
-      "target": "features_onboarding_onboarding_profile_onboardingcontroller"
-    },
-    {
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/onboarding/onboarding_profile.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "features_onboarding_onboarding_profile",
-      "target": "features_onboarding_onboarding_profile_onboardingprofile"
-    },
-    {
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/onboarding/onboarding_profile.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "features_onboarding_onboarding_profile",
-      "target": "features_onboarding_onboarding_profile_onboardingscope"
-    },
-    {
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/onboarding/onboarding_profile.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "features_onboarding_onboarding_profile",
-      "target": "features_onboarding_onboarding_profile_onboardingstore"
-    },
-    {
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/onboarding/onboarding_profile.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "features_onboarding_onboarding_profile",
-      "target": "features_onboarding_onboarding_profile_placeids"
-    },
-    {
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/onboarding/onboarding_profile.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "features_onboarding_onboarding_profile",
-      "target": "features_onboarding_onboarding_profile_places"
-    },
-    {
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/onboarding/onboarding_profile.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "features_onboarding_onboarding_profile",
-      "target": "features_onboarding_onboarding_profile_prefix"
-    },
-    {
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/onboarding/onboarding_profile.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "features_onboarding_onboarding_profile",
-      "target": "features_onboarding_onboarding_profile_profile"
-    },
-    {
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/onboarding/onboarding_profile.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "features_onboarding_onboarding_profile",
-      "target": "features_onboarding_onboarding_profile_profiles"
-    },
-    {
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/onboarding/onboarding_profile.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "features_onboarding_onboarding_profile",
-      "target": "features_onboarding_onboarding_profile_read"
-    },
-    {
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/onboarding/onboarding_profile.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "features_onboarding_onboarding_profile",
-      "target": "features_onboarding_onboarding_profile_reset"
-    },
-    {
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/onboarding/onboarding_profile.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "features_onboarding_onboarding_profile",
-      "target": "features_onboarding_onboarding_profile_save"
-    },
-    {
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/onboarding/onboarding_profile.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "features_onboarding_onboarding_profile",
-      "target": "features_onboarding_onboarding_profile_secureonboardingstore"
-    },
-    {
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/onboarding/onboarding_profile.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "features_onboarding_onboarding_profile",
-      "target": "features_onboarding_onboarding_profile_storage"
-    },
-    {
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/onboarding/onboarding_profile.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "features_onboarding_onboarding_profile",
-      "target": "features_onboarding_onboarding_profile_store"
-    },
-    {
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/onboarding/onboarding_profile.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "features_onboarding_onboarding_profile",
-      "target": "features_onboarding_onboarding_profile_tojson"
-    },
-    {
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/onboarding/onboarding_profile.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "features_onboarding_onboarding_profile",
-      "target": "features_onboarding_onboarding_profile_values"
-    },
-    {
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/onboarding/onboarding_profile.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "features_onboarding_onboarding_profile",
-      "target": "features_onboarding_onboarding_profile_weightkg"
-    },
-    {
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/onboarding/onboarding_profile.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "features_onboarding_onboarding_profile",
-      "target": "features_onboarding_onboarding_profile_write"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
       "source_file": "features/onboarding/onboarding_profile.dart",
       "source_location": null,
       "weight": 1.0,
@@ -82454,51 +82841,6 @@
       "_origin": "ast",
       "source": "features_onboarding_onboarding_profile",
       "target": "onboardingprofile_get"
-    },
-    {
-      "relation": "implements",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/onboarding/onboarding_profile.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "features_onboarding_onboarding_profile_memoryonboardingstore",
-      "target": "features_onboarding_onboarding_profile_onboardingstore"
-    },
-    {
-      "relation": "implements",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/onboarding/onboarding_profile.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "features_onboarding_onboarding_profile_secureonboardingstore",
-      "target": "features_onboarding_onboarding_profile_onboardingstore"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/onboarding/onboarding_profile.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "features_onboarding_onboarding_profile_onboardingscope",
-      "target": "features_onboarding_onboarding_profile_onboardingcontroller"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "shared/widgets/auth_gate.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "context": "variable_type",
-      "_origin": "ast",
-      "source": "shared_widgets_auth_gate",
-      "target": "features_onboarding_onboarding_profile_onboardingcontroller"
     },
     {
       "relation": "defines",
@@ -82777,6 +83119,18 @@
       "context": "variable_type",
       "_origin": "ast",
       "source": "shared_widgets_auth_gate",
+      "target": "features_onboarding_onboarding_profile_onboardingcontroller"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "shared/widgets/auth_gate.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "context": "variable_type",
+      "_origin": "ast",
+      "source": "shared_widgets_auth_gate",
       "target": "legalcontroller"
     },
     {
@@ -82953,17 +83307,6 @@
       "weight": 1.0,
       "_origin": "ast",
       "source": "shared_widgets_glass_sheet",
-      "target": "glass_surface_dart"
-    },
-    {
-      "relation": "imports",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "shared/widgets/product_overviews.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "shared_widgets_product_overviews",
       "target": "glass_surface_dart"
     },
     {
@@ -83207,6 +83550,17 @@
       "weight": 1.0,
       "_origin": "ast",
       "source": "features_home_presentation_widgets_home_cards",
+      "target": "package_trainforge_shared_widgets_shell_labels_dart"
+    },
+    {
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/nutrition/presentation/food_board.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "features_nutrition_presentation_food_board",
       "target": "package_trainforge_shared_widgets_shell_labels_dart"
     },
     {
@@ -114555,6 +114909,18 @@
       "relation": "references",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
+      "source_file": "features/nutrition/presentation/food_board.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "context": "variable_type",
+      "_origin": "ast",
+      "source": "features_nutrition_presentation_food_board",
+      "target": "voidcallback_openvoice"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
       "source_file": "shared/widgets/product_overviews.dart",
       "source_location": null,
       "weight": 1.0,
@@ -115304,204 +115670,6 @@
       "target": "package_trainforge_features_auth_data_profile_photos_dart"
     },
     {
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/nutrition/presentation/hydration_card.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "features_nutrition_presentation_hydration_card",
-      "target": "features_nutrition_presentation_hydration_card_add"
-    },
-    {
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/nutrition/presentation/hydration_card.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "features_nutrition_presentation_hydration_card",
-      "target": "features_nutrition_presentation_hydration_card_build"
-    },
-    {
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/nutrition/presentation/hydration_card.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "features_nutrition_presentation_hydration_card",
-      "target": "features_nutrition_presentation_hydration_card_busy"
-    },
-    {
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/nutrition/presentation/hydration_card.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "features_nutrition_presentation_hydration_card",
-      "target": "features_nutrition_presentation_hydration_card_button"
-    },
-    {
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/nutrition/presentation/hydration_card.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "features_nutrition_presentation_hydration_card",
-      "target": "features_nutrition_presentation_hydration_card_changed"
-    },
-    {
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/nutrition/presentation/hydration_card.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "features_nutrition_presentation_hydration_card",
-      "target": "features_nutrition_presentation_hydration_card_createstate"
-    },
-    {
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/nutrition/presentation/hydration_card.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "features_nutrition_presentation_hydration_card",
-      "target": "features_nutrition_presentation_hydration_card_hydrationcard"
-    },
-    {
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/nutrition/presentation/hydration_card.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "features_nutrition_presentation_hydration_card",
-      "target": "features_nutrition_presentation_hydration_card_hydrationcardstate"
-    },
-    {
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/nutrition/presentation/hydration_card.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "features_nutrition_presentation_hydration_card",
-      "target": "features_nutrition_presentation_hydration_card_initstate"
-    },
-    {
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/nutrition/presentation/hydration_card.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "features_nutrition_presentation_hydration_card",
-      "target": "features_nutrition_presentation_hydration_card_label"
-    },
-    {
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/nutrition/presentation/hydration_card.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "features_nutrition_presentation_hydration_card",
-      "target": "features_nutrition_presentation_hydration_card_labels"
-    },
-    {
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/nutrition/presentation/hydration_card.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "features_nutrition_presentation_hydration_card",
-      "target": "features_nutrition_presentation_hydration_card_language"
-    },
-    {
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/nutrition/presentation/hydration_card.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "features_nutrition_presentation_hydration_card",
-      "target": "features_nutrition_presentation_hydration_card_load"
-    },
-    {
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/nutrition/presentation/hydration_card.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "features_nutrition_presentation_hydration_card",
-      "target": "features_nutrition_presentation_hydration_card_repository"
-    },
-    {
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/nutrition/presentation/hydration_card.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "features_nutrition_presentation_hydration_card",
-      "target": "features_nutrition_presentation_hydration_card_total"
-    },
-    {
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/nutrition/presentation/hydration_card.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "features_nutrition_presentation_hydration_card",
-      "target": "features_nutrition_presentation_hydration_card_waterfoodid"
-    },
-    {
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/nutrition/presentation/hydration_card.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "features_nutrition_presentation_hydration_card",
-      "target": "features_nutrition_presentation_hydration_card_waterfoodversion"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/nutrition/presentation/hydration_card.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "features_nutrition_presentation_hydration_card_hydrationcardstate",
-      "target": "features_nutrition_presentation_hydration_card_hydrationcard"
-    },
-    {
       "relation": "imports",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
@@ -115902,11 +116070,11 @@
       "relation": "imports",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
-      "source_file": "shared/widgets/product_shell.dart",
+      "source_file": "features/nutrition/presentation/food_board.dart",
       "source_location": null,
       "weight": 1.0,
       "_origin": "ast",
-      "source": "shared_widgets_product_shell",
+      "source": "features_nutrition_presentation_food_board",
       "target": "package_trainforge_features_nutrition_presentation_hydration_card_dart"
     },
     {
@@ -117330,182 +117498,6 @@
       "target": "features_home_presentation_widgets_home_cards_trainingherocard"
     },
     {
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/legal/legal_documents.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "features_legal_legal_documents",
-      "target": "features_legal_legal_documents_asset"
-    },
-    {
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/legal/legal_documents.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "features_legal_legal_documents",
-      "target": "features_legal_legal_documents_changeskey"
-    },
-    {
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/legal/legal_documents.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "features_legal_legal_documents",
-      "target": "features_legal_legal_documents_healthconsentversion"
-    },
-    {
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/legal/legal_documents.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "features_legal_legal_documents",
-      "target": "features_legal_legal_documents_id"
-    },
-    {
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/legal/legal_documents.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "features_legal_legal_documents",
-      "target": "features_legal_legal_documents_legalappversion"
-    },
-    {
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/legal/legal_documents.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "features_legal_legal_documents",
-      "target": "features_legal_legal_documents_legaldocument"
-    },
-    {
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/legal/legal_documents.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "features_legal_legal_documents",
-      "target": "features_legal_legal_documents_legaldocuments"
-    },
-    {
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/legal/legal_documents.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "features_legal_legal_documents",
-      "target": "features_legal_legal_documents_legalpublicbase"
-    },
-    {
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/legal/legal_documents.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "features_legal_legal_documents",
-      "target": "features_legal_legal_documents_legaltexts"
-    },
-    {
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/legal/legal_documents.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "features_legal_legal_documents",
-      "target": "features_legal_legal_documents_privacydocument"
-    },
-    {
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/legal/legal_documents.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "features_legal_legal_documents",
-      "target": "features_legal_legal_documents_publicurl"
-    },
-    {
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/legal/legal_documents.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "features_legal_legal_documents",
-      "target": "features_legal_legal_documents_sha"
-    },
-    {
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/legal/legal_documents.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "features_legal_legal_documents",
-      "target": "features_legal_legal_documents_termsdocument"
-    },
-    {
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/legal/legal_documents.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "features_legal_legal_documents",
-      "target": "features_legal_legal_documents_text"
-    },
-    {
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/legal/legal_documents.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "features_legal_legal_documents",
-      "target": "features_legal_legal_documents_titlekey"
-    },
-    {
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "features/legal/legal_documents.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "features_legal_legal_documents",
-      "target": "features_legal_legal_documents_version"
-    },
-    {
       "relation": "references",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
@@ -118427,18 +118419,6 @@
       "relation": "references",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
-      "source_file": "shared/widgets/product_shell.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "context": "variable_type",
-      "_origin": "ast",
-      "source": "shared_widgets_product_shell",
-      "target": "shared_widgets_figma_bottom_nav_trainforgedestination"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
       "source_file": "shared/widgets/figma_bottom_nav.dart",
       "source_location": null,
       "weight": 1.0,
@@ -118869,6 +118849,1505 @@
       "relation": "defines",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
+      "source_file": "features/legal/legal_documents.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "features_legal_legal_documents",
+      "target": "features_legal_legal_documents_asset"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/legal/legal_documents.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "features_legal_legal_documents",
+      "target": "features_legal_legal_documents_changeskey"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/legal/legal_documents.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "features_legal_legal_documents",
+      "target": "features_legal_legal_documents_healthconsentversion"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/legal/legal_documents.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "features_legal_legal_documents",
+      "target": "features_legal_legal_documents_id"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/legal/legal_documents.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "features_legal_legal_documents",
+      "target": "features_legal_legal_documents_legalappversion"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/legal/legal_documents.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "features_legal_legal_documents",
+      "target": "features_legal_legal_documents_legaldocument"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/legal/legal_documents.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "features_legal_legal_documents",
+      "target": "features_legal_legal_documents_legaldocuments"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/legal/legal_documents.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "features_legal_legal_documents",
+      "target": "features_legal_legal_documents_legalpublicbase"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/legal/legal_documents.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "features_legal_legal_documents",
+      "target": "features_legal_legal_documents_legaltexts"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/legal/legal_documents.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "features_legal_legal_documents",
+      "target": "features_legal_legal_documents_privacydocument"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/legal/legal_documents.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "features_legal_legal_documents",
+      "target": "features_legal_legal_documents_publicurl"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/legal/legal_documents.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "features_legal_legal_documents",
+      "target": "features_legal_legal_documents_sha"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/legal/legal_documents.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "features_legal_legal_documents",
+      "target": "features_legal_legal_documents_termsdocument"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/legal/legal_documents.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "features_legal_legal_documents",
+      "target": "features_legal_legal_documents_text"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/legal/legal_documents.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "features_legal_legal_documents",
+      "target": "features_legal_legal_documents_titlekey"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/legal/legal_documents.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "features_legal_legal_documents",
+      "target": "features_legal_legal_documents_version"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/nutrition/domain/food_goals.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "features_nutrition_domain_food_goals",
+      "target": "features_nutrition_domain_food_goals_foodgoal"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/nutrition/domain/food_goals.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "features_nutrition_domain_food_goals",
+      "target": "features_nutrition_domain_food_goals_fromid"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/nutrition/domain/food_goals.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "features_nutrition_domain_food_goals",
+      "target": "features_nutrition_domain_food_goals_id"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/nutrition/domain/food_goals.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "features_nutrition_domain_food_goals",
+      "target": "features_nutrition_domain_food_goals_meals"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/nutrition/domain/food_goals.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "features_nutrition_domain_food_goals",
+      "target": "features_nutrition_domain_food_goals_proteingrams"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/nutrition/domain/food_goals.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "features_nutrition_domain_food_goals",
+      "target": "features_nutrition_domain_food_goals_proteinperkg"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/nutrition/domain/food_goals.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "features_nutrition_domain_food_goals",
+      "target": "features_nutrition_domain_food_goals_waterml"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/nutrition/presentation/food_board.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "context": "variable_type",
+      "_origin": "ast",
+      "source": "features_nutrition_presentation_food_board",
+      "target": "color_green"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/nutrition/presentation/food_board.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "features_nutrition_presentation_food_board",
+      "target": "features_nutrition_presentation_food_board_border"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/nutrition/presentation/food_board.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "features_nutrition_presentation_food_board",
+      "target": "features_nutrition_presentation_food_board_build"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/nutrition/presentation/food_board.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "features_nutrition_presentation_food_board",
+      "target": "features_nutrition_presentation_food_board_card"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/nutrition/presentation/food_board.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "features_nutrition_presentation_food_board",
+      "target": "features_nutrition_presentation_food_board_child"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/nutrition/presentation/food_board.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "features_nutrition_presentation_food_board",
+      "target": "features_nutrition_presentation_food_board_color"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/nutrition/presentation/food_board.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "features_nutrition_presentation_food_board",
+      "target": "features_nutrition_presentation_food_board_controller"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/nutrition/presentation/food_board.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "features_nutrition_presentation_food_board",
+      "target": "features_nutrition_presentation_food_board_createstate"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/nutrition/presentation/food_board.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "features_nutrition_presentation_food_board",
+      "target": "features_nutrition_presentation_food_board_diary"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/nutrition/presentation/food_board.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "features_nutrition_presentation_food_board",
+      "target": "features_nutrition_presentation_food_board_didchangedependencies"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/nutrition/presentation/food_board.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "features_nutrition_presentation_food_board",
+      "target": "features_nutrition_presentation_food_board_dispose"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/nutrition/presentation/food_board.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "features_nutrition_presentation_food_board",
+      "target": "features_nutrition_presentation_food_board_dot"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/nutrition/presentation/food_board.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "features_nutrition_presentation_food_board",
+      "target": "features_nutrition_presentation_food_board_foodboard"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/nutrition/presentation/food_board.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "features_nutrition_presentation_food_board",
+      "target": "features_nutrition_presentation_food_board_foodboardstate"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/nutrition/presentation/food_board.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "features_nutrition_presentation_food_board",
+      "target": "features_nutrition_presentation_food_board_goalcard"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/nutrition/presentation/food_board.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "features_nutrition_presentation_food_board",
+      "target": "features_nutrition_presentation_food_board_goals"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/nutrition/presentation/food_board.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "features_nutrition_presentation_food_board",
+      "target": "features_nutrition_presentation_food_board_icon"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/nutrition/presentation/food_board.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "features_nutrition_presentation_food_board",
+      "target": "features_nutrition_presentation_food_board_initstate"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/nutrition/presentation/food_board.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "features_nutrition_presentation_food_board",
+      "target": "features_nutrition_presentation_food_board_label"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/nutrition/presentation/food_board.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "features_nutrition_presentation_food_board",
+      "target": "features_nutrition_presentation_food_board_loadmeals"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/nutrition/presentation/food_board.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "features_nutrition_presentation_food_board",
+      "target": "features_nutrition_presentation_food_board_loop"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/nutrition/presentation/food_board.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "features_nutrition_presentation_food_board",
+      "target": "features_nutrition_presentation_food_board_null"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/nutrition/presentation/food_board.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "features_nutrition_presentation_food_board",
+      "target": "features_nutrition_presentation_food_board_ontap"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/nutrition/presentation/food_board.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "features_nutrition_presentation_food_board",
+      "target": "features_nutrition_presentation_food_board_opennutrition"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/nutrition/presentation/food_board.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "features_nutrition_presentation_food_board",
+      "target": "features_nutrition_presentation_food_board_openphoto"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/nutrition/presentation/food_board.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "features_nutrition_presentation_food_board",
+      "target": "features_nutrition_presentation_food_board_paint"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/nutrition/presentation/food_board.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "features_nutrition_presentation_food_board",
+      "target": "features_nutrition_presentation_food_board_progress"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/nutrition/presentation/food_board.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "features_nutrition_presentation_food_board",
+      "target": "features_nutrition_presentation_food_board_protein"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/nutrition/presentation/food_board.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "features_nutrition_presentation_food_board",
+      "target": "features_nutrition_presentation_food_board_pulse"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/nutrition/presentation/food_board.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "features_nutrition_presentation_food_board",
+      "target": "features_nutrition_presentation_food_board_rings"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/nutrition/presentation/food_board.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "features_nutrition_presentation_food_board",
+      "target": "features_nutrition_presentation_food_board_seensummary"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/nutrition/presentation/food_board.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "features_nutrition_presentation_food_board",
+      "target": "features_nutrition_presentation_food_board_selected"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/nutrition/presentation/food_board.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "features_nutrition_presentation_food_board",
+      "target": "features_nutrition_presentation_food_board_share"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/nutrition/presentation/food_board.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "features_nutrition_presentation_food_board",
+      "target": "features_nutrition_presentation_food_board_shouldrepaint"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/nutrition/presentation/food_board.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "features_nutrition_presentation_food_board",
+      "target": "features_nutrition_presentation_food_board_started"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/nutrition/presentation/food_board.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "features_nutrition_presentation_food_board",
+      "target": "features_nutrition_presentation_food_board_summarychanged"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/nutrition/presentation/food_board.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "features_nutrition_presentation_food_board",
+      "target": "features_nutrition_presentation_food_board_tall"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/nutrition/presentation/food_board.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "features_nutrition_presentation_food_board",
+      "target": "features_nutrition_presentation_food_board_target"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/nutrition/presentation/food_board.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "features_nutrition_presentation_food_board",
+      "target": "features_nutrition_presentation_food_board_track"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/nutrition/presentation/food_board.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "features_nutrition_presentation_food_board",
+      "target": "features_nutrition_presentation_food_board_unit"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/nutrition/presentation/food_board.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "features_nutrition_presentation_food_board",
+      "target": "features_nutrition_presentation_food_board_value"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/nutrition/presentation/food_board.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "features_nutrition_presentation_food_board",
+      "target": "features_nutrition_presentation_food_board_water"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/nutrition/presentation/food_board.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "features_nutrition_presentation_food_board",
+      "target": "features_nutrition_presentation_food_board_waterblue"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/nutrition/presentation/food_board.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "features_nutrition_presentation_food_board",
+      "target": "features_nutrition_presentation_food_board_waterpulse"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/nutrition/presentation/food_board.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "features_nutrition_presentation_food_board",
+      "target": "features_nutrition_presentation_food_board_wave"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/nutrition/presentation/food_board.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "features_nutrition_presentation_food_board",
+      "target": "features_nutrition_presentation_food_board_way"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/nutrition/presentation/food_board.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "context": "variable_type",
+      "_origin": "ast",
+      "source": "features_nutrition_presentation_food_board",
+      "target": "int_meals"
+    },
+    {
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/nutrition/presentation/food_board.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "features_nutrition_presentation_food_board",
+      "target": "package_trainforge_features_nutrition_domain_food_goals_dart"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/nutrition/presentation/food_board.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "context": "variable_type",
+      "_origin": "ast",
+      "source": "features_nutrition_presentation_food_board",
+      "target": "string_target"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/nutrition/presentation/food_board.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "features_nutrition_presentation_food_board_foodboardstate",
+      "target": "features_nutrition_presentation_food_board_foodboard"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/nutrition/presentation/hydration_card.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "features_nutrition_presentation_hydration_card",
+      "target": "features_nutrition_presentation_hydration_card_add"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/nutrition/presentation/hydration_card.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "features_nutrition_presentation_hydration_card",
+      "target": "features_nutrition_presentation_hydration_card_build"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/nutrition/presentation/hydration_card.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "features_nutrition_presentation_hydration_card",
+      "target": "features_nutrition_presentation_hydration_card_busy"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/nutrition/presentation/hydration_card.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "features_nutrition_presentation_hydration_card",
+      "target": "features_nutrition_presentation_hydration_card_button"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/nutrition/presentation/hydration_card.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "features_nutrition_presentation_hydration_card",
+      "target": "features_nutrition_presentation_hydration_card_changed"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/nutrition/presentation/hydration_card.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "features_nutrition_presentation_hydration_card",
+      "target": "features_nutrition_presentation_hydration_card_compact"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/nutrition/presentation/hydration_card.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "features_nutrition_presentation_hydration_card",
+      "target": "features_nutrition_presentation_hydration_card_createstate"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/nutrition/presentation/hydration_card.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "features_nutrition_presentation_hydration_card",
+      "target": "features_nutrition_presentation_hydration_card_drop"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/nutrition/presentation/hydration_card.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "features_nutrition_presentation_hydration_card",
+      "target": "features_nutrition_presentation_hydration_card_goalml"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/nutrition/presentation/hydration_card.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "features_nutrition_presentation_hydration_card",
+      "target": "features_nutrition_presentation_hydration_card_hydrationcard"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/nutrition/presentation/hydration_card.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "features_nutrition_presentation_hydration_card",
+      "target": "features_nutrition_presentation_hydration_card_hydrationcardstate"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/nutrition/presentation/hydration_card.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "features_nutrition_presentation_hydration_card",
+      "target": "features_nutrition_presentation_hydration_card_initstate"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/nutrition/presentation/hydration_card.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "features_nutrition_presentation_hydration_card",
+      "target": "features_nutrition_presentation_hydration_card_label"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/nutrition/presentation/hydration_card.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "features_nutrition_presentation_hydration_card",
+      "target": "features_nutrition_presentation_hydration_card_labels"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/nutrition/presentation/hydration_card.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "features_nutrition_presentation_hydration_card",
+      "target": "features_nutrition_presentation_hydration_card_language"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/nutrition/presentation/hydration_card.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "features_nutrition_presentation_hydration_card",
+      "target": "features_nutrition_presentation_hydration_card_load"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/nutrition/presentation/hydration_card.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "features_nutrition_presentation_hydration_card",
+      "target": "features_nutrition_presentation_hydration_card_ontotal"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/nutrition/presentation/hydration_card.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "features_nutrition_presentation_hydration_card",
+      "target": "features_nutrition_presentation_hydration_card_repository"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/nutrition/presentation/hydration_card.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "features_nutrition_presentation_hydration_card",
+      "target": "features_nutrition_presentation_hydration_card_total"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/nutrition/presentation/hydration_card.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "features_nutrition_presentation_hydration_card",
+      "target": "features_nutrition_presentation_hydration_card_waterfoodid"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/nutrition/presentation/hydration_card.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "features_nutrition_presentation_hydration_card",
+      "target": "features_nutrition_presentation_hydration_card_waterfoodversion"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/nutrition/presentation/hydration_card.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "features_nutrition_presentation_hydration_card_hydrationcardstate",
+      "target": "features_nutrition_presentation_hydration_card_hydrationcard"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/onboarding/onboarding_profile.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "features_onboarding_onboarding_profile",
+      "target": "features_onboarding_onboarding_profile_accountid"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/onboarding/onboarding_profile.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "features_onboarding_onboarding_profile",
+      "target": "features_onboarding_onboarding_profile_cellfor"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/onboarding/onboarding_profile.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "features_onboarding_onboarding_profile",
+      "target": "features_onboarding_onboarding_profile_completed"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/onboarding/onboarding_profile.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "features_onboarding_onboarding_profile",
+      "target": "features_onboarding_onboarding_profile_completedat"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/onboarding/onboarding_profile.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "features_onboarding_onboarding_profile",
+      "target": "features_onboarding_onboarding_profile_confidence"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/onboarding/onboarding_profile.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "features_onboarding_onboarding_profile",
+      "target": "features_onboarding_onboarding_profile_confidences"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/onboarding/onboarding_profile.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "features_onboarding_onboarding_profile",
+      "target": "features_onboarding_onboarding_profile_copywith"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/onboarding/onboarding_profile.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "features_onboarding_onboarding_profile",
+      "target": "features_onboarding_onboarding_profile_foodgoal"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/onboarding/onboarding_profile.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "features_onboarding_onboarding_profile",
+      "target": "features_onboarding_onboarding_profile_foodgoals"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/onboarding/onboarding_profile.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "features_onboarding_onboarding_profile",
+      "target": "features_onboarding_onboarding_profile_fromjson"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/onboarding/onboarding_profile.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "features_onboarding_onboarding_profile",
+      "target": "features_onboarding_onboarding_profile_gender"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/onboarding/onboarding_profile.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "features_onboarding_onboarding_profile",
+      "target": "features_onboarding_onboarding_profile_genders"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/onboarding/onboarding_profile.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "features_onboarding_onboarding_profile",
+      "target": "features_onboarding_onboarding_profile_load"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/onboarding/onboarding_profile.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "features_onboarding_onboarding_profile",
+      "target": "features_onboarding_onboarding_profile_loaded"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/onboarding/onboarding_profile.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "features_onboarding_onboarding_profile",
+      "target": "features_onboarding_onboarding_profile_loading"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/onboarding/onboarding_profile.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "features_onboarding_onboarding_profile",
+      "target": "features_onboarding_onboarding_profile_maybeof"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/onboarding/onboarding_profile.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "features_onboarding_onboarding_profile",
+      "target": "features_onboarding_onboarding_profile_memoryonboardingstore"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/onboarding/onboarding_profile.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "features_onboarding_onboarding_profile",
+      "target": "features_onboarding_onboarding_profile_onboardingcontroller"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/onboarding/onboarding_profile.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "features_onboarding_onboarding_profile",
+      "target": "features_onboarding_onboarding_profile_onboardingprofile"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/onboarding/onboarding_profile.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "features_onboarding_onboarding_profile",
+      "target": "features_onboarding_onboarding_profile_onboardingscope"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/onboarding/onboarding_profile.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "features_onboarding_onboarding_profile",
+      "target": "features_onboarding_onboarding_profile_onboardingstore"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/onboarding/onboarding_profile.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "features_onboarding_onboarding_profile",
+      "target": "features_onboarding_onboarding_profile_placeids"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/onboarding/onboarding_profile.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "features_onboarding_onboarding_profile",
+      "target": "features_onboarding_onboarding_profile_places"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/onboarding/onboarding_profile.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "features_onboarding_onboarding_profile",
+      "target": "features_onboarding_onboarding_profile_prefix"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/onboarding/onboarding_profile.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "features_onboarding_onboarding_profile",
+      "target": "features_onboarding_onboarding_profile_profile"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/onboarding/onboarding_profile.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "features_onboarding_onboarding_profile",
+      "target": "features_onboarding_onboarding_profile_profiles"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/onboarding/onboarding_profile.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "features_onboarding_onboarding_profile",
+      "target": "features_onboarding_onboarding_profile_read"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/onboarding/onboarding_profile.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "features_onboarding_onboarding_profile",
+      "target": "features_onboarding_onboarding_profile_reset"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/onboarding/onboarding_profile.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "features_onboarding_onboarding_profile",
+      "target": "features_onboarding_onboarding_profile_save"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/onboarding/onboarding_profile.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "features_onboarding_onboarding_profile",
+      "target": "features_onboarding_onboarding_profile_savefoodgoal"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/onboarding/onboarding_profile.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "features_onboarding_onboarding_profile",
+      "target": "features_onboarding_onboarding_profile_secureonboardingstore"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/onboarding/onboarding_profile.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "features_onboarding_onboarding_profile",
+      "target": "features_onboarding_onboarding_profile_storage"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/onboarding/onboarding_profile.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "features_onboarding_onboarding_profile",
+      "target": "features_onboarding_onboarding_profile_store"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/onboarding/onboarding_profile.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "features_onboarding_onboarding_profile",
+      "target": "features_onboarding_onboarding_profile_tojson"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/onboarding/onboarding_profile.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "features_onboarding_onboarding_profile",
+      "target": "features_onboarding_onboarding_profile_values"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/onboarding/onboarding_profile.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "features_onboarding_onboarding_profile",
+      "target": "features_onboarding_onboarding_profile_weightkg"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/onboarding/onboarding_profile.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "features_onboarding_onboarding_profile",
+      "target": "features_onboarding_onboarding_profile_write"
+    },
+    {
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/onboarding/onboarding_profile.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "features_onboarding_onboarding_profile_memoryonboardingstore",
+      "target": "features_onboarding_onboarding_profile_onboardingstore"
+    },
+    {
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/onboarding/onboarding_profile.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "features_onboarding_onboarding_profile_secureonboardingstore",
+      "target": "features_onboarding_onboarding_profile_onboardingstore"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "features/onboarding/onboarding_profile.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "features_onboarding_onboarding_profile_onboardingscope",
+      "target": "features_onboarding_onboarding_profile_onboardingcontroller"
+    },
+    {
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "shared/widgets/product_overviews.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "shared_widgets_product_overviews",
+      "target": "package_trainforge_features_nutrition_presentation_food_board_dart"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
       "source_file": "shared/widgets/product_overviews.dart",
       "source_location": null,
       "weight": 1.0,
@@ -118907,17 +120386,6 @@
       "weight": 1.0,
       "_origin": "ast",
       "source": "shared_widgets_product_overviews",
-      "target": "shared_widgets_product_overviews_color"
-    },
-    {
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "shared/widgets/product_overviews.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "shared_widgets_product_overviews",
       "target": "shared_widgets_product_overviews_controller"
     },
     {
@@ -118930,6 +120398,17 @@
       "_origin": "ast",
       "source": "shared_widgets_product_overviews",
       "target": "shared_widgets_product_overviews_dailyoverview"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "shared/widgets/product_overviews.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "shared_widgets_product_overviews",
+      "target": "shared_widgets_product_overviews_diary"
     },
     {
       "relation": "defines",
@@ -118962,39 +120441,6 @@
       "weight": 1.0,
       "_origin": "ast",
       "source": "shared_widgets_product_overviews",
-      "target": "shared_widgets_product_overviews_hydration"
-    },
-    {
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "shared/widgets/product_overviews.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "shared_widgets_product_overviews",
-      "target": "shared_widgets_product_overviews_icon"
-    },
-    {
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "shared/widgets/product_overviews.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "shared_widgets_product_overviews",
-      "target": "shared_widgets_product_overviews_label"
-    },
-    {
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "shared/widgets/product_overviews.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "shared_widgets_product_overviews",
       "target": "shared_widgets_product_overviews_name"
     },
     {
@@ -119007,17 +120453,6 @@
       "_origin": "ast",
       "source": "shared_widgets_product_overviews",
       "target": "shared_widgets_product_overviews_nutrition"
-    },
-    {
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "shared/widgets/product_overviews.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "shared_widgets_product_overviews",
-      "target": "shared_widgets_product_overviews_ontap"
     },
     {
       "relation": "defines",
@@ -119062,17 +120497,6 @@
       "_origin": "ast",
       "source": "shared_widgets_product_overviews",
       "target": "shared_widgets_product_overviews_openworkouts"
-    },
-    {
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "shared/widgets/product_overviews.dart",
-      "source_location": null,
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "shared_widgets_product_overviews",
-      "target": "shared_widgets_product_overviews_quickbutton"
     },
     {
       "relation": "defines",
