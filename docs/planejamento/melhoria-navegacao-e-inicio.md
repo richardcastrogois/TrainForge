@@ -214,3 +214,24 @@ Metas sugeridas, todas como ponto de partida editável (`food_goals.dart`), com 
 
 - **Refeições de hoje** (abaixo de Falar/Foto/Buscar): uma linha por refeição com nome pelo horário, hora, alimentos e kcal (só quando todos os itens têm kcal exato), total no título ("2 de 5 · 1040 kcal") e a sugestão da próxima refeição. Sem refeições: barra com os espaços da meta e uma frase, sem botão. Tocar abre o diário. Lógica em `day_meals.dart`.
 - **Fontes nos ajustes:** "Fontes e transparência" ganhou "Metas de alimentação e água" (`FoodGoalSourcesPage`), ao lado das fontes dos movimentos. Mostra a tabela de objetivos e água lida do próprio código (`FoodGoal`), cada referência com citação completa e DOI (`foodGoalSources`) e, separadas, as regras do próprio app que não vêm de fonte: agrupar registros com até 1 h, nome pelo horário, próxima refeição 3 h 30 depois da última (meio de 3–4 h, arredondada a 15 min, não após 22 h), gota = 1/8 da meta (200 ml sem meta) e ausência de meta de energia.
+
+#### Alimentação v2 e botões verdes (28/11/2026)
+
+Aprovada pelo autor a partir de esboços animados (carrossel da opção 1, painel da opção 2 com a meta no estilo da opção 1, garrafa ajustável).
+
+- **Botão principal verde** (`MainAction`): verde da marca com disco laranja no ícone e um brilho que passa de tempos em tempos. Vale para "Registrar refeição", "Escolher…", "Salvar" da garrafa e "Começar primeiro treino" da Evolução. O laranja fica só em detalhes (disco do ícone, ponta do anel e da barra de proteína, selo do objetivo, lápis da garrafa, próxima refeição).
+- **Objetivo:** carrossel de cartões que gira sozinho até o primeiro toque. Cada cartão mostra para quem é, as refeições em pratinhos, a proteína em g/kg, a água em litros e uma dica curta com fonte (`FoodGoal.tipSource`, listada em Fontes e transparência). Abaixo, "Como fica o seu dia" troca com o cartão (refeições, proteína em gramas pelo peso, água). "Ajustar" reabre o carrossel com "Cancelar".
+- **Dia:** um card com o selo do objetivo e "Ajustar"; anel contínuo em degradê das refeições (ponta laranja, número no centro com folga); garrafa que enche com ondas; proteína (barra verde com ponta laranja) e energia (barra dividida por refeição, sem meta); "+ Copo 200 ml" e "+ Garrafa" com o tamanho da pessoa. Números sobem até o valor, blocos entram em sequência e tudo fica parado com "reduzir movimento".
+- **Garrafa ajustável:** o lápis abre "Quanto cabe na sua garrafa?" (350, 500, 750 ml, 1 L ou outro valor de 100 a 3000 ml), salvo no aparelho junto das primeiras respostas (`bottleMl`).
+- Saíram as gotas e o anel duplo; a água passa a se chamar só "Água".
+
+#### Corpo: peso e IMC (28/11/2026)
+
+Aprovado pelo autor a partir de esboço animado.
+
+- **Onde:** card "Corpo" na Evolução, logo abaixo da consistência (peso atual, variação da semana, linha das semanas, IMC com a faixa; "Hora de se pesar" quando o lembrete está ligado e passou 7 dias). Toque abre a página Corpo. O "+" ganha a bolha "Peso" (leque de quatro, 150°), que abre o registro.
+- **Página Corpo:** média desta semana e variação, linha das últimas 8 semanas (pontos claros = pesagens, linha = média semanal, última em laranja), IMC com as faixas da OMS e o aviso de que não vale para menores de 18, gestantes e corpos muito musculosos, "Registrar peso", lembrete semanal e lista das semanas.
+- **Registro:** abre no último peso; botões de ±0,1 kg, régua para arrastar, hoje ou outro dia; uma pesagem por dia (a nova substitui).
+- **Dados:** só com consentimento de dados de saúde; ficam no aparelho com as primeiras respostas (`weighIns`, `weighReminder`). O último peso substitui o das primeiras perguntas e atualiza a meta de proteína.
+- **Fontes:** IMC e faixas pela OMS (TRS 894, 2000) em Fontes e transparência; média semanal, lembrete de 7 dias e dica de horário listados como regras do próprio app.
+- **Lembrete:** dentro do app (card e "Hora de se pesar"); o app não tem notificações do sistema.
