@@ -41,7 +41,7 @@ const _labels = <String, Map<String, String>>{
     'evolutionConsistency': 'Consistência',
     'foodGoalQuestion': 'Qual é o seu objetivo?',
     'foodGoalNote':
-        'Ponto de partida de referências públicas; ajuste quando quiser. Gestante, menor de 18 ou com doença: combine com um profissional.',
+        'Números de referências públicas, listadas em Ajustes › Fontes e transparência. Gestante, menor de 18 ou com doença: combine com um profissional.',
     'goal_perder': 'Perder gordura',
     'goal_manter': 'Manter o peso',
     'goal_ganhar': 'Ganhar massa',
@@ -72,7 +72,79 @@ const _labels = <String, Map<String, String>>{
     'meal_afternoonSnack': 'Lanche da tarde',
     'meal_dinner': 'Jantar',
     'meal_supper': 'Ceia',
-    'sourcesFoodTitle': 'Metas de alimentação e água',
+    'addWeight': 'Peso',
+    'bodyTitle': 'Corpo',
+    'bodyEmpty': 'Registre seu peso para acompanhar a semana e ver o seu IMC.',
+    'weighRecord': 'Registrar peso',
+    'weighDue': 'Hora de se pesar',
+    'bodyInWeek': 'na semana',
+    'bodyInWeeks': 'em {n} semanas',
+    'bodyWeekAverage': 'Média desta semana',
+    'bmiNeedHeight':
+        'Informe sua altura nas primeiras perguntas para ver o IMC.',
+    'weighReminder': 'Lembrete semanal',
+    'weighReminderHint': 'Avisa aqui quando fizer 7 dias sem pesar',
+    'bodyWeeks': 'Semanas',
+    'bodyWeekOf': 'Semana de {d}',
+    'bodyCount': '{n} registros',
+    'bodyCountOne': '1 registro',
+    'bodySourceNote':
+        'O peso fica só neste aparelho. O último peso também atualiza a meta de proteína da Alimentação.',
+    'bmi_under': 'Abaixo do peso',
+    'bmi_normal': 'Peso normal',
+    'bmi_over': 'Sobrepeso',
+    'bmi_obese': 'Obesidade',
+    'bmiNote':
+        'Peso ÷ altura². Faixas da OMS para adultos. É uma referência: não vale para menores de 18, gestantes e quem tem muita massa muscular.',
+    'weighQuestion': 'Quanto você pesa?',
+    'weighLess': 'Menos 0,1 kg',
+    'weighMore': 'Mais 0,1 kg',
+    'weighToday': 'Hoje',
+    'weighOtherDay': 'Outro dia',
+    'weighTip':
+        'Dica do app: pese-se no mesmo horário a cada semana para comparar melhor.',
+    'sourcesBodyTitle': 'Peso e IMC',
+    'source_bmi':
+        'IMC e faixas para adultos (abaixo de 18,5; 18,5–24,9; 25–29,9; 30 ou mais)',
+    'sourcesRuleWeek':
+        'A evolução do peso usa a média de cada semana (segunda a domingo), porque o peso muda de um dia para o outro.',
+    'sourcesRuleDue':
+        'Com o lembrete ligado, o app sugere pesar depois de 7 dias sem registro.',
+    'sourcesRuleProtein':
+        'O último peso registrado substitui o das primeiras perguntas e atualiza a meta de proteína.',
+    'foodGoalSwipe': 'Deslize para comparar. Dá para mudar depois.',
+    'foodCancel': 'Cancelar',
+    'foodDayPreview': 'Como fica o seu dia',
+    'foodMealsTitle': 'Refeições',
+    'foodPerDay': 'por dia',
+    'foodWaterTitle': 'Água',
+    'foodChoose': 'Escolher',
+    'foodGlass': '+ Copo',
+    'foodBottle': '+ Garrafa',
+    'bottleQuestion': 'Quanto cabe na sua garrafa?',
+    'bottleOther': 'Outro valor',
+    'bottleSave': 'Salvar',
+    'bottleEdit': 'Ajustar o tamanho da garrafa',
+    'bottleInvalid': 'Use um valor entre 100 e 3000 ml.',
+    'goalFor_perder': 'Quer emagrecer sem perder músculo.',
+    'goalFor_manter': 'Está bem assim e quer continuar.',
+    'goalFor_ganhar': 'Treina força e quer crescer.',
+    'goalFor_recompor': 'Quer perder gordura e ganhar músculo juntos.',
+    'goalFor_desempenho': 'Treina ou compete e quer render mais.',
+    'goalFor_saude': 'Quer comer melhor, sem mudar o corpo.',
+    'goalTip_perder':
+        'Proteína mais alta ajuda a manter os músculos enquanto você come menos.',
+    'goalTip_manter': 'Divida a proteína entre as refeições, a cada 3–4 h.',
+    'goalTip_ganhar':
+        'Proteína a cada 3–4 h, em todas as refeições, ajuda a ganhar músculo.',
+    'goalTip_recompor':
+        'Funciona melhor junto com treino de força e proteína alta.',
+    'goalTip_desempenho':
+        'Proteína a cada 3–4 h ajuda na recuperação entre os treinos.',
+    'goalTip_saude':
+        '0,8 g por kg é a referência geral de proteína para adultos.',
+    'sourcesFoodTips': 'Dicas de cada objetivo',
+    'sourcesFoodTitle': 'Alimentação, água e peso',
     'sourcesFoodIntro':
         'De onde vem cada número sugerido na aba Alimentação. Todos saem de referências publicadas; nada é gerado por IA.',
     'sourcesFoodGoals': 'Objetivos: refeições e proteína',
@@ -95,7 +167,8 @@ const _labels = <String, Map<String, String>>{
         'O nome da refeição sai do horário: café da manhã (5–10 h), lanche da manhã (10–12 h), almoço (12–15 h), lanche da tarde (15–18 h), jantar (18–22 h) e ceia.',
     'sourcesRuleNext':
         'A próxima refeição é sugerida 3 h 30 depois da última (meio do intervalo de 3–4 h), arredondada para 15 min, e não depois das 22 h.',
-    'sourcesRuleDrops': 'Cada gota vale 1/8 da meta de água; sem meta, 200 ml.',
+    'sourcesRuleDrops':
+        'O copo vale 200 ml e a garrafa 500 ml até você informar quanto cabe na sua.',
     'sourcesRuleEnergy':
         'Ainda não há meta de energia (kcal): ela exige idade e nível de atividade, que o app não pergunta.',
     'evolutionStreak': 'sequência',
@@ -151,7 +224,7 @@ const _labels = <String, Map<String, String>>{
     'evolutionConsistency': 'Consistency',
     'foodGoalQuestion': 'What is your goal?',
     'foodGoalNote':
-        'A starting point from public references; adjust it anytime. Pregnant, under 18 or with a health condition: agree it with a professional.',
+        'Numbers from public references, listed in Settings › Sources and transparency. Pregnant, under 18 or with a health condition: agree them with a professional.',
     'goal_perder': 'Lose fat',
     'goal_manter': 'Keep my weight',
     'goal_ganhar': 'Gain muscle',
@@ -182,7 +255,75 @@ const _labels = <String, Map<String, String>>{
     'meal_afternoonSnack': 'Afternoon snack',
     'meal_dinner': 'Dinner',
     'meal_supper': 'Late snack',
-    'sourcesFoodTitle': 'Food and water targets',
+    'addWeight': 'Weight',
+    'bodyTitle': 'Body',
+    'bodyEmpty': 'Record your weight to follow the week and see your BMI.',
+    'weighRecord': 'Record weight',
+    'weighDue': 'Time to weigh in',
+    'bodyInWeek': 'this week',
+    'bodyInWeeks': 'in {n} weeks',
+    'bodyWeekAverage': 'This week\'s average',
+    'bmiNeedHeight': 'Add your height in the first questions to see your BMI.',
+    'weighReminder': 'Weekly reminder',
+    'weighReminderHint': 'Shows here after 7 days without a weigh-in',
+    'bodyWeeks': 'Weeks',
+    'bodyWeekOf': 'Week of {d}',
+    'bodyCount': '{n} weigh-ins',
+    'bodyCountOne': '1 weigh-in',
+    'bodySourceNote':
+        'Your weight stays on this device only. The latest weight also updates the protein target on Food.',
+    'bmi_under': 'Underweight',
+    'bmi_normal': 'Normal weight',
+    'bmi_over': 'Overweight',
+    'bmi_obese': 'Obesity',
+    'bmiNote':
+        'Weight ÷ height². WHO bands for adults. It is a reference: not for under-18s, pregnancy or very muscular bodies.',
+    'weighQuestion': 'How much do you weigh?',
+    'weighLess': 'Minus 0.1 kg',
+    'weighMore': 'Plus 0.1 kg',
+    'weighToday': 'Today',
+    'weighOtherDay': 'Another day',
+    'weighTip':
+        'App tip: weigh yourself at the same time each week to compare better.',
+    'sourcesBodyTitle': 'Weight and BMI',
+    'source_bmi':
+        'BMI and adult bands (under 18.5; 18.5–24.9; 25–29.9; 30 or more)',
+    'sourcesRuleWeek':
+        'Weight trends use each week\'s average (Monday to Sunday), since weight changes from day to day.',
+    'sourcesRuleDue':
+        'With the reminder on, the app suggests weighing in after 7 days without one.',
+    'sourcesRuleProtein':
+        'The latest weigh-in replaces the weight from the first questions and updates the protein target.',
+    'foodGoalSwipe': 'Swipe to compare. You can change it later.',
+    'foodCancel': 'Cancel',
+    'foodDayPreview': 'Your day with it',
+    'foodMealsTitle': 'Meals',
+    'foodPerDay': 'a day',
+    'foodWaterTitle': 'Water',
+    'foodChoose': 'Choose',
+    'foodGlass': '+ Glass',
+    'foodBottle': '+ Bottle',
+    'bottleQuestion': 'How much does your bottle hold?',
+    'bottleOther': 'Other amount',
+    'bottleSave': 'Save',
+    'bottleEdit': 'Set your bottle size',
+    'bottleInvalid': 'Use a value between 100 and 3000 ml.',
+    'goalFor_perder': 'Wants to slim down without losing muscle.',
+    'goalFor_manter': 'Feels good and wants to stay this way.',
+    'goalFor_ganhar': 'Lifts weights and wants to grow.',
+    'goalFor_recompor': 'Wants to lose fat and gain muscle together.',
+    'goalFor_desempenho': 'Trains or competes and wants to perform better.',
+    'goalFor_saude': 'Wants to eat better without changing the body.',
+    'goalTip_perder': 'Higher protein helps keep muscle while you eat less.',
+    'goalTip_manter': 'Spread protein across meals, every 3–4 h.',
+    'goalTip_ganhar': 'Protein every 3–4 h, in every meal, helps build muscle.',
+    'goalTip_recompor': 'Works best with strength training and high protein.',
+    'goalTip_desempenho':
+        'Protein every 3–4 h helps recovery between sessions.',
+    'goalTip_saude':
+        '0.8 g per kg is the general protein reference for adults.',
+    'sourcesFoodTips': 'Tips for each goal',
+    'sourcesFoodTitle': 'Food, water and weight',
     'sourcesFoodIntro':
         'Where each number suggested on the Food tab comes from. All come from published references; none is generated by AI.',
     'sourcesFoodGoals': 'Goals: meals and protein',
@@ -205,7 +346,7 @@ const _labels = <String, Map<String, String>>{
     'sourcesRuleNext':
         'The next meal is suggested 3 h 30 after the last one (middle of 3–4 h), rounded to 15 min, and never after 22:00.',
     'sourcesRuleDrops':
-        'Each drop is 1/8 of the water target; without a target, 200 ml.',
+        'A glass counts as 200 ml and a bottle as 500 ml until you set your own bottle size.',
     'sourcesRuleEnergy':
         'There is no energy (kcal) target yet: it needs age and activity level, which the app does not ask.',
     'evolutionStreak': 'streak',
@@ -261,7 +402,7 @@ const _labels = <String, Map<String, String>>{
     'evolutionConsistency': 'Constancia',
     'foodGoalQuestion': '¿Cuál es tu objetivo?',
     'foodGoalNote':
-        'Punto de partida de referencias públicas; ajústalo cuando quieras. Embarazada, menor de 18 o con alguna enfermedad: acuérdalo con un profesional.',
+        'Números de referencias públicas, listadas en Ajustes › Fuentes y transparencia. Embarazada, menor de 18 o con una enfermedad: acuérdalo con un profesional.',
     'goal_perder': 'Perder grasa',
     'goal_manter': 'Mantener el peso',
     'goal_ganhar': 'Ganar masa',
@@ -292,7 +433,79 @@ const _labels = <String, Map<String, String>>{
     'meal_afternoonSnack': 'Merienda',
     'meal_dinner': 'Cena',
     'meal_supper': 'Recena',
-    'sourcesFoodTitle': 'Metas de alimentación y agua',
+    'addWeight': 'Peso',
+    'bodyTitle': 'Cuerpo',
+    'bodyEmpty': 'Registra tu peso para seguir la semana y ver tu IMC.',
+    'weighRecord': 'Registrar peso',
+    'weighDue': 'Hora de pesarte',
+    'bodyInWeek': 'en la semana',
+    'bodyInWeeks': 'en {n} semanas',
+    'bodyWeekAverage': 'Media de esta semana',
+    'bmiNeedHeight':
+        'Indica tu altura en las primeras preguntas para ver el IMC.',
+    'weighReminder': 'Recordatorio semanal',
+    'weighReminderHint': 'Avisa aquí tras 7 días sin pesarte',
+    'bodyWeeks': 'Semanas',
+    'bodyWeekOf': 'Semana del {d}',
+    'bodyCount': '{n} registros',
+    'bodyCountOne': '1 registro',
+    'bodySourceNote':
+        'El peso queda solo en este dispositivo. El último peso también actualiza la meta de proteína de Alimentación.',
+    'bmi_under': 'Bajo peso',
+    'bmi_normal': 'Peso normal',
+    'bmi_over': 'Sobrepeso',
+    'bmi_obese': 'Obesidad',
+    'bmiNote':
+        'Peso ÷ altura². Rangos de la OMS para adultos. Es una referencia: no vale para menores de 18, embarazo ni cuerpos muy musculosos.',
+    'weighQuestion': '¿Cuánto pesas?',
+    'weighLess': 'Menos 0,1 kg',
+    'weighMore': 'Más 0,1 kg',
+    'weighToday': 'Hoy',
+    'weighOtherDay': 'Otro día',
+    'weighTip':
+        'Consejo de la app: pésate a la misma hora cada semana para comparar mejor.',
+    'sourcesBodyTitle': 'Peso e IMC',
+    'source_bmi':
+        'IMC y rangos para adultos (menos de 18,5; 18,5–24,9; 25–29,9; 30 o más)',
+    'sourcesRuleWeek':
+        'La evolución del peso usa la media de cada semana (lunes a domingo), porque el peso cambia de un día a otro.',
+    'sourcesRuleDue':
+        'Con el recordatorio activo, la app sugiere pesarte tras 7 días sin registro.',
+    'sourcesRuleProtein':
+        'El último peso registrado sustituye al de las primeras preguntas y actualiza la meta de proteína.',
+    'foodGoalSwipe': 'Desliza para comparar. Puedes cambiarlo después.',
+    'foodCancel': 'Cancelar',
+    'foodDayPreview': 'Cómo queda tu día',
+    'foodMealsTitle': 'Comidas',
+    'foodPerDay': 'al día',
+    'foodWaterTitle': 'Agua',
+    'foodChoose': 'Elegir',
+    'foodGlass': '+ Vaso',
+    'foodBottle': '+ Botella',
+    'bottleQuestion': '¿Cuánto cabe en tu botella?',
+    'bottleOther': 'Otro valor',
+    'bottleSave': 'Guardar',
+    'bottleEdit': 'Ajustar el tamaño de la botella',
+    'bottleInvalid': 'Usa un valor entre 100 y 3000 ml.',
+    'goalFor_perder': 'Quiere adelgazar sin perder músculo.',
+    'goalFor_manter': 'Está bien así y quiere seguir.',
+    'goalFor_ganhar': 'Entrena fuerza y quiere crecer.',
+    'goalFor_recompor': 'Quiere perder grasa y ganar músculo a la vez.',
+    'goalFor_desempenho': 'Entrena o compite y quiere rendir más.',
+    'goalFor_saude': 'Quiere comer mejor sin cambiar el cuerpo.',
+    'goalTip_perder':
+        'Más proteína ayuda a mantener el músculo mientras comes menos.',
+    'goalTip_manter': 'Reparte la proteína entre las comidas, cada 3–4 h.',
+    'goalTip_ganhar':
+        'Proteína cada 3–4 h, en todas las comidas, ayuda a ganar músculo.',
+    'goalTip_recompor':
+        'Funciona mejor con entrenamiento de fuerza y proteína alta.',
+    'goalTip_desempenho':
+        'Proteína cada 3–4 h ayuda a recuperarte entre entrenamientos.',
+    'goalTip_saude':
+        '0,8 g por kg es la referencia general de proteína para adultos.',
+    'sourcesFoodTips': 'Consejos de cada objetivo',
+    'sourcesFoodTitle': 'Alimentación, agua y peso',
     'sourcesFoodIntro':
         'De dónde sale cada número sugerido en la pestaña Alimentación. Todos vienen de referencias publicadas; nada lo genera la IA.',
     'sourcesFoodGoals': 'Objetivos: comidas y proteína',
@@ -316,7 +529,7 @@ const _labels = <String, Map<String, String>>{
     'sourcesRuleNext':
         'La próxima comida se sugiere 3 h 30 después de la última (mitad de 3–4 h), redondeada a 15 min, y nunca después de las 22 h.',
     'sourcesRuleDrops':
-        'Cada gota vale 1/8 de la meta de agua; sin meta, 200 ml.',
+        'El vaso cuenta como 200 ml y la botella como 500 ml hasta que indiques cuánto cabe en la tuya.',
     'sourcesRuleEnergy':
         'Aún no hay meta de energía (kcal): necesita edad y nivel de actividad, que la app no pregunta.',
     'evolutionStreak': 'racha',

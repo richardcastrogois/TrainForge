@@ -2,6 +2,7 @@ import 'package:trainforge/core/l10n/localized_context.dart';
 import 'package:trainforge/shared/widgets/app_loading.dart';
 import 'package:trainforge/features/home/presentation/pages/today_page.dart';
 import 'package:flutter/material.dart';
+import 'package:trainforge/features/body/presentation/body_views.dart';
 import 'package:trainforge/features/nutrition/presentation/daily_summary_controller.dart';
 import 'figma_bottom_nav.dart';
 import 'figma_components.dart';
@@ -117,6 +118,7 @@ class EvolutionPage extends StatelessWidget {
       sessions: sessions,
       nutrition: nutrition,
       onStart: openWorkouts,
+      body: const BodyCard(),
     );
     final repository = activity;
     if (repository == null) {

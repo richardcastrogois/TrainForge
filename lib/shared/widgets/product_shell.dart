@@ -7,6 +7,7 @@ import 'package:trainforge/core/motion/app_motion.dart';
 import 'package:trainforge/shared/widgets/app_loading.dart';
 import 'package:trainforge/features/catalog/presentation/catalog_controller.dart';
 import 'package:flutter/material.dart';
+import 'package:trainforge/features/body/presentation/body_views.dart';
 import 'figma_components.dart';
 import 'package:trainforge/core/theme/trainforge_theme.dart';
 import 'package:trainforge/features/auth/presentation/auth_controller.dart';
@@ -224,6 +225,16 @@ class _ProductShellState extends State<ProductShell>
           label: l('addWater'),
           color: context.tf.blue,
           onTap: () => then(TrainForgeDestination.food),
+        ),
+      if (bodyAllowed(context))
+        NavAction(
+          icon: Icons.monitor_weight_outlined,
+          label: l('addWeight'),
+          color: context.tf.yellow,
+          onTap: () {
+            closeAdd();
+            showWeighIn(context);
+          },
         ),
     ];
   }

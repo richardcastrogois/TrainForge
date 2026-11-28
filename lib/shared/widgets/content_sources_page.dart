@@ -46,7 +46,7 @@ class ContentSourcesPage extends StatelessWidget {
         const SizedBox(height: 12),
         FigmaActionCard(
           title: shellLabel(context, 'sourcesFoodTitle'),
-          subtitle: 'ISSN · IOM · EFSA',
+          subtitle: 'ISSN · IOM · EFSA · OMS',
           asset: 'plan',
           onTap: () => open(context, const FoodGoalSourcesPage()),
         ),

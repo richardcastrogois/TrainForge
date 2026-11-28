@@ -1,10 +1,10 @@
 import 'dart:math' as math;
 
 import 'package:flutter/material.dart';
+import 'package:trainforge/shared/widgets/main_action.dart';
 import 'package:trainforge/core/theme/trainforge_theme.dart';
 import 'package:trainforge/core/l10n/localized_context.dart';
 
-import 'glass_surface.dart';
 import 'shell_labels.dart';
 
 /// Evolução before the first workout: every card the page will have, with
@@ -21,11 +21,15 @@ class EvolutionPreview extends StatefulWidget {
 
   /// What is already known; [EvolutionData.empty] before the first record.
   final EvolutionData data;
+
+  /// Shown under the month (Evolução's "Corpo").
+  final Widget? body;
   const EvolutionPreview({
     super.key,
     required this.onStart,
     required this.now,
     this.data = EvolutionData.empty,
+    this.body,
   });
 
   @override
@@ -147,6 +151,10 @@ class _EvolutionPreviewState extends State<EvolutionPreview>
       crossAxisAlignment: CrossAxisAlignment.stretch,
       children: [
         rise(0, _Card(child: _month(context, cell))),
+        if (widget.body != null) ...[
+          SizedBox(height: space),
+          rise(0, widget.body!),
+        ],
         SizedBox(height: space),
         rise(
           1,
@@ -250,31 +258,12 @@ class _EvolutionPreviewState extends State<EvolutionPreview>
           SizedBox(height: space + 4),
           rise(
             3,
-            // The one orange block of the page, so the eye lands on it; a slow
-            // glow breathes around it.
-            AnimatedBuilder(
-              animation: loop,
-              builder: (context, child) => DecoratedBox(
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(20),
-                  boxShadow: [
-                    BoxShadow(
-                      color: TrainForgeTheme.highlight.withValues(
-                        alpha: .22 * wave(),
-                      ),
-                      spreadRadius: 4 * wave(),
-                    ),
-                  ],
-                ),
-                child: child,
-              ),
-              child: LiquidButton(
-                label: l('evolutionStart'),
-                color: TrainForgeTheme.highlight,
-                foreground: TrainForgeTheme.ink,
-                height: _compact(context) ? 46 : 56,
-                onPressed: widget.onStart,
-              ),
+            // Green like every main button; orange only on its icon disc.
+            MainAction(
+              label: l('evolutionStart'),
+              icon: Icons.play_arrow_rounded,
+              height: _compact(context) ? 46 : 56,
+              onPressed: widget.onStart,
             ),
           ),
         ],

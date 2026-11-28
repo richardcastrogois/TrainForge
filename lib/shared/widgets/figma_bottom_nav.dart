@@ -302,7 +302,13 @@ class _NavFanState extends State<NavFan> with SingleTickerProviderStateMixin {
     final n = widget.actions.length;
     // Close together on a short arc: 2 actions at 120/60 degrees, 3 at
     // 145/90/35.
-    final spread = n <= 1 ? 0.0 : (n == 2 ? 60.0 : 110.0);
+    final spread = n <= 1
+        ? 0.0
+        : (n == 2
+              ? 60.0
+              : n == 3
+              ? 110.0
+              : 150.0);
     const radius = 96.0, side = 58.0;
     return SizedBox(
       height: NavFan.height,

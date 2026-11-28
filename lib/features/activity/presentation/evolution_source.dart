@@ -129,12 +129,16 @@ class EvolutionBoard extends StatefulWidget {
   final NutritionRepository? nutrition;
   final VoidCallback onStart;
   final DateTime Function() now;
+
+  /// Shown under the month (the body card).
+  final Widget? body;
   const EvolutionBoard({
     super.key,
     required this.sessions,
     required this.nutrition,
     required this.onStart,
     this.now = DateTime.now,
+    this.body,
   });
 
   @override
@@ -167,6 +171,7 @@ class _EvolutionBoardState extends State<EvolutionBoard> {
   @override
   Widget build(BuildContext context) => EvolutionPreview(
     now: widget.now,
+    body: widget.body,
     // The first-workout button only until there is a workout.
     onStart: widget.sessions.isEmpty ? widget.onStart : null,
     data: buildEvolution(

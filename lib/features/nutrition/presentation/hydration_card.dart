@@ -17,7 +17,7 @@ String _label(BuildContext context, String key) {
 
 const _labels = {
   'pt': {
-    'title': 'Água de hoje',
+    'title': 'Água',
     'glass': '+ 1 copo',
     'bottle': '+ 1 garrafa',
     'added': 'Água registrada',
@@ -25,7 +25,7 @@ const _labels = {
     'failed': 'Não foi possível registrar agora. Tente de novo.',
   },
   'en': {
-    'title': 'Water today',
+    'title': 'Water',
     'glass': '+ 1 glass',
     'bottle': '+ 1 bottle',
     'added': 'Water recorded',
@@ -33,7 +33,7 @@ const _labels = {
     'failed': 'Could not record now. Try again.',
   },
   'es': {
-    'title': 'Agua de hoy',
+    'title': 'Agua',
     'glass': '+ 1 vaso',
     'bottle': '+ 1 botella',
     'added': 'Agua registrada',
@@ -52,10 +52,14 @@ class HydrationCard extends StatefulWidget {
   /// Called after a change so the day summary reloads.
   final VoidCallback? changed;
 
-  /// Food page layout: total, eight drops (each 1/8 of [goalMl]) and the
-  /// two buttons, in a white card.
-  final bool compact;
-  final int? goalMl;
+  /// Lays the water out elsewhere (the food page's day card): gets the
+  /// day's total and `add` (null while a record is being saved).
+  final Widget Function(
+    BuildContext context,
+    int? total,
+    ValueChanged<int>? add,
+  )?
+  builder;
 
   /// Gets the day's total whenever it is read again.
   final ValueChanged<int>? onTotal;
@@ -64,8 +68,7 @@ class HydrationCard extends StatefulWidget {
     required this.repository,
     this.now = DateTime.now,
     this.changed,
-    this.compact = false,
-    this.goalMl,
+    this.builder,
     this.onTotal,
   });
   @override
@@ -165,7 +168,9 @@ class _HydrationCardState extends State<HydrationCard> {
   @override
   Widget build(BuildContext context) {
     String l(String k) => _label(context, k);
-    if (widget.compact) return _compact(context, l);
+    if (widget.builder != null) {
+      return widget.builder!(context, total, busy ? null : add);
+    }
     return Container(
       padding: const EdgeInsets.all(16),
       decoration: BoxDecoration(
@@ -251,107 +256,4 @@ class _HydrationCardState extends State<HydrationCard> {
       ),
     ),
   );
-}
-
-const _drop = Color(0xff2f7fcf);
-
-extension on _HydrationCardState {
-  /// Eight drops light up as the day's water reaches each eighth of the goal
-  /// (without a goal, each drop is a glass of 200 ml).
-  Widget _compact(BuildContext context, String Function(String) l) {
-    final goal = widget.goalMl;
-    final step = goal == null ? 200 : goal / 8;
-    final lit = ((total ?? 0) / step).floor().clamp(0, 8);
-    Widget chip(String label, int ml) => Material(
-      color: context.tf.soft,
-      borderRadius: BorderRadius.circular(12),
-      child: InkWell(
-        borderRadius: BorderRadius.circular(12),
-        onTap: busy ? null : () => add(ml),
-        child: ConstrainedBox(
-          constraints: const BoxConstraints(minHeight: 34),
-          child: Center(
-            child: FittedBox(
-              fit: BoxFit.scaleDown,
-              child: Text(
-                label,
-                style: TextStyle(fontSize: 12, color: context.tf.ink),
-              ),
-            ),
-          ),
-        ),
-      ),
-    );
-    return Column(
-      crossAxisAlignment: CrossAxisAlignment.stretch,
-      children: [
-        Row(
-          children: [
-            Expanded(
-              child: FittedBox(
-                fit: BoxFit.scaleDown,
-                alignment: Alignment.centerLeft,
-                child: Text(
-                  l('title'),
-                  style: const TextStyle(
-                    fontSize: 13,
-                    fontWeight: FontWeight.w700,
-                  ),
-                ),
-              ),
-            ),
-            Semantics(
-              liveRegion: true,
-              child: Text(
-                total == null
-                    ? '—'
-                    : goal == null
-                    ? '$total ml'
-                    : '$total / $goal',
-                style: const TextStyle(fontSize: 13),
-              ),
-            ),
-          ],
-        ),
-        const SizedBox(height: 6),
-        ExcludeSemantics(
-          child: Column(
-            children: [
-              for (final row in [0, 4])
-                Padding(
-                  padding: const EdgeInsets.symmetric(vertical: 2),
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceAround,
-                    children: [
-                      for (var i = row; i < row + 4; i++)
-                        Icon(
-                          i < lit
-                              ? Icons.water_drop
-                              : Icons.water_drop_outlined,
-                          size: 18,
-                          color: _drop.withValues(alpha: i < lit ? 1 : .45),
-                        ),
-                    ],
-                  ),
-                ),
-            ],
-          ),
-        ),
-        const SizedBox(height: 6),
-        Semantics(
-          button: true,
-          label: '${l('glass')}, 200 ml',
-          excludeSemantics: true,
-          child: chip(l('glass'), 200),
-        ),
-        const SizedBox(height: 5),
-        Semantics(
-          button: true,
-          label: '${l('bottle')}, 500 ml',
-          excludeSemantics: true,
-          child: chip(l('bottle'), 500),
-        ),
-      ],
-    );
-  }
 }

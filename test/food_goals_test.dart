@@ -32,4 +32,24 @@ void main() {
       expect(OnboardingProfile.foodGoals, contains(goal.id));
     }
   });
+
+  test('the bottle size is kept only within its limits', () {
+    final saved = const OnboardingProfile(bottleMl: 750).toJson();
+    expect(OnboardingProfile.fromJson(saved).bottleMl, 750);
+    expect(
+      OnboardingProfile.fromJson({...saved, 'bottleMl': 50}).bottleMl,
+      isNull,
+    );
+    expect(
+      OnboardingProfile.fromJson({...saved, 'bottleMl': 9000}).bottleMl,
+      isNull,
+    );
+  });
+
+  test('every goal tip points to a listed reference', () {
+    final uses = {for (final s in foodGoalSources) s.use};
+    for (final goal in FoodGoal.values) {
+      expect(uses, contains(goal.tipSource));
+    }
+  });
 }

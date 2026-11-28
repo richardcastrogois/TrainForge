@@ -20,27 +20,46 @@
 ///   undisclosed gender: the midpoint, 1.8 L.
 enum FoodGoal {
   /// Lose fat while keeping muscle.
-  loseFat('perder', meals: 4, proteinPerKg: 2.0),
+  loseFat('perder', meals: 4, proteinPerKg: 2.0, tipSource: 'source_protein'),
 
   /// Keep the current weight.
-  maintain('manter', meals: 4, proteinPerKg: 1.4),
+  maintain('manter', meals: 4, proteinPerKg: 1.4, tipSource: 'source_timing'),
 
   /// Gain muscle mass.
-  gainMuscle('ganhar', meals: 5, proteinPerKg: 1.6),
+  gainMuscle('ganhar', meals: 5, proteinPerKg: 1.6, tipSource: 'source_timing'),
 
   /// Lose fat and gain muscle at the same time.
-  recomposition('recompor', meals: 4, proteinPerKg: 2.0),
+  recomposition(
+    'recompor',
+    meals: 4,
+    proteinPerKg: 2.0,
+    tipSource: 'source_protein',
+  ),
 
   /// Train or play sport better.
-  performance('desempenho', meals: 5, proteinPerKg: 1.6),
+  performance(
+    'desempenho',
+    meals: 5,
+    proteinPerKg: 1.6,
+    tipSource: 'source_timing',
+  ),
 
   /// Eat better, no body change in mind.
-  eatBetter('saude', meals: 4, proteinPerKg: 0.8);
+  eatBetter('saude', meals: 4, proteinPerKg: 0.8, tipSource: 'source_rda');
 
   final String id;
   final int meals;
   final double proteinPerKg;
-  const FoodGoal(this.id, {required this.meals, required this.proteinPerKg});
+
+  /// The reference behind the goal's tip on the picker (`goalTip_<id>`):
+  /// the `use` key of one of [foodGoalSources].
+  final String tipSource;
+  const FoodGoal(
+    this.id, {
+    required this.meals,
+    required this.proteinPerKg,
+    required this.tipSource,
+  });
 
   static FoodGoal? fromId(String? id) {
     for (final goal in values) {
@@ -70,8 +89,12 @@ class FoodReferenceSource {
 
   /// Key of the label that says what the app takes from it.
   final String use;
-  const FoodReferenceSource(this.citation, this.doi, this.use);
-  String get url => 'https://doi.org/$doi';
+
+  /// Address when the reference has no DOI.
+  final String? link;
+  const FoodReferenceSource(this.citation, this.doi, this.use, {this.link});
+  String get url => link ?? 'https://doi.org/$doi';
+  String get shown => doi.isEmpty ? url : 'DOI $doi';
 }
 
 const foodGoalSources = [
@@ -102,5 +125,17 @@ const foodGoalSources = [
         'Journal. 2010;8(3):1459.',
     '10.2903/j.efsa.2010.1459',
     'source_water',
+  ),
+];
+
+/// Behind the BMI bands on the body page.
+const bodySources = [
+  FoodReferenceSource(
+    'World Health Organization. Obesity: preventing and managing the global '
+        'epidemic. Report of a WHO consultation. WHO Technical Report Series '
+        '894. Geneva: World Health Organization; 2000.',
+    '',
+    'source_bmi',
+    link: 'https://iris.who.int/handle/10665/42330',
   ),
 ];

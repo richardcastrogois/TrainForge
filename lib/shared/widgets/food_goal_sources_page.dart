@@ -71,7 +71,7 @@ class FoodGoalSourcesPage extends StatelessWidget {
                         Uri.parse(source.url),
                         mode: LaunchMode.externalApplication,
                       ),
-                      child: Text('DOI ${source.doi}'),
+                      child: Text(source.shown),
                     ),
                   ),
                 ],
@@ -79,6 +79,24 @@ class FoodGoalSourcesPage extends StatelessWidget {
             ),
             const SizedBox(height: 12),
           ],
+          FigmaSection(
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.stretch,
+              children: [
+                Text(l('sourcesFoodTips'), style: bold),
+                const SizedBox(height: 6),
+                for (final goal in FoodGoal.values)
+                  Padding(
+                    padding: const EdgeInsets.symmetric(vertical: 4),
+                    child: Text(
+                      '${l('goal_${goal.id}')}: ${l('goalTip_${goal.id}')} '
+                      '(${foodGoalSources.firstWhere((s) => s.use == goal.tipSource).citation.split('.').first})',
+                    ),
+                  ),
+              ],
+            ),
+          ),
+          const SizedBox(height: 12),
           FigmaSection(
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.stretch,
@@ -101,6 +119,53 @@ class FoodGoalSourcesPage extends StatelessWidget {
           ),
           const SizedBox(height: 12),
           FigmaSection(child: Text(l('foodGoalNote'))),
+          const SizedBox(height: 24),
+          Text(
+            l('sourcesBodyTitle'),
+            style: const TextStyle(fontSize: 20, fontWeight: FontWeight.w800),
+          ),
+          const SizedBox(height: 12),
+          for (final source in bodySources) ...[
+            FigmaSection(
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.stretch,
+                children: [
+                  Text(l(source.use), style: bold),
+                  const SizedBox(height: 6),
+                  Text(source.citation),
+                  Align(
+                    alignment: Alignment.centerLeft,
+                    child: TextButton(
+                      onPressed: () => launchUrl(
+                        Uri.parse(source.url),
+                        mode: LaunchMode.externalApplication,
+                      ),
+                      child: Text(source.shown),
+                    ),
+                  ),
+                ],
+              ),
+            ),
+            const SizedBox(height: 12),
+          ],
+          FigmaSection(
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.stretch,
+              children: [
+                Text(l('sourcesFoodRules'), style: bold),
+                const SizedBox(height: 6),
+                for (final rule in const [
+                  'sourcesRuleWeek',
+                  'sourcesRuleDue',
+                  'sourcesRuleProtein',
+                ])
+                  Padding(
+                    padding: const EdgeInsets.symmetric(vertical: 3),
+                    child: Text('• ${l(rule)}'),
+                  ),
+              ],
+            ),
+          ),
         ],
       ),
     );

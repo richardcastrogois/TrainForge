@@ -2,6 +2,7 @@ import 'dart:convert';
 
 import 'package:flutter/widgets.dart';
 import 'package:flutter_secure_storage/flutter_secure_storage.dart';
+import 'package:trainforge/features/body/domain/body.dart';
 
 /// First-use answers that prepare the app. Every answer is optional and can be
 /// changed later. Kept encrypted on this device only (never sent to the API).
@@ -21,6 +22,15 @@ class OnboardingProfile {
   /// Food goal id (`FoodGoal.id`), chosen on the food page.
   final String? foodGoal;
 
+  /// How much the person's own bottle holds, in ml ("+ Garrafa").
+  final int? bottleMl;
+
+  /// Weigh-ins, oldest first (only with health data granted).
+  final List<WeighIn> weighIns;
+
+  /// Suggest a weigh-in after 7 days without one (on by default).
+  final bool weighReminder;
+
   const OnboardingProfile({
     this.gender,
     this.heightCm,
@@ -29,6 +39,9 @@ class OnboardingProfile {
     this.confidence,
     this.completedAt,
     this.foodGoal,
+    this.bottleMl,
+    this.weighIns = const [],
+    this.weighReminder = true,
   });
 
   static const genders = ['woman', 'man', 'nonbinary', 'other', 'undisclosed'];
@@ -40,6 +53,9 @@ class OnboardingProfile {
     'desempenho',
     'saude',
   ];
+
+  /// Bottle sizes accepted on "Quanto cabe na sua garrafa?".
+  static const bottleMin = 100, bottleMax = 3000;
   static const placeIds = ['casa', 'praca', 'academia', 'pausa'];
   static const confidences = [
     'sentado',
@@ -70,6 +86,9 @@ class OnboardingProfile {
     String? confidence,
     DateTime? completedAt,
     String? foodGoal,
+    int? bottleMl,
+    List<WeighIn>? weighIns,
+    bool? weighReminder,
     bool clearHeight = false,
     bool clearWeight = false,
   }) => OnboardingProfile(
@@ -80,6 +99,9 @@ class OnboardingProfile {
     confidence: confidence ?? this.confidence,
     completedAt: completedAt ?? this.completedAt,
     foodGoal: foodGoal ?? this.foodGoal,
+    bottleMl: bottleMl ?? this.bottleMl,
+    weighIns: weighIns ?? this.weighIns,
+    weighReminder: weighReminder ?? this.weighReminder,
   );
 
   Map<String, dynamic> toJson() => {
@@ -92,6 +114,9 @@ class OnboardingProfile {
     if (completedAt != null)
       'completedAt': completedAt!.toUtc().toIso8601String(),
     if (foodGoal != null) 'foodGoal': foodGoal,
+    if (bottleMl != null) 'bottleMl': bottleMl,
+    if (weighIns.isNotEmpty) 'weighIns': [for (final w in weighIns) w.toJson()],
+    if (!weighReminder) 'weighReminder': false,
   };
 
   /// Unknown or out-of-range values are dropped instead of trusted.
@@ -115,6 +140,12 @@ class OnboardingProfile {
       foodGoal: foodGoals.contains(j['foodGoal'])
           ? j['foodGoal'] as String
           : null,
+      bottleMl: range(j['bottleMl'], bottleMin, bottleMax),
+      weighIns: [
+        for (final w in j['weighIns'] as List? ?? const [])
+          ?WeighIn.fromJson(w),
+      ]..sort((a, b) => a.day.compareTo(b.day)),
+      weighReminder: j['weighReminder'] != false,
     );
   }
 }
@@ -230,5 +261,30 @@ class OnboardingScope extends InheritedNotifier<OnboardingController> {
   Future<void> saveFoodGoal(String id) => notifier!.save(
     accountId,
     (profile ?? const OnboardingProfile()).copyWith(foodGoal: id),
+  );
+
+  /// Keeps the size of the person's bottle on this device.
+  Future<void> saveBottleMl(int ml) => notifier!.save(
+    accountId,
+    (profile ?? const OnboardingProfile()).copyWith(bottleMl: ml),
+  );
+
+  /// Records a weigh-in (one per day) and keeps it as the current weight,
+  /// so the food goal's protein follows it.
+  Future<void> saveWeighIn(WeighIn entry) {
+    final current = profile ?? const OnboardingProfile();
+    final all = addWeighIn(current.weighIns, entry);
+    return notifier!.save(
+      accountId,
+      current.copyWith(
+        weighIns: all,
+        weightKg: all.last.kg.round().clamp(25, 250),
+      ),
+    );
+  }
+
+  Future<void> saveWeighReminder(bool on) => notifier!.save(
+    accountId,
+    (profile ?? const OnboardingProfile()).copyWith(weighReminder: on),
   );
 }
