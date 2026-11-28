@@ -1,6 +1,6 @@
 # Referência técnica extraída do código
 
-> Gerado de código e registros versionados por `tools/gerar_documentacao.py`. Não editar este arquivo à mão. Revisão das entradas: `f5edb24dcb36a008`.
+> Gerado de código e registros versionados por `tools/gerar_documentacao.py`. Não editar este arquivo à mão. Revisão das entradas: `0c913c5c0695b1d8`.
 
 [Arquitetura explicada](../README.md) · [APIs](../diagramas/apis.md) · [Banco e colunas](../diagramas/banco.md) · [Backlog](../../execucao/v1/backlog.md)
 
@@ -8,8 +8,8 @@ Este inventário lê padrões estáticos de Dart, Go, SQL e Swagger. Não execut
 
 | Entrada | Quantidade detectada |
 | --- | --- |
-| Arquivos Dart | 140 |
-| Telas/widgets | 41 |
+| Arquivos Dart | 142 |
+| Telas/widgets | 42 |
 | Literais HTTP Flutter | 35 |
 | Arquivos Go de produção | 101 |
 | Registros HTTP Go | 55 |
@@ -57,9 +57,10 @@ Uma referência de construtor não demonstra clique ou condição de navegação
 | TrainingSessionPage | [lib/features/training_library/presentation/training_library_page.dart:244](../../../lib/features/training_library/presentation/training_library_page.dart) |
 | AccountPage | [lib/shared/widgets/account_page.dart:21](../../../lib/shared/widgets/account_page.dart) |
 | AuthGate | [lib/shared/widgets/auth_gate.dart:15](../../../lib/shared/widgets/auth_gate.dart) |
-| ContentSourcesPage | [lib/shared/widgets/content_sources_page.dart:10](../../../lib/shared/widgets/content_sources_page.dart) |
+| ContentSourcesPage | [lib/shared/widgets/content_sources_page.dart:12](../../../lib/shared/widgets/content_sources_page.dart) |
 | EvaluationGuidePage | [lib/shared/widgets/evaluation_guide_page.dart:11](../../../lib/shared/widgets/evaluation_guide_page.dart) |
 | FoodCatalogCreditsPage | [lib/shared/widgets/food_catalog_credits_page.dart:10](../../../lib/shared/widgets/food_catalog_credits_page.dart) |
+| FoodGoalSourcesPage | [lib/shared/widgets/food_goal_sources_page.dart:11](../../../lib/shared/widgets/food_goal_sources_page.dart) |
 | EvolutionPage | [lib/shared/widgets/product_overviews.dart:93](../../../lib/shared/widgets/product_overviews.dart) |
 | ProductShell | [lib/shared/widgets/product_shell.dart:29](../../../lib/shared/widgets/product_shell.dart) |
 | StartupPage | [lib/shared/widgets/startup_page.dart:6](../../../lib/shared/widgets/startup_page.dart) |
@@ -125,10 +126,11 @@ Uma referência de construtor não demonstra clique ou condição de navegação
 | AuthGate | OnboardingPage | [lib/shared/widgets/auth_gate.dart:123](../../../lib/shared/widgets/auth_gate.dart) |
 | AuthGate | ProductShell | [lib/shared/widgets/auth_gate.dart:137](../../../lib/shared/widgets/auth_gate.dart) |
 | AuthGate | StartupPage | [lib/shared/widgets/auth_gate.dart:78](../../../lib/shared/widgets/auth_gate.dart) |
-| ContentSourcesPage | CatalogPage | [lib/shared/widgets/content_sources_page.dart:28](../../../lib/shared/widgets/content_sources_page.dart) |
-| ContentSourcesPage | FoodPage | [lib/shared/widgets/content_sources_page.dart:35](../../../lib/shared/widgets/content_sources_page.dart) |
-| ContentSourcesPage | NutritionPage | [lib/shared/widgets/content_sources_page.dart:52](../../../lib/shared/widgets/content_sources_page.dart) |
-| ContentSourcesPage | FoodCatalogCreditsPage | [lib/shared/widgets/content_sources_page.dart:42](../../../lib/shared/widgets/content_sources_page.dart) |
+| ContentSourcesPage | CatalogPage | [lib/shared/widgets/content_sources_page.dart:30](../../../lib/shared/widgets/content_sources_page.dart) |
+| ContentSourcesPage | FoodPage | [lib/shared/widgets/content_sources_page.dart:37](../../../lib/shared/widgets/content_sources_page.dart) |
+| ContentSourcesPage | NutritionPage | [lib/shared/widgets/content_sources_page.dart:61](../../../lib/shared/widgets/content_sources_page.dart) |
+| ContentSourcesPage | FoodCatalogCreditsPage | [lib/shared/widgets/content_sources_page.dart:44](../../../lib/shared/widgets/content_sources_page.dart) |
+| ContentSourcesPage | FoodGoalSourcesPage | [lib/shared/widgets/content_sources_page.dart:51](../../../lib/shared/widgets/content_sources_page.dart) |
 | EvaluationGuidePage | CatalogPage | [lib/shared/widgets/evaluation_guide_page.dart:113](../../../lib/shared/widgets/evaluation_guide_page.dart) |
 | EvaluationGuidePage | FoodPage | [lib/shared/widgets/evaluation_guide_page.dart:121](../../../lib/shared/widgets/evaluation_guide_page.dart) |
 | EvolutionPage | ActivityPage | [lib/shared/widgets/product_overviews.dart:129](../../../lib/shared/widgets/product_overviews.dart) |

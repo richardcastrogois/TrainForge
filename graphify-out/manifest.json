@@ -528,9 +528,9 @@
     "semantic_hash": "37c08ca9cf901e9ba39425cd491fb847"
   },
   "shared/widgets/content_sources_page.dart": {
-    "mtime": 1795010317.2696137,
-    "seen": 1795025834.3103662,
-    "ast_hash": "a5a3807f9edbd0735f8500199f16f79e",
+    "mtime": 1795870234.8420506,
+    "seen": 1795870568.7406607,
+    "ast_hash": "5b5a8ed709c3c6a47621ffe8472f6474",
     "semantic_hash": ""
   },
   "features/activity/data/activity_repository.dart": {
@@ -690,9 +690,9 @@
     "semantic_hash": ""
   },
   "features/legal/legal_documents.dart": {
-    "mtime": 1795840306.3569853,
-    "seen": 1795840311.433935,
-    "ast_hash": "3fdc217e15911a299bd2736738e90c58",
+    "mtime": 1795870551.346332,
+    "seen": 1795870568.7396643,
+    "ast_hash": "39786b6362002746777c37ca5d8cc6a5",
     "semantic_hash": ""
   },
   "features/legal/presentation/legal_labels.dart": {
@@ -786,9 +786,9 @@
     "semantic_hash": ""
   },
   "shared/widgets/shell_labels.dart": {
-    "mtime": 1795839986.4822736,
-    "seen": 1795840311.433935,
-    "ast_hash": "031fbd439b996bd0b86228a572a4288f",
+    "mtime": 1795870238.6629062,
+    "seen": 1795870568.7406607,
+    "ast_hash": "2b4dbe16492f94f657421b1f1a7dbc86",
     "semantic_hash": ""
   },
   "shared/widgets/workouts_overview.dart": {
@@ -828,15 +828,27 @@
     "semantic_hash": ""
   },
   "features/nutrition/domain/food_goals.dart": {
-    "mtime": 1795839479.8407066,
-    "seen": 1795840311.433935,
-    "ast_hash": "a589cf880fc562e16699bfc02a164a65",
+    "mtime": 1795870181.6550725,
+    "seen": 1795870568.7396643,
+    "ast_hash": "55a5c0159885c0ef4812417609ba69d0",
     "semantic_hash": ""
   },
   "features/nutrition/presentation/food_board.dart": {
-    "mtime": 1795840207.9612708,
-    "seen": 1795840311.433935,
-    "ast_hash": "c60957a86d4daf08109c991923652164",
+    "mtime": 1795870396.0591917,
+    "seen": 1795870568.7406607,
+    "ast_hash": "b45a03e600c570b5e00b52a5a55181c9",
+    "semantic_hash": ""
+  },
+  "features/nutrition/domain/day_meals.dart": {
+    "mtime": 1795870129.6729507,
+    "seen": 1795870568.7396643,
+    "ast_hash": "0c6bed18931e4c63a048c30f50c4fd1a",
+    "semantic_hash": ""
+  },
+  "shared/widgets/food_goal_sources_page.dart": {
+    "mtime": 1795870238.6688783,
+    "seen": 1795870568.7406607,
+    "ast_hash": "422c45be27639c5ecd93dd34d2cd2c2f",
     "semantic_hash": ""
   }
 }

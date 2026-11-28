@@ -209,3 +209,8 @@ Metas sugeridas, todas como ponto de partida editável (`food_goals.dart`), com 
 - Refeições: ISSN "Nutrient timing" (Kerksick et al., 2017): proteína a cada 3–4 h ao longo do dia; mais refeições ajudam sobretudo o apetite.
 - Água para beber: EFSA (2010), água total 2,0 L/dia mulheres e 2,5 L/dia homens, cerca de 20% vinda dos alimentos, logo 1,6 L e 2,0 L para beber; outro gênero ou não informado: 1,8 L.
 - **Ainda sem meta de energia:** exige idade e nível de atividade (Mifflin-St Jeor × fator de atividade), que as primeiras perguntas ainda não coletam.
+
+#### Refeições de hoje e fontes nos ajustes (28/11/2026)
+
+- **Refeições de hoje** (abaixo de Falar/Foto/Buscar): uma linha por refeição com nome pelo horário, hora, alimentos e kcal (só quando todos os itens têm kcal exato), total no título ("2 de 5 · 1040 kcal") e a sugestão da próxima refeição. Sem refeições: barra com os espaços da meta e uma frase, sem botão. Tocar abre o diário. Lógica em `day_meals.dart`.
+- **Fontes nos ajustes:** "Fontes e transparência" ganhou "Metas de alimentação e água" (`FoodGoalSourcesPage`), ao lado das fontes dos movimentos. Mostra a tabela de objetivos e água lida do próprio código (`FoodGoal`), cada referência com citação completa e DOI (`foodGoalSources`) e, separadas, as regras do próprio app que não vêm de fonte: agrupar registros com até 1 h, nome pelo horário, próxima refeição 3 h 30 depois da última (meio de 3–4 h, arredondada a 15 min, não após 22 h), gota = 1/8 da meta (200 ml sem meta) e ausência de meta de energia.
