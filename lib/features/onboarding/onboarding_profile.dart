@@ -18,6 +18,9 @@ class OnboardingProfile {
   final String? confidence;
   final DateTime? completedAt;
 
+  /// Food goal id (`FoodGoal.id`), chosen on the food page.
+  final String? foodGoal;
+
   const OnboardingProfile({
     this.gender,
     this.heightCm,
@@ -25,9 +28,18 @@ class OnboardingProfile {
     this.places = const {},
     this.confidence,
     this.completedAt,
+    this.foodGoal,
   });
 
   static const genders = ['woman', 'man', 'nonbinary', 'other', 'undisclosed'];
+  static const foodGoals = [
+    'perder',
+    'manter',
+    'ganhar',
+    'recompor',
+    'desempenho',
+    'saude',
+  ];
   static const placeIds = ['casa', 'praca', 'academia', 'pausa'];
   static const confidences = [
     'sentado',
@@ -57,6 +69,7 @@ class OnboardingProfile {
     Set<String>? places,
     String? confidence,
     DateTime? completedAt,
+    String? foodGoal,
     bool clearHeight = false,
     bool clearWeight = false,
   }) => OnboardingProfile(
@@ -66,6 +79,7 @@ class OnboardingProfile {
     places: places ?? this.places,
     confidence: confidence ?? this.confidence,
     completedAt: completedAt ?? this.completedAt,
+    foodGoal: foodGoal ?? this.foodGoal,
   );
 
   Map<String, dynamic> toJson() => {
@@ -77,6 +91,7 @@ class OnboardingProfile {
     if (confidence != null) 'confidence': confidence,
     if (completedAt != null)
       'completedAt': completedAt!.toUtc().toIso8601String(),
+    if (foodGoal != null) 'foodGoal': foodGoal,
   };
 
   /// Unknown or out-of-range values are dropped instead of trusted.
@@ -97,6 +112,9 @@ class OnboardingProfile {
           ? confidence as String
           : null,
       completedAt: DateTime.tryParse(j['completedAt'] as String? ?? ''),
+      foodGoal: foodGoals.contains(j['foodGoal'])
+          ? j['foodGoal'] as String
+          : null,
     );
   }
 }
@@ -207,4 +225,10 @@ class OnboardingScope extends InheritedNotifier<OnboardingController> {
       context.dependOnInheritedWidgetOfExactType<OnboardingScope>();
 
   OnboardingProfile? get profile => notifier!.profile(accountId);
+
+  /// Keeps the food goal with the other answers on this device.
+  Future<void> saveFoodGoal(String id) => notifier!.save(
+    accountId,
+    (profile ?? const OnboardingProfile()).copyWith(foodGoal: id),
+  );
 }

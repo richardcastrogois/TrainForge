@@ -2,12 +2,12 @@ import 'package:trainforge/core/l10n/localized_context.dart';
 import 'package:trainforge/shared/widgets/app_loading.dart';
 import 'package:trainforge/features/home/presentation/pages/today_page.dart';
 import 'package:flutter/material.dart';
-import 'package:trainforge/core/theme/trainforge_theme.dart';
 import 'package:trainforge/features/nutrition/presentation/daily_summary_controller.dart';
+import 'figma_bottom_nav.dart';
 import 'figma_components.dart';
 import 'package:trainforge/features/activity/presentation/evolution_source.dart';
+import 'package:trainforge/features/nutrition/presentation/food_board.dart';
 import 'package:trainforge/features/nutrition/domain/nutrition.dart';
-import 'glass_surface.dart';
 import 'shell_labels.dart';
 import 'package:trainforge/features/activity/domain/activity_repository.dart';
 import 'package:trainforge/features/activity/presentation/activity_page.dart';
@@ -24,8 +24,8 @@ class DailyOverview extends StatelessWidget {
   /// Voice and photo entry, only when this build can do them.
   final VoidCallback? openVoice, openPhoto;
 
-  /// One-tap water, when the offline diary is available.
-  final Widget? hydration;
+  /// The offline diary (water and today's meals), when available.
+  final NutritionRepository? diary;
   const DailyOverview({
     super.key,
     required this.controller,
@@ -37,7 +37,7 @@ class DailyOverview extends StatelessWidget {
     required this.openActivity,
     this.openVoice,
     this.openPhoto,
-    this.hydration,
+    this.diary,
   });
   @override
   Widget build(BuildContext context) => ListenableBuilder(
@@ -53,68 +53,20 @@ class DailyOverview extends StatelessWidget {
           openDay: openDay,
         );
       }
-      final snapshot = controller.loading ? null : controller.summary;
-      final int? count = snapshot?['complete'] == true
-          ? (snapshot?['entries'] as int?)
-          : null;
-      final energy = dailyEnergy(snapshot);
       final state = controller.loading
           ? context.l10n.loadingQuery
           : controller.failed
           ? context.l10n.queryUnavailable
           : context.l10n.sourceSubtotals;
-      String l(String k) => shellLabel(context, k);
       return RefreshIndicator(
         onRefresh: controller.load,
         child: FigmaContent(
-          title: context.l10n.eatSimply,
+          // Short title, like Evolução, so the page fits one screen.
+          title: TrainForgeDestination.food.localizedLabel(context),
           subtitle: context.displayLongDate(controller.now()),
           children: [
             if (controller.loading)
               AppProgress(label: context.l10n.loadingDayRecords),
-            // The energy total only once there is something to add up.
-            if (energy != null)
-              Container(
-                padding: const EdgeInsets.all(18),
-                decoration: BoxDecoration(
-                  color: context.tf.nutrition,
-                  borderRadius: BorderRadius.circular(24),
-                ),
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Text(
-                      context.l10n.recordedEnergy,
-                      style: TextStyle(
-                        fontSize: 12,
-                        fontWeight: FontWeight.w700,
-                      ),
-                    ),
-                    SizedBox(height: 4),
-                    Text(
-                      energy,
-                      style: TextStyle(
-                        fontSize: 36,
-                        fontWeight: FontWeight.w700,
-                        height: 1.35,
-                      ),
-                    ),
-                    Text(
-                      context.l10n.energyMethodSubtotal,
-                      style: TextStyle(fontSize: 13, height: 1.35),
-                    ),
-                    if (snapshot?['measuredEntries'] is int &&
-                        snapshot?['estimatedEntries'] is int)
-                      Text(
-                        context.l10n.quantityEvidenceCounts(
-                          snapshot!["measuredEntries"] as int,
-                          snapshot["estimatedEntries"] as int,
-                        ),
-                        style: TextStyle(fontSize: 13),
-                      ),
-                  ],
-                ),
-              ),
             if (controller.failed) ...[
               Text(state),
               OutlinedButton(
@@ -122,97 +74,17 @@ class DailyOverview extends StatelessWidget {
                 child: Text(context.l10n.updateDayRecords),
               ),
             ],
-            LiquidButton(
-              label: l('addMeal'),
-              icon: Icons.add,
-              color: context.tf.primary,
-              foreground: context.tf.onPrimary,
-              onPressed: openNutrition,
-            ),
-            if (openVoice != null || openPhoto != null)
-              Row(
-                children: [
-                  if (openVoice != null)
-                    Expanded(
-                      child: _QuickButton(
-                        icon: Icons.mic_none,
-                        label: l('addVoice'),
-                        color: context.tf.blue,
-                        onTap: openVoice!,
-                      ),
-                    ),
-                  if (openVoice != null && openPhoto != null)
-                    const SizedBox(width: 10),
-                  if (openPhoto != null)
-                    Expanded(
-                      child: _QuickButton(
-                        icon: Icons.photo_camera_outlined,
-                        label: l('addPhoto'),
-                        color: context.tf.yellow,
-                        onTap: openPhoto!,
-                      ),
-                    ),
-                ],
-              ),
-            ?hydration,
-            FigmaActionCard(
-              title: context.l10n.myRecords,
-              subtitle: count == null
-                  ? state
-                  : count == 0
-                  ? l('foodEmpty')
-                  : context.l10n.confirmedDayCount(count),
-              asset: 'food',
-              onTap: openNutrition,
+            FoodBoard(
+              controller: controller,
+              diary: diary,
+              openNutrition: openNutrition,
+              openVoice: openVoice,
+              openPhoto: openPhoto,
             ),
           ],
         ),
       );
     },
-  );
-}
-
-class _QuickButton extends StatelessWidget {
-  final IconData icon;
-  final String label;
-  final Color color;
-  final VoidCallback onTap;
-  const _QuickButton({
-    required this.icon,
-    required this.label,
-    required this.color,
-    required this.onTap,
-  });
-  @override
-  Widget build(BuildContext context) => Material(
-    color: color,
-    borderRadius: BorderRadius.circular(20),
-    child: InkWell(
-      borderRadius: BorderRadius.circular(20),
-      onTap: onTap,
-      child: ConstrainedBox(
-        constraints: const BoxConstraints(minHeight: 84),
-        child: Padding(
-          padding: const EdgeInsets.all(12),
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              Icon(icon, size: 30, color: TrainForgeTheme.ink),
-              const SizedBox(height: 6),
-              Text(
-                label,
-                textAlign: TextAlign.center,
-                style: const TextStyle(
-                  fontSize: 15,
-                  fontWeight: FontWeight.w700,
-                  color: TrainForgeTheme.ink,
-                ),
-              ),
-            ],
-          ),
-        ),
-      ),
-    ),
   );
 }
 

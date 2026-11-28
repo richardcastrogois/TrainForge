@@ -192,6 +192,11 @@ void main() {
   testWidgets(
     'profile survives offline refresh and account erasure removes private routes',
     (t) async {
+      // Evolução and Alimentação keep a preview animation running; with
+      // reduced motion they stand still, so pumpAndSettle can finish.
+      t.platformDispatcher.accessibilityFeaturesTestValue =
+          const FakeAccessibilityFeatures(disableAnimations: true);
+      addTearDown(t.platformDispatcher.clearAccessibilityFeaturesTestValue);
       final repo = SessionFixture()..profile = fixtureProfile;
       final auth = AuthController(repo);
       addTearDown(auth.dispose);

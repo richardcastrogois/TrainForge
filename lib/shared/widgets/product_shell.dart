@@ -24,7 +24,6 @@ import 'product_overviews.dart';
 import 'shell_labels.dart';
 import 'workouts_overview.dart';
 import 'package:trainforge/features/nutrition/data/offline_nutrition_repository.dart';
-import 'package:trainforge/features/nutrition/presentation/hydration_card.dart';
 import 'package:trainforge/features/activity/domain/activity_repository.dart';
 
 class ProductShell extends StatefulWidget {
@@ -321,9 +320,7 @@ class _ProductShellState extends State<ProductShell>
         openPhoto: nutrition is OfflineNutritionRepository
             ? () => openNutrition(start: NutritionStart.photo)
             : null,
-        hydration: nutrition is OfflineNutritionRepository
-            ? HydrationCard(repository: nutrition, changed: daily.load)
-            : null,
+        diary: nutrition is OfflineNutritionRepository ? nutrition : null,
         openNutrition: openNutrition,
         openCatalog: openCatalog,
         openActivity: () => select(TrainForgeDestination.evolution),

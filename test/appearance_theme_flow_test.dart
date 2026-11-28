@@ -77,6 +77,11 @@ void main() {
   testWidgets(
     'system theme follows device brightness and changing it retains the selected tab',
     (t) async {
+      // Evolução and Alimentação keep a preview animation running; with
+      // reduced motion they stand still, so pumpAndSettle can finish.
+      t.platformDispatcher.accessibilityFeaturesTestValue =
+          const FakeAccessibilityFeatures(disableAnimations: true);
+      addTearDown(t.platformDispatcher.clearAccessibilityFeaturesTestValue);
       final store = MemoryAppearance()..saved = 'system';
       final appearance = AppearanceController(store: store);
       final auth = AuthController(SessionFixture()..profile = fixtureProfile);

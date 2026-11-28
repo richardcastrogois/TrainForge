@@ -127,6 +127,11 @@ void main() {
     testWidgets(
       'incomplete diary summary never advertises a complete count for $locale',
       (t) async {
+        // Evolução and Alimentação keep a preview animation running; with
+        // reduced motion they stand still, so pumpAndSettle can finish.
+        t.platformDispatcher.accessibilityFeaturesTestValue =
+            const FakeAccessibilityFeatures(disableAnimations: true);
+        addTearDown(t.platformDispatcher.clearAccessibilityFeaturesTestValue);
         final repo = TodayData()
           ..data = {'entries': 100, 'complete': false, 'nutrients': []};
         final c = DailySummaryController(
