@@ -168,3 +168,18 @@ Problemas vistos pelo autor e correções:
 - **"+":** mais baixo, de vidro líquido laranja e sem a borda branca.
 - **Vidro líquido no app:** `GlassSurface` agora é vidro líquido com fosco (painel do "+", menu do perfil e pílula "Ver treinos"). O novo `LiquidButton` é usado em "Registrar refeição" e "Ver treinos" (Evolução), e o "Começar" da Hoje também é de vidro. Alto contraste continua opaco.
 - **Ainda sem vidro:** formulários, chips e cartões de lista, para manter a leitura.
+
+### Sexta revisão do autor (27–28/11/2026)
+
+Cores: **verde é a principal e laranja a secundária** (60% neutro, 30% verde, 10% laranja). O laranja marca só o que deve chamar o olho: o "+", o ícone da aba aberta, o "Começar" da Hoje, a chama da sequência e o botão do primeiro treino da Evolução.
+
+- **Barra:** vidro líquido claro com um pouco de fosco (`blur` 3,2, tinta 24%), sem pílula colorida; só o ícone da aba aberta fica laranja. O "+" é laranja sólido sob a borda de vidro, com sombra leve.
+- **"+":** abre um leque de três bolhas de vidro colorido (Treino, Refeição, Água) em arco acima dele, sem textos. O "+" gira suave até virar "×" e volta; as bolhas saem uma após a outra e voltam ao "+". Tocar em qualquer outro lugar fecha o leque e o toque segue para a tela.
+- **Hoje, primeiro uso:** o card do treino ocupa 44% da altura da tela (entre 280 e 430) e, logo abaixo, a semana com hoje em laranja, só para ver. Sem rolagem.
+- **Evolução:** painel único (`EvolutionPreview`), animado em loop enquanto a aba está aberta (parado com "reduzir movimento"):
+  - **Consistência do mês:** um bloco por dia, de segunda a domingo, ocupando a largura. Cada dia ganha um terço de verde por treino feito, refeição registrada e água registrada.
+  - **Sequência:** dias seguidos com algum registro; a chama cresce com a sequência (apagando em 0, fogo com brilho a partir de 7).
+  - **Minutos e séries:** das sessões do mês (cancelada não conta). **kcal do dia** só quando o resumo está completo. **Água do dia** em ml, com ondas no card.
+  - Antes de qualquer registro, os cards mostram uma prévia animada e o botão "Começar primeiro treino". O card "Meu diário alimentar" saiu (a aba Alimentação já cumpre esse papel).
+  - Dados: `evolution_source.dart` lê as sessões já carregadas pela página e o diário do mês. Ainda **sem metas**: a sequência conta qualquer registro e a água não tem nível de meta.
+- **Responsividade:** Evolução sem rolagem de 360x740 até tablet (inclusive texto 1,3×), com modo compacto abaixo de 800 de altura; em 360x640 e 320x568 a página rola.

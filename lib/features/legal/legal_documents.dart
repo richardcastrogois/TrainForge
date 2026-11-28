@@ -5,7 +5,7 @@ import 'package:flutter/services.dart';
 
 /// App version recorded with each consent. Kept equal to pubspec.yaml by
 /// test/legal_consent_test.dart.
-const legalAppVersion = '0.5.11+41';
+const legalAppVersion = '0.5.12+42';
 
 /// Public copy of the bundled documents (Play Store requires a public URL).
 const legalPublicBase =

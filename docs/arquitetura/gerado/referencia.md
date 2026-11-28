@@ -1,6 +1,6 @@
 # Referência técnica extraída do código
 
-> Gerado de código e registros versionados por `tools/gerar_documentacao.py`. Não editar este arquivo à mão. Revisão das entradas: `91487ddc9a69075a`.
+> Gerado de código e registros versionados por `tools/gerar_documentacao.py`. Não editar este arquivo à mão. Revisão das entradas: `4ab45caaf151fe8f`.
 
 [Arquitetura explicada](../README.md) · [APIs](../diagramas/apis.md) · [Banco e colunas](../diagramas/banco.md) · [Backlog](../../execucao/v1/backlog.md)
 
@@ -8,7 +8,7 @@ Este inventário lê padrões estáticos de Dart, Go, SQL e Swagger. Não execut
 
 | Entrada | Quantidade detectada |
 | --- | --- |
-| Arquivos Dart | 136 |
+| Arquivos Dart | 138 |
 | Telas/widgets | 41 |
 | Literais HTTP Flutter | 35 |
 | Arquivos Go de produção | 101 |
@@ -60,7 +60,7 @@ Uma referência de construtor não demonstra clique ou condição de navegação
 | ContentSourcesPage | [lib/shared/widgets/content_sources_page.dart:10](../../../lib/shared/widgets/content_sources_page.dart) |
 | EvaluationGuidePage | [lib/shared/widgets/evaluation_guide_page.dart:11](../../../lib/shared/widgets/evaluation_guide_page.dart) |
 | FoodCatalogCreditsPage | [lib/shared/widgets/food_catalog_credits_page.dart:10](../../../lib/shared/widgets/food_catalog_credits_page.dart) |
-| EvolutionPage | [lib/shared/widgets/product_overviews.dart:219](../../../lib/shared/widgets/product_overviews.dart) |
+| EvolutionPage | [lib/shared/widgets/product_overviews.dart:221](../../../lib/shared/widgets/product_overviews.dart) |
 | ProductShell | [lib/shared/widgets/product_shell.dart:30](../../../lib/shared/widgets/product_shell.dart) |
 | StartupPage | [lib/shared/widgets/startup_page.dart:6](../../../lib/shared/widgets/startup_page.dart) |
 
@@ -131,12 +131,12 @@ Uma referência de construtor não demonstra clique ou condição de navegação
 | ContentSourcesPage | FoodCatalogCreditsPage | [lib/shared/widgets/content_sources_page.dart:42](../../../lib/shared/widgets/content_sources_page.dart) |
 | EvaluationGuidePage | CatalogPage | [lib/shared/widgets/evaluation_guide_page.dart:113](../../../lib/shared/widgets/evaluation_guide_page.dart) |
 | EvaluationGuidePage | FoodPage | [lib/shared/widgets/evaluation_guide_page.dart:121](../../../lib/shared/widgets/evaluation_guide_page.dart) |
-| EvolutionPage | ActivityPage | [lib/shared/widgets/product_overviews.dart:273](../../../lib/shared/widgets/product_overviews.dart) |
-| EvolutionPage | TodayPage | [lib/shared/widgets/product_overviews.dart:45](../../../lib/shared/widgets/product_overviews.dart) |
+| EvolutionPage | ActivityPage | [lib/shared/widgets/product_overviews.dart:257](../../../lib/shared/widgets/product_overviews.dart) |
+| EvolutionPage | TodayPage | [lib/shared/widgets/product_overviews.dart:47](../../../lib/shared/widgets/product_overviews.dart) |
 | ProductShell | CatalogPage | [lib/shared/widgets/product_shell.dart:164](../../../lib/shared/widgets/product_shell.dart) |
 | ProductShell | NutritionPage | [lib/shared/widgets/product_shell.dart:137](../../../lib/shared/widgets/product_shell.dart) |
-| ProductShell | AccountPage | [lib/shared/widgets/product_shell.dart:242](../../../lib/shared/widgets/product_shell.dart) |
-| ProductShell | EvolutionPage | [lib/shared/widgets/product_shell.dart:341](../../../lib/shared/widgets/product_shell.dart) |
+| ProductShell | AccountPage | [lib/shared/widgets/product_shell.dart:232](../../../lib/shared/widgets/product_shell.dart) |
+| ProductShell | EvolutionPage | [lib/shared/widgets/product_shell.dart:331](../../../lib/shared/widgets/product_shell.dart) |
 
 ## Flutter: chamadas e registros Go
 
