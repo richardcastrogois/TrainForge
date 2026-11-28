@@ -23,6 +23,9 @@ class ActivityPage extends StatefulWidget {
   /// (then "upcoming" is also hidden while empty).
   final Widget? empty;
 
+  /// Shown above the feed once it is loaded (Evolução's dashboard).
+  final Widget Function(ActivityFeed feed)? header;
+
   /// Extra cards after the history (e.g. the food diary).
   final List<Widget> extra;
   const ActivityPage({
@@ -36,6 +39,7 @@ class ActivityPage extends StatefulWidget {
     this.title,
     this.intro,
     this.empty,
+    this.header,
     this.extra = const [],
   });
 
@@ -218,6 +222,7 @@ class _ActivityPageState extends State<ActivityPage>
       Text(widget.intro ?? context.l10n.activitySessionIntro),
       if (controller.loading) AppProgress(label: context.l10n.loadingRecords),
       if (controller.feedback != null) feedback(),
+      if (value != null && widget.header != null) widget.header!(value),
       if (value != null &&
           widget.empty != null &&
           value.upcoming.isEmpty &&

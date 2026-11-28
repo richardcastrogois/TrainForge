@@ -22,8 +22,8 @@ Future<T?> showGlassSheet<T>(
       padding: const EdgeInsets.fromLTRB(12, 0, 12, 12),
       child: GlassSurface(
         borderRadius: BorderRadius.circular(30),
-        tint: sheet.tf.surface.withValues(alpha: .86),
-        blur: 24,
+        tint: sheet.tf.surface.withValues(alpha: .72),
+        blur: 16,
         child: ConstrainedBox(
           constraints: BoxConstraints(
             maxHeight: MediaQuery.sizeOf(sheet).height * .85,
@@ -95,57 +95,209 @@ class GlassSheetOption extends StatelessWidget {
   @override
   Widget build(BuildContext context) => Padding(
     padding: const EdgeInsets.only(bottom: 8),
-    child: Material(
-      color: context.tf.surface.withValues(alpha: .7),
+    child: GlassSurface(
       borderRadius: BorderRadius.circular(20),
-      child: InkWell(
-        borderRadius: BorderRadius.circular(20),
-        onTap: onTap,
-        child: ConstrainedBox(
-          constraints: const BoxConstraints(minHeight: 72),
-          child: Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 12),
-            child: Row(
-              children: [
-                Container(
-                  width: 48,
-                  height: 48,
-                  decoration: BoxDecoration(
-                    color: color ?? context.tf.soft,
-                    shape: BoxShape.circle,
+      tint: context.tf.surface.withValues(alpha: .4),
+      child: Material(
+        type: MaterialType.transparency,
+        child: InkWell(
+          borderRadius: BorderRadius.circular(20),
+          onTap: onTap,
+          child: ConstrainedBox(
+            constraints: const BoxConstraints(minHeight: 72),
+            child: Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 12),
+              child: Row(
+                children: [
+                  Container(
+                    width: 48,
+                    height: 48,
+                    decoration: BoxDecoration(
+                      color: color ?? context.tf.soft,
+                      shape: BoxShape.circle,
+                    ),
+                    child: Icon(icon, size: 26, color: TrainForgeTheme.ink),
                   ),
-                  child: Icon(icon, size: 26, color: TrainForgeTheme.ink),
-                ),
-                const SizedBox(width: 14),
-                Expanded(
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Text(
-                        title,
-                        style: TextStyle(
-                          fontSize: 18,
-                          fontWeight: FontWeight.w700,
-                          color: context.tf.ink,
-                        ),
-                      ),
-                      if (hint != null)
+                  const SizedBox(width: 14),
+                  Expanded(
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
                         Text(
-                          hint!,
+                          title,
                           style: TextStyle(
-                            fontSize: 14,
-                            height: 1.3,
-                            color: context.tf.muted,
+                            fontSize: 18,
+                            fontWeight: FontWeight.w700,
+                            color: context.tf.ink,
                           ),
                         ),
-                    ],
+                        if (hint != null)
+                          Text(
+                            hint!,
+                            style: TextStyle(
+                              fontSize: 14,
+                              height: 1.3,
+                              color: context.tf.muted,
+                            ),
+                          ),
+                      ],
+                    ),
                   ),
-                ),
-                Icon(Icons.chevron_right, color: context.tf.muted),
+                  Icon(Icons.chevron_right, color: context.tf.muted),
+                ],
+              ),
+            ),
+          ),
+        ),
+      ),
+    ),
+  );
+}
+
+/// Floating glass squares over the page, just above the bottom bar (no
+/// panel behind them). Tapping outside or the system back closes them.
+Future<void> showFloatingTiles(
+  BuildContext context, {
+  required String label,
+  required List<GlassTile> tiles,
+  double bottom = 0,
+}) {
+  final reduced = MediaQuery.maybeDisableAnimationsOf(context) ?? false;
+  return showGeneralDialog<void>(
+    context: context,
+    barrierDismissible: true,
+    barrierLabel: shellLabel(context, 'close'),
+    barrierColor: Colors.black.withValues(alpha: .2),
+    transitionDuration: Duration(milliseconds: reduced ? 0 : 220),
+    pageBuilder: (menu, _, _) => SafeArea(
+      child: Align(
+        alignment: Alignment.bottomCenter,
+        child: Padding(
+          padding: EdgeInsets.fromLTRB(24, 0, 24, bottom),
+          child: Semantics(
+            label: label,
+            scopesRoute: true,
+            namesRoute: true,
+            explicitChildNodes: true,
+            // Fingertip-sized squares; they grow a little with the text size
+            // setting but never fill the screen.
+            child: Row(
+              mainAxisSize: MainAxisSize.min,
+              children: [
+                for (final (i, tile) in tiles.indexed) ...[
+                  if (i > 0) const SizedBox(width: 12),
+                  SizedBox.square(
+                    dimension: MediaQuery.textScalerOf(
+                      menu,
+                    ).scale(76).clamp(76, 96),
+                    child: tile,
+                  ),
+                ],
               ],
             ),
           ),
         ),
+      ),
+    ),
+    transitionBuilder: (_, animation, _, child) => FadeTransition(
+      opacity: animation,
+      child: ScaleTransition(
+        alignment: Alignment.bottomCenter,
+        scale: Tween(begin: .9, end: 1.0).animate(
+          CurvedAnimation(parent: animation, curve: Curves.easeOutBack),
+        ),
+        child: child,
+      ),
+    ),
+  );
+}
+
+/// Square of clear liquid glass with Apple-style continuous corners
+/// (superellipse, no visible start of the curve): a round coloured icon over
+/// one or two words, about the size of a fingertip. The corner is about a
+/// fifth of the side (16 px on a 76 px square), so it scales with the square.
+class GlassTile extends StatelessWidget {
+  final IconData icon;
+  final String title;
+  final Color color;
+  final VoidCallback onTap;
+  const GlassTile({
+    super.key,
+    required this.icon,
+    required this.title,
+    required this.color,
+    required this.onTap,
+  });
+  @override
+  Widget build(BuildContext context) => Semantics(
+    button: true,
+    label: title,
+    excludeSemantics: true,
+    child: AspectRatio(
+      aspectRatio: 1,
+      child: LayoutBuilder(
+        builder: (context, box) {
+          final side = box.maxWidth;
+          final radius = BorderRadius.circular(side * .21);
+          return GlassSurface(
+            borderRadius: radius,
+            // Clear glass: only a hint of white so the words stay readable.
+            tint: context.tf.surface.withValues(alpha: .28),
+            blur: 16,
+            shadows: const [
+              BoxShadow(
+                color: Color(0x12000000),
+                blurRadius: 8,
+                offset: Offset(0, 2),
+              ),
+            ],
+            child: Material(
+              type: MaterialType.transparency,
+              child: InkWell(
+                customBorder: RoundedSuperellipseBorder(borderRadius: radius),
+                onTap: onTap,
+                child: Padding(
+                  padding: EdgeInsets.all(side * .1),
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Flexible(
+                        child: FittedBox(
+                          child: Container(
+                            width: 34,
+                            height: 34,
+                            decoration: BoxDecoration(
+                              color: color,
+                              shape: BoxShape.circle,
+                            ),
+                            child: Icon(
+                              icon,
+                              size: 19,
+                              color: TrainForgeTheme.ink,
+                            ),
+                          ),
+                        ),
+                      ),
+                      SizedBox(height: side * .05),
+                      FittedBox(
+                        fit: BoxFit.scaleDown,
+                        child: Text(
+                          title,
+                          maxLines: 1,
+                          style: TextStyle(
+                            fontSize: 13,
+                            fontWeight: FontWeight.w700,
+                            color: context.tf.ink,
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              ),
+            ),
+          );
+        },
       ),
     ),
   );
@@ -174,8 +326,8 @@ Future<void> showTopMenu(
             constraints: const BoxConstraints(maxWidth: 280),
             child: GlassSurface(
               borderRadius: BorderRadius.circular(22),
-              tint: menu.tf.surface.withValues(alpha: .9),
-              blur: 24,
+              tint: menu.tf.surface.withValues(alpha: .78),
+              blur: 16,
               shadows: const [
                 BoxShadow(
                   color: Color(0x33183e32),

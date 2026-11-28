@@ -1,3 +1,5 @@
+import 'dart:math' as math;
+import 'glass_surface.dart';
 import 'shell_labels.dart';
 import 'package:liquid_glass_widgets/liquid_glass_widgets.dart';
 import 'package:trainforge/core/theme/trainforge_theme.dart';
@@ -18,6 +20,20 @@ enum TrainForgeDestination {
   String localizedLabel(BuildContext context) => shellLabel(context, name);
 }
 
+/// One action of the "+" fan ([NavFan]).
+class NavAction {
+  final IconData icon;
+  final String label;
+  final Color color;
+  final VoidCallback onTap;
+  const NavAction({
+    required this.icon,
+    required this.label,
+    required this.color,
+    required this.onTap,
+  });
+}
+
 /// Floating Liquid Glass bar in the iOS 26 style: Hoje · Treinos · (+) ·
 /// Alimentação · Evolução, icons only (names stay for screen readers).
 ///
@@ -27,6 +43,7 @@ enum TrainForgeDestination {
 ///   finger; releasing opens that page and the lens settles into the pill.
 /// * Only the "+" is raised, in the middle; its slot in the bar never becomes
 ///   a page.
+/// * While [open], the "+" turns into "x" and [NavFan] shows the actions.
 class FigmaBottomNav extends StatelessWidget {
   final TrainForgeDestination selected;
   final ValueChanged<TrainForgeDestination> onSelected;
@@ -36,14 +53,18 @@ class FigmaBottomNav extends StatelessWidget {
     required this.selected,
     required this.onSelected,
     this.onAdd,
+    this.open = false,
   });
+
+  /// Whether the "+" fan is open.
+  final bool open;
+
+  /// Height of the "+" centre above the bottom of the bar area.
+  static const addCentre = height - _add;
 
   /// Bar height plus the part of the "+" above it.
   static const height = 82.0;
   static const _bar = 64.0, _add = 30.0;
-
-  /// Orange that keeps 3:1 against the light glass (non-text contrast).
-  static const activeOrange = Color(0xffd95c0b);
 
   /// Slot order on screen; null is the "+".
   static const slots = <TrainForgeDestination?>[
@@ -68,54 +89,7 @@ class FigmaBottomNav extends StatelessWidget {
             right: 0,
             bottom: 0,
             height: _bar,
-            child: GlassTabBar.bottom(
-              tabs: [
-                for (final slot in slots)
-                  slot == null
-                      // Room for the raised "+" drawn above the bar.
-                      ? const GlassTab(icon: SizedBox.square(dimension: 26))
-                      : GlassTab(
-                          icon: _TabIcon(slot),
-                          semanticLabel: slot.localizedLabel(context),
-                        ),
-              ],
-              selectedIndex: slots.indexOf(selected),
-              onTabSelected: (index) {
-                final target = slots[index];
-                if (target == null) {
-                  onAdd?.call();
-                  return;
-                }
-                HapticFeedback.selectionClick();
-                // The open page itself is not a change.
-                if (target != selected) onSelected(target);
-              },
-              barHeight: _bar,
-              horizontalPadding: 0,
-              verticalPadding: 0,
-              iconSize: 26,
-              // The icon under the lens turns orange, the app's second colour.
-              selectedIconColor: dark
-                  ? TrainForgeTheme.highlight
-                  : FigmaBottomNav.activeOrange,
-              unselectedIconColor: context.tf.ink,
-              indicatorColor: TrainForgeTheme.highlight.withValues(
-                alpha: dark ? .22 : .16,
-              ),
-              quality: GlassQuality.premium,
-              // Liquid glass with a little frost, so the icons stay readable
-              // over busy content (as iOS does).
-              settings: LiquidGlassSettings(
-                glassColor: context.tf.surface.withValues(
-                  alpha: dark ? .18 : .26,
-                ),
-                blur: 9,
-                thickness: 24,
-                refractiveIndex: 1.25,
-                lightIntensity: .8,
-                saturation: 1.3,
-              ),
-            ),
+            child: _tabs(context, dark),
           ),
           Positioned(top: 0, child: _addButton(context)),
         ],
@@ -123,48 +97,115 @@ class FigmaBottomNav extends StatelessWidget {
     );
   }
 
+  static Duration _motion(BuildContext context) => Duration(
+    milliseconds: (MediaQuery.maybeDisableAnimationsOf(context) ?? false)
+        ? 0
+        : 380,
+  );
+
+  /// Real liquid glass (as iOS): clear, the content behind stays sharp and
+  /// bends at the edges, with a light rim. Only a hint of frost and tint so
+  /// the icons stay readable.
+  static LiquidGlassSettings _glass(BuildContext context, bool dark) =>
+      LiquidGlassSettings(
+        glassColor: context.tf.surface.withValues(alpha: dark ? .18 : .24),
+        blur: 3.2, // a touch of frost so text behind does not fight the icons
+        thickness: 32,
+        refractiveIndex: 1.38,
+        lightIntensity: 1,
+        saturation: 1.2,
+        chromaticAberration: .012,
+      );
+
+  Widget _tabs(BuildContext context, bool dark) => GlassTabBar.bottom(
+    key: const ValueKey('nav-tabs'),
+    tabs: [
+      for (final slot in slots)
+        slot == null
+            // Room for the raised "+" drawn above the bar.
+            ? const GlassTab(icon: SizedBox.square(dimension: 26))
+            : GlassTab(
+                icon: _TabIcon(slot),
+                semanticLabel: slot.localizedLabel(context),
+              ),
+    ],
+    selectedIndex: slots.indexOf(selected),
+    onTabSelected: (index) {
+      final target = slots[index];
+      if (target == null) {
+        onAdd?.call();
+        return;
+      }
+      HapticFeedback.selectionClick();
+      // The open page itself is not a change.
+      if (target != selected) onSelected(target);
+    },
+    barHeight: _bar,
+    horizontalPadding: 0,
+    verticalPadding: 0,
+    iconSize: 26,
+    // Only the icon of the open page changes colour, to the same
+    // orange as the "+" (green and orange are the app's pair).
+    selectedIconColor: TrainForgeTheme.highlight,
+    unselectedIconColor: context.tf.ink,
+    // No coloured pill at rest; the clear glass lens shows up only
+    // while the finger presses or drags along the bar.
+    indicatorColor: Colors.transparent,
+    quality: GlassQuality.premium,
+    settings: _glass(context, dark),
+  );
+
   Widget _addButton(BuildContext context) => Semantics(
-    label: shellLabel(context, 'add'),
+    label: shellLabel(context, open ? 'close' : 'add'),
     button: true,
     excludeSemantics: true,
     child: Tooltip(
       message: shellLabel(context, 'add'),
       triggerMode: TooltipTriggerMode.manual,
-      child: GestureDetector(
-        key: const ValueKey('nav-add'),
-        onTap: onAdd == null
-            ? null
-            : () {
-                HapticFeedback.lightImpact();
-                onAdd!();
-              },
-        // Orange liquid glass, no border.
-        child: DecoratedBox(
-          decoration: const BoxDecoration(
-            shape: BoxShape.circle,
-            boxShadow: [
-              BoxShadow(
-                color: Color(0x40183e32),
-                blurRadius: 12,
-                offset: Offset(0, 5),
-              ),
-            ],
-          ),
-          child: GlassContainer(
-            width: _add * 2,
-            height: _add * 2,
-            shape: const LiquidOval(),
-            useOwnLayer: true,
-            quality: GlassQuality.premium,
-            settings: LiquidGlassSettings(
-              glassColor: TrainForgeTheme.highlight.withValues(alpha: .88),
-              blur: 6,
-              thickness: 22,
-              refractiveIndex: 1.25,
-              lightIntensity: .9,
+      child: TapRegion(
+        groupId: NavFan.group,
+        child: GestureDetector(
+          key: const ValueKey('nav-add'),
+          onTap: onAdd == null
+              ? null
+              : () {
+                  HapticFeedback.lightImpact();
+                  onAdd!();
+                },
+          // Solid orange under a glass rim, no border: the same orange as the
+          // other main buttons.
+          child: DecoratedBox(
+            decoration: const BoxDecoration(
+              color: TrainForgeTheme.highlight,
+              shape: BoxShape.circle,
+              boxShadow: [
+                BoxShadow(
+                  color: Color(0x1a183e32),
+                  blurRadius: 6,
+                  offset: Offset(0, 2),
+                ),
+              ],
             ),
-            child: const Center(
-              child: Icon(Icons.add, size: 32, color: TrainForgeTheme.ink),
+            child: GlassContainer(
+              width: _add * 2,
+              height: _add * 2,
+              shape: const LiquidOval(),
+              useOwnLayer: true,
+              quality: GlassQuality.premium,
+              settings: colouredGlass,
+              // The "+" turns into "x" while open.
+              child: Center(
+                child: AnimatedRotation(
+                  turns: open ? .125 : 0,
+                  duration: _motion(context),
+                  curve: Curves.easeInOutCubic,
+                  child: const Icon(
+                    Icons.add,
+                    size: 32,
+                    color: TrainForgeTheme.ink,
+                  ),
+                ),
+              ),
             ),
           ),
         ),
@@ -203,3 +244,176 @@ Widget navIcon(TrainForgeDestination destination, Color color, double size) =>
         colorFilter: ColorFilter.mode(color, BlendMode.srcIn),
       ),
     );
+
+/// The "+" menu as a fan of round glass buttons that glide out of the "+"
+/// along a short arc above it and glide back into it. Place it over the page
+/// with its bottom on the bottom of [FigmaBottomNav]. A tap anywhere else
+/// calls [onClose] and still reaches what is under the finger.
+class NavFan extends StatefulWidget {
+  final bool open;
+  final List<NavAction> actions;
+  final VoidCallback onClose;
+  const NavFan({
+    super.key,
+    required this.open,
+    required this.actions,
+    required this.onClose,
+  });
+
+  /// Tap region shared by the fan and the "+".
+  static const group = #navFan;
+
+  /// Room the fan needs above the bottom of the bar.
+  static const height = FigmaBottomNav.height + 110;
+
+  @override
+  State<NavFan> createState() => _NavFanState();
+}
+
+class _NavFanState extends State<NavFan> with SingleTickerProviderStateMixin {
+  late final motion = AnimationController(
+    vsync: this,
+    duration: const Duration(milliseconds: 460),
+    reverseDuration: const Duration(milliseconds: 380),
+    value: widget.open ? 1 : 0,
+  );
+
+  @override
+  void didUpdateWidget(NavFan old) {
+    super.didUpdateWidget(old);
+    if (old.open == widget.open) return;
+    if (MediaQuery.maybeDisableAnimationsOf(context) ?? false) {
+      motion.value = widget.open ? 1 : 0;
+    } else if (widget.open) {
+      motion.forward();
+    } else {
+      motion.reverse();
+    }
+  }
+
+  @override
+  void dispose() {
+    motion.dispose();
+    super.dispose();
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    final n = widget.actions.length;
+    // Close together on a short arc: 2 actions at 120/60 degrees, 3 at
+    // 145/90/35.
+    final spread = n <= 1 ? 0.0 : (n == 2 ? 60.0 : 110.0);
+    const radius = 96.0, side = 58.0;
+    return SizedBox(
+      height: NavFan.height,
+      child: AnimatedBuilder(
+        animation: motion,
+        builder: (context, _) => IgnorePointer(
+          ignoring: !widget.open,
+          child: LayoutBuilder(
+            builder: (context, box) {
+              final cx = box.maxWidth / 2;
+              final cy = box.maxHeight - FigmaBottomNav.addCentre;
+              final opening = motion.status != AnimationStatus.reverse;
+              return Stack(
+                clipBehavior: Clip.none,
+                children: [
+                  for (final (i, action) in widget.actions.indexed)
+                    Builder(
+                      builder: (context) {
+                        final angle =
+                            (90 +
+                                spread / 2 -
+                                (n <= 1 ? 0 : spread * i / (n - 1))) *
+                            math.pi /
+                            180;
+                        // One after the other on the way out, the last one
+                        // first on the way back.
+                        final delay = i * .1;
+                        final local = ((motion.value - delay) / (1 - delay))
+                            .clamp(0.0, 1.0);
+                        final t =
+                            (opening
+                                    ? Curves.easeOutCubic
+                                    : Curves.easeInOutCubic)
+                                .transform(local);
+                        final x = cx + math.cos(angle) * radius * t;
+                        final y = cy - math.sin(angle) * radius * t;
+                        return Positioned(
+                          left: x - side / 2,
+                          top: y - side / 2,
+                          width: side,
+                          height: side,
+                          child: Opacity(
+                            opacity: t,
+                            child: Transform.scale(
+                              scale: .55 + .45 * t,
+                              child: TapRegion(
+                                groupId: NavFan.group,
+                                onTapOutside: (_) {
+                                  if (widget.open) widget.onClose();
+                                },
+                                child: _FanButton(action, side: side),
+                              ),
+                            ),
+                          ),
+                        );
+                      },
+                    ),
+                ],
+              );
+            },
+          ),
+        ),
+      ),
+    );
+  }
+}
+
+/// Round button of solid colour under a glass rim, like the "+" itself. Its
+/// name is for screen readers and the long-press tooltip.
+class _FanButton extends StatelessWidget {
+  final NavAction action;
+  final double side;
+  const _FanButton(this.action, {required this.side});
+  @override
+  Widget build(BuildContext context) => Semantics(
+    button: true,
+    label: action.label,
+    excludeSemantics: true,
+    child: Tooltip(
+      message: action.label,
+      child: GestureDetector(
+        behavior: HitTestBehavior.opaque,
+        onTap: () {
+          HapticFeedback.selectionClick();
+          action.onTap();
+        },
+        child: DecoratedBox(
+          decoration: BoxDecoration(
+            color: action.color,
+            shape: BoxShape.circle,
+            boxShadow: const [
+              BoxShadow(
+                color: Color(0x14000000),
+                blurRadius: 6,
+                offset: Offset(0, 2),
+              ),
+            ],
+          ),
+          child: GlassContainer(
+            width: side,
+            height: side,
+            shape: const LiquidOval(),
+            useOwnLayer: true,
+            quality: GlassQuality.premium,
+            settings: colouredGlass,
+            child: Center(
+              child: Icon(action.icon, size: 26, color: TrainForgeTheme.ink),
+            ),
+          ),
+        ),
+      ),
+    ),
+  );
+}

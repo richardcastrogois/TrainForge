@@ -223,7 +223,14 @@ class _TrainingHeroCardState extends State<TrainingHeroCard> {
               onLongPress: list.length > 1 ? nextPlace : null,
               child: ExcludeSemantics(
                 child: SizedBox(
-                  height: first ? 300 : 172,
+                  // First use: the card fills most of the free space above
+                  // the week, sized by the screen so nothing scrolls.
+                  height: first
+                      ? (MediaQuery.sizeOf(context).height * .44).clamp(
+                          280.0,
+                          430.0,
+                        )
+                      : 172,
                   child: Stack(
                     fit: StackFit.expand,
                     children: [

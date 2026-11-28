@@ -185,58 +185,48 @@ class _ProductShellState extends State<ProductShell>
           configuration!,
         );
 
-  /// "+" panel: only what already works in this build.
-  void openAdd() {
+  /// Whether the bar shows the "+" actions instead of the pages.
+  bool adding = false;
+
+  void closeAdd() {
+    if (adding) setState(() => adding = false);
+  }
+
+  /// "+": a fan of round glass buttons opens above it (tap again, outside or back to
+  /// close). The same choices for everyone; each one opens its page, which
+  /// asks for whatever is still missing. Voice and photo live on the food
+  /// page, next to "Registrar refeição".
+  void openAdd() => setState(() => adding = !adding);
+
+  List<NavAction> addActions(BuildContext context) {
     String l(String k) => shellLabel(context, k);
     final offline = nutrition is OfflineNutritionRepository;
-    void then(VoidCallback action) {
-      Navigator.pop(context);
-      action();
+    void then(TrainForgeDestination target) {
+      closeAdd();
+      select(target);
     }
 
-    showGlassSheet<void>(
-      context,
-      title: l('addTitle'),
-      children: [
-        GlassSheetOption(
-          icon: Icons.fitness_center,
-          title: l('addWorkout'),
-          hint: l('addWorkoutHint'),
-          color: context.tf.accent,
-          onTap: () => then(() => select(TrainForgeDestination.workouts)),
+    return [
+      NavAction(
+        icon: Icons.fitness_center,
+        label: l('addWorkout'),
+        color: context.tf.accent,
+        onTap: () => then(TrainForgeDestination.workouts),
+      ),
+      NavAction(
+        icon: Icons.restaurant,
+        label: l('addMeal'),
+        color: context.tf.nutrition,
+        onTap: () => then(TrainForgeDestination.food),
+      ),
+      if (offline)
+        NavAction(
+          icon: Icons.water_drop_outlined,
+          label: l('addWater'),
+          color: context.tf.blue,
+          onTap: () => then(TrainForgeDestination.food),
         ),
-        GlassSheetOption(
-          icon: Icons.restaurant,
-          title: l('addMeal'),
-          hint: l('addMealHint'),
-          color: context.tf.nutrition,
-          onTap: () => then(openNutrition),
-        ),
-        if (offline) ...[
-          GlassSheetOption(
-            icon: Icons.water_drop_outlined,
-            title: l('addWater'),
-            hint: l('addWaterHint'),
-            color: context.tf.blue,
-            onTap: () => then(() => select(TrainForgeDestination.food)),
-          ),
-          GlassSheetOption(
-            icon: Icons.mic_none,
-            title: l('addVoice'),
-            hint: l('addVoiceHint'),
-            color: context.tf.blue,
-            onTap: () => then(() => openNutrition(start: NutritionStart.voice)),
-          ),
-          GlassSheetOption(
-            icon: Icons.photo_camera_outlined,
-            title: l('addPhoto'),
-            hint: l('addPhotoHint'),
-            color: context.tf.yellow,
-            onTap: () => then(() => openNutrition(start: NutritionStart.photo)),
-          ),
-        ],
-      ],
-    );
+    ];
   }
 
   AccountPage account(BuildContext context) => AccountPage(
@@ -340,6 +330,7 @@ class _ProductShellState extends State<ProductShell>
       ),
       TrainForgeDestination.evolution => EvolutionPage(
         activity: activity,
+        nutrition: nutrition,
         accountId: accountId,
         currentAccountId: () => widget.controller.profile?.id,
         sessionChanges: widget.controller,
@@ -356,9 +347,14 @@ class _ProductShellState extends State<ProductShell>
       return const SizedBox.shrink();
     }
     return PopScope(
-      canPop: selected == TrainForgeDestination.today,
+      canPop: selected == TrainForgeDestination.today && !adding,
       onPopInvokedWithResult: (didPop, _) {
-        if (!didPop) select(TrainForgeDestination.today);
+        if (didPop) return;
+        if (adding) {
+          closeAdd();
+        } else {
+          select(TrainForgeDestination.today);
+        }
       },
       child: Scaffold(
         body: SafeArea(
@@ -428,6 +424,19 @@ class _ProductShellState extends State<ProductShell>
                             selected: selected,
                             onSelected: select,
                             onAdd: openAdd,
+                            open: adding,
+                          ),
+                        ),
+                        Positioned(
+                          left: 16,
+                          right: 16,
+                          bottom: 8,
+                          // A tap anywhere else closes the fan and still
+                          // reaches the page.
+                          child: NavFan(
+                            open: adding,
+                            actions: addActions(context),
+                            onClose: closeAdd,
                           ),
                         ),
                       ],

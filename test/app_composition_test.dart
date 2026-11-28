@@ -159,6 +159,11 @@ void main() {
   testWidgets(
     'activity service opens lazily and is replaced with the account',
     (t) async {
+      // The empty Evolução keeps moving; with reduced motion it stands still,
+      // so pumpAndSettle can finish.
+      t.platformDispatcher.accessibilityFeaturesTestValue =
+          const FakeAccessibilityFeatures(disableAnimations: true);
+      addTearDown(t.platformDispatcher.clearAccessibilityFeaturesTestValue);
       final services = CompositionFixture()..session.profile = fixtureProfile;
       final appearance = AppearanceController(store: MemoryAppearance());
       addTearDown(appearance.dispose);

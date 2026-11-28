@@ -5,6 +5,8 @@ import 'package:flutter/material.dart';
 import 'package:trainforge/core/theme/trainforge_theme.dart';
 import 'package:trainforge/features/nutrition/presentation/daily_summary_controller.dart';
 import 'figma_components.dart';
+import 'package:trainforge/features/activity/presentation/evolution_source.dart';
+import 'package:trainforge/features/nutrition/domain/nutrition.dart';
 import 'glass_surface.dart';
 import 'shell_labels.dart';
 import 'package:trainforge/features/activity/domain/activity_repository.dart';
@@ -218,6 +220,7 @@ class _QuickButton extends StatelessWidget {
 /// the food diary. With nothing recorded, one friendly line and one button.
 class EvolutionPage extends StatelessWidget {
   final ActivityRepository? activity;
+  final NutritionRepository? nutrition;
   final String accountId;
   final String? Function() currentAccountId;
   final Listenable sessionChanges;
@@ -230,44 +233,25 @@ class EvolutionPage extends StatelessWidget {
     required this.sessionChanges,
     required this.openNutrition,
     required this.openWorkouts,
+    this.nutrition,
   });
 
   @override
   Widget build(BuildContext context) {
     String l(String k) => shellLabel(context, k);
-    final empty = FigmaSection(
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.stretch,
-        children: [
-          Icon(Icons.insights, size: 40, color: context.tf.primary),
-          const SizedBox(height: 10),
-          Text(
-            l('evolutionEmpty'),
-            style: const TextStyle(fontSize: 17, height: 1.35),
-          ),
-          const SizedBox(height: 14),
-          LiquidButton(
-            label: l('goWorkouts'),
-            color: context.tf.primary,
-            foreground: context.tf.onPrimary,
-            onPressed: openWorkouts,
-          ),
-        ],
-      ),
-    );
-    final diary = FigmaActionCard(
-      title: l('foodDiary'),
-      subtitle: l('foodDiaryHint'),
-      asset: 'food',
-      color: context.tf.nutrition,
-      onTap: openNutrition,
+    // The dashboard on top, fed by real records; while there are none, its
+    // cards preview how they fill and one button starts the first workout.
+    Widget board(List<ActivityDetail> sessions) => EvolutionBoard(
+      sessions: sessions,
+      nutrition: nutrition,
+      onStart: openWorkouts,
     );
     final repository = activity;
     if (repository == null) {
       return FigmaContent(
         title: l('evolutionTitle'),
         subtitle: l('evolutionIntro'),
-        children: [empty, diary],
+        children: [board(const [])],
       );
     }
     return ActivityPage(
@@ -277,8 +261,9 @@ class EvolutionPage extends StatelessWidget {
       sessionChanges: sessionChanges,
       title: l('evolutionTitle'),
       intro: l('evolutionIntro'),
-      empty: empty,
-      extra: [diary],
+      header: (feed) => board(feed.sessions),
+      // Nothing else while the history is empty: the board says it all.
+      empty: const SizedBox.shrink(),
     );
   }
 }

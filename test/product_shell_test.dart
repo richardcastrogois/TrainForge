@@ -273,7 +273,11 @@ void main() {
           MaterialApp(
             theme: TrainForgeTheme.light,
             home: MediaQuery(
-              data: const MediaQueryData(textScaler: TextScaler.linear(2)),
+              // Reduced motion: the empty Evolução stands still.
+              data: const MediaQueryData(
+                textScaler: TextScaler.linear(2),
+                disableAnimations: true,
+              ),
               child: Scaffold(body: page),
             ),
           ),

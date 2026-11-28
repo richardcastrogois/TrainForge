@@ -135,6 +135,13 @@ class _TodayPageState extends State<TodayPage> with WidgetsBindingObserver {
               first: first,
               completeAnswers: () => completeAnswers(context, scope),
             ),
+            // First use: the week only shows where each day will be; today
+            // in orange. Nothing to tap yet.
+            if (first)
+              Padding(
+                padding: const EdgeInsets.only(top: 14),
+                child: _Week(now: now),
+              ),
             // Week strip and day numbers only once there is something recorded.
             if (hasRecords) ...[
               Text(
@@ -249,11 +256,71 @@ class _TodayPageState extends State<TodayPage> with WidgetsBindingObserver {
 
 class _Week extends StatelessWidget {
   final DateTime now;
-  final ValueChanged<DateTime> onSelected;
-  const _Week({required this.now, required this.onSelected});
+
+  /// Null shows the week only (first use), without opening days.
+  final ValueChanged<DateTime>? onSelected;
+  const _Week({required this.now, this.onSelected});
   @override
   Widget build(BuildContext context) {
     final monday = DateTime(now.year, now.month, now.day - now.weekday + 1);
+    if (onSelected == null) {
+      // Display only: seven days across the width, today in orange.
+      return Row(
+        children: [
+          for (var i = 0; i < 7; i++) ...[
+            if (i > 0) const SizedBox(width: 6),
+            Expanded(
+              child: Builder(
+                builder: (context) {
+                  final day = DateTime(
+                    monday.year,
+                    monday.month,
+                    monday.day + i,
+                  );
+                  final today = localDay(day) == localDay(now);
+                  final style = TextStyle(
+                    fontSize: 13,
+                    height: 1.35,
+                    fontWeight: FontWeight.w700,
+                    color: today ? TrainForgeTheme.ink : context.tf.ink,
+                  );
+                  return Semantics(
+                    label: context.displayDate(day),
+                    selected: today,
+                    excludeSemantics: true,
+                    child: Container(
+                      padding: const EdgeInsets.symmetric(vertical: 10),
+                      decoration: ShapeDecoration(
+                        color: today
+                            ? TrainForgeTheme.highlight
+                            : context.tf.surface.withValues(alpha: .55),
+                        shape: RoundedSuperellipseBorder(
+                          borderRadius: BorderRadius.circular(16),
+                        ),
+                      ),
+                      child: Column(
+                        mainAxisSize: MainAxisSize.min,
+                        children: [
+                          FittedBox(
+                            child: Text(
+                              context.weekdayInitial(day),
+                              style: style.copyWith(
+                                fontWeight: FontWeight.w500,
+                              ),
+                            ),
+                          ),
+                          FittedBox(child: Text('${day.day}', style: style)),
+                        ],
+                      ),
+                    ),
+                  );
+                },
+              ),
+            ),
+          ],
+        ],
+      );
+    }
     return SingleChildScrollView(
       scrollDirection: Axis.horizontal,
       child: Row(
@@ -274,7 +341,7 @@ class _Week extends StatelessWidget {
                     child: Material(
                       color: Colors.transparent,
                       child: InkWell(
-                        onTap: () => onSelected(day),
+                        onTap: () => onSelected!(day),
                         borderRadius: BorderRadius.circular(17),
                         child: Padding(
                           padding: const EdgeInsets.symmetric(
